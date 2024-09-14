@@ -1,0 +1,410 @@
+[
+        {
+                "title": "What is Stripe?",
+                "category": "Stripe",
+                "description": "Stripe is a technology company that provides an economic infrastructure for the internet. Businesses use Stripe's software to accept payments and manage their businesses online.",
+                "tags": "payment gateway, financial technology",
+                "paid": "Yes",
+                "answer": "Stripe offers a suite of APIs that enable businesses to process online payments, handle recurring billing, and manage transactions in various currencies. Its tools help streamline the payment process, reduce fraud, and provide insights into business performance. Stripe supports various payment methods including credit cards, debit cards, and local payment options."
+        },
+        {
+                "title": "How do I create a Stripe account?",
+                "category": "Stripe",
+                "description": "To create a Stripe account, you need to sign up on their website and provide business details.",
+                "tags": "account setup, onboarding",
+                "paid": "Yes",
+                "answer": "To create a Stripe account, visit the Stripe website and click on the 'Sign Up' button. You'll be asked to provide your email address, create a password, and enter some basic business information, including your company's name and address. Once registered, you'll need to verify your email and complete additional steps to activate your account and start processing payments."
+        },
+        {
+                "title": "What payment methods does Stripe support?",
+                "category": "Stripe",
+                "description": "Stripe supports various payment methods including credit cards, debit cards, and local options.",
+                "tags": "payment methods, credit cards, debit cards",
+                "paid": "Yes",
+                "answer": "Stripe supports a wide range of payment methods including major credit and debit cards (Visa, MasterCard, American Express), local payment methods (such as SEPA Direct Debit and iDEAL), and digital wallets (like Apple Pay and Google Pay). The availability of these methods may vary depending on the country where your business operates."
+        },
+        {
+                "title": "How do I integrate Stripe with my website?",
+                "category": "Stripe",
+                "description": "Integrate Stripe with your website using their APIs or plugins.",
+                "tags": "integration, APIs, plugins",
+                "paid": "Yes",
+                "answer": "To integrate Stripe with your website, you can use their APIs to build custom payment solutions or use pre-built plugins for popular platforms like WordPress, Shopify, or Magento. Stripe provides extensive documentation and libraries for various programming languages to facilitate the integration process. You'll need to set up your API keys and configure your payment forms to handle transactions securely."
+        },
+        {
+                "title": "What is a Stripe API key?",
+                "category": "Stripe",
+                "description": "A Stripe API key is used to authenticate requests to the Stripe API.",
+                "tags": "API key, authentication, API",
+                "paid": "Yes",
+                "answer": "A Stripe API key is a secret key that allows your application to securely interact with the Stripe API. It is used to authenticate and authorize API requests, ensuring that only authorized users can access and manage payment data. You can find your API keys in the Stripe Dashboard under the 'Developers' section. It's important to keep these keys secure and not expose them in public code repositories."
+        },
+        {
+                "title": "What is Stripe Connect?",
+                "category": "Stripe",
+                "description": "Stripe Connect is a product for marketplaces and platforms to manage payments.",
+                "tags": "Stripe Connect, marketplaces, platforms",
+                "paid": "Yes",
+                "answer": "Stripe Connect is a solution designed for platforms and marketplaces that need to facilitate payments between multiple parties. It allows you to onboard sellers, manage their payouts, and handle compliance requirements. Connect offers different account types (Standard, Express, and Custom) to meet various needs, ranging from simple integrations to fully customized experiences."
+        },
+        {
+                "title": "How do I issue refunds with Stripe?",
+                "category": "Stripe",
+                "description": "Refunds can be issued via the Stripe Dashboard or API.",
+                "tags": "refunds, Stripe Dashboard, API",
+                "paid": "Yes",
+                "answer": "You can issue refunds through the Stripe Dashboard or via the API. In the Dashboard, navigate to the 'Payments' section, select the payment you wish to refund, and click on 'Refund.' You can choose to refund the full amount or a partial amount. If using the API, you can create a refund object by specifying the charge ID and the amount to refund. Refunds are typically processed within a few business days."
+        },
+        {
+                "title": "What is Stripe Radar?",
+                "category": "Stripe",
+                "description": "Stripe Radar is a suite of tools for detecting and preventing fraud.",
+                "tags": "fraud prevention, Stripe Radar",
+                "paid": "Yes",
+                "answer": "Stripe Radar is a fraud prevention tool that helps detect and prevent fraudulent transactions. It uses machine learning and a variety of risk signals to identify suspicious activity. Radar offers customizable rules to automatically block or review potentially fraudulent transactions. You can also use Radar's advanced features to create custom fraud prevention strategies and monitor your account's risk profile."
+        },
+        {
+                "title": "What is Stripe's chargeback process?",
+                "category": "Stripe",
+                "description": "Stripe's chargeback process involves disputing and resolving chargebacks.",
+                "tags": "chargebacks, disputes, Stripe",
+                "paid": "Yes",
+                "answer": "When a customer disputes a charge, it results in a chargeback. Stripe provides tools to help you manage chargebacks through the Dashboard. You can review chargeback details, submit evidence to contest the dispute, and track the outcome. If you win the dispute, the chargeback amount is refunded to your account. Stripe charges a fee for each chargeback, which is deducted from your account."
+        },
+        {
+                "title": "How can I customize my payment forms with Stripe?",
+                "category": "Stripe",
+                "description": "Customize payment forms using Stripe Elements or Checkout.",
+                "tags": "payment forms, Stripe Elements, Checkout",
+                "paid": "Yes",
+                "answer": "You can customize your payment forms using Stripe Elements or Stripe Checkout. Stripe Elements provides a set of pre-built UI components that you can style to match your website's design. It offers flexibility while maintaining PCI compliance. Stripe Checkout is a pre-built, hosted payment page that can be customized with your branding and offers a streamlined payment experience."
+        },
+        {
+                "title": "What are Stripe Subscriptions?",
+                "category": "Stripe",
+                "description": "Stripe Subscriptions manage recurring billing for services or products.",
+                "tags": "subscriptions, recurring billing",
+                "paid": "Yes",
+                "answer": "Stripe Subscriptions allow you to set up and manage recurring billing for your customers. You can create subscription plans with different pricing tiers, billing intervals, and trial periods. Stripe handles the billing process automatically, including invoicing, payment collection, and renewals. You can also manage upgrades, downgrades, and cancellations through the Stripe Dashboard or API."
+        },
+        {
+                "title": "How does Stripe handle PCI compliance?",
+                "category": "Stripe",
+                "description": "Stripe helps with PCI compliance through secure payment handling.",
+                "tags": "PCI compliance, security",
+                "paid": "Yes",
+                "answer": "Stripe handles PCI compliance by providing secure infrastructure for payment processing. When using Stripe Elements or Checkout, sensitive payment information is handled securely and does not touch your server, reducing your PCI scope. Stripe is certified as a PCI Service Provider Level 1, the highest level of certification. You still need to complete the PCI Self-Assessment Questionnaire (SAQ) based on your integration method."
+        },
+        {
+                "title": "Can I use Stripe for international payments?",
+                "category": "Stripe",
+                "description": "Yes, Stripe supports international payments and multiple currencies.",
+                "tags": "international payments, multi-currency",
+                "paid": "Yes",
+                "answer": "Yes, Stripe supports international payments and can handle transactions in multiple currencies. You can accept payments from customers around the world and convert them to your local currency if needed. Stripe also supports local payment methods specific to different countries, which can help improve the payment experience for international customers."
+        },
+        {
+                "title": "What is Stripe Terminal?",
+                "category": "Stripe",
+                "description": "Stripe Terminal allows you to accept in-person payments with card readers.",
+                "tags": "in-person payments, card readers",
+                "paid": "Yes",
+                "answer": "Stripe Terminal is a solution for accepting in-person payments through card readers. It provides hardware options and software libraries to integrate physical payment processing into your business. Stripe Terminal supports various types of transactions including card-present payments, contactless payments, and even integrations with point-of-sale systems. It ensures that transactions are processed securely and integrates seamlessly with your Stripe account."
+        },
+        {
+                "title": "How do I handle Stripe payouts?",
+                "category": "Stripe",
+                "description": "Payouts are handled through the Stripe Dashboard or API.",
+                "tags": "payouts, Stripe Dashboard, API",
+                "paid": "Yes",
+                "answer": "Stripe payouts are the process of transferring funds from your Stripe account to your bank account. Payouts can be scheduled automatically or manually via the Stripe Dashboard. You can also use the Stripe API to manage payouts programmatically. The payout schedule can be customized based on your needs, such as daily, weekly, or monthly payouts. Stripe ensures that funds are transferred securely and efficiently."
+        },
+        {
+                "title": "What is Stripe's API for managing customers?",
+                "category": "Stripe",
+                "description": "Stripe provides an API to create, manage, and retrieve customer records.",
+                "tags": "customer management, API",
+                "paid": "Yes",
+                "answer": "Stripe's API for managing customers allows you to create and manage customer records, including storing payment methods, subscriptions, and other customer details. Using the Customers API, you can create new customers, update their information, and retrieve customer data for use in billing and reporting. This API integrates with other Stripe services, such as Subscriptions and Invoicing, to provide a comprehensive customer management solution."
+        },
+        {
+                "title": "How do I handle Stripe webhooks?",
+                "category": "Stripe",
+                "description": "Webhooks are used to receive notifications about events from Stripe.",
+                "tags": "webhooks, event notifications",
+                "paid": "Yes",
+                "answer": "Stripe webhooks are a way for Stripe to send notifications to your server about events that occur in your Stripe account, such as successful payments, refunds, or subscription changes. To handle webhooks, you need to set up a webhook endpoint on your server that listens for HTTP POST requests from Stripe. You then configure your webhook settings in the Stripe Dashboard to specify which events you want to receive notifications for. When an event occurs, Stripe sends a JSON payload to your endpoint, and you can process it to update your records or trigger actions."
+        },
+        {
+                "title": "What is Stripe's Dashboard?",
+                "category": "Stripe",
+                "description": "The Stripe Dashboard is a web interface for managing your Stripe account.",
+                "tags": "Stripe Dashboard, account management",
+                "paid": "Yes",
+                "answer": "The Stripe Dashboard is an online interface that allows you to manage your Stripe account and view transaction data. Through the Dashboard, you can access detailed information about payments, refunds, customers, and subscriptions. It provides tools for configuring payment settings, monitoring account activity, generating reports, and managing disputes. The Dashboard is a central hub for all your Stripe-related operations and insights."
+        },
+        {
+                "title": "How can I handle recurring billing with Stripe?",
+                "category": "Stripe",
+                "description": "Recurring billing is managed through Stripe Subscriptions.",
+                "tags": "recurring billing, subscriptions",
+                "paid": "Yes",
+                "answer": "Recurring billing in Stripe is managed through the Subscriptions API. You can create subscription plans with different pricing tiers and billing intervals, such as monthly or annually. Stripe automatically handles the billing cycle, generates invoices, and processes payments according to the subscription terms. You can also offer trial periods, handle subscription upgrades or downgrades, and manage cancellations. Stripe provides tools to track and manage these subscriptions via the Dashboard and API."
+        },
+        {
+                "title": "What is Stripe Elements?",
+                "category": "Stripe",
+                "description": "Stripe Elements are pre-built UI components for accepting payments.",
+                "tags": "Stripe Elements, UI components",
+                "paid": "Yes",
+                "answer": "Stripe Elements are pre-built UI components that make it easy to create custom payment forms for your website. These components include elements for collecting card details, such as card numbers, expiration dates, and CVC codes, in a secure and PCI-compliant manner. You can style these elements to match your website's design while ensuring a secure payment experience. Elements handle the complexities of securely collecting payment information and integrate seamlessly with your Stripe account."
+        },
+        {
+                "title": "How does Stripe handle chargebacks?",
+                "category": "Stripe",
+                "description": "Stripe provides tools to manage and dispute chargebacks.",
+                "tags": "chargebacks, disputes, management",
+                "paid": "Yes",
+                "answer": "Stripe helps manage chargebacks by providing detailed information and tools to respond to disputes. When a chargeback occurs, Stripe notifies you via the Dashboard, where you can view the details of the dispute and submit evidence to contest it. Stripe offers guidance on what evidence to provide and tracks the progress of the dispute. If you win the dispute, the chargeback amount is refunded to your account. Stripe charges a fee for each chargeback, which is deducted from your balance."
+        },
+        {
+                "title": "What is Stripe Checkout?",
+                "category": "Stripe",
+                "description": "Stripe Checkout is a hosted payment page for streamlined payments.",
+                "tags": "Stripe Checkout, hosted payments",
+                "paid": "Yes",
+                "answer": "Stripe Checkout is a pre-built, hosted payment page designed to simplify the payment process for customers. It provides a secure and user-friendly interface for handling payments, including support for various payment methods and currencies. Checkout is customizable with your branding and can be used for one-time payments or subscriptions. It handles the entire payment flow, from collecting payment details to processing the transaction, and integrates seamlessly with your Stripe account."
+        },
+        {
+                "title": "How do I handle invoices with Stripe?",
+                "category": "Stripe",
+                "description": "Invoices can be managed using Stripe's Invoicing API.",
+                "tags": "invoices, billing",
+                "paid": "Yes",
+                "answer": "Stripe's Invoicing API allows you to create, manage, and send invoices to your customers. You can generate invoices for one-time payments, recurring billing, or custom amounts. The API lets you specify invoice details, including line items, taxes, and due dates. Stripe can automatically send invoices via email and track their status. You can also use the Dashboard to view and manage invoices, apply payments, and handle any necessary adjustments or refunds."
+        },
+        {
+                "title": "What are Stripe’s fees?",
+                "category": "Stripe",
+                "description": "Stripe charges fees for processing payments and additional services.",
+                "tags": "fees, pricing, charges",
+                "paid": "Yes",
+                "answer": "Stripe's fees depend on the payment method and location. Typically, Stripe charges a percentage of the transaction amount plus a fixed fee per transaction. For example, in the U.S., the standard fee is 2.9% + 30¢ per successful card charge. Additional fees apply for international transactions, currency conversions, and certain features like advanced fraud protection or on-demand payouts. Detailed fee information is available on the Stripe website and can be reviewed in your account settings."
+        },
+        {
+                "title": "Can I use Stripe for mobile payments?",
+                "category": "Stripe",
+                "description": "Yes, Stripe supports mobile payments through its APIs and SDKs.",
+                "tags": "mobile payments, APIs, SDKs",
+                "paid": "Yes",
+                "answer": "Stripe supports mobile payments through its APIs and SDKs, which allow you to integrate payment processing into mobile applications. Stripe provides libraries for both iOS and Android, enabling you to handle payments securely within your app. You can use Stripe's mobile SDKs to accept card payments, digital wallets (like Apple Pay and Google Pay), and other payment methods. The SDKs ensure a smooth and secure payment experience for users on mobile devices."
+        },
+        {
+                "title": "How can I prevent fraud with Stripe?",
+                "category": "Stripe",
+                "description": "Stripe offers tools like Radar for fraud prevention.",
+                "tags": "fraud prevention, Stripe Radar",
+                "paid": "Yes",
+                "answer": "Stripe provides several tools to help prevent fraud, including Stripe Radar, which uses machine learning and customizable rules to detect and block suspicious transactions. Radar offers pre-built rules that can be adjusted to your needs, and you can create custom rules to address specific fraud patterns. Additionally, Stripe's risk analysis features provide insights into potentially risky transactions, helping you make informed decisions and reduce fraudulent activity."
+        },
+        {
+                "title": "What is Stripe's policy on data security?",
+                "category": "Stripe",
+                "description": "Stripe adheres to strict data security standards including PCI compliance.",
+                "tags": "data security, PCI compliance",
+                "paid": "Yes",
+                "answer": "Stripe adheres to rigorous data security standards, including PCI DSS (Payment Card Industry Data Security Standard) compliance. Stripe's infrastructure is designed to protect sensitive payment information through encryption and secure storage practices. When using Stripe's tools like Elements and Checkout, payment data is handled securely and does not touch your server, reducing your PCI scope. Stripe's security measures include regular audits and updates to ensure compliance with the latest security standards."
+        },
+        {
+                "title": "How do I integrate Stripe with a custom checkout page?",
+                "category": "Stripe",
+                "description": "Integrate Stripe using their APIs and Stripe Elements for a custom checkout.",
+                "tags": "custom checkout, integration, Stripe Elements",
+                "paid": "Yes",
+                "answer": "To integrate Stripe with a custom checkout page, you can use Stripe's APIs and Stripe Elements. Elements provides pre-built UI components for securely collecting payment details. You’ll need to include Stripe.js in your checkout page and use Elements to create and manage payment forms. Once the payment information is collected, use Stripe's API to handle the payment processing and manage transactions. This approach allows for a fully customized checkout experience while maintaining PCI compliance."
+        },
+        {
+                "title": "What is the difference between Stripe Elements and Stripe Checkout?",
+                "category": "Stripe",
+                "description": "Elements allows custom UI design, Checkout offers a pre-built payment page.",
+                "tags": "Stripe Elements, Stripe Checkout",
+                "paid": "Yes",
+                "answer": "Stripe Elements and Stripe Checkout are two different tools for handling payments. Stripe Elements are pre-built UI components that you can integrate into your custom payment forms, giving you control over the design and functionality of your checkout page. Stripe Checkout, on the other hand, is a hosted, pre-built payment page provided by Stripe that offers a streamlined and user-friendly payment experience with less customization but quick setup. Both options handle payment processing securely and comply with PCI standards."
+        },
+        {
+                "title": "How do I set up tax calculations with Stripe?",
+                "category": "Stripe",
+                "description": "Stripe provides tax calculation tools through Stripe Tax.",
+                "tags": "tax calculations, Stripe Tax",
+                "paid": "Yes",
+                "answer": "Stripe Tax is a tool that helps you automate tax calculations for transactions. By enabling Stripe Tax, you can automatically calculate and collect sales tax, VAT, and GST based on customer location and applicable tax laws. Stripe Tax integrates with your payment process, ensuring that taxes are applied correctly and included in invoices. You can configure tax settings in the Stripe Dashboard and review detailed reports on collected taxes."
+        },
+        {
+                "title": "How do I use Stripe for one-time payments?",
+                "category": "Stripe",
+                "description": "One-time payments can be processed using Stripe's Charges API.",
+                "tags": "one-time payments, Charges API",
+                "paid": "Yes",
+                "answer": "To process one-time payments with Stripe, you use the Charges API. You create a charge object with the payment details, including the amount, currency, and payment method. Once the charge is created, Stripe handles the payment processing and provides a response with the transaction status. You can also use Stripe Elements or Checkout to collect payment information securely. The Charges API allows you to manage various aspects of the payment, including capturing, refunding, and handling payment failures."
+        },
+        {
+                "title": "What is Stripe's approach to handling disputes?",
+                "category": "Stripe",
+                "description": "Stripe provides tools to manage and resolve payment disputes.",
+                "tags": "disputes, chargebacks, management",
+                "paid": "Yes",
+                "answer": "Stripe offers a streamlined process for managing payment disputes and chargebacks. When a dispute occurs, Stripe notifies you through the Dashboard and provides detailed information about the dispute. You can submit evidence to contest the dispute and track its status. Stripe also offers guidance on the types of evidence to provide. If the dispute is resolved in your favor, the funds are returned to your account. Stripe charges a fee for each dispute, which is deducted from your balance."
+        },
+        {
+                "title": "What is Stripe's Split Payments feature?",
+                "category": "Stripe",
+                "description": "Split Payments allow you to distribute funds between multiple parties.",
+                "tags": "split payments, distribution",
+                "paid": "Yes",
+                "answer": "Stripe's Split Payments feature enables you to distribute funds between multiple parties, such as in a marketplace or platform scenario. By using Stripe Connect, you can define how payments are split and transferred to different recipients. This feature supports various payout methods and configurations, allowing you to set up revenue sharing, commissions, or fee deductions. Split Payments help manage complex payment flows and ensure that funds are allocated according to your business model."
+        },
+        {
+                "title": "How do I set up Stripe for subscription billing?",
+                "category": "Stripe",
+                "description": "Subscription billing is managed using Stripe's Subscriptions API.",
+                "tags": "subscription billing, Subscriptions API",
+                "paid": "Yes",
+                "answer": "To set up subscription billing with Stripe, you use the Subscriptions API. You start by creating subscription plans with details such as pricing, billing intervals, and trial periods. Then, you create a subscription for a customer by associating them with a plan. Stripe handles recurring billing, invoicing, and payment collection automatically. You can manage subscriptions through the Dashboard or API, including handling upgrades, downgrades, and cancellations."
+        },
+        {
+                "title": "What is Stripe's support for digital wallets?",
+                "category": "Stripe",
+                "description": "Stripe supports various digital wallets including Apple Pay and Google Pay.",
+                "tags": "digital wallets, Apple Pay, Google Pay",
+                "paid": "Yes",
+                "answer": "Stripe supports a range of digital wallets, including Apple Pay, Google Pay, and Microsoft Pay. These digital wallets allow customers to make payments using their mobile devices or browsers, providing a convenient and secure payment method. Integration with these wallets is handled through Stripe's APIs and SDKs, enabling you to offer seamless payment experiences. Digital wallet payments can help reduce friction in the checkout process and potentially increase conversion rates."
+        },
+        {
+                "title": "How can I test Stripe integrations?",
+                "category": "Stripe",
+                "description": "Use Stripe's test mode and test card numbers to simulate transactions.",
+                "tags": "testing, test mode, test cards",
+                "paid": "Yes",
+                "answer": "To test Stripe integrations, you can use Stripe's test mode and test card numbers. In test mode, you can simulate transactions without processing real payments. Stripe provides a set of test card numbers that you can use to test various payment scenarios, such as successful payments, failed transactions, and disputes. You can enable test mode in the Stripe Dashboard and use the test API keys provided. This allows you to ensure your integration works correctly before going live."
+        },
+        {
+                "title": "What is Stripe's policy on handling chargeback fees?",
+                "category": "Stripe",
+                "description": "Stripe charges a fee for each chargeback and provides tools to manage them.",
+                "tags": "chargeback fees, chargeback management",
+                "paid": "Yes",
+                "answer": "Stripe charges a fee for each chargeback, which is deducted from your account balance. This fee is applied in addition to the refunded transaction amount. Stripe provides tools to help you manage chargebacks, including the ability to review dispute details and submit evidence to contest them. If a chargeback is resolved in your favor, the fee is typically refunded. Chargeback management tools in the Dashboard allow you to track and handle disputes effectively."
+        },
+        {
+                "title": "How does Stripe handle payment disputes?",
+                "category": "Stripe",
+                "description": "Stripe offers tools for managing and responding to payment disputes.",
+                "tags": "payment disputes, chargebacks",
+                "paid": "Yes",
+                "answer": "Stripe provides a set of tools to manage payment disputes and chargebacks. When a dispute occurs, Stripe notifies you through the Dashboard, where you can access details about the dispute and submit evidence to contest it. Stripe offers guidance on the types of evidence that are most effective for resolving disputes. You can track the status of disputes and receive updates on the outcome. If you win the dispute, the disputed amount is refunded to your account."
+        },
+        {
+                "title": "What are Stripe's reporting and analytics features?",
+                "category": "Stripe",
+                "description": "Stripe offers reporting and analytics tools to monitor transactions and performance.",
+                "tags": "reporting, analytics",
+                "paid": "Yes",
+                "answer": "Stripe provides robust reporting and analytics tools to help you monitor transactions and business performance. The Dashboard includes pre-built reports on payments, refunds, subscriptions, and more. You can also create custom reports and export data for further analysis. Stripe’s analytics features help you track key metrics such as revenue trends, customer behavior, and payment methods. These insights can assist you in making informed business decisions and optimizing your payment processes."
+        },
+        {
+                "title": "How do I handle customer information with Stripe?",
+                "category": "Stripe",
+                "description": "Manage customer information using the Customers API and Stripe Dashboard.",
+                "tags": "customer information, Customers API",
+                "paid": "Yes",
+                "answer": "You can handle customer information with Stripe using the Customers API and the Stripe Dashboard. The Customers API allows you to create, retrieve, update, and delete customer records, including storing payment methods, billing details, and metadata. The Dashboard provides a user-friendly interface to manage customer information, view transaction history, and track subscriptions. Ensuring the security and privacy of customer data is crucial, and Stripe’s tools are designed to handle this information securely and in compliance with data protection regulations."
+        },
+        {
+                "title": "What is Stripe's policy on handling refunds?",
+                "category": "Stripe",
+                "description": "Stripe processes refunds and has policies on handling them.",
+                "tags": "refunds, refund policy",
+                "paid": "Yes",
+                "answer": "Stripe processes refunds through its Dashboard or API, and its policy is to issue refunds within a few business days of the request. You can choose to refund the full or partial amount of a payment. Refunds are subject to Stripe's standard processing times, and Stripe may charge a fee for each refund processed. If a refund is issued, the original transaction fee is not refunded, but you can still manage and track all refund activity through the Stripe Dashboard."
+        },
+        {
+                "title": "How do I manage Stripe's API versions?",
+                "category": "Stripe",
+                "description": "Stripe allows you to specify and manage API versions for compatibility.",
+                "tags": "API versions, version management",
+                "paid": "Yes",
+                "answer": "Stripe allows you to manage API versions to ensure compatibility with your application. You can specify the API version you want to use in your API requests by setting the `Stripe-Version` header. This feature enables you to maintain compatibility with your existing integrations while taking advantage of new features and improvements. You can view and update the API version used by your account in the Stripe Dashboard under the 'API' settings section."
+        },
+        {
+                "title": "What is Stripe's policy on account verification?",
+                "category": "Stripe",
+                "description": "Stripe requires verification for account activation and compliance.",
+                "tags": "account verification, compliance",
+                "paid": "Yes",
+                "answer": "Stripe requires account verification to activate your account and ensure compliance with financial regulations. This process typically involves submitting documentation to verify your business and personal details, such as a business registration, bank account information, and identification documents. Verification helps Stripe prevent fraud and ensure the security of transactions. The verification process is initiated when you first set up your Stripe account and can be managed through the Stripe Dashboard."
+        },
+        {
+                "title": "How does Stripe support international payments?",
+                "category": "Stripe",
+                "description": "Stripe supports international payments in multiple currencies and payment methods.",
+                "tags": "international payments, currencies",
+                "paid": "Yes",
+                "answer": "Stripe supports international payments by allowing you to process transactions in multiple currencies and offer various international payment methods. You can accept payments from customers worldwide and handle currency conversions as needed. Stripe's platform is designed to handle cross-border transactions securely, and you can manage international payments through the Dashboard or API. Stripe also supports localized payment methods such as Alipay, SEPA Direct Debit, and more, depending on the region."
+        },
+        {
+                "title": "What is Stripe's approach to handling subscriptions?",
+                "category": "Stripe",
+                "description": "Stripe manages subscriptions through the Subscriptions API with flexible billing options.",
+                "tags": "subscriptions, billing",
+                "paid": "Yes",
+                "answer": "Stripe manages subscriptions using the Subscriptions API, which allows you to create and manage recurring billing plans with various billing intervals and pricing options. You can set up subscription plans with different features, such as trial periods or usage-based billing. The API handles automatic billing, invoicing, and payment processing for subscriptions. You can also use the Dashboard to manage and track subscriptions, handle upgrades or downgrades, and view detailed subscription metrics."
+        },
+        {
+                "title": "How can I integrate Stripe with e-commerce platforms?",
+                "category": "Stripe",
+                "description": "Stripe integrates with popular e-commerce platforms through plugins and APIs.",
+                "tags": "e-commerce integration, plugins, APIs",
+                "paid": "Yes",
+                "answer": "Stripe integrates with various e-commerce platforms through plugins, extensions, and APIs. Many popular e-commerce platforms like Shopify, WooCommerce, and Magento offer Stripe plugins that simplify the integration process. These plugins handle payment processing and ensure secure transactions. For custom integrations, you can use Stripe's APIs to connect your e-commerce site with Stripe's payment processing services. Stripe provides detailed documentation and support to help you integrate with different e-commerce systems effectively."
+        },
+        {
+                "title": "What are Stripe’s security features?",
+                "category": "Stripe",
+                "description": "Stripe offers robust security features including encryption and fraud prevention.",
+                "tags": "security, fraud prevention, encryption",
+                "paid": "Yes",
+                "answer": "Stripe offers a comprehensive set of security features to protect transactions and customer data. Key security features include encryption of payment information, PCI compliance, and advanced fraud prevention tools such as Stripe Radar. Radar uses machine learning to detect and prevent fraudulent transactions, while encryption ensures that sensitive data is securely transmitted and stored. Stripe's security infrastructure is regularly audited to maintain high standards and protect against potential threats."
+        },
+        {
+                "title": "How do I handle multi-currency payments with Stripe?",
+                "category": "Stripe",
+                "description": "Stripe supports multi-currency payments, allowing transactions in various currencies.",
+                "tags": "multi-currency, payments",
+                "paid": "Yes",
+                "answer": "Stripe supports multi-currency payments by allowing you to accept transactions in multiple currencies. You can configure your account to handle different currencies and Stripe automatically converts and processes payments based on the currency of the transaction. This feature enables you to cater to international customers and manage payments in their preferred currency. You can view and manage multi-currency transactions through the Stripe Dashboard, which provides details on exchange rates and conversion fees."
+        },
+        {
+                "title": "What is Stripe's policy on account holds?",
+                "category": "Stripe",
+                "description": "Stripe may place holds on accounts for security or compliance reasons.",
+                "tags": "account holds, security, compliance",
+                "paid": "Yes",
+                "answer": "Stripe may place holds on accounts for various reasons, such as security concerns, compliance issues, or unusual account activity. A hold may prevent transactions from being processed or funds from being disbursed. If your account is placed on hold, Stripe will notify you with details on the reason for the hold and the steps needed to resolve it. To address a hold, you may need to provide additional information or documentation to meet Stripe's security and compliance requirements."
+        },
+        {
+                "title": "How does Stripe handle payment disputes?",
+                "category": "Stripe",
+                "description": "Stripe provides a structured process for managing and resolving payment disputes.",
+                "tags": "payment disputes, chargebacks",
+                "paid": "Yes",
+                "answer": "Stripe offers a structured process for managing and resolving payment disputes. When a dispute arises, Stripe sends a notification through the Dashboard, where you can review the details and provide evidence to contest the dispute. Stripe offers guidance on effective evidence submission and tracks the progress of the dispute. If you win the dispute, the funds are returned to your account. Dispute management tools in the Dashboard allow you to monitor and handle disputes efficiently."
+        },
+        {
+                "title": "What is Stripe's policy on API usage limits?",
+                "category": "Stripe",
+                "description": "Stripe has API rate limits to ensure fair usage and system performance.",
+                "tags": "API limits, rate limits",
+                "paid": "Yes",
+                "answer": "Stripe imposes API rate limits to ensure fair usage and maintain system performance. These limits apply to the number of requests you can make to Stripe's APIs within a given time frame. If you exceed these limits, Stripe may temporarily throttle your API access or return error responses. To avoid hitting rate limits, you can optimize your API usage and implement retries with exponential backoff. Stripe provides documentation on rate limits and best practices for managing API usage effectively."
+        }
+]

@@ -1,0 +1,7 @@
+.admin_sidebar{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: var(--th2);
+    margin-bottom: 5px;
+}

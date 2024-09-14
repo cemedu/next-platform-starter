@@ -1,0 +1,2026 @@
+[
+        {
+                "title": "Reverse a Linked List",
+                "category": "DSA",
+                "description": "Reverse a singly linked list in place.",
+                "tags": "Linked List, Reversal, Algorithm",
+                "paid": "Yes",
+                "answer": "To reverse a singly linked list, iterate through the list, and for each node, adjust its next pointer to the previous node. Keep track of the previous node as you traverse. For example, if the list is 1 -> 2 -> 3, reversing it will result in 3 -> 2 -> 1."
+        },
+        {
+                "title": "Find the Middle Element of a Linked List",
+                "category": "DSA",
+                "description": "Find the middle element of a singly linked list.",
+                "tags": "Linked List, Middle Element, Algorithm",
+                "paid": "Yes",
+                "answer": "To find the middle element of a linked list, use two pointers: slow and fast. Move slow by one step and fast by two steps. When fast reaches the end, slow will be at the middle. For example, in the list 1 -> 2 -> 3 -> 4 -> 5, the middle is 3."
+        },
+        {
+                "title": "Detect a Cycle in a Linked List",
+                "category": "DSA",
+                "description": "Determine if a linked list contains a cycle.",
+                "tags": "Linked List, Cycle Detection, Algorithm",
+                "paid": "Yes",
+                "answer": "To detect a cycle, use Floyd's Cycle-Finding Algorithm (Tortoise and Hare). Use two pointers: slow and fast. Move slow by one step and fast by two steps. If they meet, there is a cycle. Otherwise, if fast reaches the end, there is no cycle. Example: 1 -> 2 -> 3 -> 2 (cycle)."
+        },
+        {
+                "title": "Implement a Stack Using Arrays",
+                "category": "DSA",
+                "description": "Create a stack data structure using an array.",
+                "tags": "Stack, Array, Data Structure",
+                "paid": "Yes",
+                "answer": "A stack can be implemented using an array with two primary operations: push (to add an element) and pop (to remove an element). Use an index to keep track of the top of the stack. For example, push 10 and 20 to an empty stack results in [10, 20] with 20 as the top."
+        },
+        {
+                "title": "Implement a Queue Using Arrays",
+                "category": "DSA",
+                "description": "Create a queue data structure using an array.",
+                "tags": "Queue, Array, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a queue using an array with enqueue (to add an element) and dequeue (to remove an element) operations. Use two indices: front and rear. For example, enqueue 1, 2, 3 results in [1, 2, 3] with 1 at the front and 3 at the rear."
+        },
+        {
+                "title": "Check for Balanced Parentheses",
+                "category": "DSA",
+                "description": "Determine if parentheses in a string are balanced.",
+                "tags": "Stack, Parentheses, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a stack to check if parentheses are balanced. Push each opening parenthesis onto the stack and pop for each closing parenthesis. If the stack is empty at the end, parentheses are balanced. For example, '(a + b) * (c / d)' is balanced, but '((a + b) * c' is not."
+        },
+        {
+                "title": "Find the Lowest Common Ancestor in a Binary Tree",
+                "category": "DSA",
+                "description": "Find the lowest common ancestor (LCA) of two nodes in a binary tree.",
+                "tags": "Binary Tree, LCA, Algorithm",
+                "paid": "Yes",
+                "answer": "To find the LCA, recursively traverse the tree. If the current node is one of the nodes, return it. If both nodes are found in left and right subtrees, the current node is the LCA. For example, in a tree with root 3, left 5, right 1, and nodes 5 and 1, LCA is 3."
+        },
+        {
+                "title": "Implement a Binary Search Tree",
+                "category": "DSA",
+                "description": "Create a binary search tree (BST) with insertion and search operations.",
+                "tags": "Binary Search Tree, BST, Data Structure",
+                "paid": "Yes",
+                "answer": "A BST is a tree where left children are less than the parent and right children are greater. Implement insert and search functions to maintain and query the tree. For example, inserting 10 into an empty BST results in a tree with 10 as the root."
+        },
+        {
+                "title": "Find the Height of a Binary Tree",
+                "category": "DSA",
+                "description": "Calculate the height of a binary tree.",
+                "tags": "Binary Tree, Height, Algorithm",
+                "paid": "Yes",
+                "answer": "To find the height of a binary tree, recursively compute the height of left and right subtrees and take the maximum of the two, adding one for the current node. For example, in a tree with height 2 and node counts [1, 2, 3, 4], the height is 3."
+        },
+        {
+                "title": "Check if a Binary Tree is Balanced",
+                "category": "DSA",
+                "description": "Determine if a binary tree is balanced.",
+                "tags": "Binary Tree, Balanced Tree, Algorithm",
+                "paid": "Yes",
+                "answer": "A binary tree is balanced if the height difference between left and right subtrees is no more than 1 for every node. Recursively check each node's subtrees' heights and verify the balance condition. For example, a tree with root 1, left [2], right [3] is balanced."
+        },
+        {
+                "title": "Find the Kth Smallest Element in a BST",
+                "category": "DSA",
+                "description": "Find the Kth smallest element in a binary search tree.",
+                "tags": "Binary Search Tree, Kth Smallest, Algorithm",
+                "paid": "Yes",
+                "answer": "Perform an in-order traversal of the BST to retrieve elements in sorted order. The Kth element in this list is the Kth smallest. For example, in a BST with elements [1, 2, 3, 4, 5], the 3rd smallest element is 3."
+        },
+        {
+                "title": "Level Order Traversal of a Binary Tree",
+                "category": "DSA",
+                "description": "Perform a level order traversal of a binary tree.",
+                "tags": "Binary Tree, Level Order, Traversal",
+                "paid": "Yes",
+                "answer": "Use a queue to perform level order traversal. Enqueue the root, then repeatedly dequeue a node, visit it, and enqueue its children. For example, in a tree with root 1, left 2, and right 3, the level order traversal is [1, 2, 3]."
+        },
+        {
+                "title": "Find the Diameter of a Binary Tree",
+                "category": "DSA",
+                "description": "Calculate the diameter of a binary tree.",
+                "tags": "Binary Tree, Diameter, Algorithm",
+                "paid": "Yes",
+                "answer": "The diameter of a binary tree is the longest path between any two nodes. Compute it by finding the maximum of the diameter at left and right subtrees plus 1 for the current node. For example, a tree with nodes 1 -> 2 -> 3 has a diameter of 3."
+        },
+        {
+                "title": "Convert a Binary Search Tree to a Doubly Linked List",
+                "category": "DSA",
+                "description": "Convert a BST to a doubly linked list in-place.",
+                "tags": "Binary Search Tree, Doubly Linked List, Conversion",
+                "paid": "Yes",
+                "answer": "Use an in-order traversal to create the doubly linked list. Link nodes such that each node's right pointer points to the next node in the list and left pointer to the previous one. For example, BST with nodes 1, 2, 3 becomes a list 1 <-> 2 <-> 3."
+        },
+        {
+                "title": "Find the Union of Two Sorted Arrays",
+                "category": "DSA",
+                "description": "Find the union of two sorted arrays.",
+                "tags": "Array, Union, Sorted Arrays",
+                "paid": "Yes",
+                "answer": "To find the union, use two pointers to traverse both arrays. Add elements to the result if they are not duplicates. For example, the union of [1, 2, 4] and [2, 3, 5] is [1, 2, 3, 4, 5]."
+        },
+        {
+                "title": "Find the Intersection of Two Sorted Arrays",
+                "category": "DSA",
+                "description": "Find the intersection of two sorted arrays.",
+                "tags": "Array, Intersection, Sorted Arrays",
+                "paid": "Yes",
+                "answer": "To find the intersection, use two pointers to traverse both arrays. Add elements to the result if they match. For example, the intersection of [1, 2, 4] and [2, 3, 4] is [2, 4]."
+        },
+        {
+                "title": "Find the Majority Element",
+                "category": "DSA",
+                "description": "Determine the majority element in an array (element appearing more than n/2 times).",
+                "tags": "Array, Majority Element, Algorithm",
+                "paid": "Yes",
+                "answer": "Use the Boyer-Moore Voting Algorithm. Iterate through the array maintaining a candidate and count. Update the candidate when the count is zero. For example, in [3, 3, 4, 2, 4, 4, 2, 4, 4], the majority element is 4."
+        },
+        {
+                "title": "Find the Longest Common Prefix",
+                "category": "DSA",
+                "description": "Find the longest common prefix string amongst an array of strings.",
+                "tags": "String, Prefix, Algorithm",
+                "paid": "Yes",
+                "answer": "Sort the array and compare the first and last strings to find the common prefix. For example, for ['flower', 'flow', 'flight'], the longest common prefix is 'fl'."
+        },
+        {
+                "title": "Check if a String is a Palindrome",
+                "category": "DSA",
+                "description": "Determine if a given string is a palindrome.",
+                "tags": "String, Palindrome, Algorithm",
+                "paid": "Yes",
+                "answer": "Check if the string reads the same backward as forward by comparing characters from the start and end moving towards the center. For example, 'racecar' is a palindrome while 'hello' is not."
+        },
+        {
+                "title": "Implement Merge Sort",
+                "category": "DSA",
+                "description": "Implement the merge sort algorithm for sorting an array.",
+                "tags": "Sorting, Merge Sort, Algorithm",
+                "paid": "Yes",
+                "answer": "Merge sort is a divide-and-conquer algorithm. Divide the array into halves, sort each half, and merge them. For example, sorting [3, 1, 4, 1, 5] results in [1, 1, 3, 4, 5]."
+        },
+        {
+                "title": "Find the Longest Substring Without Repeating Characters",
+                "category": "DSA",
+                "description": "Find the length of the longest substring without repeating characters.",
+                "tags": "String, Substring, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a sliding window approach with two pointers to keep track of the current substring. Update the window size when duplicates are found. For example, in 'abcabcbb', the longest substring without repeating is 'abc' with length 3."
+        },
+        {
+                "title": "Find All Permutations of a String",
+                "category": "DSA",
+                "description": "Generate all permutations of a string.",
+                "tags": "String, Permutations, Algorithm",
+                "paid": "Yes",
+                "answer": "Use recursion to generate permutations by swapping each character and recursively permuting the remaining string. For example, permutations of 'abc' include 'abc', 'acb', 'bac', 'bca', 'cab', 'cba'."
+        },
+        {
+                "title": "Find the Longest Increasing Subsequence",
+                "category": "DSA",
+                "description": "Determine the length of the longest increasing subsequence in an array.",
+                "tags": "Array, Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to build a table where each entry represents the length of the longest increasing subsequence ending at that index. For example, in [10, 9, 2, 5, 3, 7, 101], the longest increasing subsequence is [2, 3, 7, 101] with length 4."
+        },
+        {
+                "title": "Find the Median of Two Sorted Arrays",
+                "category": "DSA",
+                "description": "Find the median of two sorted arrays.",
+                "tags": "Array, Median, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a binary search approach to find the median efficiently. Merge the arrays conceptually and find the middle element(s). For example, the median of [1, 3] and [2] is 2.0."
+        },
+        {
+                "title": "Rotate an Array",
+                "category": "DSA",
+                "description": "Rotate an array to the right by a given number of steps.",
+                "tags": "Array, Rotation, Algorithm",
+                "paid": "Yes",
+                "answer": "To rotate an array, reverse the entire array, then reverse the first k elements and the remaining elements. For example, rotating [1, 2, 3, 4, 5, 6, 7] by 3 steps results in [5, 6, 7, 1, 2, 3, 4]."
+        },
+        {
+                "title": "Find the Missing Number in an Array",
+                "category": "DSA",
+                "description": "Find the missing number in a given array containing numbers from 1 to n.",
+                "tags": "Array, Missing Number, Algorithm",
+                "paid": "Yes",
+                "answer": "Calculate the expected sum of numbers from 1 to n using the formula n(n + 1) / 2 and subtract the actual sum of the array elements. The difference is the missing number. For example, in [1, 2, 4, 5, 6], the missing number is 3."
+        },
+        {
+                "title": "Find the First Non-Repeating Character in a String",
+                "category": "DSA",
+                "description": "Identify the first character in a string that does not repeat.",
+                "tags": "String, Non-Repeating Character, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a hash map to count the frequency of each character, then iterate through the string to find the first character with a count of 1. For example, in 'swiss', the first non-repeating character is 'w'."
+        },
+        {
+                "title": "Find the Longest Palindromic Substring",
+                "category": "DSA",
+                "description": "Find the longest palindromic substring in a given string.",
+                "tags": "String, Palindrome, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a dynamic programming approach to build a table that tracks palindromic substrings. For example, in 'babad', the longest palindromic substring is 'bab' or 'aba'."
+        },
+        {
+                "title": "Implement Binary Search",
+                "category": "DSA",
+                "description": "Perform a binary search on a sorted array.",
+                "tags": "Array, Binary Search, Algorithm",
+                "paid": "Yes",
+                "answer": "Binary search divides the search interval in half. Start with the middle element; if it matches the target, return it. Otherwise, adjust the search range to either the left or right half based on comparison. For example, searching for 4 in [1, 2, 3, 4, 5] returns index 3."
+        },
+        {
+                "title": "Implement Depth-First Search",
+                "category": "DSA",
+                "description": "Implement depth-first search (DFS) for a graph.",
+                "tags": "Graph, DFS, Algorithm",
+                "paid": "Yes",
+                "answer": "DFS explores as far as possible along each branch before backtracking. Use a stack or recursion to keep track of nodes. For example, in a graph with nodes 1 -> 2 -> 3, DFS from 1 explores 1, 2, and then 3."
+        },
+        {
+                "title": "Implement Breadth-First Search",
+                "category": "DSA",
+                "description": "Implement breadth-first search (BFS) for a graph.",
+                "tags": "Graph, BFS, Algorithm",
+                "paid": "Yes",
+                "answer": "BFS explores all neighbors of a node before moving to the next level. Use a queue to keep track of nodes. For example, in a graph with nodes 1 -> 2 -> 3, BFS from 1 explores 1, then 2 and 3."
+        },
+        {
+                "title": "Detect a Cycle in a Directed Graph",
+                "category": "DSA",
+                "description": "Determine if a directed graph contains a cycle.",
+                "tags": "Graph, Cycle Detection, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Depth-First Search with a tracking mechanism for visited nodes. If a node is revisited during the same DFS traversal, a cycle exists. For example, in a graph with edges 1 -> 2 -> 3 -> 1, a cycle is detected."
+        },
+        {
+                "title": "Implement a Priority Queue",
+                "category": "DSA",
+                "description": "Create a priority queue using a heap.",
+                "tags": "Heap, Priority Queue, Data Structure",
+                "paid": "Yes",
+                "answer": "A priority queue can be implemented using a heap where the highest (or lowest) priority element is always at the top. Operations include insert and extract-max (or extract-min). For example, in a max-heap, inserting 5 and 10 results in [10, 5]."
+        },
+        {
+                "title": "Find the Longest Common Subsequence",
+                "category": "DSA",
+                "description": "Determine the longest common subsequence between two strings.",
+                "tags": "String, Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to build a table where each cell represents the length of the longest common subsequence up to those indices. For example, for 'abcde' and 'aceb', the longest common subsequence is 'ace' with length 3."
+        },
+        {
+                "title": "Find the Maximum Subarray Sum",
+                "category": "DSA",
+                "description": "Find the maximum sum of a contiguous subarray.",
+                "tags": "Array, Subarray, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Kadane's Algorithm to find the maximum sum. Initialize the maximum sum and current sum as the first element, then iterate through the array updating these values. For example, for [1, -2, 3, 4, -1], the maximum subarray sum is 7."
+        },
+        {
+                "title": "Find the Kth Largest Element in an Array",
+                "category": "DSA",
+                "description": "Find the Kth largest element in an unsorted array.",
+                "tags": "Array, Kth Largest, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a min-heap of size K to keep track of the K largest elements. For each element, if it is larger than the smallest element in the heap, replace the smallest. For example, in [3, 2, 1, 5, 6, 4], the 2nd largest element is 5."
+        },
+        {
+                "title": "Find the Intersection of Two Linked Lists",
+                "category": "DSA",
+                "description": "Find the node where two linked lists intersect.",
+                "tags": "Linked List, Intersection, Algorithm",
+                "paid": "Yes",
+                "answer": "Use two pointers to traverse the linked lists. When one pointer reaches the end, move it to the start of the other list. Continue until both pointers meet. For example, if lists intersect at node with value 8, both pointers will eventually reach this node."
+        },
+        {
+                "title": "Find the Longest Path in a Directed Acyclic Graph",
+                "category": "DSA",
+                "description": "Find the longest path in a directed acyclic graph (DAG).",
+                "tags": "Graph, DAG, Longest Path",
+                "paid": "Yes",
+                "answer": "Use topological sorting to order nodes and then apply dynamic programming to find the longest path. For example, in a DAG with edges 1 -> 2, 1 -> 3, 2 -> 4, 3 -> 4, the longest path is 1 -> 2 -> 4 or 1 -> 3 -> 4."
+        },
+        {
+                "title": "Find All Anagrams in a String",
+                "category": "DSA",
+                "description": "Find all start indices of anagrams of a pattern in a string.",
+                "tags": "String, Anagrams, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a sliding window and hash maps to compare character counts. Slide the window across the string and check if the counts match. For example, in 'cbaebabacd' with pattern 'abc', the start indices of anagrams are 0 and 6."
+        },
+        {
+                "title": "Find the Shortest Path in an Unweighted Graph",
+                "category": "DSA",
+                "description": "Find the shortest path in an unweighted graph using BFS.",
+                "tags": "Graph, Shortest Path, BFS",
+                "paid": "Yes",
+                "answer": "Use BFS to explore the shortest path in an unweighted graph. Enqueue the starting node, then visit each neighbor while updating distances. For example, in a graph with edges (1 -> 2), (2 -> 3), (1 -> 3), the shortest path from 1 to 3 is 1 -> 3."
+        },
+        {
+                "title": "Determine if a Binary Tree is a Subtree of Another Tree",
+                "category": "DSA",
+                "description": "Check if one binary tree is a subtree of another binary tree.",
+                "tags": "Binary Tree, Subtree, Algorithm",
+                "paid": "Yes",
+                "answer": "Perform a tree traversal on the larger tree to find a matching root for the smaller tree. Verify subtree equality by comparing nodes recursively. For example, if tree A has a subtree that matches tree B, B is a subtree of A."
+        },
+        {
+                "title": "Find the Largest Rectangle in a Histogram",
+                "category": "DSA",
+                "description": "Find the largest rectangle area in a histogram.",
+                "tags": "Histogram, Largest Rectangle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a stack to keep track of histogram bars. Compute the area by maintaining the height of the bars and their indices. For example, for histogram [2, 1, 5, 6, 2, 3], the largest rectangle area is 10."
+        },
+        {
+                "title": "Find All Unique Subsets of a Set",
+                "category": "DSA",
+                "description": "Generate all unique subsets of a set.",
+                "tags": "Subset, Algorithm, Combination",
+                "paid": "Yes",
+                "answer": "Use a recursive approach or backtracking to generate subsets. Ensure each subset is unique by avoiding duplicates. For example, for set [1, 2], the unique subsets are [], [1], [2], and [1, 2]."
+        },
+        {
+                "title": "Find the Shortest Path in a Weighted Graph",
+                "category": "DSA",
+                "description": "Find the shortest path in a weighted graph using Dijkstra's algorithm.",
+                "tags": "Graph, Dijkstra, Shortest Path",
+                "paid": "Yes",
+                "answer": "Use Dijkstra's algorithm with a priority queue to find the shortest path from a source node. Update the shortest distance to each neighboring node and repeat until all nodes are processed. For example, in a graph with weights, Dijkstra finds the shortest path to each node."
+        },
+        {
+                "title": "Find the Longest Prefix Suffix (LPS) Array",
+                "category": "DSA",
+                "description": "Compute the LPS array for the KMP pattern matching algorithm.",
+                "tags": "String, KMP Algorithm, LPS Array",
+                "paid": "Yes",
+                "answer": "The LPS array is used in the KMP algorithm to skip unnecessary comparisons. Compute it by iterating through the pattern and keeping track of the longest prefix which is also a suffix. For example, the LPS array for 'ababcab' is [0, 0, 1, 2, 3, 4, 5]."
+        },
+        {
+                "title": "Find the Missing Number in an Array of 1 to n+1",
+                "category": "DSA",
+                "description": "Find the missing number in an array containing numbers from 1 to n+1.",
+                "tags": "Array, Missing Number, Algorithm",
+                "paid": "Yes",
+                "answer": "Calculate the expected sum of numbers from 1 to n+1 using the formula (n+1)*(n+2)/2 and subtract the actual sum of array elements. The difference is the missing number. For example, in [1, 2, 4, 5], the missing number is 3."
+        },
+        {
+                "title": "Find the Next Greater Element",
+                "category": "DSA",
+                "description": "Find the next greater element for each element in an array.",
+                "tags": "Array, Next Greater Element, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a stack to keep track of elements. Traverse the array from right to left and use the stack to find the next greater element. For example, for [4, 3, 2, 5], the next greater elements are [5, 5, 5, -1]."
+        },
+        {
+                "title": "Implement a Trie",
+                "category": "DSA",
+                "description": "Create a Trie data structure for efficient prefix matching.",
+                "tags": "Trie, Data Structure, Prefix Matching",
+                "paid": "Yes",
+                "answer": "A Trie is a tree-like data structure used to store strings. Each node represents a character. Insert words by adding nodes and link characters. For example, inserting 'cat' and 'car' results in a Trie where 'c' leads to 'a', and 'a' leads to 't' or 'r'."
+        },
+        {
+                "title": "Find the Maximum Product Subarray",
+                "category": "DSA",
+                "description": "Find the maximum product of a contiguous subarray.",
+                "tags": "Array, Subarray, Product",
+                "paid": "Yes",
+                "answer": "Use a dynamic approach to keep track of maximum and minimum product ending at each index, as negative numbers can change the sign. For example, for [2, 3, -2, 4], the maximum product subarray is [2, 3] with product 6."
+        },
+        {
+                "title": "Reverse a Linked List",
+                "category": "DSA",
+                "description": "Reverse a singly linked list.",
+                "tags": "Linked List, Reversal, Algorithm",
+                "paid": "Yes",
+                "answer": "Iterate through the linked list while reversing the direction of pointers. Maintain a previous node, a current node, and a next node. For example, reversing a list 1 -> 2 -> 3 results in 3 -> 2 -> 1."
+        },
+        {
+                "title": "Find the Peak Element",
+                "category": "DSA",
+                "description": "Find a peak element in an array where an element is greater than its neighbors.",
+                "tags": "Array, Peak Element, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a binary search approach. Compare the middle element with its neighbors; if it’s greater than both, it’s a peak. Otherwise, move towards the side where neighbors are greater. For example, in [1, 3, 20, 4, 1], 20 is a peak."
+        },
+        {
+                "title": "Find the Minimum Depth of a Binary Tree",
+                "category": "DSA",
+                "description": "Calculate the minimum depth of a binary tree.",
+                "tags": "Binary Tree, Depth, Algorithm",
+                "paid": "Yes",
+                "answer": "Use BFS to find the shortest path from the root to the nearest leaf node. For example, in a tree where leaf nodes are at different depths, BFS will find the minimum depth to the closest leaf."
+        },
+        {
+                "title": "Find the Maximum Depth of a Binary Tree",
+                "category": "DSA",
+                "description": "Calculate the maximum depth of a binary tree.",
+                "tags": "Binary Tree, Depth, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS to explore each path from the root to the leaf nodes, tracking the depth. The maximum depth is the length of the longest path. For example, in a tree with a height of 3, the maximum depth is 3."
+        },
+        {
+                "title": "Implement an LRU Cache",
+                "category": "DSA",
+                "description": "Create a Least Recently Used (LRU) cache using a combination of hash map and doubly linked list.",
+                "tags": "Cache, LRU, Data Structure",
+                "paid": "Yes",
+                "answer": "Use a hash map for fast access and a doubly linked list to maintain the order of use. The most recently used item is moved to the head of the list, and the least recently used is removed when the cache exceeds its capacity."
+        },
+        {
+                "title": "Merge Two Sorted Lists",
+                "category": "DSA",
+                "description": "Merge two sorted linked lists into one sorted linked list.",
+                "tags": "Linked List, Merge, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a dummy node and a pointer to build the merged list by comparing nodes from both lists. For example, merging 1 -> 2 -> 4 and 1 -> 3 -> 4 results in 1 -> 1 -> 2 -> 3 -> 4 -> 4."
+        },
+        {
+                "title": "Find the Maximum Area of Island",
+                "category": "DSA",
+                "description": "Find the maximum area of an island in a 2D grid.",
+                "tags": "Grid, Island, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS or BFS to explore the area of each island. Track the maximum area encountered. For example, in a grid with several islands, the largest area might be from a 3x3 island, having area 9."
+        },
+        {
+                "title": "Find the Closest Pair of Points",
+                "category": "DSA",
+                "description": "Determine the closest pair of points in a 2D plane.",
+                "tags": "Geometry, Closest Pair, Algorithm",
+                "paid": "Yes",
+                "answer": "Use the divide-and-conquer approach to find the closest pair efficiently. Sort points, recursively divide, and then check cross-boundary points. For example, for points (1, 1) and (2, 2), the closest pair distance is approximately 1.41."
+        },
+        {
+                "title": "Determine if a Graph is Bipartite",
+                "category": "DSA",
+                "description": "Check if a graph can be colored using two colors without adjacent nodes having the same color.",
+                "tags": "Graph, Bipartite, Algorithm",
+                "paid": "Yes",
+                "answer": "Use BFS or DFS to color nodes and check if adjacent nodes have different colors. For example, a graph with edges (1, 2), (2, 3), and (1, 3) is not bipartite, as nodes 1 and 3 are connected."
+        },
+        {
+                "title": "Find the Longest Consecutive Sequence",
+                "category": "DSA",
+                "description": "Find the length of the longest consecutive elements sequence.",
+                "tags": "Array, Consecutive Sequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a set to store elements and check each number for the start of a sequence. Track the length of each sequence. For example, in [100, 4, 200, 1, 3, 2], the longest consecutive sequence is 4."
+        },
+        {
+                "title": "Find the Kth Smallest Element in a BST",
+                "category": "DSA",
+                "description": "Find the Kth smallest element in a binary search tree (BST).",
+                "tags": "Binary Search Tree, Kth Smallest, Algorithm",
+                "paid": "Yes",
+                "answer": "Use an in-order traversal to retrieve elements in sorted order and find the Kth element. For example, in a BST with elements [3, 1, 4, 2], the 2nd smallest element is 2."
+        },
+        {
+                "title": "Find the Number of Islands",
+                "category": "DSA",
+                "description": "Count the number of islands in a 2D grid.",
+                "tags": "Grid, Islands, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS or BFS to explore each island in the grid. Mark visited cells to avoid recounting. For example, in a grid with several islands, if there are 3 distinct island groups, the count is 3."
+        },
+        {
+                "title": "Determine if Two Strings Are Anagrams",
+                "category": "DSA",
+                "description": "Check if two strings are anagrams of each other.",
+                "tags": "String, Anagrams, Algorithm",
+                "paid": "Yes",
+                "answer": "Sort both strings and compare them or use a frequency counter to check if both strings have the same character counts. For example, 'listen' and 'silent' are anagrams."
+        },
+        {
+                "title": "Implement an AVL Tree",
+                "category": "DSA",
+                "description": "Implement an AVL tree with rotations to maintain balance.",
+                "tags": "AVL Tree, Balanced Tree, Data Structure",
+                "paid": "Yes",
+                "answer": "An AVL tree is a self-balancing binary search tree. Implement rotations (left, right, left-right, right-left) to maintain balance after insertions and deletions. For example, after inserting nodes, perform rotations to keep tree height balanced."
+        },
+        {
+                "title": "Implement Depth-First Search for a Graph",
+                "category": "DSA",
+                "description": "Perform depth-first search (DFS) on a graph represented by adjacency lists.",
+                "tags": "Graph, DFS, Algorithm",
+                "paid": "Yes",
+                "answer": "DFS explores nodes by visiting one node's neighbors before moving to the next. Use a stack or recursion. For example, starting from node A in a graph with edges A -> B, B -> C, DFS might visit A, B, then C."
+        },
+        {
+                "title": "Implement a Red-Black Tree",
+                "category": "DSA",
+                "description": "Implement a Red-Black Tree with balancing operations.",
+                "tags": "Red-Black Tree, Balanced Tree, Data Structure",
+                "paid": "Yes",
+                "answer": "A Red-Black Tree is a self-balancing binary search tree with specific properties for node color and balancing. Implement rotations and color changes to maintain balance. For example, after insertion, perform rotations and color flips to preserve tree properties."
+        },
+        {
+                "title": "Find the Median of a Stream of Integers",
+                "category": "DSA",
+                "description": "Design a data structure to find the median from a stream of integers.",
+                "tags": "Data Structure, Median, Stream",
+                "paid": "Yes",
+                "answer": "Use two heaps: a max-heap for the lower half and a min-heap for the upper half. Balance the heaps and retrieve the median. For example, inserting values 1, 5, 2, 4, 3, the median is 2.5."
+        },
+        {
+                "title": "Implement an LRU Cache with O(1) Operations",
+                "category": "DSA",
+                "description": "Design an LRU Cache that supports O(1) time complexity for get and put operations.",
+                "tags": "Cache, LRU, Data Structure",
+                "paid": "Yes",
+                "answer": "Use a hash map for fast access and a doubly linked list to track usage order. This setup allows O(1) operations for get and put. For example, adding and accessing elements while maintaining the least recently used order."
+        },
+        {
+                "title": "Determine the Strongly Connected Components (SCCs) in a Graph",
+                "category": "DSA",
+                "description": "Find all strongly connected components in a directed graph.",
+                "tags": "Graph, SCC, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Kosaraju’s or Tarjan’s algorithm to find SCCs. Kosaraju’s algorithm involves two passes of DFS and a reversal of edges. For example, in a graph with multiple SCCs, these algorithms identify all such components."
+        },
+        {
+                "title": "Solve the N-Queens Problem",
+                "category": "DSA",
+                "description": "Find all solutions to place N queens on an N x N chessboard so that no two queens attack each other.",
+                "tags": "Backtracking, N-Queens, Algorithm",
+                "paid": "Yes",
+                "answer": "Use backtracking to place queens one by one in columns and check for conflicts. For example, for N=4, solutions include placements like (0,1), (1,3), (2,0), (3,2)."
+        },
+        {
+                "title": "Determine the Minimum Cost to Connect All Points in a Graph",
+                "category": "DSA",
+                "description": "Find the minimum cost to connect all points in a graph using Prim’s or Kruskal’s algorithm.",
+                "tags": "Graph, Minimum Spanning Tree, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Prim’s or Kruskal’s algorithm to construct the minimum spanning tree. Prim’s algorithm uses a priority queue, while Kruskal’s uses a union-find structure. For example, find the minimum cost to connect points with given edge weights."
+        },
+        {
+                "title": "Find the Longest Path in a Weighted DAG",
+                "category": "DSA",
+                "description": "Determine the longest path in a weighted Directed Acyclic Graph (DAG).",
+                "tags": "Graph, DAG, Longest Path",
+                "paid": "Yes",
+                "answer": "Use topological sorting followed by relaxation of edges. Process nodes in topological order to find the longest path. For example, in a DAG with weights, the longest path might be from node A to C with intermediate nodes."
+        },
+        {
+                "title": "Implement a Suffix Tree",
+                "category": "DSA",
+                "description": "Build and use a suffix tree for string searching and manipulation.",
+                "tags": "Suffix Tree, String, Data Structure",
+                "paid": "Yes",
+                "answer": "Construct a suffix tree by inserting all suffixes of a string. The tree helps in efficient substring search and manipulation. For example, for string 'banana', the suffix tree stores all suffixes and their starting positions."
+        },
+        {
+                "title": "Find the Shortest Path with Negative Weights",
+                "category": "DSA",
+                "description": "Determine the shortest path in a graph with possible negative edge weights using the Bellman-Ford algorithm.",
+                "tags": "Graph, Bellman-Ford, Shortest Path",
+                "paid": "Yes",
+                "answer": "Use the Bellman-Ford algorithm to detect negative cycles and compute shortest paths. Relax edges up to (V-1) times. For example, in a graph with negative weights, Bellman-Ford identifies shortest paths and negative cycles."
+        },
+        {
+                "title": "Solve the Knapsack Problem with Fractional Weights",
+                "category": "DSA",
+                "description": "Solve the fractional knapsack problem using a greedy approach.",
+                "tags": "Knapsack, Greedy, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a greedy approach to maximize value per weight. Sort items by value/weight ratio and add fractions of items to the knapsack. For example, with weights [1, 2, 3] and values [60, 100, 120], take fractions to maximize value."
+        },
+        {
+                "title": "Find the Maximum Flow in a Flow Network",
+                "category": "DSA",
+                "description": "Compute the maximum flow in a flow network using the Ford-Fulkerson method.",
+                "tags": "Flow Network, Ford-Fulkerson, Algorithm",
+                "paid": "Yes",
+                "answer": "Use the Ford-Fulkerson algorithm to find the maximum flow from a source to a sink. Augment flow along paths found by BFS or DFS. For example, in a network with capacities, Ford-Fulkerson calculates the maximum flow value."
+        },
+        {
+                "title": "Implement a Suffix Array",
+                "category": "DSA",
+                "description": "Build a suffix array for efficient string processing and searching.",
+                "tags": "Suffix Array, String, Algorithm",
+                "paid": "Yes",
+                "answer": "Construct a suffix array by sorting suffixes of a string and storing their starting indices. This array helps in substring search and pattern matching. For example, the suffix array of 'banana' is [5, 3, 1, 0, 4, 2]."
+        },
+        {
+                "title": "Find the Largest Rectangle in a Binary Matrix",
+                "category": "DSA",
+                "description": "Determine the largest rectangle containing only 1s in a binary matrix.",
+                "tags": "Binary Matrix, Largest Rectangle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the height of histograms for each row and then apply the largest rectangle algorithm on these histograms. For example, in a matrix with several 1s, the largest rectangle might span multiple rows."
+        },
+        {
+                "title": "Determine the Number of Ways to Parenthesize an Expression",
+                "category": "DSA",
+                "description": "Count the number of ways to parenthesize an expression to evaluate to a specific result.",
+                "tags": "Dynamic Programming, Parenthesization, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to count ways to parenthesize the expression. Build tables for different ranges of subexpressions. For example, for expression 'a+b*c', compute the number of valid parenthesizations."
+        },
+        {
+                "title": "Find the Longest Common Substring with K Distinct Characters",
+                "category": "DSA",
+                "description": "Find the longest substring containing at most K distinct characters.",
+                "tags": "String, Substring, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a sliding window technique to keep track of the distinct characters and their counts. Expand and shrink the window as necessary. For example, in 'abcabcbb' with K=2, the longest substring is 'bcb'."
+        },
+        {
+                "title": "Find the Longest Increasing Path in a Matrix",
+                "category": "DSA",
+                "description": "Determine the longest increasing path in a 2D matrix.",
+                "tags": "Matrix, Pathfinding, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS with memoization to explore paths from each cell, tracking the longest increasing path. For example, in a matrix with increasing values, find the longest path following ascending values."
+        },
+        {
+                "title": "Solve the Traveling Salesman Problem (TSP)",
+                "category": "DSA",
+                "description": "Find the shortest possible route that visits each city exactly once and returns to the origin.",
+                "tags": "Traveling Salesman Problem, Algorithm, Optimization",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or approximation algorithms to solve TSP. Exact solutions involve exponential time, while heuristics like nearest neighbor offer approximate solutions. For example, find the shortest route covering all cities in a graph."
+        },
+        {
+                "title": "Find the Minimum Number of Platforms Required for a Train Station",
+                "category": "DSA",
+                "description": "Determine the minimum number of platforms required to accommodate all trains at a station given their arrival and departure times.",
+                "tags": "Greedy, Interval Scheduling, Algorithm",
+                "paid": "Yes",
+                "answer": "Sort the arrival and departure times. Use a two-pointer technique to find the maximum number of trains present at the same time. For example, with arrival [10:00, 10:15] and departure [10:30, 10:45], calculate platform requirements."
+        },
+        {
+                "title": "Determine the Minimum Window Substring",
+                "category": "DSA",
+                "description": "Find the smallest window in a string containing all characters of a given pattern.",
+                "tags": "String, Sliding Window, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a sliding window approach with two pointers and a frequency counter to track characters. For example, for string 'ADOBECODEBANC' and pattern 'ABC', the minimum window substring is 'BANC'."
+        },
+        {
+                "title": "Find the Longest Palindromic Substring",
+                "category": "DSA",
+                "description": "Identify the longest palindromic substring in a given string.",
+                "tags": "String, Palindromic Substring, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or expand around center technique to find the longest palindrome. For example, in 'babad', 'bab' or 'aba' are valid longest palindromic substrings."
+        },
+        {
+                "title": "Find the Maximum Rectangle in a Binary Matrix",
+                "category": "DSA",
+                "description": "Find the largest rectangle containing only 1s in a binary matrix.",
+                "tags": "Binary Matrix, Maximum Rectangle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use histogram-based dynamic programming approach to find the largest rectangle. Compute height arrays for each row and apply the largest rectangle algorithm. For example, in a matrix with 1s, find the rectangle with maximum area."
+        },
+        {
+                "title": "Determine if a Binary Tree is a Binary Search Tree",
+                "category": "DSA",
+                "description": "Check if a given binary tree satisfies the properties of a binary search tree.",
+                "tags": "Binary Tree, Binary Search Tree, Algorithm",
+                "paid": "Yes",
+                "answer": "Perform an in-order traversal and ensure the nodes are in ascending order. For example, if traversal results in sorted values, the tree is a BST."
+        },
+        {
+                "title": "Find the Minimum Cost to Reach the End of a Grid",
+                "category": "DSA",
+                "description": "Determine the minimum cost to travel from the top-left to the bottom-right of a grid with given costs.",
+                "tags": "Grid, Pathfinding, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum cost for each cell by considering moves from the top and left. For example, in a grid with varying costs, calculate the minimum cost path to the destination."
+        },
+        {
+                "title": "Find the Largest Sum Rectangle in a 2D Matrix",
+                "category": "DSA",
+                "description": "Identify the rectangle with the maximum sum of elements in a 2D matrix.",
+                "tags": "Matrix, Maximum Sum, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Kadane's algorithm on each row and column to find the maximum sum rectangle. For example, in a matrix, find the submatrix with the highest sum of elements."
+        },
+        {
+                "title": "Find the Most Frequent Substring of Length K",
+                "category": "DSA",
+                "description": "Determine the most frequent substring of a given length K in a string.",
+                "tags": "String, Substring, Frequency",
+                "paid": "Yes",
+                "answer": "Use a sliding window and hash map to count substring frequencies. For example, in 'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT' with K=10, the most frequent substring is 'AAAAACCCCC'."
+        },
+        {
+                "title": "Determine if a Graph is a Tree",
+                "category": "DSA",
+                "description": "Check if a given graph is a tree based on its properties.",
+                "tags": "Graph, Tree, Algorithm",
+                "paid": "Yes",
+                "answer": "A graph is a tree if it is connected and acyclic. Use DFS or BFS to check connectivity and cycle presence. For example, a graph with N nodes and N-1 edges, and no cycles is a tree."
+        },
+        {
+                "title": "Solve the Longest Palindromic Subsequence Problem",
+                "category": "DSA",
+                "description": "Find the length of the longest palindromic subsequence in a string.",
+                "tags": "String, Palindromic Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the length of the longest palindromic subsequence. For example, in 'bbabcb', the longest palindromic subsequence is 'bbabb' with length 5."
+        },
+        {
+                "title": "Find the Median of Two Sorted Arrays",
+                "category": "DSA",
+                "description": "Determine the median of two sorted arrays of equal or unequal length.",
+                "tags": "Array, Median, Algorithm",
+                "paid": "Yes",
+                "answer": "Use binary search to find the median by partitioning arrays. For example, for arrays [1, 3] and [2], the median is 2. For arrays [1, 2] and [3, 4], the median is 2.5."
+        },
+        {
+                "title": "Solve the Longest Repeating Subsequence Problem",
+                "category": "DSA",
+                "description": "Find the length of the longest repeating subsequence in a string.",
+                "tags": "String, Repeating Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the length of the longest repeating subsequence. For example, in 'AABEBCDD', the longest repeating subsequence is 'ABD' with length 3."
+        },
+        {
+                "title": "Find the Minimum Window Substring Containing All Patterns",
+                "category": "DSA",
+                "description": "Find the smallest substring containing all characters of given patterns.",
+                "tags": "String, Sliding Window, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a sliding window approach with hash maps to track character counts. For example, for string 'ADOBECODEBANC' and patterns 'ABC', the minimum window substring is 'BANC'."
+        },
+        {
+                "title": "Determine the Number of Connected Components in a Graph",
+                "category": "DSA",
+                "description": "Count the number of connected components in an undirected graph.",
+                "tags": "Graph, Connected Components, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS or BFS to explore each component and count the total. For example, a graph with several disconnected subgraphs has a count equal to the number of these subgraphs."
+        },
+        {
+                "title": "Find the Maximum Sum of Non-Adjacent Elements",
+                "category": "DSA",
+                "description": "Determine the maximum sum of non-adjacent elements in an array.",
+                "tags": "Array, Dynamic Programming, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to decide whether to include each element in the sum or skip it. For example, for array [3, 2, 5, 10, 7], the maximum sum of non-adjacent elements is 15."
+        },
+        {
+                "title": "Implement a Segment Tree",
+                "category": "DSA",
+                "description": "Create a segment tree for efficient range queries and updates.",
+                "tags": "Segment Tree, Data Structure, Range Queries",
+                "paid": "Yes",
+                "answer": "A segment tree allows efficient range queries and updates. Build the tree with merge operations and query or update nodes as needed. For example, use it to find range sums or minimums in an array."
+        },
+        {
+                "title": "Find the Maximum Subarray Sum with Constraints",
+                "category": "DSA",
+                "description": "Find the maximum sum of a contiguous subarray with additional constraints.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Modify Kadane's algorithm to handle constraints such as element limits or specific conditions. For example, if elements must be positive, adjust the algorithm accordingly."
+        },
+        {
+                "title": "Solve the Longest Common Subsequence Problem in 3 Strings",
+                "category": "DSA",
+                "description": "Find the longest common subsequence among three strings.",
+                "tags": "String, LCS, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a 3D dynamic programming table to compute the longest common subsequence. For example, for strings 'abc', 'abd', and 'aebd', the LCS is 'abd' with length 3."
+        },
+        {
+                "title": "Determine the Shortest Path in a Grid with Obstacles",
+                "category": "DSA",
+                "description": "Find the shortest path from start to end in a grid with obstacles.",
+                "tags": "Grid, Pathfinding, Obstacles",
+                "paid": "Yes",
+                "answer": "Use BFS to explore paths while avoiding obstacles. For example, in a grid with blocked cells, BFS calculates the shortest path from the start to the end while avoiding obstacles."
+        },
+        {
+                "title": "Find the Maximum Sum Path in a Binary Tree",
+                "category": "DSA",
+                "description": "Determine the maximum sum of a path in a binary tree where the path can start and end at any nodes.",
+                "tags": "Binary Tree, Maximum Path Sum, Algorithm",
+                "paid": "Yes",
+                "answer": "Use DFS to explore paths and compute the maximum path sum. Track the global maximum sum. For example, in a tree with nodes 10, 2, 10, 20, and 1, find the maximum sum path."
+        },
+        {
+                "title": "Determine the Shortest Path in a Weighted Graph with Negative Cycles",
+                "category": "DSA",
+                "description": "Find the shortest path in a graph with weights and potential negative cycles using Bellman-Ford.",
+                "tags": "Graph, Bellman-Ford, Negative Cycles",
+                "paid": "Yes",
+                "answer": "Use Bellman-Ford to detect negative cycles and compute shortest paths. If negative cycles are reachable, they affect shortest paths. For example, Bellman-Ford identifies shortest paths and reports if negative cycles influence them."
+        },
+        {
+                "title": "Implement a Trie (Prefix Tree)",
+                "category": "DSA",
+                "description": "Create a Trie for efficient storage and retrieval of strings with common prefixes.",
+                "tags": "Trie, Prefix Tree, Data Structure",
+                "paid": "Yes",
+                "answer": "A Trie stores strings in a tree-like structure where common prefixes are shared. Insert and search operations are efficient due to shared nodes. For example, insert 'cat' and 'car' into a Trie to share common prefix 'ca'."
+        },
+        {
+                "title": "Find the Longest Common Prefix of Strings in an Array",
+                "category": "DSA",
+                "description": "Identify the longest common prefix among an array of strings.",
+                "tags": "String, Prefix, Algorithm",
+                "paid": "Yes",
+                "answer": "Compare characters of all strings from the beginning. Stop when characters differ. For example, in ['flower', 'flow', 'flight'], the longest common prefix is 'fl'."
+        },
+        {
+                "title": "Solve the Maximum Product Subarray Problem with Constraints",
+                "category": "DSA",
+                "description": "Find the maximum product of a subarray with constraints on elements or subarray size.",
+                "tags": "Array, Subarray, Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or sliding window approach to handle constraints and compute the maximum product. For example, if elements must be positive, find the maximum product subarray under these conditions."
+        },
+        {
+                "title": "Determine the Minimum Cost Path in a Weighted Grid",
+                "category": "DSA",
+                "description": "Find the minimum cost path from the top-left to bottom-right of a weighted grid.",
+                "tags": "Grid, Pathfinding, Weighted Grid",
+                "paid": "Yes",
+                "answer": "Use Dijkstra’s algorithm or dynamic programming to compute minimum cost path. For example, given a grid with varying costs, calculate the minimum cost to traverse from start to end."
+        },
+        {
+                "title": "Find the Kth Largest Element in an Unsorted Array",
+                "category": "DSA",
+                "description": "Identify the Kth largest element in an unsorted array.",
+                "tags": "Array, Kth Largest, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Quickselect algorithm or a min-heap to find the Kth largest element efficiently. For example, in array [3, 2, 1, 5, 6, 4] with K=2, the 2nd largest element is 5."
+        },
+        {
+                "title": "Implement a Skip List",
+                "category": "DSA",
+                "description": "Create a skip list for efficient search, insertion, and deletion.",
+                "tags": "Skip List, Data Structure, Algorithm",
+                "paid": "Yes",
+                "answer": "A skip list allows O(log N) operations for search, insertion, and deletion by maintaining multiple levels of linked lists. For example, a skip list with multiple levels speeds up search operations compared to a single linked list."
+        },
+        {
+                "title": "Find the Maximum Flow with Multiple Sources and Sinks",
+                "category": "DSA",
+                "description": "Calculate the maximum flow in a network with multiple sources and sinks.",
+                "tags": "Flow Network, Maximum Flow, Algorithm",
+                "paid": "Yes",
+                "answer": "Transform the network into a single-source, single-sink problem by adding a super-source and super-sink. Apply the Ford-Fulkerson method to find the maximum flow. For example, connect sources and sinks to new nodes and compute flow."
+        },
+        {
+                "title": "Find the Largest Sum of a Contiguous Subarray with Minimum Constraints",
+                "category": "DSA",
+                "description": "Compute the largest sum of a contiguous subarray while respecting minimum constraints on elements.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Modify Kadane's algorithm to include constraints, such as minimum or maximum element limits. For example, find the largest sum subarray where elements must be above a certain threshold."
+        },
+        {
+                "title": "Solve the Longest Path Problem in a Directed Acyclic Graph (DAG) with Cyclic Dependencies",
+                "category": "DSA",
+                "description": "Find the longest path in a DAG, considering nodes with cyclic dependencies.",
+                "tags": "DAG, Longest Path, Cyclic Dependencies",
+                "paid": "Yes",
+                "answer": "Handle cyclic dependencies by ensuring the graph remains acyclic. Use topological sorting to compute the longest path. For example, in a modified DAG with additional constraints, find the longest path respecting dependencies."
+        },
+        {
+                "title": "Find the Minimum Cost of Cutting a Rod into Pieces",
+                "category": "DSA",
+                "description": "Determine the minimum cost to cut a rod into specified lengths.",
+                "tags": "Rod Cutting, Minimum Cost, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the minimum cost for cutting a rod into required pieces. For example, given costs for each cut, calculate the least expensive way to achieve desired piece lengths."
+        },
+        {
+                "title": "Solve the Longest Common Substring Problem with Constraints",
+                "category": "DSA",
+                "description": "Find the longest common substring among strings with additional constraints.",
+                "tags": "String, Substring, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest common substring while respecting constraints such as substring length or character limits. For example, in strings with specific character requirements, find the longest common substring."
+        },
+        {
+                "title": "Implement a B-Tree",
+                "category": "DSA",
+                "description": "Build and use a B-Tree for efficient insertion, deletion, and search operations.",
+                "tags": "B-Tree, Data Structure, Algorithm",
+                "paid": "Yes",
+                "answer": "A B-Tree is a self-balancing tree that maintains sorted data and allows searches, sequential access, and insertions/deletions in logarithmic time. Implement node splitting and merging as needed. For example, manage large datasets with a B-Tree."
+        },
+        {
+                "title": "Find the Maximum Sum Path in a Triangle",
+                "category": "DSA",
+                "description": "Determine the maximum sum of a path from the top to the base of a triangle.",
+                "tags": "Triangle, Pathfinding, Dynamic Programming",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the maximum sum path by updating values from bottom to top. For example, in a triangle with values, compute the maximum sum path from top to base."
+        },
+        {
+                "title": "Solve the Maximum Subarray Sum Problem with Minimum Length Constraints",
+                "category": "DSA",
+                "description": "Find the maximum sum of a contiguous subarray with a minimum length constraint.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Modify Kadane's algorithm to ensure the subarray meets the minimum length requirement. For example, for array [1, 2, 3, 4] and minimum length 2, find the maximum sum subarray of at least length 2."
+        },
+        {
+                "title": "Find the Minimum Number of Edges Required to Make a Graph Connected",
+                "category": "DSA",
+                "description": "Determine the minimum number of edges needed to make an undirected graph connected.",
+                "tags": "Graph, Connectivity, Algorithm",
+                "paid": "Yes",
+                "answer": "Identify disconnected components and compute the minimum number of edges required to connect them. For example, in a graph with multiple components, add edges to ensure all nodes are reachable."
+        },
+        {
+                "title": "Implement a Suffix Array",
+                "category": "DSA",
+                "description": "Create a suffix array to enable efficient substring searches and pattern matching.",
+                "tags": "Suffix Array, String, Algorithm",
+                "paid": "Yes",
+                "answer": "Build a suffix array to represent all suffixes of a string in sorted order. Use this array for efficient string matching. For example, for string 'banana', create an array of suffixes sorted lexicographically."
+        },
+        {
+                "title": "Find the Largest Palindromic Subsequence in a Matrix",
+                "category": "DSA",
+                "description": "Identify the largest palindromic subsequence in a given matrix.",
+                "tags": "Matrix, Palindromic Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Convert the matrix to a string or use dynamic programming to find the largest palindromic subsequence in rows, columns, or diagonals. For example, in a matrix, identify the longest palindromic sequence."
+        },
+        {
+                "title": "Determine the Minimum Cost Path in a Grid with Different Costs",
+                "category": "DSA",
+                "description": "Find the minimum cost path from the start to the end of a grid with varying costs.",
+                "tags": "Grid, Pathfinding, Costs",
+                "paid": "Yes",
+                "answer": "Use Dijkstra's algorithm to account for different costs in each cell of the grid. For example, given a grid with different cell costs, find the path with the minimum total cost."
+        },
+        {
+                "title": "Find the Largest Palindromic Substring in a Matrix",
+                "category": "DSA",
+                "description": "Find the largest palindromic substring within a given matrix.",
+                "tags": "Matrix, Palindromic Substring, Algorithm",
+                "paid": "Yes",
+                "answer": "Search for palindromic substrings in all directions (rows, columns, diagonals) within the matrix. Use string matching techniques to identify the longest palindrome. For example, find the largest palindrome in a 2D matrix of characters."
+        },
+        {
+                "title": "Find the Maximum Product of k Non-Adjacent Elements in an Array",
+                "category": "DSA",
+                "description": "Compute the maximum product of k non-adjacent elements in an array.",
+                "tags": "Array, Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to track maximum product values while skipping adjacent elements. For example, in array [3, 2, 5, 10, 7] with k=2, the maximum product of non-adjacent elements is 35 (5 * 7)."
+        },
+        {
+                "title": "Determine the Longest Path in a Weighted Directed Graph",
+                "category": "DSA",
+                "description": "Find the longest path in a weighted directed graph without cycles.",
+                "tags": "Graph, Longest Path, Directed",
+                "paid": "Yes",
+                "answer": "Use topological sorting and dynamic programming to find the longest path. For example, in a directed acyclic graph (DAG), compute the maximum path lengths from each node."
+        },
+        {
+                "title": "Implement a Fibonacci Heap",
+                "category": "DSA",
+                "description": "Create a Fibonacci heap for efficient merge operations and priority queue functionalities.",
+                "tags": "Heap, Fibonacci Heap, Data Structure",
+                "paid": "Yes",
+                "answer": "A Fibonacci heap supports efficient merge operations and priority queue functions. Implement the heap with a series of trees where each tree follows the min-heap property."
+        },
+        {
+                "title": "Find the Kth Smallest Element in a Sorted Matrix",
+                "category": "DSA",
+                "description": "Identify the Kth smallest element in a matrix where each row and column is sorted.",
+                "tags": "Matrix, Kth Smallest, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a min-heap to efficiently extract the Kth smallest element. For example, for a matrix sorted in ascending order, push elements into the heap and extract the smallest element K times."
+        },
+        {
+                "title": "Solve the Word Break Problem with a Dictionary",
+                "category": "DSA",
+                "description": "Determine if a given string can be segmented into words from a dictionary.",
+                "tags": "String, Dynamic Programming, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to check if the string can be segmented into words from the dictionary. For example, with string 'applepie' and dictionary ['apple', 'pie'], check if it can be segmented into 'apple pie'."
+        },
+        {
+                "title": "Find the Largest Square Submatrix with All 1s",
+                "category": "DSA",
+                "description": "Determine the largest square submatrix with all elements equal to 1 in a binary matrix.",
+                "tags": "Binary Matrix, Square Submatrix, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the largest square submatrix. For example, in a binary matrix, compute the largest square of 1s by updating values based on adjacent squares."
+        },
+        {
+                "title": "Implement a Union-Find Data Structure",
+                "category": "DSA",
+                "description": "Create a Union-Find data structure for efficient union and find operations.",
+                "tags": "Union-Find, Disjoint Set, Data Structure",
+                "paid": "Yes",
+                "answer": "A Union-Find data structure supports union and find operations with path compression and union by rank. For example, use it to manage disjoint sets efficiently."
+        },
+        {
+                "title": "Find the Maximum Sum Rectangle with Minimum Constraints",
+                "category": "DSA",
+                "description": "Identify the maximum sum rectangle in a matrix with additional constraints.",
+                "tags": "Matrix, Maximum Sum, Constraints",
+                "paid": "Yes",
+                "answer": "Modify the Kadane’s algorithm to handle constraints such as size or element limits. For example, find the maximum sum rectangle with specified size limits within a matrix."
+        },
+        {
+                "title": "Solve the Longest Increasing Subsequence Problem in 2D",
+                "category": "DSA",
+                "description": "Find the longest increasing subsequence in a 2D matrix.",
+                "tags": "Matrix, Longest Increasing Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the longest increasing subsequence by considering all directions in the matrix. For example, in a 2D matrix, find the longest path with increasing values."
+        },
+        {
+                "title": "Implement a Skip List with Level Control",
+                "category": "DSA",
+                "description": "Build a skip list with configurable levels for optimized search and insertion.",
+                "tags": "Skip List, Data Structure, Level Control",
+                "paid": "Yes",
+                "answer": "A skip list with level control allows balancing and optimized operations. Implement nodes with multiple levels and adjust levels based on probabilistic methods to maintain balance."
+        },
+        {
+                "title": "Find the Minimum Cost to Connect All Points in a Graph",
+                "category": "DSA",
+                "description": "Determine the minimum cost to connect all points in a graph using Kruskal's or Prim's algorithm.",
+                "tags": "Graph, Minimum Spanning Tree, Algorithm",
+                "paid": "Yes",
+                "answer": "Use Kruskal's or Prim's algorithm to find the minimum spanning tree. For example, in a graph with weighted edges, compute the minimum cost to connect all vertices."
+        },
+        {
+                "title": "Solve the Maximum Subarray Sum Problem with Additional Constraints",
+                "category": "DSA",
+                "description": "Find the maximum sum of a contiguous subarray with additional constraints on elements or size.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Modify Kadane’s algorithm to handle constraints such as element range or subarray length. For example, find the maximum sum subarray where elements must fall within a specific range."
+        },
+        {
+                "title": "Determine the Number of Distinct Substrings in a String",
+                "category": "DSA",
+                "description": "Count the number of distinct substrings in a given string.",
+                "tags": "String, Substrings, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a suffix array or a suffix tree to count distinct substrings efficiently. For example, for string 'banana', compute the number of unique substrings using suffix tree structures."
+        },
+        {
+                "title": "Find the Maximum Product Subarray with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum product of a contiguous subarray while respecting constraints.",
+                "tags": "Array, Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or sliding window approach with constraints on subarray size or element values. For example, find the maximum product of a subarray with elements above a threshold."
+        },
+        {
+                "title": "Solve the Longest Common Subsequence Problem for Multiple Strings",
+                "category": "DSA",
+                "description": "Find the longest common subsequence among multiple strings.",
+                "tags": "String, LCS, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a multidimensional dynamic programming table to compute the longest common subsequence. For example, for three strings, find the common subsequence present in all strings."
+        },
+        {
+                "title": "Find the Minimum Path Sum in a Triangle with Constraints",
+                "category": "DSA",
+                "description": "Compute the minimum path sum from top to bottom in a triangle with additional constraints.",
+                "tags": "Triangle, Pathfinding, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to account for constraints like maximum allowed path length or element values. For example, find the minimum path sum in a triangle where certain paths are restricted."
+        },
+        {
+                "title": "Implement an AVL Tree",
+                "category": "DSA",
+                "description": "Create an AVL Tree with self-balancing properties for efficient operations.",
+                "tags": "AVL Tree, Data Structure, Balancing",
+                "paid": "Yes",
+                "answer": "An AVL Tree is a self-balancing binary search tree. Implement rotations (left, right) to maintain balance after insertions and deletions. For example, balance the tree to keep operations in O(log N) time."
+        },
+        {
+                "title": "Solve the Maximum Sum Path Problem in a Grid with Obstacles",
+                "category": "DSA",
+                "description": "Find the maximum sum path in a grid with obstacles and varying costs.",
+                "tags": "Grid, Pathfinding, Obstacles",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to calculate the maximum sum path while avoiding obstacles. For example, in a grid with obstacles, compute the maximum sum path from top-left to bottom-right."
+        },
+        {
+                "title": "Find the Longest Palindromic Substring with Minimum Length Constraints",
+                "category": "DSA",
+                "description": "Identify the longest palindromic substring while respecting minimum length constraints.",
+                "tags": "String, Palindromic Substring, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find palindromic substrings that meet the length constraints. For example, in string 'babad' with a minimum length of 3, find the longest palindromic substring 'bab'."
+        },
+        {
+                "title": "Implement a B+ Tree",
+                "category": "DSA",
+                "description": "Create a B+ Tree for efficient data storage and retrieval with all values in leaf nodes.",
+                "tags": "B+ Tree, Data Structure, Algorithm",
+                "paid": "Yes",
+                "answer": "A B+ Tree is a self-balancing tree where all values are stored in leaf nodes, and internal nodes act as guides. Implement insertions, deletions, and searches efficiently."
+        },
+        {
+                "title": "Find the Minimum Sum Subarray with Maximum Length Constraint",
+                "category": "DSA",
+                "description": "Determine the minimum sum of a subarray with a constraint on its maximum length.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Use sliding window or dynamic programming to find the minimum sum subarray respecting the length constraint. For example, for array [1, 2, 3, 4] with max length 3, find the minimum sum subarray."
+        },
+        {
+                "title": "Determine the Longest Common Substring of Multiple Strings with Constraints",
+                "category": "DSA",
+                "description": "Find the longest common substring among multiple strings with additional constraints.",
+                "tags": "String, Longest Common Substring, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest common substring among multiple strings with constraints such as character limits. For example, in strings with specific requirements, find the longest substring."
+        },
+        {
+                "title": "Find the Shortest Path with Exact Number of Edges",
+                "category": "DSA",
+                "description": "Compute the shortest path in a graph with an exact number of edges.",
+                "tags": "Graph, Shortest Path, Constraints",
+                "paid": "Yes",
+                "answer": "Use a modified BFS or DP to find the shortest path with exactly k edges. For example, in a graph, find the shortest path from source to destination using exactly k edges."
+        },
+        {
+                "title": "Solve the Minimum Cost to Convert a Binary Tree into a Binary Search Tree",
+                "category": "DSA",
+                "description": "Determine the minimum cost to convert a binary tree into a binary search tree.",
+                "tags": "Binary Tree, Conversion, Cost",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum cost for conversion. For example, calculate the cost of rearranging nodes to form a valid binary search tree from a given binary tree."
+        },
+        {
+                "title": "Find the Maximum Sum Path in a Matrix with Limited Moves",
+                "category": "DSA",
+                "description": "Compute the maximum sum path in a matrix with constraints on the number of moves.",
+                "tags": "Matrix, Pathfinding, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum sum path with move limits. For example, in a matrix with constraints on the number of moves, compute the maximum path sum."
+        },
+        {
+                "title": "Implement a Suffix Tree",
+                "category": "DSA",
+                "description": "Build a suffix tree to enable efficient substring searches and pattern matching.",
+                "tags": "Suffix Tree, String, Algorithm",
+                "paid": "Yes",
+                "answer": "A suffix tree represents all suffixes of a string for fast substring searches. Implement the tree with nodes representing suffixes and edges representing substrings."
+        },
+        {
+                "title": "Find the Largest Rectangle Area in a Binary Matrix",
+                "category": "DSA",
+                "description": "Determine the largest rectangle area in a binary matrix where elements are either 0 or 1.",
+                "tags": "Binary Matrix, Largest Rectangle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a histogram-based approach to compute the largest rectangle area. For example, convert each row to a histogram and find the largest rectangle area for each histogram."
+        },
+        {
+                "title": "Solve the Matrix Chain Multiplication Problem with Constraints",
+                "category": "DSA",
+                "description": "Compute the optimal order of matrix multiplications with additional constraints.",
+                "tags": "Matrix Chain Multiplication, Constraints, Dynamic Programming",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the minimum cost of multiplying matrices with constraints such as dimension limits. For example, optimize the multiplication order of matrices to minimize the cost."
+        },
+        {
+                "title": "Find the Maximum Value of a Contiguous Subarray with Specific Constraints",
+                "category": "DSA",
+                "description": "Identify the maximum value of a contiguous subarray with constraints on elements or subarray size.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or sliding window approach to compute the maximum value of a subarray while meeting constraints. For example, find the maximum value of subarrays with size or element limits."
+        },
+        {
+                "title": "Determine the Minimum Number of Operations to Convert One String to Another",
+                "category": "DSA",
+                "description": "Find the minimum number of operations needed to convert one string into another using insertion, deletion, or substitution.",
+                "tags": "String, Edit Distance, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum edit distance. For example, convert 'kitten' to 'sitting' with the least number of insertions, deletions, or substitutions."
+        },
+        {
+                "title": "Solve the Maximum Sum Rectangle with Constraints in a Matrix",
+                "category": "DSA",
+                "description": "Find the maximum sum rectangle in a matrix with constraints such as size or position.",
+                "tags": "Matrix, Maximum Sum, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum sum rectangle while respecting constraints. For example, compute the maximum sum of a rectangle within a matrix with specified size constraints."
+        },
+        {
+                "title": "Implement a Segment Tree with Lazy Propagation",
+                "category": "DSA",
+                "description": "Build a segment tree with lazy propagation for efficient range updates and queries.",
+                "tags": "Segment Tree, Lazy Propagation, Data Structure",
+                "paid": "Yes",
+                "answer": "A segment tree with lazy propagation allows efficient range updates and queries. Implement operations with lazy values to delay updates and apply them when necessary."
+        },
+        {
+                "title": "Find the Minimum Number of Moves to Solve a Sliding Puzzle",
+                "category": "DSA",
+                "description": "Compute the minimum number of moves to solve a sliding puzzle from a given starting state.",
+                "tags": "Puzzle, Sliding Puzzle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use BFS to explore all possible moves and find the shortest path to solve the puzzle. For example, in a 3x3 sliding puzzle, compute the minimum moves to reach the solved state."
+        },
+        {
+                "title": "Solve the Maximum Rectangle Area Problem in a Binary Matrix with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum rectangle area in a binary matrix with additional constraints.",
+                "tags": "Binary Matrix, Maximum Rectangle, Constraints",
+                "paid": "Yes",
+                "answer": "Use a histogram approach to find the maximum rectangle area while handling constraints. For example, in a binary matrix with row constraints, compute the largest rectangle area."
+        },
+        {
+                "title": "Find the Largest Palindromic Subsequence with Constraints",
+                "category": "DSA",
+                "description": "Identify the largest palindromic subsequence with additional constraints on length or character limits.",
+                "tags": "String, Palindromic Subsequence, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the largest palindromic subsequence while meeting constraints. For example, find the longest palindromic subsequence with specific length or character restrictions."
+        },
+        {
+                "title": "Determine the Shortest Path with Exact Number of Stops",
+                "category": "DSA",
+                "description": "Compute the shortest path between two nodes with an exact number of stops in a graph.",
+                "tags": "Graph, Shortest Path, Constraints",
+                "paid": "Yes",
+                "answer": "Use modified BFS or dynamic programming to find the shortest path with exactly k stops. For example, in a graph, find the shortest path from source to destination with exactly 3 stops."
+        },
+        {
+                "title": "Find the Minimum Cost to Convert a Binary Tree to a Balanced Tree",
+                "category": "DSA",
+                "description": "Determine the minimum cost to convert a binary tree into a balanced binary tree.",
+                "tags": "Binary Tree, Conversion, Cost",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum cost of balancing the tree. For example, calculate the cost of rearranging nodes to achieve a balanced binary tree structure."
+        },
+        {
+                "title": "Implement a Balanced Binary Search Tree (e.g., Red-Black Tree)",
+                "category": "DSA",
+                "description": "Build a balanced binary search tree, such as a Red-Black Tree, for efficient operations.",
+                "tags": "Binary Search Tree, Red-Black Tree, Data Structure",
+                "paid": "Yes",
+                "answer": "A Red-Black Tree is a self-balancing binary search tree with color-based balancing rules. Implement insertions, deletions, and rotations to maintain balance and search efficiency."
+        },
+        {
+                "title": "Find the Maximum Subarray Sum with Minimum Length Constraint",
+                "category": "DSA",
+                "description": "Identify the maximum sum of a contiguous subarray while respecting a minimum length constraint.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Use sliding window or dynamic programming to find the maximum sum of subarrays that meet the minimum length constraint. For example, find the maximum sum of subarrays of at least length 3."
+        },
+        {
+                "title": "Determine the Minimum Cost to Transform One Matrix into Another",
+                "category": "DSA",
+                "description": "Compute the minimum cost to transform one matrix into another matrix with allowed operations.",
+                "tags": "Matrix, Transformation, Cost",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or graph-based methods to calculate the minimum cost of transforming one matrix into another. For example, compute the cost of converting matrix A into matrix B with specified operations."
+        },
+        {
+                "title": "Find the Longest Palindromic Subsequence in a Binary Tree",
+                "category": "DSA",
+                "description": "Identify the longest palindromic subsequence in a binary tree's traversal.",
+                "tags": "Binary Tree, Palindromic Subsequence, Traversal",
+                "paid": "Yes",
+                "answer": "Perform a tree traversal to collect nodes in sequence and then find the longest palindromic subsequence in this sequence. For example, traverse the tree in-order and find the longest palindrome."
+        },
+        {
+                "title": "Solve the Maximum Sum Path Problem in a Grid with Obstacles",
+                "category": "DSA",
+                "description": "Compute the maximum sum path in a grid with obstacles and varying costs.",
+                "tags": "Grid, Pathfinding, Obstacles",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to calculate the maximum sum path while avoiding obstacles. For example, find the maximum sum path from the top-left to bottom-right corner of a grid with obstacles."
+        },
+        {
+                "title": "Find the Minimum Cost to Arrange a Matrix in Sorted Order",
+                "category": "DSA",
+                "description": "Determine the minimum cost required to arrange a matrix in a sorted order using allowed operations.",
+                "tags": "Matrix, Sorting, Cost",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to calculate the minimum cost of arranging the matrix into sorted order. For example, find the cost of reordering elements to achieve a sorted matrix."
+        },
+        {
+                "title": "Implement a Trie with Deletion Functionality",
+                "category": "DSA",
+                "description": "Create a Trie data structure with support for inserting, searching, and deleting words.",
+                "tags": "Trie, Data Structure, Deletion",
+                "paid": "Yes",
+                "answer": "A Trie is a tree-like data structure for storing words. Implement insert, search, and delete operations. For example, insert 'apple', search for 'app', and delete 'apple' from the Trie."
+        },
+        {
+                "title": "Find the Maximum Sum of Non-Adjacent Elements in a Matrix",
+                "category": "DSA",
+                "description": "Compute the maximum sum of non-adjacent elements in a matrix.",
+                "tags": "Matrix, Non-Adjacent, Maximum Sum",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum sum of non-adjacent elements in a matrix. For example, find the maximum sum of non-adjacent elements in a 2D matrix."
+        },
+        {
+                "title": "Solve the Longest Common Subsequence Problem with Multiple Constraints",
+                "category": "DSA",
+                "description": "Determine the longest common subsequence with multiple constraints on elements or positions.",
+                "tags": "String, LCS, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the longest common subsequence while respecting constraints. For example, find the longest common subsequence with constraints on element positions or values."
+        },
+        {
+                "title": "Find the Minimum Cost to Convert a Directed Acyclic Graph (DAG) to a Complete Graph",
+                "category": "DSA",
+                "description": "Compute the minimum cost required to convert a DAG into a complete graph with weighted edges.",
+                "tags": "Graph, DAG, Conversion, Cost",
+                "paid": "Yes",
+                "answer": "Use algorithms to find the minimum cost of adding edges to convert a DAG to a complete graph. For example, compute the cost of adding necessary edges to achieve connectivity."
+        },
+        {
+                "title": "Implement a Binary Indexed Tree (Fenwick Tree)",
+                "category": "DSA",
+                "description": "Create a Binary Indexed Tree for efficient range queries and updates.",
+                "tags": "Binary Indexed Tree, Fenwick Tree, Data Structure",
+                "paid": "Yes",
+                "answer": "A Binary Indexed Tree supports efficient prefix sum queries and updates. Implement methods for querying and updating values in logarithmic time."
+        },
+        {
+                "title": "Find the Largest Contiguous Subarray Sum with Variable Constraints",
+                "category": "DSA",
+                "description": "Determine the largest sum of a contiguous subarray with variable constraints.",
+                "tags": "Array, Subarray, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or sliding window approach to find the largest sum subarray with variable constraints. For example, find the maximum sum with constraints on length or value range."
+        },
+        {
+                "title": "Solve the Minimum Cost Path Problem with Variable Constraints",
+                "category": "DSA",
+                "description": "Compute the minimum cost path in a grid with variable constraints on movement.",
+                "tags": "Grid, Pathfinding, Constraints",
+                "paid": "Yes",
+                "answer": "Use modified Dijkstra's algorithm to find the minimum cost path with variable movement constraints. For example, account for variable costs or movement restrictions in the grid."
+        },
+        {
+                "title": "Find the Minimum Number of Edges to Make a Graph Connected",
+                "category": "DSA",
+                "description": "Determine the minimum number of edges required to make a disconnected graph connected.",
+                "tags": "Graph, Connectivity, Edges",
+                "paid": "Yes",
+                "answer": "Use graph traversal methods to identify disconnected components and calculate the minimum number of edges needed to connect them. For example, add edges between components to achieve connectivity."
+        },
+        {
+                "title": "Implement a Suffix Automaton",
+                "category": "DSA",
+                "description": "Build a suffix automaton for efficient substring searches and pattern matching.",
+                "tags": "Suffix Automaton, String, Algorithm",
+                "paid": "Yes",
+                "answer": "A suffix automaton represents all suffixes of a string in a state machine. Implement the automaton to support efficient substring searches and pattern matching."
+        },
+        {
+                "title": "Find the Maximum Product of k Non-Adjacent Elements in a Matrix",
+                "category": "DSA",
+                "description": "Compute the maximum product of k non-adjacent elements in a matrix.",
+                "tags": "Matrix, Non-Adjacent, Maximum Product",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or backtracking to find the maximum product of k non-adjacent elements. For example, compute the product while avoiding adjacent elements in a 2D matrix."
+        },
+        {
+                "title": "Solve the Minimum Cost to Rearrange Elements in a Matrix to Achieve Sorted Order",
+                "category": "DSA",
+                "description": "Determine the minimum cost to rearrange elements in a matrix to achieve a sorted order.",
+                "tags": "Matrix, Rearrangement, Cost",
+                "paid": "Yes",
+                "answer": "Use algorithms to calculate the minimum cost of rearranging matrix elements into sorted order. For example, find the cost of moving elements to achieve ascending order."
+        },
+        {
+                "title": "Find the Maximum Product Subarray with Variable Constraints",
+                "category": "DSA",
+                "description": "Identify the maximum product of a contiguous subarray with variable constraints.",
+                "tags": "Array, Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or sliding window approach to compute the maximum product subarray with constraints. For example, find the maximum product with constraints on subarray length or value range."
+        },
+        {
+                "title": "Implement a Treap (Randomized Binary Search Tree)",
+                "category": "DSA",
+                "description": "Create a Treap, a randomized binary search tree with heap properties.",
+                "tags": "Treap, Binary Search Tree, Randomized",
+                "paid": "Yes",
+                "answer": "A Treap combines binary search tree properties with heap properties. Implement insertions, deletions, and rotations to maintain both heap and BST properties."
+        },
+        {
+                "title": "Find the Largest Rectangle in a Histogram with Constraints",
+                "category": "DSA",
+                "description": "Compute the largest rectangle area in a histogram with additional constraints.",
+                "tags": "Histogram, Largest Rectangle, Constraints",
+                "paid": "Yes",
+                "answer": "Use a stack-based approach to find the largest rectangle area in a histogram while handling constraints. For example, find the largest rectangle with height constraints in a histogram."
+        },
+        {
+                "title": "Solve the Minimum Cost to Transform One Graph into Another",
+                "category": "DSA",
+                "description": "Determine the minimum cost required to transform one graph into another using allowed operations.",
+                "tags": "Graph, Transformation, Cost",
+                "paid": "Yes",
+                "answer": "Use graph algorithms to calculate the minimum cost of transforming one graph into another. For example, compute the cost of converting one graph's structure to another using specified operations."
+        },
+        {
+                "title": "Find the Longest Increasing Subsequence with Constraints",
+                "category": "DSA",
+                "description": "Compute the longest increasing subsequence in an array with additional constraints.",
+                "tags": "Array, Longest Increasing Subsequence, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest increasing subsequence with constraints like specific element ranges. For example, find the longest subsequence where elements must be within a certain range."
+        },
+        {
+                "title": "Implement a Suffix Array with LCP Array",
+                "category": "DSA",
+                "description": "Build a suffix array and its Longest Common Prefix (LCP) array for efficient substring operations.",
+                "tags": "Suffix Array, LCP Array, String",
+                "paid": "Yes",
+                "answer": "A suffix array sorts all suffixes of a string. Combine it with the LCP array to efficiently find common prefixes between sorted suffixes, aiding in substring searches and pattern matching."
+        },
+        {
+                "title": "Find the Minimum Cost to Rearrange Elements in a Matrix with Constraints",
+                "category": "DSA",
+                "description": "Determine the minimum cost to rearrange elements in a matrix with constraints on the allowed moves.",
+                "tags": "Matrix, Rearrangement, Cost, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum cost for rearranging matrix elements within constraints. For example, find the cost to sort a matrix where only specific types of swaps are allowed."
+        },
+        {
+                "title": "Solve the Maximum Flow Problem with Multiple Sources and Sinks",
+                "category": "DSA",
+                "description": "Compute the maximum flow in a network with multiple source and sink nodes.",
+                "tags": "Graph, Maximum Flow, Network Flow",
+                "paid": "Yes",
+                "answer": "Extend the Ford-Fulkerson algorithm or Edmonds-Karp algorithm to handle multiple sources and sinks. Convert the problem to a single-source, single-sink flow network by introducing a super-source and super-sink."
+        },
+        {
+                "title": "Implement a K-D Tree for Efficient k-Dimensional Queries",
+                "category": "DSA",
+                "description": "Create a K-D Tree to efficiently handle k-dimensional queries such as range searches and nearest neighbor searches.",
+                "tags": "K-D Tree, Data Structure, k-Dimensional Queries",
+                "paid": "Yes",
+                "answer": "A K-D Tree partitions k-dimensional space to facilitate efficient queries. Implement methods for insertion, deletion, and querying to handle k-dimensional points and perform range searches."
+        },
+        {
+                "title": "Find the Longest Path in a Weighted Directed Acyclic Graph (DAG)",
+                "category": "DSA",
+                "description": "Compute the longest path in a weighted DAG.",
+                "tags": "Graph, DAG, Longest Path",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest path in a DAG. Perform a topological sort and then compute the longest path using the sorted order, updating path lengths based on edge weights."
+        },
+        {
+                "title": "Solve the Substring Search Problem with Multiple Patterns",
+                "category": "DSA",
+                "description": "Search for multiple patterns within a text efficiently using advanced algorithms.",
+                "tags": "String, Substring Search, Multiple Patterns",
+                "paid": "Yes",
+                "answer": "Use the Aho-Corasick algorithm to build an automaton for searching multiple patterns simultaneously. Construct a trie of patterns and create failure links to efficiently match patterns in the text."
+        },
+        {
+                "title": "Implement an AVL Tree with Rotation Operations",
+                "category": "DSA",
+                "description": "Build an AVL Tree with support for rotations to maintain balance.",
+                "tags": "AVL Tree, Data Structure, Rotations",
+                "paid": "Yes",
+                "answer": "An AVL Tree is a self-balancing binary search tree. Implement rotations (left and right) to maintain balance during insertions and deletions, ensuring the tree remains balanced after operations."
+        },
+        {
+                "title": "Find the Minimum Cost to Convert a Binary Tree into a Complete Binary Tree",
+                "category": "DSA",
+                "description": "Compute the minimum cost required to convert a binary tree into a complete binary tree.",
+                "tags": "Binary Tree, Conversion, Cost, Complete Tree",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to determine the minimum cost for converting a binary tree into a complete binary tree by adding or removing nodes as needed."
+        },
+        {
+                "title": "Solve the Maximum Subarray Product with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum product of a contiguous subarray with constraints.",
+                "tags": "Array, Subarray, Maximum Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum product subarray while adhering to constraints. For example, calculate the maximum product of contiguous elements within specific constraints."
+        },
+        {
+                "title": "Implement a Dynamic Connectivity Data Structure",
+                "category": "DSA",
+                "description": "Create a data structure to efficiently handle dynamic connectivity queries and updates.",
+                "tags": "Dynamic Connectivity, Data Structure, Union-Find",
+                "paid": "Yes",
+                "answer": "Implement a Union-Find data structure with path compression and union by rank to efficiently handle dynamic connectivity queries and updates, such as checking and merging connected components."
+        },
+        {
+                "title": "Find the Maximum Bipartite Matching with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum bipartite matching with additional constraints on the matchings.",
+                "tags": "Graph, Bipartite Matching, Constraints",
+                "paid": "Yes",
+                "answer": "Use the Hopcroft-Karp algorithm to find the maximum bipartite matching while respecting constraints. For example, ensure matchings satisfy specific conditions or limits."
+        },
+        {
+                "title": "Solve the Minimum Cost Path with Dynamic Obstacles",
+                "category": "DSA",
+                "description": "Find the minimum cost path in a grid with dynamically changing obstacles.",
+                "tags": "Grid, Pathfinding, Dynamic Obstacles, Cost",
+                "paid": "Yes",
+                "answer": "Use algorithms that handle dynamic changes, such as Dijkstra’s with priority queues, to find the minimum cost path while adjusting for changing obstacles in the grid."
+        },
+        {
+                "title": "Find the Largest Sum of Non-Adjacent Elements in a 2D Grid",
+                "category": "DSA",
+                "description": "Compute the largest sum of non-adjacent elements in a 2D grid.",
+                "tags": "Grid, Non-Adjacent, Maximum Sum",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the largest sum of non-adjacent elements in a 2D grid. For example, select elements such that no two chosen elements are adjacent in any direction."
+        },
+        {
+                "title": "Implement a Priority Queue with Decrease-Key Operation",
+                "category": "DSA",
+                "description": "Create a priority queue that supports efficient decrease-key operations.",
+                "tags": "Priority Queue, Decrease-Key, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a priority queue using a data structure like a binary heap or Fibonacci heap that supports efficient decrease-key operations for updating priorities and maintaining order."
+        },
+        {
+                "title": "Solve the Minimum Cost to Arrange a Grid in Sorted Order with Restrictions",
+                "category": "DSA",
+                "description": "Determine the minimum cost to arrange a grid in a sorted order with additional restrictions.",
+                "tags": "Grid, Rearrangement, Cost, Restrictions",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to compute the minimum cost for arranging a grid into sorted order with restrictions on allowed operations. For example, sort elements with specific movement constraints."
+        },
+        {
+                "title": "Find the Maximum Weight Independent Set in a Graph",
+                "category": "DSA",
+                "description": "Compute the maximum weight independent set in a weighted graph.",
+                "tags": "Graph, Independent Set, Maximum Weight",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or approximation algorithms to find the maximum weight independent set. For example, select vertices such that no two are adjacent and the sum of weights is maximized."
+        },
+        {
+                "title": "Implement a Mergeable Heap Data Structure",
+                "category": "DSA",
+                "description": "Create a heap data structure that supports merging two heaps efficiently.",
+                "tags": "Heap, Mergeable Heap, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a mergeable heap, such as a Fibonacci heap or binomial heap, that supports efficient merge operations while maintaining heap properties and supporting other operations."
+        },
+        {
+                "title": "Find the Minimum Number of Moves to Solve a 2D Sliding Puzzle",
+                "category": "DSA",
+                "description": "Compute the minimum number of moves to solve a 2D sliding puzzle from a given starting configuration.",
+                "tags": "Puzzle, Sliding Puzzle, Algorithm",
+                "paid": "Yes",
+                "answer": "Use BFS to explore all possible moves and find the shortest path to solve the 2D sliding puzzle. Each move involves sliding tiles to achieve the goal configuration."
+        },
+        {
+                "title": "Implement a Dynamic Array with Support for Efficient Resizing",
+                "category": "DSA",
+                "description": "Create a dynamic array that efficiently supports resizing operations.",
+                "tags": "Dynamic Array, Resizing, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a dynamic array with amortized constant-time resizing operations. Use strategies like doubling the size when full to ensure efficient resizing while managing element storage."
+        },
+        {
+                "title": "Solve the Maximum Submatrix Sum Problem with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum sum of a submatrix with additional constraints.",
+                "tags": "Matrix, Maximum Submatrix Sum, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum sum submatrix while respecting constraints like element values or submatrix size limits. For example, find the maximum sum submatrix with given constraints."
+        },
+        {
+                "title": "Implement a Balanced Binary Search Tree with Range Queries",
+                "category": "DSA",
+                "description": "Create a balanced binary search tree that supports range queries efficiently.",
+                "tags": "Binary Search Tree, Range Queries, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a balanced binary search tree such as an AVL tree or Red-Black tree with additional methods for efficient range queries, like finding all elements within a specific range."
+        },
+        {
+                "title": "Find the Minimum Number of Operations to Transform One Graph into Another",
+                "category": "DSA",
+                "description": "Determine the minimum number of operations needed to convert one graph into another.",
+                "tags": "Graph, Transformation, Minimum Operations",
+                "paid": "Yes",
+                "answer": "Use algorithms to calculate the minimum operations (such as adding or removing edges) required to transform one graph into another. For example, compute the cost to match graph structures."
+        },
+        {
+                "title": "Solve the Maximum Flow Problem in a Network with Capacities",
+                "category": "DSA",
+                "description": "Compute the maximum flow in a network with capacity constraints on edges.",
+                "tags": "Network Flow, Maximum Flow, Capacities",
+                "paid": "Yes",
+                "answer": "Apply the Ford-Fulkerson method or its variant, Edmonds-Karp, to solve the maximum flow problem considering edge capacities. Find the maximum flow from a source to a sink in a network."
+        },
+        {
+                "title": "Implement a Segment Tree with Lazy Propagation",
+                "category": "DSA",
+                "description": "Build a segment tree that supports lazy propagation for efficient range updates and queries.",
+                "tags": "Segment Tree, Lazy Propagation, Data Structure",
+                "paid": "Yes",
+                "answer": "A segment tree with lazy propagation efficiently handles range updates and queries. Implement methods to propagate updates lazily and maintain accurate segment values."
+        },
+        {
+                "title": "Find the Minimum Number of Edges to Achieve Strong Connectivity in a Graph",
+                "category": "DSA",
+                "description": "Determine the minimum number of edges needed to make a directed graph strongly connected.",
+                "tags": "Graph, Strong Connectivity, Minimum Edges",
+                "paid": "Yes",
+                "answer": "Use algorithms like Tarjan's or Kosaraju's to find strongly connected components and calculate the minimum number of edges required to make the graph strongly connected."
+        },
+        {
+                "title": "Solve the Maximum Rectangle Area Problem in a Binary Matrix",
+                "category": "DSA",
+                "description": "Find the maximum area of a rectangle in a binary matrix.",
+                "tags": "Binary Matrix, Maximum Rectangle Area, Algorithm",
+                "paid": "Yes",
+                "answer": "Use a histogram-based approach where each row in the binary matrix is treated as a base for a histogram. Compute the maximum rectangle area using a stack-based histogram algorithm."
+        },
+        {
+                "title": "Implement an AVL Tree with In-Order Traversal",
+                "category": "DSA",
+                "description": "Create an AVL Tree with support for in-order traversal.",
+                "tags": "AVL Tree, In-Order Traversal, Data Structure",
+                "paid": "Yes",
+                "answer": "An AVL Tree is a self-balancing binary search tree. Implement in-order traversal to retrieve elements in sorted order while maintaining balance during insertions and deletions."
+        },
+        {
+                "title": "Find the Shortest Path in a Graph with Non-Uniform Weights",
+                "category": "DSA",
+                "description": "Compute the shortest path in a graph where edge weights are non-uniform.",
+                "tags": "Graph, Shortest Path, Non-Uniform Weights",
+                "paid": "Yes",
+                "answer": "Use Dijkstra's algorithm to find the shortest path in a graph with non-uniform weights. For graphs with negative weights, use the Bellman-Ford algorithm to handle potential negative cycles."
+        },
+        {
+                "title": "Solve the Maximum Independent Set Problem in a Graph",
+                "category": "DSA",
+                "description": "Compute the maximum independent set in a graph, where no two vertices are adjacent.",
+                "tags": "Graph, Independent Set, Maximum Size",
+                "paid": "Yes",
+                "answer": "Use approximation algorithms or dynamic programming to find the maximum independent set. For example, select the largest set of vertices with no two adjacent vertices in a graph."
+        },
+        {
+                "title": "Implement a Skip List for Efficient Search Operations",
+                "category": "DSA",
+                "description": "Build a skip list to perform search operations efficiently.",
+                "tags": "Skip List, Data Structure, Search",
+                "paid": "Yes",
+                "answer": "A skip list is a probabilistic data structure that allows efficient search, insertion, and deletion operations. Implement skip lists with multiple levels of linked lists to facilitate fast searches."
+        },
+        {
+                "title": "Find the Minimum Cost to Convert a Graph to a Tree Structure",
+                "category": "DSA",
+                "description": "Compute the minimum cost required to transform a graph into a tree structure.",
+                "tags": "Graph, Tree Structure, Conversion, Cost",
+                "paid": "Yes",
+                "answer": "Use algorithms to find the minimum cost of converting a graph to a tree by removing edges while minimizing the cost. For example, find the minimum spanning tree or apply graph modification techniques."
+        },
+        {
+                "title": "Solve the Longest Common Substring Problem with Constraints",
+                "category": "DSA",
+                "description": "Determine the longest common substring with additional constraints on the strings.",
+                "tags": "String, Longest Common Substring, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest common substring while respecting constraints such as specific character sets or lengths. Compute the longest substring that appears in both strings."
+        },
+        {
+                "title": "Implement a Multi-Dimensional Range Query Data Structure",
+                "category": "DSA",
+                "description": "Create a data structure to efficiently handle range queries in multiple dimensions.",
+                "tags": "Range Query, Multi-Dimensional, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement data structures like KD-Trees or Range Trees to handle multi-dimensional range queries. Support efficient queries and updates for k-dimensional points or ranges."
+        },
+        {
+                "title": "Find the Maximum Flow in a Network with Capacities and Costs",
+                "category": "DSA",
+                "description": "Compute the maximum flow in a network considering both capacities and costs on edges.",
+                "tags": "Network Flow, Maximum Flow, Capacities, Costs",
+                "paid": "Yes",
+                "answer": "Use the Successive Shortest Path algorithm or Min-Cost Max-Flow algorithm to find the maximum flow with capacities and costs. Compute both maximum flow and minimum cost for flow."
+        },
+        {
+                "title": "Solve the Minimum Distance to Cover All Nodes in a Graph",
+                "category": "DSA",
+                "description": "Compute the minimum distance required to cover all nodes in a graph.",
+                "tags": "Graph, Minimum Distance, Coverage",
+                "paid": "Yes",
+                "answer": "Use algorithms like the Travelling Salesman Problem (TSP) approximation or Minimum Steiner Tree to find the minimum distance required to visit or cover all nodes in a graph."
+        },
+        {
+                "title": "Implement a Balanced B-Tree with Range Queries",
+                "category": "DSA",
+                "description": "Create a B-Tree that supports efficient range queries.",
+                "tags": "B-Tree, Balanced Tree, Range Queries",
+                "paid": "Yes",
+                "answer": "A B-Tree is a balanced tree data structure that supports efficient insertions, deletions, and range queries. Implement the B-Tree with methods for range queries and maintain balance during updates."
+        },
+        {
+                "title": "Find the Minimum Cost to Build a Spanning Tree with Additional Constraints",
+                "category": "DSA",
+                "description": "Determine the minimum cost to build a spanning tree with additional constraints on edge selection.",
+                "tags": "Graph, Spanning Tree, Minimum Cost, Constraints",
+                "paid": "Yes",
+                "answer": "Use Kruskal's or Prim's algorithm to find the minimum cost spanning tree while respecting constraints such as specific edge requirements or node conditions."
+        },
+        {
+                "title": "Solve the Maximum Weighted Bipartite Matching Problem",
+                "category": "DSA",
+                "description": "Compute the maximum weighted bipartite matching in a weighted bipartite graph.",
+                "tags": "Graph, Bipartite Matching, Weighted Matching",
+                "paid": "Yes",
+                "answer": "Use the Hungarian algorithm to find the maximum weighted bipartite matching. Compute the optimal matching that maximizes the sum of weights in a bipartite graph."
+        },
+        {
+                "title": "Implement a Dynamic Connectivity Data Structure with Path Compression",
+                "category": "DSA",
+                "description": "Create a data structure for dynamic connectivity with path compression optimization.",
+                "tags": "Dynamic Connectivity, Path Compression, Union-Find",
+                "paid": "Yes",
+                "answer": "Implement a Union-Find data structure with path compression to efficiently handle dynamic connectivity queries and updates. Optimize connectivity checks and union operations with path compression."
+        },
+        {
+                "title": "Find the Maximum Sum of Non-Adjacent Elements in a 1D Array",
+                "category": "DSA",
+                "description": "Compute the maximum sum of non-adjacent elements in a 1D array.",
+                "tags": "Array, Non-Adjacent, Maximum Sum",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum sum of non-adjacent elements in a 1D array. For example, select elements such that no two chosen elements are adjacent, maximizing their sum."
+        },
+        {
+                "title": "Solve the Longest Path Problem in a Directed Graph with Cycles",
+                "category": "DSA",
+                "description": "Determine the longest path in a directed graph that may contain cycles.",
+                "tags": "Graph, Longest Path, Directed Graph, Cycles",
+                "paid": "Yes",
+                "answer": "Handle cycles by first detecting and removing them or using algorithms like the Floyd-Warshall algorithm to find longest paths considering all possible paths and cycles."
+        },
+        {
+                "title": "Implement a Treap for Efficient Search and Updates",
+                "category": "DSA",
+                "description": "Create a Treap (a randomized binary search tree) that supports efficient search, insertion, and deletion.",
+                "tags": "Treap, Data Structure, Search, Updates",
+                "paid": "Yes",
+                "answer": "A Treap is a binary search tree with priority-based balancing. Implement it to support efficient search, insertion, and deletion operations by maintaining heap properties along with BST properties."
+        },
+        {
+                "title": "Find the Minimum Cost to Cover All Nodes in a Weighted Graph",
+                "category": "DSA",
+                "description": "Compute the minimum cost to cover all nodes in a weighted graph.",
+                "tags": "Graph, Minimum Cost, Coverage",
+                "paid": "Yes",
+                "answer": "Use algorithms like the Minimum Spanning Tree or Steiner Tree to cover all nodes with the minimum cost in a weighted graph. Compute the optimal covering based on edge weights and node requirements."
+        },
+        {
+                "title": "Solve the Maximum Area of a Subrectangle with Constraints in a Grid",
+                "category": "DSA",
+                "description": "Find the maximum area of a subrectangle in a grid with additional constraints.",
+                "tags": "Grid, Subrectangle, Maximum Area, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum area of a subrectangle within a grid while adhering to constraints. For example, maximize the area of a rectangle with specific value constraints."
+        },
+        {
+                "title": "Implement a Data Structure for Efficient Range Updates and Queries",
+                "category": "DSA",
+                "description": "Create a data structure that supports efficient range updates and queries.",
+                "tags": "Range Updates, Range Queries, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a Segment Tree or Fenwick Tree (Binary Indexed Tree) to handle efficient range updates and queries. Support operations like adding a value to a range and querying sums over ranges."
+        },
+        {
+                "title": "Find the Maximum Sum of Non-Adjacent Elements in a Circular Array",
+                "category": "DSA",
+                "description": "Compute the maximum sum of non-adjacent elements in a circular array.",
+                "tags": "Array, Circular Array, Non-Adjacent, Maximum Sum",
+                "paid": "Yes",
+                "answer": "Use dynamic programming with two scenarios: one considering the first element and one excluding it. Compute the maximum sum by evaluating both cases and choosing the better result."
+        },
+        {
+                "title": "Solve the Maximum Product Subarray Problem with Constraints",
+                "category": "DSA",
+                "description": "Determine the maximum product of a subarray with additional constraints.",
+                "tags": "Array, Subarray, Maximum Product, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum product subarray while adhering to constraints like element values or subarray length limits. Compute the maximum product based on constraints."
+        },
+        {
+                "title": "Implement a Persistent Data Structure for Historical Queries",
+                "category": "DSA",
+                "description": "Create a persistent data structure that supports queries on historical versions of the data.",
+                "tags": "Persistent Data Structure, Historical Queries, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a data structure that maintains historical versions, such as a persistent segment tree, to efficiently support queries and modifications across different versions of the data."
+        },
+        {
+                "title": "Find the Maximum Flow in a Network with Multiple Sources and Sinks",
+                "category": "DSA",
+                "description": "Compute the maximum flow in a network with multiple sources and sinks.",
+                "tags": "Network Flow, Maximum Flow, Multiple Sources, Multiple Sinks",
+                "paid": "Yes",
+                "answer": "Extend the Ford-Fulkerson or Edmonds-Karp algorithm to handle multiple sources and sinks by introducing a super-source and super-sink, then compute the maximum flow in this modified network."
+        },
+        {
+                "title": "Solve the Longest Increasing Subsequence Problem in a Matrix",
+                "category": "DSA",
+                "description": "Determine the longest increasing subsequence in a 2D matrix.",
+                "tags": "Matrix, Longest Increasing Subsequence, Algorithm",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the longest increasing subsequence in a 2D matrix. For each cell, compute the longest subsequence considering all previous cells that can form increasing sequences."
+        },
+        {
+                "title": "Implement a Trie with Efficient Prefix Query Support",
+                "category": "DSA",
+                "description": "Build a Trie that supports efficient prefix queries and insertions.",
+                "tags": "Trie, Data Structure, Prefix Queries",
+                "paid": "Yes",
+                "answer": "Implement a Trie (prefix tree) to support efficient insertion and prefix queries. Use a tree-like structure where each node represents a character, allowing quick retrieval of words with common prefixes."
+        },
+        {
+                "title": "Find the Minimum Cost to Convert a Tree into a Balanced Tree",
+                "category": "DSA",
+                "description": "Compute the minimum cost required to transform a tree into a balanced binary tree.",
+                "tags": "Tree, Balanced Tree, Conversion, Cost",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to determine the minimum cost of converting a tree into a balanced binary tree. Calculate the cost by adding or removing nodes to achieve balance and minimize costs."
+        },
+        {
+                "title": "Solve the Maximum Sum Rectangle in a Binary Matrix with Constraints",
+                "category": "DSA",
+                "description": "Find the maximum sum rectangle in a binary matrix with additional constraints.",
+                "tags": "Binary Matrix, Maximum Sum Rectangle, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming or prefix sum techniques to find the maximum sum rectangle in a binary matrix while adhering to constraints such as submatrix size or value limits."
+        },
+        {
+                "title": "Implement a Binary Indexed Tree with Range Queries",
+                "category": "DSA",
+                "description": "Create a Binary Indexed Tree (Fenwick Tree) to efficiently handle range queries and updates.",
+                "tags": "Binary Indexed Tree, Range Queries, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a Binary Indexed Tree to support efficient range queries and updates. Use it to quickly calculate prefix sums and update values within an array or data structure."
+        },
+        {
+                "title": "Find the Minimum Number of Edges to Make a Graph Strongly Connected",
+                "category": "DSA",
+                "description": "Compute the minimum number of edges required to make a directed graph strongly connected.",
+                "tags": "Graph, Strong Connectivity, Minimum Edges",
+                "paid": "Yes",
+                "answer": "Use algorithms like Kosaraju's or Tarjan's to find strongly connected components and then calculate the minimum number of edges needed to connect all components to achieve strong connectivity."
+        },
+        {
+                "title": "Solve the Maximum Subarray Sum Problem in a Circular Array with Constraints",
+                "category": "DSA",
+                "description": "Compute the maximum sum of a subarray in a circular array with additional constraints.",
+                "tags": "Circular Array, Subarray Sum, Constraints",
+                "paid": "Yes",
+                "answer": "Use dynamic programming to find the maximum subarray sum in a circular array while respecting constraints. Handle circular wraparounds by combining the standard subarray sum and circular case."
+        },
+        {
+                "title": "Implement a Suffix Array for Efficient String Matching",
+                "category": "DSA",
+                "description": "Build a suffix array to perform efficient string matching and substring searches.",
+                "tags": "Suffix Array, String Matching, Data Structure",
+                "paid": "Yes",
+                "answer": "Implement a suffix array to efficiently support string matching and substring searches. Use algorithms like SA-IS or prefix doubling to construct the suffix array and support fast queries."
+        },
+        {
+                "title": "Find the Minimum Distance to Cover All Nodes in a Weighted Graph with Constraints",
+                "category": "DSA",
+                "description": "Determine the minimum distance required to cover all nodes in a weighted graph with additional constraints.",
+                "tags": "Graph, Minimum Distance, Coverage, Constraints",
+                "paid": "Yes",
+                "answer": "Use algorithms like the Minimum Spanning Tree or Steiner Tree with additional constraints to cover all nodes in a weighted graph. Optimize the covering distance considering the constraints."
+        },
+        {
+                "title": "What is an Algorithm?",
+                "category": "DSA",
+                "description": "Explain the concept of an algorithm in computing.",
+                "tags": "algorithm,computer science,basic concepts",
+                "paid": "Yes",
+                "answer": "An algorithm is a step-by-step procedure or formula for solving a problem. Algorithms are essential in computer science for performing tasks efficiently and correctly. For example, a sorting algorithm like Merge Sort is used to arrange elements in a list in a specific order."
+        },
+        {
+                "title": "Explain the Time Complexity of an Algorithm.",
+                "category": "DSA",
+                "description": "Define time complexity and its significance in algorithm analysis.",
+                "tags": "time complexity,algorithm analysis,computer science",
+                "paid": "Yes",
+                "answer": "Time complexity describes the computational time an algorithm takes to run, depending on the size of its input. It helps in evaluating the performance of algorithms. For example, the time complexity of Bubble Sort is O(n^2), where 'n' represents the number of elements to be sorted."
+        },
+        {
+                "title": "What is a Binary Search Algorithm?",
+                "category": "DSA",
+                "description": "Describe the binary search algorithm and its efficiency.",
+                "tags": "binary search,search algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Binary Search is an efficient algorithm that finds the position of a target value within a sorted array. It divides the search space in half with each step, giving it a time complexity of O(log n). For example, searching for a number in a sorted list of 10 elements takes at most 4 steps."
+        },
+        {
+                "title": "What is a Data Structure?",
+                "category": "DSA",
+                "description": "Define data structure and its types.",
+                "tags": "data structure,types of data structure,computer science",
+                "paid": "Yes",
+                "answer": "A data structure is a way of organizing and storing data efficiently. Types include arrays, linked lists, stacks, queues, trees, and graphs. For example, a stack follows the Last In, First Out (LIFO) principle and is used in algorithms like depth-first search."
+        },
+        {
+                "title": "Explain the concept of Recursion.",
+                "category": "DSA",
+                "description": "Define recursion and its use in algorithms.",
+                "tags": "recursion,algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Recursion is when a function calls itself in order to solve smaller instances of the same problem. This approach is commonly used in divide and conquer algorithms. For example, calculating the factorial of a number (n!) can be done using recursion: n! = n * (n-1)!"
+        },
+        {
+                "title": "What is a Linked List?",
+                "category": "DSA",
+                "description": "Explain what a linked list is and how it differs from an array.",
+                "tags": "linked list,data structures,computer science",
+                "paid": "Yes",
+                "answer": "A linked list is a linear data structure where elements, called nodes, are stored in different memory locations and linked using pointers. Unlike arrays, which store elements in contiguous memory locations, linked lists are more dynamic and flexible. For example, in a singly linked list, each node contains data and a reference to the next node."
+        },
+        {
+                "title": "What is Bubble Sort?",
+                "category": "DSA",
+                "description": "Explain the Bubble Sort algorithm and its time complexity.",
+                "tags": "bubble sort,sorting algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Bubble Sort is a simple comparison-based sorting algorithm where adjacent elements are swapped if they are in the wrong order. The process repeats until the list is sorted. Its time complexity is O(n^2) in the worst case. For example, sorting the list [5, 2, 9, 1] using Bubble Sort will result in [1, 2, 5, 9]."
+        },
+        {
+                "title": "What is a Stack?",
+                "category": "DSA",
+                "description": "Define stack data structure and its use cases.",
+                "tags": "stack,data structures,computer science",
+                "paid": "Yes",
+                "answer": "A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It is used in many algorithms, including undo mechanisms, expression evaluation, and depth-first search (DFS). For example, a stack can store function calls in a recursive program, helping manage the sequence of execution."
+        },
+        {
+                "title": "What is an Array?",
+                "category": "DSA",
+                "description": "Define arrays and discuss their advantages and disadvantages.",
+                "tags": "arrays,data structures,computer science",
+                "paid": "Yes",
+                "answer": "An array is a collection of elements stored in contiguous memory locations, where each element can be accessed by an index. Arrays offer fast access to elements but are of fixed size, which limits their flexibility. For example, an array [1, 2, 3, 4] has indices 0, 1, 2, and 3 respectively."
+        },
+        {
+                "title": "Explain the concept of Hashing.",
+                "category": "DSA",
+                "description": "Define hashing and its importance in data structures.",
+                "tags": "hashing,hash table,data structures,computer science",
+                "paid": "Yes",
+                "answer": "Hashing is a technique used to map data of arbitrary size to fixed-size values, often used in hash tables. The hash function determines the index for data storage. Hashing allows for fast access to data. For example, in a hash table, 'John' might be stored at index 5 after hashing the name."
+        },
+        {
+                "title": "What is a Queue?",
+                "category": "DSA",
+                "description": "Describe a queue and its applications in computing.",
+                "tags": "queue,data structures,computer science",
+                "paid": "Yes",
+                "answer": "A queue is a linear data structure that follows the First In, First Out (FIFO) principle. It is commonly used in scheduling algorithms, task management, and buffering in computer systems. For example, a print job queue allows documents to be printed in the order they were received."
+        },
+        {
+                "title": "What is Merge Sort?",
+                "category": "DSA",
+                "description": "Describe the Merge Sort algorithm and its efficiency.",
+                "tags": "merge sort,sorting algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Merge Sort is a divide-and-conquer sorting algorithm that recursively splits the array into halves until each sub-array contains a single element, then merges them in sorted order. It has a time complexity of O(n log n), making it more efficient than algorithms like Bubble Sort. For example, it can sort [5, 2, 9, 1] into [1, 2, 5, 9]."
+        },
+        {
+                "title": "What is a Binary Tree?",
+                "category": "DSA",
+                "description": "Define a binary tree and its types.",
+                "tags": "binary tree,data structures,tree structures,computer science",
+                "paid": "Yes",
+                "answer": "A binary tree is a hierarchical data structure where each node has at most two children, referred to as the left child and the right child. Binary trees are used in search algorithms and expression evaluation. For example, in a binary search tree, the left child contains values smaller than the parent node, and the right child contains larger values."
+        },
+        {
+                "title": "What is Dijkstra's Algorithm?",
+                "category": "DSA",
+                "description": "Explain Dijkstra's algorithm and its use in finding the shortest path.",
+                "tags": "dijkstra's algorithm,shortest path,graph algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Dijkstra's algorithm finds the shortest path between two nodes in a graph. It works by visiting nodes in increasing order of distance from the start node, updating paths to each unvisited neighbor. The algorithm is commonly used in GPS navigation systems. For example, finding the shortest route between two cities in a road network."
+        },
+        {
+                "title": "Explain Depth-First Search (DFS).",
+                "category": "DSA",
+                "description": "Describe the DFS algorithm and its applications.",
+                "tags": "depth-first search,dfs,graph algorithms,computer science",
+                "paid": "Yes",
+                "answer": "Depth-First Search (DFS) is a graph traversal algorithm that explores as far as possible along a branch before backtracking. It uses a stack, either explicitly or implicitly via recursion. DFS is used in pathfinding, solving mazes, and topological sorting. For example, DFS can traverse a graph to check connectivity between nodes."
+        }
+]

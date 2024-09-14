@@ -1,0 +1,1082 @@
+[
+        {
+                "title": "What is Angular?",
+                "category": "Angular",
+                "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is maintained by Google and provides tools for building dynamic web applications.",
+                "tags": "framework, TypeScript, web development",
+                "paid": "Yes",
+                "answer": "Angular is a comprehensive framework developed by Google for building dynamic and robust single-page applications. It utilizes TypeScript and offers a rich set of tools and features, including data binding, dependency injection, and a component-based architecture to streamline development and improve maintainability. Angular's modular design and built-in support for routing and state management make it a popular choice for developing complex web applications."
+        },
+        {
+                "title": "What is data binding in Angular?",
+                "category": "Angular",
+                "description": "Data binding is the process of synchronizing data between the model and view components in Angular.",
+                "tags": "data binding, MVC, Angular",
+                "paid": "Yes",
+                "answer": "Data binding in Angular is a mechanism for synchronizing data between the model and view components. Angular supports two types of data binding: one-way and two-way. One-way data binding updates the view when the model changes, while two-way data binding allows for changes in the view to be propagated back to the model. This is facilitated through Angular's `[(ngModel)]` directive and interpolation syntax, which simplifies the process of keeping the UI in sync with the application state."
+        },
+        {
+                "title": "What is a component in Angular?",
+                "category": "Angular",
+                "description": "A component is a fundamental building block of Angular applications that encapsulates a view and its associated logic.",
+                "tags": "components, Angular, web development",
+                "paid": "Yes",
+                "answer": "In Angular, a component is a fundamental building block that encapsulates a view and its associated logic. Each component consists of an HTML template, a CSS style sheet, and a TypeScript class. The component class defines the data and behavior, while the template defines the view's layout. Components can be nested and composed to create complex user interfaces. Angular uses a hierarchical structure where components can interact with each other through inputs and outputs, enabling modular and reusable code."
+        },
+        {
+                "title": "What is a service in Angular?",
+                "category": "Angular",
+                "description": "A service is a class used to share data and logic across multiple components in Angular applications.",
+                "tags": "services, dependency injection, Angular",
+                "paid": "Yes",
+                "answer": "In Angular, a service is a class that provides a specific functionality or set of functionalities, which can be shared across multiple components. Services are typically used to handle business logic, data retrieval, or other operations that are not directly related to the user interface. They are injected into components via Angular's dependency injection system, allowing for efficient and centralized management of common tasks and data. This promotes code reuse and helps keep components focused on their primary responsibilities."
+        },
+        {
+                "title": "What is dependency injection in Angular?",
+                "category": "Angular",
+                "description": "Dependency injection is a design pattern used to manage dependencies between classes in Angular applications.",
+                "tags": "dependency injection, Angular, design pattern",
+                "paid": "Yes",
+                "answer": "Dependency injection (DI) is a design pattern used in Angular to manage dependencies between classes and components. It involves providing a component or service with its dependencies rather than having it create or manage them itself. Angular's DI system allows you to inject services and other dependencies into components or other services, promoting modularity and separation of concerns. This approach facilitates testing, improves maintainability, and enhances the flexibility of the application by decoupling components from their dependencies."
+        },
+        {
+                "title": "What is a module in Angular?",
+                "category": "Angular",
+                "description": "A module is a cohesive block of code that groups related components, services, directives, and pipes in Angular applications.",
+                "tags": "modules, Angular, application structure",
+                "paid": "Yes",
+                "answer": "In Angular, a module is a cohesive block of code that groups related components, directives, pipes, and services into a functional unit. Modules help organize an application into distinct areas, making it easier to manage and maintain. The root module, typically called `AppModule`, bootstraps the application and imports other feature modules. Modules are defined using the `@NgModule` decorator, which specifies the components, directives, and pipes that belong to the module, as well as the providers and imports needed for the module's functionality."
+        },
+        {
+                "title": "What is Angular CLI?",
+                "category": "Angular",
+                "description": "Angular CLI is a command-line interface tool that helps in scaffolding, developing, and maintaining Angular applications.",
+                "tags": "Angular CLI, command-line, development",
+                "paid": "Yes",
+                "answer": "Angular CLI (Command Line Interface) is a powerful tool that streamlines the development workflow for Angular applications. It provides commands for generating components, services, and other parts of an Angular project, as well as for running, building, and testing the application. The CLI automates common tasks, such as setting up a new project with best practices, managing dependencies, and optimizing the build process. By using Angular CLI, developers can save time, maintain consistency, and ensure that the project adheres to Angular's recommended structure and conventions."
+        },
+        {
+                "title": "What is Angular's router module?",
+                "category": "Angular",
+                "description": "The router module in Angular enables navigation and routing between different views or components in a single-page application.",
+                "tags": "routing, Angular, router module",
+                "paid": "Yes",
+                "answer": "Angular's Router module is responsible for enabling navigation and routing within a single-page application (SPA). It allows developers to define routes, which map URL paths to specific components, enabling seamless transitions between different views or pages without reloading the entire application. The Router module provides features like route parameters, route guards, and lazy loading, which help manage navigation, security, and performance. By configuring routes and integrating the `RouterOutlet` directive, Angular applications can offer a dynamic and user-friendly experience."
+        },
+        {
+                "title": "What is a directive in Angular?",
+                "category": "Angular",
+                "description": "A directive is a class that adds behavior to elements in Angular applications by modifying the DOM.",
+                "tags": "directives, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "In Angular, a directive is a class that extends the behavior of elements in the DOM. Directives can be used to manipulate the appearance or behavior of DOM elements or to create reusable components. There are three main types of directives: structural directives (e.g., `*ngIf`, `*ngFor`) that change the DOM layout, attribute directives that modify the behavior or appearance of elements, and custom directives that developers create for specific needs. Directives play a crucial role in enhancing the functionality and flexibility of Angular applications by providing ways to encapsulate and reuse code."
+        },
+        {
+                "title": "What is Angular's change detection?",
+                "category": "Angular",
+                "description": "Change detection is a mechanism in Angular for tracking and responding to changes in the application's data model.",
+                "tags": "change detection, Angular, data binding",
+                "paid": "Yes",
+                "answer": "Angular's change detection mechanism is responsible for tracking changes in the application's data model and updating the view accordingly. Angular uses a change detection strategy to determine when to check for changes and update the DOM. By default, Angular employs the 'CheckAlways' strategy, which checks all components on every event or user interaction. However, developers can use the 'OnPush' strategy to optimize performance by only checking components when their input properties change. Change detection helps ensure that the user interface remains in sync with the application's state, enhancing the responsiveness and accuracy of the application."
+        },
+        {
+                "title": "What is the purpose of Angular's ngOnInit lifecycle hook?",
+                "category": "Angular",
+                "description": "The ngOnInit lifecycle hook is used for component initialization after Angular has finished setting up the component's inputs.",
+                "tags": "lifecycle hooks, ngOnInit, Angular",
+                "paid": "Yes",
+                "answer": "The `ngOnInit` lifecycle hook in Angular is used for component initialization tasks that need to occur after Angular has finished setting up the component's input properties. It is called once, immediately after the component is instantiated and its input properties are bound. This hook is ideal for initializing data, performing setup operations, or making service calls that are required for the component to function correctly. Implementing `ngOnInit` helps ensure that the component is fully initialized and ready for use when it is rendered in the application."
+        },
+        {
+                "title": "How do you implement routing in Angular?",
+                "category": "Angular",
+                "description": "Routing in Angular is implemented using the Router module, which allows for navigation between different components based on URL paths.",
+                "tags": "routing, Angular, Router module",
+                "paid": "Yes",
+                "answer": "Routing in Angular is implemented using the Router module, which provides a way to navigate between different components based on URL paths. To set up routing, you first import `RouterModule` and `Routes` from `@angular/router` in your Angular module. You then define an array of routes that map URL paths to components. This configuration is passed to the `RouterModule.forRoot()` method in the module's imports array. The `<router-outlet>` directive is used in the template to specify where the routed components should be displayed. This setup allows for seamless navigation and dynamic content rendering within the application."
+        },
+        {
+                "title": "What are Angular pipes?",
+                "category": "Angular",
+                "description": "Pipes in Angular are used to transform data in the template, such as formatting dates or currency.",
+                "tags": "pipes, Angular, data transformation",
+                "paid": "Yes",
+                "answer": "Angular pipes are used to transform data before displaying it in the view. Pipes take input data, process it, and return the transformed output. They are typically used within templates to format or manipulate data, such as converting dates, currencies, or text. Angular provides several built-in pipes like `DatePipe`, `CurrencyPipe`, and `UpperCasePipe`. Developers can also create custom pipes to handle specific data transformations required by their application. Pipes help maintain a clean and readable template by encapsulating data transformation logic separately from the component's code."
+        },
+        {
+                "title": "What is Angular's Reactive Forms?",
+                "category": "Angular",
+                "description": "Reactive Forms is an approach to handling form inputs and validation using a model-driven technique in Angular.",
+                "tags": "Reactive Forms, Angular, form handling",
+                "paid": "Yes",
+                "answer": "Reactive Forms in Angular provide a model-driven approach to handling form inputs and validation. Unlike template-driven forms, which rely on Angular directives in the template, Reactive Forms use a more explicit and scalable model defined in the component class. This approach involves creating `FormGroup` and `FormControl` instances to manage the form's state and validation logic. Reactive Forms offer greater control over form behavior, dynamic form generation, and validation, making them suitable for complex forms and scenarios requiring fine-grained control over user input."
+        },
+        {
+                "title": "What is Angular's ngModel?",
+                "category": "Angular",
+                "description": "ngModel is a directive that enables two-way data binding between form controls and component properties in Angular.",
+                "tags": "ngModel, Angular, two-way binding",
+                "paid": "Yes",
+                "answer": "The `ngModel` directive in Angular is used to create two-way data binding between form controls and component properties. It binds the value of an input element to a variable in the component and updates the variable whenever the input value changes. This two-way binding ensures that changes in the form control are reflected in the component's state and vice versa. `ngModel` is commonly used in template-driven forms to simplify the management of form inputs and maintain synchronization between the user interface and the underlying data model."
+        },
+        {
+                "title": "How do you create a custom Angular directive?",
+                "category": "Angular",
+                "description": "A custom directive in Angular is created by defining a class with the @Directive decorator and specifying its behavior.",
+                "tags": "custom directive, Angular, @Directive",
+                "paid": "Yes",
+                "answer": "To create a custom Angular directive, you define a class and decorate it with the `@Directive` decorator. Within this class, you can specify the directive's behavior by implementing methods such as `ngOnInit`, `ngOnChanges`, or using lifecycle hooks. You also define the directive's selector, which determines how it is applied in the template. Custom directives can be used to manipulate the DOM, add custom behavior to elements, or create reusable components. For example, you might create a directive to change the background color of an element based on certain conditions."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy?",
+                "category": "Angular",
+                "description": "ChangeDetectionStrategy determines how Angular checks for changes in the application state and updates the view.",
+                "tags": "ChangeDetectionStrategy, Angular, performance",
+                "paid": "Yes",
+                "answer": "Angular's `ChangeDetectionStrategy` is a configuration that controls how Angular checks for changes in the application state and updates the view. There are two main strategies: `Default` and `OnPush`. The `Default` strategy checks all components in the component tree whenever an event or change occurs, ensuring that the view is updated accordingly. The `OnPush` strategy, on the other hand, limits change detection to components with changed input properties or events that originate from within the component. This can improve performance by reducing the frequency of change detection checks and is useful for optimizing large or complex applications."
+        },
+        {
+                "title": "What is Angular's HttpClient?",
+                "category": "Angular",
+                "description": "HttpClient is a service in Angular used for making HTTP requests and handling responses in a more convenient way.",
+                "tags": "HttpClient, Angular, HTTP requests",
+                "paid": "Yes",
+                "answer": "Angular's `HttpClient` is a service provided by the `@angular/common/http` package that simplifies making HTTP requests and handling responses. It offers a modern, promise-based API for performing CRUD operations and interacting with RESTful services. `HttpClient` supports various methods such as `GET`, `POST`, `PUT`, and `DELETE`, and provides features for handling request and response data, including automatic JSON parsing and error handling. By using `HttpClient`, developers can efficiently manage network communication and integrate external APIs or backend services into their Angular applications."
+        },
+        {
+                "title": "How do you implement lazy loading in Angular?",
+                "category": "Angular",
+                "description": "Lazy loading in Angular is implemented by configuring routes to load feature modules only when needed.",
+                "tags": "lazy loading, Angular, performance optimization",
+                "paid": "Yes",
+                "answer": "Lazy loading in Angular is implemented by configuring the router to load feature modules only when they are required. This is achieved by using the `loadChildren` property in route configurations, which specifies the module to be loaded dynamically. Feature modules are defined with their own routing configuration, and Angular's router handles loading these modules on demand. This approach improves application performance by reducing the initial load time and only fetching the necessary modules when a user navigates to a specific route. Lazy loading is especially useful for large applications with multiple modules and routes."
+        },
+        {
+                "title": "What is Angular's Renderer2?",
+                "category": "Angular",
+                "description": "Renderer2 is an Angular service used to safely manipulate DOM elements without directly accessing the DOM.",
+                "tags": "Renderer2, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "`Renderer2` is an Angular service that provides an abstraction for safely manipulating the DOM without directly accessing it. It is designed to work across different platforms, including server-side rendering and web workers, by providing a consistent API for DOM operations. `Renderer2` allows developers to perform tasks such as adding or removing classes, setting attributes, and creating or destroying elements in a way that is compatible with Angular's rendering engine. This abstraction helps maintain compatibility and security while providing a flexible way to interact with the DOM."
+        },
+        {
+                "title": "What are Angular Guards?",
+                "category": "Angular",
+                "description": "Guards are used to control navigation to and from routes in Angular applications, implementing route protection.",
+                "tags": "guards, Angular, route protection",
+                "paid": "Yes",
+                "answer": "Angular Guards are interfaces that allow developers to control navigation to and from routes in an Angular application. They are used to protect routes based on conditions such as user authentication or authorization. There are several types of guards: `CanActivate` (to decide if a route can be activated), `CanDeactivate` (to decide if a route can be deactivated), `Resolve` (to fetch data before a route is activated), and `CanLoad` (to decide if a module can be lazily loaded). Implementing guards helps ensure that users have the proper permissions and data before accessing certain parts of the application."
+        },
+        {
+                "title": "What is Angular's ChangeDetectorRef?",
+                "category": "Angular",
+                "description": "ChangeDetectorRef is a service that provides methods for manually controlling the change detection process in Angular.",
+                "tags": "ChangeDetectorRef, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`ChangeDetectorRef` is a service in Angular that provides methods for manually controlling the change detection process. It allows developers to interact with the change detection mechanism, triggering checks or detaching change detection for specific components. Methods such as `markForCheck()`, `detectChanges()`, and `detach()` enable fine-grained control over when and how Angular updates the view in response to changes. This is particularly useful in performance optimization scenarios where you need to limit or manage change detection more precisely, such as in complex or highly interactive applications."
+        },
+        {
+                "title": "What is Angular's Zone.js?",
+                "category": "Angular",
+                "description": "Zone.js is a library that helps Angular detect and manage asynchronous operations, triggering change detection.",
+                "tags": "Zone.js, Angular, asynchronous operations",
+                "paid": "Yes",
+                "answer": "`Zone.js` is a library used by Angular to manage and detect asynchronous operations, such as HTTP requests, setTimeout, and other asynchronous tasks. It extends JavaScript's execution context, known as 'zones,' to track asynchronous activities and ensure that Angular's change detection is triggered appropriately when such operations complete. By using `Zone.js`, Angular can automatically detect changes in the application state and update the view accordingly without requiring manual intervention. This seamless integration helps maintain a consistent and responsive user interface by handling asynchronous events and their impact on the application's data model."
+        },
+        {
+                "title": "What is Angular's FormBuilder?",
+                "category": "Angular",
+                "description": "FormBuilder is a service in Angular that simplifies the creation of reactive forms.",
+                "tags": "FormBuilder, Angular, reactive forms",
+                "paid": "Yes",
+                "answer": "Angular's `FormBuilder` is a service that helps simplify the creation and management of reactive forms. It provides methods to create `FormGroup` and `FormControl` instances with an easier and more readable syntax. By using `FormBuilder`, developers can initialize form controls and set up validation rules in a concise manner. For example, instead of manually creating a `FormGroup` and `FormControl`, you can use `FormBuilder.group()` to define a form structure and validation logic more succinctly, improving code maintainability and readability."
+        },
+        {
+                "title": "What is Angular's HttpInterceptor?",
+                "category": "Angular",
+                "description": "HttpInterceptor is used to intercept and modify HTTP requests and responses.",
+                "tags": "HttpInterceptor, Angular, HTTP requests",
+                "paid": "Yes",
+                "answer": "`HttpInterceptor` is an interface in Angular that allows you to intercept and modify HTTP requests and responses. By implementing `HttpInterceptor`, you can add custom logic to the request or response pipeline, such as adding authorization headers, logging request details, or handling errors globally. Interceptors are registered with the `HttpClientModule` and can be used to provide cross-cutting concerns that affect multiple HTTP operations throughout the application. This approach helps maintain a clean and consistent handling of HTTP communications."
+        },
+        {
+                "title": "What is Angular's @Injectable decorator?",
+                "category": "Angular",
+                "description": "@Injectable is a decorator used to mark a class as a service that can be injected into other classes.",
+                "tags": "Injectable, Angular, dependency injection",
+                "paid": "Yes",
+                "answer": "The `@Injectable` decorator in Angular is used to mark a class as a service that can participate in Angular's dependency injection system. When applied to a class, it indicates that the class can be injected into other classes via the constructor, allowing it to be used as a service. This decorator ensures that Angular can create and manage instances of the class and handle its dependencies, enabling efficient and modular code. `@Injectable` is essential for services, as it facilitates their registration and injection into components, other services, or modules."
+        },
+        {
+                "title": "What is Angular's NgModule?",
+                "category": "Angular",
+                "description": "NgModule is a decorator that defines an Angular module, which is a collection of related components, directives, pipes, and services.",
+                "tags": "NgModule, Angular, modules",
+                "paid": "Yes",
+                "answer": "The `NgModule` decorator in Angular is used to define an Angular module, which groups together related components, directives, pipes, and services into a cohesive unit. An `NgModule` class includes metadata such as declarations (components, directives, pipes), imports (other modules), providers (services), and bootstrap (root component). This modular approach helps in organizing code, improving maintainability, and facilitating lazy loading. Modules can be imported into other modules, enabling a structured and scalable application architecture."
+        },
+        {
+                "title": "How do you handle errors in Angular's HttpClient?",
+                "category": "Angular",
+                "description": "Errors in Angular's HttpClient can be handled using the catchError operator from RxJS.",
+                "tags": "HttpClient, error handling, RxJS",
+                "paid": "Yes",
+                "answer": "Errors in Angular's `HttpClient` can be handled using the `catchError` operator from RxJS. By including `catchError` in the observable pipeline, you can intercept HTTP errors and handle them appropriately. Typically, you would use `catchError` to log errors, display user-friendly messages, or perform retry logic. For example, you can catch HTTP errors in a service method and return a default value or rethrow the error with additional context, ensuring that your application can handle failures gracefully and maintain a smooth user experience."
+        },
+        {
+                "title": "What is Angular's ngOnDestroy lifecycle hook?",
+                "category": "Angular",
+                "description": "ngOnDestroy is a lifecycle hook called just before Angular destroys a component or directive.",
+                "tags": "ngOnDestroy, lifecycle hooks, Angular",
+                "paid": "Yes",
+                "answer": "The `ngOnDestroy` lifecycle hook in Angular is called just before Angular destroys a component or directive. This hook provides an opportunity to perform cleanup operations, such as unsubscribing from observables, canceling ongoing HTTP requests, or releasing resources. Implementing `ngOnDestroy` helps prevent memory leaks and ensures that resources are properly cleaned up when a component is removed from the DOM. For example, you might use `ngOnDestroy` to unsubscribe from subscriptions that were established in the component to avoid potential memory leaks."
+        },
+        {
+                "title": "What is Angular's AOT compilation?",
+                "category": "Angular",
+                "description": "AOT (Ahead-of-Time) compilation compiles Angular templates and components at build time, improving performance and reducing payload size.",
+                "tags": "AOT, Angular, performance optimization",
+                "paid": "Yes",
+                "answer": "AOT (Ahead-of-Time) compilation in Angular compiles templates and components during the build process, rather than at runtime. This pre-compilation step transforms Angular templates and TypeScript code into efficient JavaScript code, which reduces the amount of work required by the browser. AOT improves application performance by decreasing the initial load time and payload size, as the application is delivered in a pre-compiled state. By using AOT, you can also catch template errors early in the build process, leading to more robust and reliable applications."
+        },
+        {
+                "title": "What is Angular's JIT compilation?",
+                "category": "Angular",
+                "description": "JIT (Just-in-Time) compilation compiles Angular templates and components at runtime, allowing for faster development and debugging.",
+                "tags": "JIT, Angular, development",
+                "paid": "Yes",
+                "answer": "JIT (Just-in-Time) compilation in Angular compiles templates and components at runtime, rather than during the build process. This approach allows for a faster development cycle and easier debugging, as changes to the code are immediately reflected without needing a rebuild. JIT compilation is typically used during development to enable features like hot reloading and live editing. However, for production builds, AOT (Ahead-of-Time) compilation is preferred due to its performance benefits and reduced payload size."
+        },
+        {
+                "title": "What is Angular's ngFor directive?",
+                "category": "Angular",
+                "description": "ngFor is a structural directive used to repeat a block of HTML for each item in a list.",
+                "tags": "ngFor, Angular, structural directives",
+                "paid": "Yes",
+                "answer": "The `ngFor` directive in Angular is a structural directive used to iterate over a list and repeat a block of HTML for each item. It simplifies rendering lists of items by automatically creating and managing the DOM elements based on the array data. For example, using `*ngFor='let item of items'` within a template will generate a list where each item in the `items` array is represented in the rendered HTML. `ngFor` also provides local variables like `index`, `first`, `last`, and `even` for more control over the iteration process."
+        },
+        {
+                "title": "What is Angular's @Component decorator?",
+                "category": "Angular",
+                "description": "@Component is a decorator that defines metadata for an Angular component, such as its template and styles.",
+                "tags": "@Component, Angular, components",
+                "paid": "Yes",
+                "answer": "The `@Component` decorator in Angular is used to define metadata for an Angular component. It specifies essential properties such as the component's template, style sheets, and selector. The decorator allows Angular to recognize and instantiate the component properly. For example, `@Component({ selector: 'app-example', templateUrl: './example.component.html', styleUrls: ['./example.component.css'] })` sets up the component with the necessary configuration. This metadata is crucial for Angular's component-based architecture, enabling the framework to manage and render components effectively."
+        },
+        {
+                "title": "How do you handle forms in Angular using template-driven approach?",
+                "category": "Angular",
+                "description": "Template-driven forms rely on Angular directives and ngModel for form control and validation in the template.",
+                "tags": "template-driven forms, Angular, ngModel",
+                "paid": "Yes",
+                "answer": "Template-driven forms in Angular use Angular directives, such as `ngModel`, to handle form control and validation directly within the template. In this approach, you define the form and its controls using HTML elements and Angular directives, such as `<form>`, `<input>`, and `[(ngModel)]`. Validation can be implemented using built-in directives like `required` and `minlength`, and you can access form control values and validation state directly in the template. This approach is suitable for simpler forms and provides a quick way to create and manage forms with minimal code."
+        },
+        {
+                "title": "What is Angular's @NgModule decorator?",
+                "category": "Angular",
+                "description": "@NgModule is a decorator that defines an Angular module and its components, directives, and services.",
+                "tags": "@NgModule, Angular, modules",
+                "paid": "Yes",
+                "answer": "The `@NgModule` decorator in Angular is used to define an Angular module, encapsulating related components, directives, pipes, and services. The `@NgModule` metadata includes properties like `declarations` (components, directives, pipes), `imports` (other modules), `providers` (services), and `bootstrap` (root component). For example, `@NgModule({ declarations: [AppComponent], imports: [BrowserModule], providers: [], bootstrap: [AppComponent] })` sets up the module with its dependencies and configuration. This decorator is essential for organizing and managing Angular applications."
+        },
+        {
+                "title": "How do you manage state in Angular?",
+                "category": "Angular",
+                "description": "State management in Angular can be achieved using services, RxJS, or third-party libraries like NgRx.",
+                "tags": "state management, Angular, NgRx, RxJS",
+                "paid": "Yes",
+                "answer": "State management in Angular can be handled through various methods, including using services, RxJS, or third-party libraries like NgRx. Services are commonly used to share state and logic between components, while RxJS observables provide a way to manage and react to state changes asynchronously. For more complex applications, NgRx offers a comprehensive state management solution based on Redux principles, including actions, reducers, and stores. Each approach has its benefits and is chosen based on the application's complexity and specific needs for state management."
+        },
+        {
+                "title": "What is Angular's ViewChild?",
+                "category": "Angular",
+                "description": "ViewChild is a decorator that allows accessing a child component or DOM element in the parent component's class.",
+                "tags": "ViewChild, Angular, component interaction",
+                "paid": "Yes",
+                "answer": "`ViewChild` is a decorator in Angular used to get a reference to a child component, directive, or DOM element within the parent component's class. By applying `@ViewChild` to a class property, you can access the child component's public methods and properties, or interact with the DOM element directly. For example, `@ViewChild(ChildComponent) child: ChildComponent;` allows the parent component to interact with the `ChildComponent` instance. This is useful for communication and manipulation of child components from a parent component."
+        },
+        {
+                "title": "What is Angular's ngIf directive?",
+                "category": "Angular",
+                "description": "ngIf is a structural directive used to conditionally include or exclude elements from the DOM based on an expression.",
+                "tags": "ngIf, Angular, structural directives",
+                "paid": "Yes",
+                "answer": "The `ngIf` directive in Angular is a structural directive used to conditionally include or exclude elements from the DOM based on an expression. When the expression evaluates to `true`, the element is added to the DOM; when `false`, it is removed. For example, `<div *ngIf='isVisible'>Content</div>` will render the `div` only if `isVisible` is `true`. `ngIf` helps control the visibility of elements and manage conditional rendering within Angular templates, making it a fundamental tool for dynamic content display."
+        },
+        {
+                "title": "What is Angular's ngClass directive?",
+                "category": "Angular",
+                "description": "ngClass is a directive used to dynamically add or remove CSS classes based on an expression.",
+                "tags": "ngClass, Angular, CSS classes",
+                "paid": "Yes",
+                "answer": "The `ngClass` directive in Angular allows you to dynamically add or remove CSS classes from an element based on an expression. This directive can accept an object, array, or string that defines which classes should be applied. For example, `<div [ngClass]={'active': isActive, 'highlighted': isHighlighted}>Content</div>` will conditionally apply the `active` and `highlighted` classes based on the boolean values of `isActive` and `isHighlighted`. `ngClass` is useful for applying styles conditionally and managing dynamic styling within templates."
+        },
+        {
+                "title": "How do you create an Angular service?",
+                "category": "Angular",
+                "description": "Angular services are created using the @Injectable decorator to provide reusable business logic and data management.",
+                "tags": "services, Angular, @Injectable",
+                "paid": "Yes",
+                "answer": "To create an Angular service, you define a class and decorate it with the `@Injectable` decorator. This decorator marks the class as a service that can be injected into other components or services. You then provide the service in an Angular module or component, making it available for dependency injection. For example, `@Injectable({ providedIn: 'root' })` registers the service with the root injector, allowing it to be used throughout the application. Services are commonly used for encapsulating business logic, data management, and other reusable functionality."
+        },
+        {
+                "title": "What is Angular's Input decorator?",
+                "category": "Angular",
+                "description": "Input is a decorator used to pass data from a parent component to a child component.",
+                "tags": "Input, Angular, component interaction",
+                "paid": "Yes",
+                "answer": "The `@Input` decorator in Angular is used to pass data from a parent component to a child component. By applying `@Input` to a property in the child component, you make it possible for the parent component to bind values to this property. For example, if a child component has `@Input() childData: string;`, the parent component can bind a value to `childData` using property binding. This mechanism facilitates data flow and communication between components, allowing for a modular and organized approach to managing component interactions."
+        },
+        {
+                "title": "What is Angular's Output decorator?",
+                "category": "Angular",
+                "description": "Output is a decorator used to emit events from a child component to a parent component.",
+                "tags": "Output, Angular, event binding",
+                "paid": "Yes",
+                "answer": "The `@Output` decorator in Angular is used to create custom events that can be emitted from a child component to a parent component. By defining an `EventEmitter` property decorated with `@Output`, the child component can emit events that the parent component can listen to and respond to. For example, `@Output() customEvent = new EventEmitter<string>();` allows the child component to emit `customEvent` with a string payload. The parent component can then use event binding to handle these events and perform actions based on the emitted data."
+        },
+        {
+                "title": "What is Angular's RouterModule?",
+                "category": "Angular",
+                "description": "RouterModule is an Angular module used to configure routing and navigation in an Angular application.",
+                "tags": "RouterModule, Angular, routing",
+                "paid": "Yes",
+                "answer": "The `RouterModule` in Angular is a module that provides the necessary services and directives to configure routing and navigation in an Angular application. It is typically imported into the application's root module or feature modules to set up the application's routes. The `RouterModule` is configured using `RouterModule.forRoot(routes)` for the root module or `RouterModule.forChild(routes)` for feature modules, where `routes` is an array of route definitions. This module enables navigation between different views or components based on the application's URL."
+        },
+        {
+                "title": "What is Angular's HostListener decorator?",
+                "category": "Angular",
+                "description": "HostListener is a decorator used to listen to events on the host element of a directive or component.",
+                "tags": "HostListener, Angular, event handling",
+                "paid": "Yes",
+                "answer": "The `@HostListener` decorator in Angular is used to listen to events on the host element of a directive or component. By applying `@HostListener` to a method, you can bind it to a specific event on the host element, allowing you to execute custom logic when the event occurs. For example, `@HostListener('click', ['$event']) onClick(event: MouseEvent) { /* handle click */ }` binds the `onClick` method to the click event of the host element. This decorator is useful for handling DOM events and integrating custom behavior with Angular's component and directive lifecycle."
+        },
+        {
+                "title": "What is Angular's @Directive decorator?",
+                "category": "Angular",
+                "description": "@Directive is a decorator used to define a custom directive in Angular.",
+                "tags": "@Directive, Angular, custom directives",
+                "paid": "Yes",
+                "answer": "The `@Directive` decorator in Angular is used to define a custom directive. Unlike components, directives do not have their own templates or views; instead, they are used to manipulate the behavior or appearance of elements in the DOM. By decorating a class with `@Directive`, you specify its selector and define its behavior. For example, `@Directive({ selector: '[appHighlight]' })` allows you to create a directive that can be applied to elements with the `appHighlight` attribute, enabling custom DOM manipulation and functionality."
+        },
+        {
+                "title": "What is Angular's @Pipe decorator?",
+                "category": "Angular",
+                "description": "@Pipe is a decorator used to define a custom pipe for transforming data in Angular templates.",
+                "tags": "@Pipe, Angular, custom pipes",
+                "paid": "Yes",
+                "answer": "The `@Pipe` decorator in Angular is used to define a custom pipe, which is a class that transforms data for display in Angular templates. Pipes are useful for formatting data, such as dates, currencies, or custom formats. By decorating a class with `@Pipe`, you specify the pipe's name and implementation. For example, `@Pipe({ name: 'customPipe' })` allows you to create a pipe named `customPipe` that can be used in templates with the `{{ data | customPipe }}` syntax to apply the transformation logic defined in the pipe class."
+        },
+        {
+                "title": "What is Angular's ngOnInit lifecycle hook?",
+                "category": "Angular",
+                "description": "ngOnInit is a lifecycle hook called after Angular has initialized all data-bound properties of a component.",
+                "tags": "ngOnInit, lifecycle hooks, Angular",
+                "paid": "Yes",
+                "answer": "The `ngOnInit` lifecycle hook in Angular is called after Angular has initialized all data-bound properties of a component. It is a suitable place to perform initialization tasks, such as fetching data from a service or setting up component state. Implementing `ngOnInit` ensures that the component is fully initialized and ready for use. For example, you might use `ngOnInit` to call a service method to retrieve data that the component needs to display, ensuring that the data is available when the component is rendered."
+        },
+        {
+                "title": "What is Angular's ngOnChanges lifecycle hook?",
+                "category": "Angular",
+                "description": "ngOnChanges is a lifecycle hook that is called when any data-bound property of a component changes.",
+                "tags": "ngOnChanges, lifecycle hooks, Angular",
+                "paid": "Yes",
+                "answer": "The `ngOnChanges` lifecycle hook in Angular is called whenever any data-bound property of a component changes. This hook is useful for responding to changes in input properties and performing actions based on these changes. `ngOnChanges` receives a `SimpleChanges` object that contains the current and previous values of the changed properties. For example, you can use `ngOnChanges` to react to changes in input properties by updating component state or performing additional logic whenever an input value is modified by the parent component."
+        },
+        {
+                "title": "What is Angular's change detection strategy?",
+                "category": "Angular",
+                "description": "Angular's change detection strategy determines how and when Angular updates the view when data changes.",
+                "tags": "change detection, Angular, strategies",
+                "paid": "Yes",
+                "answer": "Angular's change detection strategy defines how and when the framework checks for changes in the application's data and updates the view accordingly. By default, Angular uses the `CheckAlways` strategy, where it performs change detection on all components every time an event occurs. However, you can optimize performance by using the `OnPush` strategy, which only checks for changes when input properties change or when an event occurs within the component. By carefully choosing the appropriate change detection strategy, you can enhance application performance and efficiency."
+        },
+        {
+                "title": "What is Angular's RouterOutlet directive?",
+                "category": "Angular",
+                "description": "RouterOutlet is a directive used to display routed components within a parent component's view.",
+                "tags": "RouterOutlet, Angular, routing",
+                "paid": "Yes",
+                "answer": "The `RouterOutlet` directive in Angular is used as a placeholder to display routed components within a parent component's view. When a route is activated, the Angular router renders the corresponding component inside the `RouterOutlet`. For example, in the main application template, you might include `<router-outlet></router-outlet>` to serve as the location where child routes' components are rendered. This directive is essential for setting up routing and displaying different views or components based on the application's route configuration."
+        },
+        {
+                "title": "What is Angular's NgZone service?",
+                "category": "Angular",
+                "description": "NgZone is a service that helps Angular track asynchronous operations and trigger change detection.",
+                "tags": "NgZone, Angular, change detection",
+                "paid": "Yes",
+                "answer": "The `NgZone` service in Angular is used to track asynchronous operations and trigger change detection when necessary. It provides methods for running code inside or outside Angular's zone, which helps control when change detection should occur. For example, `ngZone.run(() => { /* code that needs to trigger change detection */ })` ensures that Angular is aware of changes and updates the view accordingly. Conversely, you can use `ngZone.runOutsideAngular(() => { /* code that doesn't need change detection */ })` to execute operations without triggering change detection, improving performance for certain tasks."
+        },
+        {
+                "title": "What is Angular's ViewContainerRef?",
+                "category": "Angular",
+                "description": "ViewContainerRef is a service that provides access to the view container where dynamic components can be inserted.",
+                "tags": "ViewContainerRef, Angular, dynamic components",
+                "paid": "Yes",
+                "answer": "The `ViewContainerRef` service in Angular provides access to a container where dynamic components can be added or removed at runtime. It allows you to manipulate the view hierarchy by creating and managing views programmatically. For example, you can use `ViewContainerRef.createComponent()` to dynamically insert a component into the view container. This service is often used in conjunction with `ngTemplateOutlet` and `ngIf` to manage the rendering of components and templates based on application logic and user interactions."
+        },
+        {
+                "title": "What is Angular's ChangeDetectorRef?",
+                "category": "Angular",
+                "description": "ChangeDetectorRef is a service used to manually control change detection and update the view.",
+                "tags": "ChangeDetectorRef, Angular, change detection",
+                "paid": "Yes",
+                "answer": "The `ChangeDetectorRef` service in Angular is used to manually control and trigger change detection in a component. By injecting `ChangeDetectorRef` into a component, you can call methods like `detectChanges()` and `markForCheck()` to force Angular to check for changes and update the view. This is useful in scenarios where Angular's default change detection strategy does not automatically detect changes, such as when working with third-party libraries or asynchronous operations that occur outside of Angular's zone."
+        },
+        {
+                "title": "How do you implement lazy loading in Angular?",
+                "category": "Angular",
+                "description": "Lazy loading in Angular is implemented using feature modules and the Angular router's loadChildren property.",
+                "tags": "lazy loading, Angular, routing",
+                "paid": "Yes",
+                "answer": "To implement lazy loading in Angular, you use feature modules and configure the Angular router with the `loadChildren` property. Lazy loading allows you to load modules only when needed, improving the initial loading time of the application. You define feature modules with their own routing configuration and import them using the `loadChildren` property in the root module's routing configuration. For example, `{ path: 'feature', loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule) }` configures the router to load the `FeatureModule` only when the user navigates to the `/feature` route."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy?",
+                "category": "Angular",
+                "description": "ChangeDetectionStrategy defines how Angular performs change detection in a component.",
+                "tags": "ChangeDetectionStrategy, Angular, change detection",
+                "paid": "Yes",
+                "answer": "Angular's `ChangeDetectionStrategy` determines how the framework performs change detection on a component. There are two main strategies: `Default` and `OnPush`. The `Default` strategy checks all components in the component tree when change detection runs, while the `OnPush` strategy only checks a component when its input properties change, or when events occur within the component. Using `OnPush` can improve performance by reducing the number of checks Angular performs, but it requires careful management of input properties and observables to ensure the view remains updated."
+        },
+        {
+                "title": "What is Angular's ngModel directive?",
+                "category": "Angular",
+                "description": "ngModel is a directive that binds the value of a form control to a property in the component class.",
+                "tags": "ngModel, Angular, form controls",
+                "paid": "Yes",
+                "answer": "The `ngModel` directive in Angular is used to bind the value of a form control to a property in the component class. This directive supports two-way data binding, allowing changes in the form control to update the component property and vice versa. For example, `<input [(ngModel)]='userName'>` binds the `userName` property in the component to the input field, so any changes to the input field are reflected in `userName`, and any changes to `userName` are reflected in the input field. `ngModel` simplifies form handling and validation in Angular."
+        },
+        {
+                "title": "What is Angular's Renderer2?",
+                "category": "Angular",
+                "description": "Renderer2 is a service that provides an abstraction for manipulating the DOM in a way that is compatible with Angular's rendering engine.",
+                "tags": "Renderer2, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "The `Renderer2` service in Angular provides an abstraction for manipulating the DOM in a way that is compatible with Angular's rendering engine. It allows you to perform tasks such as adding or removing classes, setting attributes, and creating or removing elements without directly interacting with the DOM. Using `Renderer2` ensures that your code remains compatible with different rendering environments, such as server-side rendering or web workers. For example, `renderer.addClass(elementRef.nativeElement, 'active')` adds a CSS class to an element while abstracting away the direct DOM manipulation."
+        },
+        {
+                "title": "What is Angular's Dependency Injection?",
+                "category": "Angular",
+                "description": "Dependency Injection (DI) in Angular is a design pattern for managing how services and components are instantiated and injected.",
+                "tags": "Dependency Injection, Angular, DI",
+                "paid": "Yes",
+                "answer": "Dependency Injection (DI) in Angular is a design pattern that allows you to manage how services and components are instantiated and injected into other parts of an application. Angular's DI framework provides a way to declare dependencies in components or services, and Angular takes care of creating and injecting these dependencies as needed. For example, you might inject a service into a component using the constructor, like `constructor(private myService: MyService) {}`, and Angular will provide an instance of `MyService` when the component is created. This pattern promotes modularity, testability, and reusability in Angular applications."
+        },
+        {
+                "title": "What is Angular's AbstractControl?",
+                "category": "Angular",
+                "description": "AbstractControl is a base class for form controls, form groups, and form arrays.",
+                "tags": "AbstractControl, Angular, forms",
+                "paid": "Yes",
+                "answer": "`AbstractControl` is a base class in Angular used for managing form controls, form groups, and form arrays in reactive forms. It provides common properties and methods for working with form controls, such as `value`, `status`, and `setValue()`. `AbstractControl` is inherited by `FormControl`, `FormGroup`, and `FormArray` classes, which implement specific functionalities for controlling form inputs and validating form data. For example, `FormGroup` is a subclass of `AbstractControl` that represents a group of `FormControl` instances and manages their state and validation collectively."
+        },
+        {
+                "title": "What is Angular's ControlValueAccessor?",
+                "category": "Angular",
+                "description": "ControlValueAccessor is an interface for integrating custom form controls with Angular forms.",
+                "tags": "ControlValueAccessor, Angular, custom controls",
+                "paid": "Yes",
+                "answer": "`ControlValueAccessor` is an interface in Angular used to integrate custom form controls with Angular forms. It provides a way for custom components to interact with Angular's forms API by implementing methods like `writeValue()`, `registerOnChange()`, and `registerOnTouched()`. By implementing this interface, a custom form control can be used with `ngModel` and reactive forms, allowing it to participate in form validation and value management. For example, a custom date picker component can implement `ControlValueAccessor` to work seamlessly with Angular's form features."
+        },
+        {
+                "title": "What is Angular's Renderer2 and how is it used?",
+                "category": "Angular",
+                "description": "Renderer2 is a service for manipulating the DOM while ensuring compatibility with Angular's rendering engine.",
+                "tags": "Renderer2, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "`Renderer2` is a service in Angular that provides a way to manipulate the DOM in a way that is abstracted from direct DOM interactions. It allows for actions like adding or removing classes, setting attributes, and creating or removing elements, ensuring compatibility with Angular's rendering engine. For instance, you might use `renderer.setStyle(elementRef.nativeElement, 'color', 'red')` to set a style on an element. This approach helps maintain compatibility with various rendering environments and improves the portability of Angular applications."
+        },
+        {
+                "title": "What are Angular's lifecycle hooks?",
+                "category": "Angular",
+                "description": "Lifecycle hooks are methods that allow you to tap into key moments in a component's lifecycle.",
+                "tags": "lifecycle hooks, Angular",
+                "paid": "Yes",
+                "answer": "Angular's lifecycle hooks are methods that provide opportunities to execute custom logic at various stages of a component or directive's lifecycle. These hooks include `ngOnInit`, `ngOnChanges`, `ngOnDestroy`, and more. Each hook corresponds to a specific moment, such as initialization, changes, or destruction. For example, `ngOnInit` is used for initialization after data-bound properties are set, while `ngOnDestroy` is used to perform cleanup before the component is destroyed. Using these hooks allows you to manage resources, handle changes, and clean up as needed throughout the component's lifecycle."
+        },
+        {
+                "title": "How do you use Angular's AsyncPipe?",
+                "category": "Angular",
+                "description": "AsyncPipe subscribes to observables and returns the latest value, automatically handling subscriptions.",
+                "tags": "AsyncPipe, Angular, observables",
+                "paid": "Yes",
+                "answer": "The `AsyncPipe` in Angular is used to subscribe to observables and return their latest value, automatically handling the subscription and unsubscription. It simplifies working with asynchronous data in templates by managing subscriptions for you. For example, you can use `<div>{{ data$ | async }}</div>` to display the latest value emitted by the observable `data$`. The `AsyncPipe` automatically handles the subscription and updates the view whenever the observable emits a new value, making it a convenient way to work with asynchronous data in Angular templates."
+        },
+        {
+                "title": "What is Angular's ChangeDetectorRef and how is it used?",
+                "category": "Angular",
+                "description": "ChangeDetectorRef is a service used to manually control change detection and update the view.",
+                "tags": "ChangeDetectorRef, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`ChangeDetectorRef` is a service in Angular that provides methods for manually controlling change detection. By injecting `ChangeDetectorRef` into a component, you can use methods like `detectChanges()` to explicitly trigger change detection, or `markForCheck()` to schedule a check for the next change detection cycle. This is particularly useful when changes occur outside of Angular's default change detection mechanisms, such as in third-party libraries or asynchronous tasks. Using `ChangeDetectorRef` allows you to ensure that your component's view stays synchronized with its data."
+        },
+        {
+                "title": "What is Angular's HttpClientModule?",
+                "category": "Angular",
+                "description": "HttpClientModule is a module that provides a simplified API for making HTTP requests.",
+                "tags": "HttpClientModule, Angular, HTTP",
+                "paid": "Yes",
+                "answer": "`HttpClientModule` is an Angular module that provides a simplified API for making HTTP requests. It is part of the `@angular/common/http` package and is used to perform various types of HTTP operations such as GET, POST, PUT, and DELETE. By importing `HttpClientModule` into your application module, you can inject the `HttpClient` service into your components or services to make HTTP requests and handle responses. For example, `this.http.get('api/data')` allows you to send a GET request to retrieve data from an API endpoint."
+        },
+        {
+                "title": "What is Angular's RouteReuseStrategy?",
+                "category": "Angular",
+                "description": "RouteReuseStrategy is a service that controls how Angular reuses routes and their associated components.",
+                "tags": "RouteReuseStrategy, Angular, routing",
+                "paid": "Yes",
+                "answer": "`RouteReuseStrategy` is an Angular service that defines how routes are reused within an application. It allows you to control whether a route's components should be reused or recreated when navigating between routes. By implementing a custom `RouteReuseStrategy`, you can optimize performance by reusing existing components and their states instead of creating new instances. For example, you might use a custom strategy to cache and reuse components for certain routes, reducing the overhead of component creation and improving navigation performance."
+        },
+        {
+                "title": "How does Angular's ngFor directive work?",
+                "category": "Angular",
+                "description": "ngFor is a structural directive used to iterate over a list and generate a template for each item.",
+                "tags": "ngFor, Angular, iteration",
+                "paid": "Yes",
+                "answer": "The `ngFor` directive in Angular is a structural directive used to iterate over a list and generate a template for each item in the list. It simplifies the process of displaying lists and arrays in the template. For example, `<div *ngFor='let item of items'>{{ item }}</div>` will generate a `div` element for each item in the `items` array. The `ngFor` directive provides access to local variables like `index` and `first`, allowing for additional control over the iteration process and rendering of list items."
+        },
+        {
+                "title": "What is Angular's ng-content?",
+                "category": "Angular",
+                "description": "ng-content is a directive used for projecting content into a component's template.",
+                "tags": "ng-content, Angular, content projection",
+                "paid": "Yes",
+                "answer": "`ng-content` is an Angular directive used for content projection, allowing you to insert content into a component's template from outside the component. It provides a way to create reusable components with flexible content insertion. For example, if you have a component with `<ng-content></ng-content>` in its template, you can include content between the component's opening and closing tags, and Angular will project this content into the designated location. This technique is useful for creating components that can adapt to different content without needing to know the content beforehand."
+        },
+        {
+                "title": "How do you handle errors in Angular's HttpClient?",
+                "category": "Angular",
+                "description": "Errors in HttpClient are handled using RxJS operators like catchError and throwError.",
+                "tags": "HttpClient, Angular, error handling",
+                "paid": "Yes",
+                "answer": "In Angular's `HttpClient`, errors can be handled using RxJS operators such as `catchError` and `throwError`. The `catchError` operator allows you to intercept and handle errors that occur during an HTTP request. For example, you can use `this.http.get('api/data').pipe(catchError(this.handleError))` to catch and process errors. The `handleError` method can return a user-friendly error message or log the error for further investigation. Using `throwError`, you can create an observable that emits an error notification, which can be subscribed to and handled accordingly."
+        },
+        {
+                "title": "What is Angular's OnPush change detection strategy?",
+                "category": "Angular",
+                "description": "OnPush is a change detection strategy that checks a component only when its inputs change or an event occurs.",
+                "tags": "OnPush, change detection, Angular",
+                "paid": "Yes",
+                "answer": "The `OnPush` change detection strategy in Angular optimizes performance by reducing the number of checks Angular performs during change detection. With `OnPush`, Angular only checks a component when its input properties change, or when an event occurs within the component. This is different from the default `CheckAlways` strategy, which checks all components in the component tree. By using `OnPush`, you can improve performance, especially in large applications with complex component trees, by minimizing unnecessary change detection cycles."
+        },
+        {
+                "title": "What is Angular's FormBuilder?",
+                "category": "Angular",
+                "description": "FormBuilder is a service that simplifies the creation of reactive forms.",
+                "tags": "FormBuilder, Angular, reactive forms",
+                "paid": "Yes",
+                "answer": "`FormBuilder` is a service in Angular that simplifies the creation and management of reactive forms. It provides methods for creating `FormGroup`, `FormControl`, and `FormArray` instances with a more concise and readable syntax. For example, you can use `this.fb.group({ name: ['', Validators.required], age: [''] })` to create a `FormGroup` with form controls and their validators. `FormBuilder` helps streamline form setup and reduces the amount of boilerplate code needed to create complex forms."
+        },
+        {
+                "title": "What is Angular's Dependency Injection scope?",
+                "category": "Angular",
+                "description": "Dependency Injection scope determines the lifecycle and visibility of injected services.",
+                "tags": "Dependency Injection, Angular, scopes",
+                "paid": "Yes",
+                "answer": "In Angular, the scope of Dependency Injection (DI) determines the lifecycle and visibility of services within an application. Services can be provided at different levels, such as in a component, module, or application-wide. Services provided at the root level using the `@Injectable({ providedIn: 'root' })` decorator are singleton instances available application-wide. Services provided at the component level are instantiated for each component instance. This allows for different scopes and lifecycles, depending on how and where services are provided in the application's hierarchy."
+        },
+        {
+                "title": "What is Angular's NgModule?",
+                "category": "Angular",
+                "description": "NgModule is a decorator that defines an Angular module, encapsulating related components, directives, and services.",
+                "tags": "NgModule, Angular, modules",
+                "paid": "Yes",
+                "answer": "`NgModule` is a decorator in Angular that defines an Angular module, encapsulating related components, directives, pipes, and services. It helps organize an application into cohesive blocks of functionality and manage dependencies. By creating modules, you can group related features and configure how they interact with other parts of the application. For example, a feature module may declare components related to a specific feature and import other modules needed for that feature. Modules help maintain a modular structure and facilitate lazy loading, encapsulation, and reusability in Angular applications."
+        },
+        {
+                "title": "How do you use Angular's @ViewChild?",
+                "category": "Angular",
+                "description": "@ViewChild is a decorator used to access and manipulate child components or elements in a parent component.",
+                "tags": "@ViewChild, Angular, component interaction",
+                "paid": "Yes",
+                "answer": "`@ViewChild` is a decorator in Angular that allows you to access and manipulate child components, directives, or DOM elements from within a parent component. By using `@ViewChild`, you can obtain a reference to a child component or element and interact with it directly. For example, `@ViewChild('myInput') myInput: ElementRef;` provides access to an input element with a template reference variable `#myInput`. This enables you to call methods or set properties on the child component or element, facilitating component interaction and DOM manipulation."
+        },
+        {
+                "title": "What is Angular's @ContentChild?",
+                "category": "Angular",
+                "description": "@ContentChild is a decorator used to access and manipulate projected content in a component.",
+                "tags": "@ContentChild, Angular, content projection",
+                "paid": "Yes",
+                "answer": "`@ContentChild` is a decorator in Angular that allows you to access and manipulate projected content within a component. It provides a way to query and interact with elements or components projected into the component via content projection. For example, `@ContentChild(SomeComponent) someComponent: SomeComponent;` gives you access to a projected `SomeComponent` instance, allowing you to call methods or access properties of the projected content. This is useful for scenarios where you need to interact with or control content that is inserted into the component's template."
+        },
+        {
+                "title": "How do you implement Angular's route guards?",
+                "category": "Angular",
+                "description": "Route guards are used to control navigation and access to routes based on certain conditions.",
+                "tags": "route guards, Angular, routing",
+                "paid": "Yes",
+                "answer": "Route guards in Angular are used to control navigation and access to routes based on specific conditions. You can implement route guards by creating services that implement one or more of the `CanActivate`, `CanActivateChild`, `CanDeactivate`, or `Resolve` interfaces. For example, `CanActivate` allows you to check if a route can be activated before navigation occurs. You can provide the guard service in the route configuration, like `{ path: 'protected', canActivate: [AuthGuard], component: ProtectedComponent }`, to ensure that access to the `ProtectedComponent` is restricted based on the logic defined in the `AuthGuard` service."
+        },
+        {
+                "title": "What is Angular's RouterModule?",
+                "category": "Angular",
+                "description": "RouterModule is a module that provides the core functionalities for routing in Angular applications.",
+                "tags": "RouterModule, Angular, routing",
+                "paid": "Yes",
+                "answer": "`RouterModule` is an Angular module that provides the core functionalities for routing within Angular applications. It allows you to define routes, manage navigation, and configure routing behaviors. By importing `RouterModule` and calling `RouterModule.forRoot(routes)` in the root module, you configure the application's routing setup with a list of route definitions. For example, `RouterModule.forRoot([{ path: 'home', component: HomeComponent }])` sets up a route for the `HomeComponent`. The `RouterModule` helps manage navigation, route parameters, and guards, essential for building single-page applications."
+        },
+        {
+                "title": "What is Angular's HostBinding?",
+                "category": "Angular",
+                "description": "HostBinding is a decorator that binds a property or attribute to a host element.",
+                "tags": "HostBinding, Angular, decorators",
+                "paid": "Yes",
+                "answer": "`HostBinding` is a decorator in Angular that binds a property or attribute of a component or directive to a host element. It allows you to dynamically set properties or attributes on the host element from within the component or directive. For example, `@HostBinding('class.active') isActive = true;` binds the `active` class to the host element based on the value of `isActive`. This provides a way to control the appearance or behavior of the host element in response to changes in the component or directive's state."
+        },
+        {
+                "title": "What is Angular's HostListener?",
+                "category": "Angular",
+                "description": "HostListener is a decorator that listens to events on the host element of a directive or component.",
+                "tags": "HostListener, Angular, decorators",
+                "paid": "Yes",
+                "answer": "`HostListener` is a decorator in Angular that allows you to listen to events on the host element of a directive or component. It provides a way to handle events such as clicks, key presses, or other DOM events directly from within the directive or component. For example, `@HostListener('click') onClick() { /* handle click event */ }` listens for click events on the host element and executes the `onClick` method. This decorator simplifies event handling by providing a clean and concise way to respond to user interactions on the host element."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy.Default?",
+                "category": "Angular",
+                "description": "ChangeDetectionStrategy.Default checks all components in the component tree for changes.",
+                "tags": "ChangeDetectionStrategy, Angular, Default",
+                "paid": "Yes",
+                "answer": "`ChangeDetectionStrategy.Default` is the default change detection strategy in Angular, where the framework checks all components in the component tree for changes during each change detection cycle. This strategy performs a thorough check to ensure that the view is updated with the latest data. While this approach provides comprehensive change detection, it can impact performance in large applications. Using `ChangeDetectionStrategy.Default` is straightforward and suitable for most cases, but for performance optimization, you might consider using `OnPush` strategy for specific components."
+        },
+        {
+                "title": "What is Angular's @Injectable decorator?",
+                "category": "Angular",
+                "description": "@Injectable is a decorator that marks a class as available for dependency injection.",
+                "tags": "@Injectable, Angular, dependency injection",
+                "paid": "Yes",
+                "answer": "`@Injectable` is a decorator in Angular that marks a class as available for dependency injection. It indicates that the class can be injected as a dependency into other classes, such as components or services. By using `@Injectable`, you enable Angular's dependency injection system to create and provide instances of the class. For example, `@Injectable({ providedIn: 'root' })` makes a service available application-wide. This decorator is essential for defining services and other injectable classes that need to be managed by Angular's DI system."
+        },
+        {
+                "title": "What is Angular's @NgModule decorator?",
+                "category": "Angular",
+                "description": "@NgModule is a decorator that defines an Angular module and its configuration.",
+                "tags": "@NgModule, Angular, modules",
+                "paid": "Yes",
+                "answer": "`@NgModule` is a decorator in Angular used to define an Angular module, specifying its configuration and dependencies. It is applied to a class to define a module that encapsulates related components, directives, pipes, and services. For example, `@NgModule({ declarations: [AppComponent], imports: [BrowserModule], providers: [], bootstrap: [AppComponent] })` configures the `AppModule` by declaring components, importing other modules, and specifying the root component to bootstrap. This decorator helps organize and structure Angular applications into modular units."
+        },
+        {
+                "title": "What is Angular's @Pipe decorator?",
+                "category": "Angular",
+                "description": "@Pipe is a decorator that defines a custom pipe for transforming data in templates.",
+                "tags": "@Pipe, Angular, pipes",
+                "paid": "Yes",
+                "answer": "`@Pipe` is a decorator in Angular that defines a custom pipe used to transform data in templates. Pipes are functions that take input values and return transformed output values, making it easier to format data in views. For example, you can create a pipe with `@Pipe({ name: 'uppercase' })` and implement the `transform` method to convert text to uppercase. This custom pipe can then be used in templates with `{{ text | uppercase }}` to display the transformed data. Pipes help improve readability and maintainability by encapsulating data transformation logic."
+        },
+        {
+                "title": "What is Angular's @Directive decorator?",
+                "category": "Angular",
+                "description": "@Directive is a decorator that defines a custom directive with specific behavior.",
+                "tags": "@Directive, Angular, directives",
+                "paid": "Yes",
+                "answer": "`@Directive` is a decorator in Angular used to define a custom directive, which is a class that adds behavior or functionality to elements in the DOM. Directives can be used to manipulate the DOM, add event listeners, or apply custom logic. For example, `@Directive({ selector: '[appHighlight]' })` defines a directive that can be used to highlight elements. The directive's class can include methods and properties to manage its behavior, such as changing the background color of the element when it is hovered over."
+        },
+        {
+                "title": "How do you handle asynchronous operations in Angular?",
+                "category": "Angular",
+                "description": "Asynchronous operations in Angular are typically handled using RxJS observables or Promises.",
+                "tags": "asynchronous operations, RxJS, Promises, Angular",
+                "paid": "Yes",
+                "answer": "In Angular, asynchronous operations are commonly handled using RxJS observables or Promises. Observables, provided by the `RxJS` library, are used to manage streams of asynchronous data and provide powerful operators for transforming and combining data. For example, you can use `this.http.get('api/data').subscribe(data => this.data = data)` to handle HTTP requests. Promises are another way to handle asynchronous operations, using methods like `then()` and `catch()` for success and error handling. Both observables and promises help manage asynchronous tasks and integrate with Angular's reactive programming model."
+        },
+        {
+                "title": "What is Angular's AngularServiceWorker?",
+                "category": "Angular",
+                "description": "AngularServiceWorker is a service that helps manage service workers for Progressive Web Apps.",
+                "tags": "AngularServiceWorker, Angular, PWA",
+                "paid": "Yes",
+                "answer": "`AngularServiceWorker` is a service provided by Angular to manage service workers for Progressive Web Apps (PWAs). Service workers enable features such as offline functionality, background syncing, and push notifications. By integrating Angular's service worker module, you can configure caching strategies, handle requests, and optimize the performance of your PWA. For example, using `ng add @angular/pwa` installs and configures the service worker for your Angular project, allowing you to define caching rules and manage how your application behaves offline."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy.OnPush?",
+                "category": "Angular",
+                "description": "OnPush is a change detection strategy that checks a component only when its inputs change or an event occurs.",
+                "tags": "ChangeDetectionStrategy, Angular, OnPush",
+                "paid": "Yes",
+                "answer": "`ChangeDetectionStrategy.OnPush` is a change detection strategy in Angular that improves performance by reducing the number of change detection checks. With `OnPush`, Angular only checks a component when its input properties change or when an event occurs within the component. This strategy is more efficient than the default `CheckAlways` strategy, which checks all components in the component tree. By using `OnPush`, you can minimize unnecessary change detection cycles and optimize the performance of your Angular application, especially in large and complex component hierarchies."
+        },
+        {
+                "title": "How do you use Angular's RouterLink directive?",
+                "category": "Angular",
+                "description": "RouterLink is a directive that allows navigation to different routes within an Angular application.",
+                "tags": "RouterLink, Angular, routing",
+                "paid": "Yes",
+                "answer": "`RouterLink` is a directive in Angular that enables navigation to different routes within an Angular application. It is used to link to specific routes defined in the application's routing configuration. For example, `<a [routerLink]='['/home']'>Home</a>` creates a link that navigates to the `/home` route when clicked. `RouterLink` can also be used with dynamic route parameters, such as `<a [routerLink]='['/user', userId]'>User Profile</a>`, where `userId` is a variable that determines the target route."
+        },
+        {
+                "title": "What is Angular's NgZone?",
+                "category": "Angular",
+                "description": "NgZone is a service that helps manage change detection and execute code outside Angular's zone.",
+                "tags": "NgZone, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`NgZone` is a service in Angular that provides a way to manage change detection and execute code outside Angular's zone. By using `NgZone`, you can perform operations that do not trigger Angular's change detection or optimize performance for certain tasks. For example, `this.ngZone.runOutsideAngular(() => { /* perform operation */ })` allows you to run code outside of Angular's change detection mechanism, improving performance for tasks like high-frequency updates or integration with non-Angular libraries."
+        },
+        {
+                "title": "What is Angular's Renderer2 and why should you use it?",
+                "category": "Angular",
+                "description": "Renderer2 is a service for safely manipulating the DOM in a way that ensures compatibility with Angular's rendering engine.",
+                "tags": "Renderer2, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "`Renderer2` is a service in Angular used for safely manipulating the DOM while ensuring compatibility with Angular's rendering engine. It provides methods for tasks such as adding or removing classes, setting attributes, and creating elements, abstracting away direct DOM manipulations. Using `Renderer2` helps maintain compatibility with different rendering environments and facilitates server-side rendering or web worker scenarios. For example, `renderer.addClass(elementRef.nativeElement, 'highlight')` adds a class to an element, ensuring that DOM manipulations are done in a way that works seamlessly with Angular's rendering process."
+        },
+        {
+                "title": "What is Angular's ViewEncapsulation?",
+                "category": "Angular",
+                "description": "ViewEncapsulation defines how styles are scoped and encapsulated within Angular components.",
+                "tags": "ViewEncapsulation, Angular, styles",
+                "paid": "Yes",
+                "answer": "`ViewEncapsulation` in Angular determines how styles are scoped and encapsulated within components. It offers three options: `Emulated`, `Native`, and `None`. `Emulated` uses scoped styles that apply only to the component, preventing styles from leaking to or from other components. `Native` uses native Shadow DOM to encapsulate styles, while `None` applies global styles without any encapsulation. For example, with `ViewEncapsulation.Emulated`, styles defined in a component's CSS file only affect elements within that component, promoting encapsulation and preventing unintended style conflicts."
+        },
+        {
+                "title": "What is Angular's @Inject decorator?",
+                "category": "Angular",
+                "description": "@Inject is a decorator that specifies a dependency for injection in Angular services or components.",
+                "tags": "@Inject, Angular, dependency injection",
+                "paid": "Yes",
+                "answer": "`@Inject` is a decorator in Angular used to specify a dependency for injection into a service or component. It allows you to provide a token that represents the dependency being injected. This is especially useful for injecting dependencies with non-standard types or tokens. For example, `constructor(@Inject('API_URL') private apiUrl: string)` injects a string value identified by the token `'API_URL'` into the component or service. Using `@Inject` ensures that Angular's dependency injection system provides the correct instance based on the specified token."
+        },
+        {
+                "title": "What is Angular's AngularElement?",
+                "category": "Angular",
+                "description": "AngularElement is a wrapper for Angular components to use them as custom elements (web components).",
+                "tags": "AngularElement, Angular, web components",
+                "paid": "Yes",
+                "answer": "`AngularElement` is a wrapper that allows Angular components to be used as custom elements or web components. By leveraging Angular Elements, you can create custom HTML elements that encapsulate Angular components and use them in non-Angular environments or alongside other frameworks. For example, using `createCustomElement` from `@angular/elements`, you can convert an Angular component into a custom element and then use it in standard HTML like `<my-custom-element></my-custom-element>`. This approach enables better integration and reuse of Angular components across different projects and technologies."
+        },
+        {
+                "title": "What is Angular's ElementRef?",
+                "category": "Angular",
+                "description": "ElementRef is a service that provides direct access to a DOM element within a component or directive.",
+                "tags": "ElementRef, Angular, DOM access",
+                "paid": "Yes",
+                "answer": "`ElementRef` is a service in Angular that provides direct access to a DOM element within a component or directive. It wraps a native DOM element and allows you to interact with it directly. For example, you can inject `ElementRef` into a component and access the underlying native element via `elementRef.nativeElement`. This enables direct DOM manipulation and interaction, although it's generally recommended to use Angular's built-in abstractions or `Renderer2` for DOM manipulation to ensure better compatibility and maintainability."
+        },
+        {
+                "title": "What is Angular's ChangeDetectorRef?",
+                "category": "Angular",
+                "description": "ChangeDetectorRef is a service used to manually trigger or control change detection in Angular.",
+                "tags": "ChangeDetectorRef, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`ChangeDetectorRef` is a service in Angular that allows you to manually trigger or control change detection within a component. It provides methods like `markForCheck()`, `detectChanges()`, and `checkNoChanges()` to control the change detection process. For example, `this.cd.detectChanges()` can be used to manually trigger change detection when necessary, such as after asynchronous operations that might affect the component's state. This service is useful for optimizing performance or handling scenarios where Angular's automatic change detection may not be sufficient."
+        },
+        {
+                "title": "What is Angular's Angular Ivy?",
+                "category": "Angular",
+                "description": "Angular Ivy is Angular's rendering engine that improves build performance and runtime efficiency.",
+                "tags": "Angular Ivy, Angular, rendering engine",
+                "paid": "Yes",
+                "answer": "`Angular Ivy` is Angular's rendering engine introduced in Angular 9 to improve build performance and runtime efficiency. It provides better tree shaking, smaller bundle sizes, and faster compilation times. Ivy's incremental compilation and improved change detection also contribute to more efficient rendering and faster application performance. It enables advanced features like lazy loading of components and more efficient handling of dynamic components, making Angular applications more responsive and easier to maintain."
+        },
+        {
+                "title": "What is Angular's AngularService?",
+                "category": "Angular",
+                "description": "AngularService is a service that provides methods for HTTP requests and other utilities.",
+                "tags": "AngularService, Angular, HTTP, utilities",
+                "paid": "Yes",
+                "answer": "`AngularService` is not a specific Angular service but generally refers to services created in Angular to handle various tasks, such as HTTP requests or utility functions. For example, you might create a service to encapsulate HTTP operations with methods like `getData()` or `postData()`. By using Angular's `HttpClient`, you can create services that handle API interactions, manage state, and provide reusable logic across components. Services help in adhering to the single responsibility principle and promote code reusability."
+        },
+        {
+                "title": "How does Angular's Dependency Injection system work?",
+                "category": "Angular",
+                "description": "Dependency Injection system provides components and services with their required dependencies.",
+                "tags": "Dependency Injection, Angular, services",
+                "paid": "Yes",
+                "answer": "Angular's Dependency Injection (DI) system works by providing components and services with their required dependencies. When a class declares its dependencies through the constructor, Angular's DI system injects the appropriate instances of those dependencies. For instance, if a service `UserService` is required by a component `UserProfile`, Angular will provide an instance of `UserService` to `UserProfile` automatically. DI helps in managing services' lifecycles, promotes code reuse, and decouples components from their dependencies."
+        },
+        {
+                "title": "What is Angular's trackBy function in *ngFor?",
+                "category": "Angular",
+                "description": "trackBy function improves performance by tracking items in a list.",
+                "tags": "trackBy, Angular, *ngFor, performance",
+                "paid": "Yes",
+                "answer": "`trackBy` is a function used with Angular's `*ngFor` directive to improve performance by tracking items in a list. When iterating over a list of items, Angular uses `trackBy` to identify which items have changed, been added, or removed, thus minimizing DOM manipulations. For example, `*ngFor='let item of items; trackBy: trackById'` where `trackById` is a function like `trackById(index, item) { return item.id; }` helps Angular track items by their unique `id` property. This optimization is especially useful for large lists or frequent updates."
+        },
+        {
+                "title": "What is Angular's HttpInterceptor?",
+                "category": "Angular",
+                "description": "HttpInterceptor is used to intercept and handle HTTP requests and responses.",
+                "tags": "HttpInterceptor, Angular, HTTP, interceptors",
+                "paid": "Yes",
+                "answer": "`HttpInterceptor` is a service in Angular used to intercept and handle HTTP requests and responses. By implementing the `HttpInterceptor` interface, you can modify requests or responses globally. For example, you can add authentication tokens to headers, log request details, or handle errors in one place. Implementing `HttpInterceptor` involves creating a class with methods like `intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>` that processes the request and response, allowing for centralized HTTP handling and modifications."
+        },
+        {
+                "title": "What is Angular's HttpClient?",
+                "category": "Angular",
+                "description": "HttpClient is a service for making HTTP requests in Angular applications.",
+                "tags": "HttpClient, Angular, HTTP",
+                "paid": "Yes",
+                "answer": "`HttpClient` is a service provided by Angular's `@angular/common/http` module used for making HTTP requests in Angular applications. It offers methods like `get()`, `post()`, `put()`, and `delete()` to interact with backend APIs and handle HTTP responses. For example, you can use `this.http.get('api/data').subscribe(data => this.data = data)` to fetch data from a server. `HttpClient` simplifies handling of requests and responses, supports typed responses, and integrates with Angular's observable-based architecture."
+        },
+        {
+                "title": "What is Angular's Observables?",
+                "category": "Angular",
+                "description": "Observables are used for handling asynchronous data streams in Angular.",
+                "tags": "Observables, Angular, RxJS",
+                "paid": "Yes",
+                "answer": "In Angular, `Observables` are used to handle asynchronous data streams and events, provided by the `RxJS` library. Observables are more powerful than promises, allowing for multiple values over time, transformation, and composition of data streams. For instance, `this.data$ = this.http.get('api/data')` creates an observable that emits data from an HTTP request. Observables support operators such as `map()`, `filter()`, and `mergeMap()` for handling and transforming data, providing a robust and flexible way to work with asynchronous operations."
+        },
+        {
+                "title": "What is Angular's FormsModule?",
+                "category": "Angular",
+                "description": "FormsModule is used to handle template-driven forms in Angular.",
+                "tags": "FormsModule, Angular, forms",
+                "paid": "Yes",
+                "answer": "`FormsModule` is an Angular module used to handle template-driven forms. It provides directives and services to build and manage forms in Angular applications. By importing `FormsModule` in your Angular module, you can use directives like `ngModel` to bind form inputs to component properties. For example, `<input [(ngModel)]='name'>` binds the input value to the `name` property in the component. `FormsModule` supports validation, form controls, and custom form handling in a declarative manner using Angular templates."
+        },
+        {
+                "title": "What is Angular's ReactiveFormsModule?",
+                "category": "Angular",
+                "description": "ReactiveFormsModule is used for managing reactive forms in Angular.",
+                "tags": "ReactiveFormsModule, Angular, reactive forms",
+                "paid": "Yes",
+                "answer": "`ReactiveFormsModule` is an Angular module that provides support for reactive forms. Reactive forms are more powerful and scalable compared to template-driven forms, offering a programmatic approach to form management. By importing `ReactiveFormsModule`, you can use classes like `FormGroup`, `FormControl`, and `FormBuilder` to create and manage forms. For example, `this.form = this.fb.group({ name: ['', Validators.required] })` creates a reactive form with a form control and validation. Reactive forms facilitate better control over form state, validation, and data flow."
+        },
+        {
+                "title": "What is Angular's AngularFire?",
+                "category": "Angular",
+                "description": "AngularFire is a library for integrating Angular with Firebase.",
+                "tags": "AngularFire, Angular, Firebase",
+                "paid": "Yes",
+                "answer": "`AngularFire` is an official library that provides seamless integration between Angular applications and Firebase. It offers a set of Angular modules and services that simplify the use of Firebase's features, such as authentication, real-time databases, and cloud functions. For example, `AngularFireDatabase` allows you to interact with Firebase's real-time database using Angular's data binding and observable mechanisms. AngularFire helps to quickly build and deploy applications with Firebase's backend services, handling tasks like data synchronization and user management."
+        },
+        {
+                "title": "What is Angular's ng-template?",
+                "category": "Angular",
+                "description": "ng-template is a directive used to define and render template content conditionally.",
+                "tags": "ng-template, Angular, templates",
+                "paid": "Yes",
+                "answer": "`ng-template` is an Angular directive used to define template content that can be conditionally rendered or reused within components. It allows you to encapsulate a block of HTML or Angular markup that can be instantiated programmatically. For example, `<ng-template #template> <div>Content</div> </ng-template>` defines a template that can be referenced and rendered using Angular directives like `*ngIf` or `*ngFor`. `ng-template` helps to organize and manage content dynamically, improving the reusability and maintainability of templates in Angular applications."
+        },
+        {
+                "title": "What is Angular's ng-content?",
+                "category": "Angular",
+                "description": "ng-content is a directive used for content projection into a component's template.",
+                "tags": "ng-content, Angular, content projection",
+                "paid": "Yes",
+                "answer": "`ng-content` is an Angular directive used for content projection, allowing you to insert content into a component's template from its parent component. It enables the creation of reusable components that can accept and display dynamic content. For example, `<ng-content></ng-content>` in a component's template allows the parent component to project content into that placeholder. This is useful for creating components like modal dialogs or card containers where the content varies but the layout remains consistent."
+        },
+        {
+                "title": "What is Angular's ngZone?",
+                "category": "Angular",
+                "description": "NgZone is a service for managing the execution context and change detection.",
+                "tags": "ngZone, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`NgZone` is a service in Angular that helps manage the execution context and change detection. It allows you to run code inside or outside of Angular's change detection mechanism. For instance, `this.ngZone.runOutsideAngular(() => { /* non-Angular operations */ })` executes code outside Angular's zone, improving performance for tasks like animations or third-party library integrations. By using `NgZone`, you can control when Angular performs change detection and optimize performance by avoiding unnecessary checks."
+        },
+        {
+                "title": "What is Angular's Angular Compiler?",
+                "category": "Angular",
+                "description": "Angular Compiler (ngc) compiles Angular templates and TypeScript code into JavaScript.",
+                "tags": "Angular Compiler, ngc, Angular, compilation",
+                "paid": "Yes",
+                "answer": "`Angular Compiler` (ngc) is a tool that compiles Angular templates and TypeScript code into JavaScript code that can run in the browser. The compiler processes Angular components, directives, and templates to generate efficient JavaScript code, enabling Angular's runtime behavior and optimizations. For example, `ngc` compiles Angular templates into JavaScript, handling Angular-specific syntax and binding expressions. The compiler also supports Ahead-of-Time (AOT) compilation, which pre-compiles templates and reduces runtime overhead."
+        },
+        {
+                "title": "What is Angular's Custom Validators?",
+                "category": "Angular",
+                "description": "Custom Validators are used to create custom validation logic for forms.",
+                "tags": "Custom Validators, Angular, form validation",
+                "paid": "Yes",
+                "answer": "`Custom Validators` in Angular allow you to create custom validation logic for forms beyond the built-in validators. By implementing custom validation functions, you can define specific rules that form controls must meet. For example, you might create a validator to check if a field contains a specific pattern or value: `export function customValidator(control: AbstractControl): ValidationErrors | null { return control.value === 'valid' ? null : { invalid: true }; }`. This function can be used in a form control with `Validators.compose([customValidator])` to enforce custom validation rules."
+        },
+        {
+                "title": "What is Angular's Lifecycle Hook?",
+                "category": "Angular",
+                "description": "Lifecycle Hooks are methods that Angular calls at specific points during a component's lifecycle.",
+                "tags": "Lifecycle Hooks, Angular, components",
+                "paid": "Yes",
+                "answer": "Lifecycle Hooks in Angular are methods that the framework calls at specific points during a component's lifecycle, such as creation, change detection, and destruction. Common hooks include `ngOnInit()`, `ngOnChanges()`, `ngOnDestroy()`, and `ngAfterViewInit()`. For example, `ngOnInit()` is called once after the component's data-bound properties are initialized, allowing you to perform setup tasks. Implementing these hooks enables you to manage component behavior and perform actions at different stages of the component's lifecycle."
+        },
+        {
+                "title": "What is Angular's Dynamic Component Loading?",
+                "category": "Angular",
+                "description": "Dynamic Component Loading allows you to load and display components at runtime.",
+                "tags": "Dynamic Component Loading, Angular, components",
+                "paid": "Yes",
+                "answer": "`Dynamic Component Loading` in Angular enables you to load and display components at runtime rather than at compile time. This is useful for scenarios where the component to be displayed is not known in advance. You can achieve this using `ComponentFactoryResolver` to create component factories and dynamically insert them into the view. For example, `const factory = this.resolver.resolveComponentFactory(MyComponent);` creates a factory for `MyComponent`, which can then be dynamically added to the view with `viewContainerRef.createComponent(factory);`."
+        },
+        {
+                "title": "What is Angular's Module Federation?",
+                "category": "Angular",
+                "description": "Module Federation allows sharing and loading of modules between different Angular applications.",
+                "tags": "Module Federation, Angular, micro-frontends",
+                "paid": "Yes",
+                "answer": "`Module Federation` is a feature that enables sharing and loading of modules between different Angular applications or micro-frontends. It allows you to dynamically load code from other applications at runtime, facilitating modular and scalable architectures. For example, you can configure `webpack` to expose a module in one Angular application and consume it in another. This approach helps in building applications with a micro-frontend architecture, where different teams can develop and deploy features independently."
+        },
+        {
+                "title": "What is Angular's ViewContainerRef?",
+                "category": "Angular",
+                "description": "ViewContainerRef is a reference to a container where views can be dynamically added or removed.",
+                "tags": "ViewContainerRef, Angular, dynamic views",
+                "paid": "Yes",
+                "answer": "`ViewContainerRef` is a service in Angular that provides a reference to a container where views can be dynamically added or removed. It is commonly used in conjunction with `ComponentFactoryResolver` to create and manage components dynamically. For example, `viewContainerRef.createComponent(factory)` allows you to create and insert a component into the view at runtime. `ViewContainerRef` supports operations such as inserting, moving, or removing views, making it essential for scenarios involving dynamic component rendering or content projection."
+        },
+        {
+                "title": "What is Angular's Angular Elements?",
+                "category": "Angular",
+                "description": "Angular Elements allows you to use Angular components as custom elements (web components).",
+                "tags": "Angular Elements, Angular, web components",
+                "paid": "Yes",
+                "answer": "`Angular Elements` is a package that allows you to use Angular components as custom elements or web components. By converting Angular components into custom elements, you can use them in non-Angular environments or alongside other frameworks. For example, `createCustomElement(MyComponent, { injector: this.injector })` converts an Angular component into a custom element that can be used like `<my-element></my-element>` in standard HTML. This approach facilitates integration and reuse of Angular components across different projects and technologies."
+        },
+        {
+                "title": "What is Angular's NgModuleFactory?",
+                "category": "Angular",
+                "description": "NgModuleFactory is used to create instances of Angular modules programmatically.",
+                "tags": "NgModuleFactory, Angular, modules",
+                "paid": "Yes",
+                "answer": "`NgModuleFactory` is a class used to create instances of Angular modules programmatically. It allows you to load and compile modules dynamically at runtime. For example, you might use `NgModuleFactory` with `loadChildren` in lazy-loaded routes to create instances of modules as needed. The factory can be created using `compiler.compileModuleAsync(MyModule)` which returns an `NgModuleFactory` that can then be used to instantiate and bootstrap the module. This capability is useful for scenarios involving dynamic module loading or advanced lazy loading strategies."
+        },
+        {
+                "title": "What is Angular's Dependency Injection Hierarchy?",
+                "category": "Angular",
+                "description": "Dependency Injection Hierarchy defines how Angular injects dependencies across modules and components.",
+                "tags": "Dependency Injection, Angular, hierarchy",
+                "paid": "Yes",
+                "answer": "`Dependency Injection Hierarchy` in Angular defines how dependencies are injected and resolved across different modules and components. Angular uses a hierarchical injector system where child injectors inherit from parent injectors. Dependencies declared in a module or component's provider list are available to that module/component and its descendants. For example, if a service is provided in the root module, it is singleton and available application-wide. If provided in a specific component, its scope is limited to that component and its child components. This hierarchy ensures proper scoping and reuse of dependencies."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy.Default?",
+                "category": "Angular",
+                "description": "Default ChangeDetectionStrategy checks for changes in all components in the component tree.",
+                "tags": "ChangeDetectionStrategy, Angular, Default",
+                "paid": "Yes",
+                "answer": "`ChangeDetectionStrategy.Default` is the default change detection strategy in Angular, where change detection is performed for all components in the component tree. This strategy checks every component whenever Angular's change detection cycle runs, which ensures that any changes to data bound to components are detected and reflected in the view. While this approach is straightforward and ensures accurate updates, it may lead to performance issues in large applications due to frequent checks. Optimizing change detection can involve using strategies like `OnPush` or manual change detection techniques."
+        },
+        {
+                "title": "What is Angular's ViewChild?",
+                "category": "Angular",
+                "description": "ViewChild is a decorator used to access a child component or DOM element within a parent component.",
+                "tags": "ViewChild, Angular, child components",
+                "paid": "Yes",
+                "answer": "`ViewChild` is a decorator in Angular that allows you to access a child component, directive, or DOM element within a parent component. By using `@ViewChild('templateRef')`, you can get a reference to an element or component in the template, allowing you to interact with it directly in the parent component. For example, `@ViewChild('myInput') input: ElementRef` provides access to a DOM input element, enabling you to programmatically read or modify its properties. `ViewChild` is useful for manipulating or accessing child elements after initialization."
+        },
+        {
+                "title": "What is Angular's ContentChild?",
+                "category": "Angular",
+                "description": "ContentChild is a decorator used to access content projected into a component from its parent.",
+                "tags": "ContentChild, Angular, content projection",
+                "paid": "Yes",
+                "answer": "`ContentChild` is a decorator in Angular used to access content that is projected into a component from its parent. It allows you to get a reference to a projected element or component inside the component's view. For example, `@ContentChild('projectedContent') projectedContent: ElementRef` allows you to access a content element with the template reference variable `projectedContent`. This is useful for interacting with or manipulating projected content and is commonly used in components that need to work with content passed from their parent."
+        },
+        {
+                "title": "What is Angular's Renderer2?",
+                "category": "Angular",
+                "description": "Renderer2 is a service used for safely manipulating DOM elements in Angular applications.",
+                "tags": "Renderer2, Angular, DOM manipulation",
+                "paid": "Yes",
+                "answer": "`Renderer2` is a service in Angular that provides an abstraction for safely manipulating DOM elements. It allows you to perform tasks like adding, removing, or updating DOM elements without directly accessing the native DOM, which ensures better compatibility across different platforms and browsers. For example, you can use `this.renderer.addClass(this.el.nativeElement, 'active')` to add a class to an element. Using `Renderer2` helps in writing platform-agnostic code and adhering to Angular's best practices for DOM manipulation."
+        },
+        {
+                "title": "What is Angular's Pipe Transform?",
+                "category": "Angular",
+                "description": "Pipe Transform interface is used to create custom pipes in Angular.",
+                "tags": "Pipe Transform, Angular, custom pipes",
+                "paid": "Yes",
+                "answer": "`Pipe Transform` is an interface in Angular used to create custom pipes. A pipe is a way to transform data in templates, and by implementing the `PipeTransform` interface, you can define custom transformation logic. For example, creating a pipe to format dates might involve implementing the `transform(value: any, ...args: any[]): any` method to process and format the input data. Custom pipes provide a powerful way to encapsulate and reuse transformation logic across different parts of your Angular application."
+        },
+        {
+                "title": "What is Angular's Angular Router?",
+                "category": "Angular",
+                "description": "Angular Router is a module for managing navigation and routing in Angular applications.",
+                "tags": "Angular Router, Angular, routing",
+                "paid": "Yes",
+                "answer": "`Angular Router` is a module that provides routing and navigation capabilities for Angular applications. It allows you to define routes, navigate between different views or components, and manage navigation states. For example, you can configure routes in your `AppRoutingModule` using `RouterModule.forRoot(routes)` and use `<router-outlet></router-outlet>` to display routed components. Angular Router supports features like route parameters, lazy loading, and guards, facilitating the development of complex, navigable applications with multiple views and routes."
+        },
+        {
+                "title": "What is Angular's Route Guards?",
+                "category": "Angular",
+                "description": "Route Guards are used to control access to routes and protect route navigation in Angular.",
+                "tags": "Route Guards, Angular, routing",
+                "paid": "Yes",
+                "answer": "`Route Guards` are used in Angular to control access to routes and manage route navigation. They are services that implement specific interfaces such as `CanActivate`, `CanDeactivate`, `Resolve`, and `CanLoad` to determine whether a route can be activated, deactivated, or loaded. For example, implementing `CanActivate` allows you to protect routes by ensuring certain conditions are met before navigation occurs. Route Guards are useful for handling authentication, authorization, and data fetching, ensuring a smooth and secure user experience."
+        },
+        {
+                "title": "What is Angular's Lazy Loading?",
+                "category": "Angular",
+                "description": "Lazy Loading defers the loading of feature modules until they are needed, improving performance.",
+                "tags": "Lazy Loading, Angular, performance",
+                "paid": "Yes",
+                "answer": "`Lazy Loading` is a technique in Angular to defer the loading of feature modules until they are needed, improving application performance and initial load times. By configuring lazy loading in the Angular Router, you can load feature modules asynchronously when navigating to routes that require them. For example, `loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule)` in the route configuration loads `FeatureModule` only when the user navigates to that route. Lazy loading helps in optimizing resource usage and enhancing application responsiveness."
+        },
+        {
+                "title": "What is Angular's ChangeDetectionStrategy.OnPush?",
+                "category": "Angular",
+                "description": "OnPush ChangeDetectionStrategy optimizes change detection by checking components only when input data changes.",
+                "tags": "ChangeDetectionStrategy, Angular, OnPush",
+                "paid": "Yes",
+                "answer": "`ChangeDetectionStrategy.OnPush` is an optimization strategy in Angular that checks components for changes only when their input data changes, rather than on every change detection cycle. This strategy improves performance by reducing the frequency of change detection checks. For example, setting `changeDetection: ChangeDetectionStrategy.OnPush` in a component's metadata ensures that Angular only checks the component when its input properties change or when an event occurs within the component. This can lead to significant performance improvements, especially in large applications with complex component trees."
+        },
+        {
+                "title": "What is Angular's Dynamic Forms?",
+                "category": "Angular",
+                "description": "Dynamic Forms allow you to create and manage form controls dynamically at runtime.",
+                "tags": "Dynamic Forms, Angular, forms",
+                "paid": "Yes",
+                "answer": "`Dynamic Forms` in Angular enable you to create and manage form controls dynamically at runtime. This is useful when form structures need to be determined based on data or user interactions. Using the `FormBuilder` service and `FormGroup`, you can dynamically add or remove form controls. For example, `this.form = this.fb.group({ name: [''], age: [''] });` creates a form group, and you can use methods like `addControl()` or `removeControl()` to modify the form structure based on your application's needs."
+        },
+        {
+                "title": "What is Angular's RouterModule?",
+                "category": "Angular",
+                "description": "RouterModule is an Angular module used for configuring and managing application routes.",
+                "tags": "RouterModule, Angular, routing",
+                "paid": "Yes",
+                "answer": "`RouterModule` is an Angular module that provides routing and navigation services for configuring and managing application routes. It allows you to define routes, handle navigation, and manage route parameters. For example, `RouterModule.forRoot(routes)` sets up the router with the specified route configuration, and `<router-outlet></router-outlet>` is used to render routed components. `RouterModule` supports features like nested routes, route guards, and lazy loading, enabling the development of complex and navigable Angular applications."
+        },
+        {
+                "title": "What is Angular's HttpParams?",
+                "category": "Angular",
+                "description": "HttpParams is a class used to manage and encode query parameters for HTTP requests.",
+                "tags": "HttpParams, Angular, HTTP",
+                "paid": "Yes",
+                "answer": "`HttpParams` is a class in Angular used to manage and encode query parameters for HTTP requests. It allows you to build and manipulate query strings for GET requests, ensuring proper encoding of parameters. For example, `let params = new HttpParams().set('id', '123');` creates an instance of `HttpParams` with the query parameter `id=123`. You can then pass this `params` object to `HttpClient` methods like `get()` to include query parameters in your HTTP requests, facilitating parameterized API calls and data retrieval."
+        },
+        {
+                "title": "What is Angular's ChangeDetectorRef.markForCheck?",
+                "category": "Angular",
+                "description": "markForCheck is a method to mark a component for checking during the next change detection cycle.",
+                "tags": "ChangeDetectorRef, Angular, change detection",
+                "paid": "Yes",
+                "answer": "`markForCheck` is a method of `ChangeDetectorRef` that marks a component and its ancestors to be checked during the next change detection cycle. This is useful when using `ChangeDetectionStrategy.OnPush`, as it ensures that Angular checks the component for changes even if its input properties haven't changed. For example, you can call `this.cd.markForCheck()` to trigger change detection manually, ensuring that the component updates its view based on any new data or changes detected outside Angular's automatic change detection."
+        },
+        {
+                "title": "What is Angular's ActivatedRoute?",
+                "category": "Angular",
+                "description": "ActivatedRoute provides access to the active route's information, such as route parameters and query parameters.",
+                "tags": "ActivatedRoute, Angular, routing",
+                "paid": "Yes",
+                "answer": "`ActivatedRoute` is a service in Angular that provides access to the active route's information, including route parameters, query parameters, and route data. It is used to retrieve information about the current route in a component. For example, you can use `this.route.paramMap.subscribe(params => { let id = params.get('id'); });` to access the route parameter `id` from the URL. `ActivatedRoute` is essential for extracting and using route-specific data, enabling dynamic routing and navigation within Angular applications."
+        },
+        {
+                "title": "What is Angular's AbstractControl?",
+                "category": "Angular",
+                "description": "AbstractControl is the base class for form controls, form groups, and form arrays in Angular forms.",
+                "tags": "AbstractControl, Angular, forms",
+                "paid": "Yes",
+                "answer": "`AbstractControl` is the base class for form controls, form groups, and form arrays in Angular. It provides the core functionalities and properties needed to manage form control states and validations. For example, `FormControl`, `FormGroup`, and `FormArray` all extend `AbstractControl`. It includes methods for managing form values, validation status, and form states. For instance, you can use `this.control.setValue('new value')` to update the value of a form control. `AbstractControl` plays a crucial role in Angular's reactive forms approach."
+        },
+        {
+                "title": "What is Angular's HttpInterceptor?",
+                "category": "Angular",
+                "description": "HttpInterceptor allows you to intercept and modify HTTP requests and responses in Angular.",
+                "tags": "HttpInterceptor, Angular, HTTP",
+                "paid": "Yes",
+                "answer": "`HttpInterceptor` is an interface in Angular that allows you to intercept and modify HTTP requests and responses. By implementing `HttpInterceptor`, you can perform tasks such as adding headers, logging, or handling errors globally. For example, an interceptor can be used to add an authorization token to each request: `intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> { const authReq = req.clone({ headers: req.headers.set('Authorization', 'Bearer token') }); return next.handle(authReq); }`. This approach centralizes HTTP handling and improves code maintainability."
+        },
+        {
+                "title": "What is Angular's FormArray?",
+                "category": "Angular",
+                "description": "FormArray is a class used to manage an array of form controls in Angular forms.",
+                "tags": "FormArray, Angular, forms",
+                "paid": "Yes",
+                "answer": "`FormArray` is a class in Angular used to manage a collection of form controls, form groups, or other form arrays within a reactive form. It allows you to work with an array of controls dynamically, adding or removing controls as needed. For example, you can create a form array with `new FormArray([new FormControl(''), new FormControl('')])` and dynamically add controls with `this.formArray.push(new FormControl('new control'))`. `FormArray` is useful for scenarios where you need to manage a list of form elements with dynamic length or structure."
+        },
+        {
+                "title": "What is Angular's ControlValueAccessor?",
+                "category": "Angular",
+                "description": "ControlValueAccessor is an interface that enables custom form control integration with Angular forms.",
+                "tags": "ControlValueAccessor, Angular, forms",
+                "paid": "Yes",
+                "answer": "`ControlValueAccessor` is an interface in Angular that allows you to create custom form controls that integrate seamlessly with Angular's forms API. By implementing this interface, you can ensure that your custom control works with Angular's form validation and data binding mechanisms. For example, a custom component implementing `ControlValueAccessor` might define methods like `writeValue(value: any)`, `registerOnChange(fn: any)`, and `registerOnTouched(fn: any)` to manage form control interactions. This interface enables the development of reusable and consistent custom form controls."
+        }
+]

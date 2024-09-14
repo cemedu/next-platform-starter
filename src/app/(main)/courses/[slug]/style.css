@@ -1,0 +1,13 @@
+.cource_details {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 20px;
+}
+
+@media all and (max-width: 880px) {
+  .cource_details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

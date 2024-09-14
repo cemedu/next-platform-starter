@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /*.webp
+Allow: /*.js
+Allow: /*.css
+Disallow: /privacy-and-policy/
+Disallow: /terms-and-conditions/
+
+Sitemap: https://www.cemedu.com/sitemap.xml

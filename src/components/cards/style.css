@@ -1,0 +1,15 @@
+.actionst {
+  display: grid;
+  grid-template-columns: 1fr 150px 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+@media all and (max-width: 720px) {
+  .actionst {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+}

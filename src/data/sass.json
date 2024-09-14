@@ -1,0 +1,890 @@
+[
+        {
+                "title": "What is SASS?",
+                "category": "Sass",
+                "description": "Brief overview of SASS.",
+                "tags": "SASS, Basics, CSS",
+                "paid": "Yes",
+                "answer": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor that extends CSS with variables, nested rules, and mixins. It helps in writing more maintainable and reusable CSS by allowing the use of features like variables to store values, nesting to organize styles logically, and mixins to reuse styles throughout the stylesheet."
+        },
+        {
+                "title": "How do you declare a variable in SASS?",
+                "category": "Sass",
+                "description": "Syntax for declaring SASS variables.",
+                "tags": "SASS, Variables, CSS",
+                "paid": "Yes",
+                "answer": "In SASS, you declare a variable using the `$` symbol followed by the variable name and value. For example, `$primary-color: #3498db;` defines a variable named `primary-color` with the value `#3498db`. You can then use this variable throughout your stylesheet to maintain consistency and ease of updates."
+        },
+        {
+                "title": "What is nesting in SASS?",
+                "category": "Sass",
+                "description": "Explanation of nesting in SASS.",
+                "tags": "SASS, Nesting, CSS",
+                "paid": "Yes",
+                "answer": "Nesting in SASS allows you to nest CSS selectors in a hierarchical manner that mirrors the HTML structure. This makes the stylesheet easier to read and manage. For instance, instead of writing separate selectors for child elements, you can nest them inside their parent selector like this: `nav { ul { margin: 0; } li { list-style: none; } }`."
+        },
+        {
+                "title": "How do mixins work in SASS?",
+                "category": "Sass",
+                "description": "Purpose and usage of mixins in SASS.",
+                "tags": "SASS, Mixins, CSS",
+                "paid": "Yes",
+                "answer": "Mixins in SASS are reusable chunks of code that allow you to include the same set of styles in multiple places. You define a mixin using the `@mixin` directive and include it in your CSS using `@include`. For example: `@mixin border-radius($radius) { border-radius: $radius; }` can be included in any selector with `@include border-radius(5px);`."
+        },
+        {
+                "title": "What are SASS functions?",
+                "category": "Sass",
+                "description": "Purpose and use of functions in SASS.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "SASS functions are used to perform operations and return values that can be used in your stylesheets. You can use built-in functions like `lighten()` or `darken()` to adjust colors, or define your own custom functions. For example: `@function calculate-rem($px) { @return $px / 16px + rem; }` helps in converting pixel values to rem units."
+        },
+        {
+                "title": "What is the difference between `@extend` and mixins?",
+                "category": "Sass",
+                "description": "Comparison of `@extend` and mixins.",
+                "tags": "SASS, Extend, Mixins",
+                "paid": "Yes",
+                "answer": "`@extend` is used to inherit styles from one selector to another, while mixins allow you to include reusable code. `@extend` works well for sharing styles among selectors without repeating code, but can lead to complex CSS if overused. Mixins are more flexible as they can accept arguments and do not create additional selectors in the compiled CSS."
+        },
+        {
+                "title": "How do you use `@import` in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@import` directive in SASS.",
+                "tags": "SASS, Import, CSS",
+                "paid": "Yes",
+                "answer": "The `@import` directive in SASS is used to include the contents of one stylesheet into another. For example, `@import 'styles';` will include the styles from `styles.scss` into the current file. This helps in modularizing your CSS by separating it into different files and then importing them into a main stylesheet."
+        },
+        {
+                "title": "What are SASS maps?",
+                "category": "Sass",
+                "description": "Definition and usage of SASS maps.",
+                "tags": "SASS, Maps, CSS",
+                "paid": "Yes",
+                "answer": "SASS maps are collections of key-value pairs that allow you to store related data in an organized manner. They are similar to objects in JavaScript. For example: `$colors: (primary: #3498db, secondary: #2ecc71);` defines a map where you can access values with `map-get($colors, primary);` to retrieve `#3498db`. Maps are useful for managing complex style properties."
+        },
+        {
+                "title": "How can you perform operations with SASS variables?",
+                "category": "Sass",
+                "description": "Performing operations with variables in SASS.",
+                "tags": "SASS, Variables, Operations",
+                "paid": "Yes",
+                "answer": "SASS allows you to perform various operations with variables, such as arithmetic operations. For example, you can define a variable `$base-size: 16px;` and then use it to calculate other values like `font-size: $base-size * 1.5;`. This helps in creating responsive designs and maintaining consistency across your styles."
+        },
+        {
+                "title": "What are placeholder selectors in SASS?",
+                "category": "Sass",
+                "description": "Explanation of placeholder selectors in SASS.",
+                "tags": "SASS, Placeholders, CSS",
+                "paid": "Yes",
+                "answer": "Placeholder selectors in SASS, defined with `%`, are used to create styles that can be extended by other selectors but do not generate any CSS output on their own. For example, `%placeholder { color: red; }` can be extended with `@extend %placeholder;` in other selectors. This helps in reducing redundancy and keeping the CSS DRY (Don't Repeat Yourself)."
+        },
+        {
+                "title": "How do you handle media queries in SASS?",
+                "category": "Sass",
+                "description": "Using media queries with SASS.",
+                "tags": "SASS, Media Queries, CSS",
+                "paid": "Yes",
+                "answer": "In SASS, media queries can be nested within selectors, allowing for more organized and readable code. For example: `@media (min-width: 768px) { .container { width: 75%; } }` can be written as `.container { @media (min-width: 768px) { width: 75%; } }`. This nesting keeps media queries close to the related styles and improves maintainability."
+        },
+        {
+                "title": "What are SASS placeholders and when should you use them?",
+                "category": "Sass",
+                "description": "Purpose and usage of SASS placeholders.",
+                "tags": "SASS, Placeholders, CSS",
+                "paid": "Yes",
+                "answer": "SASS placeholders, marked with `%`, are used to define styles that can be extended by other selectors without being included directly in the compiled CSS. They are ideal for abstracting common styles that are shared among multiple selectors. Use them when you need to avoid code repetition while keeping your CSS clean and maintainable."
+        },
+        {
+                "title": "How do you use `@each` loop in SASS?",
+                "category": "Sass",
+                "description": "Utilizing `@each` loop in SASS.",
+                "tags": "SASS, Loops, CSS",
+                "paid": "Yes",
+                "answer": "`@each` is a loop in SASS used to iterate over lists or maps. It allows you to apply styles dynamically based on the values in the list or map. For example, if you have `$colors: (primary: #3498db, secondary: #2ecc71);`, you can use `@each $name, $color in $colors { .#{$name} { color: $color; } }` to create classes for each color."
+        },
+        {
+                "title": "What is the `@for` loop in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@for` loop in SASS.",
+                "tags": "SASS, Loops, CSS",
+                "paid": "Yes",
+                "answer": "`@for` is a loop in SASS that iterates through a range of numbers, allowing you to generate repetitive styles programmatically. For instance, `@for $i from 1 through 5 { .item-#{$i} { width: 20px * $i; } }` will create classes `.item-1` to `.item-5` with increasing widths. This is useful for tasks like creating grid systems or generating styles based on a numerical sequence."
+        },
+        {
+                "title": "How can you use `@function` in SASS?",
+                "category": "Sass",
+                "description": "Purpose and example of `@function` in SASS.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "The `@function` directive in SASS is used to create custom functions that perform calculations and return values to be used in your stylesheets. For example, `@function calculate-rem($px) { @return $px / 16px + rem; }` defines a function to convert pixel values to rem units. You can then use `font-size: calculate-rem(24px);` to apply the calculated value."
+        },
+        {
+                "title": "What are SASS's built-in functions?",
+                "category": "Sass",
+                "description": "Examples of built-in functions in SASS.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "SASS provides a range of built-in functions for manipulating values and colors. Some examples include `lighten($color, $amount)` which lightens a color by a specified amount, and `darken($color, $amount)` which darkens it. Functions like `rgba($color, $alpha)` are used to set color opacity, and `percentage($value)` converts a number to a percentage."
+        },
+        {
+                "title": "How does SASS handle CSS inheritance?",
+                "category": "Sass",
+                "description": "CSS inheritance and SASS.",
+                "tags": "SASS, Inheritance, CSS",
+                "paid": "Yes",
+                "answer": "SASS handles CSS inheritance primarily through the `@extend` directive, which allows one selector to inherit styles from another without duplicating the CSS code. For example, if you have `.base { color: red; }` and `.extended { @extend .base; font-size: 14px; }`, `.extended` will inherit the color red from `.base` and also apply the additional styles."
+        },
+        {
+                "title": "What is `@mixin` in SASS?",
+                "category": "Sass",
+                "description": "Purpose and usage of `@mixin`.",
+                "tags": "SASS, Mixins, CSS",
+                "paid": "Yes",
+                "answer": "`@mixin` is used in SASS to define a set of CSS rules that can be reused throughout your stylesheet. You create a mixin with `@mixin` and apply it with `@include`. For instance, `@mixin border-radius($radius) { border-radius: $radius; }` can be included in different selectors to apply border-radius consistently across your design."
+        },
+        {
+                "title": "What is `@include` used for in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@include` directive.",
+                "tags": "SASS, Mixins, CSS",
+                "paid": "Yes",
+                "answer": "`@include` is used in SASS to apply the styles defined in a mixin to a selector. After defining a mixin with `@mixin`, you use `@include` to incorporate its styles. For example, if you have a mixin `@mixin box-shadow($shadow) { box-shadow: $shadow; }`, you can include it with `@include box-shadow(2px 2px 5px rgba(0,0,0,0.3));` to apply the shadow."
+        },
+        {
+                "title": "How do you handle default values in mixins?",
+                "category": "Sass",
+                "description": "Setting default values in mixins.",
+                "tags": "SASS, Mixins, Defaults",
+                "paid": "Yes",
+                "answer": "In SASS, you can set default values for mixin parameters by providing a default value in the mixin definition. For example, `@mixin border($width: 1px, $color: black) { border: $width solid $color; }` allows you to call `@include border();` with defaults or specify your own values like `@include border(2px, blue);`."
+        },
+        {
+                "title": "What is the `@while` loop in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@while` loop in SASS.",
+                "tags": "SASS, Loops, CSS",
+                "paid": "Yes",
+                "answer": "`@while` is a loop in SASS that repeatedly executes a block of code as long as a given condition is true. For example: `$i: 1; @while $i <= 5 { .item-#{$i} { width: $i * 10px; } $i: $i + 1; }` generates classes `.item-1` through `.item-5` with increasing widths. This loop is useful for generating styles based on iterative conditions."
+        },
+        {
+                "title": "How do you use `@keyframes` with SASS?",
+                "category": "Sass",
+                "description": "Integrating `@keyframes` with SASS.",
+                "tags": "SASS, Animations, CSS",
+                "paid": "Yes",
+                "answer": "You can use `@keyframes` in SASS just as you would in regular CSS. Define the animation with `@keyframes` and then use it within a mixin or directly in your styles. For example: `@keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(0); } } .slider { animation: slide 0.5s ease-in-out; }` applies a slide-in animation."
+        },
+        {
+                "title": "What are SASS lists and how do you use them?",
+                "category": "Sass",
+                "description": "Definition and usage of SASS lists.",
+                "tags": "SASS, Lists, CSS",
+                "paid": "Yes",
+                "answer": "SASS lists are ordered collections of values separated by commas. They are useful for grouping related values and can be iterated over with `@each`. For example: `$fonts: (Arial, Helvetica, sans-serif);` allows you to use `@each $font in $fonts { font-family: $font; }` to apply styles to each font in the list."
+        },
+        {
+                "title": "What is `@return` in SASS functions?",
+                "category": "Sass",
+                "description": "Using `@return` in SASS functions.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "`@return` is used in SASS functions to specify the value that the function should output. For instance, in a function like `@function calculate-rem($px) { @return $px / 16px + rem; }`, the `@return` statement outputs the calculated rem value based on the pixel input, which can then be used elsewhere in the stylesheet."
+        },
+        {
+                "title": "How do you use `@content` in SASS mixins?",
+                "category": "Sass",
+                "description": "Purpose and usage of `@content` in SASS mixins.",
+                "tags": "SASS, Mixins, Content",
+                "paid": "Yes",
+                "answer": "`@content` is used in SASS mixins to include a block of code that is passed to the mixin. This allows for more flexible mixins that can accept arbitrary styles. For example: `@mixin flex-container { display: flex; @content; }` can be used with `@include flex-container { justify-content: center; }` to apply additional styles inside the mixin."
+        },
+        {
+                "title": "What is the `@warn` directive in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@warn` in SASS.",
+                "tags": "SASS, Warnings, CSS",
+                "paid": "Yes",
+                "answer": "`@warn` is a directive in SASS used to output warning messages to the console during compilation. It helps in debugging and providing feedback about potential issues in your code. For example, `@warn 'This is a warning message';` will display a warning message in the console when the SASS file is compiled, assisting developers in catching potential issues early."
+        },
+        {
+                "title": "What are `@import` and `@use` in SASS?",
+                "category": "Sass",
+                "description": "Difference between `@import` and `@use`.",
+                "tags": "SASS, Import, Use",
+                "paid": "Yes",
+                "answer": "`@import` and `@use` are both used to include stylesheets, but `@use` is the newer and preferred method. `@import` can lead to duplication and conflicts, while `@use` loads a stylesheet once and provides a way to namespace its styles and variables. For example: `@use 'colors' as c; .button { color: c.$primary; }` uses the `colors.scss` file with namespacing."
+        },
+        {
+                "title": "What is the purpose of the `@debug` directive in SASS?",
+                "category": "Sass",
+                "description": "Usage of `@debug` for debugging in SASS.",
+                "tags": "SASS, Debug, CSS",
+                "paid": "Yes",
+                "answer": "`@debug` is a directive in SASS used to output values and debug information to the console during compilation. It helps in troubleshooting issues by printing variable values or expressions. For example, `@debug $primary-color;` will print the value of `$primary-color` to the console, assisting in verifying and debugging styles."
+        },
+        {
+                "title": "How do you use `@forward` in SASS?",
+                "category": "Sass",
+                "description": "Purpose and usage of `@forward` in SASS.",
+                "tags": "SASS, Forward, CSS",
+                "paid": "Yes",
+                "answer": "`@forward` is used in SASS to load and forward styles, variables, and mixins from one stylesheet to another. It helps in creating modular stylesheets. For example, `@forward 'colors';` in `main.scss` will make everything from `colors.scss` available to any file that imports `main.scss`, facilitating a clean and organized code structure."
+        },
+        {
+                "title": "What is the `@each` loop and how do you use it?",
+                "category": "Sass",
+                "description": "Using `@each` loop to iterate in SASS.",
+                "tags": "SASS, Loops, CSS",
+                "paid": "Yes",
+                "answer": "`@each` is a loop in SASS that iterates over lists or maps to generate styles dynamically. For example, `@each $color in $colors { .text-#{$color} { color: $color; } }` will create text classes for each color in the `$colors` list, applying the respective color to the `.text-#{$color}` class."
+        },
+        {
+                "title": "How do you use `@if` and `@else` statements in SASS?",
+                "category": "Sass",
+                "description": "Conditional statements with `@if` and `@else` in SASS.",
+                "tags": "SASS, Conditions, CSS",
+                "paid": "Yes",
+                "answer": "`@if` and `@else` statements in SASS allow you to apply styles conditionally based on certain conditions. For example, `@if $theme == light { background: white; } @else { background: black; }` applies a white background if `$theme` is `light`, otherwise it applies a black background. This is useful for dynamic styling based on variables."
+        },
+        {
+                "title": "What is the `@mixin` directive and how does it work?",
+                "category": "Sass",
+                "description": "Usage of `@mixin` to create reusable styles.",
+                "tags": "SASS, Mixins, CSS",
+                "paid": "Yes",
+                "answer": "`@mixin` is used to define reusable chunks of CSS code that can be included in other stylesheets. It allows you to encapsulate styles and apply them wherever needed. For instance, `@mixin clearfix { &::after { content: ''; display: table; clear: both; } }` can be included in any container element to apply clearfix styles."
+        },
+        {
+                "title": "What is the `@include` directive and how does it differ from `@extend`?",
+                "category": "Sass",
+                "description": "Differences between `@include` and `@extend`.",
+                "tags": "SASS, Mixins, Extend",
+                "paid": "Yes",
+                "answer": "`@include` applies the styles defined in a mixin to a selector, allowing for reusable chunks of code. `@extend`, on the other hand, allows one selector to inherit styles from another without creating additional CSS rules. `@include` is more flexible as it can accept parameters, while `@extend` helps to avoid code duplication by sharing styles directly."
+        },
+        {
+                "title": "How do you use the `@each` loop to generate CSS classes?",
+                "category": "Sass",
+                "description": "Generating classes using `@each` loop.",
+                "tags": "SASS, Loops, CSS",
+                "paid": "Yes",
+                "answer": "`@each` loop can be used to generate CSS classes dynamically based on a list or map. For example, given a list of colors `$colors: (red, green, blue);`, you can use `@each $color in $colors { .bg-#{$color} { background-color: $color; } }` to create classes like `.bg-red`, `.bg-green`, and `.bg-blue` with the respective background colors."
+        },
+        {
+                "title": "How do you create a responsive design using SASS?",
+                "category": "Sass",
+                "description": "Creating responsive designs with SASS.",
+                "tags": "SASS, Responsive, CSS",
+                "paid": "Yes",
+                "answer": "Creating responsive designs in SASS involves using media queries to adjust styles based on screen sizes. You can nest media queries within selectors for better organization. For example: `.container { width: 100%; @media (min-width: 768px) { width: 75%; } @media (min-width: 1200px) { width: 50%; } }` ensures the container resizes appropriately across different devices."
+        },
+        {
+                "title": "What are SASS functions and how do you define one?",
+                "category": "Sass",
+                "description": "Defining and using functions in SASS.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "SASS functions are used to perform calculations and return values for use in your stylesheets. You define a function using `@function`, and it must return a value with `@return`. For example, `@function calculate-rem($px) { @return $px / 16px + rem; }` defines a function that converts pixel values to rem units, which can be used throughout your stylesheet."
+        },
+        {
+                "title": "How does the `@return` directive work in SASS functions?",
+                "category": "Sass",
+                "description": "Usage of `@return` in SASS functions.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "`@return` in SASS functions specifies the value that the function should output. When defining a function, you use `@return` to pass back a computed value. For instance, in `@function double($number) { @return $number * 2; }`, `@return $number * 2;` provides the result of doubling the input number, which can then be used in the stylesheet."
+        },
+        {
+                "title": "What is the `@extend` directive and how is it used?",
+                "category": "Sass",
+                "description": "Purpose and usage of `@extend`.",
+                "tags": "SASS, Extend, CSS",
+                "paid": "Yes",
+                "answer": "`@extend` is used in SASS to inherit styles from one selector into another, which helps in reducing code duplication. For example, if you have `.base { font-size: 16px; }` and you use `.special { @extend .base; color: blue; }`, `.special` will inherit `font-size: 16px;` from `.base` and also apply `color: blue;`."
+        },
+        {
+                "title": "How do you use SASS maps to store related data?",
+                "category": "Sass",
+                "description": "Storing and accessing data using SASS maps.",
+                "tags": "SASS, Maps, CSS",
+                "paid": "Yes",
+                "answer": "SASS maps are used to store sets of key-value pairs, making it easy to manage related data. You define a map with `(key1: value1, key2: value2)`, and then you can access values using `map-get(map, key)`. For example, `$colors: (primary: #3498db, secondary: #2ecc71);` and you can get `#3498db` with `map-get($colors, primary);`."
+        },
+        {
+                "title": "What are the advantages of using SASS over plain CSS?",
+                "category": "Sass",
+                "description": "Benefits of using SASS compared to plain CSS.",
+                "tags": "SASS, Advantages, CSS",
+                "paid": "Yes",
+                "answer": "SASS offers several advantages over plain CSS, including the ability to use variables for consistency, nesting for organizing styles logically, and mixins for reusing code. These features help in writing more maintainable and scalable stylesheets. SASS also supports functions for calculations and conditionals, which enhances the flexibility and power of styling your web applications."
+        },
+        {
+                "title": "How do you handle vendor prefixes in SASS?",
+                "category": "Sass",
+                "description": "Managing vendor prefixes with SASS.",
+                "tags": "SASS, Vendor Prefixes, CSS",
+                "paid": "Yes",
+                "answer": "SASS can handle vendor prefixes efficiently using the `autoprefixer` tool or mixins. For example, you can use `@mixin` to create a mixin for vendor prefixes: `@mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius; }` and then include it where needed. Alternatively, `autoprefixer` can automatically add prefixes based on browser compatibility."
+        },
+        {
+                "title": "How do you manage global variables in SASS?",
+                "category": "Sass",
+                "description": "Best practices for global variables in SASS.",
+                "tags": "SASS, Variables, CSS",
+                "paid": "Yes",
+                "answer": "Managing global variables in SASS involves defining them in a central location, typically in a `_variables.scss` file, and importing that file wherever needed. For example, create `_variables.scss` with `$primary-color: #333;` and import it using `@import 'variables';` in other SASS files. This approach ensures consistency and easier maintenance of styles across the entire project."
+        },
+        {
+                "title": "What is the role of the `@debug` directive in debugging SASS?",
+                "category": "Sass",
+                "description": "Usage of `@debug` for debugging purposes.",
+                "tags": "SASS, Debug, CSS",
+                "paid": "Yes",
+                "answer": "`@debug` is a directive in SASS that outputs values and messages to the console, which is particularly useful for debugging. It helps developers to track the values of variables and expressions during the SASS compilation. For example, `@debug $main-color;` will print the value of `$main-color` to the console, aiding in the debugging process."
+        },
+        {
+                "title": "How can you use SASS to manage color schemes?",
+                "category": "Sass",
+                "description": "Managing color schemes with SASS.",
+                "tags": "SASS, Colors, CSS",
+                "paid": "Yes",
+                "answer": "SASS allows for efficient management of color schemes using variables and functions. Define color variables in a `_colors.scss` file, such as `$primary-color: #3498db;`. You can use these variables throughout your stylesheet to maintain a consistent color scheme. Additionally, you can create functions to manipulate colors, like `lighten($color, 10%);` to adjust color brightness dynamically."
+        },
+        {
+                "title": "What is the purpose of using `@import` in SASS?",
+                "category": "Sass",
+                "description": "Role and usage of `@import` in SASS.",
+                "tags": "SASS, Import, CSS",
+                "paid": "Yes",
+                "answer": "`@import` is used in SASS to include and reuse styles from other files, promoting modularity and organization. It helps in breaking down large stylesheets into smaller, manageable files. For example, `@import 'base';` includes the `base.scss` file, allowing you to structure your styles logically and keep your main stylesheet concise."
+        },
+        {
+                "title": "How can you use SASS to create a grid system?",
+                "category": "Sass",
+                "description": "Creating a grid system using SASS.",
+                "tags": "SASS, Grid, CSS",
+                "paid": "Yes",
+                "answer": "To create a grid system in SASS, you can define a set of mixins or functions for columns and rows. For example, define a mixin like `@mixin grid($columns) { ... }` to set up a grid with a specified number of columns. Use this mixin to create responsive layouts by including it in different media queries and adjusting the column widths accordingly."
+        },
+        {
+                "title": "What are the key differences between `@import` and `@use`?",
+                "category": "Sass",
+                "description": "Comparing `@import` and `@use` in SASS.",
+                "tags": "SASS, Import, Use",
+                "paid": "Yes",
+                "answer": "`@import` and `@use` both include styles from other files, but `@use` is the recommended approach. `@import` can lead to duplication and conflicts due to its global scope, while `@use` loads a stylesheet only once and allows for namespacing of variables, mixins, and functions, reducing potential conflicts and improving maintainability."
+        },
+        {
+                "title": "How can you use `@media` queries in SASS?",
+                "category": "Sass",
+                "description": "Using `@media` queries for responsive design in SASS.",
+                "tags": "SASS, Media Queries, CSS",
+                "paid": "Yes",
+                "answer": "In SASS, you can use `@media` queries just as in plain CSS, but you can nest them inside selectors for better organization. For instance: `.container { width: 100%; @media (min-width: 768px) { width: 75%; } @media (min-width: 1200px) { width: 50%; } }` ensures styles adjust for different screen sizes, creating a responsive layout."
+        },
+        {
+                "title": "How can you use SASS to manage typography?",
+                "category": "Sass",
+                "description": "Managing typography with SASS.",
+                "tags": "SASS, Typography, CSS",
+                "paid": "Yes",
+                "answer": "Managing typography in SASS involves using variables for font sizes, families, and weights to ensure consistency. Define variables in a `_typography.scss` file, such as `$font-primary: 'Arial', sans-serif; $font-size-base: 16px;`. Use these variables throughout your stylesheets to apply typography settings, making it easier to maintain and update the typographic styles globally."
+        },
+        {
+                "title": "What are SASS partials and how do you use them?",
+                "category": "Sass",
+                "description": "Definition and usage of SASS partials.",
+                "tags": "SASS, Partials, CSS",
+                "paid": "Yes",
+                "answer": "SASS partials are files named with a leading underscore (e.g., `_partials.scss`) that contain styles meant to be included in other files. They help in organizing your stylesheet by breaking it into smaller, reusable components. Use `@import 'partials';` to include the partials into your main stylesheet, keeping your code modular and maintainable."
+        },
+        {
+                "title": "How do you create and use mixins with parameters in SASS?",
+                "category": "Sass",
+                "description": "Creating and using parameterized mixins in SASS.",
+                "tags": "SASS, Mixins, Parameters",
+                "paid": "Yes",
+                "answer": "Mixins in SASS can accept parameters to create more flexible and reusable styles. Define a mixin with parameters, for example, `@mixin border($width, $color) { border: $width solid $color; }`. Use `@include border(2px, blue);` to apply the border with the specified width and color. This approach allows for dynamic styling based on the mixin parameters."
+        },
+        {
+                "title": "What is the difference between SASS and SCSS?",
+                "category": "Sass",
+                "description": "Differences between SASS and SCSS syntax.",
+                "tags": "SASS, SCSS, Syntax",
+                "paid": "Yes",
+                "answer": "SASS and SCSS are both syntaxes for SASS, with SCSS being more CSS-like and using curly braces and semicolons. SASS uses indentation to separate code blocks and doesn't require curly braces or semicolons. SCSS is more compatible with existing CSS and may be easier for those transitioning from CSS, while SASS offers a more concise syntax with fewer characters."
+        },
+        {
+                "title": "How do you use `@supports` in SASS?",
+                "category": "Sass",
+                "description": "Using `@supports` for feature queries in SASS.",
+                "tags": "SASS, Supports, CSS",
+                "paid": "Yes",
+                "answer": "`@supports` is used to apply styles based on the browser's support for specific CSS features. You can use it in SASS to conditionally include styles. For example: `@supports (display: grid) { .container { display: grid; } }` applies grid layout styles only if the browser supports CSS Grid, ensuring compatibility with modern features."
+        },
+        {
+                "title": "How do you handle nesting in SASS?",
+                "category": "Sass",
+                "description": "Best practices for nesting in SASS.",
+                "tags": "SASS, Nesting, CSS",
+                "paid": "Yes",
+                "answer": "Nesting in SASS allows you to nest CSS selectors within one another, reflecting the HTML structure. While useful for organization, it's important to avoid excessive nesting to prevent overly specific selectors and maintain readability. For example: `.nav { ul { margin: 0; padding: 0; } li { display: inline; } }` nests styles for `ul` and `li` within `.nav`."
+        },
+        {
+                "title": "How do you use `@function` to create custom CSS functions?",
+                "category": "Sass",
+                "description": "Creating and using custom functions with `@function` in SASS.",
+                "tags": "SASS, Functions, CSS",
+                "paid": "Yes",
+                "answer": "`@function` allows you to define custom functions in SASS to perform calculations and return values. For example, create a function like `@function calculate-rem($px) { @return $px / 16px + rem; }`. Use this function in your stylesheets to convert pixel values to rem units dynamically, facilitating consistent and scalable typography."
+        },
+        {
+                "title": "How do you optimize SASS for performance?",
+                "category": "Sass",
+                "description": "Techniques to optimize SASS for better performance.",
+                "tags": "SASS, Performance, CSS",
+                "paid": "Yes",
+                "answer": "To optimize SASS for performance, avoid excessive nesting, use `@import` sparingly, and prefer `@use` and `@forward` for better modularization. Minimize the number of imports and manage large projects by organizing styles into smaller, focused files. Additionally, leverage the `autoprefixer` to handle vendor prefixes efficiently and compile your SASS code with optimization tools to reduce file size."
+        },
+        {
+                "title": "What is the use of `@keyframes` in SASS?",
+                "category": "Sass",
+                "description": "Defining and using `@keyframes` animations in SASS.",
+                "tags": "SASS, Keyframes, CSS",
+                "paid": "Yes",
+                "answer": "`@keyframes` is used to create CSS animations in SASS. Define animation steps within `@keyframes` and then apply them using the `animation` property. For example: `@keyframes slideIn { from { transform: translateX(-100%); } to { transform: translateX(0); } } .slide { animation: slideIn 1s ease-out; }` creates a slide-in animation for elements with the `.slide` class."
+        },
+        {
+                "title": "How can you use SASS to implement a theme system?",
+                "category": "Sass",
+                "description": "Implementing a theme system using SASS.",
+                "tags": "SASS, Themes, CSS",
+                "paid": "Yes",
+                "answer": "Implementing a theme system in SASS involves defining variables for colors, fonts, and other styling elements that can be easily changed to switch themes. Create a `_themes.scss` file with variables for different themes, such as `$light-theme: (primary-color: #fff, secondary-color: #ddd);`. Use mixins and functions to apply these variables throughout your stylesheet, enabling easy theme switching."
+        },
+        {
+                "title": "How can you use SASS to create responsive typography?",
+                "category": "Sass",
+                "description": "Creating responsive typography with SASS.",
+                "tags": "SASS, Typography, Responsive",
+                "paid": "Yes",
+                "answer": "Responsive typography in SASS can be achieved using media queries and functions. Define base font sizes and adjust them for different screen sizes. For example: `@mixin responsive-font($size) { font-size: $size; @media (min-width: 768px) { font-size: $size * 1.2; } } .text { @include responsive-font(16px); }` adjusts the font size for various screen sizes, ensuring readability on different devices."
+        },
+        {
+                "title": "What is the difference between `@mixin` and `@include`?",
+                "category": "Sass",
+                "description": "Understanding `@mixin` vs `@include` in SASS.",
+                "tags": "SASS, Mixins, CSS",
+                "paid": "Yes",
+                "answer": "`@mixin` is used to define reusable blocks of CSS code with or without parameters. `@include` is used to apply these mixins to specific selectors. For example, `@mixin border($color) { border: 1px solid $color; }` defines a mixin, and `@include border(blue);` applies it. `@mixin` sets up the style, while `@include` applies it where needed."
+        },
+        {
+                "title": "How do you use SASS to manage layout styles?",
+                "category": "Sass",
+                "description": "Managing layout styles with SASS.",
+                "tags": "SASS, Layout, CSS",
+                "paid": "Yes",
+                "answer": "Managing layout styles in SASS involves using mixins, variables, and modular file structures. Define layout patterns, such as grids and flexbox containers, in mixins or partials. For example, create a grid mixin with `@mixin grid($columns) { ... }` and include it in your main stylesheet. Use variables for layout-related values like spacing and dimensions to maintain consistency and easily adjust layouts across your project."
+        },
+        {
+                "title": "What are the best practices for using SASS in large projects?",
+                "category": "Sass",
+                "description": "Best practices for large SASS projects.",
+                "tags": "SASS, Best Practices, CSS",
+                "paid": "Yes",
+                "answer": "For large SASS projects, best practices include organizing styles into modular files, using partials to break down styles, and adopting `@use` and `@forward` for better modularization. Define global variables and mixins in dedicated files, and keep your main stylesheet concise. Implement a consistent naming convention and leverage functions and mixins to avoid code duplication, ensuring maintainability and scalability."
+        },
+        {
+                "title": "How do you handle browser compatibility with SASS?",
+                "category": "Sass",
+                "description": "Managing browser compatibility in SASS.",
+                "tags": "SASS, Browser Compatibility, CSS",
+                "paid": "Yes",
+                "answer": "Handling browser compatibility in SASS involves using mixins for vendor prefixes and tools like `autoprefixer` to automatically add necessary prefixes. For example, define a mixin for flexbox: `@mixin flex() { display: -webkit-flex; display: -ms-flexbox; display: flex; }`. Apply this mixin with `@include flex();` to ensure cross-browser support. Additionally, test styles in various browsers to ensure compatibility."
+        },
+        {
+                "title": "How do you use SASS to create utility classes?",
+                "category": "Sass",
+                "description": "Creating and managing utility classes with SASS.",
+                "tags": "SASS, Utility Classes, CSS",
+                "paid": "Yes",
+                "answer": "Creating utility classes in SASS involves defining reusable, single-purpose classes for common styles. Use mixins or functions to streamline the creation of these classes. For example, define a mixin for margin: `@mixin margin($value) { margin: $value; }`. Use it to generate utility classes: `.m-10 { @include margin(10px); }`. This approach helps in applying consistent spacing or other styles across your project efficiently."
+        },
+        {
+                "title": "What are SASS placeholders and how do you use them?",
+                "category": "Sass",
+                "description": "Using placeholders (`%`) in SASS for style inheritance.",
+                "tags": "SASS, Placeholders, CSS",
+                "paid": "Yes",
+                "answer": "SASS placeholders, defined with `%`, are used for creating reusable style blocks that can be extended but do not generate CSS rules themselves. For example, define a placeholder like `%button-style { padding: 10px; border: none; }` and extend it with `.btn { @extend %button-style; background: blue; }`. This approach promotes DRY (Don’t Repeat Yourself) principles by allowing multiple selectors to share the same styles."
+        },
+        {
+                "title": "How do you use SASS to manage z-index values?",
+                "category": "Sass",
+                "description": "Managing `z-index` values with SASS.",
+                "tags": "SASS, Z-Index, CSS",
+                "paid": "Yes",
+                "answer": "Managing `z-index` values in SASS can be achieved by defining variables or functions to maintain consistency and avoid conflicts. For example, define a map for `z-index` values: `$z-index: (low: 10, medium: 20, high: 30);`. Use it in your stylesheets with `z-index: map-get($z-index, medium);` to apply consistent `z-index` values across different components and layers."
+        },
+        {
+                "title": "How do you use `@media` queries with mixins in SASS?",
+                "category": "Sass",
+                "description": "Combining `@media` queries with mixins in SASS.",
+                "tags": "SASS, Media Queries, Mixins",
+                "paid": "Yes",
+                "answer": "Combining `@media` queries with mixins in SASS allows for responsive styles that adapt to different screen sizes. Define a mixin with media queries like `@mixin responsive-font($size) { font-size: $size; @media (min-width: 768px) { font-size: $size * 1.2; } }`. Include this mixin in your stylesheets to apply responsive font sizes, ensuring your typography adjusts across various devices and screen sizes."
+        },
+        {
+                "title": "What is the `@use` directive in SASS and how does it differ from `@import`?",
+                "category": "Sass",
+                "description": "Understanding the `@use` directive and its advantages over `@import`.",
+                "tags": "SASS, Use, Import",
+                "paid": "Yes",
+                "answer": "`@use` is a SASS directive introduced to replace `@import`. It loads a stylesheet only once, applies namespacing, and avoids conflicts by encapsulating styles, variables, and mixins. For instance, `@use 'colors' as *;` imports all members of the `colors.scss` file with no namespace. Unlike `@import`, `@use` helps in modularizing styles, reducing duplication, and managing dependencies more effectively."
+        },
+        {
+                "title": "What is the purpose of the `@extend` directive in SASS?",
+                "category": "Sass",
+                "description": "Using `@extend` for inheriting styles in SASS.",
+                "tags": "SASS, Extend, CSS",
+                "paid": "Yes",
+                "answer": "`@extend` is used in SASS to allow one selector to inherit the styles of another selector. For example, define a base class `%button-base { padding: 10px; border: 1px solid; }` and extend it with `.btn { @extend %button-base; background: blue; }`. This method promotes DRY principles by reusing styles without duplicating code."
+        },
+        {
+                "title": "How do you use SASS to create a modular component library?",
+                "category": "Sass",
+                "description": "Creating a modular component library with SASS.",
+                "tags": "SASS, Components, Modular",
+                "paid": "Yes",
+                "answer": "To create a modular component library in SASS, organize styles into separate files for each component and use `@use` and `@forward` to manage dependencies. Define component styles in individual files like `_button.scss`, and include them in a central file `_components.scss` with `@use 'button';`. This structure keeps your styles modular, maintainable, and scalable."
+        },
+        {
+                "title": "What is a SASS map and how do you use it?",
+                "category": "Sass",
+                "description": "Using maps in SASS for organized data.",
+                "tags": "SASS, Maps, Data",
+                "paid": "Yes",
+                "answer": "A SASS map is a data structure that stores key-value pairs, useful for managing complex data. Define a map like `$colors: (primary: #3498db, secondary: #2ecc71);` and access values using `map-get($colors, primary);`. Maps help in organizing related data, such as theme colors or layout settings, and enable easier maintenance and updates."
+        },
+        {
+                "title": "How can you use SASS to manage layout grids with dynamic column widths?",
+                "category": "Sass",
+                "description": "Managing dynamic column widths in grid systems using SASS.",
+                "tags": "SASS, Grid, Responsive",
+                "paid": "Yes",
+                "answer": "To manage dynamic column widths in SASS, define a grid system using mixins that accept parameters for column counts and widths. For example, create a mixin like `@mixin grid($columns) { ... }` and use variables or maps to set column widths. Apply the mixin with different parameters to create flexible, responsive grid layouts that adapt to various screen sizes and content."
+        },
+        {
+                "title": "What are the benefits of using SASS functions?",
+                "category": "Sass",
+                "description": "Advantages of using custom functions in SASS.",
+                "tags": "SASS, Functions, Benefits",
+                "paid": "Yes",
+                "answer": "SASS functions provide several benefits, including the ability to perform complex calculations, manipulate colors, and generate dynamic values. They allow for reusable logic and cleaner code. For example, create a function `@function calculate-rem($px) { @return $px / 16px + rem; }` to convert pixel values to rem units, promoting consistency and scalability in your stylesheet."
+        },
+        {
+                "title": "How do you use `@forward` to share styles between SASS files?",
+                "category": "Sass",
+                "description": "Using `@forward` to share styles across multiple SASS files.",
+                "tags": "SASS, Forward, Sharing Styles",
+                "paid": "Yes",
+                "answer": "`@forward` is used to share styles, mixins, and variables from one SASS file to others. For example, if you have a `_colors.scss` file with color variables, use `@forward 'colors';` in a `_index.scss` file to make those variables available in other files that import `_index.scss`. This approach helps in organizing and modularizing your SASS code."
+        },
+        {
+                "title": "How do you use SASS to create a responsive navigation menu?",
+                "category": "Sass",
+                "description": "Creating a responsive navigation menu with SASS.",
+                "tags": "SASS, Responsive, Navigation",
+                "paid": "Yes",
+                "answer": "To create a responsive navigation menu in SASS, use media queries and mixins to adjust styles for different screen sizes. Define styles for the menu items and container, and then use media queries to modify layout and visibility based on screen width. For example, `.menu { display: flex; @media (max-width: 768px) { flex-direction: column; } }` adjusts the menu layout for smaller screens."
+        },
+        {
+                "title": "What is the purpose of SASS interpolation and how is it used?",
+                "category": "Sass",
+                "description": "Using interpolation in SASS for dynamic property names.",
+                "tags": "SASS, Interpolation, Dynamic",
+                "paid": "Yes",
+                "answer": "Interpolation in SASS allows you to insert variables or expressions into property names, selectors, or values. Use `#{}` to achieve this. For example, `@mixin border($side) { border-#{$side}: 1px solid black; }` allows dynamic border property names like `@include border(top);` resulting in `border-top: 1px solid black;`. This feature enhances flexibility and reuse of styles."
+        },
+        {
+                "title": "How can you use SASS to create a mobile-first design?",
+                "category": "Sass",
+                "description": "Implementing a mobile-first approach with SASS.",
+                "tags": "SASS, Mobile-First, Responsive",
+                "paid": "Yes",
+                "answer": "Creating a mobile-first design with SASS involves writing styles for mobile devices first and then adding media queries for larger screens. Start by defining base styles for mobile devices and use media queries to adapt layouts for tablets and desktops. For example, `.container { padding: 10px; @media (min-width: 768px) { padding: 20px; } }` adjusts padding based on screen size."
+        },
+        {
+                "title": "How do you use SASS to manage state-based styling?",
+                "category": "Sass",
+                "description": "Managing state-based styles (e.g., hover, active) with SASS.",
+                "tags": "SASS, State-Based, CSS",
+                "paid": "Yes",
+                "answer": "Managing state-based styling in SASS involves using nested selectors and mixins to handle different states like hover or active. For example, define a button style and its hover state: `.btn { background: blue; &:hover { background: darkblue; } }`. This approach organizes styles by state and keeps related rules together, improving readability and maintainability."
+        },
+        {
+                "title": "What are the advantages of using the SASS `@mixin` directive?",
+                "category": "Sass",
+                "description": "Benefits of using mixins in SASS.",
+                "tags": "SASS, Mixins, Benefits",
+                "paid": "Yes",
+                "answer": "The `@mixin` directive in SASS offers several advantages, including code reusability, consistency, and flexibility. Mixins allow you to define reusable blocks of CSS code with or without parameters. For instance, a `@mixin border($color)` can be used to apply different border styles consistently across various elements, reducing redundancy and making updates easier."
+        },
+        {
+                "title": "How do you use SASS to handle font management?",
+                "category": "Sass",
+                "description": "Managing fonts in SASS.",
+                "tags": "SASS, Fonts, Typography",
+                "paid": "Yes",
+                "answer": "Handling fonts in SASS involves defining font families, sizes, and weights using variables and mixins. Create a `_fonts.scss` file with variables for fonts like `$font-primary: 'Roboto', sans-serif;` and `$font-size-base: 16px;`. Use these variables throughout your stylesheets to maintain consistency and easily adjust typography settings across your project."
+        },
+        {
+                "title": "What is a SASS mixin and how does it differ from a function?",
+                "category": "Sass",
+                "description": "Differences between mixins and functions in SASS.",
+                "tags": "SASS, Mixins, Functions",
+                "paid": "Yes",
+                "answer": "In SASS, a mixin is used to define reusable blocks of CSS that can be included in different selectors, optionally with parameters. For example, `@mixin border($color) { border: 1px solid $color; }`. A function, on the other hand, performs calculations and returns a value that can be used within other styles or functions. For instance, `@function calculate-rem($px) { @return $px / 16px + rem; }` converts pixel values to rem units."
+        },
+        {
+                "title": "How do you use SASS to create complex animations?",
+                "category": "Sass",
+                "description": "Creating complex animations with SASS.",
+                "tags": "SASS, Animations, CSS",
+                "paid": "Yes",
+                "answer": "Creating complex animations in SASS involves defining `@keyframes` for animation sequences and using mixins to apply them. For example, define a keyframe animation with `@keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }` and use a mixin like `@mixin spin-animation { animation: spin 2s linear infinite; }`. Apply this mixin to elements to create a spinning effect with reusable code."
+        },
+        {
+                "title": "How can you use SASS to create a custom grid system?",
+                "category": "Sass",
+                "description": "Building a custom grid system with SASS.",
+                "tags": "SASS, Grid, Layout",
+                "paid": "Yes",
+                "answer": "To create a custom grid system in SASS, define a series of mixins and variables to manage columns, gutters, and breakpoints. For example, create a mixin for a grid container: `@mixin grid-container($gutter) { margin-left: auto; margin-right: auto; padding-left: $gutter; padding-right: $gutter; }`. Define column mixins for responsiveness, and use these mixins to build a flexible grid system tailored to your design requirements."
+        },
+        {
+                "title": "What are SASS functions and how can they simplify your stylesheets?",
+                "category": "Sass",
+                "description": "Simplifying stylesheets with SASS functions.",
+                "tags": "SASS, Functions, Simplify",
+                "paid": "Yes",
+                "answer": "SASS functions simplify stylesheets by encapsulating logic and calculations into reusable components. Functions perform tasks like color manipulation, mathematical operations, or unit conversions. For instance, a function `@function darken($color, $amount) { @return darken($color, $amount); }` can be used to adjust color shades dynamically, reducing redundancy and ensuring consistency across styles."
+        },
+        {
+                "title": "How do you use SASS to handle font sizes dynamically?",
+                "category": "Sass",
+                "description": "Managing dynamic font sizes in SASS.",
+                "tags": "SASS, Typography, Dynamic",
+                "paid": "Yes",
+                "answer": "Managing dynamic font sizes in SASS involves using functions and mixins to scale font sizes based on parameters or breakpoints. For example, define a mixin for responsive typography: `@mixin responsive-font($size) { font-size: $size; @media (min-width: 768px) { font-size: $size * 1.2; } }`. This mixin adjusts font sizes dynamically, ensuring readability across different screen sizes."
+        },
+        {
+                "title": "What is the purpose of the `@if` directive in SASS?",
+                "category": "Sass",
+                "description": "Using `@if` to conditionally apply styles in SASS.",
+                "tags": "SASS, Conditionals, CSS",
+                "paid": "Yes",
+                "answer": "`@if` is used in SASS to apply styles conditionally based on certain criteria. For example, use `@if $theme == light { background-color: white; } @else { background-color: black; }` to set different background colors depending on the value of the `$theme` variable. This feature enhances flexibility by allowing styles to adapt based on dynamic conditions."
+        },
+        {
+                "title": "How do you use SASS to implement a color palette system?",
+                "category": "Sass",
+                "description": "Implementing a color palette with SASS variables and maps.",
+                "tags": "SASS, Colors, Palette",
+                "paid": "Yes",
+                "answer": "Implementing a color palette system in SASS involves defining color variables or maps to manage and reuse color values consistently. For example, create a map with `$colors: (primary: #3498db, secondary: #2ecc71);` and access colors using `map-get($colors, primary);`. This approach facilitates easy updates and consistent color usage across your stylesheets."
+        },
+        {
+                "title": "What are SASS partials and how do they improve stylesheet organization?",
+                "category": "Sass",
+                "description": "Using partials to organize SASS stylesheets.",
+                "tags": "SASS, Partials, Organization",
+                "paid": "Yes",
+                "answer": "SASS partials are files named with a leading underscore (e.g., `_variables.scss`) that are used to organize and modularize stylesheets. They are imported into other SASS files without generating separate CSS files. This approach improves organization by allowing you to break down styles into smaller, manageable chunks and maintain a cleaner main stylesheet."
+        },
+        {
+                "title": "How do you use `@mixin` to create reusable style patterns?",
+                "category": "Sass",
+                "description": "Creating reusable styles with `@mixin` in SASS.",
+                "tags": "SASS, Mixins, Reusability",
+                "paid": "Yes",
+                "answer": "`@mixin` is used to create reusable style patterns in SASS by defining blocks of CSS code that can be included in multiple selectors. For example, define a mixin for a button style: `@mixin button-style { padding: 10px; border: 1px solid; border-radius: 4px; }`. Apply this mixin with `@include button-style;` to different button classes, ensuring consistent styling across your project."
+        },
+        {
+                "title": "What is the role of `@each` in SASS and how is it used?",
+                "category": "Sass",
+                "description": "Using `@each` for iterating over lists and maps in SASS.",
+                "tags": "SASS, Each, Iteration",
+                "paid": "Yes",
+                "answer": "`@each` is a SASS directive used for iterating over lists or maps to generate repetitive styles or patterns. For example, iterate over a list of colors with `@each $color in $colors { .bg-#{$color} { background-color: $color; } }`. This generates classes for each color in the list, simplifying the creation of utility classes or style variations."
+        },
+        {
+                "title": "How do you use SASS to create a mixin with parameters?",
+                "category": "Sass",
+                "description": "Creating mixins with parameters in SASS.",
+                "tags": "SASS, Mixins, Parameters",
+                "paid": "Yes",
+                "answer": "Creating a mixin with parameters in SASS allows you to pass values into the mixin to customize its behavior. Define a mixin with parameters like `@mixin border($width, $color) { border: $width solid $color; }`. Use this mixin with different values: `@include border(2px, blue);` to apply a 2px blue border. Parameters enhance the flexibility and reusability of your mixins."
+        },
+        {
+                "title": "What are the best practices for naming conventions in SASS?",
+                "category": "Sass",
+                "description": "Best practices for naming conventions in SASS.",
+                "tags": "SASS, Naming Conventions, Best Practices",
+                "paid": "Yes",
+                "answer": "Best practices for naming conventions in SASS include using clear, descriptive names for variables, mixins, and selectors. Follow a consistent naming pattern like BEM (Block Element Modifier) for classes, and use hyphens for separating words. For example, use `.btn-primary` for a primary button class. This approach enhances readability, maintainability, and avoids conflicts in larger projects."
+        },
+        {
+                "title": "How do you use SASS to handle browser-specific prefixes?",
+                "category": "Sass",
+                "description": "Managing browser prefixes with SASS.",
+                "tags": "SASS, Prefixes, Browser Compatibility",
+                "paid": "Yes",
+                "answer": "Handling browser-specific prefixes in SASS can be managed using mixins for common properties. For example, define a mixin for flexbox: `@mixin flex() { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }`. Include this mixin with `@include flex();` to ensure cross-browser compatibility. Additionally, use tools like `autoprefixer` to automatically handle prefixes during the build process."
+        },
+        {
+                "title": "How do you use `@while` loops in SASS?",
+                "category": "Sass",
+                "description": "Implementing `@while` loops for repetitive tasks in SASS.",
+                "tags": "SASS, Loops, While",
+                "paid": "Yes",
+                "answer": "`@while` loops in SASS are used for executing code repeatedly while a condition is true. For example, generate a series of classes with incremental values using `@for $i from 1 through 5 { .col-#{$i} { width: #{20 * $i}px; } }`. This loop creates `.col-1`, `.col-2`, etc., with widths increasing by 20px, simplifying the creation of repetitive styles."
+        },
+        {
+                "title": "What is the `@return` directive in SASS functions?",
+                "category": "Sass",
+                "description": "Using `@return` to output values from SASS functions.",
+                "tags": "SASS, Return, Functions",
+                "paid": "Yes",
+                "answer": "`@return` is used in SASS functions to specify the value that the function should output. For example, in a function `@function calculate-rem($px) { @return $px / 16px + rem; }`, `@return` outputs the result of the calculation. This allows the function to be used in other styles or functions, providing dynamic and reusable values."
+        },
+        {
+                "title": "How do you use SASS to implement a custom breakpoint system?",
+                "category": "Sass",
+                "description": "Creating a custom breakpoint system with SASS.",
+                "tags": "SASS, Breakpoints, Responsive",
+                "paid": "Yes",
+                "answer": "Implementing a custom breakpoint system in SASS involves defining variables for breakpoints and using mixins to handle responsive styles. For example, define breakpoints with `$breakpoints: (mobile: 480px, tablet: 768px, desktop: 1024px);` and use a mixin like `@mixin respond-to($breakpoint) { @media (min-width: map-get($breakpoints, $breakpoint)) { @content; } }` to apply styles at different breakpoints."
+        },
+        {
+                "title": "What are the benefits of using `@include` in SASS?",
+                "category": "Sass",
+                "description": "Advantages of using `@include` to apply mixins.",
+                "tags": "SASS, Include, Mixins",
+                "paid": "Yes",
+                "answer": "`@include` in SASS is used to apply mixins to selectors, allowing you to reuse blocks of CSS code with ease. This promotes consistency and reduces code duplication. For example, with a mixin `@mixin border-radius($radius) { border-radius: $radius; }`, use `@include border-radius(5px);` to apply rounded corners. `@include` enhances maintainability by centralizing style definitions."
+        },
+        {
+                "title": "How do you use SASS to manage and customize variables?",
+                "category": "Sass",
+                "description": "Managing and customizing variables in SASS.",
+                "tags": "SASS, Variables, Customization",
+                "paid": "Yes",
+                "answer": "To manage and customize variables in SASS, define variables at the top of your stylesheet or in a dedicated file. For example, define a variable for primary color: `$primary-color: #3498db;`. Use this variable throughout your stylesheets, e.g., `background-color: $primary-color;`. Customizing variables allows for easy theme adjustments and ensures consistent styling across your project."
+        },
+        {
+                "title": "What is the purpose of the `@for` directive in SASS?",
+                "category": "Sass",
+                "description": "Using `@for` loops for iterative tasks in SASS.",
+                "tags": "SASS, For Loop, Iteration",
+                "paid": "Yes",
+                "answer": "`@for` is a SASS directive used to create loops that iterate over a range of values. For example, to generate a series of classes with different widths, use `@for $i from 1 through 4 { .col-#{$i} { width: 25% * $i; } }`. This creates `.col-1`, `.col-2`, etc., each with incrementally larger widths, simplifying repetitive styling tasks and enhancing code maintainability."
+        },
+        {
+                "title": "How do you use SASS to implement theming and color schemes?",
+                "category": "Sass",
+                "description": "Implementing theming and color schemes using SASS.",
+                "tags": "SASS, Theming, Color Schemes",
+                "paid": "Yes",
+                "answer": "Implementing theming and color schemes in SASS involves defining a set of color variables and using them throughout your stylesheets. Create a `_theme.scss` file with variables like `$primary-color: #3498db; $secondary-color: #2ecc71;` and use these variables in your styles, e.g., `background-color: $primary-color;`. Switch themes by updating variables in the `_theme.scss` file, ensuring a consistent color scheme across your application."
+        },
+        {
+                "title": "What is the difference between SASS variables and CSS custom properties?",
+                "category": "Sass",
+                "description": "Comparing SASS variables with CSS custom properties.",
+                "tags": "SASS, Variables, CSS",
+                "paid": "Yes",
+                "answer": "SASS variables and CSS custom properties (variables) serve similar purposes but differ in scope and functionality. SASS variables are compile-time variables used only in the SASS code, e.g., `$primary-color: #3498db;`. CSS custom properties are runtime variables applied directly in CSS, e.g., `--primary-color: #3498db;`. Custom properties are dynamic and can be manipulated with JavaScript, while SASS variables are static and compiled into CSS."
+        },
+        {
+                "title": "How can you optimize SASS code for performance?",
+                "category": "Sass",
+                "description": "Optimizing SASS code for better performance.",
+                "tags": "SASS, Performance, Optimization",
+                "paid": "Yes",
+                "answer": "To optimize SASS code for performance, follow best practices like minimizing the use of deeply nested selectors, avoiding excessive use of `@extend`, and leveraging `@use` and `@forward` to manage imports efficiently. Additionally, use tools like `autoprefixer` to handle vendor prefixes and ensure that your CSS output is as compact and efficient as possible, reducing load times and improving overall performance."
+        },
+        {
+                "title": "How do you handle vendor prefixes in SASS?",
+                "category": "Sass",
+                "description": "Managing vendor prefixes in SASS.",
+                "tags": "SASS, Vendor Prefixes, CSS",
+                "paid": "Yes",
+                "answer": "Handling vendor prefixes in SASS can be managed by using mixins or tools like `autoprefixer`. Define mixins for common properties with prefixes, such as `@mixin flex() { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }`. Alternatively, use `autoprefixer` in your build process to automatically add necessary prefixes, ensuring cross-browser compatibility with less manual effort."
+        },
+        {
+                "title": "How do you use SASS to implement conditional styles?",
+                "category": "Sass",
+                "description": "Applying conditional styles with SASS.",
+                "tags": "SASS, Conditional, Styles",
+                "paid": "Yes",
+                "answer": "To implement conditional styles in SASS, use directives like `@if` to apply styles based on conditions. For example, define a condition to style elements differently based on a variable: `@if $theme == light { background-color: white; } @else { background-color: black; }`. This approach allows dynamic styling based on variables or states, making your stylesheets more adaptable and responsive."
+        },
+        {
+                "title": "What is the role of the `@import` directive in SASS, and how does it compare to `@use`?",
+                "category": "Sass",
+                "description": "Comparing `@import` and `@use` directives in SASS.",
+                "tags": "SASS, Import, Use",
+                "paid": "Yes",
+                "answer": "`@import` was the original method for including stylesheets in SASS but has been largely replaced by `@use`. `@import` brings in styles from other files but can lead to issues like global scope pollution and duplication. `@use` addresses these issues by encapsulating styles and avoiding conflicts, ensuring that styles are only loaded once and making the codebase more modular and maintainable."
+        },
+        {
+                "title": "How do you use SASS to create a custom typography system?",
+                "category": "Sass",
+                "description": "Creating a custom typography system with SASS.",
+                "tags": "SASS, Typography, Customization",
+                "paid": "Yes",
+                "answer": "To create a custom typography system in SASS, define variables for font families, sizes, and weights, and use mixins to apply them consistently. For example, set up variables: `$font-primary: 'Roboto', sans-serif; $font-size-base: 16px;`. Create mixins for different text styles, like `@mixin heading-style($size) { font-size: $size; font-weight: bold; }`. Apply these styles throughout your stylesheets to maintain a consistent typography system."
+        },
+        {
+                "title": "What are SASS placeholders and how do they differ from regular classes?",
+                "category": "Sass",
+                "description": "Using SASS placeholders for style reuse.",
+                "tags": "SASS, Placeholders, Classes",
+                "paid": "Yes",
+                "answer": "SASS placeholders, defined with `%placeholder`, are used to create reusable styles that can be extended but not directly applied. For example, `%card-base { padding: 10px; border: 1px solid; }` can be extended with `.card { @extend %card-base; }`. Unlike regular classes, placeholders don’t generate CSS on their own; they’re designed for inheritance and modularity, promoting clean and DRY code."
+        },
+        {
+                "title": "How do you use SASS to handle complex layout calculations?",
+                "category": "Sass",
+                "description": "Managing complex layout calculations with SASS.",
+                "tags": "SASS, Layout, Calculations",
+                "paid": "Yes",
+                "answer": "Handling complex layout calculations in SASS involves using functions and mixins to perform dynamic calculations. For example, create a function to calculate grid column widths: `@function column-width($columns, $total-columns) { @return 100% / $total-columns * $columns; }`. Use this function within mixins to apply calculated widths dynamically, simplifying complex layout tasks and ensuring responsive design."
+        },
+        {
+                "title": "How do you use SASS to create responsive typography?",
+                "category": "Sass",
+                "description": "Implementing responsive typography with SASS.",
+                "tags": "SASS, Typography, Responsive",
+                "paid": "Yes",
+                "answer": "To create responsive typography in SASS, use mixins and media queries to adjust font sizes based on screen size. For example, define a mixin: `@mixin responsive-text($size) { font-size: $size; @media (min-width: 768px) { font-size: $size * 1.2; } }`. Apply this mixin to different text elements to ensure readability across various devices, maintaining a consistent typographic hierarchy."
+        },
+        {
+                "title": "What is the role of the `@debug` directive in SASS?",
+                "category": "Sass",
+                "description": "Using `@debug` for troubleshooting SASS code.",
+                "tags": "SASS, Debug, Troubleshooting",
+                "paid": "Yes",
+                "answer": "`@debug` is used in SASS to output debugging information during the compilation process. For example, `@debug $primary-color;` will print the value of `$primary-color` to the console, helping you troubleshoot issues with variables, mixins, or functions. It’s a valuable tool for understanding and resolving problems in your SASS code."
+        },
+        {
+                "title": "How do you use SASS to create a grid system with dynamic column widths?",
+                "category": "Sass",
+                "description": "Creating a dynamic grid system in SASS.",
+                "tags": "SASS, Grid, Dynamic",
+                "paid": "Yes",
+                "answer": "Creating a grid system with dynamic column widths in SASS involves using mixins and functions to calculate and apply widths. Define a function for column widths: `@function column-width($columns, $total-columns) { @return 100% / $total-columns * $columns; }`. Create a mixin to apply these widths: `@mixin grid-column($columns) { width: column-width($columns, 12); }`. Use this mixin to create flexible grid layouts with dynamically calculated column widths."
+        }
+]

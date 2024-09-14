@@ -1,0 +1,25 @@
+.sidebar {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+  transition: all 5;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 10px;
+}
+@media all and (max-width: 1032px) {
+  .questions {
+    display: block;
+  }
+}
+@media all and (max-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+  .sidebar .side {
+    display: none;
+  }
+}

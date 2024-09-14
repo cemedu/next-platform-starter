@@ -1,0 +1,354 @@
+[
+        {
+                "title": "What is jQuery?",
+                "category": "Jquery",
+                "description": "jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML document traversal and manipulation, event handling, and animation.",
+                "tags": "jQuery, library, JavaScript",
+                "paid": "Yes",
+                "answer": "jQuery is a lightweight JavaScript library designed to make it easier to manipulate HTML documents, handle events, perform animations, and manage AJAX interactions. It abstracts browser inconsistencies and provides a simpler syntax for common JavaScript tasks, such as selecting elements and handling user interactions. By using jQuery, developers can write less code and achieve more functionality."
+        },
+        {
+                "title": "How do you include jQuery in a web page?",
+                "category": "Jquery",
+                "description": "You can include jQuery in a web page by adding a script tag with the jQuery source URL or by downloading and linking the jQuery file.",
+                "tags": "jQuery, include, script",
+                "paid": "Yes",
+                "answer": "To include jQuery in a web page, you can add a `<script>` tag in the HTML `<head>` or just before the closing `<body>` tag. You can either link to a CDN version of jQuery or include a local copy. For example, to use a CDN, add `<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>` to your HTML file. Ensure the jQuery script tag is placed before your custom scripts that depend on jQuery."
+        },
+        {
+                "title": "What is the purpose of the jQuery $(document).ready() method?",
+                "category": "Jquery",
+                "description": "The $(document).ready() method ensures that the DOM is fully loaded and ready before executing any jQuery code.",
+                "tags": "jQuery, DOM, ready",
+                "paid": "Yes",
+                "answer": "The `$(document).ready()` method is used in jQuery to execute code when the DOM is fully loaded and ready to be manipulated. This ensures that your jQuery code runs only after the entire page has been loaded, preventing errors from attempting to interact with elements that have not yet been rendered. The syntax is `$(document).ready(function() { /* your code here */ });`. This method is crucial for ensuring that jQuery functions that manipulate DOM elements work as expected."
+        },
+        {
+                "title": "How can you select all elements with a specific class using jQuery?",
+                "category": "Jquery",
+                "description": "Use the jQuery selector with a class name to select elements by class.",
+                "tags": "jQuery, selector, class",
+                "paid": "Yes",
+                "answer": "To select all elements with a specific class using jQuery, you use the class selector, which is represented by a period (`.`) followed by the class name. For example, `$('.myClass')` selects all elements with the class `myClass`. This jQuery object allows you to perform operations on these elements, such as `.hide()`, `.css()`, or `.addClass()`, affecting all elements that match the specified class."
+        },
+        {
+                "title": "How do you hide an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the jQuery .hide() method to hide an element.",
+                "tags": "jQuery, hide, method",
+                "paid": "Yes",
+                "answer": "To hide an element using jQuery, use the `.hide()` method. For example, `$('#elementId').hide()` will hide the element with the ID `elementId`. The `.hide()` method sets the element’s `display` property to `none`, making it invisible. You can also use `.hide('slow')` or `.hide(500)` to animate the hiding effect, with `slow` or `500` milliseconds as the duration."
+        },
+        {
+                "title": "What is the jQuery .fadeIn() method used for?",
+                "category": "Jquery",
+                "description": "The .fadeIn() method is used to gradually change the opacity of an element to make it visible.",
+                "tags": "jQuery, fadeIn, method",
+                "paid": "Yes",
+                "answer": "The `.fadeIn()` method in jQuery is used to gradually change an element’s opacity from hidden to visible. This is accomplished with a fading animation. For instance, `$('#elementId').fadeIn('slow')` will cause the element with the ID `elementId` to fade in over a slow duration. The `.fadeIn()` method is often used to create smooth transitions and enhance user experience by animating elements when they appear."
+        },
+        {
+                "title": "How do you attach a click event handler to an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .click() method to attach a click event handler to an element.",
+                "tags": "jQuery, click, event handler",
+                "paid": "Yes",
+                "answer": "To attach a click event handler to an element using jQuery, use the `.click()` method. For example, `$('#buttonId').click(function() { alert('Button clicked!'); });` binds a click event to the element with ID `buttonId`. When the element is clicked, the function inside `.click()` is executed, displaying an alert with the message 'Button clicked!'. This method simplifies event handling by allowing you to directly attach event handlers to elements."
+        },
+        {
+                "title": "What is the difference between .attr() and .prop() methods in jQuery?",
+                "category": "Jquery",
+                "description": "The .attr() method sets or retrieves attribute values, while .prop() deals with properties of DOM elements.",
+                "tags": "jQuery, attr, prop",
+                "paid": "Yes",
+                "answer": "In jQuery, `.attr()` and `.prop()` are used to access and manipulate different aspects of DOM elements. `.attr()` is used to get or set attributes like `href`, `id`, and `src` as defined in HTML. For example, `$('a').attr('href', 'https://example.com')` sets the `href` attribute. Conversely, `.prop()` is used to work with properties such as `checked`, `disabled`, or `selected`, which reflect the current state of the element. For example, `$('input').prop('checked', true)` sets a checkbox to be checked. `.prop()` is generally used for properties that change dynamically, while `.attr()` is more suited for static attributes."
+        },
+        {
+                "title": "How can you make an AJAX request using jQuery?",
+                "category": "Jquery",
+                "description": "Use the jQuery .ajax() method to make an AJAX request.",
+                "tags": "jQuery, AJAX, request",
+                "paid": "Yes",
+                "answer": "To make an AJAX request with jQuery, use the `.ajax()` method. This method allows you to perform asynchronous HTTP requests to retrieve or send data. For example: `$.ajax({ url: 'https://api.example.com/data', method: 'GET', success: function(data) { console.log(data); }, error: function(jqXHR, textStatus, errorThrown) { console.log('Error:', textStatus); } });` makes a GET request to the specified URL. You can customize the request with options like `url`, `method`, `data`, and `success` callbacks to handle the response."
+        },
+        {
+                "title": "What is the purpose of the jQuery .each() method?",
+                "category": "Jquery",
+                "description": "The .each() method iterates over a jQuery object, executing a function for each matched element.",
+                "tags": "jQuery, each, iteration",
+                "paid": "Yes",
+                "answer": "The `.each()` method in jQuery is used to iterate over a jQuery object, applying a function to each element in the set. This method is useful for executing the same code on multiple elements. For example, `$('li').each(function(index) { $(this).addClass('highlight'); });` adds the class `highlight` to each `<li>` element. The `each()` method provides access to the current element and its index, allowing for complex manipulations and operations based on the elements' position or content."
+        },
+        {
+                "title": "How do you perform a slide toggle effect using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .slideToggle() method to toggle between showing and hiding elements with a sliding motion.",
+                "tags": "jQuery, slideToggle, effect",
+                "paid": "Yes",
+                "answer": "To perform a slide toggle effect using jQuery, use the `.slideToggle()` method. This method toggles the visibility of elements with a sliding motion, showing them if they are hidden and hiding them if they are visible. For example, `$('#myDiv').slideToggle('slow');` will toggle the visibility of the element with the ID `myDiv` over a slow duration. You can also specify the duration in milliseconds, such as `$('#myDiv').slideToggle(400)`, where `400` is the duration in milliseconds."
+        },
+        {
+                "title": "How can you set the text content of an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .text() method to set or retrieve the text content of an element.",
+                "tags": "jQuery, text, method",
+                "paid": "Yes",
+                "answer": "To set the text content of an element using jQuery, use the `.text()` method. For example, `$('#elementId').text('New Text Content');` changes the text inside the element with ID `elementId` to 'New Text Content'. The `.text()` method can also be used to retrieve the current text content if called without arguments, such as `var content = $('#elementId').text();`, which stores the element's text content in the variable `content`."
+        },
+        {
+                "title": "How do you add a class to an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .addClass() method to add one or more classes to an element.",
+                "tags": "jQuery, addClass, method",
+                "paid": "Yes",
+                "answer": "To add a class to an element using jQuery, use the `.addClass()` method. For example, `$('#elementId').addClass('newClass');` adds the class `newClass` to the element with ID `elementId`. You can also add multiple classes by separating them with spaces, such as `$('#elementId').addClass('class1 class2');`. This method modifies the element's `class` attribute to include the new classes, allowing you to apply different styles or behaviors based on the class."
+        },
+        {
+                "title": "How do you remove a class from an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .removeClass() method to remove one or more classes from an element.",
+                "tags": "jQuery, removeClass, method",
+                "paid": "Yes",
+                "answer": "To remove a class from an element using jQuery, use the `.removeClass()` method. For example, `$('#elementId').removeClass('oldClass');` removes the class `oldClass` from the element with ID `elementId`. If you want to remove multiple classes, you can pass them as a space-separated string, like `$('#elementId').removeClass('class1 class2');`. This method updates the element’s `class` attribute by removing the specified classes, which can be useful for dynamically changing styles or behaviors."
+        },
+        {
+                "title": "How can you check if an element is hidden using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .is(':hidden') method to check if an element is hidden.",
+                "tags": "jQuery, is, hidden",
+                "paid": "Yes",
+                "answer": "To check if an element is hidden using jQuery, use the `.is(':hidden')` method. For example, `if ($('#elementId').is(':hidden')) { console.log('Element is hidden'); }` checks if the element with ID `elementId` is currently hidden. The `:hidden` selector matches elements that are not visible, either because their `display` property is set to `none` or they are not part of the layout. This method is useful for conditionally performing actions based on the element's visibility."
+        },
+        {
+                "title": "How do you get the value of a form input using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .val() method to get the value of a form input element.",
+                "tags": "jQuery, val, form input",
+                "paid": "Yes",
+                "answer": "To get the value of a form input element using jQuery, use the `.val()` method. For example, `var inputValue = $('#inputId').val();` retrieves the current value of the input element with ID `inputId` and stores it in the `inputValue` variable. This method works with various form elements, including `<input>`, `<select>`, and `<textarea>`, allowing you to easily access and manipulate user input data."
+        },
+        {
+                "title": "How can you set the value of a form input using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .val() method to set the value of a form input element.",
+                "tags": "jQuery, val, form input",
+                "paid": "Yes",
+                "answer": "To set the value of a form input element using jQuery, use the `.val()` method with a parameter. For example, `$('#inputId').val('New Value');` sets the value of the input element with ID `inputId` to 'New Value'. This method is useful for pre-filling form fields or updating the value dynamically based on user actions or other events. You can also retrieve the current value by calling `.val()` without parameters."
+        },
+        {
+                "title": "What is the jQuery .toggle() method used for?",
+                "category": "Jquery",
+                "description": "The .toggle() method toggles the visibility of elements between show and hide states.",
+                "tags": "jQuery, toggle, visibility",
+                "paid": "Yes",
+                "answer": "The `.toggle()` method in jQuery is used to toggle the visibility of elements, showing them if they are hidden and hiding them if they are visible. For example, `$('#elementId').toggle();` will change the visibility of the element with ID `elementId`. This method is useful for creating interactive features where elements can be shown or hidden based on user actions. You can also use `.toggle(true)` to show and `.toggle(false)` to hide the element explicitly."
+        },
+        {
+                "title": "How do you chain multiple jQuery methods together?",
+                "category": "Jquery",
+                "description": "You can chain multiple jQuery methods together by calling them sequentially on the same jQuery object.",
+                "tags": "jQuery, chaining, methods",
+                "paid": "Yes",
+                "answer": "In jQuery, you can chain multiple methods together by calling them one after the other on the same jQuery object. This is possible because jQuery methods return the jQuery object itself, allowing further method calls. For example, `$('#elementId').css('color', 'red').slideUp().delay(500).slideDown();` changes the text color to red, slides the element up, waits for 500 milliseconds, and then slides it down. Chaining helps write concise and readable code by combining multiple operations into a single line."
+        },
+        {
+                "title": "How can you apply CSS styles to an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .css() method to apply CSS styles to an element.",
+                "tags": "jQuery, css, styling",
+                "paid": "Yes",
+                "answer": "To apply CSS styles to an element using jQuery, use the `.css()` method. For example, `$('#elementId').css('background-color', 'yellow');` sets the background color of the element with ID `elementId` to yellow. The `.css()` method can also accept an object with multiple CSS properties and values, such as `$('#elementId').css({ 'color': 'blue', 'font-size': '14px' });`. This allows you to apply multiple styles simultaneously and dynamically modify the appearance of elements."
+        },
+        {
+                "title": "How do you remove an element from the DOM using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .remove() method to remove an element from the DOM.",
+                "tags": "jQuery, remove, DOM",
+                "paid": "Yes",
+                "answer": "To remove an element from the DOM using jQuery, use the `.remove()` method. For example, `$('#elementId').remove();` will remove the element with ID `elementId` from the DOM entirely. This method not only removes the element but also its associated data and events, effectively cleaning up the DOM. If you only want to hide the element while keeping it in the DOM, you can use `.hide()` instead."
+        },
+        {
+                "title": "What is the purpose of the jQuery .on() method?",
+                "category": "Jquery",
+                "description": "The .on() method is used to attach event handlers to elements.",
+                "tags": "jQuery, on, events",
+                "paid": "Yes",
+                "answer": "The `.on()` method in jQuery is used to attach event handlers to elements. It is more versatile than older methods like `.click()` or `.bind()`, allowing you to attach multiple event types and handle events for dynamically added elements. For example, `$('#elementId').on('click', function() { alert('Clicked!'); });` attaches a click event handler to the element with ID `elementId`. You can also use `.on()` for event delegation, such as `$(document).on('click', '#elementId', function() { alert('Clicked!'); });`, which handles clicks on elements that may be added later."
+        },
+        {
+                "title": "How do you prevent the default action of an event in jQuery?",
+                "category": "Jquery",
+                "description": "Use the .preventDefault() method within an event handler to prevent the default action.",
+                "tags": "jQuery, preventDefault, event",
+                "paid": "Yes",
+                "answer": "To prevent the default action of an event in jQuery, call the `.preventDefault()` method on the event object within the event handler. For example, `$('form').on('submit', function(event) { event.preventDefault(); alert('Form submission prevented!'); });` stops the form from submitting and triggering the default behavior. This method is useful when you want to handle events with custom logic while avoiding the default browser behavior, such as submitting a form or following a link."
+        },
+        {
+                "title": "What is the jQuery .animate() method used for?",
+                "category": "Jquery",
+                "description": "The .animate() method performs custom animations on CSS properties.",
+                "tags": "jQuery, animate, animations",
+                "paid": "Yes",
+                "answer": "The `.animate()` method in jQuery is used to create custom animations by changing CSS properties over time. For example, `$('#elementId').animate({ opacity: 0.5, left: '250px' }, 1000);` animates the element with ID `elementId` by changing its opacity to 0.5 and moving it 250 pixels to the right over 1000 milliseconds. You can specify multiple properties to animate, control the speed of the animation, and include callback functions to execute after the animation completes."
+        },
+        {
+                "title": "How do you get the index of an element within its siblings using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .index() method to get the index of an element among its siblings.",
+                "tags": "jQuery, index, siblings",
+                "paid": "Yes",
+                "answer": "To get the index of an element among its siblings using jQuery, use the `.index()` method. For example, `var index = $('#elementId').index();` returns the index of the element with ID `elementId` among its siblings. This method provides the position of the element relative to its sibling elements, starting from zero. You can also pass a selector to `.index()` to find the index of the element relative to a specific set of siblings."
+        },
+        {
+                "title": "What is the jQuery .clone() method used for?",
+                "category": "Jquery",
+                "description": "The .clone() method creates a deep copy of the selected element(s).",
+                "tags": "jQuery, clone, copy",
+                "paid": "Yes",
+                "answer": "The `.clone()` method in jQuery is used to create a deep copy of the selected element(s), including their attributes and child elements. For example, `var clonedElement = $('#elementId').clone();` creates a copy of the element with ID `elementId`, which can then be inserted into the DOM or manipulated further. You can also pass `true` as an argument to `.clone(true)` to include event handlers and data associated with the original elements in the copy."
+        },
+        {
+                "title": "How can you find a child element within a parent element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .find() method to locate child elements within a parent element.",
+                "tags": "jQuery, find, child elements",
+                "paid": "Yes",
+                "answer": "To find a child element within a parent element using jQuery, use the `.find()` method. For example, `$('#parentId').find('.childClass')` searches for all elements with the class `childClass` within the parent element with ID `parentId`. This method allows you to traverse the DOM and locate nested elements that match the specified selector, enabling efficient manipulation or retrieval of child elements."
+        },
+        {
+                "title": "How do you get the height of an element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .height() method to get the height of an element.",
+                "tags": "jQuery, height, method",
+                "paid": "Yes",
+                "answer": "To get the height of an element using jQuery, use the `.height()` method. For example, `var height = $('#elementId').height();` retrieves the height of the element with ID `elementId`, excluding padding, borders, and margins. This method returns the height in pixels as an integer, allowing you to use it in calculations or adjustments of the layout. If you need the height including padding and borders, consider using `.outerHeight()`."
+        },
+        {
+                "title": "What is the purpose of the jQuery .data() method?",
+                "category": "Jquery",
+                "description": "The .data() method is used to store and retrieve data associated with elements.",
+                "tags": "jQuery, data, method",
+                "paid": "Yes",
+                "answer": "The `.data()` method in jQuery is used to store and retrieve data associated with elements. For example, `$('#elementId').data('key', 'value');` stores the value `'value'` under the key `'key'` for the element with ID `elementId`. You can then retrieve this data with `var value = $('#elementId').data('key');`. This method provides a convenient way to attach custom data to elements without altering the HTML attributes, and it ensures data persistence across DOM manipulations."
+        },
+        {
+                "title": "How can you execute code only once for each element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .one() method to attach event handlers that execute only once.",
+                "tags": "jQuery, one, event handler",
+                "paid": "Yes",
+                "answer": "To execute code only once for each element using jQuery, use the `.one()` method. For example, `$('#elementId').one('click', function() { alert('This will only happen once!'); });` attaches a click event handler to the element with ID `elementId` that executes only the first time the element is clicked. After the handler is executed, it is automatically removed. This method is useful for cases where you need an action to occur just once per element."
+        },
+        {
+                "title": "How do you perform a basic filtering operation on jQuery elements?",
+                "category": "Jquery",
+                "description": "Use the .filter() method to select elements that match a specified condition.",
+                "tags": "jQuery, filter, elements",
+                "paid": "Yes",
+                "answer": "To perform a basic filtering operation on jQuery elements, use the `.filter()` method. This method allows you to select elements that meet a certain condition. For example, `$('li').filter('.active')` selects only the `<li>` elements that have the class `active`. You can also use a function as a filter criterion, such as `$('li').filter(function() { return $(this).text() === 'Item 1'; });`, which selects `<li>` elements whose text content equals 'Item 1'."
+        },
+        {
+                "title": "What does the jQuery .offset() method do?",
+                "category": "Jquery",
+                "description": "The .offset() method gets or sets the current coordinates of an element relative to the document.",
+                "tags": "jQuery, offset, coordinates",
+                "paid": "Yes",
+                "answer": "The `.offset()` method in jQuery is used to get or set the current coordinates of an element relative to the document. For example, `var offset = $('#elementId').offset();` retrieves the current position of the element with ID `elementId` as an object with `top` and `left` properties. To set the position, use `$('#elementId').offset({ top: 100, left: 200 });`, which moves the element to the specified coordinates relative to the document. This method is useful for precise positioning and layout calculations."
+        },
+        {
+                "title": "How can you handle form submission using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .submit() method to handle form submission events.",
+                "tags": "jQuery, submit, form",
+                "paid": "Yes",
+                "answer": "To handle form submission using jQuery, you can use the `.submit()` method. This method allows you to attach an event handler that executes when the form is submitted. For example, `$('form').submit(function(event) { event.preventDefault(); alert('Form submitted!'); });` prevents the default form submission action and shows an alert instead. By using `.submit()`, you can validate form data, handle submission asynchronously with AJAX, or perform other custom actions when the user submits the form."
+        },
+        {
+                "title": "What is the jQuery .parents() method used for?",
+                "category": "Jquery",
+                "description": "The .parents() method gets all ancestor elements of the selected element.",
+                "tags": "jQuery, parents, ancestors",
+                "paid": "Yes",
+                "answer": "The `.parents()` method in jQuery is used to get all ancestor elements of the selected element, traversing up the DOM tree. For example, `$('#elementId').parents('div')` selects all `<div>` elements that are ancestors of the element with ID `elementId`. This method is useful for finding specific parent elements, applying styles, or performing operations based on the hierarchy of elements in the document."
+        },
+        {
+                "title": "How can you show an element that was hidden using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .show() method to display an element that was hidden.",
+                "tags": "jQuery, show, visibility",
+                "paid": "Yes",
+                "answer": "To show an element that was hidden using jQuery, use the `.show()` method. For example, `$('#elementId').show();` makes the element with ID `elementId` visible again. The `.show()` method changes the CSS `display` property of the element to its default value or to the value specified by a parameter. It is commonly used in conjunction with `.hide()` to toggle the visibility of elements."
+        },
+        {
+                "title": "How do you get the parent element of a selected element using jQuery?",
+                "category": "Jquery",
+                "description": "Use the .parent() method to get the immediate parent of a selected element.",
+                "tags": "jQuery, parent, method",
+                "paid": "Yes",
+                "answer": "To get the parent element of a selected element using jQuery, use the `.parent()` method. For example, `$('#elementId').parent();` returns the immediate parent of the element with ID `elementId`. If you want to get all ancestor elements up the DOM tree, use `.parents()` instead. The `.parent()` method is useful for traversing the DOM and applying operations to the parent element directly."
+        },
+        {
+                "title": "What does the jQuery .html() method do?",
+                "category": "Jquery",
+                "description": "The .html() method gets or sets the HTML content of an element.",
+                "tags": "jQuery, html, content",
+                "paid": "Yes",
+                "answer": "The `.html()` method in jQuery is used to get or set the HTML content of an element. For example, `var content = $('#elementId').html();` retrieves the HTML inside the element with ID `elementId`. To set the HTML content, use `$('#elementId').html('<p>New Content</p>');`, which updates the element with new HTML. This method is useful for dynamically updating content and for manipulating the structure of elements."
+        },
+        {
+                "title": "How can you toggle visibility of an element in jQuery?",
+                "category": "Jquery",
+                "description": "Toggling the visibility using jQuery.",
+                "tags": "jQuery, visibility",
+                "paid": "Yes",
+                "answer": "To toggle the visibility of an element in jQuery, use the `.toggle()` method. This method alternates between hiding and showing the element each time it is called. For instance, `$('#myElement').toggle();` will hide the element if it is visible, and show it if it is hidden."
+        },
+        {
+                "title": "What is the purpose of the .each() method in jQuery?",
+                "category": "Jquery",
+                "description": "Usage of the .each() method.",
+                "tags": "jQuery, iteration",
+                "paid": "Yes",
+                "answer": "The `.each()` method in jQuery is used to iterate over a jQuery object, executing a function for each matched element. It is useful for performing actions on multiple elements. For example: `$('li').each(function(index, element) { $(this).addClass('highlight'); });` adds the 'highlight' class to each `<li>` element."
+        },
+        {
+                "title": "How can you retrieve the value of an input field using jQuery?",
+                "category": "Jquery",
+                "description": "Getting the value of an input field.",
+                "tags": "jQuery, input fields",
+                "paid": "Yes",
+                "answer": "To retrieve the value of an input field in jQuery, use the `.val()` method. For instance, if you want to get the value of an input field with the id 'myInput', you would write `var value = $('#myInput').val();`. This method returns the current value of the input field."
+        },
+        {
+                "title": "How do you set the value of an input field using jQuery?",
+                "category": "Jquery",
+                "description": "Setting the value of an input field.",
+                "tags": "jQuery, input fields",
+                "paid": "Yes",
+                "answer": "To set the value of an input field using jQuery, use the `.val()` method with a parameter. For example, to set the value of an input field with the id 'myInput' to 'new value', you would write `$('#myInput').val('new value');`. This method updates the input field's value."
+        },
+        {
+                "title": "How can you handle events in jQuery?",
+                "category": "Jquery",
+                "description": "Event handling using jQuery.",
+                "tags": "jQuery, events",
+                "paid": "Yes",
+                "answer": "Event handling in jQuery is done using methods like `.click()`, `.mouseover()`, `.keydown()`, etc. For example, to handle a click event on a button with the id 'myButton', you would write `$('#myButton').click(function() { alert('Button clicked!'); });`. This binds a click event to the button that triggers an alert."
+        },
+        {
+                "title": "What is event delegation in jQuery?",
+                "category": "Jquery",
+                "description": "Concept of event delegation.",
+                "tags": "jQuery, events",
+                "paid": "Yes",
+                "answer": "Event delegation in jQuery is a technique used to handle events for dynamically added elements. Instead of attaching an event handler directly to each element, you attach it to a parent element that is already in the DOM. For example: `$('#parent').on('click', '.child', function() { alert('Child clicked!'); });` handles clicks on `.child` elements, even if they are added later."
+        },
+        {
+                "title": "How do you perform an AJAX request using jQuery?",
+                "category": "Jquery",
+                "description": "Making AJAX requests with jQuery.",
+                "tags": "jQuery, AJAX",
+                "paid": "Yes",
+                "answer": "To perform an AJAX request with jQuery, use the `$.ajax()` method. For example: `$.ajax({ url: 'data.json', method: 'GET', success: function(data) { console.log(data); } });` sends a GET request to 'data.json' and logs the response data. The `$.ajax()` method provides a lot of options for customizing the request."
+        }
+]

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg1: #070e0f;
+  --bg2: #000000;
+  --bg3: #001733;
+
+  --text1: #aecbf0;
+  --text2: #26314e;
+  --text3: #bedeff;
+
+  --icon: #00a6d8;
+  --icon1: #d86100;
+
+  --w1: #fff;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .border {
+    border: 0.5px solid var(--icon);
+  }
+  .bg1 {
+    background-color: var(--bg1);
+  }
+  .bg2 {
+    background-color: var(--bg2);
+  }
+  .bg3 {
+    background-color: var(--bg3);
+  }
+
+  .text1 {
+    background-color: var(--text1);
+  }
+  .text2 {
+    background-color: var(--text2);
+  }
+  .text3 {
+    background-color: var(--text3);
+  }
+
+  .icon {
+    background-color: var(--icon);
+  }
+  .icon1 {
+    background-color: var(--icon1);
+  }
+
+  .w1 {
+    background-color: var(--w1);
+  }
+
+  .center,
+  .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.center,
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body * {
+  font-family: "Poppins", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.body_bg {
+  font-family: "Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: var(--bg1);
+  color: var(--text1);
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+input {
+  width: 100%;
+}
+
+section,
+option {
+  background: #000;
+  padding: 20px;
+}
+
+.cp {
+  cursor: pointer !important;
+}
+
+.cp svg:hover {
+  color: var(--icon1);
+}
+
+svg {
+  color: var(--icon);
+}
+
+svg:hover {
+  color: var(--icon1);
+}
+
+a:hover {
+  color: var(--icon1);
+}
+
+.btn {
+  padding: 2px 5px;
+  border: var(--text2);
+  border-radius: 5px;
+  background-color: var(--bg1);
+}
+
+.btn:hover {
+  background: var(--th2);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--icon);
+  margin: 0.2em 0;
+  padding: 0;
+}
+
+.bgi1 {
+  background-image: url("/banners/banner3.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+.bgi2 {
+  background-image: url("/banners/banner2.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+.bgi3 {
+  background-image: url("/banners/banner4.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.amount {
+  position: relative;
+}
+.amount::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--icon1);
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+
+.limit2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

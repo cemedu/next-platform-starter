@@ -1,0 +1,986 @@
+[
+        {
+                "title": "What is an Operating System?",
+                "category": "OS",
+                "description": "Explain the basic concept of an operating system.",
+                "tags": "basic,concept,OS",
+                "paid": "Yes",
+                "answer": "An Operating System (OS) is system software that manages computer hardware and software resources. It provides a user interface and controls hardware operations, such as memory management and process scheduling. For example, Windows and Linux are popular OSs that handle tasks like file management and peripheral control."
+        },
+        {
+                "title": "What is the purpose of process management?",
+                "category": "OS",
+                "description": "Describe the role of process management in an OS.",
+                "tags": "process,management,OS",
+                "paid": "Yes",
+                "answer": "Process management in an OS involves creating, scheduling, and terminating processes. It ensures efficient CPU utilization and manages process states. For instance, when you run a program, the OS allocates resources, schedules its execution, and manages its lifecycle until completion."
+        },
+        {
+                "title": "What are the key responsibilities of memory management?",
+                "category": "OS",
+                "description": "Explain the functions of memory management in an OS.",
+                "tags": "memory,management,OS",
+                "paid": "Yes",
+                "answer": "Memory management involves handling the allocation and deallocation of memory space. It ensures that each process has enough memory to execute and prevents memory leaks. For example, paging and segmentation are techniques used to manage memory efficiently in an OS."
+        },
+        {
+                "title": "What is a kernel in an operating system?",
+                "category": "OS",
+                "description": "Define the kernel and its role in an OS.",
+                "tags": "kernel,OS,role",
+                "paid": "Yes",
+                "answer": "The kernel is the core component of an OS that manages system resources and communication between hardware and software. It handles low-level tasks such as process scheduling, memory management, and device control. For instance, the Linux kernel manages system operations in a Linux environment."
+        },
+        {
+                "title": "What are system calls?",
+                "category": "OS",
+                "description": "Explain what system calls are and their purpose.",
+                "tags": "system,call,OS",
+                "paid": "Yes",
+                "answer": "System calls are the interface between user applications and the OS. They allow programs to request services such as file operations or process control. For example, the 'open' system call in Unix-based systems opens a file and returns a file descriptor to the application."
+        },
+        {
+                "title": "What is a process and a thread?",
+                "category": "OS",
+                "description": "Differentiate between a process and a thread.",
+                "tags": "process,thread,OS",
+                "paid": "Yes",
+                "answer": "A process is an independent program in execution, while a thread is a smaller unit of a process that can run concurrently. Threads share resources of the process but have their own execution path. For example, a web browser (process) might have multiple tabs (threads) running simultaneously."
+        },
+        {
+                "title": "What is a deadlock?",
+                "category": "OS",
+                "description": "Define deadlock and how it affects system performance.",
+                "tags": "deadlock,OS,performance",
+                "paid": "Yes",
+                "answer": "Deadlock occurs when two or more processes are stuck in a state where each is waiting for the other to release resources, causing none to proceed. For instance, if two processes are each holding a lock and waiting for the other to release its lock, neither can continue."
+        },
+        {
+                "title": "What is virtual memory?",
+                "category": "OS",
+                "description": "Describe the concept of virtual memory and its benefits.",
+                "tags": "virtual,memory,OS",
+                "paid": "Yes",
+                "answer": "Virtual memory is a memory management technique that creates an illusion of a larger physical memory by using disk space. It allows for more efficient memory utilization and process isolation. For example, a system with 4GB RAM can use virtual memory to handle more data by paging to disk."
+        },
+        {
+                "title": "Explain the concept of paging.",
+                "category": "OS",
+                "description": "What is paging and how does it work?",
+                "tags": "paging,OS,concept",
+                "paid": "Yes",
+                "answer": "Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory. It divides memory into fixed-size pages and maps them to physical memory frames. This allows for efficient and flexible memory use, as pages can be loaded and swapped as needed."
+        },
+        {
+                "title": "What is a semaphore?",
+                "category": "OS",
+                "description": "Define semaphores and their use in synchronization.",
+                "tags": "semaphore,synchronization,OS",
+                "paid": "Yes",
+                "answer": "A semaphore is a synchronization primitive used to control access to shared resources by multiple processes. It consists of a counter and operations (wait and signal) to manage resource allocation. For example, semaphores can prevent race conditions in concurrent programming by ensuring mutual exclusion."
+        },
+        {
+                "title": "What is the difference between a process and a program?",
+                "category": "OS",
+                "description": "Differentiate between process and program.",
+                "tags": "process,program,OS",
+                "paid": "Yes",
+                "answer": "A program is a static set of instructions stored on disk, whereas a process is a dynamic entity that executes the program's instructions. A program becomes a process when it is loaded into memory and executed. For example, a word processor application (program) runs as a process when opened."
+        },
+        {
+                "title": "What is a file system?",
+                "category": "OS",
+                "description": "Describe the purpose and functionality of a file system.",
+                "tags": "file,system,OS",
+                "paid": "Yes",
+                "answer": "A file system manages the storage and retrieval of files on a disk. It organizes files into directories and handles metadata such as file size and permissions. For example, NTFS in Windows and ext4 in Linux are file systems that manage data storage and access."
+        },
+        {
+                "title": "What is context switching?",
+                "category": "OS",
+                "description": "Explain the process of context switching.",
+                "tags": "context, switching, OS",
+                "paid": "Yes",
+                "answer": "Context switching is the process of saving the state of a currently running process and loading the state of the next process to be executed. It involves saving registers, program counter, and other context information. For example, switching between multiple applications on a computer involves context switching."
+        },
+        {
+                "title": "What is a race condition?",
+                "category": "OS",
+                "description": "Define race condition and how to prevent it.",
+                "tags": "race,condition,OS",
+                "paid": "Yes",
+                "answer": "A race condition occurs when the outcome of a process depends on the sequence or timing of uncontrollable events. It can lead to unpredictable results. To prevent race conditions, synchronization mechanisms like mutexes and semaphores are used to ensure orderly access to shared resources."
+        },
+        {
+                "title": "What is a file descriptor?",
+                "category": "OS",
+                "description": "Explain what a file descriptor is and its purpose.",
+                "tags": "file,descriptor,OS",
+                "paid": "Yes",
+                "answer": "A file descriptor is an integer handle used by the OS to access files and I/O resources. It is returned by system calls like 'open' and used in subsequent operations such as 'read' or 'write'. For example, in Unix-like systems, file descriptor 0 refers to standard input."
+        },
+        {
+                "title": "What are interrupt requests (IRQs)?",
+                "category": "OS",
+                "description": "Describe IRQs and their role in system operation.",
+                "tags": "interrupt,requests,IRQ,OS",
+                "paid": "Yes",
+                "answer": "Interrupt requests (IRQs) are signals sent to the CPU indicating that a device needs attention. IRQs help manage hardware communication and prioritize tasks. For instance, pressing a key on the keyboard generates an IRQ to notify the OS to read the keystroke."
+        },
+        {
+                "title": "What is thrashing in operating systems?",
+                "category": "OS",
+                "description": "Define thrashing and how it affects system performance.",
+                "tags": "thrashing,performance,OS",
+                "paid": "Yes",
+                "answer": "Thrashing occurs when the OS spends more time swapping data between memory and disk than executing processes, leading to degraded performance. It happens when there is excessive paging or segmentation. For example, running too many memory-intensive applications can cause thrashing."
+        },
+        {
+                "title": "What is a page fault?",
+                "category": "OS",
+                "description": "Explain the concept of a page fault.",
+                "tags": "page,fault,OS",
+                "paid": "Yes",
+                "answer": "A page fault occurs when a program accesses a page not currently in physical memory, triggering the OS to fetch it from disk into RAM. For example, if a program tries to access data that has been swapped out, the OS loads the required page from the disk, which may cause a delay."
+        },
+        {
+                "title": "What is a deadlock prevention strategy?",
+                "category": "OS",
+                "description": "Describe a strategy for preventing deadlocks.",
+                "tags": "deadlock,prevention,strategy,OS",
+                "paid": "Yes",
+                "answer": "Deadlock prevention strategies aim to avoid the conditions that lead to deadlocks. One common method is the Banker's Algorithm, which allocates resources only if it determines that doing so will not lead to a deadlock. This involves assessing whether resource allocation will leave the system in a safe state."
+        },
+        {
+                "title": "What is an inode?",
+                "category": "OS",
+                "description": "Explain the concept of an inode in a file system.",
+                "tags": "inode,file,system,OS",
+                "paid": "Yes",
+                "answer": "An inode is a data structure in a file system that stores information about a file, such as its size, owner, permissions, and disk location. For example, in the ext4 file system, each file is associated with an inode that helps manage its attributes and data location."
+        },
+        {
+                "title": "What is a system call interface?",
+                "category": "OS",
+                "description": "Describe the system call interface and its significance.",
+                "tags": "system,call,interface,OS",
+                "paid": "Yes",
+                "answer": "The system call interface is the mechanism through which user applications interact with the OS kernel. It provides a set of functions for performing operations like file manipulation and process control. For example, the 'read' system call retrieves data from a file and returns it to the application."
+        },
+        {
+                "title": "What is a page replacement algorithm?",
+                "category": "OS",
+                "description": "Explain the purpose and types of page replacement algorithms.",
+                "tags": "page,replacement,algorithm,OS",
+                "paid": "Yes",
+                "answer": "Page replacement algorithms decide which pages to swap out of physical memory when a page fault occurs. Common algorithms include Least Recently Used (LRU) and FIFO (First In, First Out). For instance, LRU replaces the page that has not been used for the longest time."
+        },
+        {
+                "title": "What is the difference between a monolithic kernel and a microkernel?",
+                "category": "OS",
+                "description": "Compare monolithic and microkernels.",
+                "tags": "monolithic,microkernel,OS",
+                "paid": "Yes",
+                "answer": "A monolithic kernel includes all essential OS services in one large block of code, providing high performance but less modularity. In contrast, a microkernel only includes the most fundamental services, with other functionalities running in user space, offering better modularity and stability. For example, Linux uses a monolithic kernel, while Minix uses a microkernel."
+        },
+        {
+                "title": "What is an access control list (ACL)?",
+                "category": "OS",
+                "description": "Describe ACLs and their role in file security.",
+                "tags": "access,control,list,ACL,OS",
+                "paid": "Yes",
+                "answer": "An access control list (ACL) is a list of permissions attached to an object, specifying which users or system processes are granted access to that object and what operations they can perform. For example, ACLs in Unix-like systems define file access rights for users and groups."
+        },
+        {
+                "title": "What are the differences between synchronous and asynchronous I/O?",
+                "category": "OS",
+                "description": "Compare synchronous and asynchronous I/O operations.",
+                "tags": "synchronous,asynchronous,I/O,OS",
+                "paid": "Yes",
+                "answer": "Synchronous I/O operations block the process until the I/O operation completes, while asynchronous I/O allows the process to continue execution while the I/O operation proceeds in the background. For example, reading a file synchronously means the process waits for the read to complete, whereas asynchronously, it continues executing other tasks."
+        },
+        {
+                "title": "What is a virtual machine?",
+                "category": "OS",
+                "description": "Explain the concept of a virtual machine.",
+                "tags": "virtual,machine,OS",
+                "paid": "Yes",
+                "answer": "A virtual machine (VM) is a software emulation of a physical computer that runs an OS and applications as if it were a physical machine. VMs enable multiple operating systems to run on a single physical host, improving resource utilization. For instance, VMware and VirtualBox are popular VM platforms."
+        },
+        {
+                "title": "What is process synchronization?",
+                "category": "OS",
+                "description": "Define process synchronization and its importance.",
+                "tags": "process,synchronization,OS",
+                "paid": "Yes",
+                "answer": "Process synchronization ensures that multiple processes or threads operate in a coordinated manner to avoid conflicts when accessing shared resources. It is crucial for maintaining data consistency and avoiding race conditions. For example, semaphores and mutexes are commonly used synchronization tools."
+        },
+        {
+                "title": "What is the purpose of the file allocation table (FAT)?",
+                "category": "OS",
+                "description": "Describe the function of FAT in file systems.",
+                "tags": "file,allocation,table,FAT,OS",
+                "paid": "Yes",
+                "answer": "The File Allocation Table (FAT) is a file system structure that keeps track of file locations on disk. It manages space allocation and file organization. For example, in FAT16, the table is used to locate clusters on the disk that store file data."
+        },
+        {
+                "title": "What is the difference between preemptive and non-preemptive scheduling?",
+                "category": "OS",
+                "description": "Compare preemptive and non-preemptive CPU scheduling.",
+                "tags": "preemptive,non-preemptive,scheduling,OS",
+                "paid": "Yes",
+                "answer": "Preemptive scheduling allows the OS to interrupt and replace a currently running process based on priority or time slice, while non-preemptive scheduling requires a process to release the CPU voluntarily. For example, Round-Robin scheduling is preemptive, whereas First-Come, First-Served is non-preemptive."
+        },
+        {
+                "title": "What is a shell in operating systems?",
+                "category": "OS",
+                "description": "Define the role of a shell in an OS.",
+                "tags": "shell,OS,role",
+                "paid": "Yes",
+                "answer": "A shell is a user interface that allows users to interact with the OS by executing commands and scripts. It can be command-line based or graphical. For example, Bash and Zsh are command-line shells in Unix-like systems, while Windows has Command Prompt and PowerShell."
+        },
+        {
+                "title": "What is the role of the scheduler in an OS?",
+                "category": "OS",
+                "description": "Explain the function of the scheduler in an OS.",
+                "tags": "scheduler,OS,function",
+                "paid": "Yes",
+                "answer": "The scheduler manages the execution of processes by allocating CPU time and determining the order of process execution. It ensures efficient CPU utilization and process management. For example, the scheduler decides which process gets CPU time and for how long in a time-sharing system."
+        },
+        {
+                "title": "What is a device driver?",
+                "category": "OS",
+                "description": "Define device driver and its role in an OS.",
+                "tags": "device,driver,OS",
+                "paid": "Yes",
+                "answer": "A device driver is a software component that allows the OS to communicate with hardware devices. It translates OS commands into device-specific actions. For instance, a printer driver converts print jobs from the OS into a format that the printer can understand and execute."
+        },
+        {
+                "title": "What are the different types of operating system structures?",
+                "category": "OS",
+                "description": "Describe various OS structures.",
+                "tags": "operating,system,structures,OS",
+                "paid": "Yes",
+                "answer": "OS structures include monolithic kernels, microkernels, modular kernels, and layered systems. Monolithic kernels have all services in a single kernel space, while microkernels have minimal core functions, and modular kernels allow dynamic addition of modules. Layered systems organize the OS into hierarchical layers of functionality."
+        },
+        {
+                "title": "What is a context block?",
+                "category": "OS",
+                "description": "Explain the purpose of a context block.",
+                "tags": "context,block,OS",
+                "paid": "Yes",
+                "answer": "A context block stores the state information of a process or thread, including CPU registers, program counter, and memory management information. It is used during context switching to save and restore process states. For example, when switching tasks, the OS saves the current context and loads the next one from the context block."
+        },
+        {
+                "title": "What is the significance of file permissions?",
+                "category": "OS",
+                "description": "Describe the importance of file permissions in an OS.",
+                "tags": "file,permissions,OS",
+                "paid": "Yes",
+                "answer": "File permissions control access to files and directories, specifying which users can read, write, or execute files. This is crucial for maintaining security and privacy. For example, in Unix-like systems, permissions are denoted by rwx (read, write, execute) and can be set for the owner, group, and others."
+        },
+        {
+                "title": "What is the role of an operating system in virtualization?",
+                "category": "OS",
+                "description": "Explain how an OS supports virtualization.",
+                "tags": "virtualization,OS,role",
+                "paid": "Yes",
+                "answer": "In virtualization, the OS (host OS) manages the virtual machines (VMs) and provides virtualized resources such as CPU, memory, and storage. It ensures isolation between VMs and their access to hardware. For instance, VMware Workstation allows multiple VMs to run concurrently on a single host OS."
+        },
+        {
+                "title": "What is a system bus?",
+                "category": "OS",
+                "description": "Define a system bus and its purpose in computer architecture.",
+                "tags": "system,bus,OS",
+                "paid": "Yes",
+                "answer": "A system bus is a communication system that transfers data between different components of a computer, such as the CPU, memory, and peripherals. It consists of data, address, and control lines. For example, the system bus allows the CPU to communicate with RAM and storage devices."
+        },
+        {
+                "title": "What is a fork in process management?",
+                "category": "OS",
+                "description": "Describe the fork system call in process management.",
+                "tags": "fork,process,management,OS",
+                "paid": "Yes",
+                "answer": "The fork system call creates a new process by duplicating the calling process. The new process, called the child process, has its own unique process ID and memory space. For example, in Unix-like systems, the fork call creates a child process that can then execute a different program using exec."
+        },
+        {
+                "title": "What is a critical section?",
+                "category": "OS",
+                "description": "Define the critical section in process synchronization.",
+                "tags": "critical,section,synchronization,OS",
+                "paid": "Yes",
+                "answer": "A critical section is a segment of code where shared resources are accessed by multiple processes. Proper synchronization is required to prevent concurrent access that could lead to inconsistencies. For instance, if two processes update a shared counter simultaneously, mutual exclusion ensures only one process updates it at a time."
+        },
+        {
+                "title": "What is an atomic operation?",
+                "category": "OS",
+                "description": "Explain the concept of an atomic operation in computer systems.",
+                "tags": "atomic,operation,OS",
+                "paid": "Yes",
+                "answer": "An atomic operation is an operation that runs completely independently of any other operations and is uninterruptible. It ensures consistency by preventing other processes from intervening during its execution. For example, incrementing a counter atomically guarantees that the counter’s value is updated correctly without interference."
+        },
+        {
+                "title": "What is an OS page table?",
+                "category": "OS",
+                "description": "Describe the function of a page table in memory management.",
+                "tags": "page,table,memory,management,OS",
+                "paid": "Yes",
+                "answer": "A page table is a data structure used in virtual memory systems to map virtual addresses to physical addresses. It keeps track of the location of pages in physical memory. For example, when a process accesses virtual memory, the OS uses the page table to determine the corresponding physical address."
+        },
+        {
+                "title": "What is the difference between soft and hard links?",
+                "category": "OS",
+                "description": "Compare soft and hard links in file systems.",
+                "tags": "soft,hard,links,file,system,OS",
+                "paid": "Yes",
+                "answer": "A hard link is a direct reference to a file's inode, making it indistinguishable from the original file. A soft link (or symbolic link) is a separate file that points to another file or directory. For example, `ln` creates hard links, while `ln -s` creates soft links in Unix-like systems."
+        },
+        {
+                "title": "What is a system image?",
+                "category": "OS",
+                "description": "Define a system image and its use.",
+                "tags": "system,image,OS",
+                "paid": "Yes",
+                "answer": "A system image is a snapshot of a computer's OS, applications, and data at a specific point in time. It is used for backup, recovery, or duplication purposes. For example, creating a system image before a major upgrade allows you to restore your system to its previous state if something goes wrong."
+        },
+        {
+                "title": "What is a fork-join pattern?",
+                "category": "OS",
+                "description": "Explain the fork-join pattern in parallel programming.",
+                "tags": "fork,join,pattern,OS",
+                "paid": "Yes",
+                "answer": "The fork-join pattern is a parallel programming model where a process forks multiple tasks and then joins their results. It divides a task into sub-tasks that can be executed concurrently, then synchronizes their results. For example, in a parallel computation, a master task forks several worker tasks and joins their outputs to produce the final result."
+        },
+        {
+                "title": "What is a pipe in Unix-like systems?",
+                "category": "OS",
+                "description": "Describe the concept of a pipe and its use.",
+                "tags": "pipe,Unix,OS",
+                "paid": "Yes",
+                "answer": "A pipe is a mechanism in Unix-like systems that allows the output of one process to be used as the input for another process. It enables chaining commands together. For example, `ls | grep 'file'` lists files and filters the output for those containing 'file'."
+        },
+        {
+                "title": "What is a file system journal?",
+                "category": "OS",
+                "description": "Explain the purpose of journaling in file systems.",
+                "tags": "file,system,journal,OS",
+                "paid": "Yes",
+                "answer": "A file system journal is a log that records changes before they are committed to the file system. It helps recover from crashes by replaying or rolling back incomplete transactions. For example, ext3 and ext4 file systems use journaling to maintain data integrity in case of system failures."
+        },
+        {
+                "title": "What is the difference between user space and kernel space?",
+                "category": "OS",
+                "description": "Compare user space and kernel space in an OS.",
+                "tags": "user,space,kernel,space,OS",
+                "paid": "Yes",
+                "answer": "User space is where applications run and do not have direct access to hardware or system resources. Kernel space is where the OS kernel operates, with full access to hardware and system resources. For example, user applications run in user space, while device drivers run in kernel space."
+        },
+        {
+                "title": "What is a thread pool?",
+                "category": "OS",
+                "description": "Define a thread pool and its benefits.",
+                "tags": "thread,pool,OS",
+                "paid": "Yes",
+                "answer": "A thread pool is a collection of pre-created threads that are reused to execute tasks. It helps manage resources more efficiently by reducing the overhead of thread creation and destruction. For example, web servers use thread pools to handle incoming requests concurrently without creating a new thread for each request."
+        },
+        {
+                "title": "What is a bootloader?",
+                "category": "OS",
+                "description": "Explain the role of a bootloader in system startup.",
+                "tags": "bootloader,OS,system,startup",
+                "paid": "Yes",
+                "answer": "A bootloader is a small program that loads the OS into memory during system startup. It initializes hardware and passes control to the OS kernel. For example, GRUB is a popular bootloader used in Linux systems to load the kernel and start the operating system."
+        },
+        {
+                "title": "What is an execution context?",
+                "category": "OS",
+                "description": "Define execution context in process management.",
+                "tags": "execution,context,process,OS",
+                "paid": "Yes",
+                "answer": "The execution context includes all information necessary to resume a process's execution, such as CPU registers, program counter, and memory state. It is saved during a context switch and restored when the process resumes. For instance, when switching between processes, the OS saves and loads execution contexts to manage process states."
+        },
+        {
+                "title": "What is a system boot process?",
+                "category": "OS",
+                "description": "Describe the steps involved in the system boot process.",
+                "tags": "boot,process,OS",
+                "paid": "Yes",
+                "answer": "The system boot process involves several steps: powering on the computer, executing the BIOS/UEFI firmware to initialize hardware, loading the bootloader, and then loading the OS kernel into memory. For example, the BIOS performs POST (Power-On Self-Test) and then hands control over to the bootloader to load the OS."
+        },
+        {
+                "title": "What is the purpose of a system call wrapper?",
+                "category": "OS",
+                "description": "Explain the concept and purpose of system call wrappers.",
+                "tags": "system,call,wrapper,OS",
+                "paid": "Yes",
+                "answer": "A system call wrapper is a library function that provides an interface to system calls, abstracting the underlying complexity. It translates user-level requests into system calls. For example, the `open()` function in C is a wrapper around the system call `sys_open()`, simplifying file operations for the programmer."
+        },
+        {
+                "title": "What is the concept of memory fragmentation?",
+                "category": "OS",
+                "description": "Define memory fragmentation and its impact.",
+                "tags": "memory,fragmentation,OS",
+                "paid": "Yes",
+                "answer": "Memory fragmentation occurs when free memory is divided into small, non-contiguous blocks, leading to inefficient memory use. It impacts performance by making it harder to allocate large contiguous memory blocks. For example, fragmentation can cause a system to run out of memory despite having enough total free space."
+        },
+        {
+                "title": "What is a resource allocation graph?",
+                "category": "OS",
+                "description": "Explain the purpose of a resource allocation graph in OS.",
+                "tags": "resource,allocation,graph,OS",
+                "paid": "Yes",
+                "answer": "A resource allocation graph is a tool used to represent and manage the allocation of resources to processes in a system. It helps detect and prevent deadlocks by showing which resources are allocated to which processes and which are requested. For example, it can help visualize potential deadlock conditions in a system."
+        },
+        {
+                "title": "What is a semaphore?",
+                "category": "OS",
+                "description": "Describe semaphores and their role in synchronization.",
+                "tags": "semaphore,synchronization,OS",
+                "paid": "Yes",
+                "answer": "A semaphore is a synchronization tool used to manage access to shared resources by multiple processes. It can be binary (mutex) or counting, and it controls access using signals. For example, semaphores are used to implement mutual exclusion, ensuring that only one process can access a critical section at a time."
+        },
+        {
+                "title": "What is a watchdog timer?",
+                "category": "OS",
+                "description": "Explain the function of a watchdog timer in systems.",
+                "tags": "watchdog,timer,OS",
+                "paid": "Yes",
+                "answer": "A watchdog timer is a hardware or software timer used to detect and recover from system malfunctions. It periodically resets if the system is operating correctly. If the timer is not reset, it indicates a failure and triggers a recovery action, such as rebooting the system. For example, it can prevent systems from hanging due to software faults."
+        },
+        {
+                "title": "What is the difference between a hard disk and SSD?",
+                "category": "OS",
+                "description": "Compare hard disks and SSDs in terms of performance and storage.",
+                "tags": "hard,disk,SSD,storage,OS",
+                "paid": "Yes",
+                "answer": "Hard disks use spinning magnetic platters and read/write heads, offering high capacity at lower costs but slower speeds. SSDs use flash memory with no moving parts, providing faster data access, durability, and efficiency. For example, SSDs significantly improve boot times and application load speeds compared to traditional hard disks."
+        },
+        {
+                "title": "What is a system call?",
+                "category": "OS",
+                "description": "Define a system call and its role in operating systems.",
+                "tags": "system,call,OS",
+                "paid": "Yes",
+                "answer": "A system call is an interface used by applications to request services from the OS kernel, such as file operations, process management, or communication. For example, the `read()` system call requests data from a file, allowing an application to interact with the file system."
+        },
+        {
+                "title": "What is the concept of a process?",
+                "category": "OS",
+                "description": "Define a process and its components in an OS.",
+                "tags": "process,OS,components",
+                "paid": "Yes",
+                "answer": "A process is an instance of a running program, including its code, data, and execution context. It consists of a program counter, stack, heap, and data section. For example, when you run a text editor, the OS creates a process with its own memory space and execution state."
+        },
+        {
+                "title": "What is the difference between a thread and a process?",
+                "category": "OS",
+                "description": "Compare threads and processes in terms of resource management.",
+                "tags": "thread,process,OS",
+                "paid": "Yes",
+                "answer": "A process is an independent program execution unit with its own memory space, while a thread is a smaller unit of a process that shares memory with other threads of the same process. For example, a web browser may have multiple threads for handling different tabs, but all threads share the same memory space."
+        },
+        {
+                "title": "What is a file descriptor?",
+                "category": "OS",
+                "description": "Explain the role of a file descriptor in file management.",
+                "tags": "file,descriptor,OS",
+                "paid": "Yes",
+                "answer": "A file descriptor is an integer used by the OS to identify an open file or I/O resource. It provides a reference for file operations like reading and writing. For example, when a file is opened, the OS returns a file descriptor that can be used by the application to interact with the file."
+        },
+        {
+                "title": "What is an operating system service?",
+                "category": "OS",
+                "description": "Describe the various services provided by an OS.",
+                "tags": "OS,services",
+                "paid": "Yes",
+                "answer": "Operating system services include process management, memory management, file system management, device management, and user interface management. These services provide a controlled environment for executing applications, managing resources, and interacting with hardware. For example, the file system service handles file operations and organization."
+        },
+        {
+                "title": "What is memory paging?",
+                "category": "OS",
+                "description": "Define memory paging and its advantages.",
+                "tags": "memory,paging,OS",
+                "paid": "Yes",
+                "answer": "Memory paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory and thus eliminates external fragmentation. It divides memory into fixed-size blocks called pages. For example, it allows a process to use more memory than physically available by paging data in and out of disk storage."
+        },
+        {
+                "title": "What is a distributed operating system?",
+                "category": "OS",
+                "description": "Explain the concept of a distributed operating system.",
+                "tags": "distributed,operating,system,OS",
+                "paid": "Yes",
+                "answer": "A distributed operating system manages a group of separate computers as a unified system, sharing resources and providing a single coherent environment. It ensures processes and data are transparently accessible across multiple nodes. For example, Apache Hadoop uses a distributed OS model to handle large-scale data processing across clusters."
+        },
+        {
+                "title": "What is memory overcommitment in virtualization?",
+                "category": "OS",
+                "description": "Describe memory overcommitment and its implications in virtualized environments.",
+                "tags": "memory,overcommitment,virtualization,OS",
+                "paid": "Yes",
+                "answer": "Memory overcommitment allows a hypervisor to allocate more virtual memory to VMs than physically available, assuming not all VMs will use their full allocation simultaneously. It can lead to performance issues if too many VMs use their allocated memory, causing increased swapping or paging."
+        },
+        {
+                "title": "Explain the concept of kernel space vs. user space protection.",
+                "category": "OS",
+                "description": "Discuss how kernel space and user space are protected from each other.",
+                "tags": "kernel,space,user,protection,OS",
+                "paid": "Yes",
+                "answer": "Kernel space is protected from user space to prevent user programs from directly accessing or modifying critical system resources. This separation prevents user-space processes from compromising system stability or security. For example, system calls act as controlled gateways between user space and kernel space."
+        },
+        {
+                "title": "What is kernel mode and user mode?",
+                "category": "OS",
+                "description": "Define kernel mode and user mode in operating systems.",
+                "tags": "kernel,mode,user,OS",
+                "paid": "Yes",
+                "answer": "Kernel mode allows the OS to execute privileged instructions and access hardware directly, while user mode restricts applications to a limited set of operations and requires system calls to interact with the OS. For example, executing hardware access directly is only possible in kernel mode, not user mode."
+        },
+        {
+                "title": "What is the difference between context switching and thread switching?",
+                "category": "OS",
+                "description": "Compare context switching and thread switching in terms of system overhead.",
+                "tags": "context,switching,thread,OS",
+                "paid": "Yes",
+                "answer": "Context switching involves saving and restoring the state of a process, including its memory and CPU registers, while thread switching only involves saving and restoring the thread's state within a process, sharing the same memory space. Thread switching is generally faster due to less overhead compared to context switching."
+        },
+        {
+                "title": "Explain the concept of NUMA (Non-Uniform Memory Access).",
+                "category": "OS",
+                "description": "Describe NUMA and its impact on system performance.",
+                "tags": "NUMA,Non-Uniform,Memory,Access,OS",
+                "paid": "Yes",
+                "answer": "NUMA is a memory architecture where memory access times vary depending on the memory's location relative to the processor. Each processor has its local memory, and accessing remote memory can be slower. NUMA optimizes performance by localizing memory access and reducing remote access delays."
+        },
+        {
+                "title": "What are kernel threads and user threads?",
+                "category": "OS",
+                "description": "Differentiate between kernel threads and user threads.",
+                "tags": "kernel,threads,user,OS",
+                "paid": "Yes",
+                "answer": "Kernel threads are managed directly by the OS kernel and can run concurrently on multiple processors. User threads are managed by user-level libraries and require kernel support to execute. Kernel threads provide better system integration and resource management compared to user threads, which are more lightweight."
+        },
+        {
+                "title": "What is a system call interposition?",
+                "category": "OS",
+                "description": "Explain system call interposition and its applications.",
+                "tags": "system,call,interposition,OS",
+                "paid": "Yes",
+                "answer": "System call interposition involves intercepting and analyzing system calls made by applications. This technique is used for purposes like security monitoring, debugging, or performance profiling. For example, a security module might interpose system calls to enforce access controls or detect malicious activity."
+        },
+        {
+                "title": "What is the purpose of a hypervisor in virtualization?",
+                "category": "OS",
+                "description": "Describe the role of a hypervisor in managing virtual machines.",
+                "tags": "hypervisor,virtualization,OS",
+                "paid": "Yes",
+                "answer": "A hypervisor, or virtual machine monitor, manages multiple virtual machines (VMs) by providing virtualized hardware and isolating VMs from each other. It allocates resources, handles scheduling, and ensures isolation between VMs. For example, VMware ESXi and Microsoft Hyper-V are hypervisors used in enterprise environments."
+        },
+        {
+                "title": "What is a syscall return value and how is it used?",
+                "category": "OS",
+                "description": "Explain syscall return values and their importance.",
+                "tags": "syscall,return,value,OS",
+                "paid": "Yes",
+                "answer": "The syscall return value indicates the success or failure of a system call. It typically returns a positive value for success or a negative value with an error code. For example, the `open()` syscall returns a file descriptor on success or -1 with an error code if it fails."
+        },
+        {
+                "title": "What is the role of a page directory in x86 architecture?",
+                "category": "OS",
+                "description": "Describe the function of a page directory in x86 memory management.",
+                "tags": "page,directory,x86,OS",
+                "paid": "Yes",
+                "answer": "In x86 architecture, a page directory is used in paging to manage memory. It holds pointers to page tables, which map virtual addresses to physical addresses. Each entry in the page directory points to a page table, which in turn maps to the actual physical pages of memory."
+        },
+        {
+                "title": "What are user-level context switches?",
+                "category": "OS",
+                "description": "Explain user-level context switches and their efficiency.",
+                "tags": "user-level,context,switches,OS",
+                "paid": "Yes",
+                "answer": "User-level context switches occur within the same process and involve saving and restoring the state of threads managed by user-level libraries, not the kernel. They are faster than kernel-level context switches because they avoid the overhead of switching between kernel and user mode."
+        },
+        {
+                "title": "What is a race condition, and how can it be prevented?",
+                "category": "OS",
+                "description": "Define race condition and describe methods to prevent it.",
+                "tags": "race,condition,prevention,OS",
+                "paid": "Yes",
+                "answer": "A race condition occurs when the outcome of a program depends on the non-deterministic timing of concurrent processes. It can be prevented using synchronization mechanisms like mutexes, semaphores, and locks, which ensure that critical sections are accessed by only one process at a time."
+        },
+        {
+                "title": "What is the purpose of memory ballooning in virtualization?",
+                "category": "OS",
+                "description": "Describe memory ballooning and its benefits in virtualized environments.",
+                "tags": "memory,ballooning,virtualization,OS",
+                "paid": "Yes",
+                "answer": "Memory ballooning dynamically reclaims memory from VMs by inflating a balloon device in the guest OS, which forces the guest to free up memory. This allows the hypervisor to redistribute memory among VMs based on current needs, optimizing overall resource utilization."
+        },
+        {
+                "title": "What is a kernel module, and how does it differ from a kernel driver?",
+                "category": "OS",
+                "description": "Explain kernel modules and their distinction from kernel drivers.",
+                "tags": "kernel,module,driver,OS",
+                "paid": "Yes",
+                "answer": "A kernel module is a piece of code that can be loaded and unloaded into the kernel at runtime, extending kernel functionality. A kernel driver is a specific type of module designed to manage hardware devices. While all drivers are modules, not all modules are drivers."
+        },
+        {
+                "title": "What is the purpose of a context switch in multi-threading?",
+                "category": "OS",
+                "description": "Explain why context switching is essential in multi-threaded applications.",
+                "tags": "context,switch,multi-threading,OS",
+                "paid": "Yes",
+                "answer": "Context switching allows a CPU to switch between different threads or processes, enabling multitasking and efficient use of the processor. It involves saving the state of the current thread and loading the state of the next thread, thus allowing concurrent execution of multiple threads."
+        },
+        {
+                "title": "What are kernel-space and user-space memory protection mechanisms?",
+                "category": "OS",
+                "description": "Discuss memory protection mechanisms between kernel and user spaces.",
+                "tags": "kernel,space,user,protection,OS",
+                "paid": "Yes",
+                "answer": "Kernel-space memory protection ensures that user-space processes cannot directly access or modify kernel memory, preventing potential security breaches. User-space protection isolates applications from each other, preventing them from interfering with one another's memory. This separation helps maintain system stability and security."
+        },
+        {
+                "title": "What is a memory-mapped file?",
+                "category": "OS",
+                "description": "Describe the concept and uses of memory-mapped files.",
+                "tags": "memory-mapped,file,OS",
+                "paid": "Yes",
+                "answer": "A memory-mapped file maps a file or a portion of it into the address space of a process, allowing file data to be accessed as if it were part of memory. It simplifies file I/O and can improve performance by allowing direct memory access and efficient file sharing."
+        },
+        {
+                "title": "What is the concept of a time-sharing system?",
+                "category": "OS",
+                "description": "Explain time-sharing systems and their advantages.",
+                "tags": "time-sharing,system,OS",
+                "paid": "Yes",
+                "answer": "A time-sharing system allocates CPU time among multiple users or processes, giving the illusion of concurrent execution. It improves resource utilization and responsiveness by rapidly switching between tasks. For example, Unix-like systems use time-sharing to handle multiple user sessions efficiently."
+        },
+        {
+                "title": "What is a virtual file system (VFS)?",
+                "category": "OS",
+                "description": "Define a virtual file system and its role in OS.",
+                "tags": "virtual,file,system,VFS,OS",
+                "paid": "Yes",
+                "answer": "A virtual file system (VFS) provides a uniform interface to different file systems, allowing applications to interact with various file systems using a consistent API. It abstracts the underlying file system details and enables seamless file access across different storage systems."
+        },
+        {
+                "title": "What is a memory footprint?",
+                "category": "OS",
+                "description": "Explain the concept of memory footprint and its significance.",
+                "tags": "memory,footprint,OS",
+                "paid": "Yes",
+                "answer": "Memory footprint refers to the amount of memory consumed by a process, including code, data, and stack. It is significant for optimizing memory usage and ensuring efficient resource management. For example, applications with a large memory footprint may affect overall system performance and scalability."
+        },
+        {
+                "title": "What is the purpose of load balancing in distributed systems?",
+                "category": "OS",
+                "description": "Describe load balancing and its importance in distributed systems.",
+                "tags": "load,balancing,distributed,systems,OS",
+                "paid": "Yes",
+                "answer": "Load balancing distributes workloads across multiple servers or resources to ensure no single component is overwhelmed. It improves system performance, availability, and reliability by evenly distributing the load. For example, a web server cluster uses load balancing to manage incoming traffic efficiently."
+        },
+        {
+                "title": "What is a kernel panic, and how is it handled?",
+                "category": "OS",
+                "description": "Explain the concept of a kernel panic and its resolution.",
+                "tags": "kernel,panic,OS",
+                "paid": "Yes",
+                "answer": "A kernel panic is a critical error that occurs when the OS kernel encounters an unrecoverable issue, causing the system to halt. It is handled by generating a diagnostic message and often requires a reboot. Debugging tools and logs help identify the cause of the panic for resolution."
+        },
+        {
+                "title": "What is a system call stack?",
+                "category": "OS",
+                "description": "Define the concept of a system call stack.",
+                "tags": "system,call,stack,OS",
+                "paid": "Yes",
+                "answer": "A system call stack is a data structure used to manage function calls and their associated data during system calls. It tracks the execution context, parameters, and return addresses. For example, when a process makes a system call, the stack holds information needed to return control after the call completes."
+        },
+        {
+                "title": "What is a process scheduler?",
+                "category": "OS",
+                "description": "Describe the role of a process scheduler in an operating system.",
+                "tags": "process,scheduler,OS",
+                "paid": "Yes",
+                "answer": "A process scheduler manages the execution of processes by allocating CPU time based on scheduling algorithms. It ensures efficient process management, responsiveness, and resource utilization. For example, the scheduler may use algorithms like Round Robin or Priority Scheduling to determine which process runs next."
+        },
+        {
+                "title": "What is a resource deadlock, and how can it be resolved?",
+                "category": "OS",
+                "description": "Define resource deadlock and describe methods for resolution.",
+                "tags": "resource,deadlock,resolution,OS",
+                "paid": "Yes",
+                "answer": "A resource deadlock occurs when a set of processes are stuck waiting for resources held by each other, preventing any of them from proceeding. It can be resolved using techniques like deadlock detection, prevention (such as resource allocation graphs), or recovery methods like killing processes or resource preemption."
+        },
+        {
+                "title": "What is a kernel mode vs. user mode transition?",
+                "category": "OS",
+                "description": "Explain the transition between kernel mode and user mode.",
+                "tags": "kernel,mode,user,transition,OS",
+                "paid": "Yes",
+                "answer": "Transitioning from kernel mode to user mode occurs when the OS switches from executing privileged operations to executing user applications. This switch involves saving and restoring contexts and switching memory protection levels. For example, after a system call, the kernel mode returns control to user mode to continue application execution."
+        },
+        {
+                "title": "What is an interrupt vector?",
+                "category": "OS",
+                "description": "Describe the purpose of an interrupt vector in handling interrupts.",
+                "tags": "interrupt,vector,OS",
+                "paid": "Yes",
+                "answer": "An interrupt vector is a table of addresses used by the OS to handle interrupts. Each entry corresponds to an interrupt request and points to the interrupt service routine (ISR) that handles the interrupt. For example, the x86 architecture uses an interrupt vector table to manage hardware and software interrupts."
+        },
+        {
+                "title": "What is the role of the I/O scheduler?",
+                "category": "OS",
+                "description": "Explain the function of the I/O scheduler in managing disk operations.",
+                "tags": "I/O,scheduler,OS",
+                "paid": "Yes",
+                "answer": "The I/O scheduler manages disk I/O requests by optimizing the order and timing of operations to improve performance and reduce latency. It uses algorithms like CFQ (Completely Fair Queuing) or Deadline Scheduling to balance throughput and responsiveness. For example, it can reorder disk access requests to minimize seek times."
+        },
+        {
+                "title": "What is a memory leak?",
+                "category": "OS",
+                "description": "Define a memory leak and its impact on system performance.",
+                "tags": "memory,leak,OS",
+                "paid": "Yes",
+                "answer": "A memory leak occurs when a process allocates memory but fails to release it, leading to gradual memory exhaustion. It can degrade system performance and stability over time. For example, an application that continuously allocates memory without freeing it will eventually consume all available memory, causing system slowdowns or crashes."
+        },
+        {
+                "title": "What is a system call interface?",
+                "category": "OS",
+                "description": "Describe the system call interface and its importance.",
+                "tags": "system,call,interface,OS",
+                "paid": "Yes",
+                "answer": "The system call interface is the mechanism through which user applications request services from the OS kernel. It provides a controlled and standardized way for applications to perform operations like file access and process management. For example, functions like `read()`, `write()`, and `open()` are system calls that interact with the OS kernel."
+        },
+        {
+                "title": "What is kernel-space memory allocation?",
+                "category": "OS",
+                "description": "Explain how memory allocation is handled in kernel space.",
+                "tags": "kernel,space,memory,allocation,OS",
+                "paid": "Yes",
+                "answer": "Kernel-space memory allocation involves managing memory resources used by the OS kernel and its modules. It uses specific allocators like the slab allocator to handle memory requests. For example, the kernel might use a slab allocator to efficiently manage memory for frequently used objects like file system caches."
+        },
+        {
+                "title": "What are process control blocks (PCBs)?",
+                "category": "OS",
+                "description": "Define process control blocks and their role in process management.",
+                "tags": "process,control,block,PCB,OS",
+                "paid": "Yes",
+                "answer": "Process control blocks (PCBs) are data structures used by the OS to manage information about processes. They store details like process state, program counter, CPU registers, and memory management information. For example, the OS uses PCBs to track process status during context switches and scheduling."
+        },
+        {
+                "title": "What is the concept of a system call dispatcher?",
+                "category": "OS",
+                "description": "Describe the role of a system call dispatcher in the OS.",
+                "tags": "system,call,dispatcher,OS",
+                "paid": "Yes",
+                "answer": "A system call dispatcher directs system calls to the appropriate kernel functions based on the call number and parameters. It translates user-space requests into kernel actions, ensuring that the correct system call routine is executed. For example, the dispatcher routes `read()` requests to the file system handling code."
+        },
+        {
+                "title": "What is a semaphore and how does it prevent race conditions?",
+                "category": "OS",
+                "description": "Define semaphores and their role in preventing race conditions.",
+                "tags": "semaphore,race,condition,OS",
+                "paid": "Yes",
+                "answer": "A semaphore is a synchronization primitive used to control access to shared resources and prevent race conditions. By using signaling operations (P and V), semaphores manage concurrent access, ensuring only one process or thread can access a critical section at a time, thus avoiding conflicts."
+        },
+        {
+                "title": "What is a file system journal?",
+                "category": "OS",
+                "description": "Explain the purpose of journaling in file systems.",
+                "tags": "file,system,journal,OS",
+                "paid": "Yes",
+                "answer": "A file system journal records changes before they are committed to disk, ensuring consistency and recoverability in case of crashes. It helps to quickly restore the file system to a consistent state by replaying or discarding journal entries. For example, ext3 and ext4 file systems use journaling to enhance reliability."
+        },
+        {
+                "title": "What is the purpose of the page table in virtual memory systems?",
+                "category": "OS",
+                "description": "Describe the role of the page table in virtual memory management.",
+                "tags": "page,table,virtual,memory,OS",
+                "paid": "Yes",
+                "answer": "The page table maps virtual addresses to physical addresses in virtual memory systems. It allows the OS to translate virtual addresses used by applications into physical addresses in RAM. For example, when a process accesses memory, the page table helps locate the data in physical memory."
+        },
+        {
+                "title": "What is the role of the memory management unit (MMU)?",
+                "category": "OS",
+                "description": "Explain the function of the memory management unit in an OS.",
+                "tags": "memory,management,unit,MMU,OS",
+                "paid": "Yes",
+                "answer": "The memory management unit (MMU) handles virtual-to-physical address translation, enabling virtual memory systems. It uses page tables to map virtual addresses to physical memory and manages memory protection and caching. For example, the MMU allows processes to use more memory than physically available by paging."
+        },
+        {
+                "title": "What is a real-time operating system (RTOS)?",
+                "category": "OS",
+                "description": "Define a real-time operating system and its use cases.",
+                "tags": "real-time,OS,RTOS",
+                "paid": "Yes",
+                "answer": "A real-time operating system (RTOS) guarantees time constraints and predictable response times for critical tasks. It is used in systems requiring precise timing and high reliability, such as embedded systems, automotive control systems, and medical devices. For example, RTOS ensures timely processing in flight control systems."
+        },
+        {
+                "title": "What is the difference between a microkernel and a monolithic kernel?",
+                "category": "OS",
+                "description": "Compare microkernels and monolithic kernels.",
+                "tags": "microkernel,monolithic,kernel,OS",
+                "paid": "Yes",
+                "answer": "A microkernel contains only essential services in kernel space, delegating other services to user space, enhancing modularity and stability. A monolithic kernel includes all services within the kernel, providing high performance but less flexibility. For example, Linux uses a monolithic kernel, while Minix uses a microkernel architecture."
+        },
+        {
+                "title": "What is kernel mode versus user mode in the context of system calls?",
+                "category": "OS",
+                "description": "Explain kernel mode and user mode in system call execution.",
+                "tags": "kernel,mode,user,system,call,OS",
+                "paid": "Yes",
+                "answer": "Kernel mode allows direct hardware access and execution of privileged operations, while user mode restricts access to prevent interference with the OS. System calls transition from user mode to kernel mode to perform operations requiring elevated privileges, ensuring safe and controlled execution of sensitive tasks."
+        },
+        {
+                "title": "What is a file descriptor table?",
+                "category": "OS",
+                "description": "Describe the purpose and structure of a file descriptor table.",
+                "tags": "file,descriptor,table,OS",
+                "paid": "Yes",
+                "answer": "A file descriptor table is a per-process table that maps file descriptors to file objects or resources. Each entry contains information about the open files or I/O resources. For example, file descriptor 0 typically represents the standard input stream in Unix-like systems, managed through this table."
+        },
+        {
+                "title": "What is the difference between symmetric and asymmetric multiprocessing?",
+                "category": "OS",
+                "description": "Compare symmetric and asymmetric multiprocessing architectures.",
+                "tags": "symmetric,asymmetric,multiprocessing,OS",
+                "paid": "Yes",
+                "answer": "In symmetric multiprocessing (SMP), all processors share the same memory and I/O resources and run tasks in parallel. In asymmetric multiprocessing (AMP), one processor is designated as the master, managing tasks, while other processors handle specific functions. SMP offers better scalability, while AMP is simpler but less flexible."
+        },
+        {
+                "title": "What is process migration?",
+                "category": "OS",
+                "description": "Define process migration and its advantages.",
+                "tags": "process,migration,OS",
+                "paid": "Yes",
+                "answer": "Process migration involves moving a running process from one system or node to another, often for load balancing or fault tolerance. It improves resource utilization and system reliability by redistributing processes. For example, a process may be migrated from an overloaded server to a less busy one."
+        },
+        {
+                "title": "What is a deadlock detection algorithm?",
+                "category": "OS",
+                "description": "Explain algorithms used for deadlock detection.",
+                "tags": "deadlock,detect,algorithm,OS",
+                "paid": "Yes",
+                "answer": "Deadlock detection algorithms identify when a system is in a deadlock state. Examples include the Banker's Algorithm and Wait-for Graphs. The Banker's Algorithm assesses whether resource allocation will leave the system in a safe state, while Wait-for Graphs analyze circular wait conditions to detect deadlocks."
+        },
+        {
+                "title": "What is a system call interface and its purpose?",
+                "category": "OS",
+                "description": "Describe the system call interface and its role in the OS.",
+                "tags": "system,call,interface,OS",
+                "paid": "Yes",
+                "answer": "The system call interface provides a controlled mechanism for user applications to request services from the OS kernel, such as file operations, process control, and communication. It acts as a bridge between user applications and the OS, ensuring secure and efficient interaction with system resources."
+        },
+        {
+                "title": "What is a file system mount point?",
+                "category": "OS",
+                "description": "Define a file system mount point and its use.",
+                "tags": "file,system,mount,point,OS",
+                "paid": "Yes",
+                "answer": "A file system mount point is a directory in the existing file system where an additional file system is attached. It allows the integration of multiple file systems into a single directory hierarchy. For example, mounting a USB drive creates a mount point to access files on the drive within the OS."
+        },
+        {
+                "title": "What is the purpose of a swap file or swap space?",
+                "category": "OS",
+                "description": "Describe the role of swap files or swap space in memory management.",
+                "tags": "swap,file,space,memory,OS",
+                "paid": "Yes",
+                "answer": "Swap space or swap files are used to extend virtual memory by providing additional space on disk for swapping out inactive pages from RAM. It helps manage memory pressure and allows running more processes than can fit in physical RAM. For example, when RAM is full, the OS swaps less-used data to swap space."
+        },
+        {
+                "title": "What is a device driver and its role in the OS?",
+                "category": "OS",
+                "description": "Explain the purpose of device drivers in an operating system.",
+                "tags": "device,driver,OS",
+                "paid": "Yes",
+                "answer": "A device driver is software that allows the OS to communicate with hardware devices. It translates OS commands into device-specific actions and vice versa. For example, a printer driver translates print commands into a format the printer understands, enabling print operations from applications."
+        },
+        {
+                "title": "What is a priority inversion problem and how can it be mitigated?",
+                "category": "OS",
+                "description": "Define priority inversion and methods to mitigate it.",
+                "tags": "priority,inversion,problem,OS",
+                "paid": "Yes",
+                "answer": "Priority inversion occurs when a lower-priority task holds a resource needed by a higher-priority task, causing the high-priority task to be delayed. It can be mitigated using priority inheritance protocols, which temporarily raise the priority of the lower-priority task to prevent inversion and improve responsiveness."
+        },
+        {
+                "title": "What is an inode in a file system?",
+                "category": "OS",
+                "description": "Describe the role and structure of an inode in file systems.",
+                "tags": "inode,file,system,OS",
+                "paid": "Yes",
+                "answer": "An inode is a data structure in a file system that stores metadata about a file, such as its size, ownership, permissions, and location on disk. It does not store the file's name or data but provides essential information needed to manage the file. For example, the ext4 file system uses inodes to track file attributes and locations."
+        },
+        {
+                "title": "What is the difference between a thread and a process?",
+                "category": "OS",
+                "description": "Compare threads and processes in terms of their characteristics and management.",
+                "tags": "thread,process,OS",
+                "paid": "Yes",
+                "answer": "A process is an independent program in execution with its own memory space, while a thread is a smaller unit of execution within a process, sharing the same memory space. Threads are lighter weight and more efficient for tasks that require frequent communication, whereas processes are more isolated and suited for running independent tasks."
+        },
+        {
+                "title": "What is a context switch?",
+                "category": "OS",
+                "description": "Explain the concept of a context switch in process management.",
+                "tags": "context,switch,OS",
+                "paid": "Yes",
+                "answer": "A context switch occurs when the OS saves the state of a currently running process and loads the state of a different process. It involves saving and restoring process registers, memory maps, and other state information. For example, context switches enable multitasking by allowing the CPU to switch between processes."
+        },
+        {
+                "title": "What is the purpose of the page fault handler?",
+                "category": "OS",
+                "description": "Describe the role of the page fault handler in virtual memory systems.",
+                "tags": "page,fault,handler,OS",
+                "paid": "Yes",
+                "answer": "The page fault handler manages page faults, which occur when a process accesses a page not currently in physical memory. The handler retrieves the page from disk (swap space) and updates the page table. For example, when a page fault occurs, the OS suspends the process, loads the required page into memory, and resumes execution."
+        },
+        {
+                "title": "What is a file system superblock?",
+                "category": "OS",
+                "description": "Explain the function and content of a file system superblock.",
+                "tags": "file,system,superblock,OS",
+                "paid": "Yes",
+                "answer": "A file system superblock contains critical metadata about the file system, such as its size, block size, and status. It provides information necessary for the OS to manage and access the file system. For example, the superblock helps the OS determine the file system's structure and available space."
+        },
+        {
+                "title": "What is the purpose of the process table?",
+                "category": "OS",
+                "description": "Describe the role of the process table in operating systems.",
+                "tags": "process,table,OS",
+                "paid": "Yes",
+                "answer": "The process table is a data structure used by the OS to maintain information about active processes. It includes details like process IDs, states, memory usage, and scheduling information. For example, the OS uses the process table to manage process scheduling and resource allocation."
+        },
+        {
+                "title": "What is the role of the kernel in managing system resources?",
+                "category": "OS",
+                "description": "Explain how the kernel manages system resources.",
+                "tags": "kernel,system,resources,OS",
+                "paid": "Yes",
+                "answer": "The kernel manages system resources by handling process scheduling, memory management, device I/O, and system calls. It acts as an intermediary between user applications and hardware, ensuring efficient and secure resource allocation. For example, the kernel allocates CPU time to processes and manages memory usage."
+        },
+        {
+                "title": "What is an atomic operation?",
+                "category": "OS",
+                "description": "Define atomic operations and their importance in concurrency.",
+                "tags": "atomic,operation,concurrency,OS",
+                "paid": "Yes",
+                "answer": "An atomic operation is an indivisible operation that completes in a single step relative to other tasks. It is crucial for concurrency control, ensuring that operations like updates to shared variables are performed without interference. For example, atomic operations prevent race conditions by ensuring that updates are completed without interruption."
+        },
+        {
+                "title": "What is a critical section in concurrent programming?",
+                "category": "OS",
+                "description": "Define a critical section and its role in concurrent programming.",
+                "tags": "critical,section,concurrent,OS",
+                "paid": "Yes",
+                "answer": "A critical section is a segment of code where shared resources are accessed and modified. It must be executed by only one thread or process at a time to prevent data corruption and race conditions. For example, mutual exclusion mechanisms like mutexes are used to protect critical sections and ensure safe concurrent execution."
+        },
+        {
+                "title": "What is the purpose of the file system cache?",
+                "category": "OS",
+                "description": "Explain the role and benefits of file system caching.",
+                "tags": "file,system,cache,OS",
+                "paid": "Yes",
+                "answer": "The file system cache stores frequently accessed file data in memory to improve performance and reduce disk I/O. By caching file data, the OS can quickly retrieve information without accessing the slower disk. For example, reading a file from cache is faster than reading it from the disk, enhancing system responsiveness."
+        }
+]

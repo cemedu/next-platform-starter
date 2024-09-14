@@ -1,0 +1,834 @@
+[
+        {
+                "title": "What is Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Tailwind CSS is a utility-first CSS framework that allows developers to design directly in their markup.",
+                "tags": "CSS, Utility-first, Framework",
+                "paid": "Yes",
+                "answer": "Tailwind CSS provides low-level utility classes that enable developers to build custom designs without leaving the HTML structure."
+        },
+        {
+                "title": "How do you center a div using Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can center a div using Tailwind by applying the classes `flex`, `items-center`, and `justify-center`.",
+                "tags": "CSS, Flexbox, Centering",
+                "paid": "Yes",
+                "answer": "To center a div both horizontally and vertically, apply the following: `<div class='flex items-center justify-center h-screen'>Content</div>`. The `h-screen` class makes the div take up the full height of the screen."
+        },
+        {
+                "title": "What is the difference between Tailwind and Bootstrap?",
+                "category": "Tailwind",
+                "description": "Tailwind is utility-first, while Bootstrap provides pre-built components.",
+                "tags": "Bootstrap, Tailwind, CSS Framework",
+                "paid": "Yes",
+                "answer": "Bootstrap offers pre-designed components like buttons, navbars, etc., while Tailwind focuses on providing utility classes to style elements from scratch. Tailwind allows more custom designs, while Bootstrap is easier to get started with standardized layouts."
+        },
+        {
+                "title": "How do you apply custom colors in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can extend Tailwind’s default color palette using the `tailwind.config.js` file.",
+                "tags": "Custom Colors, Configuration, Tailwind",
+                "paid": "Yes",
+                "answer": "To apply custom colors, you need to modify `tailwind.config.js`. For example, add the following: `module.exports = { theme: { extend: { colors: { 'custom-blue': '#1E40AF' } } } }`. You can then use this color in your HTML with `class='bg-custom-blue'`."
+        },
+        {
+                "title": "How do you enable dark mode in Tailwind?",
+                "category": "Tailwind",
+                "description": "Dark mode in Tailwind can be enabled by setting `darkMode` in the configuration.",
+                "tags": "Dark Mode, Tailwind, Configuration",
+                "paid": "Yes",
+                "answer": "In `tailwind.config.js`, set `darkMode: 'class'` to enable dark mode based on a class. Then, use `dark:bg-black` to apply the dark mode styling. Toggle dark mode by adding or removing the `dark` class on the root element."
+        },
+        {
+                "title": "How to make a responsive grid using Tailwind?",
+                "category": "Tailwind",
+                "description": "You can create responsive grids using the `grid` classes and responsive prefixes.",
+                "tags": "Responsive Grid, CSS Grid, Tailwind",
+                "paid": "Yes",
+                "answer": "Use Tailwind’s `grid` utilities along with breakpoints to create responsive grids. For example: `<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4'>`. This will create a 1-column layout on small screens, 2-column on medium screens, and 4-column on large screens."
+        },
+        {
+                "title": "What is the purpose of `container` class in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `container` class in Tailwind is used to set the max-width and center the content horizontally.",
+                "tags": "Container, Centering, Tailwind",
+                "paid": "Yes",
+                "answer": "The `container` class applies a max-width that is responsive and centers the content. For example: `<div class='container mx-auto'>`. The `mx-auto` ensures that the container is centered horizontally."
+        },
+        {
+                "title": "How do you apply hover effects in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Hover effects can be applied using the `hover:` prefix in Tailwind.",
+                "tags": "Hover Effects, Tailwind, CSS",
+                "paid": "Yes",
+                "answer": "To add hover effects, simply use the `hover:` modifier. For instance, to change the background color on hover: `<button class='bg-blue-500 hover:bg-blue-700'>Hover me</button>`."
+        },
+        {
+                "title": "How do you set up a fixed header using Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can create a fixed header by using the `fixed` class with `top-0`.",
+                "tags": "Fixed Header, CSS Position, Tailwind",
+                "paid": "Yes",
+                "answer": "Apply `fixed top-0 left-0 w-full` to the header. For example: `<header class='fixed top-0 w-full bg-white shadow'>Header content</header>`. This makes the header fixed at the top of the page with full width."
+        },
+        {
+                "title": "How do you handle breakpoints in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Breakpoints are handled by applying responsive prefixes such as `sm:`, `md:`, `lg:`, etc.",
+                "tags": "Breakpoints, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind uses responsive prefixes to handle breakpoints. For example: `sm:bg-blue-500 md:bg-green-500 lg:bg-red-500`. This changes the background color based on the screen size."
+        },
+        {
+                "title": "What does the `aspect-w` and `aspect-h` class do in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `aspect-w` and `aspect-h` classes are used to maintain aspect ratios for elements.",
+                "tags": "Aspect Ratio, Tailwind",
+                "paid": "Yes",
+                "answer": "These classes are used to create elements with a specific aspect ratio. For example, `aspect-w-16 aspect-h-9` creates a 16:9 aspect ratio for an element."
+        },
+        {
+                "title": "How do you add space between elements in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can use the `space-x-` or `space-y-` classes to add horizontal or vertical space.",
+                "tags": "Spacing, Layout, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides utilities like `space-x-4` to add horizontal space between elements and `space-y-4` for vertical spacing. For example: `<div class='flex space-x-4'>`. This adds space between each child element within the flex container."
+        },
+        {
+                "title": "How do you hide an element in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can hide an element using the `hidden` class in Tailwind CSS.",
+                "tags": "Visibility, CSS, Tailwind",
+                "paid": "Yes",
+                "answer": "To hide an element, apply the `hidden` class: `<div class='hidden'>This content is hidden</div>`. This will completely hide the element."
+        },
+        {
+                "title": "What are `flex-grow` and `flex-shrink` classes in Tailwind?",
+                "category": "Tailwind",
+                "description": "These classes control how flex items grow or shrink within a flex container.",
+                "tags": "Flexbox, Flex-grow, Tailwind",
+                "paid": "Yes",
+                "answer": "The `flex-grow` class controls how much an element can grow relative to others. The `flex-shrink` class does the same for shrinking. For example: `<div class='flex-grow'>` allows the element to grow to fill space in a flex container."
+        },
+        {
+                "title": "How do you apply animations in Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind has built-in animation utilities like `animate-spin` and `animate-bounce`.",
+                "tags": "Animations, CSS, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind comes with a few pre-defined animations such as `animate-spin` or `animate-ping`. For example, to create a spinning icon, you can do `<div class='animate-spin'>Icon</div>`."
+        },
+        {
+                "title": "What is the purpose of `z-` classes in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `z-` classes control the z-index property in Tailwind CSS.",
+                "tags": "Z-Index, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind’s `z-` classes control the z-index of an element. For example, `z-10` sets the element’s z-index to 10. These classes can help in layering content where needed."
+        },
+        {
+                "title": "How do you apply padding and margin in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can apply padding and margin using the `p-` and `m-` utilities in Tailwind.",
+                "tags": "Padding, Margin, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides utility classes like `p-4` for padding and `m-4` for margin. For example, `p-4` will apply padding of 1rem (16px), and `m-4` will apply margin of the same value."
+        },
+        {
+                "title": "How do you create a button with Tailwind?",
+                "category": "Tailwind",
+                "description": "Buttons can be styled using Tailwind’s utility classes such as `bg-blue-500`, `text-white`, etc.",
+                "tags": "Button, UI, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a button, you can use several utility classes. For example: `<button class='bg-blue-500 text-white px-4 py-2 rounded'>Click me</button>`. This creates a button with a blue background, white text, padding, and rounded corners."
+        },
+        {
+                "title": "How do you create a full-height section using Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Use the `h-screen` class to make an element take up the full height of the viewport.",
+                "tags": "Height, Full Screen, Tailwind",
+                "paid": "Yes",
+                "answer": "The `h-screen` class allows you to set an element’s height to 100% of the viewport. For example: `<section class='h-screen bg-gray-200'>Full height section</section>`. This section will cover the entire height of the viewport."
+        },
+        {
+                "title": "What is the purpose of `gap` in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `gap` utility sets the spacing between rows and columns in grid or flex layouts.",
+                "tags": "Gap, Flexbox, Grid, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind's `gap` utilities control the space between items in grid or flex layouts. For example, `gap-4` adds 1rem space between grid or flex items. You can use different values for rows and columns, such as `gap-x-4 gap-y-2`, which adds different spacing horizontally and vertically."
+        },
+        {
+                "title": "How do you control font sizes in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can adjust font sizes using the `text-` classes in Tailwind, such as `text-sm`, `text-lg`, etc.",
+                "tags": "Font Size, Typography, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides a variety of text size classes that allow you to easily adjust font sizes. Some examples include `text-sm` for small text, `text-lg` for large text, and `text-2xl` for extra-large text. These classes follow a responsive design system and can be applied based on breakpoints like `md:text-xl` to apply different sizes based on screen width."
+        },
+        {
+                "title": "How do you make text bold in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can use the `font-bold` class to make text bold in Tailwind.",
+                "tags": "Font, Typography, Bold, Tailwind",
+                "paid": "Yes",
+                "answer": "To make text bold in Tailwind, you apply the `font-bold` class. For example, `<p class='font-bold'>This is bold text</p>`. Tailwind also offers other font weight options like `font-medium` and `font-extrabold`."
+        },
+        {
+                "title": "How do you change the text color in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can change text color using the `text-` classes in Tailwind.",
+                "tags": "Text Color, Tailwind, Typography",
+                "paid": "Yes",
+                "answer": "Tailwind provides utility classes like `text-red-500`, `text-blue-500`, etc., to change text colors. For example: `<p class='text-green-500'>This is green text</p>`. You can also extend the colors in the `tailwind.config.js` file."
+        },
+        {
+                "title": "How do you control width in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can control width using the `w-` classes in Tailwind.",
+                "tags": "Width, Tailwind, Responsive",
+                "paid": "Yes",
+                "answer": "To control the width of an element, use the `w-` classes. For example, `w-1/2` makes the element 50% wide, and `w-full` makes it take up the entire width. You can also use fixed width values like `w-64` for 16rem."
+        },
+        {
+                "title": "How do you create rounded corners in Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind provides `rounded` classes to create rounded corners.",
+                "tags": "Rounded Corners, Tailwind, CSS",
+                "paid": "Yes",
+                "answer": "To add rounded corners, use the `rounded` classes. For example, `<div class='rounded-lg'>` creates large rounded corners. Other options include `rounded-sm`, `rounded-md`, and `rounded-full` for fully circular elements."
+        },
+        {
+                "title": "What is the `divide-` class in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `divide-` class is used to add dividers between child elements.",
+                "tags": "Divide, Spacing, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind’s `divide-` class adds a visible line between flex items. For example, `<div class='divide-x-2 divide-gray-200'>`. This adds a 2-pixel divider between the child elements inside the div."
+        },
+        {
+                "title": "How do you create a flex container in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can create a flex container by using the `flex` class in Tailwind.",
+                "tags": "Flexbox, Flex Container, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a flex container, simply add the `flex` class. For example: `<div class='flex'>`. You can then use other flex utilities like `justify-center` or `items-start` to control the alignment of items inside the flex container."
+        },
+        {
+                "title": "How do you add shadows in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can add shadows using the `shadow-` classes in Tailwind.",
+                "tags": "Shadows, UI, Tailwind",
+                "paid": "Yes",
+                "answer": "To add shadows, Tailwind provides classes like `shadow-sm`, `shadow-md`, `shadow-lg`, and `shadow-xl`. For example, `<div class='shadow-lg'>` creates a large shadow effect."
+        },
+        {
+                "title": "How do you create a sticky element in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Use the `sticky` class in Tailwind to create sticky elements.",
+                "tags": "Sticky, CSS, Tailwind",
+                "paid": "Yes",
+                "answer": "The `sticky` class in Tailwind makes an element stick to the viewport as you scroll. For example, `<div class='sticky top-0'>`. This will cause the div to stick to the top of the page when scrolling down."
+        },
+        {
+                "title": "How do you handle scroll behavior in Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind offers utilities like `overflow-scroll` to control scroll behavior.",
+                "tags": "Scrolling, Overflow, Tailwind",
+                "paid": "Yes",
+                "answer": "To handle scroll behavior, Tailwind provides utilities like `overflow-auto`, `overflow-hidden`, and `overflow-scroll`. For example, `<div class='overflow-scroll'>` enables scrollbars for the div."
+        },
+        {
+                "title": "What is the purpose of `transform` in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `transform` utility allows you to apply CSS transforms like rotate, scale, etc.",
+                "tags": "Transform, CSS, Tailwind",
+                "paid": "Yes",
+                "answer": "The `transform` class enables the use of CSS transforms like `rotate`, `scale`, `translate`, etc. You can combine it with other classes like `rotate-45` to rotate an element by 45 degrees or `scale-110` to scale it by 110%."
+        },
+        {
+                "title": "How do you control opacity in Tailwind?",
+                "category": "Tailwind",
+                "description": "Opacity can be controlled using the `opacity-` classes in Tailwind.",
+                "tags": "Opacity, Tailwind, CSS",
+                "paid": "Yes",
+                "answer": "To control the transparency of an element, use `opacity` classes like `opacity-50`, `opacity-75`, or `opacity-100`. For example: `<div class='opacity-50'>` will render the div with 50% opacity."
+        },
+        {
+                "title": "How do you use transitions in Tailwind?",
+                "category": "Tailwind",
+                "description": "Transitions can be applied using the `transition` classes in Tailwind.",
+                "tags": "Transitions, CSS, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides `transition` utilities for smooth changes between states. For example, `<div class='transition duration-500 hover:bg-red-500'>`. This adds a transition effect that changes the background color to red over 500 milliseconds when hovered."
+        },
+        {
+                "title": "What is `object-fit` used for in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `object-fit` classes are used to control how media content is resized within its container.",
+                "tags": "Object Fit, Tailwind, Media",
+                "paid": "Yes",
+                "answer": "Tailwind provides classes like `object-cover`, `object-contain`, `object-fill`, etc., to control how media like images or videos fit within their containers. For example: `<img class='object-cover' src='image.jpg' />` ensures that the image covers the entire container while maintaining its aspect ratio."
+        },
+        {
+                "title": "How do you handle screen readers with Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind offers `sr-only` to hide content visually but make it accessible to screen readers.",
+                "tags": "Accessibility, Screen Readers, Tailwind",
+                "paid": "Yes",
+                "answer": "The `sr-only` class in Tailwind hides an element from view but keeps it accessible for screen readers. For example: `<span class='sr-only'>Skip to content</span>`. You can make it visible again using `not-sr-only`."
+        },
+        {
+                "title": "How do you control flex direction in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `flex-row` or `flex-col` classes to control flex direction.",
+                "tags": "Flexbox, Flex Direction, Tailwind",
+                "paid": "Yes",
+                "answer": "To control the direction of flex items, use `flex-row` for horizontal layout and `flex-col` for vertical layout. For example: `<div class='flex flex-col'>`. This will stack the child items vertically inside the flex container."
+        },
+        {
+                "title": "How do you control grid column span in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can control column span using the `col-span-` classes in Tailwind.",
+                "tags": "Grid, Column Span, Tailwind",
+                "paid": "Yes",
+                "answer": "In a grid layout, you can control the span of a column by using `col-span-`. For example, `col-span-2` will make the element span 2 columns. You can combine this with responsive breakpoints like `md:col-span-4` to span 4 columns on medium screens."
+        },
+        {
+                "title": "How do you center an element horizontally in Tailwind?",
+                "category": "Tailwind",
+                "description": "To center an element horizontally, you can use `mx-auto` in Tailwind.",
+                "tags": "Centering, Alignment, Tailwind",
+                "paid": "Yes",
+                "answer": "To center an element horizontally, you can use `mx-auto` which applies automatic horizontal margins. For example: `<div class='mx-auto w-1/2'>`. This will center the div horizontally while setting its width to 50%."
+        },
+        {
+                "title": "What does `z-index` do in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `z-` utilities in Tailwind set the z-index for stacking order.",
+                "tags": "Z-Index, Stacking, Tailwind",
+                "paid": "Yes",
+                "answer": "The `z-` classes in Tailwind control the stacking order of elements. For example, `z-10` will place the element higher in the stack than `z-0`. You can use `z-auto` to let the browser automatically manage the stacking order."
+        },
+        {
+                "title": "How do you apply custom breakpoints in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can configure custom breakpoints in `tailwind.config.js` for more control.",
+                "tags": "Breakpoints, Responsive Design, Tailwind",
+                "paid": "Yes",
+                "answer": "To create custom breakpoints in Tailwind, you can edit the `tailwind.config.js` file. Add your custom breakpoint inside the `theme.extend.screens` section. For example: `screens: { 'tablet': '640px', 'laptop': '1024px' }`. You can then use `tablet:`, `laptop:`, etc., in your class names to apply styles at these breakpoints."
+        },
+        {
+                "title": "How do you customize Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Tailwind CSS can be customized using the `tailwind.config.js` file.",
+                "tags": "Customization, Tailwind Config, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind CSS offers extensive customization options through the `tailwind.config.js` file. You can modify default settings like colors, fonts, and spacing or add new utilities. For example, to add a new color: `module.exports = { theme: { extend: { colors: { 'custom-blue': '#1E40AF', } } } }`. This allows you to use `text-custom-blue` in your HTML."
+        },
+        {
+                "title": "How do you align items vertically in a flexbox using Tailwind?",
+                "category": "Tailwind",
+                "description": "You can use `items-center` to align items vertically in Tailwind.",
+                "tags": "Flexbox, Alignment, Vertical, Tailwind",
+                "paid": "Yes",
+                "answer": "To align flex items vertically to the center, use the `items-center` class. For example, `<div class='flex items-center h-screen'>` will vertically center all flex items inside the container."
+        },
+        {
+                "title": "What is the `aspect-ratio` utility in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `aspect-ratio` utility controls the width-to-height ratio of an element.",
+                "tags": "Aspect Ratio, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "The `aspect-ratio` utility allows you to maintain a consistent width-to-height ratio for an element. For example, `<div class='aspect-w-16 aspect-h-9'>` will create an element with a 16:9 aspect ratio, making it ideal for embedding videos or images."
+        },
+        {
+                "title": "How do you create a responsive grid with Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "You can use the `grid` class along with column utilities for responsive grids.",
+                "tags": "Grid, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a responsive grid, use the `grid` class combined with `grid-cols-`. For example, `<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>` will create a single-column grid on small screens, two columns on medium screens, and three columns on large screens."
+        },
+        {
+                "title": "What are the `space` utilities used for in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `space-` utilities in Tailwind are used to add space between child elements.",
+                "tags": "Spacing, Layout, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind's `space-` utilities provide a simple way to add spacing between elements inside a flex or grid container. For example, `space-x-4` adds horizontal spacing of 1rem between flex items, and `space-y-4` adds vertical spacing between grid items."
+        },
+        {
+                "title": "How do you hide an element in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can hide elements using the `hidden` utility in Tailwind.",
+                "tags": "Visibility, Hidden, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides the `hidden` class to completely hide an element from the layout. For example: `<div class='hidden'>` will hide the div entirely from the page. To show it on specific breakpoints, you can combine it with responsive classes like `md:block`."
+        },
+        {
+                "title": "How do you make text uppercase in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `uppercase` class in Tailwind is used to make text uppercase.",
+                "tags": "Typography, Uppercase, Text, Tailwind",
+                "paid": "Yes",
+                "answer": "To make text uppercase, apply the `uppercase` class. For example: `<p class='uppercase'>This text is uppercase</p>`. Tailwind also provides other text transformations like `lowercase` and `capitalize`."
+        },
+        {
+                "title": "What is the `container` class in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `container` class centers content with preset width and responsive breakpoints.",
+                "tags": "Container, Layout, Tailwind",
+                "paid": "Yes",
+                "answer": "The `container` class creates a responsive fixed-width container that is centered horizontally. For example: `<div class='container mx-auto'>`. Tailwind automatically adjusts the width based on screen size, providing breakpoints for different devices."
+        },
+        {
+                "title": "How do you add hover effects in Tailwind?",
+                "category": "Tailwind",
+                "description": "Hover effects can be added using the `hover:` prefix in Tailwind.",
+                "tags": "Hover, Interactivity, Tailwind",
+                "paid": "Yes",
+                "answer": "To add hover effects in Tailwind, use the `hover:` prefix. For example: `<button class='bg-blue-500 hover:bg-blue-700 text-white'>Hover Me</button>` changes the background color when the user hovers over the button."
+        },
+        {
+                "title": "How do you add responsive font sizes in Tailwind?",
+                "category": "Tailwind",
+                "description": "Responsive font sizes can be controlled using breakpoints like `sm:text-lg`, `md:text-xl`.",
+                "tags": "Font Size, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can control font sizes based on screen size using responsive prefixes. For example, `sm:text-sm` applies small font on small screens, while `md:text-lg` applies a larger font on medium screens. This approach ensures that your text adapts to various screen sizes."
+        },
+        {
+                "title": "How do you create an outline button in Tailwind?",
+                "category": "Tailwind",
+                "description": "Outline buttons can be created using `border` and `text-` color classes.",
+                "tags": "Button, Outline, Tailwind",
+                "paid": "Yes",
+                "answer": "To create an outline button, use the `border` class along with text and border colors. For example: `<button class='border border-blue-500 text-blue-500'>Outline Button</button>`. This will create a button with a blue outline and text, with no background color."
+        },
+        {
+                "title": "How do you create responsive padding in Tailwind?",
+                "category": "Tailwind",
+                "description": "Responsive padding is controlled using breakpoint prefixes like `sm:p-4` or `md:p-6`.",
+                "tags": "Padding, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "You can apply different padding sizes based on screen size using responsive classes in Tailwind. For example, `sm:p-4 md:p-6 lg:p-8` applies padding of 1rem on small screens, 1.5rem on medium screens, and 2rem on large screens."
+        },
+        {
+                "title": "How do you use fixed positioning in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `fixed` class to apply fixed positioning in Tailwind.",
+                "tags": "Positioning, Fixed, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, the `fixed` class is used to position an element relative to the viewport, so it stays fixed during scrolling. For example: `<div class='fixed top-0 left-0'>`. This will fix the element to the top-left corner of the viewport."
+        },
+        {
+                "title": "How do you apply line height in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "Line height can be controlled using the `leading-` utilities in Tailwind.",
+                "tags": "Line Height, Typography, Tailwind",
+                "paid": "Yes",
+                "answer": "To control line height in Tailwind, use the `leading-` classes. For example: `leading-normal`, `leading-loose`, or `leading-tight`. These adjust the vertical spacing between lines of text. `<p class='leading-loose'>` will apply loose spacing between lines, making the text easier to read."
+        },
+        {
+                "title": "How do you make an image full width in Tailwind?",
+                "category": "Tailwind",
+                "description": "To make an image full width, you can use the `w-full` class.",
+                "tags": "Image, Width, Tailwind",
+                "paid": "Yes",
+                "answer": "To make an image take up the full width of its container, use the `w-full` class. For example: `<img class='w-full' src='image.jpg' />`. This ensures the image will scale to 100% of the parent element's width."
+        },
+        {
+                "title": "How do you disable an element in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can disable form elements using the `disabled` attribute and styling with `opacity` and `cursor` classes.",
+                "tags": "Disable, Form, Tailwind",
+                "paid": "Yes",
+                "answer": "To visually and functionally disable an element in Tailwind, use the `disabled` attribute along with `opacity` and `cursor` classes. For example: `<button class='opacity-50 cursor-not-allowed' disabled>Disabled Button</button>` will make the button visually disabled and prevent user interaction."
+        },
+        {
+                "title": "What is the `list-none` utility in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `list-none` utility removes default list item styling in Tailwind.",
+                "tags": "List, Styling, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, `list-none` removes the default bullet points from unordered lists and numbers from ordered lists. For example: `<ul class='list-none'><li>Item</li></ul>`. You can also use `list-disc` for bullet points or `list-decimal` for numbered lists."
+        },
+        {
+                "title": "How do you create rounded corners in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `rounded-` utilities in Tailwind control border radius for rounding corners.",
+                "tags": "Rounded, Corners, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides the `rounded-` utilities to control the border radius of elements, allowing you to create rounded corners. For example, `rounded-full` will make an element perfectly circular, and `rounded-lg` applies large rounded corners. You can fine-tune the radius with other classes like `rounded-sm`, `rounded-md`, etc."
+        },
+        {
+                "title": "What is the `overflow-hidden` utility used for in Tailwind?",
+                "category": "Tailwind",
+                "description": "The `overflow-hidden` utility hides any overflow content in an element.",
+                "tags": "Overflow, Hidden, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, `overflow-hidden` is used to clip or hide any content that overflows the bounds of an element. For example: `<div class='overflow-hidden'>`. This is particularly useful when working with images or text that might extend beyond the container boundaries."
+        },
+        {
+                "title": "How do you create a responsive image gallery in Tailwind?",
+                "category": "Tailwind",
+                "description": "You can use `grid` and responsive `grid-cols` utilities to create an image gallery.",
+                "tags": "Gallery, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a responsive image gallery in Tailwind, you can use the `grid` layout system along with responsive column utilities. For example, `<div class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>` creates a gallery with 2 columns on small screens, 3 columns on medium screens, and 4 columns on large screens. This approach allows the gallery to adapt to different screen sizes, creating a flexible layout."
+        },
+        {
+                "title": "How do you apply background opacity in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `bg-opacity-` utility to control background opacity.",
+                "tags": "Background, Opacity, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, background opacity can be controlled using the `bg-opacity-` class. For example, `bg-opacity-50` sets the background color to 50% opacity. You can combine it with background color classes like `bg-blue-500` to make a semi-transparent background."
+        },
+        {
+                "title": "What is the `object-fit` utility in Tailwind used for?",
+                "category": "Tailwind",
+                "description": "`object-fit` controls how media (images, videos) is resized to fit its container.",
+                "tags": "Object Fit, Images, Tailwind",
+                "paid": "Yes",
+                "answer": "The `object-fit` utility controls how images or videos fit within their containers. For example, `object-cover` makes sure the media covers the entire container, while maintaining its aspect ratio. `object-contain` ensures the entire media fits inside without cropping."
+        },
+        {
+                "title": "How do you apply shadows in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `shadow-` utilities add different levels of box shadow to elements.",
+                "tags": "Shadow, Styling, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides a range of shadow utilities to apply box shadows to elements. For example, `shadow-lg` adds a large shadow, while `shadow-sm` adds a small one. You can remove shadows with `shadow-none`. These shadows help in creating depth in your UI design."
+        },
+        {
+                "title": "How do you control the visibility of an element in Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind's `invisible` and `visible` classes control element visibility.",
+                "tags": "Visibility, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can control visibility using the `invisible` and `visible` classes. `invisible` makes an element invisible but still part of the layout, while `visible` ensures the element is visible. For example: `<div class='invisible'>Hidden</div>`."
+        },
+        {
+                "title": "What is the purpose of `group` and `group-hover` in Tailwind?",
+                "category": "Tailwind",
+                "description": "`group` and `group-hover` allow hover effects on child elements.",
+                "tags": "Hover, Group, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind’s `group` and `group-hover` utilities allow you to apply hover styles to child elements when the parent element is hovered. Add `group` to the parent and `group-hover` to the child element. For example: `<div class='group'><p class='group-hover:text-blue-500'>Text</p></div>` will change the text color when the parent is hovered."
+        },
+        {
+                "title": "How do you control font weight in Tailwind?",
+                "category": "Tailwind",
+                "description": "Font weight is controlled using the `font-` utilities in Tailwind.",
+                "tags": "Font Weight, Typography, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind uses `font-` utilities to control font weight. For example, `font-bold` makes the text bold, and `font-light` applies a light weight. Other options include `font-medium`, `font-semibold`, and `font-extrabold`."
+        },
+        {
+                "title": "How do you apply transitions in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `transition` and `duration-` utilities to apply transitions in Tailwind.",
+                "tags": "Transitions, Animation, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can apply smooth transitions using the `transition` class, and control the duration using `duration-` classes. For example: `<button class='transition duration-300 ease-in-out hover:bg-blue-500'>` applies a transition that lasts for 300ms when the button's background changes on hover."
+        },
+        {
+                "title": "How do you apply a grid gap in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "The `gap-` utility controls the space between grid or flexbox items.",
+                "tags": "Grid, Gap, Tailwind",
+                "paid": "Yes",
+                "answer": "To create space between grid or flexbox items, use the `gap-` utility in Tailwind. For example: `gap-4` adds 1rem of space between grid items. You can also specify different gaps for rows and columns with `gap-x-` and `gap-y-`."
+        },
+        {
+                "title": "How do you create responsive margin in Tailwind?",
+                "category": "Tailwind",
+                "description": "Responsive margins can be applied using `m-` utilities with breakpoints.",
+                "tags": "Margin, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "Responsive margins are controlled by combining `m-` classes with breakpoints in Tailwind. For example: `sm:m-2 md:m-4 lg:m-6` applies a margin of 0.5rem on small screens, 1rem on medium screens, and 1.5rem on large screens."
+        },
+        {
+                "title": "How do you apply scroll snapping in Tailwind?",
+                "category": "Tailwind",
+                "description": "Scroll snapping is controlled using the `snap-` utilities in Tailwind.",
+                "tags": "Scroll Snap, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, scroll snapping is achieved with the `snap-` utilities. For example: `snap-x snap-mandatory` ensures that scrolling only snaps to elements horizontally. You can apply `snap-start` to individual items to control where snapping occurs."
+        },
+        {
+                "title": "How do you apply flexbox column direction in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `flex-col` to set flexbox direction to a column in Tailwind.",
+                "tags": "Flexbox, Column, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a column-based flexbox layout, apply `flex-col` in Tailwind. For example: `<div class='flex flex-col'>`. This will stack the flex items vertically, instead of the default row layout."
+        },
+        {
+                "title": "How do you create a sticky header using Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `sticky` along with positioning utilities to create sticky headers.",
+                "tags": "Sticky Header, Positioning, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, to create a sticky header, use the `sticky` class along with a top position like `top-0`. For example: `<header class='sticky top-0'>Header Content</header>`. This keeps the header fixed at the top when scrolling down the page."
+        },
+        {
+                "title": "How do you apply auto margins in Tailwind?",
+                "category": "Tailwind",
+                "description": "`m-auto` sets automatic margins to center elements.",
+                "tags": "Margin, Auto, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind's `m-auto` class sets automatic margins, typically used to center block-level elements horizontally. For example: `<div class='m-auto w-1/2'>Centered Element</div>`. This will center the element within its parent container."
+        },
+        {
+                "title": "How do you apply fixed width to elements in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `w-` utilities to set fixed widths in Tailwind.",
+                "tags": "Width, Fixed, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can control the width of an element using the `w-` classes. For example: `w-1/4` sets the width to 25% of its parent, while `w-64` sets it to a fixed width of 16rem. This allows flexible control over the width of any element."
+        },
+        {
+                "title": "How do you handle aspect ratio for videos in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `aspect-w-` and `aspect-h-` utilities to control aspect ratio for videos.",
+                "tags": "Aspect Ratio, Video, Tailwind",
+                "paid": "Yes",
+                "answer": "To maintain a specific aspect ratio for videos or images, you can use the `aspect-w-` and `aspect-h-` utilities in Tailwind. For example: `<div class='aspect-w-16 aspect-h-9'>` creates a 16:9 aspect ratio container for videos or images, ensuring they resize properly without distortion."
+        },
+        {
+                "title": "What is the `prose` utility in Tailwind CSS?",
+                "category": "Tailwind",
+                "description": "`prose` adds a set of typographic defaults for HTML content.",
+                "tags": "Typography, Prose, Tailwind",
+                "paid": "Yes",
+                "answer": "The `prose` utility in Tailwind is used to apply a set of typography defaults to HTML content like blog posts or articles. For example: `<article class='prose'>`. It enhances readability by automatically styling elements like headings, lists, and paragraphs."
+        },
+        {
+                "title": "How do you control the position of elements in Tailwind?",
+                "category": "Tailwind",
+                "description": "Tailwind uses `absolute`, `relative`, `fixed`, and `sticky` for positioning.",
+                "tags": "Position, Absolute, Fixed, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you control the positioning of elements using utilities like `absolute`, `relative`, `fixed`, and `sticky`. For example, `absolute` positions the element relative to its nearest positioned ancestor, while `fixed` fixes the element to the viewport."
+        },
+        {
+                "title": "How do you apply text decoration in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `underline`, `line-through`, or `no-underline` utilities for text decoration.",
+                "tags": "Text Decoration, Styling, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, text decoration is controlled with classes like `underline`, `line-through`, and `no-underline`. For example, `<p class='underline'>` will underline the text, and `<p class='no-underline'>` will remove any text decoration."
+        },
+        {
+                "title": "What is the `truncate` utility in Tailwind used for?",
+                "category": "Tailwind",
+                "description": "`truncate` shortens long text with an ellipsis if it overflows its container.",
+                "tags": "Text Truncate, Ellipsis, Tailwind",
+                "paid": "Yes",
+                "answer": "The `truncate` utility in Tailwind is used to shorten text with an ellipsis (`...`) if it overflows its container. This is particularly useful for keeping long strings of text contained within a fixed-width box. For example: `<p class='truncate w-32'>This is a very long text</p>`."
+        },
+        {
+                "title": "How do you apply z-index in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `z-` utilities to control the stacking order of elements in Tailwind.",
+                "tags": "Z-Index, Stacking, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind provides `z-` utilities to control the z-index or stacking order of elements. For example: `z-10` will place an element on a higher layer than an element with `z-0`. You can also use `z-auto` to reset the z-index to its default behavior."
+        },
+        {
+                "title": "How do you apply border radius to specific corners in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `rounded-` utilities to apply border radius to specific corners.",
+                "tags": "Border Radius, Corners, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can apply border radius to specific corners using classes like `rounded-tl`, `rounded-tr`, `rounded-bl`, and `rounded-br`. For example: `rounded-tl-lg` applies a large radius to the top-left corner only."
+        },
+        {
+                "title": "How do you control the height of an element in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `h-` utilities to control the height of an element.",
+                "tags": "Height, Tailwind",
+                "paid": "Yes",
+                "answer": "You can control an element's height using the `h-` utilities in Tailwind. For example, `h-64` sets the height to 16rem, and `h-full` makes the element take up the full height of its parent. There are also responsive options like `h-screen` to set the height to the full viewport."
+        },
+        {
+                "title": "How do you apply uppercase text transformation in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `uppercase` class to transform text to uppercase.",
+                "tags": "Text Transform, Uppercase, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can transform text to uppercase by using the `uppercase` class. For example: `<p class='uppercase'>Uppercase Text</p>`. There are also other utilities like `lowercase` and `capitalize` to apply different text transformations."
+        },
+        {
+                "title": "How do you handle text overflow in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `truncate`, `overflow-ellipsis`, or `overflow-hidden` for text overflow.",
+                "tags": "Text Overflow, Ellipsis, Tailwind",
+                "paid": "Yes",
+                "answer": "To handle text overflow in Tailwind, you can use the `truncate` utility to add an ellipsis (`...`) when text exceeds its container, `overflow-ellipsis` to control how the overflow is displayed, or `overflow-hidden` to simply hide the overflowed text."
+        },
+        {
+                "title": "How do you create a hover effect in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `hover:` prefix to apply styles on hover.",
+                "tags": "Hover, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can easily create hover effects using the `hover:` prefix. For example: `<button class='hover:bg-blue-500'>` will change the background color of the button to blue when it's hovered. You can combine it with any utility class to modify the element's appearance."
+        },
+        {
+                "title": "How do you create a full-width container in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `w-full` to make an element take up the full width of its parent.",
+                "tags": "Width, Full, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a full-width container in Tailwind, apply the `w-full` class to the element. This will make the element take up 100% of the available width of its parent container. For example: `<div class='w-full'>Full-width container</div>`."
+        },
+        {
+                "title": "How do you create a fixed footer using Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `fixed` and `bottom-0` to create a fixed footer.",
+                "tags": "Fixed Footer, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a fixed footer in Tailwind, apply the `fixed` class and position it at the bottom using `bottom-0`. For example: `<footer class='fixed bottom-0 w-full'>Footer Content</footer>`. This will keep the footer fixed at the bottom of the viewport while scrolling."
+        },
+        {
+                "title": "How do you center an absolutely positioned element in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `top-1/2`, `left-1/2`, and `transform -translate` utilities to center.",
+                "tags": "Center, Absolute Position, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can center an absolutely positioned element using `top-1/2` and `left-1/2` to move the element to the center, and then applying `transform -translate-x-1/2 -translate-y-1/2` to correct for the element's dimensions. This ensures perfect centering."
+        },
+        {
+                "title": "How do you control the display property in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `block`, `inline-block`, `flex`, or `grid` utilities to control display.",
+                "tags": "Display, Block, Flex, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, the display property of an element is controlled using utilities like `block`, `inline-block`, `flex`, and `grid`. For example, `flex` sets the element to use the flexbox layout, while `block` makes the element take up the full width available on its line."
+        },
+        {
+                "title": "How do you hide an element in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `hidden` to hide an element.",
+                "tags": "Hide, Visibility, Tailwind",
+                "paid": "Yes",
+                "answer": "To hide an element in Tailwind, you can use the `hidden` class. For example: `<div class='hidden'>`. This will remove the element from the layout, making it completely invisible and not taking up any space."
+        },
+        {
+                "title": "How do you create responsive typography in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `text-` utilities with breakpoints to create responsive typography.",
+                "tags": "Typography, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "Responsive typography can be achieved by combining `text-` utilities with Tailwind's responsive breakpoints. For example, `<p class='text-sm md:text-lg'>` will display small text on smaller screens and larger text on medium screens and up."
+        },
+        {
+                "title": "How do you add padding to all sides in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use the `p-` utilities to add padding to all sides.",
+                "tags": "Padding, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, padding can be added to all sides of an element using the `p-` utilities. For example: `p-4` adds 1rem of padding to all sides. You can also control padding individually for each side using `pt-`, `pb-`, `pl-`, and `pr-` for top, bottom, left, and right respectively."
+        },
+        {
+                "title": "How do you apply gradients in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `bg-gradient-to-` and `from-`/`to-` classes to apply gradients.",
+                "tags": "Gradient, Background, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can apply gradients using the `bg-gradient-to-` utility, along with `from-` and `to-` classes to define the gradient's start and end colors. For example: `<div class='bg-gradient-to-r from-green-400 to-blue-500'>` applies a gradient that transitions from green to blue horizontally."
+        },
+        {
+                "title": "How do you control flex grow in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `flex-grow` to allow flex items to grow and fill available space.",
+                "tags": "Flex Grow, Tailwind",
+                "paid": "Yes",
+                "answer": "Tailwind uses the `flex-grow` utility to control how much an element grows relative to its siblings in a flex container. For example: `<div class='flex-grow'>`. This will make the element take up any remaining space in the container."
+        },
+        {
+                "title": "How do you create a responsive sidebar in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `flex`, `w-` and breakpoints to create a responsive sidebar.",
+                "tags": "Sidebar, Responsive, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a responsive sidebar in Tailwind, you can use `flex` along with width utilities like `w-64` for the sidebar width, and control its visibility with responsive breakpoints. For example: `hidden md:block` hides the sidebar on smaller screens and shows it on medium screens and larger."
+        },
+        {
+                "title": "How do you apply box-sizing in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `box-border` or `box-content` for box-sizing control.",
+                "tags": "Box Sizing, Tailwind",
+                "paid": "Yes",
+                "answer": "Box-sizing can be controlled in Tailwind using `box-border` to include padding and borders within the element's total width and height, or `box-content` to exclude them. The default behavior in Tailwind is `box-border`."
+        },
+        {
+                "title": "How do you handle media queries in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use Tailwind's built-in responsive breakpoints like `sm`, `md`, and `lg`.",
+                "tags": "Responsive, Media Queries, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, media queries are handled using built-in breakpoints like `sm`, `md`, `lg`, `xl`, and `2xl`. You can apply different styles at each breakpoint by prefixing the utility with the breakpoint name, such as `md:bg-red-500` to apply a red background starting at the medium screen size."
+        },
+        {
+                "title": "How do you create a fixed header in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `fixed` and `top-0` to create a fixed header.",
+                "tags": "Fixed Header, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, a fixed header can be created by applying the `fixed` class to the header and positioning it at the top using `top-0`. For example: `<header class='fixed top-0 w-full'>Header Content</header>`. This will ensure that the header stays at the top of the viewport during scrolling."
+        },
+        {
+                "title": "How do you create vertical spacing between flex items in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `space-y-` utilities to add vertical spacing.",
+                "tags": "Flexbox, Vertical Spacing, Tailwind",
+                "paid": "Yes",
+                "answer": "To create vertical spacing between flex items in Tailwind, you can use the `space-y-` utility. For example, `space-y-4` will add 1rem of space between the flex items along the vertical axis. This is especially useful when you have flex items stacked vertically."
+        },
+        {
+                "title": "How do you apply text shadow in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `shadow-sm`, `shadow-md`, or `shadow-lg` to apply text shadow.",
+                "tags": "Text Shadow, Tailwind",
+                "paid": "Yes",
+                "answer": "Text shadows in Tailwind are controlled by using the `shadow-` utilities. For example: `shadow-sm`, `shadow-md`, and `shadow-lg` apply progressively larger shadows to the text. You can combine these with other utilities for different effects."
+        },
+        {
+                "title": "How do you control the order of flex items in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `order-` utilities to control the order of flex items.",
+                "tags": "Flex Order, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can control the order of flex items using the `order-` utility. For example, `order-1` moves an item to the first position in the flex container, while `order-last` moves an item to the last position. This gives you control over the layout of your flex items."
+        },
+        {
+                "title": "How do you apply hover effects with transition in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `transition` and `hover:` to create hover transitions.",
+                "tags": "Hover, Transition, Tailwind",
+                "paid": "Yes",
+                "answer": "To create hover transitions in Tailwind, you can combine the `hover:` utility with `transition` and other transition-related utilities like `duration-300` or `ease-in-out`. For example: `<button class='hover:bg-blue-500 transition duration-300 ease-in-out'>`. This will smoothly transition the button background color on hover."
+        },
+        {
+                "title": "How do you create a sticky element in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `sticky` and positioning classes like `top-0`.",
+                "tags": "Sticky, Positioning, Tailwind",
+                "paid": "Yes",
+                "answer": "To create a sticky element in Tailwind, apply the `sticky` utility along with positioning classes like `top-0`. For example: `<div class='sticky top-0'>Sticky Element</div>`. This will cause the element to stick at the top of its container as the page is scrolled."
+        },
+        {
+                "title": "How do you create flexbox columns in Tailwind?",
+                "category": "Tailwind",
+                "description": "Use `flex-col` to create a column layout with flexbox.",
+                "tags": "Flexbox, Columns, Tailwind",
+                "paid": "Yes",
+                "answer": "In Tailwind, you can create flexbox columns by applying the `flex` and `flex-col` classes to the parent container. For example: `<div class='flex flex-col'>`. This will arrange the child elements in a column instead of the default row layout."
+        }
+]

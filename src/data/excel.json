@@ -1,0 +1,1226 @@
+[
+        {
+                "title": "What is VLOOKUP in Excel?",
+                "category": "Excel",
+                "description": "A function used to search for a value in the leftmost column of a table and return a value in the same row from another column.",
+                "tags": "VLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "VLOOKUP stands for 'Vertical Lookup'. It is used to search for a value in the first column of a range or table and returns a value in the same row from a specified column. For example, if you have a table with employee IDs in the first column and their names in the second column, you can use VLOOKUP to find the name of an employee based on their ID. The syntax is =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])."
+        },
+        {
+                "title": "How do you use the COUNTIF function?",
+                "category": "Excel",
+                "description": "A function that counts the number of cells within a range that meet a single criterion.",
+                "tags": "COUNTIF, Functions, Counting",
+                "paid": "Yes",
+                "answer": "The COUNTIF function counts the number of cells that meet a specific condition. For instance, if you want to count how many times 'Apple' appears in a range of cells, you would use the formula =COUNTIF(range, criteria). For example, =COUNTIF(A1:A10, 'Apple') counts how many times 'Apple' appears in cells A1 through A10."
+        },
+        {
+                "title": "What is the purpose of the PivotTable?",
+                "category": "Excel",
+                "description": "A data processing tool used to summarize, analyze, explore, and present summary data.",
+                "tags": "PivotTable, Data Analysis, Summarize",
+                "paid": "Yes",
+                "answer": "PivotTables are powerful tools in Excel that allow you to summarize large amounts of data quickly and dynamically. They help in reorganizing and grouping data to view it from different perspectives. For instance, you can use a PivotTable to summarize sales data by region and product category, giving you a clear overview of your data's distribution and trends."
+        },
+        {
+                "title": "How do you create a chart in Excel?",
+                "category": "Excel",
+                "description": "Steps to visually represent data using charts.",
+                "tags": "Charts, Visualization, Data",
+                "paid": "Yes",
+                "answer": "To create a chart in Excel, first select the data range you want to plot. Then, go to the 'Insert' tab on the Ribbon and choose a chart type from the Charts group, such as Column, Line, or Pie. Click on your desired chart type, and Excel will generate a chart based on your selected data. You can then customize the chart’s design, layout, and format using the Chart Tools."
+        },
+        {
+                "title": "What is Conditional Formatting?",
+                "category": "Excel",
+                "description": "A feature that allows you to apply specific formatting to cells that meet certain criteria.",
+                "tags": "Conditional Formatting, Formatting, Rules",
+                "paid": "Yes",
+                "answer": "Conditional Formatting in Excel allows you to automatically apply formatting, such as colors or font styles, to cells based on their values. For example, you can set up a rule to highlight cells with sales figures above $10,000 in green. To apply Conditional Formatting, select the range of cells, go to the 'Home' tab, and choose 'Conditional Formatting' from the Styles group. Then, define the rules and formatting options."
+        },
+        {
+                "title": "How do you use the IF function?",
+                "category": "Excel",
+                "description": "A function used to perform a logical test and return one value for a TRUE result and another for FALSE.",
+                "tags": "IF, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The IF function performs a logical test and returns one value if the condition is true and another if it is false. The syntax is =IF(logical_test, value_if_true, value_if_false). For example, =IF(A1 > 100, 'High', 'Low') checks if the value in cell A1 is greater than 100. If it is, the formula returns 'High'; otherwise, it returns 'Low'."
+        },
+        {
+                "title": "What is the use of the CONCATENATE function?",
+                "category": "Excel",
+                "description": "A function used to join multiple text strings into one string.",
+                "tags": "CONCATENATE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCATENATE function combines multiple text strings into a single string. For example, =CONCATENATE(A1, ' ', B1) joins the text from cell A1 and B1 with a space in between. As of Excel 2016, CONCATENATE has been replaced with the CONCAT function, which provides similar functionality but is more versatile and recommended for use in new spreadsheets."
+        },
+        {
+                "title": "How do you use Excel's Freeze Panes feature?",
+                "category": "Excel",
+                "description": "A feature that keeps specific rows or columns visible while scrolling through the rest of the spreadsheet.",
+                "tags": "Freeze Panes, Scrolling, Navigation",
+                "paid": "Yes",
+                "answer": "The Freeze Panes feature in Excel allows you to keep specific rows or columns visible while you scroll through the rest of the worksheet. To use it, select the cell below and to the right of the rows and columns you want to freeze. Then, go to the 'View' tab on the Ribbon, click 'Freeze Panes' in the Window group, and choose the appropriate option. For example, freezing the top row will keep the header row visible as you scroll down."
+        },
+        {
+                "title": "What does the SUMIF function do?",
+                "category": "Excel",
+                "description": "A function that adds up cells based on a single criterion.",
+                "tags": "SUMIF, Functions, Summing",
+                "paid": "Yes",
+                "answer": "The SUMIF function adds up cells that meet a specific criterion. For example, =SUMIF(A1:A10, '>100', B1:B10) sums the values in the range B1:B10 where the corresponding cells in A1:A10 are greater than 100. This is useful for summing data based on conditions, such as total sales exceeding a certain amount."
+        },
+        {
+                "title": "How do you use the INDEX and MATCH functions together?",
+                "category": "Excel",
+                "description": "A combination of functions used for more flexible lookups compared to VLOOKUP.",
+                "tags": "INDEX, MATCH, Lookup, Functions",
+                "paid": "Yes",
+                "answer": "The INDEX and MATCH functions are used together for advanced lookups. INDEX returns the value of a cell within a range based on row and column numbers, while MATCH finds the position of a value in a range. For example, =INDEX(B1:B10, MATCH('Apple', A1:A10, 0)) finds the position of 'Apple' in A1:A10 and returns the corresponding value from B1:B10. This combination offers more flexibility than VLOOKUP, especially when dealing with large datasets or when column positions may change."
+        },
+        {
+                "title": "What is the use of the LEN function?",
+                "category": "Excel",
+                "description": "A function that returns the number of characters in a text string.",
+                "tags": "LEN, Functions, Text",
+                "paid": "Yes",
+                "answer": "The LEN function returns the number of characters in a text string, including spaces. For instance, =LEN(A1) will count the number of characters in the text contained in cell A1. This function is useful for determining the length of a string or for validating data input lengths."
+        },
+        {
+                "title": "How do you use the TEXT function in Excel?",
+                "category": "Excel",
+                "description": "A function that converts numbers into text in a specified format.",
+                "tags": "TEXT, Functions, Formatting",
+                "paid": "Yes",
+                "answer": "The TEXT function converts a number into text using a specified format. For example, =TEXT(1234.56, '$#,##0.00') converts the number 1234.56 into the text '$1,234.56'. This is useful for formatting numbers as currency, dates, or other custom formats directly in a cell."
+        },
+        {
+                "title": "What is the purpose of the SUBSTITUTE function?",
+                "category": "Excel",
+                "description": "A function used to replace specific text within a string with new text.",
+                "tags": "SUBSTITUTE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The SUBSTITUTE function replaces occurrences of a specific text string with another text string within a cell. For example, =SUBSTITUTE(A1, 'old', 'new') replaces every occurrence of 'old' with 'new' in the text found in cell A1. This function is helpful for making bulk text changes in data."
+        },
+        {
+                "title": "How do you perform a basic data filter in Excel?",
+                "category": "Excel",
+                "description": "A feature that allows you to view specific rows that meet certain criteria.",
+                "tags": "Filtering, Data, Excel",
+                "paid": "Yes",
+                "answer": "To filter data in Excel, first select the range of cells you want to filter. Then go to the 'Data' tab on the Ribbon and click 'Filter' in the Sort & Filter group. Small drop-down arrows will appear in the header cells. Click the arrow next to the column you want to filter by and select the criteria for filtering, such as specific values or ranges."
+        },
+        {
+                "title": "What does the DATEDIF function do?",
+                "category": "Excel",
+                "description": "A function used to calculate the difference between two dates.",
+                "tags": "DATEDIF, Functions, Dates",
+                "paid": "Yes",
+                "answer": "The DATEDIF function calculates the difference between two dates based on the specified unit of time. For example, =DATEDIF(A1, B1, 'Y') calculates the number of years between the dates in cells A1 and B1. You can also use 'M' for months and 'D' for days to calculate differences in those units."
+        },
+        {
+                "title": "How do you use the HLOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches for a value in the top row of a table and returns a value in the same column from a specified row.",
+                "tags": "HLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "HLOOKUP stands for 'Horizontal Lookup'. It searches for a value in the top row of a table and returns a value in the same column from a specified row. For example, =HLOOKUP('Product', A1:D4, 3, FALSE) searches for 'Product' in the first row of the range A1:D4 and returns the value from the third row of that column."
+        },
+        {
+                "title": "What is the use of the R1C1 reference style?",
+                "category": "Excel",
+                "description": "A reference style that uses numbers to represent rows and columns.",
+                "tags": "R1C1, Reference Style, Excel",
+                "paid": "Yes",
+                "answer": "The R1C1 reference style in Excel uses numbers to indicate row and column positions instead of letters for columns and numbers for rows. For example, R1C1 refers to the cell at the intersection of row 1 and column 1, which is equivalent to A1 in the A1 reference style. This style can be useful for advanced formula creation and programming."
+        },
+        {
+                "title": "How do you apply a data validation rule in Excel?",
+                "category": "Excel",
+                "description": "A feature that restricts the type of data that can be entered into a cell.",
+                "tags": "Data Validation, Excel, Rules",
+                "paid": "Yes",
+                "answer": "To apply data validation, select the cell or range where you want to restrict data input. Go to the 'Data' tab on the Ribbon and click 'Data Validation' in the Data Tools group. In the Data Validation dialog box, set the criteria for valid data, such as allowing only numbers between 1 and 100 or dates within a specific range."
+        },
+        {
+                "title": "What does the PMT function calculate?",
+                "category": "Excel",
+                "description": "A function that calculates the payment for a loan based on constant payments and a constant interest rate.",
+                "tags": "PMT, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The PMT function calculates the amount of each loan payment based on the interest rate, number of periods, and loan amount. For example, =PMT(0.05/12, 360, -200000) calculates the monthly payment for a $200,000 loan at a 5% annual interest rate over 30 years. The result will be a negative number, indicating an outgoing payment."
+        },
+        {
+                "title": "How do you use the SUMPRODUCT function?",
+                "category": "Excel",
+                "description": "A function that multiplies corresponding components in given arrays and returns the sum of those products.",
+                "tags": "SUMPRODUCT, Functions, Array",
+                "paid": "Yes",
+                "answer": "The SUMPRODUCT function multiplies corresponding elements in arrays and returns the sum of those products. For example, =SUMPRODUCT(A1:A3, B1:B3) multiplies each element in range A1:A3 with the corresponding element in B1:B3 and adds up all the products. This function is useful for weighted averages and other calculations involving arrays."
+        },
+        {
+                "title": "What is the use of the TRIM function?",
+                "category": "Excel",
+                "description": "A function that removes extra spaces from text except for single spaces between words.",
+                "tags": "TRIM, Functions, Text",
+                "paid": "Yes",
+                "answer": "The TRIM function removes extra spaces from text, leaving only single spaces between words. For example, =TRIM(A1) cleans up text in cell A1 by removing leading, trailing, and multiple spaces between words. This is helpful for standardizing text data, especially when importing data from other sources."
+        },
+        {
+                "title": "How do you use the MATCH function?",
+                "category": "Excel",
+                "description": "A function that searches for a specified item in a range and returns its relative position.",
+                "tags": "MATCH, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The MATCH function searches for a specific value in a range and returns its position relative to the start of the range. For example, =MATCH('Apple', A1:A10, 0) finds the position of 'Apple' in the range A1:A10. The '0' indicates an exact match is required. If 'Apple' is the third item in the range, the function returns 3."
+        },
+        {
+                "title": "What is the INDIRECT function used for?",
+                "category": "Excel",
+                "description": "A function that returns the reference specified by a text string.",
+                "tags": "INDIRECT, Functions, Reference",
+                "paid": "Yes",
+                "answer": "The INDIRECT function returns the reference specified by a text string. For example, =INDIRECT('B2') returns the value in cell B2. This function is useful for creating dynamic references, such as when the cell reference is stored as a text string and may change based on other calculations."
+        },
+        {
+                "title": "How do you use Excel’s Goal Seek feature?",
+                "category": "Excel",
+                "description": "A tool that finds the input value needed to achieve a desired result in a formula.",
+                "tags": "Goal Seek, Data Analysis, Excel",
+                "paid": "Yes",
+                "answer": "Goal Seek is used to find the input value required to achieve a desired result from a formula. To use it, go to the 'Data' tab, click 'What-If Analysis', and choose 'Goal Seek'. Enter the cell with the formula you want to change, specify the desired result, and provide the cell to adjust. Excel will calculate the necessary input to reach the target result."
+        },
+        {
+                "title": "What is the use of the NOW function?",
+                "category": "Excel",
+                "description": "A function that returns the current date and time.",
+                "tags": "NOW, Functions, DateTime",
+                "paid": "Yes",
+                "answer": "The NOW function returns the current date and time based on your computer's system clock. For example, =NOW() might return '2024-09-09 14:30'. This function is useful for timestamps, tracking when data was last updated, or for dynamic date and time calculations."
+        },
+        {
+                "title": "What does the REPLACE function do?",
+                "category": "Excel",
+                "description": "A function that replaces part of a text string with a different text string.",
+                "tags": "REPLACE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The REPLACE function substitutes part of a text string with another text string. For example, =REPLACE(A1, 1, 3, 'XYZ') replaces the first 3 characters of the text in cell A1 with 'XYZ'. This function is useful for modifying text based on position and length."
+        },
+        {
+                "title": "How do you use the CONCATENATE function?",
+                "category": "Excel",
+                "description": "A function that joins several text strings into one text string.",
+                "tags": "CONCATENATE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCATENATE function joins multiple text strings into one continuous string. For example, =CONCATENATE(A1, ' ', B1) combines the text in cells A1 and B1 with a space between them. While CONCATENATE is being phased out, CONCAT and TEXTJOIN are recommended alternatives."
+        },
+        {
+                "title": "What does the PROPER function do?",
+                "category": "Excel",
+                "description": "A function that capitalizes the first letter of each word in a text string.",
+                "tags": "PROPER, Functions, Text",
+                "paid": "Yes",
+                "answer": "The PROPER function capitalizes the first letter of each word in a text string. For example, =PROPER('hello world') changes 'hello world' to 'Hello World'. This function is useful for formatting text in titles or names to ensure proper capitalization."
+        },
+        {
+                "title": "How do you use the COVARIANCE.P function?",
+                "category": "Excel",
+                "description": "A function that calculates the covariance of two sets of data, assuming the data represents the entire population.",
+                "tags": "COVARIANCE.P, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The COVARIANCE.P function calculates the covariance between two sets of data, assuming the data represents the entire population. For example, =COVARIANCE.P(A1:A10, B1:B10) returns the covariance between the datasets in A1:A10 and B1:B10. This function helps assess the relationship between two variables."
+        },
+        {
+                "title": "What does the TRIM function do?",
+                "category": "Excel",
+                "description": "A function that removes extra spaces from text, leaving only single spaces between words.",
+                "tags": "TRIM, Functions, Text",
+                "paid": "Yes",
+                "answer": "The TRIM function removes leading, trailing, and extra spaces between words in a text string. For example, =TRIM('   hello   world   ') converts '   hello   world   ' to 'hello world'. This function is useful for cleaning up text data for consistency."
+        },
+        {
+                "title": "How do you use the ISBLANK function?",
+                "category": "Excel",
+                "description": "A function that checks if a cell is empty and returns TRUE or FALSE.",
+                "tags": "ISBLANK, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The ISBLANK function checks if a cell is empty. For example, =ISBLANK(A1) returns TRUE if cell A1 is empty and FALSE if it contains any value. This function is useful for data validation and managing blank cells in formulas."
+        },
+        {
+                "title": "What is the purpose of the LARGE function?",
+                "category": "Excel",
+                "description": "A function that returns the nth largest value in a data set.",
+                "tags": "LARGE, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The LARGE function returns the nth largest value from a range or array. For example, =LARGE(A1:A10, 2) returns the second largest value in the range A1:A10. This function is useful for identifying top values in a dataset for ranking or analysis."
+        },
+        {
+                "title": "How do you use the TEXT function for formatting numbers?",
+                "category": "Excel",
+                "description": "A function that formats a number as text in a specified number format.",
+                "tags": "TEXT, Functions, Formatting",
+                "paid": "Yes",
+                "answer": "The TEXT function formats a number as text according to a specified format. For example, =TEXT(1234.567, '0.00') converts the number 1234.567 to '1234.57'. This function is useful for customizing the display of numbers, dates, or times in a specific format."
+        },
+        {
+                "title": "What does the VALUE function do?",
+                "category": "Excel",
+                "description": "A function that converts text that appears as a number into a numeric value.",
+                "tags": "VALUE, Functions, Conversion",
+                "paid": "Yes",
+                "answer": "The VALUE function converts text that represents a number into a numeric value. For example, =VALUE('1234') converts the text '1234' into the number 1234. This function is useful when working with text values that need to be used in numerical calculations."
+        },
+        {
+                "title": "How do you use the INDEX function?",
+                "category": "Excel",
+                "description": "A function that returns the value of a cell in a specified row and column of a range.",
+                "tags": "INDEX, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The INDEX function returns the value of a cell in a specified row and column within a range. For example, =INDEX(A1:C10, 2, 3) returns the value from the second row and third column in the range A1:C10. This function is useful for retrieving specific data points from a table."
+        },
+        {
+                "title": "What does the MATCH function do?",
+                "category": "Excel",
+                "description": "A function that searches for a specified item in a range and returns its relative position.",
+                "tags": "MATCH, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The MATCH function searches for a specified item in a range and returns its relative position. For example, =MATCH('Apple', A1:A10, 0) returns the position of 'Apple' in the range A1:A10. This function is often used in combination with INDEX for flexible data retrieval."
+        },
+        {
+                "title": "How do you use the HYPERLINK function to link to another sheet?",
+                "category": "Excel",
+                "description": "A function that creates a clickable link to another worksheet within the same workbook.",
+                "tags": "HYPERLINK, Functions, Links",
+                "paid": "Yes",
+                "answer": "The HYPERLINK function can link to another sheet within the same workbook. For example, =HYPERLINK('#Sheet2!A1', 'Go to Sheet2') creates a link that takes you to cell A1 on Sheet2. This function is useful for navigating large workbooks and creating internal links."
+        },
+        {
+                "title": "What is the use of the DATEDIF function?",
+                "category": "Excel",
+                "description": "A function that calculates the difference between two dates based on a specified unit.",
+                "tags": "DATEDIF, Functions, Dates",
+                "paid": "Yes",
+                "answer": "The DATEDIF function calculates the difference between two dates based on a specified unit. For example, =DATEDIF(A1, B1, 'D') returns the number of days between the dates in A1 and B1. You can also use 'M' for months or 'Y' for years. This function is useful for calculating age, tenure, or duration."
+        },
+        {
+                "title": "How do you use the SQRT function?",
+                "category": "Excel",
+                "description": "A function that returns the square root of a number.",
+                "tags": "SQRT, Functions, Math",
+                "paid": "Yes",
+                "answer": "The SQRT function returns the square root of a number. For example, =SQRT(16) returns 4, as 4 is the square root of 16. This function is useful for mathematical calculations involving square roots and can be used in various formulae and data analysis tasks."
+        },
+        {
+                "title": "What does the CEILING function do?",
+                "category": "Excel",
+                "description": "A function that rounds a number up to the nearest multiple of a specified value.",
+                "tags": "CEILING, Functions, Math",
+                "paid": "Yes",
+                "answer": "The CEILING function rounds a number up to the nearest multiple of a specified value. For example, =CEILING(5.3, 1) returns 6, as it rounds 5.3 up to the nearest whole number. This function is useful for rounding numbers in financial and statistical calculations."
+        },
+        {
+                "title": "How do you use the FLOOR function?",
+                "category": "Excel",
+                "description": "A function that rounds a number down to the nearest multiple of a specified value.",
+                "tags": "FLOOR, Functions, Math",
+                "paid": "Yes",
+                "answer": "The FLOOR function rounds a number down to the nearest multiple of a specified value. For example, =FLOOR(5.7, 1) returns 5, as it rounds 5.7 down to the nearest whole number. This function is useful for financial and statistical calculations requiring rounding down."
+        },
+        {
+                "title": "What is the purpose of the AND function?",
+                "category": "Excel",
+                "description": "A function that returns TRUE if all arguments are TRUE, and FALSE if any argument is FALSE.",
+                "tags": "AND, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The AND function returns TRUE if all its arguments evaluate to TRUE; otherwise, it returns FALSE. For example, =AND(A1>10, B1<5) returns TRUE if A1 is greater than 10 and B1 is less than 5. This function is useful for complex logical tests in formulas."
+        },
+        {
+                "title": "How do you use the OR function?",
+                "category": "Excel",
+                "description": "A function that returns TRUE if any argument is TRUE, and FALSE if all arguments are FALSE.",
+                "tags": "OR, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The OR function returns TRUE if any of its arguments are TRUE; otherwise, it returns FALSE. For example, =OR(A1>10, B1<5) returns TRUE if either A1 is greater than 10 or B1 is less than 5. This function is useful for evaluating multiple conditions where only one needs to be met."
+        },
+        {
+                "title": "What does the NOT function do?",
+                "category": "Excel",
+                "description": "A function that reverses the logical value of its argument.",
+                "tags": "NOT, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The NOT function reverses the logical value of its argument. For example, =NOT(A1>10) returns TRUE if A1 is not greater than 10, and FALSE if A1 is greater than 10. This function is useful for negating conditions in logical tests."
+        },
+        {
+                "title": "How do you use the OFFSET function for dynamic ranges?",
+                "category": "Excel",
+                "description": "A function that creates a reference to a range that can adjust dynamically based on specified rows and columns.",
+                "tags": "OFFSET, Functions, Dynamic Ranges",
+                "paid": "Yes",
+                "answer": "The OFFSET function can be used to create dynamic ranges by adjusting its reference based on specified rows and columns. For example, =OFFSET(A1, 2, 3, 5, 5) creates a range starting 2 rows down and 3 columns over from A1, with a height of 5 rows and a width of 5 columns. This is useful for creating dynamic named ranges or adaptable formulas."
+        },
+        {
+                "title": "What is the purpose of the VLOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches for a value in the first column of a table and returns a value in the same row from another column.",
+                "tags": "VLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The VLOOKUP function searches for a value in the first column of a table and returns a value from a specified column in the same row. For example, =VLOOKUP('Apple', A1:C10, 2, FALSE) searches for 'Apple' in column A and returns the corresponding value from column B. This function is useful for looking up information in tables."
+        },
+        {
+                "title": "How do you use the IFERROR function?",
+                "category": "Excel",
+                "description": "A function that returns a specified value if a formula results in an error, otherwise it returns the formula's result.",
+                "tags": "IFERROR, Functions, Error Handling",
+                "paid": "Yes",
+                "answer": "The IFERROR function returns a specified value if a formula results in an error; otherwise, it returns the result of the formula. For example, =IFERROR(A1/B1, 'Error') returns 'Error' if dividing A1 by B1 results in an error, otherwise it returns the division result. This function is useful for handling potential errors in calculations."
+        },
+        {
+                "title": "What does the SUMIF function do?",
+                "category": "Excel",
+                "description": "A function that adds the cells specified by a given condition or criteria.",
+                "tags": "SUMIF, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The SUMIF function adds the cells that meet a specified condition or criteria. For example, =SUMIF(A1:A10, '>10', B1:B10) sums the values in B1:B10 where the corresponding cells in A1:A10 are greater than 10. This function is useful for conditional summation based on criteria."
+        },
+        {
+                "title": "How do you use the COUNTIF function?",
+                "category": "Excel",
+                "description": "A function that counts the number of cells that meet a specified condition.",
+                "tags": "COUNTIF, Functions, Counting",
+                "paid": "Yes",
+                "answer": "The COUNTIF function counts the number of cells that meet a specific condition. For example, =COUNTIF(A1:A10, '>10') counts how many cells in the range A1:A10 contain values greater than 10. This function is useful for tallying occurrences that match a certain criterion."
+        },
+        {
+                "title": "What is the purpose of the PMT function?",
+                "category": "Excel",
+                "description": "A function that calculates the payment for a loan based on constant payments and a constant interest rate.",
+                "tags": "PMT, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The PMT function calculates the payment for a loan based on constant payments and a constant interest rate. For example, =PMT(0.05/12, 360, 200000) calculates the monthly payment for a $200,000 loan at a 5% annual interest rate over 30 years. This function is useful for financial planning and loan calculations."
+        },
+        {
+                "title": "How do you use the SUMPRODUCT function?",
+                "category": "Excel",
+                "description": "A function that multiplies corresponding components in given arrays and returns the sum of those products.",
+                "tags": "SUMPRODUCT, Functions, Math",
+                "paid": "Yes",
+                "answer": "The SUMPRODUCT function multiplies corresponding elements in arrays or ranges and returns the sum of these products. For example, =SUMPRODUCT(A1:A3, B1:B3) multiplies each value in A1:A3 by the corresponding value in B1:B3 and sums the results. This function is useful for weighted calculations and complex data analysis."
+        },
+        {
+                "title": "What does the ROUND function do?",
+                "category": "Excel",
+                "description": "A function that rounds a number to a specified number of digits.",
+                "tags": "ROUND, Functions, Math",
+                "paid": "Yes",
+                "answer": "The ROUND function rounds a number to a specified number of digits. For example, =ROUND(123.456, 2) rounds 123.456 to 123.46. This function is useful for controlling the precision of numerical values in calculations and financial reports."
+        },
+        {
+                "title": "How do you use the AVERAGEIF function?",
+                "category": "Excel",
+                "description": "A function that calculates the average of cells that meet a specified condition.",
+                "tags": "AVERAGEIF, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The AVERAGEIF function calculates the average of cells that meet a specified condition. For example, =AVERAGEIF(A1:A10, '>10', B1:B10) computes the average of values in B1:B10 where the corresponding cells in A1:A10 are greater than 10. This function is useful for conditional averaging in data analysis."
+        },
+        {
+                "title": "What is the purpose of the LOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches for a value in a one-row or one-column range and returns a value from the same position in a second range.",
+                "tags": "LOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The LOOKUP function searches for a value in one row or column and returns a value from the same position in a second row or column. For example, =LOOKUP(10, A1:A10, B1:B10) looks for the number 10 in A1:A10 and returns the corresponding value from B1:B10. This function is useful for simple lookups and data retrieval."
+        },
+        {
+                "title": "How do you use the SUM function across multiple sheets?",
+                "category": "Excel",
+                "description": "A method to sum values across multiple sheets in a workbook.",
+                "tags": "SUM, Functions, Multi-sheet",
+                "paid": "Yes",
+                "answer": "To sum values across multiple sheets, use a formula like =SUM(Sheet1:Sheet3!A1) which sums the values in cell A1 across Sheet1, Sheet2, and Sheet3. This method is useful for aggregating data from multiple sheets into a single total."
+        },
+        {
+                "title": "What does the CONCAT function do?",
+                "category": "Excel",
+                "description": "A function that joins multiple text strings into one text string, similar to CONCATENATE but more versatile.",
+                "tags": "CONCAT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCAT function joins multiple text strings into one continuous string, similar to CONCATENATE but allows for a range of cells. For example, =CONCAT(A1:A3) combines the text in cells A1 to A3. This function is useful for merging text from multiple cells into one."
+        },
+        {
+                "title": "How do you use the TEXTJOIN function?",
+                "category": "Excel",
+                "description": "A function that combines text from multiple ranges or strings and includes a delimiter between each text item.",
+                "tags": "TEXTJOIN, Functions, Text",
+                "paid": "Yes",
+                "answer": "The TEXTJOIN function concatenates text from multiple ranges or strings with a specified delimiter between each item. For example, =TEXTJOIN(', ', TRUE, A1:A3) joins the text in A1 to A3 with a comma and space between each item. This function is useful for creating formatted text lists."
+        },
+        {
+                "title": "What is the use of the INDIRECT function?",
+                "category": "Excel",
+                "description": "A function that returns a cell reference specified by a text string.",
+                "tags": "INDIRECT, Functions, References",
+                "paid": "Yes",
+                "answer": "The INDIRECT function returns a cell reference specified by a text string. For example, =INDIRECT('B2') returns the value in cell B2. This function is useful for creating dynamic references and formulas that adapt based on the text string provided."
+        },
+        {
+                "title": "How do you use the SUBTOTAL function?",
+                "category": "Excel",
+                "description": "A function that performs a specified calculation on a subset of data, ignoring other SUBTOTAL functions in the same range.",
+                "tags": "SUBTOTAL, Functions, Aggregation",
+                "paid": "Yes",
+                "answer": "The SUBTOTAL function performs calculations like SUM, AVERAGE, or COUNT on a subset of data while ignoring other SUBTOTAL functions in the same range. For example, =SUBTOTAL(9, A1:A10) calculates the sum of A1:A10, where '9' specifies the SUM function. This is useful for aggregating filtered or grouped data."
+        },
+        {
+                "title": "What is the purpose of the TEXT function for dates?",
+                "category": "Excel",
+                "description": "A function that formats a date as text according to a specified format.",
+                "tags": "TEXT, Functions, Dates",
+                "paid": "Yes",
+                "answer": "The TEXT function can format dates as text in a specified format. For example, =TEXT(TODAY(), 'dd-mmm-yyyy') converts the current date to '09-Sep-2024'. This function is useful for displaying dates in various formats or for creating custom date labels."
+        },
+        {
+                "title": "How do you use the XLOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches a range or array and returns a value based on a match found, replacing older functions like VLOOKUP.",
+                "tags": "XLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The XLOOKUP function searches a range or array for a value and returns a corresponding value from another range or array. For example, =XLOOKUP('Apple', A1:A10, B1:B10) searches for 'Apple' in A1:A10 and returns the corresponding value from B1:B10. This function is more flexible than VLOOKUP, allowing for both vertical and horizontal lookups."
+        },
+        {
+                "title": "How do you use the R1C1 reference style?",
+                "category": "Excel",
+                "description": "A reference style where both rows and columns are referred to by numbers.",
+                "tags": "R1C1, Reference Style, Excel",
+                "paid": "Yes",
+                "answer": "The R1C1 reference style refers to cells by their row and column numbers. For example, R2C3 refers to the cell in the second row and third column. To use this style, go to File > Options > Formulas, and select 'R1C1 reference style'. This style can be useful for complex formulas and macros."
+        },
+        {
+                "title": "What does the NA function do?",
+                "category": "Excel",
+                "description": "A function that returns the #N/A error value, which means 'Not Available'.",
+                "tags": "NA, Functions, Error",
+                "paid": "Yes",
+                "answer": "The NA function returns the #N/A error value, indicating that data is not available. For example, =NA() returns #N/A. This is often used in formulas to signal that a value cannot be found or is missing, particularly in lookup functions."
+        },
+        {
+                "title": "How do you use the NPER function?",
+                "category": "Excel",
+                "description": "A function that calculates the number of periods for an investment or loan based on constant payments and a constant interest rate.",
+                "tags": "NPER, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The NPER function calculates the number of periods needed for an investment or loan based on constant payments and a constant interest rate. For example, =NPER(0.05/12, -1000, 50000) calculates the number of monthly periods required to pay off a $50,000 loan with monthly payments of $1,000 at a 5% annual interest rate."
+        },
+        {
+                "title": "What does the DCOUNTA function do?",
+                "category": "Excel",
+                "description": "A function that counts the number of non-blank cells in a database that meet specified criteria.",
+                "tags": "DCOUNTA, Functions, Database",
+                "paid": "Yes",
+                "answer": "The DCOUNTA function counts the number of non-blank cells in a database that meet specified criteria. For example, =DCOUNTA(A1:C10, 'Name', E1:E2) counts the number of non-blank entries in the 'Name' field of the database in A1:C10 where criteria in E1:E2 are met."
+        },
+        {
+                "title": "How do you use the ROWS function?",
+                "category": "Excel",
+                "description": "A function that returns the number of rows in a specified range.",
+                "tags": "ROWS, Functions, Ranges",
+                "paid": "Yes",
+                "answer": "The ROWS function returns the number of rows in a specified range. For example, =ROWS(A1:C10) returns 10, as there are 10 rows in the range A1:C10. This function is useful for determining the size of a range or for dynamic range adjustments in formulas."
+        },
+        {
+                "title": "What is the use of the CUMIPMT function?",
+                "category": "Excel",
+                "description": "A function that calculates the cumulative interest paid on a loan over a specified number of periods.",
+                "tags": "CUMIPMT, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The CUMIPMT function calculates the cumulative interest paid on a loan over a specified number of periods. For example, =CUMIPMT(0.05/12, 360, 200000, 1, 12, 0) calculates the total interest paid in the first year of a $200,000 loan with a 5% annual interest rate. This function is useful for understanding total interest costs over time."
+        },
+        {
+                "title": "How do you use the GCD function?",
+                "category": "Excel",
+                "description": "A function that returns the greatest common divisor of two or more numbers.",
+                "tags": "GCD, Functions, Math",
+                "paid": "Yes",
+                "answer": "The GCD function returns the greatest common divisor of two or more numbers. For example, =GCD(12, 18) returns 6, which is the largest number that divides both 12 and 18 without leaving a remainder. This function is useful for simplifying fractions or for other mathematical calculations."
+        },
+        {
+                "title": "What does the PERCENTILE function do?",
+                "category": "Excel",
+                "description": "A function that returns the k-th percentile of values in a range.",
+                "tags": "PERCENTILE, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The PERCENTILE function returns the k-th percentile of values in a range, where k is between 0 and 1. For example, =PERCENTILE(A1:A10, 0.9) returns the 90th percentile value of the data in range A1:A10. This function is useful for analyzing data distributions and identifying thresholds."
+        },
+        {
+                "title": "How do you use the CUBEVALUE function?",
+                "category": "Excel",
+                "description": "A function that retrieves aggregated data from an OLAP cube based on specified criteria.",
+                "tags": "CUBEVALUE, Functions, OLAP",
+                "paid": "Yes",
+                "answer": "The CUBEVALUE function retrieves aggregated data from an OLAP cube based on specified criteria. For example, =CUBEVALUE('Sales', 'Product', 'Apples', 'Region', 'North') retrieves sales data for 'Apples' in the 'North' region from the 'Sales' cube. This function is useful for analyzing multidimensional data in OLAP cubes."
+        },
+        {
+                "title": "What is the purpose of the DGET function?",
+                "category": "Excel",
+                "description": "A function that extracts a single value from a database that matches specified criteria.",
+                "tags": "DGET, Functions, Database",
+                "paid": "Yes",
+                "answer": "The DGET function extracts a single value from a database that matches specified criteria. For example, =DGET(A1:C10, 'Amount', E1:E2) retrieves the 'Amount' value from A1:C10 where criteria in E1:E2 are met. This function is useful for extracting specific data from a database based on criteria."
+        },
+        {
+                "title": "How do you use the DB function?",
+                "category": "Excel",
+                "description": "A function that calculates depreciation of an asset for a specified period using the fixed-declining balance method.",
+                "tags": "DB, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The DB function calculates the depreciation of an asset for a specified period using the fixed-declining balance method. For example, =DB(10000, 1000, 5, 1) calculates the depreciation for the first year of an asset with a $10,000 cost, $1,000 salvage value, and a 5-year lifespan. This function is useful for accounting and financial analysis."
+        },
+        {
+                "title": "What does the FORMULATEXT function do?",
+                "category": "Excel",
+                "description": "A function that returns the formula as text from a given cell.",
+                "tags": "FORMULATEXT, Functions, Formula",
+                "paid": "Yes",
+                "answer": "The FORMULATEXT function returns the formula as text from a given cell. For example, =FORMULATEXT(A1) displays the formula used in cell A1 as text. This function is useful for auditing and documentation purposes to review and share formulas used in a workbook."
+        },
+        {
+                "title": "How do you use the SLN function?",
+                "category": "Excel",
+                "description": "A function that calculates the straight-line depreciation of an asset over its useful life.",
+                "tags": "SLN, Functions, Financial",
+                "paid": "Yes",
+                "answer": "The SLN function calculates the straight-line depreciation of an asset over its useful life. For example, =SLN(10000, 1000, 5) computes the annual depreciation of an asset costing $10,000 with a salvage value of $1,000 over 5 years. This function is useful for straightforward depreciation calculations."
+        },
+        {
+                "title": "What is the purpose of the CUBESET function?",
+                "category": "Excel",
+                "description": "A function that creates a set of values from an OLAP cube based on specified criteria.",
+                "tags": "CUBESET, Functions, OLAP",
+                "paid": "Yes",
+                "answer": "The CUBESET function creates a set of values from an OLAP cube based on specified criteria. For example, =CUBESET('Sales', '[Product].[Category].Members', 'Top Products') creates a set of product categories from the 'Sales' cube. This function is useful for analyzing multidimensional data and defining sets for further calculations."
+        },
+        {
+                "title": "How do you use the LARGE function?",
+                "category": "Excel",
+                "description": "A function that returns the k-th largest value in a data set.",
+                "tags": "LARGE, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The LARGE function returns the k-th largest value from a data set. For example, =LARGE(A1:A10, 2) returns the second largest value in the range A1:A10. This function is useful for identifying top values in a dataset, such as the second highest score or sales figure."
+        },
+        {
+                "title": "What does the ROUND function do?",
+                "category": "Excel",
+                "description": "A function that rounds a number to a specified number of digits.",
+                "tags": "ROUND, Functions, Rounding",
+                "paid": "Yes",
+                "answer": "The ROUND function rounds a number to a specified number of digits. For example, =ROUND(123.456, 2) returns 123.46, rounding the number to two decimal places. This function is useful for controlling the precision of numerical values in financial and statistical calculations."
+        },
+        {
+                "title": "How do you use the TEXT function to format numbers?",
+                "category": "Excel",
+                "description": "A function that converts a number to text and formats it according to a specified format.",
+                "tags": "TEXT, Functions, Number Formatting",
+                "paid": "Yes",
+                "answer": "The TEXT function converts a number to text and formats it according to a specified format. For example, =TEXT(1234.56, '$#,##0.00') converts the number 1234.56 to '$1,234.56'. This function is useful for displaying numbers in a specific format, such as currency or percentages."
+        },
+        {
+                "title": "What is the purpose of the IFNA function?",
+                "category": "Excel",
+                "description": "A function that returns a specified value if a formula results in #N/A error, otherwise returns the result of the formula.",
+                "tags": "IFNA, Functions, Error Handling",
+                "paid": "Yes",
+                "answer": "The IFNA function returns a specified value if a formula results in the #N/A error, otherwise, it returns the result of the formula. For example, =IFNA(VLOOKUP(A1, B1:C10, 2, FALSE), 'Not Found') returns 'Not Found' if the VLOOKUP function does not find a match. This function is useful for managing and handling #N/A errors in formulas."
+        },
+        {
+                "title": "How do you use the MATCH function?",
+                "category": "Excel",
+                "description": "A function that searches for a specified value in a range and returns the relative position of that item.",
+                "tags": "MATCH, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The MATCH function searches for a specified value in a range and returns the relative position of that item. For example, =MATCH('Apple', A1:A10, 0) returns the position of 'Apple' in the range A1:A10. This function is useful for finding the position of an item in a list and is often used in conjunction with the INDEX function."
+        },
+        {
+                "title": "What does the MODE.MULT function do?",
+                "category": "Excel",
+                "description": "A function that returns a vertical array of the most frequently occurring values in a dataset.",
+                "tags": "MODE.MULT, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The MODE.MULT function returns a vertical array of the most frequently occurring values in a dataset. For example, =MODE.MULT(A1:A10) returns all the modes (most frequent values) in the range A1:A10. This function is useful for finding multiple modes in a data set and can return more than one value."
+        },
+        {
+                "title": "How do you use the POWER function?",
+                "category": "Excel",
+                "description": "A function that raises a number to a specified power.",
+                "tags": "POWER, Functions, Math",
+                "paid": "Yes",
+                "answer": "The POWER function raises a number to a specified power. For example, =POWER(2, 3) returns 8, as 2 raised to the power of 3 equals 8. This function is useful for mathematical calculations involving exponents and is often used in scientific and engineering contexts."
+        },
+        {
+                "title": "What is the use of the ISBLANK function?",
+                "category": "Excel",
+                "description": "A function that checks if a cell is empty and returns TRUE or FALSE.",
+                "tags": "ISBLANK, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The ISBLANK function checks if a cell is empty and returns TRUE if it is, or FALSE if it is not. For example, =ISBLANK(A1) returns TRUE if cell A1 is empty. This function is useful for data validation, ensuring that cells contain the expected data, or for controlling conditional formatting."
+        },
+        {
+                "title": "How do you use the ISERROR function?",
+                "category": "Excel",
+                "description": "A function that checks if a value is any type of error and returns TRUE or FALSE.",
+                "tags": "ISERROR, Functions, Error Handling",
+                "paid": "Yes",
+                "answer": "The ISERROR function checks if a value is any type of error and returns TRUE if it is, or FALSE if it is not. For example, =ISERROR(1/0) returns TRUE because division by zero results in an error. This function is useful for error handling in formulas to ensure that calculations do not break due to unexpected errors."
+        },
+        {
+                "title": "What does the VLOOKUP function do?",
+                "category": "Excel",
+                "description": "A function that searches for a value in the first column of a table and returns a value in the same row from a specified column.",
+                "tags": "VLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The VLOOKUP function searches for a value in the first column of a table and returns a value in the same row from a specified column. For example, =VLOOKUP('Apple', A1:B10, 2, FALSE) searches for 'Apple' in column A and returns the corresponding value from column B. This function is useful for vertical lookups in tables and databases."
+        },
+        {
+                "title": "How do you use the COUNTBLANK function?",
+                "category": "Excel",
+                "description": "A function that counts the number of empty cells in a range.",
+                "tags": "COUNTBLANK, Functions, Counting",
+                "paid": "Yes",
+                "answer": "The COUNTBLANK function counts the number of empty cells in a range. For example, =COUNTBLANK(A1:A10) counts the number of blank cells in the range A1:A10. This function is useful for analyzing data completeness and identifying gaps in data entry."
+        },
+        {
+                "title": "What is the purpose of the INDEX function?",
+                "category": "Excel",
+                "description": "A function that returns the value of a cell in a specified row and column of a range.",
+                "tags": "INDEX, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The INDEX function returns the value of a cell in a specified row and column of a range. For example, =INDEX(A1:C10, 2, 3) returns the value from the second row and third column of the range A1:C10. This function is useful for retrieving data from a table or range based on row and column numbers."
+        },
+        {
+                "title": "How do you use the CUBEKPIMEMBER function?",
+                "category": "Excel",
+                "description": "A function that returns a key performance indicator (KPI) member from an OLAP cube.",
+                "tags": "CUBEKPIMEMBER, Functions, OLAP",
+                "paid": "Yes",
+                "answer": "The CUBEKPIMEMBER function returns a key performance indicator (KPI) member from an OLAP cube. For example, =CUBEKPIMEMBER('Sales', '[KPI].[Sales Target]') retrieves the sales target KPI from the 'Sales' cube. This function is useful for accessing and analyzing KPIs in multidimensional data."
+        },
+        {
+                "title": "What does the GROWTH function do?",
+                "category": "Excel",
+                "description": "A function that calculates exponential growth based on existing data.",
+                "tags": "GROWTH, Functions, Forecasting",
+                "paid": "Yes",
+                "answer": "The GROWTH function calculates exponential growth based on existing data and returns predicted values. For example, =GROWTH(B1:B5, A1:A5, C1:C3) forecasts future values based on existing data in B1:B5 and A1:A5, and predicts values for the range C1:C3. This function is useful for forecasting and trend analysis."
+        },
+        {
+                "title": "What is the purpose of the SUMPRODUCT function?",
+                "category": "Excel",
+                "description": "A function that multiplies corresponding components in given arrays and returns the sum of those products.",
+                "tags": "SUMPRODUCT, Functions, Mathematical",
+                "paid": "Yes",
+                "answer": "The SUMPRODUCT function multiplies corresponding components in given arrays and returns the sum of those products. For example, =SUMPRODUCT(A1:A3, B1:B3) multiplies each element in the range A1:A3 by the corresponding element in B1:B3 and then sums the results. This function is useful for performing weighted calculations and aggregating data."
+        },
+        {
+                "title": "How do you use the FORMULATEXT function?",
+                "category": "Excel",
+                "description": "A function that returns a text representation of a formula in a cell.",
+                "tags": "FORMULATEXT, Functions, Formula",
+                "paid": "Yes",
+                "answer": "The FORMULATEXT function returns a text representation of a formula in a cell. For example, =FORMULATEXT(A1) shows the formula used in cell A1 as a text string. This function is useful for auditing and documenting formulas in a spreadsheet."
+        },
+        {
+                "title": "What does the YEARFRAC function do?",
+                "category": "Excel",
+                "description": "A function that calculates the fraction of a year between two dates.",
+                "tags": "YEARFRAC, Functions, Date",
+                "paid": "Yes",
+                "answer": "The YEARFRAC function calculates the fraction of a year between two dates. For example, =YEARFRAC(A1, B1) returns the fraction of the year between the dates in A1 and B1. This function is useful for calculating time intervals in financial and employee leave calculations."
+        },
+        {
+                "title": "How do you use the CONCAT function?",
+                "category": "Excel",
+                "description": "A function that joins multiple text strings into one string (replaces CONCATENATE).",
+                "tags": "CONCAT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCAT function joins multiple text strings into one string. For example, =CONCAT('Hello', ' ', 'World') returns 'Hello World'. This function replaces CONCATENATE and is more versatile, allowing you to join ranges of text. It's useful for creating combined text from different cells."
+        },
+        {
+                "title": "What does the TEXTJOIN function do?",
+                "category": "Excel",
+                "description": "A function that combines text from multiple ranges with a specified delimiter.",
+                "tags": "TEXTJOIN, Functions, Text",
+                "paid": "Yes",
+                "answer": "The TEXTJOIN function combines text from multiple ranges or strings with a specified delimiter. For example, =TEXTJOIN(', ', TRUE, A1:A3) combines the text in A1 to A3, separated by commas. The TRUE argument skips empty cells. This function is useful for concatenating text with delimiters."
+        },
+        {
+                "title": "How do you use the IFS function?",
+                "category": "Excel",
+                "description": "A function that checks multiple conditions and returns a value corresponding to the first TRUE condition.",
+                "tags": "IFS, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The IFS function checks multiple conditions and returns a value corresponding to the first TRUE condition. For example, =IFS(A1 > 10, 'High', A1 > 5, 'Medium', A1 <= 5, 'Low') returns 'High' if A1 is greater than 10, 'Medium' if A1 is between 6 and 10, and 'Low' otherwise. This function is useful for handling multiple conditions without nesting multiple IF statements."
+        },
+        {
+                "title": "What does the XLOOKUP function do?",
+                "category": "Excel",
+                "description": "A function that searches a range or array and returns a value based on a match (replaces VLOOKUP and HLOOKUP).",
+                "tags": "XLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The XLOOKUP function searches a range or array for a specified value and returns a value based on a match. For example, =XLOOKUP('Apple', A1:A10, B1:B10) searches for 'Apple' in A1:A10 and returns the corresponding value from B1:B10. It replaces VLOOKUP and HLOOKUP, offering more flexibility and functionality in lookups."
+        },
+        {
+                "title": "How do you use the SEQUENCE function?",
+                "category": "Excel",
+                "description": "A function that generates a list of sequential numbers in a range.",
+                "tags": "SEQUENCE, Functions, Array",
+                "paid": "Yes",
+                "answer": "The SEQUENCE function generates a list of sequential numbers in a range. For example, =SEQUENCE(5, 1, 1, 1) returns a vertical array of numbers from 1 to 5. This function is useful for creating arrays of sequential numbers and can be customized to generate different sequences and dimensions."
+        },
+        {
+                "title": "What does the UNIQUE function do?",
+                "category": "Excel",
+                "description": "A function that returns a list of unique values from a range or array.",
+                "tags": "UNIQUE, Functions, Data",
+                "paid": "Yes",
+                "answer": "The UNIQUE function returns a list of unique values from a range or array. For example, =UNIQUE(A1:A10) returns only the distinct values in the range A1:A10. This function is useful for removing duplicates and analyzing unique data points in a dataset."
+        },
+        {
+                "title": "How do you use the FILTER function?",
+                "category": "Excel",
+                "description": "A function that filters a range or array based on specified criteria.",
+                "tags": "FILTER, Functions, Data",
+                "paid": "Yes",
+                "answer": "The FILTER function filters a range or array based on specified criteria. For example, =FILTER(A1:B10, A1:A10 > 50) returns rows where values in column A are greater than 50. This function is useful for extracting subsets of data based on dynamic conditions."
+        },
+        {
+                "title": "What is the purpose of the LET function?",
+                "category": "Excel",
+                "description": "A function that assigns names to calculation results and uses them in formulas for improved readability and efficiency.",
+                "tags": "LET, Functions, Efficiency",
+                "paid": "Yes",
+                "answer": "The LET function assigns names to calculation results and uses them in formulas for improved readability and efficiency. For example, =LET(x, A1 + B1, y, A1 - B1, x * y) defines x as A1 + B1 and y as A1 - B1, then calculates x * y. This function simplifies complex formulas and improves performance by avoiding repeated calculations."
+        },
+        {
+                "title": "How do you use the CHOOSE function?",
+                "category": "Excel",
+                "description": "A function that returns a value from a list based on a specified index number.",
+                "tags": "CHOOSE, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The CHOOSE function returns a value from a list based on a specified index number. For example, =CHOOSE(2, 'Apple', 'Banana', 'Cherry') returns 'Banana' as it is the second item in the list. This function is useful for selecting values from a predefined list based on an index."
+        },
+        {
+                "title": "What does the CUBEVALUE function do?",
+                "category": "Excel",
+                "description": "A function that retrieves a value from an OLAP cube based on specified members and measures.",
+                "tags": "CUBEVALUE, Functions, OLAP",
+                "paid": "Yes",
+                "answer": "The CUBEVALUE function retrieves a value from an OLAP cube based on specified members and measures. For example, =CUBEVALUE('Sales', '[Measures].[Sales Amount]', '[Product].[Category].&[1]') returns the sales amount for a specific product category from the 'Sales' cube. This function is useful for accessing multidimensional data in OLAP cubes."
+        },
+        {
+                "title": "How do you use the AGGREGATE function?",
+                "category": "Excel",
+                "description": "A function that performs calculations on a range with the option to ignore errors and hidden rows.",
+                "tags": "AGGREGATE, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The AGGREGATE function performs various calculations (e.g., SUM, AVERAGE) on a range with the option to ignore errors and hidden rows. For example, =AGGREGATE(9, 5, A1:A10) calculates the sum of A1:A10 while ignoring errors. This function is useful for summarizing data while managing exceptions."
+        },
+        {
+                "title": "How do you use the INDIRECT function?",
+                "category": "Excel",
+                "description": "A function that returns the reference specified by a text string.",
+                "tags": "INDIRECT, Functions, References",
+                "paid": "Yes",
+                "answer": "The INDIRECT function returns the reference specified by a text string. For example, =INDIRECT('B2') refers to the cell B2. If you have a text string 'A1' in cell C1, =INDIRECT(C1) refers to cell A1. This function is useful for dynamic referencing in formulas and working with cell references indirectly."
+        },
+        {
+                "title": "What is the purpose of the UNIQUE function?",
+                "category": "Excel",
+                "description": "A function that returns a list of unique values from a range or array.",
+                "tags": "UNIQUE, Functions, Data",
+                "paid": "Yes",
+                "answer": "The UNIQUE function returns a list of unique values from a range or array. For example, =UNIQUE(A1:A10) filters out duplicate values from the range A1:A10, returning only the distinct values. This function is useful for removing duplicates and summarizing unique entries in a dataset."
+        },
+        {
+                "title": "How do you use the MAXIFS function?",
+                "category": "Excel",
+                "description": "A function that returns the maximum value in a range based on one or more criteria.",
+                "tags": "MAXIFS, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The MAXIFS function returns the maximum value in a range based on one or more criteria. For example, =MAXIFS(B1:B10, A1:A10, '>10') returns the highest value in B1:B10 where the corresponding value in A1:A10 is greater than 10. This function is useful for conditional maximum calculations in a dataset."
+        },
+        {
+                "title": "What does the NETWORKDAYS function do?",
+                "category": "Excel",
+                "description": "A function that calculates the number of working days between two dates, excluding weekends and holidays.",
+                "tags": "NETWORKDAYS, Functions, Date",
+                "paid": "Yes",
+                "answer": "The NETWORKDAYS function calculates the number of working days between two dates, excluding weekends and optional holidays. For example, =NETWORKDAYS(A1, B1) returns the count of weekdays between the dates in A1 and B1. Adding holidays as a third argument excludes those dates as well. This function is useful for project planning and calculating working periods."
+        },
+        {
+                "title": "How do you use the XLOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches a range or array and returns a value based on a match, replacing VLOOKUP.",
+                "tags": "XLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The XLOOKUP function searches a range or array for a specified value and returns a value from a corresponding range. For example, =XLOOKUP('Apple', A1:A10, B1:B10) searches for 'Apple' in A1:A10 and returns the corresponding value from B1:B10. It replaces VLOOKUP and HLOOKUP, offering more flexibility with lookup operations."
+        },
+        {
+                "title": "What does the TEXTJOIN function do?",
+                "category": "Excel",
+                "description": "A function that combines text from multiple ranges or strings, with a specified delimiter separating the values.",
+                "tags": "TEXTJOIN, Functions, Text",
+                "paid": "Yes",
+                "answer": "The TEXTJOIN function combines text from multiple ranges or strings, with a specified delimiter separating the values. For example, =TEXTJOIN(', ', TRUE, A1:A3) concatenates the text in A1 to A3, separated by commas. The TRUE argument skips empty cells. This function is useful for merging text data from multiple sources into a single string."
+        },
+        {
+                "title": "How do you use the LET function?",
+                "category": "Excel",
+                "description": "A function that assigns names to calculation results and uses those names in formulas for better readability.",
+                "tags": "LET, Functions, Efficiency",
+                "paid": "Yes",
+                "answer": "The LET function assigns names to calculation results and uses those names in formulas, improving readability and efficiency. For example, =LET(x, A1 + B1, y, A1 - B1, x * y) assigns 'x' as A1 + B1 and 'y' as A1 - B1, then calculates x * y. This avoids redundant calculations and makes complex formulas easier to understand."
+        },
+        {
+                "title": "What is the purpose of the AGGREGATE function?",
+                "category": "Excel",
+                "description": "A function that performs calculations on a range while allowing options to ignore errors and hidden rows.",
+                "tags": "AGGREGATE, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The AGGREGATE function performs various calculations (like SUM, AVERAGE) on a range with options to ignore errors and hidden rows. For example, =AGGREGATE(9, 5, A1:A10) calculates the sum of the range A1:A10 while ignoring errors. This function is useful for summarizing data with error handling and filtering options."
+        },
+        {
+                "title": "How do you use the TRANSPOSE function?",
+                "category": "Excel",
+                "description": "A function that changes the orientation of a range or array, converting rows to columns and vice versa.",
+                "tags": "TRANSPOSE, Functions, Array",
+                "paid": "Yes",
+                "answer": "The TRANSPOSE function changes the orientation of a range or array, converting rows to columns and vice versa. For example, =TRANSPOSE(A1:B3) converts a vertical range in A1:B3 to a horizontal range. This function is useful for rearranging data layouts to fit different presentation needs."
+        },
+        {
+                "title": "What does the SORT function do?",
+                "category": "Excel",
+                "description": "A function that sorts the contents of a range or array based on specified criteria.",
+                "tags": "SORT, Functions, Data",
+                "paid": "Yes",
+                "answer": "The SORT function sorts the contents of a range or array based on specified criteria. For example, =SORT(A1:B10, 1, TRUE) sorts the range A1:B10 based on the first column in ascending order. This function is useful for organizing data in a spreadsheet and performing data analysis."
+        },
+        {
+                "title": "How do you use the FILTER function?",
+                "category": "Excel",
+                "description": "A function that filters a range or array based on specified criteria and returns the matching results.",
+                "tags": "FILTER, Functions, Data",
+                "paid": "Yes",
+                "answer": "The FILTER function filters a range or array based on specified criteria and returns the matching results. For example, =FILTER(A1:B10, A1:A10 > 50) returns rows where the values in A1:A10 are greater than 50. This function is useful for extracting specific subsets of data based on dynamic conditions."
+        },
+        {
+                "title": "What is the purpose of the SEQUENCE function?",
+                "category": "Excel",
+                "description": "A function that generates a sequence of numbers in a range based on specified parameters.",
+                "tags": "SEQUENCE, Functions, Array",
+                "paid": "Yes",
+                "answer": "The SEQUENCE function generates a sequence of numbers in a range based on specified parameters. For example, =SEQUENCE(5, 1, 1, 1) creates a vertical array of numbers from 1 to 5. This function is useful for creating number sequences dynamically and can be customized for different dimensions and increments."
+        },
+        {
+                "title": "How do you use the UNIQUE function?",
+                "category": "Excel",
+                "description": "A function that extracts unique values from a range or array, removing duplicates.",
+                "tags": "UNIQUE, Functions, Data",
+                "paid": "Yes",
+                "answer": "The UNIQUE function extracts unique values from a range or array, effectively removing duplicates. For example, =UNIQUE(A1:A10) returns all distinct values from the range A1:A10. This function is useful for summarizing data by removing repeated entries and identifying distinct values."
+        },
+        {
+                "title": "What does the ROW function do?",
+                "category": "Excel",
+                "description": "A function that returns the row number of a specified cell or range.",
+                "tags": "ROW, Functions, Reference",
+                "paid": "Yes",
+                "answer": "The ROW function returns the row number of a specified cell or range. For example, =ROW(B5) returns 5, indicating the row number of cell B5. This function is useful for referencing row positions dynamically in formulas and creating row-based calculations."
+        },
+        {
+                "title": "How do you use the COLUMN function?",
+                "category": "Excel",
+                "description": "A function that returns the column number of a specified cell or range.",
+                "tags": "COLUMN, Functions, Reference",
+                "paid": "Yes",
+                "answer": "The COLUMN function returns the column number of a specified cell or range. For example, =COLUMN(C3) returns 3, indicating the column number of cell C3. This function is useful for referencing column positions dynamically and integrating column-based calculations in formulas."
+        },
+        {
+                "title": "What does the SUBSTITUTE function do?",
+                "category": "Excel",
+                "description": "A function that replaces occurrences of a specified substring with another substring in a text string.",
+                "tags": "SUBSTITUTE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The SUBSTITUTE function replaces occurrences of a specified substring with another substring in a text string. For example, =SUBSTITUTE('hello world', 'world', 'Excel') returns 'hello Excel'. This function is useful for text replacement operations within strings, such as correcting or updating text data."
+        },
+        {
+                "title": "How do you use the REPT function?",
+                "category": "Excel",
+                "description": "A function that repeats a text string a specified number of times.",
+                "tags": "REPT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The REPT function repeats a text string a specified number of times. For example, =REPT('A', 5) returns 'AAAAA'. This function is useful for creating repetitive patterns, such as visual indicators or formatting text strings with a specific number of characters."
+        },
+        {
+                "title": "What is the purpose of the DATEDIF function?",
+                "category": "Excel",
+                "description": "A function that calculates the difference between two dates based on a specified time unit (e.g., days, months, years).",
+                "tags": "DATEDIF, Functions, Date",
+                "paid": "Yes",
+                "answer": "The DATEDIF function calculates the difference between two dates based on a specified time unit (e.g., days, months, years). For example, =DATEDIF(A1, B1, 'Y') returns the number of complete years between the dates in A1 and B1. This function is useful for calculating age, service periods, and other date-related intervals."
+        },
+        {
+                "title": "How do you use the OFFSET function?",
+                "category": "Excel",
+                "description": "A function that returns a reference to a range that is offset from a starting cell by a specified number of rows and columns.",
+                "tags": "OFFSET, Functions, Reference",
+                "paid": "Yes",
+                "answer": "The OFFSET function returns a reference to a range that is offset from a starting cell by a specified number of rows and columns. For example, =OFFSET(A1, 2, 3) returns a reference to the cell that is two rows down and three columns to the right of A1. This function is useful for creating dynamic ranges and managing data in a flexible way."
+        },
+        {
+                "title": "What does the FIND function do?",
+                "category": "Excel",
+                "description": "A function that returns the starting position of a substring within a text string, case-sensitive.",
+                "tags": "FIND, Functions, Text",
+                "paid": "Yes",
+                "answer": "The FIND function returns the starting position of a substring within a text string, case-sensitive. For example, =FIND('e', 'Hello World') returns 2, indicating the position of the first occurrence of 'e'. This function is useful for locating specific characters or substrings within text."
+        },
+        {
+                "title": "How do you use the SEARCH function?",
+                "category": "Excel",
+                "description": "A function that returns the starting position of a substring within a text string, case-insensitive.",
+                "tags": "SEARCH, Functions, Text",
+                "paid": "Yes",
+                "answer": "The SEARCH function returns the starting position of a substring within a text string, case-insensitive. For example, =SEARCH('world', 'Hello World') returns 7, indicating the position of 'world'. This function is useful for finding substrings regardless of case."
+        },
+        {
+                "title": "What is the purpose of the ISNUMBER function?",
+                "category": "Excel",
+                "description": "A function that checks if a value is a number and returns TRUE if it is, or FALSE if it is not.",
+                "tags": "ISNUMBER, Functions, Logical",
+                "paid": "Yes",
+                "answer": "The ISNUMBER function checks if a value is a number and returns TRUE if it is, or FALSE if it is not. For example, =ISNUMBER(A1) returns TRUE if the value in A1 is numeric, and FALSE otherwise. This function is useful for data validation and conditional calculations involving numeric data."
+        },
+        {
+                "title": "How do you use the IFERROR function?",
+                "category": "Excel",
+                "description": "A function that returns a specified value if a formula results in an error, or the formula result if no error.",
+                "tags": "IFERROR, Functions, Error Handling",
+                "paid": "Yes",
+                "answer": "The IFERROR function returns a specified value if a formula results in an error, or the result of the formula if no error occurs. For example, =IFERROR(A1/B1, 'Error') returns 'Error' if A1/B1 results in an error, such as division by zero. This function is useful for handling and managing errors in formulas."
+        },
+        {
+                "title": "What does the HLOOKUP function do?",
+                "category": "Excel",
+                "description": "A function that searches for a value in the top row of a table and returns a value in the same column from a specified row.",
+                "tags": "HLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The HLOOKUP function searches for a value in the top row of a table and returns a value in the same column from a specified row. For example, =HLOOKUP('Apple', A1:D2, 2, FALSE) searches for 'Apple' in the top row of the range A1:D2 and returns the value from the second row in the same column. This function is useful for horizontal lookups."
+        },
+        {
+                "title": "How do you use the VLOOKUP function?",
+                "category": "Excel",
+                "description": "A function that searches for a value in the first column of a table and returns a value in the same row from a specified column.",
+                "tags": "VLOOKUP, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The VLOOKUP function searches for a value in the first column of a table and returns a value in the same row from a specified column. For example, =VLOOKUP('Apple', A1:B10, 2, FALSE) searches for 'Apple' in the first column of A1:B10 and returns the value from the second column in the same row. This function is useful for vertical lookups in a table."
+        },
+        {
+                "title": "What is the purpose of the CONCATENATE function?",
+                "category": "Excel",
+                "description": "A function that joins multiple text strings into one string (replaced by CONCAT in newer versions).",
+                "tags": "CONCATENATE, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCATENATE function joins multiple text strings into one string. For example, =CONCATENATE('Hello', ' ', 'World') returns 'Hello World'. This function is replaced by CONCAT in newer Excel versions, which provides more flexibility for combining text data. CONCATENATE is useful for creating combined text from separate cells."
+        },
+        {
+                "title": "How do you use the SUMIF function?",
+                "category": "Excel",
+                "description": "A function that adds the values in a range based on a specified condition.",
+                "tags": "SUMIF, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The SUMIF function adds values in a range based on a specified condition. For example, =SUMIF(A1:A10, '>10', B1:B10) adds the values in B1:B10 where the corresponding values in A1:A10 are greater than 10. This function is useful for conditional summation in a dataset."
+        },
+        {
+                "title": "What does the SUMIFS function do?",
+                "category": "Excel",
+                "description": "A function that adds values in a range based on multiple criteria.",
+                "tags": "SUMIFS, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The SUMIFS function adds values in a range based on multiple criteria. For example, =SUMIFS(C1:C10, A1:A10, '>10', B1:B10, '<20') adds the values in C1:C10 where the values in A1:A10 are greater than 10 and those in B1:B10 are less than 20. This function is useful for summing data with multiple conditions."
+        },
+        {
+                "title": "How do you use the AVERAGEIFS function?",
+                "category": "Excel",
+                "description": "A function that calculates the average of values in a range based on multiple criteria.",
+                "tags": "AVERAGEIFS, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The AVERAGEIFS function calculates the average of values in a range based on multiple criteria. For example, =AVERAGEIFS(D1:D10, A1:A10, '>10', B1:B10, '<20') calculates the average of values in D1:D10 where the corresponding values in A1:A10 are greater than 10 and those in B1:B10 are less than 20. This function is useful for averaging data with complex conditions."
+        },
+        {
+                "title": "What does the CHOOSE function do?",
+                "category": "Excel",
+                "description": "A function that returns a value from a list of values based on a specified index number.",
+                "tags": "CHOOSE, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The CHOOSE function returns a value from a list of values based on a specified index number. For example, =CHOOSE(2, 'Red', 'Green', 'Blue') returns 'Green', the second item in the list. This function is useful for selecting values from a predefined set based on dynamic input."
+        },
+        {
+                "title": "How do you use the TEXT function?",
+                "category": "Excel",
+                "description": "A function that formats a number and converts it to text based on a specified format.",
+                "tags": "TEXT, Functions, Formatting",
+                "paid": "Yes",
+                "answer": "The TEXT function formats a number and converts it to text based on a specified format. For example, =TEXT(1234.567, '##0.00') converts the number 1234.567 to '1234.57' with two decimal places. This function is useful for displaying numbers in a desired format within text strings or cells."
+        },
+        {
+                "title": "What is the purpose of the LEN function?",
+                "category": "Excel",
+                "description": "A function that returns the number of characters in a text string.",
+                "tags": "LEN, Functions, Text",
+                "paid": "Yes",
+                "answer": "The LEN function returns the number of characters in a text string. For example, =LEN('Hello World') returns 11, counting all characters including spaces. This function is useful for analyzing text data, validating input lengths, and performing text manipulations."
+        },
+        {
+                "title": "How do you use the MID function?",
+                "category": "Excel",
+                "description": "A function that extracts a specified number of characters from a text string, starting at a specified position.",
+                "tags": "MID, Functions, Text",
+                "paid": "Yes",
+                "answer": "The MID function extracts a specified number of characters from a text string, starting at a specified position. For example, =MID('Excel Formula', 1, 5) returns 'Excel', starting from position 1 and extracting 5 characters. This function is useful for isolating parts of text data in a cell."
+        },
+        {
+                "title": "What does the RIGHT function do?",
+                "category": "Excel",
+                "description": "A function that returns the last specified number of characters from a text string.",
+                "tags": "RIGHT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The RIGHT function returns the last specified number of characters from a text string. For example, =RIGHT('Excel Formula', 7) returns 'Formula', the last 7 characters of the string. This function is useful for extracting substrings from the end of text data."
+        },
+        {
+                "title": "How do you use the LEFT function?",
+                "category": "Excel",
+                "description": "A function that returns the first specified number of characters from a text string.",
+                "tags": "LEFT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The LEFT function returns the first specified number of characters from a text string. For example, =LEFT('Excel Formula', 5) returns 'Excel', the first 5 characters of the string. This function is useful for extracting substrings from the beginning of text data."
+        },
+        {
+                "title": "How do you use the MATCH function?",
+                "category": "Excel",
+                "description": "A function that searches for a specified value in a range and returns its relative position.",
+                "tags": "MATCH, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The MATCH function searches for a specified value in a range and returns its relative position. For example, =MATCH('Apple', A1:A10, 0) searches for 'Apple' in A1:A10 and returns its position within the range. The 0 indicates an exact match. This function is useful for locating data positions within a range."
+        },
+        {
+                "title": "What does the INDEX function do?",
+                "category": "Excel",
+                "description": "A function that returns the value of a cell in a specified row and column of a range.",
+                "tags": "INDEX, Functions, Lookup",
+                "paid": "Yes",
+                "answer": "The INDEX function returns the value of a cell in a specified row and column of a range. For example, =INDEX(A1:C10, 2, 3) returns the value from the second row and third column in the range A1:C10. This function is useful for retrieving specific data points from a large dataset."
+        },
+        {
+                "title": "How do you use the CONCAT function?",
+                "category": "Excel",
+                "description": "A function that combines multiple text strings into one string (replaces CONCATENATE).",
+                "tags": "CONCAT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The CONCAT function combines multiple text strings into one string. For example, =CONCAT('Hello', ' ', 'World') results in 'Hello World'. This function replaces CONCATENATE and allows for more flexible and efficient text combination operations."
+        },
+        {
+                "title": "What does the SPLIT function do?",
+                "category": "Excel",
+                "description": "A function that splits text into separate values based on a specified delimiter (available in Excel for Microsoft 365).",
+                "tags": "SPLIT, Functions, Text",
+                "paid": "Yes",
+                "answer": "The SPLIT function divides text into separate values based on a specified delimiter. For example, =SPLIT('Apple, Banana, Cherry', ', ') splits the text into separate cells for each fruit. This function is useful for breaking down concatenated text into individual components."
+        },
+        {
+                "title": "How do you use the PIVOT TABLE feature?",
+                "category": "Excel",
+                "description": "A feature that summarizes and analyzes data by creating a dynamic table for aggregating information.",
+                "tags": "PIVOT TABLE, Data Analysis, Feature",
+                "paid": "Yes",
+                "answer": "The PIVOT TABLE feature summarizes and analyzes data by creating a dynamic table that can aggregate and group information. For example, you can create a pivot table to sum sales data by region and product. This feature is useful for detailed data analysis and reporting."
+        },
+        {
+                "title": "What is the purpose of the FORMULA AUDITING tools?",
+                "category": "Excel",
+                "description": "Tools used for tracing and evaluating formulas to ensure accuracy and troubleshoot errors.",
+                "tags": "FORMULA AUDITING, Tools, Error Checking",
+                "paid": "Yes",
+                "answer": "The FORMULA AUDITING tools in Excel help trace and evaluate formulas to ensure accuracy and troubleshoot errors. Tools like Trace Precedents and Trace Dependents visually display the relationships between cells, helping to identify and correct formula issues effectively."
+        },
+        {
+                "title": "How do you use the CELL function?",
+                "category": "Excel",
+                "description": "A function that returns information about the formatting, location, or contents of a cell.",
+                "tags": "CELL, Functions, Information",
+                "paid": "Yes",
+                "answer": "The CELL function returns information about the formatting, location, or contents of a cell. For example, =CELL('address', A1) returns the address of cell A1 as 'A1'. This function can provide details such as cell format, contents, or row and column references."
+        },
+        {
+                "title": "What is the use of the FORMULATEXT function?",
+                "category": "Excel",
+                "description": "A function that displays the formula used in a cell as text.",
+                "tags": "FORMULATEXT, Functions, Debugging",
+                "paid": "Yes",
+                "answer": "The FORMULATEXT function displays the formula used in a cell as text. For example, =FORMULATEXT(A1) shows the formula in cell A1 as a text string. This function is useful for documenting and reviewing formulas, especially when debugging complex calculations."
+        },
+        {
+                "title": "How do you use the INFO function?",
+                "category": "Excel",
+                "description": "A function that provides information about the current workbook or worksheet environment.",
+                "tags": "INFO, Functions, Environment",
+                "paid": "Yes",
+                "answer": "The INFO function provides information about the current workbook or worksheet environment. For example, =INFO('directory') returns the path of the current directory. This function can be used to retrieve details about the workbook's state or the Excel environment."
+        },
+        {
+                "title": "What does the FORMATTING feature do?",
+                "category": "Excel",
+                "description": "A feature that allows users to change the appearance of cells, such as font, color, and borders.",
+                "tags": "FORMATTING, Feature, Appearance",
+                "paid": "Yes",
+                "answer": "The FORMATTING feature in Excel allows users to change the appearance of cells, including font style, color, cell borders, and number formats. For example, you can apply bold text, background color, or currency formatting to cells to enhance data presentation and readability."
+        },
+        {
+                "title": "How do you use the DATA VALIDATION feature?",
+                "category": "Excel",
+                "description": "A feature that restricts the type of data entered into a cell based on defined criteria.",
+                "tags": "DATA VALIDATION, Feature, Data Entry",
+                "paid": "Yes",
+                "answer": "The DATA VALIDATION feature restricts the type of data entered into a cell based on defined criteria. For example, setting a validation rule to only allow numbers between 1 and 100 ensures data integrity. This feature is useful for controlling input and preventing invalid data entries."
+        },
+        {
+                "title": "What does the ROUND function do?",
+                "category": "Excel",
+                "description": "A function that rounds a number to a specified number of digits.",
+                "tags": "ROUND, Functions, Number",
+                "paid": "Yes",
+                "answer": "The ROUND function rounds a number to a specified number of digits. For example, =ROUND(123.456, 2) rounds the number 123.456 to 123.46. This function is useful for controlling decimal precision in calculations and financial reports."
+        },
+        {
+                "title": "How do you use the RANK function?",
+                "category": "Excel",
+                "description": "A function that ranks a number within a list of numbers in ascending or descending order.",
+                "tags": "RANK, Functions, Statistical",
+                "paid": "Yes",
+                "answer": "The RANK function ranks a number within a list of numbers in ascending or descending order. For example, =RANK(85, A1:A10, 0) ranks the number 85 in the list A1:A10 in descending order. This function is useful for determining relative positions within a dataset."
+        },
+        {
+                "title": "What is the purpose of the GETPIVOTDATA function?",
+                "category": "Excel",
+                "description": "A function that retrieves data from a PivotTable based on specific criteria.",
+                "tags": "GETPIVOTDATA, Functions, PivotTable",
+                "paid": "Yes",
+                "answer": "The GETPIVOTDATA function retrieves data from a PivotTable based on specific criteria. For example, =GETPIVOTDATA('Sales', A1, 'Region', 'East') returns the sales value for the 'East' region from the PivotTable where cell A1 is located. This function is useful for extracting detailed data from PivotTables for reporting and analysis."
+        },
+        {
+                "title": "How do you use the HYPERLINK function?",
+                "category": "Excel",
+                "description": "A function that creates a hyperlink to a specified URL or file location.",
+                "tags": "HYPERLINK, Functions, Links",
+                "paid": "Yes",
+                "answer": "The HYPERLINK function creates a hyperlink to a specified URL or file location. For example, =HYPERLINK('http://www.example.com', 'Visit Example') creates a link with the text 'Visit Example' that directs to 'http://www.example.com'. This function is useful for adding clickable links within a spreadsheet."
+        }
+]

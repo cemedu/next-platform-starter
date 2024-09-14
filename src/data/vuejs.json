@@ -1,0 +1,1034 @@
+[
+        {
+                "title": "What is Vue.js?",
+                "category": "VueJs",
+                "description": "A progressive JavaScript framework for building user interfaces.",
+                "tags": "framework, JavaScript, UI",
+                "paid": "Yes",
+                "answer": "Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It is designed to be incrementally adoptable, which means you can use it to enhance existing applications or build new ones from scratch. Vue.js focuses on the view layer and provides a reactive data-binding system, component-based architecture, and a simple API for building interactive UIs."
+        },
+        {
+                "title": "What are Vue components?",
+                "category": "VueJs",
+                "description": "Reusable building blocks for Vue applications.",
+                "tags": "components, reusability, Vue",
+                "paid": "Yes",
+                "answer": "Vue components are reusable building blocks in a Vue application. Each component encapsulates its own template, logic, and styles, making it a self-contained unit of code. Components can be nested within other components to create complex UIs. This modular approach promotes code reusability, maintainability, and organization, allowing developers to manage and scale their applications more effectively."
+        },
+        {
+                "title": "What is Vue Router?",
+                "category": "VueJs",
+                "description": "The official routing library for Vue.js.",
+                "tags": "routing, Vue Router, navigation",
+                "paid": "Yes",
+                "answer": "Vue Router is the official routing library for Vue.js, allowing developers to implement navigation and routing within Vue applications. It enables the creation of single-page applications with dynamic views based on the URL. Vue Router provides features such as nested routes, route guards, and programmatic navigation, which help manage the navigation and rendering of different components based on the application's state or URL."
+        },
+        {
+                "title": "How does Vue.js handle reactivity?",
+                "category": "VueJs",
+                "description": "Vue's system for automatic data updating in the UI.",
+                "tags": "reactivity, data binding, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js uses a reactive data binding system to handle updates to the user interface automatically. When the state of a Vue instance or component changes, Vue’s reactivity system ensures that the changes are reflected in the DOM. This is achieved through a combination of getters, setters, and dependency tracking. Vue’s reactivity system leverages ES5 getters and setters to observe changes to data properties and trigger updates to the DOM as needed."
+        },
+        {
+                "title": "What are Vue directives?",
+                "category": "VueJs",
+                "description": "Special tokens that bind data to the DOM.",
+                "tags": "directives, data binding, Vue",
+                "paid": "Yes",
+                "answer": "Vue directives are special tokens in the markup that tell the Vue.js library to do something with the DOM. Directives are prefixed with `v-`, such as `v-bind` and `v-model`. They provide functionality for data binding, event handling, and conditional rendering. For example, `v-bind` can be used to dynamically bind an attribute to a component's data, while `v-if` can conditionally render elements based on a boolean expression."
+        },
+        {
+                "title": "How does Vue.js handle state management?",
+                "category": "VueJs",
+                "description": "Managing application state with Vuex.",
+                "tags": "state management, Vuex, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles state management through Vuex, an official state management library for Vue applications. Vuex provides a centralized store for all the components in an application, allowing for a predictable and consistent way to manage and update the state. It follows a unidirectional data flow and enforces strict rules to ensure that state changes are made in a predictable manner, using actions, mutations, and getters."
+        },
+        {
+                "title": "What is the Vue instance?",
+                "category": "VueJs",
+                "description": "The core of every Vue application.",
+                "tags": "Vue instance, core, Vue",
+                "paid": "Yes",
+                "answer": "The Vue instance is the core of every Vue.js application. It is created using the `Vue` constructor and serves as the root of a Vue application. The Vue instance connects the application to the DOM and provides various options and lifecycle hooks for managing the application's behavior. By initializing a Vue instance with options such as `data`, `methods`, and `mounted`, developers can define the application's state, methods, and lifecycle events."
+        },
+        {
+                "title": "How does Vue.js handle conditional rendering?",
+                "category": "VueJs",
+                "description": "Rendering elements conditionally with Vue.",
+                "tags": "conditional rendering, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles conditional rendering through directives such as `v-if`, `v-else-if`, and `v-else`. These directives allow developers to control the visibility of elements based on a condition. When the condition specified in `v-if` evaluates to `true`, the element is rendered; otherwise, it is removed from the DOM. Vue also provides `v-show` for simpler conditional rendering that toggles the `display` CSS property without removing the element from the DOM."
+        },
+        {
+                "title": "What are Vue.js lifecycle hooks?",
+                "category": "VueJs",
+                "description": "Methods that provide insight into component lifecycle.",
+                "tags": "lifecycle hooks, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js lifecycle hooks are methods that allow developers to execute code at specific stages of a component's lifecycle. These hooks include `created`, `mounted`, `updated`, and `destroyed`, among others. Each hook corresponds to a particular phase of the component's lifecycle, such as initialization, DOM insertion, and cleanup. By leveraging these hooks, developers can perform actions such as fetching data, setting up subscriptions, or cleaning up resources at appropriate times."
+        },
+        {
+                "title": "How does Vue.js handle form input?",
+                "category": "VueJs",
+                "description": "Two-way data binding for form elements.",
+                "tags": "form input, two-way binding, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles form input using the `v-model` directive, which provides two-way data binding for form elements. When `v-model` is applied to an input element, it automatically synchronizes the value of the input with the corresponding data property in the Vue instance. This means that changes to the input field update the data property, and changes to the data property update the input field. `v-model` can be used with various input types, including text, checkbox, and select."
+        },
+        {
+                "title": "What is the purpose of Vue.js mixins?",
+                "category": "VueJs",
+                "description": "Reusable code across multiple components.",
+                "tags": "mixins, code reuse, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js mixins are a mechanism for reusing code across multiple components. A mixin is an object that contains properties, methods, and lifecycle hooks that can be shared among components. By defining a mixin, you can encapsulate reusable logic and then include it in any component that requires it. This helps reduce code duplication and keeps components clean. Mixins are particularly useful for sharing common functionality or behavior that is needed in several places within an application."
+        },
+        {
+                "title": "How does Vue.js handle event handling?",
+                "category": "VueJs",
+                "description": "Binding and handling events in Vue components.",
+                "tags": "event handling, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles event handling using the `v-on` directive, which allows developers to listen for and respond to DOM events. By using `v-on` followed by the event name, such as `v-on:click`, you can bind event listeners to methods or inline expressions. Vue provides a shorthand `@` for `v-on`, making it easier to write event handlers. Event handling in Vue is straightforward and supports event modifiers for tasks like stopping event propagation or preventing default actions."
+        },
+        {
+                "title": "What is the Vue.js computed property?",
+                "category": "VueJs",
+                "description": "Properties that are computed based on reactive data.",
+                "tags": "computed properties, reactivity, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, a computed property is a property that is automatically recalculated based on reactive data dependencies. Computed properties are defined in the `computed` option of a Vue component and are used for performing calculations or transformations of data. Unlike methods, computed properties are cached based on their dependencies, meaning they are only recalculated when the dependent data changes. This makes computed properties efficient for scenarios where derived data needs to be computed from existing state."
+        },
+        {
+                "title": "What is Vue.js watch?",
+                "category": "VueJs",
+                "description": "A way to react to changes in data properties.",
+                "tags": "watchers, Vue, reactivity",
+                "paid": "Yes",
+                "answer": "Vue.js watch is a feature that allows developers to react to changes in data properties. By defining a watcher in the `watch` option of a Vue component, you can specify a function that will be called whenever the watched property changes. This is useful for performing side effects, such as making API calls or triggering additional updates, in response to changes in the component's state. Unlike computed properties, watchers do not cache their results and are invoked every time the watched data changes."
+        },
+        {
+                "title": "What is the Vue.js `v-bind` directive?",
+                "category": "VueJs",
+                "description": "A directive for binding attributes to data.",
+                "tags": "v-bind, data binding, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind` directive in Vue.js is used for binding attributes or properties of DOM elements to Vue instance data. It allows you to dynamically bind values to HTML attributes, such as `href`, `class`, or `style`. For example, `v-bind:href='url'` binds the `href` attribute of an anchor tag to the `url` data property. This ensures that whenever the `url` property changes, the attribute on the DOM element will update automatically to reflect the new value."
+        },
+        {
+                "title": "What is Vue.js `v-for` directive used for?",
+                "category": "VueJs",
+                "description": "Rendering lists of items using Vue.",
+                "tags": "v-for, lists, Vue",
+                "paid": "Yes",
+                "answer": "The `v-for` directive in Vue.js is used to render a list of items by iterating over an array or object. It creates a new DOM element for each item in the collection. For example, `<li v-for='item in items' :key='item.id'>{{ item.name }}</li>` generates a list of `<li>` elements for each item in the `items` array. The `:key` attribute is used to track individual items and improve performance by helping Vue efficiently update and render the list."
+        },
+        {
+                "title": "What is the purpose of Vue.js `provide` and `inject`?",
+                "category": "VueJs",
+                "description": "Dependency injection between ancestor and descendant components.",
+                "tags": "provide, inject, dependency injection, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `provide` and `inject` are used for dependency injection between ancestor and descendant components. The `provide` option in a parent component allows it to provide data or methods to its descendant components, while the `inject` option in a child component allows it to access that provided data. This pattern is useful for sharing common data or functionality deeply through the component tree without having to pass props through every intermediate component, simplifying component hierarchies and improving code organization."
+        },
+        {
+                "title": "What is the difference between `v-show` and `v-if`?",
+                "category": "VueJs",
+                "description": "Conditional rendering differences in Vue.",
+                "tags": "v-show, v-if, conditional rendering, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, `v-if` and `v-show` are both used for conditional rendering, but they work differently. `v-if` adds or removes elements from the DOM based on the condition, making it suitable for cases where elements are toggled rarely. In contrast, `v-show` toggles the `display` CSS property of the element, keeping it in the DOM but hiding it from view. `v-show` is more performant for frequently toggled elements since it avoids the cost of re-rendering, while `v-if` is more efficient for infrequent toggling."
+        },
+        {
+                "title": "What is Vue.js `refs` used for?",
+                "category": "VueJs",
+                "description": "Accessing DOM elements or child components directly.",
+                "tags": "refs, DOM, child components, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, `refs` are used to access DOM elements or child components directly. By adding a `ref` attribute to an element or component, you create a reference that can be accessed via `this.$refs` in the Vue instance. This is useful for interacting with the DOM or child components imperatively, such as focusing an input element or calling methods on a child component. However, it is generally recommended to use Vue's declarative features whenever possible and resort to `refs` only when necessary."
+        },
+        {
+                "title": "What is a Vue.js filter?",
+                "category": "VueJs",
+                "description": "Transforming data for display in templates.",
+                "tags": "filters, data transformation, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js filters are functions that can be used to transform data for display in templates. Filters are applied within double curly braces `{{ }}` or with the `v-bind` directive. They allow you to format or modify the output of data before it is rendered. For example, a date filter can format a date string to a more readable format. Filters can be registered globally or locally within components and are useful for keeping templates clean and separating formatting logic from the main template."
+        },
+        {
+                "title": "What is Vue CLI?",
+                "category": "VueJs",
+                "description": "Command Line Interface for scaffolding Vue projects.",
+                "tags": "Vue CLI, project setup, Vue",
+                "paid": "Yes",
+                "answer": "Vue CLI is a command-line interface tool for scaffolding and managing Vue.js projects. It provides a powerful and extensible set of tools for creating new projects, managing dependencies, and running development servers. With Vue CLI, developers can quickly generate a new project with a standard configuration, integrate various plugins, and perform tasks such as building and deploying applications. It simplifies the setup process and offers a range of options for customizing and optimizing Vue projects."
+        },
+        {
+                "title": "How do you define a Vue.js custom directive?",
+                "category": "VueJs",
+                "description": "Creating custom behavior for DOM elements.",
+                "tags": "custom directives, Vue",
+                "paid": "Yes",
+                "answer": "To define a custom directive in Vue.js, you use the `Vue.directive` method. A custom directive allows you to create reusable, low-level behavior that can be applied to DOM elements. You can specify hooks such as `bind`, `inserted`, and `update` to manage the directive's behavior during various stages of the element's lifecycle. For example, a custom directive could handle custom formatting or event binding. Directives are useful for encapsulating complex or reusable DOM manipulations that are not easily covered by existing Vue directives."
+        },
+        {
+                "title": "What are Vue.js dynamic components?",
+                "category": "VueJs",
+                "description": "Components that change based on dynamic conditions.",
+                "tags": "dynamic components, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js dynamic components allow you to switch between different components dynamically based on conditions. This is achieved using the `component` element along with the `:is` attribute, which can take a component name or component definition. For example, `<component :is='currentComponent'></component>` will render the component specified by `currentComponent`. Dynamic components are useful for scenarios where you need to render different components based on user interactions or application state without having to manage multiple static components."
+        },
+        {
+                "title": "What is Vue.js `async` component?",
+                "category": "VueJs",
+                "description": "Loading components asynchronously.",
+                "tags": "async components, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `async` components allow you to load components asynchronously, which can improve the performance of your application by reducing the initial load time. By defining a component as an asynchronous component, it will be loaded on demand when it is needed, rather than being included in the initial bundle. This is particularly useful for large applications with many components. You can use dynamic `import` statements to define async components, such as `const AsyncComponent = () => import('./components/AsyncComponent.vue')`."
+        },
+        {
+                "title": "How do you use Vue.js with TypeScript?",
+                "category": "VueJs",
+                "description": "Integrating Vue.js with TypeScript for type safety.",
+                "tags": "TypeScript, Vue, integration",
+                "paid": "Yes",
+                "answer": "To use Vue.js with TypeScript, you need to set up a project with TypeScript support and configure Vue components to work with TypeScript. This involves installing TypeScript and related Vue typings, configuring `tsconfig.json`, and using `.ts` or `.tsx` files for your components. Vue CLI provides an option to set up a project with TypeScript support. In Vue components, you can use TypeScript for type-checking props, data, methods, and computed properties, improving code quality and maintainability."
+        },
+        {
+                "title": "What are Vue.js slots?",
+                "category": "VueJs",
+                "description": "Placeholder content for components.",
+                "tags": "slots, Vue, component communication",
+                "paid": "Yes",
+                "answer": "Vue.js slots are a way to pass content into components, providing placeholders that can be filled with custom content. Slots allow for flexible and reusable components by enabling you to insert HTML or other components into a slot defined in a child component. Vue supports default slots, named slots, and scoped slots. Default slots are used for basic content insertion, named slots allow for multiple content areas, and scoped slots provide access to data within the slot's context, offering advanced customization options."
+        },
+        {
+                "title": "How does Vue.js handle global event bus?",
+                "category": "VueJs",
+                "description": "Using an event bus for cross-component communication.",
+                "tags": "event bus, global events, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, a global event bus is a pattern used for cross-component communication, allowing different components to emit and listen to events outside of their hierarchical structure. An event bus is typically created by instantiating a new Vue instance and using it to manage event emission and listening. For example, `const eventBus = new Vue()` creates an event bus, and components can use `eventBus.$emit('eventName', data)` to emit events and `eventBus.$on('eventName', callback)` to listen for them. However, this pattern is less favored in modern Vue applications, with Vuex or the Composition API being recommended alternatives for managing state and communication."
+        },
+        {
+                "title": "What are Vue.js `mixins` and how are they used?",
+                "category": "VueJs",
+                "description": "Reusing common logic in Vue components.",
+                "tags": "mixins, Vue, code reuse",
+                "paid": "Yes",
+                "answer": "Vue.js mixins are used to share common logic and behavior across multiple components. A mixin is a JavaScript object containing component options, such as data, methods, and lifecycle hooks. You can create a mixin and then include it in components to reuse the mixin's functionality. For example, a mixin might include common methods or data used in several components. This promotes code reuse and modularity. However, be cautious with mixins as they can lead to naming conflicts and make components harder to understand if overused."
+        },
+        {
+                "title": "What are Vue.js transitions?",
+                "category": "VueJs",
+                "description": "Adding animations during component transitions.",
+                "tags": "transitions, animations, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js transitions provide a way to add animations or transitions when elements enter or leave the DOM. By using the `transition` wrapper component, you can define enter and leave animations with CSS classes or JavaScript hooks. Vue supports various transition effects, including entering and leaving transitions, and provides transition hooks such as `before-enter`, `enter`, and `leave` for more control. This feature is useful for creating smooth visual effects and enhancing the user experience when components change states or are dynamically added or removed."
+        },
+        {
+                "title": "How do you configure Vue.js for production build?",
+                "category": "VueJs",
+                "description": "Optimizing Vue application for production.",
+                "tags": "production build, optimization, Vue",
+                "paid": "Yes",
+                "answer": "To configure Vue.js for a production build, you typically use Vue CLI's built-in commands and settings to optimize the application. Running `npm run build` or `yarn build` creates a production-ready version of the application with minified and optimized code. This build process includes code splitting, tree shaking, and other optimizations to improve performance. You can further customize the build configuration through `vue.config.js` to set up environment variables, configure webpack options, and ensure that the application is well-optimized for deployment in production environments."
+        },
+        {
+                "title": "What are Vue.js computed properties used for?",
+                "category": "VueJs",
+                "description": "Deriving values from reactive data.",
+                "tags": "computed properties, Vue, reactivity",
+                "paid": "Yes",
+                "answer": "Vue.js computed properties are used to derive and compute values based on reactive data. They are defined in the `computed` option of a Vue component and automatically update whenever their dependencies change. Unlike methods, computed properties are cached, meaning they are only recalculated when their reactive dependencies change. This caching mechanism makes computed properties efficient for scenarios where you need to perform expensive calculations or transformations on data that are used in the template. They are ideal for derived state and complex calculations."
+        },
+        {
+                "title": "What is the purpose of Vue.js `key` attribute?",
+                "category": "VueJs",
+                "description": "Ensuring efficient re-rendering of elements in lists.",
+                "tags": "key, list rendering, Vue",
+                "paid": "Yes",
+                "answer": "The `key` attribute in Vue.js is used to give a unique identifier to each element in a list when rendering with `v-for`. This helps Vue track each element and optimize the re-rendering process. By assigning a unique `key` to each item, Vue can efficiently update or re-order the list items without having to re-render the entire list, which improves performance and prevents unnecessary DOM manipulations."
+        },
+        {
+                "title": "How do you pass data between Vue.js components?",
+                "category": "VueJs",
+                "description": "Methods to share data between components.",
+                "tags": "data passing, components, Vue",
+                "paid": "Yes",
+                "answer": "Data in Vue.js can be passed between components using props and events. Props are used to pass data from a parent component to a child component. You define props in the child component and bind them in the parent. For example, `<ChildComponent :propName='parentData' />`. For communication from a child to a parent, you can use custom events emitted from the child component using `$emit`. For inter-component communication not directly related, a global event bus or state management solutions like Vuex can be used."
+        },
+        {
+                "title": "What is Vue.js `v-bind` shorthand?",
+                "category": "VueJs",
+                "description": "Using shorthand syntax for attribute binding.",
+                "tags": "v-bind, shorthand, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, `v-bind` has a shorthand syntax, which is the `:` symbol. This shorthand allows you to bind attributes to data properties in a more concise manner. For example, instead of writing `v-bind:href='url'`, you can use `:href='url'`. This shorthand is particularly useful for improving readability and reducing verbosity in your templates, making the code easier to maintain and understand."
+        },
+        {
+                "title": "How do you handle errors in Vue.js components?",
+                "category": "VueJs",
+                "description": "Strategies for managing errors in Vue components.",
+                "tags": "error handling, Vue",
+                "paid": "Yes",
+                "answer": "Error handling in Vue.js components can be managed through various strategies. Vue provides global error handlers using `Vue.config.errorHandler` to catch errors from all components. Additionally, you can use `try-catch` blocks within methods or lifecycle hooks to handle errors locally. For HTTP requests or asynchronous operations, you can use `.catch()` or `async/await` with `try-catch` to handle potential errors. Custom error boundaries or error logging services can also be implemented to track and manage errors effectively."
+        },
+        {
+                "title": "What are Vue.js mixins and how are they used?",
+                "category": "VueJs",
+                "description": "Sharing code across multiple Vue components.",
+                "tags": "mixins, Vue, code reuse",
+                "paid": "Yes",
+                "answer": "Vue.js mixins are a mechanism for reusing code across multiple components. A mixin is an object that contains properties, methods, and lifecycle hooks that can be included in components. By creating a mixin and using it in different components, you can share common logic and functionality, reducing code duplication. Mixins are added to components via the `mixins` option and can provide shared methods, data, or hooks. However, be cautious of potential naming conflicts and overuse, which can lead to harder-to-maintain code."
+        },
+        {
+                "title": "What is Vue.js `provide` and `inject`?",
+                "category": "VueJs",
+                "description": "Dependency injection for components.",
+                "tags": "provide, inject, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `provide` and `inject` are used for dependency injection between ancestor and descendant components. `provide` allows a parent component to pass data or methods to all its descendant components, while `inject` allows descendant components to access this provided data. This pattern is useful for avoiding prop drilling (passing props through multiple layers) and sharing data or functionality across deeply nested components. It helps to maintain a cleaner and more organized component structure."
+        },
+        {
+                "title": "How does Vue.js handle dynamic CSS classes?",
+                "category": "VueJs",
+                "description": "Binding dynamic classes to elements in Vue.",
+                "tags": "dynamic classes, CSS, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles dynamic CSS classes using the `:class` binding. This allows you to bind an object, array, or string to the `class` attribute of an element, dynamically applying classes based on the component's state. For example, `:class='{ active: isActive}'` adds the `active` class if `isActive` is true. You can also use arrays to apply multiple classes conditionally or strings for class names. This approach provides flexibility in managing and toggling CSS classes based on data or computed properties."
+        },
+        {
+                "title": "What is the Vue.js `v-on` directive used for?",
+                "category": "VueJs",
+                "description": "Handling DOM events in Vue components.",
+                "tags": "v-on, event handling, Vue",
+                "paid": "Yes",
+                "answer": "The `v-on` directive in Vue.js is used to listen for and handle DOM events. It allows you to bind event listeners to elements in the template, and you can specify a method or inline expression to be executed when the event occurs. For example, `v-on:click='handleClick'` will call the `handleClick` method when the element is clicked. You can also use the shorthand `@click='handleClick'`. `v-on` supports event modifiers such as `.prevent` and `.stop` to manage event behavior, like preventing default actions or stopping event propagation."
+        },
+        {
+                "title": "What are Vue.js computed properties and how do they differ from methods?",
+                "category": "VueJs",
+                "description": "Using computed properties versus methods.",
+                "tags": "computed properties, methods, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js computed properties are used to derive values based on reactive data and are cached for performance. Unlike methods, which are called every time they are referenced, computed properties are only recalculated when their dependencies change. This caching mechanism makes computed properties ideal for expensive operations or transformations that depend on reactive data. Methods, on the other hand, are recalculated each time they are called and do not cache their results, making them more suitable for simple or infrequently used operations."
+        },
+        {
+                "title": "How do you implement pagination in a Vue.js application?",
+                "category": "VueJs",
+                "description": "Implementing pagination for data display.",
+                "tags": "pagination, data display, Vue",
+                "paid": "Yes",
+                "answer": "To implement pagination in a Vue.js application, you can use a combination of computed properties and methods. First, determine the total number of items and the number of items per page. Create a computed property to calculate the current page's data based on the current page number and items per page. For instance, `computedItems` could slice the data array to return only the items for the current page. Provide controls for changing pages, and update the current page number accordingly. You may also use libraries or components designed for pagination to simplify this process."
+        },
+        {
+                "title": "What is Vue.js `v-model` directive and how does it work?",
+                "category": "VueJs",
+                "description": "Two-way data binding in Vue.js.",
+                "tags": "v-model, two-way binding, Vue",
+                "paid": "Yes",
+                "answer": "The `v-model` directive in Vue.js enables two-way data binding between form elements and Vue component data. It automatically synchronizes the value of an input element with a data property, allowing updates to the input field to reflect in the data property and vice versa. For example, `v-model='inputValue'` on an input element binds its value to `inputValue`. This directive simplifies the management of form input states and is commonly used with form elements like text inputs, checkboxes, and selects."
+        },
+        {
+                "title": "What is the purpose of `this` in Vue.js components?",
+                "category": "VueJs",
+                "description": "Referencing component instance properties.",
+                "tags": "this, Vue, component instance",
+                "paid": "Yes",
+                "answer": "`this` in Vue.js components refers to the Vue instance or component instance itself. It is used to access component properties, methods, computed properties, and data. Within methods, computed properties, or lifecycle hooks, `this` allows you to interact with the component's state and logic. For example, `this.message` accesses the `message` data property, and `this.someMethod()` calls a method defined in the component. It is crucial for managing and manipulating the component’s internal state and behavior."
+        },
+        {
+                "title": "How can you optimize performance in a Vue.js application?",
+                "category": "VueJs",
+                "description": "Techniques for improving Vue.js application performance.",
+                "tags": "performance, optimization, Vue",
+                "paid": "Yes",
+                "answer": "Optimizing performance in a Vue.js application involves several strategies. Key techniques include using `v-show` for frequently toggled elements to avoid re-rendering, leveraging computed properties for expensive calculations, and employing lazy loading for components. Additionally, use `v-for` with proper `key` attributes to enhance rendering efficiency, and consider code-splitting to load only necessary code for each view. Optimizing state management with Vuex, avoiding unnecessary watchers or events, and using performance monitoring tools can also help in identifying and addressing performance bottlenecks."
+        },
+        {
+                "title": "What is Vuex and why is it used in Vue.js applications?",
+                "category": "VueJs",
+                "description": "State management pattern and library for Vue.js.",
+                "tags": "Vuex, state management, Vue",
+                "paid": "Yes",
+                "answer": "Vuex is a state management library for Vue.js applications. It provides a centralized store to manage the state of your application, making it easier to manage and debug complex state interactions. Vuex follows a strict pattern of state management with actions, mutations, and getters to handle state changes and access. This pattern helps in maintaining predictable state mutations, ensuring that components react to state changes in a consistent manner. Vuex is particularly useful in large applications where multiple components need to share and synchronize state."
+        },
+        {
+                "title": "How do you handle asynchronous operations in Vue.js?",
+                "category": "VueJs",
+                "description": "Managing async operations in Vue components.",
+                "tags": "asynchronous operations, Vue, async/await",
+                "paid": "Yes",
+                "answer": "Handling asynchronous operations in Vue.js is typically done using JavaScript's `async/await` syntax or Promises. You can perform async operations in methods or lifecycle hooks by defining the method as `async` and using `await` to pause execution until the Promise resolves. For example, `async fetchData() { this.data = await fetch('/api/data').then(res => res.json()); }`. This approach simplifies managing asynchronous code and handling responses. Additionally, Vuex actions can be used for handling async operations at the state management level."
+        },
+        {
+                "title": "What is the `v-pre` directive in Vue.js?",
+                "category": "VueJs",
+                "description": "Skipping compilation for specified elements.",
+                "tags": "v-pre, Vue, directive",
+                "paid": "Yes",
+                "answer": "The `v-pre` directive in Vue.js is used to skip the compilation for a portion of the template. By adding `v-pre` to an element or component, you instruct Vue to skip interpolation and directive processing for that element and its children. This is useful for displaying raw HTML or code snippets without Vue interpreting them. For example, `<span v-pre>{{ rawText }}</span>` will display `{{ rawText }}` as plain text rather than evaluating it as a Vue expression."
+        },
+        {
+                "title": "What are Vue.js lifecycle hooks?",
+                "category": "VueJs",
+                "description": "Methods that are called during a component's lifecycle.",
+                "tags": "lifecycle hooks, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js lifecycle hooks are methods that provide opportunities to run code at specific points in a component's lifecycle, from creation to destruction. Key lifecycle hooks include `created`, `mounted`, `updated`, and `destroyed`. For example, `created` is called when the component instance is created, and `mounted` is called when the component is added to the DOM. These hooks allow you to perform initialization, manage side effects, or clean up resources, helping you to integrate components with other parts of your application effectively."
+        },
+        {
+                "title": "What is the `v-slot` directive used for in Vue.js?",
+                "category": "VueJs",
+                "description": "Scoped slots for more flexible component content.",
+                "tags": "v-slot, scoped slots, Vue",
+                "paid": "Yes",
+                "answer": "The `v-slot` directive in Vue.js is used for creating scoped slots, which allow a parent component to pass content to a child component while also providing access to data from the child. Scoped slots offer more flexibility than regular slots by allowing the parent to access data or methods defined in the child component. For example, `<template v-slot:default='slotProps'> <div>{{ slotProps.someData }}</div></template>` enables the parent to use `slotProps` provided by the child component within the slot's content."
+        },
+        {
+                "title": "How do you manage forms in Vue.js?",
+                "category": "VueJs",
+                "description": "Handling form inputs and submission in Vue.",
+                "tags": "forms, Vue, data binding",
+                "paid": "Yes",
+                "answer": "Managing forms in Vue.js involves binding form input values to component data using `v-model`, handling form submission, and validating inputs. Use `v-model` for two-way data binding, ensuring input values are synchronized with data properties. On form submission, use `@submit.prevent` to prevent the default form action and handle the submission within a method. For validation, you can use custom methods or integrate third-party libraries like Vuelidate or VeeValidate to handle complex validation rules and provide user feedback."
+        },
+        {
+                "title": "How does Vue.js handle component communication?",
+                "category": "VueJs",
+                "description": "Techniques for passing data and events between components.",
+                "tags": "component communication, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles component communication through several techniques. Parent-to-child communication is achieved using props, where the parent component passes data to its children. Child-to-parent communication is done using custom events emitted from the child and listened to by the parent. For sibling components or deeper communication, Vuex provides a state management pattern, while an event bus can be used for non-hierarchical communication. The Composition API also introduces new ways to manage and share state between components using reactive references and functions."
+        },
+        {
+                "title": "What is Vue.js `v-once` directive used for?",
+                "category": "VueJs",
+                "description": "Rendering elements only once for optimization.",
+                "tags": "v-once, Vue, performance",
+                "paid": "Yes",
+                "answer": "The `v-once` directive in Vue.js is used to render an element or component only once, optimizing performance by avoiding re-rendering. When you use `v-once` on an element or component, Vue will render it initially and then cache the rendered output. Subsequent updates to the data or component will not trigger re-rendering for that element, which can be beneficial for performance when dealing with static content that does not change over time."
+        },
+        {
+                "title": "How do you set up a Vue.js project with TypeScript?",
+                "category": "VueJs",
+                "description": "Setting up Vue.js with TypeScript support.",
+                "tags": "TypeScript, Vue, setup",
+                "paid": "Yes",
+                "answer": "To set up a Vue.js project with TypeScript, you can use Vue CLI's built-in TypeScript template. Run `vue create my-project` and select the TypeScript option during the setup process. This configures TypeScript support, installs necessary dependencies, and generates a TypeScript configuration file (`tsconfig.json`). Alternatively, you can add TypeScript to an existing Vue project by installing `typescript`, `ts-loader`, and `vue-class-component`, and then configuring `tsconfig.json` and updating component files to use TypeScript syntax."
+        },
+        {
+                "title": "What is Vue Router and how is it used?",
+                "category": "VueJs",
+                "description": "Routing library for single-page applications.",
+                "tags": "Vue Router, routing, Vue",
+                "paid": "Yes",
+                "answer": "Vue Router is the official routing library for Vue.js, used for managing navigation and routing in single-page applications (SPAs). It allows you to define routes, map them to components, and handle navigation between different views. You configure Vue Router by creating a `router` instance with route definitions and then use it in your Vue application by passing it to the `VueRouter` instance and the Vue instance. You can define nested routes, dynamic routes, and route guards to manage access and transitions between routes effectively."
+        },
+        {
+                "title": "How do you use Vue.js directives in custom components?",
+                "category": "VueJs",
+                "description": "Creating and using custom directives in Vue components.",
+                "tags": "custom directives, Vue, components",
+                "paid": "Yes",
+                "answer": "To use custom directives in Vue.js components, you first need to register the directive globally or locally within the component. You can create a custom directive by using `Vue.directive('directiveName', { ... })` for global registration or by defining it in the `directives` option of a component for local use. Directives allow you to encapsulate custom behavior that can be applied to DOM elements. For example, you might create a directive to handle custom tooltips or advanced interactions, using hooks like `bind`, `update`, and `unbind` to define its behavior."
+        },
+        {
+                "title": "What is the Vue.js `v-model` directive?",
+                "category": "VueJs",
+                "description": "Two-way binding of form input elements.",
+                "tags": "v-model, two-way binding, Vue",
+                "paid": "Yes",
+                "answer": "The `v-model` directive in Vue.js is used for two-way data binding of form input elements. It synchronizes the value of an input, textarea, or select element with a data property in the Vue instance. When the input value changes, the corresponding data property is updated, and when the data property changes, the input value is updated accordingly. This ensures that the form elements and the underlying data remain in sync, simplifying the process of handling user input and maintaining reactive state."
+        },
+        {
+                "title": "What is Vue.js `provide` and `inject`?",
+                "category": "VueJs",
+                "description": "Dependency injection between parent and child components.",
+                "tags": "provide, inject, dependency injection, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `provide` and `inject` are used for dependency injection between a parent and its descendant components. The `provide` option in a parent component allows it to pass data or methods down the component tree, while the `inject` option in a child component enables it to access the provided data. This is useful for deeply nested components to share common data or functionality without having to pass props through every intermediary component, thereby simplifying component hierarchies and making code more manageable."
+        },
+        {
+                "title": "What is a Vue.js mixin?",
+                "category": "VueJs",
+                "description": "Reusable functionality shared across components.",
+                "tags": "mixins, code reuse, Vue",
+                "paid": "Yes",
+                "answer": "A Vue.js mixin is a way to share reusable functionality across multiple components. A mixin is a JavaScript object that contains component options such as data, methods, and lifecycle hooks. By including a mixin in a component, you can reuse the mixin’s functionality without duplicating code. This helps keep components modular and maintainable. However, overusing mixins can lead to complexity and naming conflicts, so they should be used judiciously and ideally complemented by other techniques like Composition API for more modular and scalable code."
+        },
+        {
+                "title": "What are Vue.js lifecycle hooks?",
+                "category": "VueJs",
+                "description": "Methods to tap into different stages of a component's lifecycle.",
+                "tags": "lifecycle hooks, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js lifecycle hooks are methods that provide opportunities to execute code at specific stages of a component's lifecycle. These hooks include `beforeCreate`, `created`, `beforeMount`, `mounted`, `beforeUpdate`, `updated`, `beforeDestroy`, and `destroyed`. Each hook corresponds to a particular phase of the component's lifecycle, from its creation to its destruction. By using these hooks, developers can perform actions such as data fetching, setup, and cleanup, and manage side effects or interactions with the DOM at precise moments."
+        },
+        {
+                "title": "How do Vue.js handle form validation?",
+                "category": "VueJs",
+                "description": "Implementing form validation in Vue components.",
+                "tags": "form validation, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, form validation can be implemented using a combination of data binding, computed properties, and methods. You can use `v-model` to bind form inputs to data properties and then use methods or computed properties to validate the input values. There are also libraries like VeeValidate and vuelidate that provide more comprehensive validation solutions with built-in rules, custom validators, and error handling. These libraries simplify the process of creating complex validation logic and managing form states."
+        },
+        {
+                "title": "What are Vue.js directives?",
+                "category": "VueJs",
+                "description": "Special tokens in markup that apply special behavior.",
+                "tags": "directives, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js directives are special tokens in the template syntax that tell the library to do something with the DOM. Directives are prefixed with `v-`, such as `v-if`, `v-for`, and `v-bind`. They extend HTML with additional functionality and are responsible for manipulating the DOM based on Vue instance data. For example, `v-if` conditionally renders elements, `v-for` iterates over arrays to render lists, and `v-bind` dynamically binds attributes to data properties. Directives are a core feature of Vue for creating dynamic and interactive UIs."
+        },
+        {
+                "title": "What is Vue.js `v-on` directive?",
+                "category": "VueJs",
+                "description": "Handling events in Vue components.",
+                "tags": "v-on, event handling, Vue",
+                "paid": "Yes",
+                "answer": "The `v-on` directive in Vue.js is used to listen to and handle DOM events. It allows developers to bind event listeners to methods or expressions in the Vue instance. For example, `v-on:click='handleClick'` binds a click event on an element to the `handleClick` method. Vue also provides a shorthand for `v-on` using the `@` symbol, such as `@click='handleClick'`. This directive simplifies event handling by automatically managing event listeners and updating the component's state or performing actions based on user interactions."
+        },
+        {
+                "title": "What is Vue.js `v-if` and `v-else`?",
+                "category": "VueJs",
+                "description": "Conditional rendering in Vue templates.",
+                "tags": "v-if, v-else, conditional rendering, Vue",
+                "paid": "Yes",
+                "answer": "The `v-if` directive in Vue.js is used for conditional rendering of elements in the DOM based on a given condition. When the condition is true, the element is rendered; otherwise, it is removed from the DOM. The `v-else` directive is used in conjunction with `v-if` to provide an alternate template to be rendered when the `v-if` condition is false. For instance, `<div v-if='isVisible'>Visible</div><div v-else>Not Visible</div>` renders the first `<div>` if `isVisible` is true, and the second `<div>` otherwise."
+        },
+        {
+                "title": "What is Vue.js `v-show`?",
+                "category": "VueJs",
+                "description": "Toggle visibility of elements with CSS.",
+                "tags": "v-show, visibility, Vue",
+                "paid": "Yes",
+                "answer": "The `v-show` directive in Vue.js is used to toggle the visibility of elements without removing them from the DOM. It works by setting the `display` CSS property to `none` or making it visible based on the condition. For example, `<div v-show='isVisible'>Visible</div>` will hide the `<div>` when `isVisible` is false and display it when `isVisible` is true. Unlike `v-if`, which conditionally renders elements and removes them from the DOM, `v-show` simply hides or shows elements, making it more suitable for frequently toggled visibility."
+        },
+        {
+                "title": "How does Vue.js handle component communication?",
+                "category": "VueJs",
+                "description": "Methods for parent-child and sibling component communication.",
+                "tags": "component communication, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js provides several ways to handle component communication. Parent-to-child communication is typically done using props, where a parent component passes data to its child components. Child-to-parent communication is achieved using custom events, where a child component emits events that the parent listens to. For sibling components, communication is often managed through a shared parent or by using a global event bus or state management solutions like Vuex. Vuex is a popular choice for managing complex state and enabling communication between distant components."
+        },
+        {
+                "title": "What are Vue.js computed properties?",
+                "category": "VueJs",
+                "description": "Derived data that is automatically cached.",
+                "tags": "computed properties, Vue",
+                "paid": "Yes",
+                "answer": "Computed properties in Vue.js are used to create derived data that is automatically updated and cached based on reactive data dependencies. They are defined in the `computed` option of a Vue component and are recalculated only when their dependencies change. This makes them more efficient than methods for data transformation, as they avoid redundant computations. For example, a computed property can format a date or calculate a derived value from other reactive properties, ensuring that the results are always up-to-date and minimizing unnecessary recalculations."
+        },
+        {
+                "title": "What is Vuex?",
+                "category": "VueJs",
+                "description": "State management library for Vue.js.",
+                "tags": "Vuex, state management, Vue",
+                "paid": "Yes",
+                "answer": "Vuex is a state management library specifically designed for Vue.js applications. It provides a centralized store for managing the state of an application, enabling a predictable and consistent way to handle state changes. Vuex operates with a unidirectional data flow, using concepts like state, mutations, actions, and getters to manage and access the application state. This architecture helps maintain a clear and structured approach to state management, making it easier to track changes and debug complex applications. Vuex is especially useful for large applications with multiple components needing access to shared state."
+        },
+        {
+                "title": "How do you use Vue.js with AJAX?",
+                "category": "VueJs",
+                "description": "Making HTTP requests in Vue components.",
+                "tags": "AJAX, HTTP requests, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, you can use AJAX to make HTTP requests by leveraging libraries such as Axios or the Fetch API. Axios is a popular HTTP client that provides a simple and flexible API for making requests. You can install it via npm and use it in Vue components to fetch data from a server, like `axios.get('/api/data').then(response => this.data = response.data)`. The Fetch API is a native JavaScript API for making HTTP requests, used similarly by calling `fetch('/api/data').then(response => response.json()).then(data => this.data = data)`. Both methods enable asynchronous data retrieval and integration with Vue’s reactivity system."
+        },
+        {
+                "title": "What is the purpose of Vue Router?",
+                "category": "VueJs",
+                "description": "Routing library for single-page applications.",
+                "tags": "Vue Router, routing, Vue",
+                "paid": "Yes",
+                "answer": "Vue Router is the official routing library for Vue.js applications, used to build single-page applications (SPAs) with dynamic routing capabilities. It allows developers to define routes and map them to components, enabling navigation between different views or pages within an application. Vue Router supports features such as nested routes, route guards, and dynamic route matching, providing a powerful and flexible solution for managing application navigation and routing logic. By integrating with Vue’s reactivity system, Vue Router ensures seamless updates and transitions between views."
+        },
+        {
+                "title": "What is Vue.js `v-bind:class` used for?",
+                "category": "VueJs",
+                "description": "Dynamically binding CSS classes to elements.",
+                "tags": "v-bind:class, dynamic classes, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind:class` directive in Vue.js is used to dynamically bind CSS classes to elements based on the component's data or computed properties. This directive allows you to apply classes conditionally or based on the component's state. For example, `<div v-bind:class='{ active: isActive, 'text-success': hasSuccess}'></div>` applies the `active` class if `isActive` is true and the `text-success` class if `hasSuccess` is true. This feature helps in applying styles dynamically and reacting to changes in component state."
+        },
+        {
+                "title": "How do you create a global mixin in Vue.js?",
+                "category": "VueJs",
+                "description": "Defining and registering global mixins.",
+                "tags": "global mixin, Vue",
+                "paid": "Yes",
+                "answer": "To create a global mixin in Vue.js, you use `Vue.mixin()` to define a mixin that will be applied to every Vue component instance. This method registers a global mixin with the Vue instance, allowing you to share common functionality across all components. For example, `Vue.mixin({ methods: { globalMethod() { /*...*/ } } })` makes `globalMethod` available in all components. Global mixins should be used sparingly to avoid unintended side effects and ensure that components remain modular and maintainable."
+        },
+        {
+                "title": "What is Vue.js `v-slot` directive?",
+                "category": "VueJs",
+                "description": "Scoped slots for more flexible component content.",
+                "tags": "v-slot, scoped slots, Vue",
+                "paid": "Yes",
+                "answer": "The `v-slot` directive in Vue.js is used to create and manage scoped slots, which allow you to pass content into child components while providing access to data or methods from the child component. Scoped slots are more flexible than regular slots as they can expose data to the parent component, enabling dynamic and customized content. For example, `<template v-slot:default='slotProps'>{{ slotProps.item }}</template>` in the parent component can use `slotProps` to access data provided by the child component’s slot. This feature enhances the reusability and composability of components."
+        },
+        {
+                "title": "What is a Vue.js watcher?",
+                "category": "VueJs",
+                "description": "Reacting to changes in reactive data properties.",
+                "tags": "watcher, Vue, reactivity",
+                "paid": "Yes",
+                "answer": "A Vue.js watcher is a mechanism for observing and reacting to changes in reactive data properties. By defining a watcher in the `watch` option of a Vue component, you can execute custom logic when a specific data property changes. For example, `watch: { count(newValue) { console.log('Count changed to:', newValue); } }` watches the `count` property and logs its new value whenever it changes. Watchers are useful for performing side effects, such as fetching data or updating other parts of the component, in response to changes in state."
+        },
+        {
+                "title": "How do you use Vue.js filters?",
+                "category": "VueJs",
+                "description": "Transforming data in templates.",
+                "tags": "filters, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js filters are used to transform data for display in templates. Filters can be applied to text and data bindings within double curly braces `{{ }}` or using the `v-bind` directive. You define filters in the `filters` option of a Vue component or globally with `Vue.filter()`. For example, `filters: { uppercase(value) { return value.toUpperCase(); } }` defines a filter that converts text to uppercase. Filters are useful for formatting data in a concise and readable manner directly within the template."
+        },
+        {
+                "title": "What are Vue.js lifecycle hooks?",
+                "category": "VueJs",
+                "description": "Hooks that allow code execution at specific stages of a component’s lifecycle.",
+                "tags": "lifecycle hooks, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js lifecycle hooks are methods that let you execute code at specific stages in a component's lifecycle, such as creation, mounting, updating, and destruction. Key lifecycle hooks include `beforeCreate`, `created`, `beforeMount`, `mounted`, `beforeUpdate`, `updated`, `beforeDestroy`, and `destroyed`. These hooks provide opportunities to perform actions like data fetching, setting up event listeners, or cleaning up resources. Each hook corresponds to a phase in the component lifecycle, helping you manage component behavior and state throughout its existence."
+        },
+        {
+                "title": "What is the purpose of Vue.js `v-once` directive?",
+                "category": "VueJs",
+                "description": "Rendering an element only once.",
+                "tags": "v-once, Vue",
+                "paid": "Yes",
+                "answer": "The `v-once` directive in Vue.js is used to render an element or component only once, effectively caching the rendered content and skipping future re-renders. This can improve performance for static content that does not need to be updated as the application state changes. For example, `<p v-once>This content will not update.</p>` will render the paragraph only once and not re-render it even if the data changes. This is useful for optimizing performance in scenarios where parts of the template are static and do not depend on reactive data."
+        },
+        {
+                "title": "How do you create a Vue.js plugin?",
+                "category": "VueJs",
+                "description": "Extending Vue with custom functionality.",
+                "tags": "plugins, Vue",
+                "paid": "Yes",
+                "answer": "To create a Vue.js plugin, you define an object with an `install` method that adds custom functionality to Vue. The `install` method is called when the plugin is registered with `Vue.use()`. Within the `install` method, you can add global components, directives, or prototype methods. For example, `const MyPlugin = { install(Vue) { Vue.prototype.$myMethod = () => { /*...*/ }; } }; Vue.use(MyPlugin);` registers a global method `$myMethod`. Plugins allow you to extend Vue with reusable functionality and integrate it seamlessly into your Vue applications."
+        },
+        {
+                "title": "What is Vue.js `v-model` modifier?",
+                "category": "VueJs",
+                "description": "Modifiers for customizing `v-model` behavior.",
+                "tags": "v-model, modifiers, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `v-model` modifiers allow you to customize the behavior of two-way data binding on form elements. Common modifiers include `.lazy`, `.number`, and `.trim`. The `.lazy` modifier updates the data only when the input loses focus, rather than on each input event. The `.number` modifier automatically converts input values to numbers. The `.trim` modifier removes leading and trailing whitespace from input values. These modifiers provide additional control over how input values are processed and bound to component data."
+        },
+        {
+                "title": "What is Vue.js `v-bind:style` used for?",
+                "category": "VueJs",
+                "description": "Dynamically binding inline styles to elements.",
+                "tags": "v-bind:style, inline styles, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind:style` directive in Vue.js is used to dynamically bind inline styles to elements based on the component’s data. It allows you to set CSS styles directly from Vue’s data properties or computed values. For example, `<div v-bind:style='{ color: activeColor, fontSize: fontSize + 'px'}'></div>` binds the `color` and `fontSize` styles to data properties `activeColor` and `fontSize`, respectively. This feature enables dynamic styling based on the component's state, improving flexibility and responsiveness in UI design."
+        },
+        {
+                "title": "How does Vue.js handle asynchronous updates?",
+                "category": "VueJs",
+                "description": "Batching and queuing updates to the DOM.",
+                "tags": "asynchronous updates, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles asynchronous updates by batching and queuing DOM updates to optimize performance. When data changes, Vue does not immediately update the DOM. Instead, it schedules an update to occur later in the next 'tick' of the event loop. This allows Vue to group multiple changes into a single update, reducing the number of reflows and improving efficiency. You can use `Vue.nextTick()` to execute code after the DOM has been updated, ensuring that any operations dependent on the updated DOM are performed correctly."
+        },
+        {
+                "title": "What is Vue.js `v-for` directive used for?",
+                "category": "VueJs",
+                "description": "Rendering lists of items in templates.",
+                "tags": "v-for, lists, Vue",
+                "paid": "Yes",
+                "answer": "The `v-for` directive in Vue.js is used to render a list of items by iterating over an array or object. It allows you to create a set of elements or components based on the items in the array. For example, `<ul><li v-for='item in items' :key='item.id'>{{ item.name }}</li></ul>` iterates over the `items` array and renders a list item for each element. The `:key` attribute is crucial for efficient rendering and updating of list items, as it helps Vue track individual items and manage their changes."
+        },
+        {
+                "title": "How does Vue.js handle reactive data?",
+                "category": "VueJs",
+                "description": "Using Vue's reactivity system for data changes.",
+                "tags": "reactivity, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js uses a reactivity system to automatically update the DOM whenever reactive data properties change. Vue makes data reactive by converting object properties into getter/setter pairs using Object.defineProperty. When a property is accessed or modified, Vue tracks these changes and triggers updates to any dependent components or elements. This ensures that the UI remains in sync with the data model, providing a seamless and responsive user experience. Vue's reactivity system simplifies state management and keeps the application’s view consistently updated with minimal manual intervention."
+        },
+        {
+                "title": "What is Vue.js `v-bind` directive?",
+                "category": "VueJs",
+                "description": "Dynamically binding attributes to elements.",
+                "tags": "v-bind, attributes, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind` directive in Vue.js is used to dynamically bind attributes or props to HTML elements or Vue components. It allows you to bind values from Vue’s data or computed properties to element attributes. For example, `<img v-bind:src='imageSrc'>` binds the `src` attribute of an `<img>` tag to the `imageSrc` data property. The `v-bind` directive can also be used with shorthand syntax `:` such as `:src='imageSrc'`. This feature provides a way to reactively update attributes based on the component’s state or properties."
+        },
+        {
+                "title": "What is Vue.js `v-text` used for?",
+                "category": "VueJs",
+                "description": "Setting text content of an element.",
+                "tags": "v-text, text content, Vue",
+                "paid": "Yes",
+                "answer": "The `v-text` directive in Vue.js is used to set the text content of an HTML element, replacing any existing content. It is a shorthand for `{{ }}` and provides a way to bind text content directly from a data property. For example, `<span v-text='message'></span>` will set the text content of the `<span>` to the value of the `message` property. Unlike `{{ message }}`, which can be used for both text and HTML, `v-text` is specifically for text content and avoids rendering raw HTML, thus ensuring the content is treated as plain text."
+        },
+        {
+                "title": "How do you handle errors in Vue.js?",
+                "category": "VueJs",
+                "description": "Error handling strategies in Vue components.",
+                "tags": "error handling, Vue",
+                "paid": "Yes",
+                "answer": "Error handling in Vue.js can be managed through several strategies. For global error handling, you can use Vue's errorCaptured hook or create an error boundary using a global error handler. For local error handling, components can implement `errorCaptured` or use try/catch blocks within methods. Additionally, Vue's `v-on:error` directive can be used to catch and handle errors occurring in event handlers. By adopting these strategies, you can gracefully handle and manage errors, ensuring a robust and user-friendly application experience."
+        },
+        {
+                "title": "What is Vue.js `v-pre` directive?",
+                "category": "VueJs",
+                "description": "Skipping compilation for specific elements.",
+                "tags": "v-pre, Vue",
+                "paid": "Yes",
+                "answer": "The `v-pre` directive in Vue.js is used to skip compilation for a specific element and its children. This can be useful when you need to display raw HTML or JavaScript expressions without Vue processing them. For example, `<span v-pre>{{ rawText }}</span>` will render the `{{ rawText }}` as plain text rather than interpreting it as Vue template syntax. This directive helps improve performance by avoiding unnecessary compilation of static content and is useful in scenarios where you want to output unprocessed template strings or code."
+        },
+        {
+                "title": "What is Vue.js `v-cloak` directive?",
+                "category": "VueJs",
+                "description": "Preventing flash of uncompiled template content.",
+                "tags": "v-cloak, Vue",
+                "paid": "Yes",
+                "answer": "The `v-cloak` directive in Vue.js is used to prevent the display of uncompiled template content before Vue has finished compiling the template. This directive is often used in conjunction with a CSS rule that hides elements with the `v-cloak` attribute until Vue has fully initialized. For example, `<div v-cloak>{{ message }}</div>` will keep the `<div>` hidden until Vue has rendered the `{{ message }}` expression. This ensures a cleaner user experience by avoiding flashes of uncompiled or raw template content during the initial page load."
+        },
+        {
+                "title": "What are Vue.js custom directives?",
+                "category": "VueJs",
+                "description": "Creating your own directives for Vue components.",
+                "tags": "custom directives, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js custom directives allow developers to create their own directives to extend the functionality of Vue components. Custom directives are defined using `Vue.directive()` and can be applied to DOM elements in a similar way to built-in directives. For example, `Vue.directive('my-directive', { bind(el, binding, vnode) { /*...*/ } })` defines a custom directive that can be used with `v-my-directive`. Custom directives provide a powerful way to encapsulate and reuse low-level DOM manipulation logic or integrate third-party libraries into Vue components."
+        },
+        {
+                "title": "How does Vue.js handle component registration?",
+                "category": "VueJs",
+                "description": "Registering components locally or globally.",
+                "tags": "component registration, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js supports both local and global component registration. Local registration is done within a component's `components` option, allowing you to use the component only within the parent component. For example, `components: { MyComponent }` registers `MyComponent` locally. Global registration is done using `Vue.component()` and makes the component available throughout the application. For example, `Vue.component('my-component', MyComponent)` registers `MyComponent` globally. Choosing between local and global registration depends on the scope and reusability of the component within your application."
+        },
+        {
+                "title": "What is Vue.js `v-model` with modifiers?",
+                "category": "VueJs",
+                "description": "Using `v-model` with additional options.",
+                "tags": "v-model, modifiers, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `v-model` can be used with modifiers to customize its behavior for form elements. Common modifiers include `.lazy`, `.number`, and `.trim`. The `.lazy` modifier changes the update trigger to `change` instead of `input`, meaning it updates the bound value when the input loses focus. The `.number` modifier converts input values to numbers automatically. The `.trim` modifier removes whitespace from the beginning and end of the input value. These modifiers provide flexibility in handling form inputs and ensure data is formatted and processed according to specific needs."
+        },
+        {
+                "title": "What is Vue.js `v-model` for custom components?",
+                "category": "VueJs",
+                "description": "Implementing two-way binding in custom components.",
+                "tags": "v-model, custom components, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, `v-model` can be used with custom components to enable two-way data binding. To implement this, your custom component should emit an `input` event with the updated value when the data changes. For example, in your component, you would use `this.$emit('input', newValue)` to notify the parent component of changes. Additionally, you need to define the `model` option in your component to specify the prop used for binding. For instance, `model: { prop: 'value', event: 'input' }` configures the component to use the `value` prop and `input` event for `v-model` binding. This setup ensures that changes to the custom component’s data are reflected in the parent component and vice versa."
+        },
+        {
+                "title": "What is the `v-if` directive in Vue.js?",
+                "category": "VueJs",
+                "description": "Conditionally rendering elements.",
+                "tags": "v-if, conditional rendering, Vue",
+                "paid": "Yes",
+                "answer": "The `v-if` directive in Vue.js is used to conditionally render elements or components based on the value of an expression. When the expression evaluates to true, the element is rendered; otherwise, it is not included in the DOM. For example, `<div v-if='isVisible'>This is visible</div>` will only render the `<div>` if `isVisible` is true. The `v-if` directive adds and removes elements from the DOM based on the condition, making it suitable for scenarios where the presence of elements depends on dynamic conditions or state."
+        },
+        {
+                "title": "What is the `v-show` directive in Vue.js?",
+                "category": "VueJs",
+                "description": "Toggling the visibility of elements.",
+                "tags": "v-show, visibility, Vue",
+                "paid": "Yes",
+                "answer": "The `v-show` directive in Vue.js is used to toggle the visibility of elements based on the value of an expression. Unlike `v-if`, `v-show` does not add or remove elements from the DOM but instead toggles the `display` CSS property. For example, `<div v-show='isVisible'>This is visible</div>` will show or hide the `<div>` based on the value of `isVisible`. `v-show` is more performant than `v-if` when toggling visibility frequently, as it does not involve re-rendering the element but simply changes its CSS display property."
+        },
+        {
+                "title": "What is Vuex?",
+                "category": "VueJs",
+                "description": "State management library for Vue.js applications.",
+                "tags": "Vuex, state management, Vue",
+                "paid": "Yes",
+                "answer": "Vuex is a state management library for Vue.js applications, designed to manage and centralize the state of your application in a single store. It provides a predictable state container with a strict architecture, including state, getters, mutations, actions, and modules. The state represents the application’s data, while getters are used for computed state, mutations handle state changes, actions perform asynchronous operations, and modules enable splitting the store into smaller, manageable pieces. Vuex integrates seamlessly with Vue.js, providing a clear and consistent approach to managing state across large and complex applications."
+        },
+        {
+                "title": "How does Vue.js handle component communication?",
+                "category": "VueJs",
+                "description": "Methods for parent-child and sibling communication.",
+                "tags": "component communication, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js provides several ways to handle component communication. For parent-to-child communication, you use props to pass data from a parent component to its child components. For child-to-parent communication, child components can emit custom events using `this.$emit('eventName', payload)`. For sibling components, you can use a shared event bus or a global state management solution like Vuex. These methods ensure that data flows effectively between components, facilitating a well-structured and maintainable application."
+        },
+        {
+                "title": "What are Vue.js transitions?",
+                "category": "VueJs",
+                "description": "Animating elements entering or leaving the DOM.",
+                "tags": "transitions, animations, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js transitions provide a way to animate elements as they enter or leave the DOM. By wrapping elements with the `<transition>` or `<transition-group>` component, you can apply CSS transitions or animations to elements. For example, `<transition name='fade'><div v-if='show'>Hello</div></transition>` allows you to apply fade-in and fade-out effects when the `show` property changes. Vue also supports transition hooks, such as `before-enter`, `enter`, and `leave`, to customize the timing and behavior of transitions."
+        },
+        {
+                "title": "What is the difference between `v-if` and `v-show`?",
+                "category": "VueJs",
+                "description": "When to use `v-if` vs `v-show`.",
+                "tags": "v-if, v-show, Vue",
+                "paid": "Yes",
+                "answer": "`v-if` and `v-show` are both used for conditional rendering in Vue.js but differ in how they handle DOM elements. `v-if` conditionally renders elements by adding or removing them from the DOM based on the expression's truthiness, which can be less performant when toggling frequently. `v-show` toggles the visibility of elements using the `display` CSS property, which is more efficient for frequent visibility changes as it only affects the element's visibility without re-rendering. Use `v-if` for conditions that do not change often and `v-show` for elements that need frequent visibility toggles."
+        },
+        {
+                "title": "How do you use `v-bind` for dynamic attribute values?",
+                "category": "VueJs",
+                "description": "Binding dynamic values to HTML attributes.",
+                "tags": "v-bind, dynamic attributes, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind` directive in Vue.js allows you to bind dynamic values to HTML attributes. For example, `<a v-bind:href='linkUrl'>Link</a>` binds the `href` attribute of an `<a>` element to the `linkUrl` data property. You can also use `v-bind` for multiple attributes by passing an object: `<div v-bind='styleObject'></div>`, where `styleObject` is an object containing CSS properties. This enables you to dynamically update attributes and styles based on component data."
+        },
+        {
+                "title": "What are Vue.js directives?",
+                "category": "VueJs",
+                "description": "Special tokens in the markup with specific behavior.",
+                "tags": "directives, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js directives are special tokens in the markup that indicate a specific behavior or transformation. They are prefixed with `v-`, such as `v-bind`, `v-model`, `v-if`, and `v-for`. Directives apply reactive behavior to the DOM elements they are bound to. For example, `v-model` creates two-way data bindings on form inputs, `v-for` iterates over arrays to render lists, and `v-if` conditionally renders elements. Directives provide a declarative way to handle DOM updates and interactions in Vue applications."
+        },
+        {
+                "title": "How do you define and use Vue.js components?",
+                "category": "VueJs",
+                "description": "Creating and utilizing reusable Vue components.",
+                "tags": "components, Vue",
+                "paid": "Yes",
+                "answer": "To define a Vue.js component, you create a Vue instance or a component object with an options object, which includes properties like `template`, `data`, `methods`, and `props`. For example, `Vue.component('my-component', { template: '<div>{{ message }}</div>', data() { return { message: 'Hello!' }; } });` defines a global component named `my-component`. To use this component in a template, include it as `<my-component></my-component>`. Components can also be registered locally within other components' `components` option, enabling modular and reusable UI elements."
+        },
+        {
+                "title": "What is Vue.js `v-for` syntax?",
+                "category": "VueJs",
+                "description": "Looping through arrays or objects in templates.",
+                "tags": "v-for, loops, Vue",
+                "paid": "Yes",
+                "answer": "The `v-for` directive in Vue.js is used to loop through arrays or objects in templates to render lists. The syntax for looping through an array is `v-for='item in items'`, where `items` is the array to iterate over and `item` is a variable representing each element. For example, `<li v-for='item in items' :key='item.id'>{{ item.name }}</li>` renders a list item for each element in the `items` array. When looping through objects, the syntax is `v-for='(value, key) in object'`, providing access to both the key and value."
+        },
+        {
+                "title": "What are Vue.js mixins?",
+                "category": "VueJs",
+                "description": "Sharing reusable functionality across components.",
+                "tags": "mixins, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js mixins are a way to share reusable functionality across multiple components. A mixin is an object that can contain properties, methods, and lifecycle hooks, which can be mixed into a component. For example, `const myMixin = { data() { return { message: 'Hello!' }; }, methods: { greet() { console.log(this.message); } } };` defines a mixin that adds a `message` data property and a `greet` method. To use the mixin in a component, include it in the `mixins` option: `mixins: [myMixin]`. This allows you to encapsulate and reuse common logic across components."
+        },
+        {
+                "title": "How do you handle form submission in Vue.js?",
+                "category": "VueJs",
+                "description": "Managing form inputs and submission.",
+                "tags": "form handling, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, handling form submission involves binding form inputs to component data and managing the form submission event. Use `v-model` to bind input fields to data properties, ensuring that the form values are reactive. For example, `<input v-model='username'>` binds the input value to the `username` property. To handle form submission, use the `@submit.prevent` event listener to prevent the default form submission behavior and call a method to process the data. For instance, `<form @submit.prevent='submitForm'>` calls the `submitForm` method, which can perform validation and send data to a server."
+        },
+        {
+                "title": "What is the Vue.js `computed` property?",
+                "category": "VueJs",
+                "description": "Defining reactive computed properties.",
+                "tags": "computed properties, Vue",
+                "paid": "Yes",
+                "answer": "The `computed` property in Vue.js is used to define reactive computed properties that depend on other data properties. Computed properties are cached based on their dependencies, meaning they are only recalculated when their reactive dependencies change. For example, `computed: { fullName() { return this.firstName + ' ' + this.lastName; } }` creates a computed property `fullName` that combines `firstName` and `lastName`. Computed properties provide a way to derive and format data based on component state while optimizing performance through caching."
+        },
+        {
+                "title": "What is the `v-on` directive in Vue.js?",
+                "category": "VueJs",
+                "description": "Listening to DOM events in Vue components.",
+                "tags": "v-on, event handling, Vue",
+                "paid": "Yes",
+                "answer": "The `v-on` directive in Vue.js is used to listen to DOM events and bind them to component methods. For example, `<button v-on:click='handleClick'>Click me</button>` binds the `click` event of the button to the `handleClick` method. The `v-on` directive can also be used with shorthand syntax `@event='method'` such as `@click='handleClick'`. This directive allows you to handle user interactions, trigger methods, and respond to various events within your Vue components."
+        },
+        {
+                "title": "How do you use `v-bind` for dynamic class names?",
+                "category": "VueJs",
+                "description": "Binding dynamic class names to elements.",
+                "tags": "v-bind:class, dynamic classes, Vue",
+                "paid": "Yes",
+                "answer": "The `v-bind:class` directive in Vue.js allows you to dynamically bind class names to elements. You can bind an object, array, or a string to `v-bind:class` to apply classes onditionally. For example,`<div v-bind:class='{ active: isActive, 'text-bold': isBold}'></div>` binds the `active` class when `isActive` is true and `text-bold` class when `isBold` is true. Alternatively, you can use an array: `<div v-bind:class='[activeClass, errorClass]'></div>`, where `activeClass` and `errorClass` are data properties or computed values."
+        },
+        {
+                "title": "What are Vue.js filters?",
+                "category": "VueJs",
+                "description": "Formatting data for display.",
+                "tags": "filters, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js filters are functions used to format or transform data before displaying it in the template. Filters can be applied in template expressions using the `|` symbol. For example, `{{ message | capitalize }}` applies a `capitalize` filter to the `message` data property. Filters are defined globally using `Vue.filter('filterName', function(value) { return transformedValue; })` or locally within a component. They provide a convenient way to format data, such as converting text to uppercase or formatting dates, directly in the template."
+        },
+        {
+                "title": "How do you use Vue Router for navigation?",
+                "category": "VueJs",
+                "description": "Implementing routing in Vue.js applications.",
+                "tags": "Vue Router, navigation, Vue",
+                "paid": "Yes",
+                "answer": "Vue Router is the official routing library for Vue.js applications, allowing you to implement navigation and manage routes. To use Vue Router, first install it via `npm install vue-router`. Define routes in a router configuration object, for example, `const routes = [{ path: '/home', component: Home }, { path: '/about', component: About }]`. Create a new `VueRouter` instance with these routes: `const router = new VueRouter({ routes })`. Include the router in your Vue instance: `new Vue({ router }).$mount('#app')`. Use `<router-view>` in your templates to display the current route component and `<router-link>` to create navigation links."
+        },
+        {
+                "title": "What is Vue.js lifecycle hooks?",
+                "category": "VueJs",
+                "description": "Hooks for handling component lifecycle events.",
+                "tags": "lifecycle hooks, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js lifecycle hooks are methods that allow you to execute code at specific stages of a component’s lifecycle. These hooks include `created`, `mounted`, `updated`, and `destroyed`. For example, `created` is called after the component instance has been created but before it is mounted, while `mounted` is called after the component is mounted to the DOM. These hooks provide opportunities to perform actions such as fetching data, initializing third-party libraries, or cleaning up resources. Using lifecycle hooks helps manage the component’s behavior and state throughout its existence."
+        },
+        {
+                "title": "How do you use Vue.js with TypeScript?",
+                "category": "VueJs",
+                "description": "Integrating TypeScript with Vue.js for type safety.",
+                "tags": "TypeScript, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js can be used with TypeScript to add type safety and improve code quality. To set up Vue.js with TypeScript, you need to install the necessary dependencies, such as `typescript`, `ts-loader`, and `vue-class-component`. Configure your project by creating a `tsconfig.json` file and setting up the Vue CLI with TypeScript support. In your Vue components, you can use TypeScript syntax for defining props, data, and methods. For example, you can define a component with `export default class MyComponent extends Vue { myProperty: string = 'Hello'; }`. TypeScript integration enhances code reliability and editor support."
+        },
+        {
+                "title": "What is the Vue.js `watch` property used for?",
+                "category": "VueJs",
+                "description": "Responding to changes in data properties.",
+                "tags": "watch, Vue",
+                "paid": "Yes",
+                "answer": "The `watch` property in Vue.js is used to observe and react to changes in data properties. By defining a watcher, you can execute custom logic whenever a specific data property changes. For example, `watch: { myData(newValue, oldValue) { console.log('Data changed from', oldValue, 'to', newValue); } }` will log changes to `myData`. Watchers are useful for performing asynchronous operations, updating other data properties, or triggering side effects based on changes in your application's state."
+        },
+        {
+                "title": "What is the purpose of Vue.js filters?",
+                "category": "VueJs",
+                "description": "Transforming data for presentation in templates.",
+                "tags": "filters, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js filters are used to transform or format data before it is displayed in the template. Filters can be applied in template expressions and provide a way to format data like dates or numbers. For example, `{{ price | currency('USD') }}` applies a `currency` filter to the `price` data property. Filters are defined globally or locally in a Vue component and can be used to perform common formatting tasks, making it easier to handle data presentation consistently across the application."
+        },
+        {
+                "title": "How does Vue.js handle event delegation?",
+                "category": "VueJs",
+                "description": "Delegating events to parent components.",
+                "tags": "event delegation, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js handles event delegation by allowing you to listen to events on parent elements and handle them within child components. This can be achieved using the `v-on` directive to listen for events and pass event data to methods. For instance, `<button @click='handleClick'>Click me</button>` listens for click events on a button and triggers the `handleClick` method. Additionally, Vue supports event modifiers such as `.stop` and `.prevent` to control event propagation and default behavior, giving you fine-grained control over event handling and delegation."
+        },
+        {
+                "title": "What is the Vue.js `provide` and `inject` API?",
+                "category": "VueJs",
+                "description": "Sharing data between ancestor and descendant components.",
+                "tags": "provide, inject, Vue",
+                "paid": "Yes",
+                "answer": "The `provide` and `inject` API in Vue.js allows for sharing data between ancestor and descendant components without prop drilling. The `provide` option is used in an ancestor component to specify the data or methods to be shared, while the `inject` option is used in descendant components to access the provided data. For example, `provide() { return { theme: 'dark' } }` in an ancestor component provides the `theme` data, and `inject: ['theme']` in a descendant component allows access to this data. This pattern helps manage global state or shared data in a hierarchical component structure."
+        },
+        {
+                "title": "What are Vue.js scoped slots?",
+                "category": "VueJs",
+                "description": "Passing data from child to parent components.",
+                "tags": "scoped slots, Vue",
+                "paid": "Yes",
+                "answer": "Scoped slots in Vue.js allow a child component to pass data to its parent component. Scoped slots provide a way to pass dynamic content from the child component to the parent, where the parent can control how this content is rendered. For example, `<template v-slot:default='slotProps'>{{ slotProps.text }}</template>` in the child component exposes `slotProps` to the parent, which can then use this data to render content. Scoped slots enhance flexibility and reusability by allowing components to communicate and share data more effectively."
+        },
+        {
+                "title": "What is Vue.js `mixins` used for?",
+                "category": "VueJs",
+                "description": "Sharing reusable functionality among components.",
+                "tags": "mixins, Vue",
+                "paid": "Yes",
+                "answer": "Mixins in Vue.js are used to encapsulate and share reusable functionality across multiple components. A mixin is an object containing properties, methods, and lifecycle hooks that can be mixed into components. For instance, you can define a mixin with common methods and data properties and then include it in different components. For example, `const myMixin = { methods: { commonMethod() { /*...*/ } } };` can be mixed into components using `mixins: [myMixin]`. Mixins promote code reuse and help maintain cleaner and more manageable component code."
+        },
+        {
+                "title": "How do you manage global state in Vue.js?",
+                "category": "VueJs",
+                "description": "Using Vuex for state management.",
+                "tags": "global state, Vuex, Vue",
+                "paid": "Yes",
+                "answer": "To manage global state in Vue.js, you typically use Vuex, a state management library specifically designed for Vue applications. Vuex provides a centralized store for managing state and includes concepts such as state, getters, mutations, and actions. The state holds the application data, getters are used to derive computed state, mutations handle synchronous state changes, and actions manage asynchronous operations. To use Vuex, create a store using `new Vuex.Store({ state, getters, mutations, actions })` and include it in your Vue instance. This setup ensures consistent and predictable state management across your application."
+        },
+        {
+                "title": "How do you use Vue.js `v-model` with custom components?",
+                "category": "VueJs",
+                "description": "Implementing two-way data binding with custom components.",
+                "tags": "v-model, custom components, Vue",
+                "paid": "Yes",
+                "answer": "To use `v-model` with custom components in Vue.js, your component needs to support two-way data binding. This involves emitting an `input` event with the updated value and defining the `model` option. For instance, in your component, use `this.$emit('input', newValue)` to notify the parent of changes. Additionally, configure the component with the `model` option: `model: { prop: 'value', event: 'input' }`. This setup allows `v-model` to bind to the `value` prop and use the `input` event for updating the parent component’s state, enabling seamless two-way data binding."
+        },
+        {
+                "title": "What is Vue.js `async` component?",
+                "category": "VueJs",
+                "description": "Lazy loading components for performance optimization.",
+                "tags": "async components, lazy loading, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `async` components are used to load components lazily, improving performance by reducing the initial bundle size. To define an async component, use a function that returns a Promise resolving to the component definition. For example, `const AsyncComponent = () => import('./MyComponent.vue')`. You can then use this async component in your templates like a regular component. Vue also provides a built-in `defineAsyncComponent` function for defining async components. Lazy loading components only when they are needed can enhance application performance and user experience."
+        },
+        {
+                "title": "What are Vue.js slots?",
+                "category": "VueJs",
+                "description": "Flexible content distribution in components.",
+                "tags": "slots, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js slots are a mechanism for distributing content in components, allowing you to create flexible and reusable components with customizable content. Slots are placeholders in a component’s template where you can inject content from the parent component. There are named slots, default slots, and scoped slots. Default slots are used for content without a name, while named slots allow multiple areas of content, and scoped slots enable passing data from the child to the parent. For example, `<slot name='header'></slot>` allows content to be injected into the `header` slot from the parent component."
+        },
+        {
+                "title": "How do you use Vue.js `v-on` with event modifiers?",
+                "category": "VueJs",
+                "description": "Modifying event behavior in Vue.js.",
+                "tags": "event modifiers, v-on, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js `v-on` directive supports event modifiers to modify the behavior of event listeners. Event modifiers include `.prevent`, `.stop`, `.capture`, and `.once`. For example, `@click.prevent='handleClick'` prevents the default action of a click event, and `@click.stop='handleClick'` stops the event from propagating. These modifiers help control event handling by preventing default behaviors, stopping event propagation, and more, providing a cleaner and more manageable way to handle events within your Vue components."
+        },
+        {
+                "title": "What is the Vue.js `key` attribute used for in lists?",
+                "category": "VueJs",
+                "description": "Ensuring efficient rendering of list items.",
+                "tags": "key, v-for, Vue",
+                "paid": "Yes",
+                "answer": "The `key` attribute in Vue.js is used to uniquely identify elements in a list when rendering with `v-for`. It helps Vue efficiently update and manage the list by tracking each item’s identity and optimizing re-rendering. For example, `<li v-for='item in items' :key='item.id'>{{ item.name }}</li>` uses `item.id` as the unique key for each list item. Properly using `key` ensures that Vue can accurately track changes, reorder elements, and improve performance when dealing with dynamic lists."
+        },
+        {
+                "title": "How do you implement error handling in Vue.js?",
+                "category": "VueJs",
+                "description": "Handling errors within Vue components.",
+                "tags": "error handling, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, error handling can be implemented using the global error handler and component-specific error boundaries. For global error handling, you can use `Vue.config.errorHandler` to catch and handle errors occurring in Vue components. For instance, `Vue.config.errorHandler = (err, vm, info) => { console.error(err); }` logs errors globally. For component-specific error boundaries, you can use the `errorCaptured` lifecycle hook to catch errors in child components. For example, `errorCaptured(err, vm, info) { console.error(err); return false; }` in a component allows you to handle errors locally and prevent them from propagating."
+        },
+        {
+                "title": "What is the difference between `data` and `props` in Vue.js?",
+                "category": "VueJs",
+                "description": "Distinguishing between internal and external data.",
+                "tags": "data, props, Vue",
+                "paid": "Yes",
+                "answer": "In Vue.js, `data` and `props` serve different purposes. `data` is used to define internal component state that is reactive and managed by the component itself. It can be modified within the component. For example, `data() { return { message: 'Hello' } }` defines an internal state. On the other hand, `props` are used to pass data from a parent component to a child component. Props are immutable within the child component and are used to provide external data. For example, `<ChildComponent :message='parentMessage'/>` passes `parentMessage` to `ChildComponent` as a prop."
+        },
+        {
+                "title": "What are Vue.js custom directives?",
+                "category": "VueJs",
+                "description": "Creating and using your own directives.",
+                "tags": "custom directives, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js custom directives allow you to create your own directives with custom behavior. You can register global custom directives using `Vue.directive('directiveName', { bind(el, binding, vnode) { /*...*/ } })`, or locally within components. Custom directives provide hooks such as `bind`, `inserted`, `update`, and `unbind` to handle various stages of directive lifecycle. For example, a custom directive for focusing an element might look like: `Vue.directive('focus', { inserted(el) { el.focus(); } });`. Custom directives extend Vue’s capabilities, allowing you to implement reusable low-level logic."
+        },
+        {
+                "title": "How do you use Vue.js with third-party libraries?",
+                "category": "VueJs",
+                "description": "Integrating external libraries with Vue components.",
+                "tags": "third-party libraries, integration, Vue",
+                "paid": "Yes",
+                "answer": "Integrating third-party libraries with Vue.js involves a few steps to ensure proper functionality within Vue components. Start by installing the library using npm or including it via a CDN. For example, `npm install lodash` for Lodash. Import the library in your component or main entry file and use it as needed. For instance, `import _ from 'lodash';`. If the library interacts with the DOM or has lifecycle concerns, you may need to handle its initialization and teardown within Vue lifecycle hooks. For example, use `mounted` to initialize and `destroyed` to clean up when integrating libraries like charting or UI components."
+        },
+        {
+                "title": "What is the `v-model` directive in Vue.js?",
+                "category": "VueJs",
+                "description": "Two-way data binding for form elements.",
+                "tags": "v-model, data binding, Vue",
+                "paid": "Yes",
+                "answer": "The `v-model` directive in Vue.js provides two-way data binding for form elements and custom components. It binds a form input's value to a data property and automatically updates the data property when the input value changes. For example, `<input v-model='text'>` binds the `text` data property to the input’s value. When the input changes, `text` is updated accordingly, and vice versa. `v-model` can also be used with custom components by configuring the component to emit an `input` event and using the `model` option to specify the prop for binding."
+        },
+        {
+                "title": "How do you use Vue.js filters for formatting data?",
+                "category": "VueJs",
+                "description": "Applying filters to format data in templates.",
+                "tags": "filters, formatting, Vue",
+                "paid": "Yes",
+                "answer": "Vue.js filters are used to format data directly in templates, providing a way to transform data for display purposes. Filters are applied using the `|` character in template expressions. For example, `{{ message | uppercase }}` applies the `uppercase` filter to `message`. Filters can be defined globally or locally in Vue components. To define a global filter, use `Vue.filter('filterName', function(value) { /* transform value */ })`. Local filters are defined within the `filters` option of a component and provide a way to handle common formatting tasks directly in your templates."
+        },
+        {
+                "title": "What is Vue.js `render` function?",
+                "category": "VueJs",
+                "description": "Programmatic rendering of components.",
+                "tags": "render function, Vue",
+                "paid": "Yes",
+                "answer": "The `render` function in Vue.js is used for programmatic rendering of components. Instead of using templates, you can use the `render` function to create and return Virtual DOM nodes. This function takes a `createElement` function as an argument and allows you to describe the structure of your component using JavaScript. For example, `render(h) { return h('div', [h('span', 'Hello')]) }` creates a `div` with a `span` element inside it. The `render` function provides greater control over component rendering and is useful for advanced scenarios where dynamic component generation or custom rendering logic is required."
+        }
+]

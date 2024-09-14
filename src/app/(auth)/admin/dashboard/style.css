@@ -1,0 +1,19 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 50px;
+}
+
+@media all and (max-width: 641px) {
+  .dashboard {
+    display: block;
+    padding: 10px;
+  }
+}
+
+table td,
+table th {
+  min-width: 60px;
+  text-align: left;
+  border: 1px solid var(--icon);
+}

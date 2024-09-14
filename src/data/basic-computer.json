@@ -1,0 +1,386 @@
+[
+        {
+                "title": "What is a Computer?",
+                "category": "Basic Computer",
+                "description": "Define what a computer is.",
+                "tags": "computer,definition,basics",
+                "paid": "Yes",
+                "answer": "A computer is an electronic device that processes data and performs tasks according to a set of instructions (software). It consists of hardware components such as the CPU, memory, and storage. For example, a laptop is a portable computer capable of running various applications like word processors and web browsers."
+        },
+        {
+                "title": "What is an Operating System?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of an operating system.",
+                "tags": "operating system,OS,computer basics",
+                "paid": "Yes",
+                "answer": "An operating system (OS) is system software that manages computer hardware and software resources and provides services for computer programs. Common examples include Windows, macOS, and Linux. For instance, Windows 10 manages hardware like printers and allows users to run applications such as Microsoft Word."
+        },
+        {
+                "title": "What is the Central Processing Unit (CPU)?",
+                "category": "Basic Computer",
+                "description": "Describe the role of the CPU in a computer.",
+                "tags": "CPU,central processing unit,computer architecture",
+                "paid": "Yes",
+                "answer": "The CPU is the brain of the computer, responsible for executing instructions from programs. It performs basic arithmetic, logic, control, and input/output operations. For example, when you run a program, the CPU processes the instructions, making the program function. The speed of a CPU is measured in gigahertz (GHz)."
+        },
+        {
+                "title": "What is the difference between RAM and ROM?",
+                "category": "Basic Computer",
+                "description": "Explain the key differences between RAM and ROM.",
+                "tags": "RAM,ROM,memory,computer architecture",
+                "paid": "Yes",
+                "answer": "RAM (Random Access Memory) is volatile memory that stores data temporarily while the computer is running. ROM (Read-Only Memory) is non-volatile and stores permanent data, such as the BIOS. For example, RAM helps run applications smoothly, while ROM stores the instructions required to boot the computer."
+        },
+        {
+                "title": "What is a Hard Drive?",
+                "category": "Basic Computer",
+                "description": "Define the role of a hard drive in a computer.",
+                "tags": "hard drive,storage,computer hardware",
+                "paid": "Yes",
+                "answer": "A hard drive is a storage device that stores and retrieves digital data using magnetic storage or solid-state technology. It permanently stores files, applications, and the operating system. For instance, your documents, photos, and programs are stored on the hard drive, even when the computer is turned off."
+        },
+        {
+                "title": "What is a Network?",
+                "category": "Basic Computer",
+                "description": "Describe what a computer network is.",
+                "tags": "network,computer network,basics",
+                "paid": "Yes",
+                "answer": "A computer network is a collection of interconnected computers that communicate with each other to share resources, such as files and printers, and to access the internet. For example, a home Wi-Fi network connects multiple devices like laptops, smartphones, and smart TVs to the internet."
+        },
+        {
+                "title": "What is a Web Browser?",
+                "category": "Basic Computer",
+                "description": "Define the function of a web browser.",
+                "tags": "web browser,internet,browser",
+                "paid": "Yes",
+                "answer": "A web browser is a software application that allows users to access and view websites on the internet. Popular browsers include Google Chrome, Mozilla Firefox, and Safari. For example, a browser lets you visit websites like YouTube or Wikipedia by typing the URL into the address bar."
+        },
+        {
+                "title": "What is an IP Address?",
+                "category": "Basic Computer",
+                "description": "Explain what an IP address is.",
+                "tags": "IP address,internet,networking",
+                "paid": "Yes",
+                "answer": "An IP (Internet Protocol) address is a unique identifier assigned to each device connected to a network. It helps devices communicate with each other over the internet. For example, a computer's IP address might be 192.168.1.1, allowing it to connect to the web and access resources."
+        },
+        {
+                "title": "What is Cloud Computing?",
+                "category": "Basic Computer",
+                "description": "Describe the concept of cloud computing.",
+                "tags": "cloud computing,internet,technology",
+                "paid": "Yes",
+                "answer": "Cloud computing is the delivery of computing services, such as storage, processing power, and applications, over the internet. This eliminates the need for local servers or personal devices. For example, services like Google Drive and Dropbox store files in the cloud, allowing users to access them from anywhere."
+        },
+        {
+                "title": "What is a Firewall?",
+                "category": "Basic Computer",
+                "description": "Explain what a firewall is and its purpose.",
+                "tags": "firewall,network security,computer security",
+                "paid": "Yes",
+                "answer": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predefined security rules. Its main purpose is to protect the network from unauthorized access. For example, a firewall can block suspicious traffic coming from the internet to protect your computer from malware."
+        },
+        {
+                "title": "What is the Internet of Things (IoT)?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of the Internet of Things (IoT).",
+                "tags": "IoT,internet of things,technology",
+                "paid": "Yes",
+                "answer": "The Internet of Things (IoT) refers to the interconnected network of physical devices, vehicles, appliances, and other items embedded with sensors and software, allowing them to collect and exchange data over the internet. For example, smart home devices like thermostats and lights can be controlled remotely through an app."
+        },
+        {
+                "title": "What is the difference between HTTP and HTTPS?",
+                "category": "Basic Computer",
+                "description": "Discuss the differences between HTTP and HTTPS.",
+                "tags": "HTTP,HTTPS,web protocols,internet",
+                "paid": "Yes",
+                "answer": "HTTP (Hypertext Transfer Protocol) is the protocol used for transmitting web pages, while HTTPS (Hypertext Transfer Protocol Secure) is a secure version of HTTP that encrypts data. For example, HTTPS is used for secure transactions like online banking, ensuring that sensitive data is encrypted during transmission."
+        },
+        {
+                "title": "What is Artificial Intelligence (AI)?",
+                "category": "Basic Computer",
+                "description": "Define the concept of Artificial Intelligence.",
+                "tags": "artificial intelligence,AI,technology",
+                "paid": "Yes",
+                "answer": "Artificial Intelligence (AI) is the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. For example, AI-powered chatbots can understand and respond to customer queries in real time, mimicking human-like conversations."
+        },
+        {
+                "title": "What is Machine Learning?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of machine learning.",
+                "tags": "machine learning,AI,technology",
+                "paid": "Yes",
+                "answer": "Machine Learning is a subset of AI that enables computers to learn from data and improve their performance without being explicitly programmed. It uses algorithms to find patterns in data. For example, spam filters in email services use machine learning to automatically identify and block unwanted messages."
+        },
+        {
+                "title": "What is a Database?",
+                "category": "Basic Computer",
+                "description": "Define a database and its purpose.",
+                "tags": "database,storage,data management",
+                "paid": "Yes",
+                "answer": "A database is an organized collection of structured data stored electronically. Databases allow for efficient storage, retrieval, and management of data. For example, a customer relationship management (CRM) system stores information about customers, allowing businesses to track interactions and analyze customer behavior."
+        },
+        {
+                "title": "What is SQL?",
+                "category": "Basic Computer",
+                "description": "Explain what SQL is and its use in databases.",
+                "tags": "SQL,database,query language",
+                "paid": "Yes",
+                "answer": "SQL (Structured Query Language) is a standardized language used to manage and manipulate relational databases. It allows users to perform operations such as querying, inserting, updating, and deleting data. For example, the SQL query `SELECT * FROM Customers` retrieves all records from the 'Customers' table in a database."
+        },
+        {
+                "title": "What is a Compiler?",
+                "category": "Basic Computer",
+                "description": "Define a compiler and its role in programming.",
+                "tags": "compiler,programming,software development",
+                "paid": "Yes",
+                "answer": "A compiler is a program that translates source code written in a high-level programming language (such as C++ or Java) into machine code that a computer can execute. For example, the GNU C Compiler (GCC) compiles C code into executable machine instructions that the CPU can understand."
+        },
+        {
+                "title": "What is an Algorithm?",
+                "category": "Basic Computer",
+                "description": "Explain what an algorithm is.",
+                "tags": "algorithm,computer science,basics",
+                "paid": "Yes",
+                "answer": "An algorithm is a step-by-step procedure for solving a specific problem or completing a task. It is used in computer programming to perform calculations, process data, and automate tasks. For example, a sorting algorithm such as QuickSort arranges a list of numbers in ascending order efficiently."
+        },
+        {
+                "title": "What is a Flowchart?",
+                "category": "Basic Computer",
+                "description": "Define a flowchart and its use in programming.",
+                "tags": "flowchart,programming,visualization",
+                "paid": "Yes",
+                "answer": "A flowchart is a diagram that represents the sequence of steps in a process or algorithm. It uses standardized symbols such as rectangles (for actions) and diamonds (for decisions). For example, a flowchart can visually represent the steps involved in processing customer orders, from order placement to shipping."
+        },
+        {
+                "title": "What is a Programming Language?",
+                "category": "Basic Computer",
+                "description": "Define a programming language and its purpose.",
+                "tags": "programming language,coding,software development",
+                "paid": "Yes",
+                "answer": "A programming language is a formal language used to write instructions that a computer can execute. Different programming languages are designed for various purposes, such as web development, system programming, and data analysis. For example, Python is a high-level programming language widely used for data science and machine learning."
+        },
+        {
+                "title": "What is Object-Oriented Programming (OOP)?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of Object-Oriented Programming.",
+                "tags": "OOP,object-oriented programming,programming paradigms",
+                "paid": "Yes",
+                "answer": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of 'objects,' which are instances of classes. OOP principles include encapsulation, inheritance, and polymorphism. For example, in Java, a class 'Car' can have properties like 'color' and 'speed,' and methods like 'drive' and 'stop.'"
+        },
+        {
+                "title": "What is the difference between a Class and an Object?",
+                "category": "Basic Computer",
+                "description": "Discuss the differences between a class and an object in programming.",
+                "tags": "class,object,OOP,programming",
+                "paid": "Yes",
+                "answer": "A class is a blueprint or template for creating objects, defining the properties and behaviors (methods) they should have. An object is an instance of a class. For example, in Python, `class Dog:` defines a class, while `my_dog = Dog()` creates an object of that class."
+        },
+        {
+                "title": "What is Inheritance in OOP?",
+                "category": "Basic Computer",
+                "description": "Define inheritance and its purpose in object-oriented programming.",
+                "tags": "inheritance,OOP,object-oriented programming",
+                "paid": "Yes",
+                "answer": "Inheritance is an OOP principle where a new class (subclass) inherits the attributes and methods of an existing class (superclass). This allows code reuse and hierarchy. For example, if `class Animal` has a method `speak()`, a `class Dog(Animal)` can inherit this method, making the dog speak without rewriting the code."
+        },
+        {
+                "title": "What is Encapsulation in OOP?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of encapsulation in OOP.",
+                "tags": "encapsulation,OOP,object-oriented programming",
+                "paid": "Yes",
+                "answer": "Encapsulation is an OOP concept where the internal state of an object is hidden from the outside, only allowing access through public methods. This protects data integrity. For example, a class `BankAccount` may have private attributes like `balance`, accessed only via methods like `deposit()` and `withdraw()`."
+        },
+        {
+                "title": "What is Polymorphism in OOP?",
+                "category": "Basic Computer",
+                "description": "Define polymorphism in object-oriented programming.",
+                "tags": "polymorphism,OOP,object-oriented programming",
+                "paid": "Yes",
+                "answer": "Polymorphism is the ability in OOP to process objects differently based on their class or data type. It allows a single method or operator to act in different ways. For example, in Python, the `+` operator can add integers or concatenate strings, depending on the data type."
+        },
+        {
+                "title": "What is the difference between Overloading and Overriding?",
+                "category": "Basic Computer",
+                "description": "Differentiate between method overloading and method overriding.",
+                "tags": "overloading,overriding,OOP,programming",
+                "paid": "Yes",
+                "answer": "Overloading occurs when multiple methods in the same class share the same name but differ in parameters. Overriding happens when a subclass provides a specific implementation of a method already defined in its superclass. For example, `print(int)` and `print(float)` are overloaded, while `print()` in a subclass may override its superclass."
+        },
+        {
+                "title": "What is a Data Structure?",
+                "category": "Basic Computer",
+                "description": "Define a data structure and its importance.",
+                "tags": "data structure,computer science,programming",
+                "paid": "Yes",
+                "answer": "A data structure is a way of organizing and storing data to allow for efficient access and modification. Common data structures include arrays, linked lists, stacks, and trees. For example, an array stores elements in a contiguous block of memory, enabling fast access via indices."
+        },
+        {
+                "title": "What is an Array?",
+                "category": "Basic Computer",
+                "description": "Explain what an array is in programming.",
+                "tags": "array,data structure,programming",
+                "paid": "Yes",
+                "answer": "An array is a data structure that holds a fixed-size collection of elements, all of the same data type, stored in contiguous memory locations. For example, an array of integers `[1, 2, 3, 4]` allows access to each element using an index, such as `arr[0]` for `1`."
+        },
+        {
+                "title": "What is a Linked List?",
+                "category": "Basic Computer",
+                "description": "Define a linked list and its use cases.",
+                "tags": "linked list,data structure,programming",
+                "paid": "Yes",
+                "answer": "A linked list is a linear data structure where each element (node) contains data and a reference (or link) to the next node. It allows dynamic memory allocation. For example, in a singly linked list, each node points to the next, and traversal is done sequentially."
+        },
+        {
+                "title": "What is a Stack?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of a stack in data structures.",
+                "tags": "stack,data structure,programming",
+                "paid": "Yes",
+                "answer": "A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. The most recent element added is the first to be removed. Common operations include `push` (add) and `pop` (remove). For example, undo operations in software applications often use a stack."
+        },
+        {
+                "title": "What is a Queue?",
+                "category": "Basic Computer",
+                "description": "Describe the concept of a queue in data structures.",
+                "tags": "queue,data structure,programming",
+                "paid": "Yes",
+                "answer": "A queue is a linear data structure that follows the First In, First Out (FIFO) principle. The first element added is the first to be removed. Common operations include `enqueue` (add) and `dequeue` (remove). For example, printer jobs are processed in a queue where the first submitted job prints first."
+        },
+        {
+                "title": "What is a Binary Tree?",
+                "category": "Basic Computer",
+                "description": "Define a binary tree and its use cases.",
+                "tags": "binary tree,data structure,programming",
+                "paid": "Yes",
+                "answer": "A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left and right child. It is commonly used in searching and sorting algorithms. For example, a binary search tree efficiently allows for O(log n) search time."
+        },
+        {
+                "title": "What is a Hash Table?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of a hash table.",
+                "tags": "hash table,data structure,programming",
+                "paid": "Yes",
+                "answer": "A hash table is a data structure that maps keys to values for efficient lookup. It uses a hash function to compute an index into an array where the desired value can be found. For example, in Python, dictionaries are implemented as hash tables for fast key-value access."
+        },
+        {
+                "title": "What is Big O Notation?",
+                "category": "Basic Computer",
+                "description": "Define Big O notation and its importance in algorithms.",
+                "tags": "Big O,algorithms,complexity",
+                "paid": "Yes",
+                "answer": "Big O Notation is a mathematical notation used to describe the worst-case time complexity of an algorithm, showing how it scales with input size. For example, a linear search has O(n) complexity, meaning the time grows proportionally with the number of elements in the input."
+        },
+        {
+                "title": "What is Recursion?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of recursion in programming.",
+                "tags": "recursion,programming,algorithms",
+                "paid": "Yes",
+                "answer": "Recursion is a technique in which a function calls itself to solve a smaller instance of the problem until a base condition is met. For example, the factorial of a number n can be defined recursively as `n * factorial(n-1)` with the base case being `factorial(1) = 1`."
+        },
+        {
+                "title": "What is a Sorting Algorithm?",
+                "category": "Basic Computer",
+                "description": "Define sorting algorithms and their use cases.",
+                "tags": "sorting algorithms,algorithms,programming",
+                "paid": "Yes",
+                "answer": "Sorting algorithms are used to arrange data in a specific order, such as ascending or descending. Common algorithms include Bubble Sort, Merge Sort, and Quick Sort. For example, Merge Sort divides the list into smaller sublists, sorts them, and then merges them to form a sorted list."
+        },
+        {
+                "title": "What is Bubble Sort?",
+                "category": "Basic Computer",
+                "description": "Explain the Bubble Sort algorithm.",
+                "tags": "bubble sort,sorting algorithms,programming",
+                "paid": "Yes",
+                "answer": "Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. For example, to sort `[3, 2, 1]`, Bubble Sort compares `3` and `2`, swaps them, and continues until the list is sorted."
+        },
+        {
+                "title": "What is Quick Sort?",
+                "category": "Basic Computer",
+                "description": "Explain the Quick Sort algorithm.",
+                "tags": "quick sort,sorting algorithms,programming",
+                "paid": "Yes",
+                "answer": "Quick Sort is a divide-and-conquer sorting algorithm that selects a 'pivot' element, partitions the array into two sub-arrays with elements less than and greater than the pivot, and then recursively sorts the sub-arrays. For example, sorting `[4, 2, 7, 1]` involves selecting a pivot and sorting around it."
+        },
+        {
+                "title": "What is Merge Sort?",
+                "category": "Basic Computer",
+                "description": "Describe the Merge Sort algorithm.",
+                "tags": "merge sort,sorting algorithms,programming",
+                "paid": "Yes",
+                "answer": "Merge Sort is a divide-and-conquer sorting algorithm that divides the input array into two halves, recursively sorts them, and then merges the sorted halves to produce a final sorted array. For example, sorting `[3, 1, 4, 2]` involves dividing it into smaller lists and merging them in order."
+        },
+        {
+                "title": "What is Binary Search?",
+                "category": "Basic Computer",
+                "description": "Explain the Binary Search algorithm.",
+                "tags": "binary search,algorithms,searching,programming",
+                "paid": "Yes",
+                "answer": "Binary Search is an efficient algorithm for finding an item in a sorted list by repeatedly dividing the search interval in half. It compares the target value to the middle element of the array and eliminates half the search space. For example, searching for `5` in `[1, 3, 5, 7]` involves comparing to `5` directly."
+        },
+        {
+                "title": "What is a Greedy Algorithm?",
+                "category": "Basic Computer",
+                "description": "Define the concept of a greedy algorithm.",
+                "tags": "greedy algorithm,algorithms,programming",
+                "paid": "Yes",
+                "answer": "A greedy algorithm makes the locally optimal choice at each step with the hope of finding a global optimum. It is used in optimization problems like the fractional knapsack problem, where items are selected based on the highest value-to-weight ratio to maximize profit within a given weight limit."
+        },
+        {
+                "title": "What is Dynamic Programming?",
+                "category": "Basic Computer",
+                "description": "Explain the concept of dynamic programming.",
+                "tags": "dynamic programming,algorithms,optimization",
+                "paid": "Yes",
+                "answer": "Dynamic programming is a method for solving problems by breaking them down into smaller overlapping subproblems and storing their solutions to avoid redundant computations. For example, in the Fibonacci sequence, dynamic programming can store previously computed values to speed up calculations."
+        },
+        {
+                "title": "What is the Divide and Conquer Algorithm?",
+                "category": "Basic Computer",
+                "description": "Explain the divide and conquer strategy in algorithms.",
+                "tags": "divide and conquer,algorithms,programming",
+                "paid": "Yes",
+                "answer": "Divide and conquer is an algorithmic strategy that divides a problem into smaller subproblems, solves them independently, and combines their solutions to solve the original problem. For example, Merge Sort uses divide and conquer by dividing an array into halves, recursively sorting them, and merging the results."
+        },
+        {
+                "title": "What is a Graph in Computer Science?",
+                "category": "Basic Computer",
+                "description": "Define a graph and its use in computer science.",
+                "tags": "graph,computer science,data structure",
+                "paid": "Yes",
+                "answer": "A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. It is used to model relationships between objects. For example, in social networks, users are represented as nodes, and their friendships are edges connecting the nodes."
+        },
+        {
+                "title": "What is Dijkstra's Algorithm?",
+                "category": "Basic Computer",
+                "description": "Explain Dijkstra's algorithm for finding the shortest path.",
+                "tags": "Dijkstra's algorithm,graph algorithms,programming",
+                "paid": "Yes",
+                "answer": "Dijkstra's algorithm is a graph traversal algorithm used to find the shortest path between two nodes in a weighted graph. It starts from a source node, explores its neighbors, and selects the path with the smallest cumulative weight. For example, it is used in GPS systems to find the shortest route between locations."
+        },
+        {
+                "title": "What is the Difference Between Depth-First Search (DFS) and Breadth-First Search (BFS)?",
+                "category": "Basic Computer",
+                "description": "Differentiate between DFS and BFS in graph traversal.",
+                "tags": "DFS,BFS,graph traversal,algorithms",
+                "paid": "Yes",
+                "answer": "DFS explores a graph by going as deep as possible along each branch before backtracking, while BFS explores all neighbors of a node before moving to the next level of neighbors. For example, DFS is used in maze-solving, while BFS is used in finding the shortest path in unweighted graphs."
+        },
+        {
+                "title": "What is a Spanning Tree?",
+                "category": "Basic Computer",
+                "description": "Define a spanning tree in a graph.",
+                "tags": "spanning tree,graph,algorithms",
+                "paid": "Yes",
+                "answer": "A spanning tree of a graph is a subgraph that includes all the vertices of the original graph and is a tree (has no cycles). It connects all the vertices with the minimum possible number of edges. For example, the minimum spanning tree is used in network design to connect points with minimal cost."
+        },
+        {
+                "title": "What is the Time Complexity of an Algorithm?",
+                "category": "Basic Computer",
+                "description": "Define time complexity and its significance.",
+                "tags": "time complexity,algorithms,performance",
+                "paid": "Yes",
+                "answer": "Time complexity describes how the running time of an algorithm grows as the input size increases. It helps evaluate the efficiency of an algorithm. For example, linear search has a time complexity of O(n), meaning the time required grows linearly with the number of elements."
+        }
+]

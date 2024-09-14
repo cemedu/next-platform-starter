@@ -1,0 +1,1546 @@
+[
+        {
+                "title": "What is PHP?",
+                "category": "Php",
+                "description": "A brief introduction to PHP.",
+                "tags": "php, programming, web development",
+                "paid": "Yes",
+                "answer": "PHP (Hypertext Preprocessor) is a widely-used open-source scripting language designed primarily for web development. It allows developers to create dynamic content that interacts with databases. PHP code is executed on the server, generating HTML that is then sent to the client. It is known for its flexibility, ease of integration with various databases, and support for various protocols and standards."
+        },
+        {
+                "title": "How do you declare a variable in PHP?",
+                "category": "Php",
+                "description": "Explanation of variable declaration in PHP.",
+                "tags": "php, variables, syntax",
+                "paid": "Yes",
+                "answer": "In PHP, variables are declared using the dollar sign symbol ($) followed by the variable name. For example, to declare a variable named 'username' and assign it a value, you would write: `$username = 'JohnDoe';`. PHP variables do not require a type declaration as they are dynamically typed, meaning the type of the variable is determined at runtime."
+        },
+        {
+                "title": "What is the difference between 'include' and 'require' in PHP?",
+                "category": "Php",
+                "description": "Comparison of 'include' and 'require' functions.",
+                "tags": "php, include, require",
+                "paid": "Yes",
+                "answer": "'include' and 'require' are both used to include the content of one PHP file into another, but they differ in how they handle errors. 'include' will emit a warning but continue execution if the file is not found, while 'require' will emit a fatal error and stop script execution if the file cannot be included. Use 'include' when the file is not critical to the application and 'require' when the file is essential."
+        },
+        {
+                "title": "What is a PHP session?",
+                "category": "Php",
+                "description": "Definition and purpose of PHP sessions.",
+                "tags": "php, sessions, state management",
+                "paid": "Yes",
+                "answer": "A PHP session is a way to store information across multiple pages. Sessions are used to keep track of user data such as login status or shopping cart contents. When a session is started, PHP generates a unique session ID, which is sent to the user's browser as a cookie. The server then uses this session ID to retrieve and maintain user data for the duration of the session."
+        },
+        {
+                "title": "How do you connect to a MySQL database in PHP?",
+                "category": "Php",
+                "description": "Steps to connect to MySQL using PHP.",
+                "tags": "php, mysql, database connection",
+                "paid": "Yes",
+                "answer": "To connect to a MySQL database in PHP, you typically use the `mysqli` or `PDO` extension. With `mysqli`, you would use `mysqli_connect()` function. For example: `$conn = mysqli_connect('localhost', 'username', 'password', 'database');`. Check for connection errors using `if (!$conn) { die('Connection failed: ' . mysqli_connect_error()); }`. Alternatively, PDO offers a more flexible approach and supports multiple database types."
+        },
+        {
+                "title": "How do you handle errors in PHP?",
+                "category": "Php",
+                "description": "Different methods to handle errors in PHP.",
+                "tags": "php, error handling, debugging",
+                "paid": "Yes",
+                "answer": "Error handling in PHP can be managed using error reporting settings and custom error handlers. You can configure error reporting levels using `error_reporting()` and display errors using `ini_set('display_errors', 1);`. For custom error handling, define a custom function and set it using `set_error_handler('customErrorHandler');`. This function will handle errors according to the defined logic, allowing for better control and debugging."
+        },
+        {
+                "title": "What is a PHP array?",
+                "category": "Php",
+                "description": "Understanding PHP arrays.",
+                "tags": "php, arrays, data structures",
+                "paid": "Yes",
+                "answer": "In PHP, an array is a data structure that allows you to store multiple values in a single variable. PHP supports both indexed arrays (where elements are accessed using numeric indexes) and associative arrays (where elements are accessed using named keys). For example: `$fruits = array('Apple', 'Banana', 'Cherry');` for an indexed array and `$person = array('name' => 'John', 'age' => 30);` for an associative array."
+        },
+        {
+                "title": "What is the purpose of the '$_POST' superglobal in PHP?",
+                "category": "Php",
+                "description": "Usage of '$_POST' superglobal.",
+                "tags": "php, superglobal, form handling",
+                "paid": "Yes",
+                "answer": "The `$_POST` superglobal in PHP is used to collect form data submitted via the HTTP POST method. It is an associative array where the keys are the names of the form fields and the values are the data entered by the user. For example, if a form field named 'email' is submitted, you can access its value using `$_POST['email']`. It is commonly used for processing form submissions and user inputs."
+        },
+        {
+                "title": "How do you create a class in PHP?",
+                "category": "Php",
+                "description": "Steps to define a class in PHP.",
+                "tags": "php, classes, object-oriented programming",
+                "paid": "Yes",
+                "answer": "To create a class in PHP, use the `class` keyword followed by the class name and curly braces to define its properties and methods. For example: `class Car { public $color; public function start() { echo 'Car started'; } }`. To create an instance of the class, use the `new` keyword: `$myCar = new Car();`. Classes are fundamental to object-oriented programming, allowing for encapsulation and reusability."
+        },
+        {
+                "title": "What is the difference between '=='' and '===' in PHP?",
+                "category": "Php",
+                "description": "Comparison between '==' and '===' operators.",
+                "tags": "php, comparison, operators",
+                "paid": "Yes",
+                "answer": "'==' is the equality operator that checks if two values are equal, but it does not consider the data type. For example, `0 == '0'` is true. On the other hand, '===' is the identity operator that checks if two values are equal and of the same data type. For instance, `0 === '0'` is false because one is an integer and the other is a string. Use '===' for strict type checking."
+        },
+        {
+                "title": "How do you write a comment in PHP?",
+                "category": "Php",
+                "description": "Syntax for writing comments in PHP.",
+                "tags": "php, comments, code documentation",
+                "paid": "Yes",
+                "answer": "In PHP, you can write comments using two types of syntax. For single-line comments, use `//` or `#`. For example: `// This is a single-line comment` or `# This is also a single-line comment`. For multi-line comments, use `/*` to start and `*/` to end. For example: `/* This is a multi-line comment */`. Comments are useful for documenting code and making it easier to understand."
+        },
+        {
+                "title": "What is the use of the 'isset()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'isset()' function.",
+                "tags": "php, isset, function",
+                "paid": "Yes",
+                "answer": "The `isset()` function in PHP is used to check if a variable is set and is not null. It returns `true` if the variable exists and has a value other than `null`; otherwise, it returns `false`. For example: `if (isset($variable)) { echo 'Variable is set'; }`. This function is often used to determine if form data or session variables are available before performing operations on them."
+        },
+        {
+                "title": "How do you handle file uploads in PHP?",
+                "category": "Php",
+                "description": "Steps to manage file uploads in PHP.",
+                "tags": "php, file upload, forms",
+                "paid": "Yes",
+                "answer": "To handle file uploads in PHP, use the `$_FILES` superglobal which contains information about the uploaded file. Ensure your HTML form has `enctype='multipart/form-data'` and method `POST`. In PHP, you can access the file details through `$_FILES['file']['tmp_name']` for the temporary file name, and `$_FILES['file']['name']` for the original file name. Move the uploaded file to a permanent location using `move_uploaded_file()`. For example: `move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);`."
+        },
+        {
+                "title": "What is a PHP constant?",
+                "category": "Php",
+                "description": "Definition and usage of constants in PHP.",
+                "tags": "php, constants, programming",
+                "paid": "Yes",
+                "answer": "In PHP, a constant is a value that cannot be changed during the execution of the script. Constants are defined using the `define()` function. For example: `define('SITE_NAME', 'MyWebsite');`. Once defined, constants can be accessed globally without the need for a dollar sign, like `SITE_NAME`. Constants are useful for storing configuration values or other immutable data."
+        },
+        {
+                "title": "How can you create a cookie in PHP?",
+                "category": "Php",
+                "description": "Creating and managing cookies in PHP.",
+                "tags": "php, cookies, web development",
+                "paid": "Yes",
+                "answer": "To create a cookie in PHP, use the `setcookie()` function. The function takes parameters such as the cookie name, value, expiration time, and path. For example: `setcookie('user', 'JohnDoe', time() + 3600, '/');`. This sets a cookie named 'user' with the value 'JohnDoe' that expires in one hour. Cookies are sent to the client's browser and can be accessed on subsequent page loads."
+        },
+        {
+                "title": "What is the 'foreach' loop in PHP?",
+                "category": "Php",
+                "description": "Usage and syntax of 'foreach' loop.",
+                "tags": "php, loops, iteration",
+                "paid": "Yes",
+                "answer": "The `foreach` loop in PHP is used to iterate over arrays. It provides a simple way to loop through all elements in an array without the need for an index. The syntax is: `foreach ($array as $value) { // code to execute }`. For associative arrays, use: `foreach ($array as $key => $value) { // code to execute }`. This loop is particularly useful for accessing each element of an array directly."
+        },
+        {
+                "title": "What are PHP data types?",
+                "category": "Php",
+                "description": "Overview of PHP data types.",
+                "tags": "php, data types, programming",
+                "paid": "Yes",
+                "answer": "PHP supports several data types including: 1) **Integers** (e.g., `42`), 2) **Floats** (e.g., `3.14`), 3) **Strings** (e.g., `'Hello'`), 4) **Booleans** (`true` or `false`), 5) **Arrays** (e.g., `array('apple', 'banana')`), 6) **Objects** (instances of classes), 7) **NULL** (represents no value). PHP is a loosely-typed language, meaning that variables can change types based on the context."
+        },
+        {
+                "title": "How do you use the 'require_once' function in PHP?",
+                "category": "Php",
+                "description": "Purpose and use of 'require_once'.",
+                "tags": "php, require_once, file inclusion",
+                "paid": "Yes",
+                "answer": "'require_once' is a PHP function used to include a file, but it ensures the file is included only once during the script execution. This helps prevent redeclaration of functions or classes if the file is included multiple times. For example: `require_once 'config.php';`. If `config.php` has already been included, `require_once` will skip the inclusion, avoiding redundancy and potential errors."
+        },
+        {
+                "title": "What is the difference between 'public', 'protected', and 'private' in PHP classes?",
+                "category": "Php",
+                "description": "Access modifiers in PHP classes.",
+                "tags": "php, classes, access modifiers",
+                "paid": "Yes",
+                "answer": "In PHP classes, access modifiers control the visibility of properties and methods. **`public`** means the property or method is accessible from anywhere, both inside and outside the class. **`protected`** means it can only be accessed within the class and by subclasses. **`private`** means it can only be accessed within the class itself. These modifiers help in encapsulating the data and controlling access to class members."
+        },
+        {
+                "title": "How do you handle exceptions in PHP?",
+                "category": "Php",
+                "description": "Exception handling in PHP.",
+                "tags": "php, exceptions, error handling",
+                "paid": "Yes",
+                "answer": "In PHP, exceptions are handled using `try`, `catch`, and `finally` blocks. You place the code that might throw an exception inside the `try` block. If an exception is thrown, it is caught by the `catch` block, where you can handle the error. The `finally` block is optional and contains code that executes regardless of whether an exception occurred. For example: `try { // code that might throw an exception } catch (Exception $e) { // handle exception } finally { // cleanup code }`."
+        },
+        {
+                "title": "What is the purpose of the 'header()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'header()' function.",
+                "tags": "php, header, HTTP headers",
+                "paid": "Yes",
+                "answer": "The `header()` function in PHP is used to send raw HTTP headers to the client. This can be useful for redirecting users, setting content types, or managing caching. For example, to redirect a user to another page, use `header('Location: http://www.example.com/');`. Note that `header()` must be called before any actual output is sent to the browser, as it modifies HTTP headers."
+        },
+        {
+                "title": "What is the 'implode()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'implode()' function.",
+                "tags": "php, implode, string manipulation",
+                "paid": "Yes",
+                "answer": "The `implode()` function in PHP is used to join elements of an array into a single string, with a specified separator. For example: `implode(', ', array('apple', 'banana', 'cherry'));` would produce `'apple, banana, cherry'`. The first parameter is the separator, and the second parameter is the array. This function is useful for creating a comma-separated list or other formatted strings from array elements."
+        },
+        {
+                "title": "What is the 'explode()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'explode()' function.",
+                "tags": "php, explode, string manipulation",
+                "paid": "Yes",
+                "answer": "The `explode()` function in PHP is used to split a string into an array based on a delimiter. For example: `explode(', ', 'apple, banana, cherry');` would return the array `array('apple', 'banana', 'cherry')`. The first parameter is the delimiter, and the second parameter is the string to be split. This function is useful for breaking down a string into manageable parts or parsing data."
+        },
+        {
+                "title": "What is the 'isset()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'isset()' function.",
+                "tags": "php, isset, variable checks",
+                "paid": "Yes",
+                "answer": "The `isset()` function checks if a variable is set and is not `null`. It returns `true` if the variable exists and has a value other than `null`; otherwise, it returns `false`. For example: `if (isset($var)) { echo 'Variable is set'; }`. It is commonly used to verify the existence of a variable before attempting to use it, preventing errors or undefined variable notices."
+        },
+        {
+                "title": "What is 'mysqli' in PHP?",
+                "category": "Php",
+                "description": "Purpose and use of 'mysqli' extension.",
+                "tags": "php, mysqli, database",
+                "paid": "Yes",
+                "answer": "The `mysqli` (MySQL Improved) extension in PHP provides an interface to interact with MySQL databases. It offers improved functionality over the older `mysql` extension, including support for prepared statements, transactions, and multi-query execution. For example, you can connect to a database with `mysqli_connect('localhost', 'user', 'password', 'database')`. `mysqli` provides both procedural and object-oriented interfaces for database operations."
+        },
+        {
+                "title": "What is the 'PDO' extension in PHP?",
+                "category": "Php",
+                "description": "Purpose and features of 'PDO' extension.",
+                "tags": "php, PDO, database",
+                "paid": "Yes",
+                "answer": "PDO (PHP Data Objects) is a database access layer providing a uniform interface for accessing various databases. Unlike `mysqli`, PDO supports multiple database drivers (e.g., MySQL, PostgreSQL, SQLite). It allows for prepared statements, which help protect against SQL injection. For example: `$pdo = new PDO('mysql:host=localhost;dbname=testdb', 'username', 'password');`. PDO is preferred for its flexibility and abstraction layer."
+        },
+        {
+                "title": "How do you create a function in PHP?",
+                "category": "Php",
+                "description": "Syntax for defining a function in PHP.",
+                "tags": "php, functions, syntax",
+                "paid": "Yes",
+                "answer": "To create a function in PHP, use the `function` keyword followed by the function name and parentheses containing any parameters. The function body is enclosed in curly braces. For example: `function greet($name) { return 'Hello, ' . $name; }`. To call the function, use its name with arguments: `echo greet('Alice');`. Functions allow for code reusability and organization."
+        },
+        {
+                "title": "What is the use of 'array_map()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_map()' function.",
+                "tags": "php, array_map, array manipulation",
+                "paid": "Yes",
+                "answer": "'array_map()' is a PHP function that applies a callback function to each element of one or more arrays. It returns an array containing the results. For example: `array_map('strtoupper', array('hello', 'world'));` would return `array('HELLO', 'WORLD')`. This function is useful for performing operations on array elements, such as transformations or formatting."
+        },
+        {
+                "title": "What is the 'preg_match()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'preg_match()' function.",
+                "tags": "php, regex, preg_match",
+                "paid": "Yes",
+                "answer": "The `preg_match()` function in PHP performs a regular expression match. It searches a string for a pattern defined by a regular expression and returns `1` if the pattern matches, `0` if it does not, or `FALSE` on error. For example: `preg_match('/\\d+/', '123abc');` will return `1` because '123' matches the pattern of one or more digits. It is used for pattern matching and validation."
+        },
+        {
+                "title": "How do you use 'str_replace()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'str_replace()' function.",
+                "tags": "php, str_replace, string manipulation",
+                "paid": "Yes",
+                "answer": "The `str_replace()` function in PHP is used to replace all occurrences of a search string with a replacement string within a given string. For example: `str_replace('world', 'everyone', 'Hello world');` will return `'Hello everyone'`. It can also work with arrays, replacing multiple values at once. This function is useful for text manipulation and cleaning up data."
+        },
+        {
+                "title": "What does the 'strlen()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'strlen()' function.",
+                "tags": "php, strlen, string functions",
+                "paid": "Yes",
+                "answer": "The `strlen()` function in PHP returns the length of a string, measured in characters. For example: `strlen('Hello world');` will return `11`. It counts the number of characters in the string, including spaces and special characters. This function is useful for determining the size of a string, validating input lengths, or managing text-based data."
+        },
+        {
+                "title": "How can you remove whitespace from a string in PHP?",
+                "category": "Php",
+                "description": "Methods to trim whitespace in PHP.",
+                "tags": "php, whitespace, string functions",
+                "paid": "Yes",
+                "answer": "To remove whitespace from a string in PHP, use the `trim()` function which removes whitespace from the beginning and end of a string. For example: `trim('  Hello world  ');` will return `'Hello world'`. Additionally, `ltrim()` can be used to remove whitespace from the beginning, and `rtrim()` from the end of a string. These functions help clean up user input and format text."
+        },
+        {
+                "title": "How do you validate email addresses in PHP?",
+                "category": "Php",
+                "description": "Email validation in PHP.",
+                "tags": "php, email validation, filters",
+                "paid": "Yes",
+                "answer": "To validate email addresses in PHP, use the `filter_var()` function with the `FILTER_VALIDATE_EMAIL` filter. For example: `if (filter_var($email, FILTER_VALIDATE_EMAIL)) { echo 'Valid email'; } else { echo 'Invalid email'; }`. This function checks the syntax of the email address and ensures it conforms to standard email formats. It's an effective way to validate user inputs."
+        },
+        {
+                "title": "What does the 'array_push()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_push()' function.",
+                "tags": "php, array_push, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_push()` function in PHP adds one or more elements to the end of an array. For example: `array_push($array, 'new_value');` will append 'new_value' to the end of `$array`. It can also accept multiple values: `array_push($array, 'value1', 'value2');`. This function is useful for dynamically adding items to arrays."
+        },
+        {
+                "title": "What is the 'json_encode()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'json_encode()' function.",
+                "tags": "php, json_encode, JSON",
+                "paid": "Yes",
+                "answer": "The `json_encode()` function in PHP converts a PHP value (such as an array or object) into a JSON format. For example: `json_encode(array('name' => 'John', 'age' => 30));` will produce `'{'name':'John','age':30}'`. This function is used for encoding data to be sent to a client-side application or stored in JSON format, facilitating data interchange between different systems."
+        },
+        {
+                "title": "How do you use 'mysqli_prepare()' in PHP?",
+                "category": "Php",
+                "description": "Preparing statements using 'mysqli_prepare()'.",
+                "tags": "php, mysqli, prepared statements",
+                "paid": "Yes",
+                "answer": "'mysqli_prepare()' is used in PHP to prepare an SQL statement for execution, allowing for parameterized queries that enhance security. For example: `$stmt = mysqli_prepare($conn, 'SELECT * FROM users WHERE email = ?');`. Placeholders (like `?`) are used in the query, and then parameters are bound using `mysqli_stmt_bind_param()`. This approach helps prevent SQL injection by separating the SQL code from the data."
+        },
+        {
+                "title": "What is the 'strip_tags()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'strip_tags()' function.",
+                "tags": "php, strip_tags, security",
+                "paid": "Yes",
+                "answer": "The `strip_tags()` function in PHP removes HTML and PHP tags from a string. For example: `strip_tags('<p>Hello</p>');` will return `'Hello'`. This function is useful for sanitizing user input by removing unwanted tags and preventing potential security risks, such as cross-site scripting (XSS) attacks. It is often used when displaying user-generated content."
+        },
+        {
+                "title": "How do you use 'file_get_contents()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'file_get_contents()' function.",
+                "tags": "php, file_get_contents, file handling",
+                "paid": "Yes",
+                "answer": "The `file_get_contents()` function in PHP reads the entire content of a file into a string. For example: `$content = file_get_contents('file.txt');` reads the contents of 'file.txt' and stores it in the variable `$content`. This function is commonly used for reading files, fetching data from URLs, or working with file content in a simple way."
+        },
+        {
+                "title": "What is the 'uniqid()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'uniqid()' function.",
+                "tags": "php, uniqid, unique identifiers",
+                "paid": "Yes",
+                "answer": "The `uniqid()` function in PHP generates a unique identifier based on the current time in microseconds. For example: `uniqid();` might produce a string like `'5f0e0d8b5e4b1'`. This function is often used to create unique keys or identifiers for objects or sessions. It can also accept a prefix string to prepend to the generated ID."
+        },
+        {
+                "title": "How do you use 'array_merge()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_merge()' function.",
+                "tags": "php, array_merge, array operations",
+                "paid": "Yes",
+                "answer": "The `array_merge()` function in PHP combines multiple arrays into one. For example: `array_merge(array('a', 'b'), array('c', 'd'));` will result in `array('a', 'b', 'c', 'd')`. This function merges the arrays in the order they are passed, with the values of subsequent arrays appending to the first array. It is useful for aggregating data from multiple sources."
+        },
+        {
+                "title": "What is 'mysqli_fetch_assoc()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'mysqli_fetch_assoc()' function.",
+                "tags": "php, mysqli, database fetching",
+                "paid": "Yes",
+                "answer": "'mysqli_fetch_assoc()' fetches a result row as an associative array from a MySQL database query. For example: `while ($row = mysqli_fetch_assoc($result)) { echo $row['column_name']; }` retrieves rows from a result set where each row is an associative array with column names as keys. This function is useful for accessing query results in a readable format."
+        },
+        {
+                "title": "What is the 'empty()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'empty()' function.",
+                "tags": "php, empty, variable checks",
+                "paid": "Yes",
+                "answer": "The `empty()` function in PHP checks if a variable is empty. It returns `true` if the variable is empty (i.e., '', 0, '0', NULL, FALSE, array()), and `false` otherwise. For example: `if (empty($var)) { echo 'Variable is empty'; }`. This function is useful for validating variables and managing conditional logic based on variable content."
+        },
+        {
+                "title": "How do you redirect a user to another page in PHP?",
+                "category": "Php",
+                "description": "Redirecting users in PHP.",
+                "tags": "php, redirect, header",
+                "paid": "Yes",
+                "answer": "To redirect a user to another page in PHP, use the `header()` function with the `Location` header. For example: `header('Location: http://www.example.com/');`. Ensure that no output is sent before this function call, as headers must be sent before any actual content. This method is commonly used for navigation and handling form submissions."
+        },
+        {
+                "title": "What is the 'strtotime()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'strtotime()' function.",
+                "tags": "php, strtotime, date manipulation",
+                "paid": "Yes",
+                "answer": "The `strtotime()` function in PHP parses an English textual datetime description into a Unix timestamp. For example: `strtotime('next Monday');` returns a timestamp for the next Monday's date. This function is useful for converting human-readable date and time strings into a format that can be easily used for date calculations or comparisons."
+        },
+        {
+                "title": "How do you use 'array_shift()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_shift()' function.",
+                "tags": "php, array_shift, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_shift()` function in PHP removes the first element from an array and returns it. For example: `array_shift($array);` removes the first element from `$array` and shifts all other elements down. This function is useful for queue-like data structures or when needing to process elements in the order they were added."
+        },
+        {
+                "title": "What does 'session_start()' do in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'session_start()'.",
+                "tags": "php, sessions, session_start",
+                "paid": "Yes",
+                "answer": "The `session_start()` function in PHP initializes a new session or resumes an existing session. It must be called at the beginning of the script, before any output is sent. For example: `session_start();` starts the session and allows you to access and manipulate session variables using the `$_SESSION` superglobal. This function is crucial for managing user-specific data across multiple pages."
+        },
+        {
+                "title": "What is the 'file_put_contents()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'file_put_contents()' function.",
+                "tags": "php, file_put_contents, file handling",
+                "paid": "Yes",
+                "answer": "The `file_put_contents()` function in PHP writes data to a file. If the file does not exist, it will be created. For example: `file_put_contents('file.txt', 'Hello World');` writes 'Hello World' to 'file.txt'. This function is a convenient way to write data to files, including appending or overwriting existing content based on additional flags."
+        },
+        {
+                "title": "How do you handle form submissions in PHP?",
+                "category": "Php",
+                "description": "Handling form submissions in PHP.",
+                "tags": "php, form handling, $_POST, $_GET",
+                "paid": "Yes",
+                "answer": "To handle form submissions in PHP, you can use the `$_POST` or `$_GET` superglobals, depending on the form's method attribute. For example: `if ($_SERVER['REQUEST_METHOD'] == 'POST') { $name = $_POST['name']; }` retrieves form data sent via POST. Validate and sanitize user inputs to ensure security before processing the data. This method allows for handling user inputs and actions on forms."
+        },
+        {
+                "title": "What is the 'header()' function in PHP?",
+                "category": "Php",
+                "description": "Usage and importance of 'header()' function.",
+                "tags": "php, header, HTTP headers",
+                "paid": "Yes",
+                "answer": "The `header()` function in PHP is used to send raw HTTP headers to the browser before any actual output is sent. For example: `header('Content-Type: application/json');` sets the content type of the response. It can be used for tasks like redirecting users, setting cache control, and modifying the content type of the response. The function must be called before any HTML or other output."
+        },
+        {
+                "title": "What is the 'filter_var()' function used for in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'filter_var()' function.",
+                "tags": "php, filter_var, data validation",
+                "paid": "Yes",
+                "answer": "The `filter_var()` function in PHP is used for filtering and validating data. It can sanitize and validate different types of data, such as strings and integers. For example: `filter_var($email, FILTER_VALIDATE_EMAIL)` validates an email address. It is useful for ensuring data integrity and security by applying filters or validation rules to user inputs and other data sources."
+        },
+        {
+                "title": "What is the difference between 'include' and 'require' in PHP?",
+                "category": "Php",
+                "description": "Understanding 'include' vs 'require'.",
+                "tags": "php, include, require, file inclusion",
+                "paid": "Yes",
+                "answer": "'include' and 'require' are both used to include files in PHP, but they differ in how they handle errors. If a file cannot be included, 'include' will issue a warning and continue execution, while 'require' will produce a fatal error and halt execution. For example: `include 'file.php';` vs `require 'file.php';`. Use 'require' when the file is essential for the application to function."
+        },
+        {
+                "title": "How can you connect to a MySQL database using PDO in PHP?",
+                "category": "Php",
+                "description": "Connecting to MySQL with PDO.",
+                "tags": "php, PDO, MySQL, database connection",
+                "paid": "Yes",
+                "answer": "To connect to a MySQL database using PDO in PHP, create a new instance of the `PDO` class. For example: `$pdo = new PDO('mysql:host=localhost;dbname=testdb', 'username', 'password');`. The first parameter is the Data Source Name (DSN), and the second and third parameters are the username and password. Use try-catch blocks to handle connection errors effectively."
+        },
+        {
+                "title": "What is the purpose of the 'session_destroy()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'session_destroy()'.",
+                "tags": "php, sessions, session management",
+                "paid": "Yes",
+                "answer": "The `session_destroy()` function in PHP deletes the current session data on the server. It is used to terminate a session and remove all session variables. For example: `session_start(); session_destroy();` clears all session data. Note that it does not unset the `$_SESSION` array itself; you may need to use `unset($_SESSION)` to remove individual session variables."
+        },
+        {
+                "title": "What does the 'isset()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'isset()' function.",
+                "tags": "php, isset, variable checks",
+                "paid": "Yes",
+                "answer": "The `isset()` function in PHP checks whether a variable is set and is not `null`. It returns `true` if the variable exists and has a value other than `null`; otherwise, it returns `false`. For example: `if (isset($var)) { echo 'Variable is set'; }`. This function is often used to verify if a variable has been initialized before using it."
+        },
+        {
+                "title": "How do you handle file uploads in PHP?",
+                "category": "Php",
+                "description": "Handling file uploads in PHP.",
+                "tags": "php, file uploads, form handling",
+                "paid": "Yes",
+                "answer": "To handle file uploads in PHP, use the `$_FILES` superglobal array. Ensure your HTML form has the `enctype='multipart/form-data'` attribute. For example: `if ($_FILES['file']['error'] == UPLOAD_ERR_OK) { move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']); }`. This script checks for errors and moves the uploaded file to a specified directory."
+        },
+        {
+                "title": "What is the 'array_pop()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_pop()' function.",
+                "tags": "php, array_pop, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_pop()` function in PHP removes the last element from an array and returns it. For example: `array_pop($array);` will remove and return the last element of `$array`. This function is useful for stack-like data structures where elements are processed in a last-in, first-out manner."
+        },
+        {
+                "title": "What does the 'array_keys()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_keys()' function.",
+                "tags": "php, array_keys, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_keys()` function in PHP returns all the keys or a subset of the keys of an array. For example: `array_keys(array('a' => 1, 'b' => 2));` will return `array('a', 'b')`. You can also specify a value to filter the keys by that value. This function is useful for retrieving the keys of an associative array."
+        },
+        {
+                "title": "How do you use 'in_array()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'in_array()' function.",
+                "tags": "php, in_array, array functions",
+                "paid": "Yes",
+                "answer": "The `in_array()` function in PHP checks if a value exists in an array. For example: `in_array('apple', array('apple', 'banana', 'cherry'));` returns `true`. It can also accept a third parameter to check for strict type comparison. This function is useful for checking membership or presence of values in arrays."
+        },
+        {
+                "title": "What is the purpose of the 'header()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'header()' function.",
+                "tags": "php, header, HTTP headers",
+                "paid": "Yes",
+                "answer": "The `header()` function in PHP is used to send raw HTTP headers to the client before any actual output is sent. For example: `header('Content-Type: application/json');` sets the content type of the response. It can also be used to redirect users with `header('Location: http://www.example.com/');`. The function must be called before any HTML or other output is sent."
+        },
+        {
+                "title": "What does the 'array_splice()' function do in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_splice()' function.",
+                "tags": "php, array_splice, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_splice()` function in PHP removes a portion of the array and optionally replaces it with new elements. For example: `array_splice($array, 1, 2, array('new'));` removes 2 elements starting from index 1 and inserts 'new'. This function modifies the original array and can be used to replace or delete elements."
+        },
+        {
+                "title": "How do you use 'file_exists()' in PHP?",
+                "category": "Php",
+                "description": "Checking file existence with 'file_exists()'.",
+                "tags": "php, file_exists, file handling",
+                "paid": "Yes",
+                "answer": "The `file_exists()` function in PHP checks whether a file or directory exists. For example: `if (file_exists('file.txt')) { echo 'File exists'; }`. It returns `true` if the file or directory exists, and `false` otherwise. This function is useful for verifying file presence before performing file operations."
+        },
+        {
+                "title": "What is the 'preg_replace()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'preg_replace()' function.",
+                "tags": "php, regex, preg_replace",
+                "paid": "Yes",
+                "answer": "The `preg_replace()` function in PHP performs a regular expression search and replace. It replaces all occurrences of a pattern in a string with a replacement string. For example: `preg_replace('/\\d+/', 'number', 'There are 10 apples');` will replace '10' with 'number', resulting in 'There are number apples'. This function is useful for modifying text based on patterns."
+        },
+        {
+                "title": "How do you use 'array_filter()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_filter()' function.",
+                "tags": "php, array_filter, array operations",
+                "paid": "Yes",
+                "answer": "The `array_filter()` function in PHP filters elements of an array using a callback function. It returns a new array containing only those elements for which the callback returns `true`. For example: `array_filter($array, function($value) { return $value > 10; });` filters out values less than or equal to 10. This function is useful for creating subsets of arrays based on custom criteria."
+        },
+        {
+                "title": "What is the 'date()' function used for in PHP?",
+                "category": "Php",
+                "description": "Formatting dates with 'date()' function.",
+                "tags": "php, date, time",
+                "paid": "Yes",
+                "answer": "The `date()` function in PHP formats a local date and time according to a specified format string. For example: `date('Y-m-d H:i:s');` will produce a string like '2024-09-10 15:30:00'. The format string uses characters like 'Y' for the full year and 'd' for the day of the month. This function is useful for displaying dates in various formats."
+        },
+        {
+                "title": "How do you use 'filter_input()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'filter_input()' function.",
+                "tags": "php, filter_input, data validation",
+                "paid": "Yes",
+                "answer": "The `filter_input()` function in PHP gets a specific input variable, optionally filtering it based on a specified filter. For example: `$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);` retrieves and validates an email address from POST data. This function is useful for sanitizing and validating user inputs from various sources like GET, POST, and COOKIE."
+        },
+        {
+                "title": "What is the 'mysqli_query()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'mysqli_query()' function.",
+                "tags": "php, mysqli, database queries",
+                "paid": "Yes",
+                "answer": "The `mysqli_query()` function in PHP executes a query against a MySQL database. For example: `$result = mysqli_query($conn, 'SELECT * FROM users');` runs the query and returns a result set for SELECT statements or a boolean for other types of queries. This function is essential for interacting with MySQL databases and performing operations such as retrieving or modifying data."
+        },
+        {
+                "title": "What is the 'compact()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'compact()' function.",
+                "tags": "php, compact, variable handling",
+                "paid": "Yes",
+                "answer": "The `compact()` function in PHP creates an array from variables and their values. For example: `$name = 'John'; $age = 30; $data = compact('name', 'age');` results in `$data` being `array('name' => 'John', 'age' => 30);`. This function is useful for creating arrays dynamically from a set of variable names."
+        },
+        {
+                "title": "How do you use 'array_walk()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_walk()' function.",
+                "tags": "php, array_walk, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_walk()` function in PHP applies a callback function to each element of an array, modifying the original array in place. For example: `array_walk($array, function(&$item) { $item = $item * 2; });` doubles each value in `$array`. This function is useful for performing operations on array elements while maintaining the original array structure."
+        },
+        {
+                "title": "What is the 'gettype()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'gettype()' function.",
+                "tags": "php, gettype, data types",
+                "paid": "Yes",
+                "answer": "The `gettype()` function in PHP returns the type of a variable as a string. For example: `gettype(123);` returns `'integer'`, and `gettype('text');` returns `'string'`. This function is useful for debugging and type checking, helping developers understand the data types of variables during execution."
+        },
+        {
+                "title": "How do you use 'array_slice()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_slice()' function.",
+                "tags": "php, array_slice, array manipulation",
+                "paid": "Yes",
+                "answer": "The `array_slice()` function in PHP returns a portion of an array, specified by an offset and length. For example: `array_slice($array, 1, 3);` extracts 3 elements starting from index 1. The function does not modify the original array but returns a new array with the extracted elements. It's useful for working with subsets of data."
+        },
+        {
+                "title": "What does the 'password_hash()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'password_hash()' function.",
+                "tags": "php, password_hash, security",
+                "paid": "Yes",
+                "answer": "The `password_hash()` function in PHP creates a new password hash using a strong one-way hashing algorithm. For example: `password_hash('password123', PASSWORD_BCRYPT);` generates a hashed password using the bcrypt algorithm. This function is used for securely storing passwords and comparing them later with `password_verify()`."
+        },
+        {
+                "title": "How do you use 'header()' to set content type in PHP?",
+                "category": "Php",
+                "description": "Setting content type with 'header()'.",
+                "tags": "php, header, content type",
+                "paid": "Yes",
+                "answer": "To set the content type of a response in PHP, use the `header()` function with the `Content-Type` header. For example: `header('Content-Type: application/json');` sets the content type to JSON. This ensures that the browser or client interprets the response data correctly according to the specified MIME type."
+        },
+        {
+                "title": "What is the 'array_reduce()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_reduce()' function.",
+                "tags": "php, array_reduce, array operations",
+                "paid": "Yes",
+                "answer": "The `array_reduce()` function in PHP iteratively reduces an array to a single value using a callback function. For example: `array_reduce([1, 2, 3], function($carry, $item) { return $carry + $item; }, 0);` returns 6 by summing the array elements. This function is useful for aggregating data or performing cumulative operations."
+        },
+        {
+                "title": "How do you use 'explode()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'explode()' function.",
+                "tags": "php, explode, string manipulation",
+                "paid": "Yes",
+                "answer": "The `explode()` function in PHP splits a string by a specified delimiter into an array. For example: `explode(',', 'a,b,c');` returns `array('a', 'b', 'c')`. This function is useful for parsing strings into components, such as processing CSV data or extracting parts of a string based on a delimiter."
+        },
+        {
+                "title": "What is the 'implode()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'implode()' function.",
+                "tags": "php, implode, string manipulation",
+                "paid": "Yes",
+                "answer": "The `implode()` function in PHP joins array elements into a single string, separated by a specified delimiter. For example: `implode('-', array('a', 'b', 'c'));` returns `'a-b-c'`. This function is useful for converting array data into a formatted string, such as creating a list of values separated by commas or other characters."
+        },
+        {
+                "title": "What does the 'strtotime()' function return in PHP?",
+                "category": "Php",
+                "description": "Return value of 'strtotime()' function.",
+                "tags": "php, strtotime, date functions",
+                "paid": "Yes",
+                "answer": "The `strtotime()` function in PHP returns a Unix timestamp corresponding to a parsed date or time string. For example: `strtotime('next Monday');` returns a timestamp for the upcoming Monday. If the string cannot be parsed, it returns `false`. This function is useful for converting human-readable date and time formats into timestamps for date manipulation."
+        },
+        {
+                "title": "How do you use 'file_get_contents()' to read a URL in PHP?",
+                "category": "Php",
+                "description": "Reading data from a URL with 'file_get_contents()'.",
+                "tags": "php, file_get_contents, URL",
+                "paid": "Yes",
+                "answer": "To read data from a URL using `file_get_contents()`, simply pass the URL as a parameter. For example: `$content = file_get_contents('http://example.com');` retrieves the content from the URL and stores it in `$content`. This function can be used for fetching remote data or reading contents from web resources."
+        },
+        {
+                "title": "What does the 'isset()' function do in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'isset()' function.",
+                "tags": "php, isset, variable checking",
+                "paid": "Yes",
+                "answer": "The `isset()` function in PHP checks whether a variable is set and is not `null`. It returns `true` if the variable is set and not `null`, otherwise it returns `false`. For example: `isset($var)` checks if `$var` is initialized. This function is useful for verifying the existence of variables before using them."
+        },
+        {
+                "title": "How do you use 'array_combine()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_combine()' function.",
+                "tags": "php, array_combine, array functions",
+                "paid": "Yes",
+                "answer": "The `array_combine()` function in PHP creates an array by using one array for keys and another for its values. For example: `array_combine(['a', 'b'], [1, 2]);` returns `array('a' => 1, 'b' => 2)`. Both arrays must have the same number of elements. This function is useful for constructing associative arrays from two separate lists."
+        },
+        {
+                "title": "What is the 'json_encode()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'json_encode()' function.",
+                "tags": "php, json_encode, JSON",
+                "paid": "Yes",
+                "answer": "The `json_encode()` function in PHP converts a PHP value (such as an array or object) into a JSON-formatted string. For example: `json_encode(array('name' => 'John', 'age' => 30));` returns `'{'name':'John','age':30}'`. This function is essential for creating JSON data for API responses or storing data in JSON format."
+        },
+        {
+                "title": "How do you use 'json_decode()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'json_decode()' function.",
+                "tags": "php, json_decode, JSON",
+                "paid": "Yes",
+                "answer": "The `json_decode()` function in PHP parses a JSON-formatted string and converts it into a PHP variable. For example: `json_decode('{'name':'John','age':30}');` converts the JSON string into a PHP object. You can also pass `true` as a second parameter to return an associative array instead. This function is used for decoding JSON data received from APIs or files."
+        },
+        {
+                "title": "What does the 'strlen()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'strlen()' function.",
+                "tags": "php, strlen, string functions",
+                "paid": "Yes",
+                "answer": "The `strlen()` function in PHP returns the length of a string. For example: `strlen('Hello World');` returns `11`. This function counts the number of characters in a string, including spaces and punctuation, and is useful for string manipulation and validation."
+        },
+        {
+                "title": "How do you use 'preg_match()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'preg_match()' function.",
+                "tags": "php, preg_match, regex",
+                "paid": "Yes",
+                "answer": "The `preg_match()` function in PHP performs a regular expression match. It searches a string for a pattern and returns `1` if the pattern matches, `0` if it does not, and `FALSE` if an error occurs. For example: `preg_match('/\\d+/', '123abc');` returns `1` because the string contains digits. This function is used for pattern matching and validation."
+        },
+        {
+                "title": "What is the 'get_magic_quotes_gpc()' function in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'get_magic_quotes_gpc()'.",
+                "tags": "php, get_magic_quotes_gpc, deprecated",
+                "paid": "Yes",
+                "answer": "The `get_magic_quotes_gpc()` function in PHP was used to check whether the magic quotes feature was enabled. Magic quotes automatically escaped input data, but it was deprecated and removed in PHP 5.4.0. For example: `if (get_magic_quotes_gpc()) { // Magic quotes are enabled }`. Magic quotes were intended to prevent SQL injection but were considered problematic."
+        },
+        {
+                "title": "What does 'mysqli_fetch_array()' do in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'mysqli_fetch_array()' function.",
+                "tags": "php, mysqli, database fetching",
+                "paid": "Yes",
+                "answer": "The `mysqli_fetch_array()` function in PHP fetches a result row as an associative array, a numeric array, or both. For example: `while ($row = mysqli_fetch_array($result)) { echo $row['column_name']; }` retrieves rows from a result set, allowing access via both column names and numeric indices. This function is flexible for accessing database query results."
+        },
+        {
+                "title": "How do you use 'array_merge()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_merge()' function.",
+                "tags": "php, array_merge, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge()` function in PHP merges one or more arrays into a single array. For example: `array_merge([1, 2], [3, 4]);` returns `[1, 2, 3, 4]`. This function combines arrays and re-indexes them, which is useful for combining data from multiple sources into a single array."
+        },
+        {
+                "title": "What is the 'session_regenerate_id()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'session_regenerate_id()' function.",
+                "tags": "php, session management",
+                "paid": "Yes",
+                "answer": "The `session_regenerate_id()` function in PHP creates a new session ID for the current session and deletes the old session ID. This is useful for preventing session fixation attacks. For example: `session_regenerate_id();` is typically called after a user logs in or performs a critical action to enhance security."
+        },
+        {
+                "title": "What is the 'array_unique()' function used for in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_unique()' function.",
+                "tags": "php, array_unique, array functions",
+                "paid": "Yes",
+                "answer": "The `array_unique()` function in PHP removes duplicate values from an array. For example: `array_unique([1, 2, 2, 3]);` returns `[1, 2, 3]`. This function is useful for eliminating duplicate entries and ensuring that an array contains only unique values."
+        },
+        {
+                "title": "What does the 'array_map()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_map()' function.",
+                "tags": "php, array_map, array functions",
+                "paid": "Yes",
+                "answer": "The `array_map()` function in PHP applies a callback function to each element of one or more arrays and returns a new array with the modified values. For example: `array_map(function($value) { return $value * 2; }, [1, 2, 3]);` returns `[2, 4, 6]`. This function is useful for performing operations on arrays in a functional programming style."
+        },
+        {
+                "title": "How do you use 'htmlspecialchars()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'htmlspecialchars()' function.",
+                "tags": "php, htmlspecialchars, HTML",
+                "paid": "Yes",
+                "answer": "The `htmlspecialchars()` function in PHP converts special characters to HTML entities to prevent XSS (Cross-Site Scripting) attacks. For example: `htmlspecialchars('<script>alert('xss')</script>');` returns `&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;`. This function is essential for safely outputting user-generated content to the web."
+        },
+        {
+                "title": "What is the 'session_id()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'session_id()' function.",
+                "tags": "php, session_id, session management",
+                "paid": "Yes",
+                "answer": "The `session_id()` function in PHP gets or sets the current session ID. For example: `session_id('new_session_id');` sets a new session ID, while `session_id();` returns the current session ID. This function is useful for managing session identifiers and ensuring consistency across requests."
+        },
+        {
+                "title": "How do you use 'parse_str()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'parse_str()' function.",
+                "tags": "php, parse_str, string parsing",
+                "paid": "Yes",
+                "answer": "The `parse_str()` function in PHP parses a query string into variables. For example: `parse_str('name=John&age=30', $output);` results in `$output` being `array('name' => 'John', 'age' => 30)`. This function is useful for converting query strings or URL parameters into associative arrays."
+        },
+        {
+                "title": "What is the 'array_key_exists()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_key_exists()' function.",
+                "tags": "php, array_key_exists, array functions",
+                "paid": "Yes",
+                "answer": "The `array_key_exists()` function in PHP checks if a specified key exists in an array. For example: `array_key_exists('key', $array);` returns `true` if 'key' is present in `$array`. This function is useful for verifying the existence of specific keys before accessing their values in associative arrays."
+        },
+        {
+                "title": "How do you use 'array_shift()' in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_shift()' function.",
+                "tags": "php, array_shift, array functions",
+                "paid": "Yes",
+                "answer": "The `array_shift()` function in PHP removes the first element from an array and returns it, shifting all other elements to the left. For example: `array_shift([1, 2, 3]);` returns `1` and modifies the array to `[2, 3]`. This function is useful for manipulating arrays by removing elements from the beginning."
+        },
+        {
+                "title": "What does the 'array_push()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_push()' function.",
+                "tags": "php, array_push, array functions",
+                "paid": "Yes",
+                "answer": "The `array_push()` function in PHP adds one or more elements to the end of an array. For example: `array_push($array, 'new_element');` appends `'new_element'` to the end of `$array`. This function is useful for expanding arrays dynamically by adding new elements."
+        },
+        {
+                "title": "What is the 'preg_replace()' function used for in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'preg_replace()' function.",
+                "tags": "php, preg_replace, regex",
+                "paid": "Yes",
+                "answer": "The `preg_replace()` function in PHP performs a regular expression search and replace. It searches a string for a pattern and replaces matches with a specified replacement. For example: `preg_replace('/\\d+/', 'number', 'abc 123');` replaces digits with `'number'`, resulting in `'abc number'`. This function is useful for modifying strings based on patterns."
+        },
+        {
+                "title": "How do you use 'header()' to redirect in PHP?",
+                "category": "Php",
+                "description": "Redirecting with 'header()' function.",
+                "tags": "php, header, redirection",
+                "paid": "Yes",
+                "answer": "To redirect to another URL using `header()`, send a `Location` header. For example: `header('Location: http://example.com');` redirects the browser to the specified URL. Make sure to call `header()` before any output is sent to the browser, as headers must be sent before content."
+        },
+        {
+                "title": "What does the 'array_filter()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_filter()' function.",
+                "tags": "php, array_filter, array functions",
+                "paid": "Yes",
+                "answer": "The `array_filter()` function in PHP filters elements of an array using a callback function. It returns a new array containing only the elements for which the callback function returns `true`. For example: `array_filter([1, 2, 3], function($value) { return $value > 1; });` returns `[2, 3]`. This function is useful for filtering data based on conditions."
+        },
+        {
+                "title": "What does the 'var_dump()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'var_dump()' function.",
+                "tags": "php, var_dump, debugging",
+                "paid": "Yes",
+                "answer": "The `var_dump()` function in PHP displays structured information (type and value) about one or more variables. For example: `var_dump($var);` outputs detailed information about `$var`, including its type and value. This function is useful for debugging and inspecting variable contents during development."
+        },
+        {
+                "title": "What is the 'filter_var()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'filter_var()' function.",
+                "tags": "php, filter_var, data validation",
+                "paid": "Yes",
+                "answer": "The `filter_var()` function in PHP filters a variable with a specified filter. For example: `filter_var($email, FILTER_VALIDATE_EMAIL);` validates an email address. This function can also sanitize inputs, such as removing unwanted characters from strings. It is a flexible tool for data validation and sanitization."
+        },
+        {
+                "title": "What is the 'mysqli_connect()' function in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'mysqli_connect()' function.",
+                "tags": "php, mysqli, database connection",
+                "paid": "Yes",
+                "answer": "The `mysqli_connect()` function in PHP establishes a connection to a MySQL database. For example: `$conn = mysqli_connect('localhost', 'user', 'password', 'database');` connects to the MySQL server with the provided credentials. This function is essential for interacting with a MySQL database and executing queries."
+        },
+        {
+                "title": "How do you use 'mysqli_close()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'mysqli_close()' function.",
+                "tags": "php, mysqli, database connection",
+                "paid": "Yes",
+                "answer": "The `mysqli_close()` function in PHP closes an open MySQL database connection. For example: `mysqli_close($conn);` closes the connection identified by `$conn`. It is important to close connections when they are no longer needed to free up resources and avoid potential security risks."
+        },
+        {
+                "title": "What does the 'date_create()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'date_create()' function.",
+                "tags": "php, date_create, date manipulation",
+                "paid": "Yes",
+                "answer": "The `date_create()` function in PHP creates a new DateTime object. For example: `$date = date_create('2024-01-01');` initializes a DateTime object for January 1, 2024. This function is useful for performing various date and time operations, such as formatting or manipulating dates."
+        },
+        {
+                "title": "How do you use 'date_format()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'date_format()' function.",
+                "tags": "php, date_format, date manipulation",
+                "paid": "Yes",
+                "answer": "The `date_format()` function in PHP formats a DateTime object according to a specified format. For example: `date_format($date, 'Y-m-d');` formats the DateTime object `$date` as '2024-01-01'. This function is used to convert DateTime objects into human-readable date strings."
+        },
+        {
+                "title": "What does the 'session_start()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'session_start()' function.",
+                "tags": "php, session_start, session management",
+                "paid": "Yes",
+                "answer": "The `session_start()` function in PHP initializes a new session or resumes an existing session. For example: `session_start();` must be called at the beginning of the script to manage session variables and maintain state across different pages. This function is essential for session management in web applications."
+        },
+        {
+                "title": "How do you use 'session_destroy()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'session_destroy()' function.",
+                "tags": "php, session_destroy, session management",
+                "paid": "Yes",
+                "answer": "The `session_destroy()` function in PHP destroys all data associated with the current session. For example: `session_destroy();` will remove session variables and destroy the session data on the server. This function is used when logging out users or clearing session data."
+        },
+        {
+                "title": "What is the 'get_class()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'get_class()' function.",
+                "tags": "php, get_class, object-oriented",
+                "paid": "Yes",
+                "answer": "The `get_class()` function in PHP returns the name of the class of an object. For example: `get_class($object);` returns the class name of `$object`. This function is useful for debugging and working with objects, allowing you to dynamically check the class of an instance."
+        },
+        {
+                "title": "How do you use 'is_array()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'is_array()' function.",
+                "tags": "php, is_array, type checking",
+                "paid": "Yes",
+                "answer": "The `is_array()` function in PHP checks if a variable is an array. For example: `is_array($var);` returns `true` if `$var` is an array and `false` otherwise. This function is useful for verifying variable types before performing array operations."
+        },
+        {
+                "title": "What does the 'array_diff()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_diff()' function.",
+                "tags": "php, array_diff, array functions",
+                "paid": "Yes",
+                "answer": "The `array_diff()` function in PHP computes the difference of arrays by comparing their values. For example: `array_diff([1, 2, 3], [2, 3]);` returns `[1]`, the values present in the first array but not in the second. This function is useful for finding unique values in arrays."
+        },
+        {
+                "title": "How do you use 'array_intersect()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_intersect()' function.",
+                "tags": "php, array_intersect, array functions",
+                "paid": "Yes",
+                "answer": "The `array_intersect()` function in PHP computes the intersection of arrays, returning values that are present in all arrays. For example: `array_intersect([1, 2, 3], [2, 3, 4]);` returns `[2, 3]`. This function is useful for finding common elements among multiple arrays."
+        },
+        {
+                "title": "What is the 'pathinfo()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'pathinfo()' function.",
+                "tags": "php, pathinfo, file handling",
+                "paid": "Yes",
+                "answer": "The `pathinfo()` function in PHP returns information about a file path. For example: `pathinfo('/path/to/file.txt');` returns an array containing the directory name, basename, extension, and filename. This function is useful for extracting various components of a file path."
+        },
+        {
+                "title": "How do you use 'file_put_contents()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'file_put_contents()' function.",
+                "tags": "php, file_put_contents, file handling",
+                "paid": "Yes",
+                "answer": "The `file_put_contents()` function in PHP writes data to a file. For example: `file_put_contents('file.txt', 'Hello World');` writes 'Hello World' to `file.txt`, creating the file if it does not exist. This function is useful for creating or updating files with new content."
+        },
+        {
+                "title": "What does the 'unlink()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'unlink()' function.",
+                "tags": "php, unlink, file handling",
+                "paid": "Yes",
+                "answer": "The `unlink()` function in PHP deletes a file. For example: `unlink('file.txt');` removes `file.txt` from the file system. This function is useful for removing files that are no longer needed or performing file cleanup operations."
+        },
+        {
+                "title": "How do you use 'file_exists()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'file_exists()' function.",
+                "tags": "php, file_exists, file handling",
+                "paid": "Yes",
+                "answer": "The `file_exists()` function in PHP checks if a file or directory exists. For example: `file_exists('file.txt');` returns `true` if `file.txt` exists, and `false` otherwise. This function is useful for verifying the presence of files or directories before performing operations on them."
+        },
+        {
+                "title": "What is the 'is_null()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'is_null()' function.",
+                "tags": "php, is_null, type checking",
+                "paid": "Yes",
+                "answer": "The `is_null()` function in PHP checks if a variable is `null`. For example: `is_null($var);` returns `true` if `$var` is `null` and `false` otherwise. This function is useful for determining whether a variable has been assigned a value or not."
+        },
+        {
+                "title": "How do you use 'in_array()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'in_array()' function.",
+                "tags": "php, in_array, array functions",
+                "paid": "Yes",
+                "answer": "The `in_array()` function in PHP checks if a value exists in an array. For example: `in_array('value', $array);` returns `true` if 'value' is in `$array`, and `false` otherwise. This function is useful for verifying the presence of specific elements within an array."
+        },
+        {
+                "title": "What does the 'str_replace()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'str_replace()' function.",
+                "tags": "php, str_replace, string manipulation",
+                "paid": "Yes",
+                "answer": "The `str_replace()` function in PHP replaces all occurrences of a search string with a replacement string. For example: `str_replace('world', 'PHP', 'Hello world');` returns `'Hello PHP'`. This function is useful for performing simple string replacements."
+        },
+        {
+                "title": "How do you use 'strpos()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'strpos()' function.",
+                "tags": "php, strpos, string functions",
+                "paid": "Yes",
+                "answer": "The `strpos()` function in PHP finds the position of the first occurrence of a substring in a string. For example: `strpos('Hello world', 'world');` returns `6`, the starting position of 'world' in the string. This function is useful for locating substrings within a string."
+        },
+        {
+                "title": "What is the 'explode()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'explode()' function.",
+                "tags": "php, explode, string functions",
+                "paid": "Yes",
+                "answer": "The `explode()` function in PHP splits a string by a specified delimiter into an array. For example: `explode(',', 'apple,orange,banana');` returns `['apple', 'orange', 'banana']`. This function is useful for parsing strings into arrays based on a delimiter."
+        },
+        {
+                "title": "How do you use 'implode()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'implode()' function.",
+                "tags": "php, implode, string functions",
+                "paid": "Yes",
+                "answer": "The `implode()` function in PHP joins array elements into a single string with a specified delimiter. For example: `implode(',', ['apple', 'orange', 'banana']);` returns `'apple,orange,banana'`. This function is useful for converting arrays into delimited strings."
+        },
+        {
+                "title": "What is the 'shuffle()' function used for in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'shuffle()' function.",
+                "tags": "php, shuffle, array functions",
+                "paid": "Yes",
+                "answer": "The `shuffle()` function in PHP randomly shuffles the order of elements in an array. For example: `shuffle($array);` will reorder the elements in `$array` randomly. This function is useful for randomizing lists or selections."
+        },
+        {
+                "title": "How do you use 'array_sum()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_sum()' function.",
+                "tags": "php, array_sum, array functions",
+                "paid": "Yes",
+                "answer": "The `array_sum()` function in PHP calculates the sum of all values in an array. For example: `array_sum([1, 2, 3]);` returns `6`. This function is useful for aggregating numerical data in arrays."
+        },
+        {
+                "title": "What does the 'array_slice()' function do in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_slice()' function.",
+                "tags": "php, array_slice, array functions",
+                "paid": "Yes",
+                "answer": "The `array_slice()` function in PHP extracts a portion of an array. For example: `array_slice([1, 2, 3, 4, 5], 1, 3);` returns `[2, 3, 4]`, extracting 3 elements starting from index 1. This function is useful for retrieving subsets of array data."
+        },
+        {
+                "title": "How do you use 'array_splice()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_splice()' function.",
+                "tags": "php, array_splice, array functions",
+                "paid": "Yes",
+                "answer": "The `array_splice()` function in PHP removes or replaces elements in an array and optionally inserts new elements. For example: `array_splice($array, 1, 2, ['new']);` removes 2 elements starting at index 1 and inserts 'new'. This function is useful for modifying arrays."
+        },
+        {
+                "title": "What is the 'array_walk()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_walk()' function.",
+                "tags": "php, array_walk, array functions",
+                "paid": "Yes",
+                "answer": "The `array_walk()` function in PHP applies a callback function to each element of an array, modifying the array in place. For example: `array_walk($array, function(&$value) { $value *= 2; });` doubles each value in `$array`. This function is useful for applying transformations to array data."
+        },
+        {
+                "title": "How do you use 'array_reverse()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_reverse()' function.",
+                "tags": "php, array_reverse, array functions",
+                "paid": "Yes",
+                "answer": "The `array_reverse()` function in PHP returns an array with elements in reverse order. For example: `array_reverse([1, 2, 3]);` returns `[3, 2, 1]`. This function is useful for reversing the order of array elements."
+        },
+        {
+                "title": "What does the 'get_defined_vars()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'get_defined_vars()' function.",
+                "tags": "php, get_defined_vars, debugging",
+                "paid": "Yes",
+                "answer": "The `get_defined_vars()` function in PHP returns an associative array of all defined variables in the current scope. For example: `get_defined_vars();` provides an array of variables that are available for use, useful for debugging and inspecting variable states."
+        },
+        {
+                "title": "How do you use 'highlight_string()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'highlight_string()' function.",
+                "tags": "php, highlight_string, debugging",
+                "paid": "Yes",
+                "answer": "The `highlight_string()` function in PHP outputs a syntax-highlighted version of a PHP code string. For example: `highlight_string('<?php echo 'Hello World'; ?>');` displays the code with syntax highlighting. This function is useful for debugging and displaying code with proper formatting."
+        },
+        {
+                "title": "What is the 'ob_start()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'ob_start()' function.",
+                "tags": "php, ob_start, output buffering",
+                "paid": "Yes",
+                "answer": "The `ob_start()` function in PHP turns on output buffering. For example: `ob_start();` starts buffering the output data, which can then be manipulated or sent later. This function is useful for capturing and modifying output before it is sent to the browser."
+        },
+        {
+                "title": "How do you use 'ob_get_clean()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'ob_get_clean()' function.",
+                "tags": "php, ob_get_clean, output buffering",
+                "paid": "Yes",
+                "answer": "The `ob_get_clean()` function in PHP retrieves the current buffer contents and deletes the buffer. For example: `$output = ob_get_clean();` gets the buffered output and clears the buffer. This function is useful for capturing output generated during buffering and then using or modifying it."
+        },
+        {
+                "title": "What does the 'basename()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'basename()' function.",
+                "tags": "php, basename, file handling",
+                "paid": "Yes",
+                "answer": "The `basename()` function in PHP returns the base name of a file or directory. For example: `basename('/path/to/file.txt');` returns `'file.txt'`. This function is useful for extracting the file name from a full path."
+        },
+        {
+                "title": "How do you use 'dirname()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'dirname()' function.",
+                "tags": "php, dirname, file handling",
+                "paid": "Yes",
+                "answer": "The `dirname()` function in PHP returns the directory part of a path. For example: `dirname('/path/to/file.txt');` returns `'/path/to'`. This function is useful for extracting the directory from a full file path."
+        },
+        {
+                "title": "What does the 'str_split()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'str_split()' function.",
+                "tags": "php, str_split, string manipulation",
+                "paid": "Yes",
+                "answer": "The `str_split()` function in PHP splits a string into an array of characters. For example: `str_split('hello');` returns `['h', 'e', 'l', 'l', 'o']`. This function is useful for breaking a string into individual characters for processing."
+        },
+        {
+                "title": "How do you use 'preg_match()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'preg_match()' function.",
+                "tags": "php, preg_match, regex",
+                "paid": "Yes",
+                "answer": "The `preg_match()` function in PHP performs a regular expression match. For example: `preg_match('/\\d+/', 'There are 123 apples');` returns `1` if the pattern is found and `0` otherwise. This function is useful for searching strings for specific patterns."
+        },
+        {
+                "title": "What is the 'json_encode()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'json_encode()' function.",
+                "tags": "php, json_encode, JSON",
+                "paid": "Yes",
+                "answer": "The `json_encode()` function in PHP converts a PHP value into a JSON string. For example: `json_encode(['name' => 'John', 'age' => 30]);` returns `'{'name':'John','age':30}'`. This function is used for encoding PHP data into JSON format for use in APIs or JavaScript."
+        },
+        {
+                "title": "How do you use 'json_decode()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'json_decode()' function.",
+                "tags": "php, json_decode, JSON",
+                "paid": "Yes",
+                "answer": "The `json_decode()` function in PHP decodes a JSON string into a PHP variable. For example: `json_decode('{'name':'John','age':30}', true);` returns `['name' => 'John', 'age' => 30]`. This function is used for parsing JSON data into PHP arrays or objects."
+        },
+        {
+                "title": "What does the 'array_merge()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_merge()' function.",
+                "tags": "php, array_merge, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge()` function in PHP merges one or more arrays into one. For example: `array_merge([1, 2], [3, 4]);` returns `[1, 2, 3, 4]`. This function combines arrays, appending elements from additional arrays to the end of the first array."
+        },
+        {
+                "title": "How do you use 'array_chunk()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_chunk()' function.",
+                "tags": "php, array_chunk, array functions",
+                "paid": "Yes",
+                "answer": "The `array_chunk()` function in PHP splits an array into chunks of a specified size. For example: `array_chunk([1, 2, 3, 4, 5], 2);` returns `[[1, 2], [3, 4], [5]]`. This function is useful for dividing an array into smaller arrays for easier processing."
+        },
+        {
+                "title": "What is the 'array_key_exists()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_key_exists()' function.",
+                "tags": "php, array_key_exists, array functions",
+                "paid": "Yes",
+                "answer": "The `array_key_exists()` function in PHP checks if a specified key exists in an array. For example: `array_key_exists('key', $array);` returns `true` if 'key' exists in `$array` and `false` otherwise. This function is useful for verifying the presence of array keys."
+        },
+        {
+                "title": "How do you use 'array_combine()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_combine()' function.",
+                "tags": "php, array_combine, array functions",
+                "paid": "Yes",
+                "answer": "The `array_combine()` function in PHP creates an array by using one array for keys and another for its values. For example: `array_combine(['a', 'b'], [1, 2]);` returns `['a' => 1, 'b' => 2]`. This function is useful for pairing keys with corresponding values."
+        },
+        {
+                "title": "What does the 'array_keys()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_keys()' function.",
+                "tags": "php, array_keys, array functions",
+                "paid": "Yes",
+                "answer": "The `array_keys()` function in PHP returns all the keys from an array. For example: `array_keys(['a' => 1, 'b' => 2]);` returns `['a', 'b']`. This function is useful for retrieving the keys of an associative array for further processing or validation."
+        },
+        {
+                "title": "How do you use 'array_values()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_values()' function.",
+                "tags": "php, array_values, array functions",
+                "paid": "Yes",
+                "answer": "The `array_values()` function in PHP returns all the values from an array and indexes them numerically. For example: `array_values(['a' => 1, 'b' => 2]);` returns `[1, 2]`. This function is useful for extracting the values from an array while resetting the keys."
+        },
+        {
+                "title": "What is the 'array_push()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_push()' function.",
+                "tags": "php, array_push, array functions",
+                "paid": "Yes",
+                "answer": "The `array_push()` function in PHP adds one or more elements to the end of an array. For example: `array_push($array, 'element1', 'element2');` adds 'element1' and 'element2' to `$array`. This function is useful for appending new items to an array."
+        },
+        {
+                "title": "How do you use 'array_pop()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_pop()' function.",
+                "tags": "php, array_pop, array functions",
+                "paid": "Yes",
+                "answer": "The `array_pop()` function in PHP removes the last element from an array and returns it. For example: `array_pop($array);` removes and returns the last element of `$array`. This function is useful for removing elements from the end of an array."
+        },
+        {
+                "title": "What does the 'array_merge_recursive()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_merge_recursive()' function.",
+                "tags": "php, array_merge_recursive, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge_recursive()` function in PHP merges arrays recursively. If arrays have the same keys, their values are merged into an array. For example: `array_merge_recursive(['a' => 1], ['a' => [2]]);` returns `['a' => [1, 2]]`. This function is useful for deeply merging arrays."
+        },
+        {
+                "title": "How do you use 'array_filter()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_filter()' function.",
+                "tags": "php, array_filter, array functions",
+                "paid": "Yes",
+                "answer": "The `array_filter()` function in PHP filters elements of an array using a callback function. For example: `array_filter([1, 2, 3], function($value) { return $value > 1; });` returns `[2, 3]`. This function is useful for excluding elements based on custom conditions."
+        },
+        {
+                "title": "What does the 'array_keys()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_keys()' function.",
+                "tags": "php, array_keys, array functions",
+                "paid": "Yes",
+                "answer": "The `array_keys()` function in PHP returns all the keys from an array. For example: `array_keys(['a' => 1, 'b' => 2]);` returns `['a', 'b']`. This function is useful for retrieving the keys of an associative array for further processing or validation."
+        },
+        {
+                "title": "How do you use 'array_search()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_search()' function.",
+                "tags": "php, array_search, array functions",
+                "paid": "Yes",
+                "answer": "The `array_search()` function in PHP searches for a value in an array and returns the key of the first match. For example: `array_search('value', $array);` returns the key of 'value' in `$array`, or `false` if not found. This function is useful for locating the position of a value within an array."
+        },
+        {
+                "title": "What is the 'array_unique()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_unique()' function.",
+                "tags": "php, array_unique, array functions",
+                "paid": "Yes",
+                "answer": "The `array_unique()` function in PHP removes duplicate values from an array. For example: `array_unique([1, 2, 2, 3]);` returns `[1, 2, 3]`. This function is useful for filtering out repeated elements from an array."
+        },
+        {
+                "title": "How do you use 'array_reduce()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_reduce()' function.",
+                "tags": "php, array_reduce, array functions",
+                "paid": "Yes",
+                "answer": "The `array_reduce()` function in PHP iteratively reduces an array to a single value using a callback function. For example: `array_reduce([1, 2, 3], function($carry, $item) { return $carry + $item; });` returns `6`, the sum of the array's values. This function is useful for accumulating results from array elements."
+        },
+        {
+                "title": "What does the 'array_intersect()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_intersect()' function.",
+                "tags": "php, array_intersect, array functions",
+                "paid": "Yes",
+                "answer": "The `array_intersect()` function in PHP returns an array containing all the values from the first array that are present in all the other arrays. For example: `array_intersect([1, 2, 3], [2, 3, 4]);` returns `[2, 3]`. This function is useful for finding common elements across multiple arrays."
+        },
+        {
+                "title": "What does the 'array_diff()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_diff()' function.",
+                "tags": "php, array_diff, array functions",
+                "paid": "Yes",
+                "answer": "The `array_diff()` function in PHP returns an array containing all the values from the first array that are not present in any of the other arrays. For example: `array_diff([1, 2, 3], [2, 3, 4]);` returns `[1]`. This function is useful for finding values that are unique to the first array."
+        },
+        {
+                "title": "How do you use 'array_filter()' with a callback in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_filter()' with a callback.",
+                "tags": "php, array_filter, callback",
+                "paid": "Yes",
+                "answer": "The `array_filter()` function in PHP filters elements of an array using a callback function. For example: `array_filter([1, 2, 3], function($value) { return $value % 2 === 0; });` returns `[2]`, filtering out odd numbers. The callback function defines the condition for inclusion in the resulting array."
+        },
+        {
+                "title": "What does the 'array_map()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_map()' function.",
+                "tags": "php, array_map, array functions",
+                "paid": "Yes",
+                "answer": "The `array_map()` function in PHP applies a callback function to each element of one or more arrays. For example: `array_map(function($value) { return $value * 2; }, [1, 2, 3]);` returns `[2, 4, 6]`. This function is useful for transforming array elements based on a specified operation."
+        },
+        {
+                "title": "How do you use 'array_fill()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_fill()' function.",
+                "tags": "php, array_fill, array functions",
+                "paid": "Yes",
+                "answer": "The `array_fill()` function in PHP fills an array with a specified value. For example: `array_fill(0, 3, 'value');` returns `['value', 'value', 'value']`, filling the array with 'value' from index 0 for 3 elements. This function is useful for creating an array with repeated values."
+        },
+        {
+                "title": "What does the 'array_pad()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_pad()' function.",
+                "tags": "php, array_pad, array functions",
+                "paid": "Yes",
+                "answer": "The `array_pad()` function in PHP pads an array to a specified length with a given value. For example: `array_pad([1, 2], 4, 0);` returns `[1, 2, 0, 0]`, extending the array to length 4 with '0'. This function is useful for adjusting the size of arrays."
+        },
+        {
+                "title": "How do you use 'array_keys()' with a search value in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_keys()' with a search value.",
+                "tags": "php, array_keys, array functions",
+                "paid": "Yes",
+                "answer": "The `array_keys()` function in PHP can also be used to find keys associated with a specific value. For example: `array_keys(['a' => 1, 'b' => 2], 2);` returns `['b']`, showing the keys where the value is '2'. This function helps locate keys for specific values in an array."
+        },
+        {
+                "title": "What is the 'array_replace()' function used for in PHP?",
+                "category": "Php",
+                "description": "Usage of 'array_replace()' function.",
+                "tags": "php, array_replace, array functions",
+                "paid": "Yes",
+                "answer": "The `array_replace()` function in PHP replaces elements of the first array with elements from subsequent arrays with the same keys. For example: `array_replace([1, 2, 3], [0, 0]);` returns `[0, 0, 3]`, replacing values in the first array with values from the second array based on matching keys."
+        },
+        {
+                "title": "How do you use 'array_key_first()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_key_first()' function.",
+                "tags": "php, array_key_first, array functions",
+                "paid": "Yes",
+                "answer": "The `array_key_first()` function in PHP returns the first key of an array. For example: `array_key_first(['a' => 1, 'b' => 2]);` returns `'a'`. This function is useful for retrieving the key of the first element in an associative array."
+        },
+        {
+                "title": "What does the 'array_key_last()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_key_last()' function.",
+                "tags": "php, array_key_last, array functions",
+                "paid": "Yes",
+                "answer": "The `array_key_last()` function in PHP returns the last key of an array. For example: `array_key_last(['a' => 1, 'b' => 2]);` returns `'b'`. This function is useful for retrieving the key of the last element in an associative array."
+        },
+        {
+                "title": "How do you use 'array_merge_recursive_distinct()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_merge_recursive_distinct()' function.",
+                "tags": "php, array_merge_recursive_distinct, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge_recursive_distinct()` function in PHP merges arrays recursively but does not include duplicate values. For example: `array_merge_recursive_distinct([1, 2, 2], [2, 3, 4]);` returns `[1, 2, 3, 4]`. This function is useful for merging arrays while maintaining unique values."
+        },
+        {
+                "title": "What does the 'array_search()' function return when the value is not found?",
+                "category": "Php",
+                "description": "Return value of 'array_search()' when value is absent.",
+                "tags": "php, array_search, array functions",
+                "paid": "Yes",
+                "answer": "The `array_search()` function in PHP returns `false` when the specified value is not found in the array. For example: `array_search('value', [1, 2, 3]);` returns `false` if 'value' is not in the array. This function is useful for determining the presence of a value within an array."
+        },
+        {
+                "title": "How do you use 'array_filter()' to remove null values in PHP?",
+                "category": "Php",
+                "description": "Using 'array_filter()' to filter out null values.",
+                "tags": "php, array_filter, array functions",
+                "paid": "Yes",
+                "answer": "The `array_filter()` function in PHP can be used to remove null values by using a callback that filters out nulls. For example: `array_filter([1, null, 2, null], function($value) { return $value !== null; });` returns `[1, 2]`, removing all `null` values from the array."
+        },
+        {
+                "title": "What is the purpose of the 'count()' function in PHP?",
+                "category": "Php",
+                "description": "Usage of 'count()' function.",
+                "tags": "php, count, array functions",
+                "paid": "Yes",
+                "answer": "The `count()` function in PHP returns the number of elements in an array or properties in an object. For example: `count([1, 2, 3]);` returns `3`. This function is useful for determining the size of arrays or the number of items in a collection."
+        },
+        {
+                "title": "How do you use 'array_diff_assoc()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_diff_assoc()' function.",
+                "tags": "php, array_diff_assoc, array functions",
+                "paid": "Yes",
+                "answer": "The `array_diff_assoc()` function in PHP returns the difference between arrays, including keys in the comparison. For example: `array_diff_assoc(['a' => 1, 'b' => 2], ['a' => 1, 'b' => 3]);` returns `['b' => 2]`, showing the differences while considering both keys and values."
+        },
+        {
+                "title": "What does the 'array_map()' function return when using multiple arrays?",
+                "category": "Php",
+                "description": "Return value of 'array_map()' with multiple arrays.",
+                "tags": "php, array_map, array functions",
+                "paid": "Yes",
+                "answer": "The `array_map()` function in PHP can apply a callback to multiple arrays. It returns an array containing the results of applying the callback to each element of the arrays. For example: `array_map(function($a, $b) { return $a + $b; }, [1, 2], [3, 4]);` returns `[4, 6]`, summing corresponding elements."
+        },
+        {
+                "title": "How do you use 'array_splice()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_splice()' function.",
+                "tags": "php, array_splice, array functions",
+                "paid": "Yes",
+                "answer": "The `array_splice()` function in PHP removes a portion of the array and optionally replaces it with other values. For example: `array_splice([1, 2, 3, 4], 1, 2, [5, 6]);` returns `[1, 5, 6, 4]`, removing two elements starting from index 1 and replacing them with `[5, 6]`."
+        },
+        {
+                "title": "What does the 'array_unshift()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_unshift()' function.",
+                "tags": "php, array_unshift, array functions",
+                "paid": "Yes",
+                "answer": "The `array_unshift()` function in PHP adds one or more elements to the beginning of an array. For example: `array_unshift($array, 'element');` adds 'element' to the start of `$array`. This function is useful for prepending elements to an array."
+        },
+        {
+                "title": "How do you use 'array_slice()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_slice()' function.",
+                "tags": "php, array_slice, array functions",
+                "paid": "Yes",
+                "answer": "The `array_slice()` function in PHP extracts a portion of an array. For example: `array_slice([1, 2, 3, 4], 1, 2);` returns `[2, 3]`, extracting 2 elements starting from index 1. This function is useful for obtaining a subset of an array."
+        },
+        {
+                "title": "What does the 'array_merge()' function return when arrays have overlapping keys?",
+                "category": "Php",
+                "description": "Behavior of 'array_merge()' with overlapping keys.",
+                "tags": "php, array_merge, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge()` function in PHP merges arrays, and when arrays have overlapping keys, the values from later arrays overwrite those from earlier arrays. For example: `array_merge(['a' => 1], ['a' => 2]);` returns `['a' => 2]`, with the value from the second array taking precedence."
+        },
+        {
+                "title": "How do you use 'array_keys()' to find keys with specific values in PHP?",
+                "category": "Php",
+                "description": "Using 'array_keys()' to find specific values.",
+                "tags": "php, array_keys, array functions",
+                "paid": "Yes",
+                "answer": "The `array_keys()` function in PHP can be used to retrieve keys of elements with a specific value. For example: `array_keys(['a' => 1, 'b' => 1], 1);` returns `['a', 'b']`, showing all keys where the value is `1`. This function is useful for locating all keys associated with a value."
+        },
+        {
+                "title": "What does the 'array_merge_recursive()' function do when arrays have the same keys?",
+                "category": "Php",
+                "description": "Behavior of 'array_merge_recursive()' with same keys.",
+                "tags": "php, array_merge_recursive, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge_recursive()` function in PHP merges arrays recursively. If arrays have the same keys, their values are merged into an array. For example: `array_merge_recursive(['a' => [1]], ['a' => [2]]);` returns `['a' => [1, 2]]`, combining values into a nested array."
+        },
+        {
+                "title": "How do you use 'array_values()' to reindex an array in PHP?",
+                "category": "Php",
+                "description": "Using 'array_values()' to reindex.",
+                "tags": "php, array_values, array functions",
+                "paid": "Yes",
+                "answer": "The `array_values()` function in PHP returns all the values from an array and reindexes them numerically. For example: `array_values(['a' => 1, 'b' => 2]);` returns `[1, 2]`, resetting the array keys to numeric indexes. This function is useful for standardizing array indexing."
+        },
+        {
+                "title": "What does the 'array_reverse()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_reverse()' function.",
+                "tags": "php, array_reverse, array functions",
+                "paid": "Yes",
+                "answer": "The `array_reverse()` function in PHP returns an array with elements in reverse order. For example: `array_reverse([1, 2, 3]);` returns `[3, 2, 1]`. This function is useful for reversing the order of elements in an array."
+        },
+        {
+                "title": "How do you use 'array_walk()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_walk()' function.",
+                "tags": "php, array_walk, array functions",
+                "paid": "Yes",
+                "answer": "The `array_walk()` function in PHP applies a callback function to each element of an array, modifying the array in place. For example: `array_walk($array, function(&$item) { $item *= 2; });` doubles each element in `$array`. This function is useful for applying changes directly to the array."
+        },
+        {
+                "title": "What does the 'array_replace_recursive()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_replace_recursive()' function.",
+                "tags": "php, array_replace_recursive, array functions",
+                "paid": "Yes",
+                "answer": "The `array_replace_recursive()` function in PHP replaces elements of the first array with elements from subsequent arrays recursively. For example: `array_replace_recursive(['a' => ['b' => 1]], ['a' => ['b' => 2]]);` returns `['a' => ['b' => 2]]`, replacing values deeply based on matching keys."
+        },
+        {
+                "title": "How do you use 'array_flip()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_flip()' function.",
+                "tags": "php, array_flip, array functions",
+                "paid": "Yes",
+                "answer": "The `array_flip()` function in PHP exchanges all keys with their associated values in an array. For example: `array_flip(['a' => 1, 'b' => 2]);` returns `[1 => 'a', 2 => 'b']`. This function is useful for reversing keys and values in an associative array."
+        },
+        {
+                "title": "What does the 'array_unique()' function do when used with multidimensional arrays?",
+                "category": "Php",
+                "description": "Behavior of 'array_unique()' with multidimensional arrays.",
+                "tags": "php, array_unique, array functions",
+                "paid": "Yes",
+                "answer": "The `array_unique()` function in PHP removes duplicate values from a single-dimensional array. For multidimensional arrays, it does not work as expected for deeper comparisons. For example: `array_unique([['a' => 1], ['a' => 1]]);` will return the array as is without eliminating duplicates."
+        },
+        {
+                "title": "How do you use 'array_intersect_assoc()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_intersect_assoc()' function.",
+                "tags": "php, array_intersect_assoc, array functions",
+                "paid": "Yes",
+                "answer": "The `array_intersect_assoc()` function in PHP returns the intersection of arrays, including both keys and values. For example: `array_intersect_assoc(['a' => 1, 'b' => 2], ['a' => 1, 'b' => 3]);` returns `['a' => 1]`, showing elements with matching keys and values."
+        },
+        {
+                "title": "What does the 'array_intersect_key()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_intersect_key()' function.",
+                "tags": "php, array_intersect_key, array functions",
+                "paid": "Yes",
+                "answer": "The `array_intersect_key()` function in PHP returns an array containing all entries from the first array whose keys are present in all other arrays. For example: `array_intersect_key(['a' => 1, 'b' => 2], ['a' => 3]);` returns `['a' => 1]`, showing entries with matching keys."
+        },
+        {
+                "title": "How do you use 'array_merge_recursive()' with nested arrays in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_merge_recursive()' with nested arrays.",
+                "tags": "php, array_merge_recursive, array functions",
+                "paid": "Yes",
+                "answer": "The `array_merge_recursive()` function in PHP merges nested arrays by combining values with the same keys into sub-arrays. For example: `array_merge_recursive(['a' => ['b' => 1]], ['a' => ['c' => 2]]);` returns `['a' => ['b' => 1, 'c' => 2]]`, merging nested arrays recursively."
+        },
+        {
+                "title": "What does the 'array_walk_recursive()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_walk_recursive()' function.",
+                "tags": "php, array_walk_recursive, array functions",
+                "paid": "Yes",
+                "answer": "The `array_walk_recursive()` function in PHP applies a callback function to each element of an array recursively. For example: `array_walk_recursive($array, function(&$value) { $value *= 2; });` doubles every value in a multidimensional array. This function is useful for modifying all levels of nested arrays."
+        },
+        {
+                "title": "How do you use 'array_reduce()' to find the maximum value in an array in PHP?",
+                "category": "Php",
+                "description": "Using 'array_reduce()' to find the maximum value.",
+                "tags": "php, array_reduce, array functions",
+                "paid": "Yes",
+                "answer": "The `array_reduce()` function in PHP can be used to find the maximum value in an array by using a callback that compares elements. For example: `array_reduce([1, 2, 3], function($max, $item) { return $item > $max ? $item : $max; }, PHP_INT_MIN);` returns `3`, finding the highest value."
+        },
+        {
+                "title": "What does the 'array_chunk()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_chunk()' function.",
+                "tags": "php, array_chunk, array functions",
+                "paid": "Yes",
+                "answer": "The `array_chunk()` function in PHP splits an array into chunks of a specified size. For example: `array_chunk([1, 2, 3, 4], 2);` returns `[[1, 2], [3, 4]]`, dividing the array into sub-arrays with 2 elements each. This function is useful for breaking down arrays into manageable pieces."
+        },
+        {
+                "title": "How do you use 'array_combine()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_combine()' function.",
+                "tags": "php, array_combine, array functions",
+                "paid": "Yes",
+                "answer": "The `array_combine()` function in PHP creates an array by combining two arrays: one for keys and one for values. For example: `array_combine(['a', 'b'], [1, 2]);` returns `['a' => 1, 'b' => 2]`. This function is useful for constructing associative arrays from separate key and value arrays."
+        },
+        {
+                "title": "What does the 'array_key_exists()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_key_exists()' function.",
+                "tags": "php, array_key_exists, array functions",
+                "paid": "Yes",
+                "answer": "The `array_key_exists()` function in PHP checks if a specified key exists in an array. For example: `array_key_exists('key', ['key' => 'value']);` returns `true`. This function is useful for verifying the presence of a key in an associative array."
+        },
+        {
+                "title": "How do you use 'array_sum()' in PHP?",
+                "category": "Php",
+                "description": "Functionality of 'array_sum()' function.",
+                "tags": "php, array_sum, array functions",
+                "paid": "Yes",
+                "answer": "The `array_sum()` function in PHP calculates the sum of all values in an array. For example: `array_sum([1, 2, 3]);` returns `6`. This function is useful for aggregating numerical values within an array into a single sum."
+        },
+        {
+                "title": "What does the 'array_count_values()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_count_values()' function.",
+                "tags": "php, array_count_values, array functions",
+                "paid": "Yes",
+                "answer": "The `array_count_values()` function in PHP counts the number of occurrences of each value in an array. For example: `array_count_values([1, 1, 2, 3, 3, 3]);` returns `[1 => 2, 2 => 1, 3 => 3]`. This function is useful for tallying frequencies of array elements."
+        },
+        {
+                "title": "How do you use 'array_search()' with strict comparison in PHP?",
+                "category": "Php",
+                "description": "Using 'array_search()' with strict comparison.",
+                "tags": "php, array_search, array functions",
+                "paid": "Yes",
+                "answer": "The `array_search()` function in PHP can perform a strict comparison if the optional `strict` parameter is set to `true`. For example: `array_search('2', ['a' => 1, 'b' => '2'], true);` returns `false` because '2' (string) is not the same as 2 (integer). Strict comparison checks both type and value."
+        },
+        {
+                "title": "What does the 'array_push()' function do in PHP?",
+                "category": "Php",
+                "description": "Purpose of 'array_push()' function.",
+                "tags": "php, array_push, array functions",
+                "paid": "Yes",
+                "answer": "The `array_push()` function in PHP adds one or more elements to the end of an array. For example: `array_push($array, 'element1', 'element2');` appends 'element1' and 'element2' to the end of `$array`. This function is useful for adding new elements to an array."
+        },
+        {
+                "title": "How do you use 'array_splice()' to remove elements from an array in PHP?",
+                "category": "Php",
+                "description": "Removing elements with 'array_splice()'.",
+                "tags": "php, array_splice, array functions",
+                "paid": "Yes",
+                "answer": "The `array_splice()` function in PHP removes elements from an array and optionally replaces them. For example: `array_splice([1, 2, 3, 4], 1, 2);` removes 2 elements starting from index 1, resulting in `[1, 4]`. This function is useful for modifying arrays by removing specific portions."
+        },
+        {
+                "title": "What does the 'array_unique()' function do in PHP when applied to an array of arrays?",
+                "category": "Php",
+                "description": "Behavior of 'array_unique()' with arrays of arrays.",
+                "tags": "php, array_unique, array functions",
+                "paid": "Yes",
+                "answer": "The `array_unique()` function in PHP does not work as expected with multidimensional arrays because it only compares values at the top level. For example: `array_unique([['a'], ['a']]);` will return the array unchanged. To remove duplicates in multidimensional arrays, custom logic or recursive functions are needed."
+        },
+        {
+                "title": "How do you use 'array_replace()' with numeric arrays in PHP?",
+                "category": "Php",
+                "description": "Using 'array_replace()' with numeric arrays.",
+                "tags": "php, array_replace, array functions",
+                "paid": "Yes",
+                "answer": "The `array_replace()` function in PHP replaces elements in the first numeric array with elements from subsequent arrays, matching by index. For example: `array_replace([1, 2, 3], [4, 5]);` returns `[4, 5, 3]`, replacing elements at matching indices with those from the second array."
+        }
+]

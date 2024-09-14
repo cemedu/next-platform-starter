@@ -1,0 +1,21 @@
+a {
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--icon);
+}
+
+.header {
+  z-index: 20;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media all and (max-width: 300px) {
+  .user_name {
+    display: none;
+  }
+}

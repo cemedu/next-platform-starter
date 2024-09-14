@@ -1,0 +1,594 @@
+[
+    {
+        "title": "What is Python?",
+        "category": "Python",
+        "description": "A high-level programming language.",
+        "tags": "python, programming language, high-level",
+        "paid": "Yes",
+        "answer": "Python is a high-level, interpreted programming language that is widely used for various purposes such as web development, scientific computing, data analysis, artificial intelligence, and more. Its simplicity and versatility make it an ideal language for beginners and experts alike."
+    },
+    {
+        "title": "How do I install Python?",
+        "category": "Python",
+        "description": "Install Python using a package manager.",
+        "tags": "python, installation, package manager",
+        "paid": "Yes",
+        "answer": "To install Python, you can use a package manager like pip or conda. Simply download the installer from the official Python website and follow the installation instructions. You can also use a version manager like pyenv to manage multiple Python versions."
+    },
+    {
+        "title": "What is Python used for?",
+        "category": "Python",
+        "description": "Web development, data analysis, AI, etc.",
+        "tags": "python, uses, web development, data analysis, AI",
+        "paid": "Yes",
+        "answer": "Python is a versatile language used for various purposes such as web development, data analysis, artificial intelligence, scientific computing, automation, and more. Its simplicity and large community make it an ideal language for beginners and experts alike."
+    },
+    {
+        "title": "How do I write a Python function?",
+        "category": "Python",
+        "description": "Use the `def` keyword to define a function.",
+        "tags": "python, functions, def keyword",
+        "paid": "Yes",
+        "answer": "To write a Python function, use the `def` keyword followed by the function name and parameters in parentheses. Then, indent the function body and write your code. For example: `def greet(name): print('Hello', name)`"
+    },
+    {
+        "title": "What is a Python list?",
+        "category": "Python",
+        "description": "A data structure to store multiple items.",
+        "tags": "python, lists, data structures",
+        "paid": "Yes",
+        "answer": "A Python list is a data structure that stores multiple items in a single variable. Lists are ordered, mutable, and allow duplicate values. They are commonly used to store collections of data and can be accessed using indexing and slicing."
+    },
+    {
+        "title": "What is a Python dictionary?",
+        "category": "Python",
+        "description": "A data structure to store key-value pairs.",
+        "tags": "python, dictionaries, data structures, key-value pairs",
+        "paid": "Yes",
+        "answer": "A Python dictionary is a data structure that stores key-value pairs in a single variable. Dictionaries are unordered, mutable, and allow duplicate values. They are commonly used to store data with named fields and can be accessed using bracket notation."
+    },
+    {
+        "title": "How do I handle errors in Python?",
+        "category": "Python",
+        "description": "Use try-except blocks or raise custom errors.",
+        "tags": "python, errors, exception handling, try-except, raise",
+        "paid": "Yes",
+        "answer": "You can handle errors in Python using try-except blocks or by raising custom errors. For example: try: # code that may raise an error except Exception: # handle the error or raise ValueError('Invalid input')"
+    },
+    {
+        "title": "How do I work with files in Python?",
+        "category": "Python",
+        "description": "Use the built-in open function.",
+        "tags": "python, files, open function, reading, writing",
+        "paid": "Yes",
+        "answer": "You can work with files in Python using the built-in open function, which allows you to read and write files. For example: with open('file.txt', 'r') as f: print(f.read()) or with open('file.txt', 'w') as f: f.write('Hello, world!')"
+    },
+    {
+        "title": "What is a Python class?",
+        "category": "Python",
+        "description": "A blueprint for creating objects.",
+        "tags": "python, classes, objects, object-oriented programming",
+        "paid": "Yes",
+        "answer": "A Python class is a blueprint for creating objects, which are instances of the class. Classes define the properties and behavior of an object, and can be used to create multiple objects with the same attributes and methods."
+    },
+    {
+        "title": "How do I install Python libraries?",
+        "category": "Python",
+        "description": "Use pip or conda.",
+        "tags": "python, libraries, pip, conda",
+        "paid": "Yes",
+        "answer": "You can install Python libraries using pip or conda. Pip is the package installer for Python and can be used to install libraries from the Python Package Index (PyPI). Conda is a package manager that can be used to install libraries and manage environments."
+    },
+    {
+        "title": "What is a Python generator?",
+        "category": "Python",
+        "description": "A function that returns an iterator.",
+        "tags": "python, generators, iterators, functions",
+        "paid": "Yes",
+        "answer": "A Python generator is a function that returns an iterator, which allows you to iterate over a sequence of values without creating a list or other data structure in memory. Generators are defined using the `yield` keyword."
+    },
+    {
+        "title": "How do I use Python's built-in functions?",
+        "category": "Python",
+        "description": "Use functions like len(), print(), and range().",
+        "tags": "python, built-in functions, len, print, range",
+        "paid": "Yes",
+        "answer": "Python has many built-in functions that you can use in your code. Some examples include len() to get the length of a list, print() to print output to the screen, and range() to create an iterator over a sequence of numbers."
+    },
+    {
+        "title": "How do I work with dates and times in Python?",
+        "category": "Python",
+        "description": "Use the datetime module.",
+        "tags": "python, dates, times, datetime module",
+        "paid": "Yes",
+        "answer": "You can work with dates and times in Python using the datetime module, which provides classes for manipulating dates and times. For example: from datetime import datetime; print(datetime.now())"
+    },
+    {
+        "title": "What is a Python lambda function?",
+        "category": "Python",
+        "description": "A small anonymous function.",
+        "tags": "python, lambda functions, anonymous functions",
+        "paid": "Yes",
+        "answer": "A Python lambda function is a small anonymous function that can be defined inline within a larger expression. Lambda functions are often used as arguments to higher-order functions or as event handlers."
+    },
+    {
+        "title": "How do I use Python's built-in data types?",
+        "category": "Python",
+        "description": "Use types like int, float, str, and bool.",
+        "tags": "python, data types, int, float, str, bool",
+        "paid": "Yes",
+        "answer": "Python has several built-in data types, including integers (int), floating-point numbers (float), strings (str), and booleans (bool). You can use these types to store and manipulate data in your program."
+    },
+    {
+        "title": "What is a Python set?",
+        "category": "Python",
+        "description": "An unordered collection of unique elements.",
+        "tags": "python, sets, unordered, unique",
+        "paid": "Yes",
+        "answer": "A Python set is an unordered collection of unique elements. Sets are mutable, meaning you can add or remove elements after creation. Sets are commonly used for membership testing, removing duplicates, and set operations like union and intersection."
+    },
+    {
+        "title": "How do I use Python's built-in string methods?",
+        "category": "Python",
+        "description": "Use methods like upper(), lower(), and split().",
+        "tags": "python, strings, built-in methods, upper, lower, split",
+        "paid": "Yes",
+        "answer": "Python strings have various built-in methods that allow you to manipulate and transform string data. Some commonly used methods include upper(), lower(), split(), join(), and replace()."
+    },
+    {
+        "title": "How do I use Python's built-in list methods?",
+        "category": "Python",
+        "description": "Use methods like append(), extend(), and sort().",
+        "tags": "python, lists, built-in methods, append, extend, sort",
+        "paid": "Yes",
+        "answer": "Python lists have various built-in methods that allow you to manipulate and transform list data. Some commonly used methods include append(), extend(), sort(), reverse(), and pop()."
+    },
+    {
+        "title": "What is a Python tuple?",
+        "category": "Python",
+        "description": "An immutable collection of elements.",
+        "tags": "python, tuples, immutable, elements",
+        "paid": "Yes",
+        "answer": "A Python tuple is an immutable collection of elements. Tuples are similar to lists, but they cannot be modified after creation. Tuples are commonly used for storing data that should not be changed."
+    },
+    {
+        "title": "How do I use Python's built-in file methods?",
+        "category": "Python",
+        "description": "Use methods like read(), write(), and close().",
+        "tags": "python, files, built-in methods, read, write, close",
+        "paid": "Yes",
+        "answer": "Python files have various built-in methods that allow you to interact with file data. Some commonly used methods include read(), write(), close(), and seek()."
+    },
+    {
+        "title": "How do I handle exceptions in Python?",
+        "category": "Python",
+        "description": "Use try-except blocks and raise custom exceptions.",
+        "tags": "python, exceptions, try-except, raise",
+        "paid": "Yes",
+        "answer": "You can handle exceptions in Python using try-except blocks and raise custom exceptions. Try-except blocks allow you to catch and handle exceptions, while raise allows you to create custom exceptions."
+    },
+    {
+        "title": "What is a Python decorator?",
+        "category": "Python",
+        "description": "A function that modifies another function.",
+        "tags": "python, decorators, functions, modify",
+        "paid": "Yes",
+        "answer": "A Python decorator is a function that modifies another function. Decorators are often used to extend the behavior of a function or method without permanently modifying it."
+    },
+    {
+        "title": "How do I use Python's built-in math functions?",
+        "category": "Python",
+        "description": "Use functions like abs(), max(), and min().",
+        "tags": "python, math, built-in functions, abs, max, min",
+        "paid": "Yes",
+        "answer": "Python has various built-in math functions that allow you to perform mathematical operations. Some commonly used functions include abs(), max(), min(), round(), and sum()."
+    },
+    {
+        "title": "How do I work with Python's datetime module?",
+        "category": "Python",
+        "description": "Use classes like datetime, date, and time.",
+        "tags": "python, datetime, date, time",
+        "paid": "Yes",
+        "answer": "You can work with dates and times in Python using the datetime module, which provides classes like datetime, date, and time. These classes allow you to create and manipulate date and time objects."
+    },
+    {
+        "title": "What is a Python generator expression?",
+        "category": "Python",
+        "description": "A compact way to create generators.",
+        "tags": "python, generators, expressions",
+        "paid": "Yes",
+        "answer": "A Python generator expression is a compact way to create generators, which are functions that return an iterator. Generator expressions are defined using parentheses and the yield keyword."
+    },
+    {
+        "title": "How do I use Python's built-in statistics functions?",
+        "category": "Python",
+        "description": "Use functions like mean(), median(), and mode().",
+        "tags": "python, statistics, built-in functions, mean, median, mode",
+        "paid": "Yes",
+        "answer": "Python has various built-in statistics functions that allow you to calculate statistical measures. Some commonly used functions include mean(), median(), mode(), and standard deviation()."
+    },
+    {
+        "title": "How do I work with Python's collections module?",
+        "category": "Python",
+        "description": "Use classes like Counter, defaultdict, and OrderedDict.",
+        "tags": "python, collections, Counter, defaultdict, OrderedDict",
+        "paid": "Yes",
+        "answer": "You can work with Python's collections module, which provides classes like Counter, defaultdict, and OrderedDict. These classes allow you to create and manipulate specialized data structures."
+    },
+    {
+        "title": "How do I use Python's built-in string formatting options?",
+        "category": "Python",
+        "description": "Use methods like format() and f-strings.",
+        "tags": "python, strings, formatting, format, f-strings",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in string formatting options, such as the format() method and f-strings, to create formatted strings."
+    },
+    {
+        "title": "How do I work with Python's file input/output operations?",
+        "category": "Python",
+        "description": "Use functions like open(), read(), and write().",
+        "tags": "python, files, input/output, open, read, write",
+        "paid": "Yes",
+        "answer": "You can work with Python's file input/output operations using functions like open(), read(), and write(). These functions allow you to read and write files in various formats."
+    },
+    {
+        "title": "What is a Python exception?",
+        "category": "Python",
+        "description": "An error that occurs during program execution.",
+        "tags": "python, exceptions, errors",
+        "paid": "Yes",
+        "answer": "A Python exception is an error that occurs during program execution. Exceptions can be handled using try-except blocks to prevent program crashes."
+    },
+    {
+        "title": "How do I use Python's built-in data structures?",
+        "category": "Python",
+        "description": "Use data structures like lists, dictionaries, and sets.",
+        "tags": "python, data structures, lists, dictionaries, sets",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in data structures like lists, dictionaries, and sets to store and manipulate data."
+    },
+    {
+        "title": "How do I work with Python's web development frameworks?",
+        "category": "Python",
+        "description": "Use frameworks like Django, Flask, and Pyramid.",
+        "tags": "python, web development, frameworks, Django, Flask, Pyramid",
+        "paid": "Yes",
+        "answer": "You can work with Python's web development frameworks like Django, Flask, and Pyramid to build web applications."
+    },
+    {
+        "title": "How do I use Python's built-in testing frameworks?",
+        "category": "Python",
+        "description": "Use frameworks like unittest and pytest.",
+        "tags": "python, testing, frameworks, unittest, pytest",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in testing frameworks like unittest and pytest to write and run tests for your code."
+    },
+    {
+        "title": "How do I work with Python's data science libraries?",
+        "category": "Python",
+        "description": "Use libraries like NumPy, pandas, and scikit-learn.",
+        "tags": "python, data science, libraries, NumPy, pandas, scikit-learn",
+        "paid": "Yes",
+        "answer": "You can work with Python's data science libraries like NumPy, pandas, and scikit-learn to analyze and manipulate data."
+    },
+    {
+        "title": "How do I use Python's built-in logging module?",
+        "category": "Python",
+        "description": "Use the logging module to log events.",
+        "tags": "python, logging, events",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in logging module to log events in your program. The logging module provides a flexible way to log events at different levels of severity."
+    },
+    {
+        "title": "How do I work with Python's multimedia libraries?",
+        "category": "Python",
+        "description": "Use libraries like Pygame and Pillow.",
+        "tags": "python, multimedia, libraries, Pygame, Pillow",
+        "paid": "Yes",
+        "answer": "You can work with Python's multimedia libraries like Pygame and Pillow to create games and manipulate images."
+    },
+    {
+        "title": "What is a Python context manager?",
+        "category": "Python",
+        "description": "A object that manages resources.",
+        "tags": "python, context managers, resources",
+        "paid": "Yes",
+        "answer": "A Python context manager is an object that manages resources, such as files or connections, and provides a way to use them in a with statement."
+    },
+    {
+        "title": "How do I use Python's built-in profiling tools?",
+        "category": "Python",
+        "description": "Use the cProfile and profile modules.",
+        "tags": "python, profiling, tools, cProfile, profile",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in profiling tools, such as the cProfile and profile modules, to measure the performance of your code."
+    },
+    {
+        "title": "How do I work with Python's web scraping libraries?",
+        "category": "Python",
+        "description": "Use libraries like Beautiful Soup and Scrapy.",
+        "tags": "python, web scraping, libraries, Beautiful Soup, Scrapy",
+        "paid": "Yes",
+        "answer": "You can work with Python's web scraping libraries like Beautiful Soup and Scrapy to extract data from websites."
+    },
+    {
+        "title": "What is a Python abstract class?",
+        "category": "Python",
+        "description": "A class that cannot be instantiated.",
+        "tags": "python, abstract classes, classes",
+        "paid": "Yes",
+        "answer": "A Python abstract class is a class that cannot be instantiated and is used as a base class for other classes."
+    },
+    {
+        "title": "How do I use Python's built-in documentation tools?",
+        "category": "Python",
+        "description": "Use the pydoc and docstrings modules.",
+        "tags": "python, documentation, tools, pydoc, docstrings",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in documentation tools, such as the pydoc and docstrings modules, to generate documentation for your code."
+    },
+    {
+        "title": "How do I work with Python's machine learning libraries?",
+        "category": "Python",
+        "description": "Use libraries like scikit-learn and TensorFlow.",
+        "tags": "python, machine learning, libraries, scikit-learn, TensorFlow",
+        "paid": "Yes",
+        "answer": "You can work with Python's machine learning libraries like scikit-learn and TensorFlow to build predictive models and analyze data."
+    },
+    {
+        "title": "What is a Python iterator?",
+        "category": "Python",
+        "description": "An object that allows iteration.",
+        "tags": "python, iterators, iteration",
+        "paid": "Yes",
+        "answer": "A Python iterator is an object that allows iteration, such as a list or a tuple."
+    },
+    {
+        "title": "How do I use Python's built-in debugging tools?",
+        "category": "Python",
+        "description": "Use the pdb and breakpoint modules.",
+        "tags": "python, debugging, tools, pdb, breakpoint",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in debugging tools, such as the pdb and breakpoint modules, to debug your code."
+    },
+    {
+        "title": "How do I work with Python's natural language processing libraries?",
+        "category": "Python",
+        "description": "Use libraries like NLTK and spaCy.",
+        "tags": "python, natural language processing, libraries, NLTK, spaCy",
+        "paid": "Yes",
+        "answer": "You can work with Python's natural language processing libraries like NLTK and spaCy to analyze and manipulate text data."
+    },
+    {
+        "title": "How do I use Python's built-in cryptography libraries?",
+        "category": "Python",
+        "description": "Use libraries like hashlib and cryptography.",
+        "tags": "python, cryptography, libraries, hashlib, cryptography",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in cryptography libraries like hashlib and cryptography to encrypt and decrypt data."
+    },
+    {
+        "title": "How do I work with Python's data visualization libraries?",
+        "category": "Python",
+        "description": "Use libraries like Matplotlib and Seaborn.",
+        "tags": "python, data visualization, libraries, Matplotlib, Seaborn",
+        "paid": "Yes",
+        "answer": "You can work with Python's data visualization libraries like Matplotlib and Seaborn to create interactive visualizations."
+    },
+    {
+        "title": "What is a Python abstract method?",
+        "category": "Python",
+        "description": "A method that must be implemented by subclasses.",
+        "tags": "python, abstract methods, methods",
+        "paid": "Yes",
+        "answer": "A Python abstract method is a method that must be implemented by subclasses."
+    },
+    {
+        "title": "How do I use Python's built-in web development frameworks?",
+        "category": "Python",
+        "description": "Use frameworks like Django and Flask.",
+        "tags": "python, web development, frameworks, Django, Flask",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in web development frameworks like Django and Flask to build web applications."
+    },
+    {
+        "title": "How do I work with Python's machine learning algorithms?",
+        "category": "Python",
+        "description": "Use libraries like scikit-learn and TensorFlow.",
+        "tags": "python, machine learning, algorithms, scikit-learn, TensorFlow",
+        "paid": "Yes",
+        "answer": "You can work with Python's machine learning algorithms like linear regression and decision trees using libraries like scikit-learn and TensorFlow."
+    },
+    {
+        "title": "How do I use Python's built-in database libraries?",
+        "category": "Python",
+        "description": "Use libraries like sqlite3 and psycopg2.",
+        "tags": "python, database libraries, sqlite3, psycopg2",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in database libraries like sqlite3 and psycopg2 to interact with databases."
+    },
+    {
+        "title": "How do I work with Python's computer vision libraries?",
+        "category": "Python",
+        "description": "Use libraries like OpenCV and Pillow.",
+        "tags": "python, computer vision, libraries, OpenCV, Pillow",
+        "paid": "Yes",
+        "answer": "You can work with Python's computer vision libraries like OpenCV and Pillow to analyze and manipulate images."
+    },
+    {
+        "title": "What is a Python meta-class?",
+        "category": "Python",
+        "description": "A class that creates another class.",
+        "tags": "python, meta-classes, classes",
+        "paid": "Yes",
+        "answer": "A Python meta-class is a class that creates another class."
+    },
+    {
+        "title": "How do I use Python's built-in networking libraries?",
+        "category": "Python",
+        "description": "Use libraries like socket and select.",
+        "tags": "python, networking libraries, socket, select",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in networking libraries like socket and select to create networked applications."
+    },
+    {
+        "title": "How do I work with Python's data analysis libraries?",
+        "category": "Python",
+        "description": "Use libraries like Pandas and NumPy.",
+        "tags": "python, data analysis, libraries, Pandas, NumPy",
+        "paid": "Yes",
+        "answer": "You can work with Python's data analysis libraries like Pandas and NumPy to analyze and manipulate data."
+    },
+    {
+        "title": "How do I work with Python's computer vision libraries?",
+        "category": "Python",
+        "description": "Use libraries like OpenCV and Pillow.",
+        "tags": "python, computer vision, libraries, OpenCV, Pillow",
+        "paid": "Yes",
+        "answer": "You can work with Python's computer vision libraries like OpenCV and Pillow to analyze and manipulate images and videos."
+    },
+    {
+        "title": "How do I use Python's built-in data science libraries?",
+        "category": "Python",
+        "description": "Use libraries like Pandas and NumPy.",
+        "tags": "python, data science, libraries, Pandas, NumPy",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in data science libraries like Pandas and NumPy to analyze and manipulate data."
+    },
+    {
+        "title": "How do I use Python's built-in database libraries?",
+        "category": "Python",
+        "description": "Use libraries like sqlite3 and psycopg2.",
+        "tags": "python, database libraries, sqlite3, psycopg2",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in database libraries like sqlite3 and psycopg2 to interact with databases."
+    },
+    {
+        "title": "How do I work with Python's data visualization libraries?",
+        "category": "Python",
+        "description": "Use libraries like Matplotlib and Seaborn.",
+        "tags": "python, data visualization, libraries, Matplotlib, Seaborn",
+        "paid": "Yes",
+        "answer": "You can work with Python's data visualization libraries like Matplotlib and Seaborn to create interactive visualizations."
+    },
+    {
+        "title": "What is a Python abstract method?",
+        "category": "Python",
+        "description": "A method that must be implemented by subclasses.",
+        "tags": "python, abstract methods, methods",
+        "paid": "Yes",
+        "answer": "A Python abstract method is a method that must be implemented by subclasses."
+    },
+    {
+        "title": "How do I use Python's built-in machine learning libraries?",
+        "category": "Python",
+        "description": "Use libraries like scikit-learn and TensorFlow.",
+        "tags": "python, machine learning, libraries, scikit-learn, TensorFlow",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in machine learning libraries like scikit-learn and TensorFlow to build predictive models."
+    },
+    {
+        "title": "How do I work with Python's data analysis libraries?",
+        "category": "Python",
+        "description": "Use libraries like Pandas and NumPy.",
+        "tags": "python, data analysis, libraries, Pandas, NumPy",
+        "paid": "Yes",
+        "answer": "You can work with Python's data analysis libraries like Pandas and NumPy to analyze and manipulate data."
+    },
+    {
+        "title": "How do I work with Python's deep learning libraries?",
+        "category": "Python",
+        "description": "Use libraries like TensorFlow and Keras.",
+        "tags": "python, deep learning, libraries, TensorFlow, Keras",
+        "paid": "Yes",
+        "answer": "You can work with Python's deep learning libraries like TensorFlow and Keras to build neural networks."
+    },
+    {
+        "title": "How do I use Python's built-in logging libraries?",
+        "category": "Python",
+        "description": "Use libraries like logging and loguru.",
+        "tags": "python, logging, libraries, logging, loguru",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in logging libraries like logging and loguru to log events in your application."
+    },
+    {
+        "title": "How do I work with Python's computer vision libraries?",
+        "category": "Python",
+        "description": "Use libraries like OpenCV and Pillow.",
+        "tags": "python, computer vision, libraries, OpenCV, Pillow",
+        "paid": "Yes",
+        "answer": "You can work with Python's computer vision libraries like OpenCV and Pillow to analyze and manipulate images and videos."
+    },
+    {
+        "title": "How do I use Python's built-in web development frameworks?",
+        "category": "Python",
+        "description": "Use frameworks like Django and Flask.",
+        "tags": "python, web development, frameworks, Django, Flask",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in web development frameworks like Django and Flask to build web applications."
+    },
+    {
+        "title": "What is a Python list comprehension?",
+        "category": "Python",
+        "description": "A compact way to create lists.",
+        "tags": "python, list comprehensions, lists",
+        "paid": "Yes",
+        "answer": "A Python list comprehension is a compact way to create lists."
+    },
+    {
+        "title": "How do I use Python's built-in database libraries?",
+        "category": "Python",
+        "description": "Use libraries like sqlite3 and psycopg2.",
+        "tags": "python, database libraries, sqlite3, psycopg2",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in database libraries like sqlite3 and psycopg2 to interact with databases."
+    },
+    {
+        "title": "How do I use Python's built-in web scraping libraries?",
+        "category": "Python",
+        "description": "Use libraries like Beautiful Soup and Scrapy.",
+        "tags": "python, web scraping, libraries, Beautiful Soup, Scrapy",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in web scraping libraries like Beautiful Soup and Scrapy to extract data from websites."
+    },
+    {
+        "title": "How do I work with Python's data visualization libraries?",
+        "category": "Python",
+        "description": "Use libraries like Matplotlib and Seaborn.",
+        "tags": "python, data visualization, libraries, Matplotlib, Seaborn",
+        "paid": "Yes",
+        "answer": "You can work with Python's data visualization libraries like Matplotlib and Seaborn to create interactive visualizations."
+    },
+    {
+        "title": "How do I use Python's built-in natural language processing libraries?",
+        "category": "Python",
+        "description": "Use libraries like NLTK and spaCy.",
+        "tags": "python, natural language processing, libraries, NLTK, spaCy",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in natural language processing libraries like NLTK and spaCy to analyze and manipulate text data."
+    },
+    {
+        "title": "How do I use Python's built-in web development frameworks?",
+        "category": "Python",
+        "description": "Use frameworks like Django and Flask.",
+        "tags": "python, web development, frameworks, Django, Flask",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in web development frameworks like Django and Flask to build web applications."
+    },
+    {
+        "title": "How do I work with Python's data analysis libraries?",
+        "category": "Python",
+        "description": "Use libraries like Pandas and NumPy.",
+        "tags": "python, data analysis, libraries, Pandas, NumPy",
+        "paid": "Yes",
+        "answer": "You can work with Python's data analysis libraries like Pandas and NumPy to analyze and manipulate data."
+    },
+    {
+        "title": "How do I use Python's built-in computer vision libraries?",
+        "category": "Python",
+        "description": "Use libraries like OpenCV and Pillow.",
+        "tags": "python, computer vision, libraries, OpenCV, Pillow",
+        "paid": "Yes",
+        "answer": "You can use Python's built-in computer vision libraries like OpenCV and Pillow to analyze and manipulate images and videos."
+    }
+]

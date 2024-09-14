@@ -1,0 +1,1 @@
+“Terms and Conditions” document for the purchase of downloadable files (such as ZIP files or PDFs), courses, or project source code. This includes a no-refund policy for source code purchases.

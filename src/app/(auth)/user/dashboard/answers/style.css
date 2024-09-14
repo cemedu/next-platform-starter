@@ -1,0 +1,7 @@
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid var(--text2);
+  color: var(--text1);
+  width: auto !important;
+}

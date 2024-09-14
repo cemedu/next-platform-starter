@@ -1,0 +1,578 @@
+[
+        {
+                "title": "What is Django?",
+                "category": "Django",
+                "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It simplifies the process of creating complex, database-driven websites.",
+                "tags": "Django, framework, Python",
+                "paid": "Yes",
+                "answer": "Django is a web framework for Python that enables developers to build robust, scalable web applications efficiently. It provides built-in features like an ORM, authentication, and an admin interface to accelerate development while promoting best practices."
+        },
+        {
+                "title": "How do you create a Django project?",
+                "category": "Django",
+                "description": "To create a Django project, use the command 'django-admin startproject projectname'.",
+                "tags": "Django, project, setup",
+                "paid": "Yes",
+                "answer": "You create a Django project by running the command `django-admin startproject projectname`. This command sets up the initial directory structure for the project, including essential files such as `settings.py`, `urls.py`, and `wsgi.py`."
+        },
+        {
+                "title": "What is a Django app?",
+                "category": "Django",
+                "description": "A Django app is a web application that performs a specific function within a project.",
+                "tags": "Django, app, definition",
+                "paid": "Yes",
+                "answer": "In Django, an app is a self-contained module that performs a specific function, such as a blog or a user management system. Each app can be reused across different projects. You create an app with `python manage.py startapp appname`."
+        },
+        {
+                "title": "How do you configure settings in Django?",
+                "category": "Django",
+                "description": "Configuration in Django is done via the 'settings.py' file.",
+                "tags": "Django, settings, configuration",
+                "paid": "Yes",
+                "answer": "Settings in Django are configured in the `settings.py` file. This file contains configuration options for your project, such as database settings, middleware, installed apps, and static files. You can modify these settings to tailor the behavior of your project."
+        },
+        {
+                "title": "What is Django ORM?",
+                "category": "Django",
+                "description": "Django ORM is a powerful tool that allows for database operations using Python objects.",
+                "tags": "Django, ORM, database",
+                "paid": "Yes",
+                "answer": "Django ORM (Object-Relational Mapping) is a tool that abstracts database operations by allowing you to interact with your database using Python objects rather than SQL queries. It enables you to define models and perform CRUD operations with ease."
+        },
+        {
+                "title": "How do you create a Django model?",
+                "category": "Django",
+                "description": "To create a Django model, define a class in 'models.py' that inherits from 'models.Model'.",
+                "tags": "Django, model, creation",
+                "paid": "Yes",
+                "answer": "You create a Django model by defining a Python class in `models.py` that inherits from `models.Model`. Each attribute of the class represents a database field. After defining the model, run `python manage.py makemigrations` and `python manage.py migrate` to create the database schema."
+        },
+        {
+                "title": "How do you define a URL pattern in Django?",
+                "category": "Django",
+                "description": "URL patterns are defined in the 'urls.py' file of an app or project.",
+                "tags": "Django, URL, routing",
+                "paid": "Yes",
+                "answer": "URL patterns in Django are defined in the `urls.py` file using the `urlpatterns` list. You map URLs to views by including patterns such as `path('url/', view_function)` or `re_path(r'^url/$', view_function)` depending on whether you are using path converters or regex."
+        },
+        {
+                "title": "What is Django's admin interface?",
+                "category": "Django",
+                "description": "Django's admin interface is a built-in feature that allows for easy management of application data.",
+                "tags": "Django, admin, interface",
+                "paid": "Yes",
+                "answer": "Django’s admin interface is a powerful, built-in feature that provides a web-based interface to manage application data. By registering your models with the admin site, you can perform CRUD operations directly from the admin dashboard without writing additional code."
+        },
+        {
+                "title": "How do you handle static files in Django?",
+                "category": "Django",
+                "description": "Static files in Django are managed through the 'static' directory and settings.",
+                "tags": "Django, static files, management",
+                "paid": "Yes",
+                "answer": "Static files in Django, such as CSS and JavaScript, are handled using the `static` directory and `STATIC_URL` and `STATICFILES_DIRS` settings in `settings.py`. During development, Django serves these files directly; for production, use the `collectstatic` command to gather them into a single directory."
+        },
+        {
+                "title": "What is a Django view?",
+                "category": "Django",
+                "description": "A Django view is a function or class that processes requests and returns responses.",
+                "tags": "Django, view, function",
+                "paid": "Yes",
+                "answer": "In Django, a view is a function or class that takes a web request and returns a web response. Views are responsible for processing user input, interacting with models, and returning rendered templates or other responses to the client."
+        },
+        {
+                "title": "How do you create a Django form?",
+                "category": "Django",
+                "description": "Django forms are created by defining a class that inherits from 'forms.Form'.",
+                "tags": "Django, form, creation",
+                "paid": "Yes",
+                "answer": "To create a Django form, define a class in `forms.py` that inherits from `forms.Form`. Each attribute of the class represents a form field, and you can specify validation rules and widgets for each field. Use the form in views to handle user input and validation."
+        },
+        {
+                "title": "What are Django migrations?",
+                "category": "Django",
+                "description": "Migrations are a way to apply changes to your database schema in Django.",
+                "tags": "Django, migrations, database",
+                "paid": "Yes",
+                "answer": "Django migrations are a way to manage changes to the database schema. They are created using `python manage.py makemigrations` and applied using `python manage.py migrate`. Migrations ensure that database schema changes are consistent with model changes over time."
+        },
+        {
+                "title": "How do you handle user authentication in Django?",
+                "category": "Django",
+                "description": "Django provides built-in authentication views and models for user management.",
+                "tags": "Django, authentication, user management",
+                "paid": "Yes",
+                "answer": "Django handles user authentication through built-in views and models. The `django.contrib.auth` module provides functionality for user login, logout, registration, and password management. You can use these built-in views or extend them to customize authentication."
+        },
+        {
+                "title": "What are Django signals?",
+                "category": "Django",
+                "description": "Signals in Django are used to allow decoupled applications to get notified of events.",
+                "tags": "Django, signals, events",
+                "paid": "Yes",
+                "answer": "Django signals are a mechanism to allow various parts of a Django application to communicate and respond to certain actions, such as saving a model instance. Signals use a publisher-subscriber pattern, where you connect signal handlers to specific signals to execute custom code in response to events."
+        },
+        {
+                "title": "How do you implement pagination in Django?",
+                "category": "Django",
+                "description": "Pagination in Django is handled using the 'Paginator' class.",
+                "tags": "Django, pagination, Paginator",
+                "paid": "Yes",
+                "answer": "Pagination in Django is implemented using the `Paginator` class from `django.core.paginator`. You pass a queryset and the number of items per page to the `Paginator` constructor. The `page()` method returns a `Page` object, which contains the items for the current page and information for navigating between pages."
+        },
+        {
+                "title": "How do you serve media files in Django?",
+                "category": "Django",
+                "description": "Media files are served using the 'MEDIA_URL' and 'MEDIA_ROOT' settings.",
+                "tags": "Django, media files, serving",
+                "paid": "Yes",
+                "answer": "To serve media files in Django, configure `MEDIA_URL` and `MEDIA_ROOT` in `settings.py`. `MEDIA_URL` is the URL endpoint for accessing media files, while `MEDIA_ROOT` is the file system path where media files are stored. During development, use `django.conf.urls.static.static` to serve media files."
+        },
+        {
+                "title": "What is Django's template system?",
+                "category": "Django",
+                "description": "Django’s template system allows for the creation of dynamic HTML pages.",
+                "tags": "Django, template system, HTML",
+                "paid": "Yes",
+                "answer": "Django's template system is a powerful way to create dynamic HTML pages by combining static HTML with Django Template Language (DTL). It allows you to include variables, control structures, and template inheritance, enabling the generation of dynamic content based on context passed from views."
+        },
+        {
+                "title": "How do you implement a custom management command in Django?",
+                "category": "Django",
+                "description": "Custom management commands are implemented by creating a 'management/commands' directory in an app.",
+                "tags": "Django, custom commands, management",
+                "paid": "Yes",
+                "answer": "To implement a custom management command in Django, create a `management/commands` directory within an app. Inside this directory, create a Python file for your command. Define a class that inherits from `BaseCommand`, and implement the `handle` method with the logic for your command. You can then run your custom command using `python manage.py your_command_name`."
+        },
+        {
+                "title": "What are Django middleware classes?",
+                "category": "Django",
+                "description": "Middleware classes are used to process requests and responses globally in Django.",
+                "tags": "Django, middleware, request processing",
+                "paid": "Yes",
+                "answer": "Django middleware classes are components that process requests and responses globally. Middleware can be used for various tasks such as session management, authentication, or modifying request and response objects. Middleware classes are defined in `MIDDLEWARE` setting and are executed in the order they are listed."
+        },
+        {
+                "title": "How do you use Django's class-based views?",
+                "category": "Django",
+                "description": "Class-based views (CBVs) provide a more organized way to handle views with reusable components.",
+                "tags": "Django, class-based views, CBVs",
+                "paid": "Yes",
+                "answer": "Django’s class-based views (CBVs) allow you to handle views using Python classes instead of functions. CBVs provide built-in generic views and mixins for common tasks, such as displaying a list of objects or handling forms. You can extend these views or create your own by inheriting from `View` or other base classes."
+        },
+        {
+                "title": "How do you set up a Django REST API?",
+                "category": "Django",
+                "description": "Django REST framework (DRF) is used for creating RESTful APIs.",
+                "tags": "Django, REST API, DRF",
+                "paid": "Yes",
+                "answer": "To set up a Django REST API, install Django REST framework (DRF) and add it to your `INSTALLED_APPS`. Define serializers to convert your models to JSON and create viewsets or API views to handle HTTP requests. Finally, configure your URL patterns to route API requests to these views using DRF’s routing classes."
+        },
+        {
+                "title": "How do you test Django applications?",
+                "category": "Django",
+                "description": "Django provides a testing framework based on Python’s unittest module.",
+                "tags": "Django, testing, unittest",
+                "paid": "Yes",
+                "answer": "Django includes a testing framework based on Python's `unittest` module. You write test cases by creating classes that inherit from `django.test.TestCase`. These tests can simulate requests, check responses, and verify the behavior of your application’s components. Run tests using `python manage.py test` to ensure your application works as expected."
+        },
+        {
+                "title": "What are Django signals used for?",
+                "category": "Django",
+                "description": "Signals are used to allow decoupled applications to get notified of events.",
+                "tags": "Django, signals, event handling",
+                "paid": "Yes",
+                "answer": "Django signals are used to enable decoupled applications to react to specific actions or events. For example, you can use signals to perform actions when a model instance is saved or deleted. Signals are defined using `django.db.models.signals` and connected to functions that act as handlers for these events."
+        },
+        {
+                "title": "How do you handle database transactions in Django?",
+                "category": "Django",
+                "description": "Django handles database transactions with atomic blocks and the `transaction` module.",
+                "tags": "Django, transactions, database",
+                "paid": "Yes",
+                "answer": "In Django, database transactions are managed using the `transaction` module, which provides the `atomic` decorator or context manager. This ensures that a series of database operations are treated as a single transaction. If an exception occurs, all operations within the atomic block are rolled back, maintaining database integrity."
+        },
+        {
+                "title": "What is the use of Django's `get_object_or_404`?",
+                "category": "Django",
+                "description": "`get_object_or_404` is a shortcut for retrieving an object or returning a 404 error if not found.",
+                "tags": "Django, shortcuts, error handling",
+                "paid": "Yes",
+                "answer": "`get_object_or_404` is a Django shortcut function used to retrieve an object from the database based on a query. If the object is not found, it raises an `Http404` exception, which results in a 404 error page being displayed. This function simplifies error handling for common cases where an object must exist."
+        },
+        {
+                "title": "How do you implement Django's form validation?",
+                "category": "Django",
+                "description": "Form validation in Django is handled by defining validation methods in forms.",
+                "tags": "Django, form validation, forms",
+                "paid": "Yes",
+                "answer": "Django handles form validation by defining validation logic within forms. You can use built-in validators or create custom validation methods in your form class. Methods like `clean()` and `clean_fieldname()` allow you to add custom validation logic and ensure data integrity before processing the form."
+        },
+        {
+                "title": "What is Django's `HttpResponseRedirect` used for?",
+                "category": "Django",
+                "description": "`HttpResponseRedirect` is used to redirect a user to a different URL.",
+                "tags": "Django, redirect, HTTP response",
+                "paid": "Yes",
+                "answer": "`HttpResponseRedirect` is a Django class used to redirect users to a different URL. It’s commonly used in views to send users to another page after processing a form or performing an action. This class takes the target URL as an argument and returns an HTTP response that triggers the redirection."
+        },
+        {
+                "title": "How do you set up a Django middleware?",
+                "category": "Django",
+                "description": "Middleware is set up by adding it to the `MIDDLEWARE` setting in `settings.py`.",
+                "tags": "Django, middleware, configuration",
+                "paid": "Yes",
+                "answer": "To set up middleware in Django, add your middleware classes to the `MIDDLEWARE` setting in `settings.py`. Each middleware class should be callable and implement methods like `process_request` and `process_response` to handle requests and responses. The middleware processes requests before they reach the view and responses before they are sent to the client."
+        },
+        {
+                "title": "What is the `@login_required` decorator used for in Django?",
+                "category": "Django",
+                "description": "The `@login_required` decorator restricts access to a view to authenticated users only.",
+                "tags": "Django, authentication, decorator",
+                "paid": "Yes",
+                "answer": "The `@login_required` decorator is used to restrict access to a view so that only authenticated users can access it. When applied to a view function, it redirects unauthenticated users to the login page. It ensures that certain views are only accessible to users who have logged in."
+        },
+        {
+                "title": "How do you implement Django's `get_list_or_404`?",
+                "category": "Django",
+                "description": "The `get_list_or_404` function retrieves a list of objects or returns a 404 error if no objects are found.",
+                "tags": "Django, shortcuts, querysets",
+                "paid": "Yes",
+                "answer": "The `get_list_or_404` function is a Django shortcut used to fetch a list of objects from the database. If the query returns an empty list, it raises an `Http404` exception, resulting in a 404 error page. This function simplifies the handling of cases where you expect multiple objects but want to handle the absence of objects gracefully."
+        },
+        {
+                "title": "What is a Django `QuerySet`?",
+                "category": "Django",
+                "description": "A `QuerySet` is a collection of database queries that Django ORM uses to retrieve data.",
+                "tags": "Django, QuerySet, ORM",
+                "paid": "Yes",
+                "answer": "A `QuerySet` in Django is a collection of database queries that allows you to retrieve and manipulate data from your database. It provides a high-level API to filter, order, and aggregate data. `QuerySet` objects are lazy and only execute queries when needed, improving performance."
+        },
+        {
+                "title": "How do you handle form errors in Django?",
+                "category": "Django",
+                "description": "Form errors are handled by accessing the `errors` attribute of a form instance.",
+                "tags": "Django, form handling, validation",
+                "paid": "Yes",
+                "answer": "In Django, form errors are managed by accessing the `errors` attribute of a form instance. This attribute contains error messages for fields that failed validation. You can display these errors in your templates to inform users about issues with their input and guide them to correct mistakes."
+        },
+        {
+                "title": "How do you implement custom template filters in Django?",
+                "category": "Django",
+                "description": "Custom template filters are created by defining a function and registering it with the `@register.filter` decorator.",
+                "tags": "Django, templates, custom filters",
+                "paid": "Yes",
+                "answer": "To create custom template filters in Django, define a function that performs the desired transformation on a value. Use the `@register.filter` decorator from `django.template.Library` to register the function as a template filter. Once registered, you can use this custom filter in your templates just like built-in filters."
+        },
+        {
+                "title": "What are Django's generic views?",
+                "category": "Django",
+                "description": "Generic views are pre-built views provided by Django to handle common tasks.",
+                "tags": "Django, generic views, CBVs",
+                "paid": "Yes",
+                "answer": "Django's generic views are pre-built views designed to handle common tasks such as displaying a list of objects or handling form submissions. These views provide a simplified approach to common patterns, reducing the need for boilerplate code. Examples include `ListView`, `DetailView`, and `CreateView`."
+        },
+        {
+                "title": "How do you handle user permissions in Django?",
+                "category": "Django",
+                "description": "User permissions in Django are handled using the `Permission` model and `User` model methods.",
+                "tags": "Django, permissions, authentication",
+                "paid": "Yes",
+                "answer": "User permissions in Django are managed using the `Permission` model and related methods in the `User` model. You can assign permissions to users or groups and check permissions using methods like `user.has_perm('app.permission')`. Permissions help control access to various parts of your application based on user roles."
+        },
+        {
+                "title": "How do you implement Django's `FormSet`?",
+                "category": "Django",
+                "description": "A `FormSet` allows you to handle multiple forms on a single page.",
+                "tags": "Django, FormSet, multiple forms",
+                "paid": "Yes",
+                "answer": "A `FormSet` in Django is a layer of abstraction to manage multiple forms on a single page. It is particularly useful for handling a collection of similar forms, such as a set of inline forms. You create a `FormSet` by passing a form class to `formsets.formset_factory` and then process the formset in your view to handle form submission and validation."
+        },
+        {
+                "title": "What is the purpose of Django's `context_processors`?",
+                "category": "Django",
+                "description": "Context processors add variables to the context of every template.",
+                "tags": "Django, context processors, templates",
+                "paid": "Yes",
+                "answer": "Context processors in Django are functions that add variables to the context of every template. They are defined in `TEMPLATES` settings under `context_processors`. This allows you to include common data, like user information or site settings, across all your templates without having to pass the data explicitly from each view."
+        },
+        {
+                "title": "How do you handle file uploads in Django?",
+                "category": "Django",
+                "description": "File uploads are managed using `FileField` or `ImageField` in models and handling the uploaded file in views.",
+                "tags": "Django, file uploads, FileField",
+                "paid": "Yes",
+                "answer": "File uploads in Django are handled using `FileField` or `ImageField` in your models to store file paths. In your forms, you use `forms.FileField` or `forms.ImageField` to accept file inputs. In views, handle the uploaded file by accessing `request.FILES` and saving it to your model instance or file storage."
+        },
+        {
+                "title": "What is the `django.contrib.sites` framework used for?",
+                "category": "Django",
+                "description": "`django.contrib.sites` is used to manage multiple sites with a single Django project.",
+                "tags": "Django, sites framework, multi-site",
+                "paid": "Yes",
+                "answer": "`django.contrib.sites` is a framework for managing multiple sites within a single Django project. It allows you to associate different data or configurations with different sites, which can be useful for applications that serve content across multiple domains or subdomains."
+        },
+        {
+                "title": "How do you use Django's `staticfiles` app?",
+                "category": "Django",
+                "description": "`staticfiles` manages static files across different applications.",
+                "tags": "Django, staticfiles, static files",
+                "paid": "Yes",
+                "answer": "Django's `staticfiles` app handles the management of static files such as CSS, JavaScript, and images. It collects static files from each application and places them in a single directory using the `collectstatic` command. This app ensures that static files are served correctly in both development and production environments."
+        },
+        {
+                "title": "What is the purpose of Django's `SessionMiddleware`?",
+                "category": "Django",
+                "description": "`SessionMiddleware` manages user sessions across requests.",
+                "tags": "Django, SessionMiddleware, sessions",
+                "paid": "Yes",
+                "answer": "`SessionMiddleware` in Django is used to manage user sessions across multiple requests. It enables you to store and retrieve data on a per-user basis using a session backend, such as database, cache, or file-based sessions. This middleware automatically handles session creation and expiration."
+        },
+        {
+                "title": "How do you set up Django's internationalization and localization?",
+                "category": "Django",
+                "description": "Internationalization and localization are set up using `LANGUAGE_CODE` and `USE_I18N` settings.",
+                "tags": "Django, i18n, localization",
+                "paid": "Yes",
+                "answer": "Django's internationalization (i18n) and localization (l10n) are configured using settings like `LANGUAGE_CODE`, `USE_I18N`, and `USE_L10N`. Enable these settings in `settings.py` and use Django's translation framework to handle different languages and regional formats, including date and time formats."
+        },
+        {
+                "title": "How do you create a Django custom management command?",
+                "category": "Django",
+                "description": "Create a custom management command by defining a class in a `management/commands` directory.",
+                "tags": "Django, custom commands, management",
+                "paid": "Yes",
+                "answer": "To create a custom management command in Django, create a file in the `management/commands` directory of one of your apps. Define a class that inherits from `BaseCommand` and implement the `handle` method with your command logic. Register the command and run it using `python manage.py your_command_name`."
+        },
+        {
+                "title": "What is Django's `db_index` field option?",
+                "category": "Django",
+                "description": "`db_index` is used to create a database index on a model field.",
+                "tags": "Django, db_index, indexing",
+                "paid": "Yes",
+                "answer": "`db_index` is a field option in Django models used to create a database index on a specific field. Indexes improve query performance by allowing the database to quickly locate rows based on the indexed field. You add it by setting `db_index=True` on a model field in `models.py`."
+        },
+        {
+                "title": "How do you implement Django's `ForeignKey` relationships?",
+                "category": "Django",
+                "description": "A `ForeignKey` creates a many-to-one relationship between models.",
+                "tags": "Django, ForeignKey, relationships",
+                "paid": "Yes",
+                "answer": "In Django, a `ForeignKey` field is used to define a many-to-one relationship between models. It links one model to another, allowing you to reference instances of the related model. You specify `ForeignKey` in your model definition, passing the related model and optional parameters to control the relationship's behavior."
+        },
+        {
+                "title": "How do you use Django's `GenericForeignKey`?",
+                "category": "Django",
+                "description": "`GenericForeignKey` allows for generic relations between models.",
+                "tags": "Django, GenericForeignKey, generic relations",
+                "paid": "Yes",
+                "answer": "`GenericForeignKey` in Django allows you to create generic relationships between models. It enables a model to refer to instances of different models using a combination of `ContentType` and `ObjectId`. This is useful for applications requiring flexible relationships between different types of models."
+        },
+        {
+                "title": "What are Django's `ModelForm` and `Form` classes?",
+                "category": "Django",
+                "description": "`ModelForm` is a form linked to a Django model, while `Form` is a basic form class.",
+                "tags": "Django, ModelForm, Form",
+                "paid": "Yes",
+                "answer": "`ModelForm` is a class in Django used to create forms based on a model, automatically generating form fields from model fields. `Form` is a more general form class used for creating custom forms without tying them directly to a model. Both classes handle form rendering, validation, and data processing."
+        },
+        {
+                "title": "How do you enable Django's debugging mode?",
+                "category": "Django",
+                "description": "Enable debugging mode by setting `DEBUG=True` in `settings.py`.",
+                "tags": "Django, debugging, settings",
+                "paid": "Yes",
+                "answer": "To enable debugging mode in Django, set `DEBUG=True` in the `settings.py` file. This setting provides detailed error pages with tracebacks, which is useful for development. However, make sure to set `DEBUG=False` in production to avoid exposing sensitive information."
+        },
+        {
+                "title": "What is Django's `DatabaseRouter`?",
+                "category": "Django",
+                "description": "A `DatabaseRouter` directs database operations to different databases.",
+                "tags": "Django, DatabaseRouter, multi-database",
+                "paid": "Yes",
+                "answer": "Django's `DatabaseRouter` is used to route database operations to different databases based on the model or query. By defining a custom router class and specifying routing rules, you can control how read and write operations are distributed across multiple databases, which is useful for scaling and separating concerns."
+        },
+        {
+                "title": "How do you set up Django's caching framework?",
+                "category": "Django",
+                "description": "Django's caching framework is set up using cache backend settings in `settings.py`.",
+                "tags": "Django, caching, performance",
+                "paid": "Yes",
+                "answer": "To set up Django's caching framework, configure the `CACHES` setting in `settings.py` to specify the cache backend and options. You can choose from various cache backends, such as in-memory, file-based, or database caching. Django provides a caching API to store and retrieve data, improving performance by reducing database queries."
+        },
+        {
+                "title": "How do you implement Django's `Signals`?",
+                "category": "Django",
+                "description": "Signals allow components to get notified of certain actions or events.",
+                "tags": "Django, signals, event handling",
+                "paid": "Yes",
+                "answer": "In Django, `Signals` are implemented by defining signal handlers and connecting them to specific signals using the `signal.connect()` method. Signals allow different parts of an application to react to events such as model saves or user logins, enabling a decoupled architecture where components can interact based on events."
+        },
+        {
+                "title": "What is Django's `Form` class used for?",
+                "category": "Django",
+                "description": "The `Form` class is used for handling user input and validation in Django.",
+                "tags": "Django, Form, validation",
+                "paid": "Yes",
+                "answer": "The `Form` class in Django is used to handle user input and validation. By defining a form class with fields and validation logic, you can create forms for user data entry and ensure that the input meets specific criteria before processing it. The `Form` class provides methods for rendering, validating, and cleaning data."
+        },
+        {
+                "title": "How do you create a Django custom template tag?",
+                "category": "Django",
+                "description": "Custom template tags are created by defining a function and registering it with `@register.simple_tag`.",
+                "tags": "Django, custom tags, templates",
+                "paid": "Yes",
+                "answer": "To create a custom template tag in Django, define a function that performs the desired action and register it using the `@register.simple_tag` decorator from `django.template.Library`. This tag can then be used in your templates to insert dynamic content or perform complex operations."
+        },
+        {
+                "title": "What is Django's `TransactionMiddleware`?",
+                "category": "Django",
+                "description": "`TransactionMiddleware` ensures that database transactions are managed correctly during a request.",
+                "tags": "Django, TransactionMiddleware, transactions",
+                "paid": "Yes",
+                "answer": "`TransactionMiddleware` in Django is used to manage database transactions across requests. It ensures that transactions are committed or rolled back correctly, depending on whether the request was successful. This middleware helps maintain database consistency and integrity by handling transaction management automatically."
+        },
+        {
+                "title": "How do you implement Django's `class-based views` for CRUD operations?",
+                "category": "Django",
+                "description": "Django's class-based views (CBVs) simplify CRUD operations with pre-built views like `CreateView`, `UpdateView`, and `DeleteView`.",
+                "tags": "Django, class-based views, CRUD",
+                "paid": "Yes",
+                "answer": "Django's class-based views (CBVs) provide built-in views for common CRUD operations. Use `CreateView` for creating new objects, `UpdateView` for editing existing ones, and `DeleteView` for removing objects. These CBVs handle the form rendering, validation, and object manipulation, simplifying CRUD functionality in your application."
+        },
+        {
+                "title": "How do you enable Django's `Debug Toolbar`?",
+                "category": "Django",
+                "description": "Enable `Debug Toolbar` by installing the package and adding it to `INSTALLED_APPS`.",
+                "tags": "Django, Debug Toolbar, development",
+                "paid": "Yes",
+                "answer": "To enable Django's `Debug Toolbar`, install the `django-debug-toolbar` package via pip and add it to `INSTALLED_APPS` in `settings.py`. Also, add `debug_toolbar.middleware.DebugToolbarMiddleware` to `MIDDLEWARE`. This tool provides detailed information about SQL queries, cache usage, and other debugging data."
+        },
+        {
+                "title": "What is the purpose of Django's `Context` object?",
+                "category": "Django",
+                "description": "The `Context` object is used to pass data to templates for rendering.",
+                "tags": "Django, context, templates",
+                "paid": "Yes",
+                "answer": "The `Context` object in Django is used to pass data from views to templates for rendering. It acts as a dictionary that contains variables and their values, which templates use to generate dynamic content. This object is automatically created when using Django's rendering functions like `render()`."
+        },
+        {
+                "title": "How do you configure Django to use multiple databases?",
+                "category": "Django",
+                "description": "Multiple databases are configured using the `DATABASES` setting in `settings.py`.",
+                "tags": "Django, multiple databases, configuration",
+                "paid": "Yes",
+                "answer": "To configure Django to use multiple databases, define each database connection in the `DATABASES` setting in `settings.py`. Use a `DatabaseRouter` to route database operations to the appropriate database based on the model or query. This setup allows you to manage different data sources within a single project."
+        },
+        {
+                "title": "What is Django's `AdminSite`?",
+                "category": "Django",
+                "description": "`AdminSite` is the class that defines the admin interface in Django.",
+                "tags": "Django, AdminSite, admin interface",
+                "paid": "Yes",
+                "answer": "The `AdminSite` class in Django is responsible for defining and customizing the admin interface. It provides functionality for registering models, customizing the admin dashboard, and managing admin views. You can extend `AdminSite` to create a custom admin interface with additional features and configurations."
+        },
+        {
+                "title": "How do you configure Django's `MEDIA_URL` and `MEDIA_ROOT`?",
+                "category": "Django",
+                "description": "`MEDIA_URL` and `MEDIA_ROOT` manage user-uploaded files in Django.",
+                "tags": "Django, MEDIA_URL, MEDIA_ROOT",
+                "paid": "Yes",
+                "answer": "`MEDIA_URL` and `MEDIA_ROOT` are settings in Django used to manage user-uploaded files. `MEDIA_URL` defines the URL through which media files are accessible, while `MEDIA_ROOT` specifies the filesystem path where uploaded files are stored. Ensure to configure these settings properly to handle file uploads and serving."
+        },
+        {
+                "title": "What are Django's `ModelChoiceField` and `ModelMultipleChoiceField`?",
+                "category": "Django",
+                "description": "`ModelChoiceField` and `ModelMultipleChoiceField` are used for selecting model instances in forms.",
+                "tags": "Django, ModelChoiceField, ModelMultipleChoiceField",
+                "paid": "Yes",
+                "answer": "`ModelChoiceField` is a form field that allows users to select a single model instance from a queryset. `ModelMultipleChoiceField` allows for selecting multiple instances. These fields are used to present model data as choices in forms, ensuring that user selections are validated against the specified queryset."
+        },
+        {
+                "title": "How do you implement Django's `Custom Validators`?",
+                "category": "Django",
+                "description": "Custom validators are used to enforce specific validation rules in Django forms and models.",
+                "tags": "Django, custom validators, validation",
+                "paid": "Yes",
+                "answer": "To implement custom validators in Django, define a validation function that raises a `ValidationError` if the input is invalid. You can then use this function as a validator in your model fields or form fields by passing it to the `validators` parameter. Custom validators provide flexibility for enforcing complex validation rules."
+        },
+        {
+                "title": "What is Django's `URL dispatcher`?",
+                "category": "Django",
+                "description": "The `URL dispatcher` routes URLs to views based on URL patterns.",
+                "tags": "Django, URL dispatcher, routing",
+                "paid": "Yes",
+                "answer": "Django's `URL dispatcher` is responsible for routing incoming requests to the appropriate view functions based on URL patterns. It uses the `urlpatterns` list in `urls.py` to match request URLs to view functions or class-based views, enabling the creation of clean and maintainable URL structures for your application."
+        },
+        {
+                "title": "How do you use Django's `QuerySet` methods?",
+                "category": "Django",
+                "description": "Django's `QuerySet` methods are used to retrieve and manipulate database records.",
+                "tags": "Django, QuerySet, methods",
+                "paid": "Yes",
+                "answer": "Django's `QuerySet` methods are used to query and manipulate data in the database. Methods like `filter()`, `exclude()`, and `get()` allow you to retrieve records based on specific conditions, while methods like `update()` and `delete()` enable modification and removal of records. `QuerySet` methods support chaining and efficient querying."
+        },
+        {
+                "title": "What is the purpose of Django's `TemplateView`?",
+                "category": "Django",
+                "description": "`TemplateView` is a class-based view that renders a template.",
+                "tags": "Django, TemplateView, class-based views",
+                "paid": "Yes",
+                "answer": "`TemplateView` is a class-based view in Django designed to render a specified template. It provides a simple way to display a static page or view with context data. You define the template to be rendered using the `template_name` attribute and can optionally provide context data through the `get_context_data` method."
+        },
+        {
+                "title": "How do you implement Django's `Formsets`?",
+                "category": "Django",
+                "description": "`Formsets` manage multiple forms in a single view.",
+                "tags": "Django, formsets, forms",
+                "paid": "Yes",
+                "answer": "Django's `Formsets` are used to handle multiple forms on a single page, providing a way to manage and validate collections of forms. To implement a formset, use `formset_factory` or `inlineformset_factory` to create a formset class and then instantiate it in your view. This setup is useful for handling bulk form submissions or editing multiple related objects."
+        },
+        {
+                "title": "What is Django's `ContextProcessor`?",
+                "category": "Django",
+                "description": "`ContextProcessor` provides context data to all templates.",
+                "tags": "Django, ContextProcessor, context",
+                "paid": "Yes",
+                "answer": "`ContextProcessor` in Django is used to provide context data to all templates. By defining a context processor function and adding it to the `TEMPLATES` setting's `context_processors` list, you can make certain data available globally in all templates, such as user information or site settings."
+        },
+        {
+                "title": "How do you use Django's `Class-based View` for handling forms?",
+                "category": "Django",
+                "description": "Class-based views for forms include `FormView`, `CreateView`, and `UpdateView`.",
+                "tags": "Django, class-based views, forms",
+                "paid": "Yes",
+                "answer": "Django's class-based views (CBVs) provide specialized views for handling forms, such as `FormView`, `CreateView`, and `UpdateView`. `FormView` is a general-purpose view for displaying and processing forms, while `CreateView` and `UpdateView` are tailored for creating and updating model instances, respectively."
+        },
+        {
+                "title": "What is the `django.contrib.sites` framework used for?",
+                "category": "Django",
+                "description": "`django.contrib.sites` is used for managing multiple sites within a single Django project.",
+                "tags": "Django, sites framework, multi-site",
+                "paid": "Yes",
+                "answer": "`django.contrib.sites` framework allows you to manage multiple sites within a single Django project. It provides a `Site` model to represent different sites and enables the use of site-specific settings and data. This is useful for applications that need to support multiple domains or site configurations from one codebase."
+        },
+        {
+                "title": "How do you use Django's `bulk_create` method?",
+                "category": "Django",
+                "description": "`bulk_create` allows for efficient creation of multiple objects in a single query.",
+                "tags": "Django, bulk_create, performance",
+                "paid": "Yes",
+                "answer": "Django's `bulk_create` method is used to efficiently insert multiple objects into the database in a single query. It is particularly useful for bulk operations where creating individual objects would be too slow. You use `bulk_create` on a queryset, passing a list of model instances to be created."
+        },
+        {
+                "title": "What is Django's `AbstractBaseUser`?",
+                "category": "Django",
+                "description": "`AbstractBaseUser` is a base class for creating custom user models.",
+                "tags": "Django, AbstractBaseUser, custom user model",
+                "paid": "Yes",
+                "answer": "`AbstractBaseUser` is a class in Django used as a base for creating custom user models. It provides the core implementation of user authentication, including methods for checking passwords and managing user accounts. You extend this class to define custom user attributes and behaviors, while integrating with Django's authentication system."
+        },
+        {
+                "title": "How do you use Django's `FormMixin`?",
+                "category": "Django",
+                "description": "`FormMixin` provides form handling capabilities to class-based views.",
+                "tags": "Django, FormMixin, class-based views",
+                "paid": "Yes",
+                "answer": "`FormMixin` is a mixin class in Django that provides form handling capabilities to class-based views. By including `FormMixin` in your view, you gain access to methods and attributes for handling form submission, validation, and rendering, making it easier to manage forms within CBVs."
+        }
+]

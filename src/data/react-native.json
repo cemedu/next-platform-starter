@@ -1,0 +1,834 @@
+[
+        {
+                "title": "What is React Native?",
+                "category": "React Native",
+                "description": "React Native is a framework developed by Facebook for building native mobile applications using JavaScript and React.",
+                "tags": "React, Mobile Development, JavaScript",
+                "paid": "Yes",
+                "answer": "React Native allows developers to create mobile apps that run on both iOS and Android using a single codebase. It uses the same design as React, letting you compose a rich mobile UI from declarative components. Instead of using web components like divs and spans, React Native uses native components like UIView and ViewGroup."
+        },
+        {
+                "title": "How does React Native differ from React?",
+                "category": "React Native",
+                "description": "React Native extends React concepts to mobile development with native components.",
+                "tags": "React, Mobile Development",
+                "paid": "Yes",
+                "answer": "React Native builds on React but instead of rendering HTML elements, it renders native mobile components. For instance, a `<View>` in React Native corresponds to a native view on iOS or Android, while in React, it corresponds to a div. This allows React Native applications to have the look and feel of native apps."
+        },
+        {
+                "title": "What is JSX in React Native?",
+                "category": "React Native",
+                "description": "JSX is a syntax extension for JavaScript that looks similar to XML or HTML.",
+                "tags": "JSX, React, React Native",
+                "paid": "Yes",
+                "answer": "JSX stands for JavaScript XML. It allows developers to write HTML-like code within JavaScript. In React Native, JSX makes it easier to create and manage components by embedding the UI layout directly within the JavaScript code. JSX is then compiled into React.createElement calls by Babel, translating into native code."
+        },
+        {
+                "title": "What are React Native components?",
+                "category": "React Native",
+                "description": "Components are the building blocks of a React Native application.",
+                "tags": "Components, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, components are reusable building blocks that make up the UI of the application. They can be either class-based or functional. Components can be composed of other components, allowing for a modular and maintainable code structure. Examples include `<Text>`, `<View>`, and `<ScrollView>`."
+        },
+        {
+                "title": "How do you handle state in React Native?",
+                "category": "React Native",
+                "description": "State management is crucial for dynamic React Native applications.",
+                "tags": "State Management, React Native",
+                "paid": "Yes",
+                "answer": "State in React Native can be managed using the `useState` hook for functional components or `this.state` in class components. For more complex state management, you can use context API or state management libraries like Redux or MobX. State is used to store data that affects how the component renders and behaves."
+        },
+        {
+                "title": "What is a React Native hook?",
+                "category": "React Native",
+                "description": "Hooks are functions that let you use state and other React features without writing a class.",
+                "tags": "Hooks, React Native",
+                "paid": "Yes",
+                "answer": "Hooks are a feature in React 16.8+ that allow you to use state and lifecycle features in functional components. For example, `useState` lets you add state to a functional component, and `useEffect` allows you to perform side effects like fetching data. They simplify code and make it easier to reuse stateful logic."
+        },
+        {
+                "title": "What is the purpose of the `useEffect` hook?",
+                "category": "React Native",
+                "description": "The `useEffect` hook lets you perform side effects in functional components.",
+                "tags": "Hooks, Side Effects, React Native",
+                "paid": "Yes",
+                "answer": "`useEffect` is used to perform side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM. It runs after the render is committed to the screen. By specifying dependencies, you can control when the effect runs. For example, fetching data from an API when a component mounts."
+        },
+        {
+                "title": "How can you navigate between screens in React Native?",
+                "category": "React Native",
+                "description": "Navigation between screens is handled by navigation libraries in React Native.",
+                "tags": "Navigation, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, you can navigate between screens using navigation libraries like React Navigation or React Native Navigation. React Navigation provides components such as `Stack.Navigator`, `Tab.Navigator`, and `Drawer.Navigator` to handle different types of navigation. It allows for the easy setup of stack, tab, and drawer navigators to manage screen transitions."
+        },
+        {
+                "title": "What are `props` in React Native?",
+                "category": "React Native",
+                "description": "Props are used to pass data and event handlers down to child components.",
+                "tags": "Props, React Native",
+                "paid": "Yes",
+                "answer": "Props (short for properties) are read-only attributes passed to React components. They allow you to pass data and event handlers to child components, enabling component reusability. For example, if you have a `<Button>` component, you can pass text and an onPress handler as props to customize its behavior and appearance."
+        },
+        {
+                "title": "What is the purpose of `FlatList` in React Native?",
+                "category": "React Native",
+                "description": "`FlatList` is used for rendering long lists of data efficiently.",
+                "tags": "FlatList, Lists, React Native",
+                "paid": "Yes",
+                "answer": "`FlatList` is a core component in React Native designed to efficiently render large lists of data. It is optimized for performance by only rendering items that are currently visible on the screen. It supports features like item separators, pull-to-refresh, and infinite scrolling, making it ideal for displaying dynamic lists."
+        },
+        {
+                "title": "How do you use styles in React Native?",
+                "category": "React Native",
+                "description": "Styles in React Native are defined using JavaScript objects.",
+                "tags": "Styles, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, styles are defined using JavaScript objects with properties similar to CSS but with a camelCase syntax. You use the `StyleSheet.create` method to create a style object and then apply it to components via the `style` prop. For example, `<Text style={styles.text}>Hello</Text>` where `styles.text` is defined in a `StyleSheet`."
+        },
+        {
+                "title": "What are some common performance optimizations in React Native?",
+                "category": "React Native",
+                "description": "Common optimizations include using PureComponent, optimizing list rendering, and avoiding unnecessary re-renders.",
+                "tags": "Performance, React Native",
+                "paid": "Yes",
+                "answer": "To optimize performance in React Native, consider using `React.PureComponent` or `React.memo` to prevent unnecessary re-renders. Optimize list rendering by using `FlatList` with proper keys and implementing `shouldComponentUpdate` to reduce updates. Also, avoid heavy computations on the main thread and use libraries like `react-native-fast-image` for optimized image loading."
+        },
+        {
+                "title": "How do you handle asynchronous operations in React Native?",
+                "category": "React Native",
+                "description": "Asynchronous operations can be handled using Promises, async/await, or libraries.",
+                "tags": "Asynchronous, React Native",
+                "paid": "Yes",
+                "answer": "Asynchronous operations in React Native can be managed using JavaScript Promises or the async/await syntax. For example, you can use `fetch` with `async/await` to make HTTP requests. Additionally, you can use libraries like Axios for HTTP requests and manage side effects with `useEffect` or Redux for more complex scenarios."
+        },
+        {
+                "title": "What is the difference between `ScrollView` and `FlatList`?",
+                "category": "React Native",
+                "description": "`ScrollView` is for small lists or single large items, while `FlatList` is optimized for large data sets.",
+                "tags": "ScrollView, FlatList, React Native",
+                "paid": "Yes",
+                "answer": "`ScrollView` renders all of its children at once, making it suitable for a small number of items or when the content is not dynamically changing. On the other hand, `FlatList` is optimized for rendering large lists of data by recycling items that are off-screen, which helps with performance and memory usage."
+        },
+        {
+                "title": "What is `Context` in React Native?",
+                "category": "React Native",
+                "description": "Context provides a way to share values between components without passing props.",
+                "tags": "Context API, React Native",
+                "paid": "Yes",
+                "answer": "The Context API in React Native allows you to pass data through the component tree without having to pass props manually at every level. You create a Context object using `React.createContext`, and then use `Provider` and `Consumer` components to manage and access the context data. This is useful for global state management and theme handling."
+        },
+        {
+                "title": "How do you handle deep linking in React Native?",
+                "category": "React Native",
+                "description": "Deep linking allows your app to respond to specific URLs and navigate to particular screens.",
+                "tags": "Deep Linking, React Native",
+                "paid": "Yes",
+                "answer": "Deep linking in React Native can be handled using libraries such as `react-navigation` and `react-native-deep-linking`. You need to configure your app to listen for URL schemes or universal links. For `react-navigation`, you define deep link configuration in your navigation setup and handle the URL routing to navigate to the appropriate screen."
+        },
+        {
+                "title": "What is the role of `AppRegistry` in React Native?",
+                "category": "React Native",
+                "description": "`AppRegistry` is used to register the main component of your app.",
+                "tags": "AppRegistry, React Native",
+                "paid": "Yes",
+                "answer": "`AppRegistry` is a module in React Native responsible for registering the main component of the application. It acts as the entry point for the app. You use `AppRegistry.registerComponent` to register your root component, which ensures that the app starts correctly when launched on iOS or Android devices."
+        },
+        {
+                "title": "How do you handle permissions in React Native?",
+                "category": "React Native",
+                "description": "Permissions are managed using platform-specific APIs or libraries.",
+                "tags": "Permissions, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, permissions are handled using the `react-native-permissions` library or platform-specific APIs. The library provides a unified API for requesting and checking permissions on both iOS and Android. For example, you can request camera permission by calling `Permissions.request('camera')` and handle the response accordingly."
+        },
+        {
+                "title": "What is `Expo` and how does it relate to React Native?",
+                "category": "React Native",
+                "description": "Expo is a framework and platform for universal React applications.",
+                "tags": "Expo, React Native",
+                "paid": "Yes",
+                "answer": "Expo is a set of tools and services built around React Native that makes it easier to build, deploy, and iterate on mobile applications. It provides a managed workflow with a range of pre-built libraries and components, and simplifies the process of setting up and maintaining a React Native project. Expo can be used for rapid development, but it also offers an 'ejected' workflow for more advanced use cases where you need full control over native code."
+        },
+        {
+                "title": "How do you implement internationalization (i18n) in React Native?",
+                "category": "React Native",
+                "description": "Internationalization is managed using libraries to handle multiple languages.",
+                "tags": "Internationalization, i18n, React Native",
+                "paid": "Yes",
+                "answer": "Internationalization in React Native can be implemented using libraries such as `react-i18next` or `react-native-localize`. These libraries provide tools to manage translations, format dates, and handle different languages. You typically create translation files for each language and use the library's hooks or components to display the correct language based on user settings."
+        },
+        {
+                "title": "What is `React Native Navigation`?",
+                "category": "React Native",
+                "description": "`React Native Navigation` is a library for navigating and managing screens.",
+                "tags": "React Native Navigation, Navigation",
+                "paid": "Yes",
+                "answer": "`React Native Navigation` is a library developed by Wix that provides a navigation solution with native performance and behavior. Unlike React Navigation, which is JavaScript-based, React Native Navigation uses native components for navigation, offering smoother and more performant transitions and interactions. It supports stack, tab, and drawer navigation with extensive customization options."
+        },
+        {
+                "title": "How do you handle background tasks in React Native?",
+                "category": "React Native",
+                "description": "Background tasks can be managed using libraries or native modules.",
+                "tags": "Background Tasks, React Native",
+                "paid": "Yes",
+                "answer": "Handling background tasks in React Native typically involves using libraries like `react-native-background-task` or `react-native-background-fetch`. These libraries allow you to perform tasks such as data synchronization or location updates while the app is in the background. For more advanced use cases, you might need to write custom native code to integrate with background services on iOS or Android."
+        },
+        {
+                "title": "What is `react-native-paper`?",
+                "category": "React Native",
+                "description": "`react-native-paper` is a library that provides Material Design components for React Native.",
+                "tags": "react-native-paper, Material Design, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-paper` is a popular library that offers a collection of Material Design components for React Native applications. It includes components like buttons, dialogs, and text inputs, all styled according to Material Design guidelines. This helps maintain consistency in design and speeds up development by providing ready-to-use components."
+        },
+        {
+                "title": "How do you handle secure storage in React Native?",
+                "category": "React Native",
+                "description": "Secure storage can be handled using libraries or platform-specific solutions.",
+                "tags": "Secure Storage, React Native",
+                "paid": "Yes",
+                "answer": "Secure storage in React Native can be managed using libraries such as `react-native-keychain` or `react-native-sensitive-info`. These libraries provide a secure way to store sensitive information like tokens or passwords using platform-specific secure storage mechanisms (e.g., Keychain on iOS and Keystore on Android). They encrypt the data and ensure it is stored securely."
+        },
+        {
+                "title": "What are the differences between `View` and `SafeAreaView`?",
+                "category": "React Native",
+                "description": "`SafeAreaView` is used to avoid notches and areas that might be obscured.",
+                "tags": "View, SafeAreaView, React Native",
+                "paid": "Yes",
+                "answer": "`View` is a fundamental component used to create layouts and style containers in React Native. `SafeAreaView`, on the other hand, is designed to render content within the safe area boundaries of a device, avoiding notches, status bars, and other screen obstructions. It ensures that content is not hidden or clipped by these elements."
+        },
+        {
+                "title": "How do you manage different environments (e.g., development, production) in React Native?",
+                "category": "React Native",
+                "description": "Environment management is handled using configuration files and environment variables.",
+                "tags": "Environment Management, React Native",
+                "paid": "Yes",
+                "answer": "Managing different environments in React Native typically involves using configuration files and environment variables. Libraries like `react-native-config` allow you to define environment-specific variables and load them based on the build configuration. You can use these variables to switch between different API endpoints or feature flags for development, staging, and production environments."
+        },
+        {
+                "title": "What is `react-native-svg`?",
+                "category": "React Native",
+                "description": "`react-native-svg` allows for the use of SVG graphics in React Native applications.",
+                "tags": "SVG, React Native, Graphics",
+                "paid": "Yes",
+                "answer": "`react-native-svg` is a library that provides SVG support in React Native applications. It allows you to use SVG elements and attributes to create vector graphics, which are scalable and resolution-independent. This library is useful for displaying custom icons, charts, and other graphics that require high-quality rendering."
+        },
+        {
+                "title": "How do you test React Native components?",
+                "category": "React Native",
+                "description": "Testing can be done using libraries such as Jest and React Testing Library.",
+                "tags": "Testing, React Native",
+                "paid": "Yes",
+                "answer": "Testing React Native components can be accomplished using libraries like Jest for unit and snapshot testing, and React Testing Library for rendering components and asserting their behavior. Jest provides a framework for writing and running tests, while React Testing Library helps ensure that components render and behave correctly by focusing on user interactions."
+        },
+        {
+                "title": "What is `react-native-fs`?",
+                "category": "React Native",
+                "description": "`react-native-fs` provides access to the file system in React Native.",
+                "tags": "File System, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-fs` is a library that allows you to interact with the file system in React Native applications. It provides methods for reading, writing, and deleting files on the device's storage. This is useful for tasks like storing user data, caching files, and accessing files from different directories. It supports both iOS and Android platforms."
+        },
+        {
+                "title": "How do you handle app state in React Native?",
+                "category": "React Native",
+                "description": "App state can be managed using context, hooks, or state management libraries.",
+                "tags": "State Management, React Native",
+                "paid": "Yes",
+                "answer": "App state in React Native can be managed using various methods. For simpler state management, you can use the Context API or React's `useState` and `useReducer` hooks. For more complex state needs, libraries like Redux or MobX offer advanced state management solutions. These libraries help you manage state across your application and keep it in sync with the UI."
+        },
+        {
+                "title": "What is the purpose of `useReducer` in React Native?",
+                "category": "React Native",
+                "description": "`useReducer` is a hook that manages state transitions based on actions.",
+                "tags": "useReducer, React Native",
+                "paid": "Yes",
+                "answer": "`useReducer` is a hook used in React Native to manage complex state logic in functional components. It works similarly to Redux's reducer, allowing you to manage state transitions through actions. It is useful for managing state that involves multiple sub-values or when the next state depends on the previous one. It provides better performance and clarity for complex state interactions."
+        },
+        {
+                "title": "How do you implement custom fonts in React Native?",
+                "category": "React Native",
+                "description": "Custom fonts are implemented by linking font files and configuring them.",
+                "tags": "Custom Fonts, React Native",
+                "paid": "Yes",
+                "answer": "To implement custom fonts in React Native, you first need to add the font files to your project. For iOS, include them in your Xcode project and update the `Info.plist`. For Android, place them in the `assets/fonts` directory and update the `react-native.config.js` file. Use the `StyleSheet` to apply the custom font to your components. Example: `fontFamily: 'CustomFontName'`."
+        },
+        {
+                "title": "What is `react-native-gesture-handler`?",
+                "category": "React Native",
+                "description": "`react-native-gesture-handler` provides gesture handling for React Native apps.",
+                "tags": "Gestures, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-gesture-handler` is a library designed to handle gestures and improve touch handling in React Native applications. It offers more flexibility and performance compared to the default gesture system, including support for pan, pinch, and swipe gestures. It integrates with navigation libraries to enhance gesture interactions and transitions."
+        },
+        {
+                "title": "How do you handle data persistence in React Native?",
+                "category": "React Native",
+                "description": "Data persistence is managed using local storage solutions like AsyncStorage.",
+                "tags": "Data Persistence, React Native",
+                "paid": "Yes",
+                "answer": "Data persistence in React Native can be managed using solutions like `@react-native-async-storage/async-storage` for simple key-value storage. For more complex needs, consider using libraries like `redux-persist` to persist Redux store data or `realm` for a full-featured database. These tools help store data locally, making it available even after the app restarts."
+        },
+        {
+                "title": "What is the role of `AppState` in React Native?",
+                "category": "React Native",
+                "description": "`AppState` monitors the app's state transitions like foreground and background.",
+                "tags": "AppState, React Native",
+                "paid": "Yes",
+                "answer": "`AppState` is a React Native API used to monitor the application's state transitions, such as when it moves to the foreground or background. It provides an event-based API to track these changes, allowing you to handle tasks like pausing activities or stopping background services when the app is not active. Use `AppState.addEventListener` to listen for changes and manage app behavior accordingly."
+        },
+        {
+                "title": "How do you handle API requests in React Native?",
+                "category": "React Native",
+                "description": "API requests can be handled using `fetch` or libraries like Axios.",
+                "tags": "API Requests, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, you can handle API requests using the built-in `fetch` API or third-party libraries like Axios. `fetch` provides a simple way to make network requests and handle responses, while Axios offers additional features like request cancellation and interceptors. Both methods support handling JSON data and are suitable for fetching or posting data to remote servers."
+        },
+        {
+                "title": "What is `react-native-vector-icons`?",
+                "category": "React Native",
+                "description": "`react-native-vector-icons` provides customizable icons for React Native apps.",
+                "tags": "Icons, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-vector-icons` is a popular library that provides a large collection of customizable icons for React Native applications. It supports icons from various icon sets like FontAwesome, MaterialIcons, and Ionicons. The library allows you to easily integrate and style icons, making it simple to add visual elements to your app's UI."
+        },
+        {
+                "title": "How do you implement dynamic themes in React Native?",
+                "category": "React Native",
+                "description": "Dynamic themes can be managed using context or theme libraries.",
+                "tags": "Themes, React Native",
+                "paid": "Yes",
+                "answer": "To implement dynamic themes in React Native, you can use context to manage theme state and provide theme values to components. Libraries like `react-native-paper` or `styled-components` also offer built-in support for theming. By defining theme objects and using context or hooks to switch between them, you can create a responsive UI that adapts to different themes."
+        },
+        {
+                "title": "What is the purpose of `react-native-screens`?",
+                "category": "React Native",
+                "description": "`react-native-screens` optimizes screen rendering performance.",
+                "tags": "Screens, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-screens` is a library that enhances performance in React Native applications by optimizing the rendering of screens. It provides native screen management to reduce memory usage and improve the responsiveness of navigation transitions. By using `react-native-screens`, you can achieve smoother navigation experiences and better resource management."
+        },
+        {
+                "title": "How do you handle app updates in React Native?",
+                "category": "React Native",
+                "description": "App updates can be handled using services like CodePush or app store submissions.",
+                "tags": "App Updates, React Native",
+                "paid": "Yes",
+                "answer": "Handling app updates in React Native can be done through services like CodePush for over-the-air updates, allowing you to deploy changes without going through app store review processes. For major updates, you need to submit your app to the app stores (Google Play Store, Apple App Store) and follow their guidelines for release management and versioning."
+        },
+        {
+                "title": "What is `react-native-reanimated`?",
+                "category": "React Native",
+                "description": "`react-native-reanimated` is a library for handling animations with native performance.",
+                "tags": "Animations, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-reanimated` is a powerful library for creating animations in React Native with native performance. Unlike the built-in `Animated` API, `react-native-reanimated` provides a more flexible and performant solution for complex animations by leveraging native code for smoother transitions and interactions. It supports advanced animation features and better performance on both iOS and Android."
+        },
+        {
+                "title": "How do you manage user authentication in React Native?",
+                "category": "React Native",
+                "description": "User authentication can be managed using libraries and authentication services.",
+                "tags": "Authentication, React Native",
+                "paid": "Yes",
+                "answer": "User authentication in React Native can be managed using libraries such as `react-native-firebase` for Firebase authentication or `auth0-react-native` for Auth0 integration. These libraries provide methods for handling sign-in, sign-up, and password recovery. Additionally, you can use secure storage solutions to manage authentication tokens and maintain user sessions."
+        },
+        {
+                "title": "What is `react-native-config`?",
+                "category": "React Native",
+                "description": "`react-native-config` helps manage environment-specific configuration.",
+                "tags": "Configuration, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-config` is a library that allows you to manage environment-specific configuration in React Native applications. It enables you to define configuration values in `.env` files and access them in your JavaScript code. This is useful for handling different API endpoints or feature flags for development, staging, and production environments."
+        },
+        {
+                "title": "How do you handle app lifecycle events in React Native?",
+                "category": "React Native",
+                "description": "App lifecycle events are managed using the `AppState` API or hooks.",
+                "tags": "App Lifecycle, React Native",
+                "paid": "Yes",
+                "answer": "App lifecycle events in React Native can be managed using the `AppState` API, which allows you to listen for changes in the app’s state (active, background, inactive). You can use `AppState.addEventListener` to track these changes and execute code accordingly. Alternatively, custom hooks like `useAppState` can provide a more convenient way to manage lifecycle events within functional components."
+        },
+        {
+                "title": "What is `react-native-firebase`?",
+                "category": "React Native",
+                "description": "`react-native-firebase` provides integration with Firebase services.",
+                "tags": "Firebase, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-firebase` is a library that provides comprehensive integration with Firebase services for React Native applications. It supports a wide range of Firebase features, including authentication, cloud messaging, analytics, and real-time database. The library simplifies the process of connecting your React Native app to Firebase, offering a unified API for various Firebase functionalities."
+        },
+        {
+                "title": "How do you use context in React Native?",
+                "category": "React Native",
+                "description": "Context is used for managing global state and passing data.",
+                "tags": "Context API, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, the Context API is used to manage global state and pass data through the component tree without having to pass props manually at every level. You create a context using `React.createContext()`, then provide the context value using a `Provider` component and consume it in child components with the `useContext` hook or `Context.Consumer`."
+        },
+        {
+                "title": "What is `react-native-async-storage`?",
+                "category": "React Native",
+                "description": "`react-native-async-storage` provides a simple key-value storage system.",
+                "tags": "AsyncStorage, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-async-storage` is a library that provides an asynchronous, persistent, key-value storage system for React Native applications. It is used to store simple data like user preferences or application settings. It works across both iOS and Android, and its API is similar to localStorage in web development, making it easy to use for persistent data storage."
+        },
+        {
+                "title": "How do you use `react-native-gesture-handler` with React Navigation?",
+                "category": "React Native",
+                "description": "It provides advanced gesture handling for React Navigation.",
+                "tags": "Gesture Handling, React Navigation",
+                "paid": "Yes",
+                "answer": "`react-native-gesture-handler` integrates with React Navigation to enhance gesture handling. To use it, install both `react-native-gesture-handler` and `react-navigation`. Configure `GestureHandlerRootView` in your app’s entry point, and replace default components like `TouchableOpacity` with those from `react-native-gesture-handler`. This improves gesture performance and provides more robust touch handling for navigation interactions."
+        },
+        {
+                "title": "What is `react-native-webview`?",
+                "category": "React Native",
+                "description": "`react-native-webview` allows you to embed web content in React Native apps.",
+                "tags": "Webview, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-webview` is a library that allows you to embed web content in your React Native application. It provides a component called `WebView` that renders web pages, HTML, or other web-based content within your app. You can use it for displaying web pages, handling navigation, and executing JavaScript within the web content."
+        },
+        {
+                "title": "How do you handle animation performance in React Native?",
+                "category": "React Native",
+                "description": "Animation performance can be optimized using native-driven solutions.",
+                "tags": "Animations, Performance, React Native",
+                "paid": "Yes",
+                "answer": "To optimize animation performance in React Native, use native-driven animation solutions like `react-native-reanimated` which provides smoother animations by leveraging native code. Avoid using `Animated` for complex animations or high frame rates, as it relies on the JavaScript thread, which can cause performance issues. Additionally, use `shouldComponentUpdate` or `React.memo` to prevent unnecessary re-renders."
+        },
+        {
+                "title": "What is `react-native-linkedin`?",
+                "category": "React Native",
+                "description": "`react-native-linkedin` is a library for integrating LinkedIn authentication.",
+                "tags": "LinkedIn, Authentication, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-linkedin` is a library that provides LinkedIn authentication for React Native applications. It allows users to sign in with their LinkedIn accounts and access their profile data. The library handles the OAuth 2.0 flow, making it easier to integrate LinkedIn login and access LinkedIn's APIs for user information and other features."
+        },
+        {
+                "title": "How do you integrate push notifications in React Native?",
+                "category": "React Native",
+                "description": "Push notifications can be integrated using services like Firebase Cloud Messaging.",
+                "tags": "Push Notifications, React Native",
+                "paid": "Yes",
+                "answer": "To integrate push notifications in React Native, you can use Firebase Cloud Messaging (FCM) through the `react-native-firebase` library or `@react-native-push-notification` for simpler setups. For iOS, you need to configure APNs (Apple Push Notification service) and for Android, set up FCM in the Firebase console. These libraries handle registration, token management, and notification handling."
+        },
+        {
+                "title": "What is `react-native-background-geolocation`?",
+                "category": "React Native",
+                "description": "`react-native-background-geolocation` tracks the user's location in the background.",
+                "tags": "Geolocation, Background Tasks, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-background-geolocation` is a library that enables background location tracking in React Native applications. It provides features like location tracking, geofencing, and motion detection even when the app is in the background. This is useful for applications requiring continuous location updates for purposes like navigation, delivery tracking, or fitness monitoring."
+        },
+        {
+                "title": "How do you implement error handling in React Native apps?",
+                "category": "React Native",
+                "description": "Error handling can be managed using try-catch blocks and error boundaries.",
+                "tags": "Error Handling, React Native",
+                "paid": "Yes",
+                "answer": "In React Native, error handling can be managed using try-catch blocks for synchronous code and error boundaries for component-level errors. Wrap components in an error boundary to catch JavaScript errors in the component tree and display a fallback UI. For global error handling, use tools like Sentry or Bugsnag to capture and report runtime errors and crashes."
+        },
+        {
+                "title": "What is `react-native-splash-screen`?",
+                "category": "React Native",
+                "description": "`react-native-splash-screen` manages splash screens for React Native apps.",
+                "tags": "Splash Screen, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-splash-screen` is a library used to manage splash screens in React Native applications. It allows you to display a splash screen while your app is loading, improving the user experience during startup. You can configure the splash screen for both iOS and Android platforms and hide it programmatically once the app is ready."
+        },
+        {
+                "title": "How do you implement deep linking with React Navigation?",
+                "category": "React Native",
+                "description": "Deep linking with React Navigation is set up by configuring URL schemes.",
+                "tags": "Deep Linking, React Navigation",
+                "paid": "Yes",
+                "answer": "To implement deep linking with React Navigation, you need to configure URL schemes or universal links in your app. Define the deep linking configuration in your navigation setup using `Linking` from React Native and the `linking` option in your `Navigator`. This setup allows the app to handle specific URLs and navigate to the appropriate screens based on the URL parameters."
+        },
+        {
+                "title": "What is `react-native-camera`?",
+                "category": "React Native",
+                "description": "`react-native-camera` provides camera access and functionality for React Native apps.",
+                "tags": "Camera, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-camera` is a library that provides access to the device's camera for capturing photos and videos in React Native applications. It includes features like barcode scanning, face detection, and camera controls. By using this library, you can integrate advanced camera functionalities into your app, such as capturing images, recording videos, and processing camera input."
+        },
+        {
+                "title": "How do you handle localization in React Native?",
+                "category": "React Native",
+                "description": "Localization is managed using libraries like `react-native-localize` and `i18n-js`.",
+                "tags": "Localization, React Native",
+                "paid": "Yes",
+                "answer": "Localization in React Native can be handled using libraries such as `react-native-localize` for detecting the user's locale and `i18n-js` for managing translations. Set up translation files for different languages and use the `i18n` library to switch between them based on the user's locale. This approach allows you to build multilingual applications that cater to a global audience."
+        },
+        {
+                "title": "What is `react-native-device-info`?",
+                "category": "React Native",
+                "description": "`react-native-device-info` provides device information in React Native apps.",
+                "tags": "Device Info, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-device-info` is a library that provides detailed information about the device running your React Native application. It includes information such as device model, OS version, app version, and unique device identifiers. This information can be useful for debugging, analytics, and customizing app behavior based on device characteristics."
+        },
+        {
+                "title": "How do you test React Native applications?",
+                "category": "React Native",
+                "description": "Testing can be done using tools like Jest, Enzyme, and Detox.",
+                "tags": "Testing, React Native",
+                "paid": "Yes",
+                "answer": "Testing React Native applications involves using various tools. Jest is commonly used for unit testing and mocking. Enzyme can be used for shallow rendering and testing component behavior. Detox is suitable for end-to-end testing, providing a way to simulate user interactions and verify app behavior on real devices or emulators. Combining these tools ensures comprehensive test coverage for your application."
+        },
+        {
+                "title": "What is `react-native-libraries`?",
+                "category": "React Native",
+                "description": "`react-native-libraries` is a directory of useful React Native libraries.",
+                "tags": "Libraries, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-libraries` is a resource that provides a directory of useful and popular libraries for React Native. It includes a wide range of libraries for different functionalities, such as UI components, state management, navigation, and integrations. The directory helps developers discover and integrate third-party libraries into their React Native projects, saving time and effort in finding reliable solutions."
+        },
+        {
+                "title": "How do you manage network requests in React Native?",
+                "category": "React Native",
+                "description": "Network requests can be managed using `fetch`, Axios, or other libraries.",
+                "tags": "Network Requests, React Native",
+                "paid": "Yes",
+                "answer": "Network requests in React Native can be managed using the built-in `fetch` API or third-party libraries like Axios. `fetch` is a native JavaScript API for making HTTP requests, while Axios provides additional features such as request interceptors and automatic JSON parsing. Both methods allow you to handle requests, responses, and errors in your application."
+        },
+        {
+                "title": "What is `react-native-svg`?",
+                "category": "React Native",
+                "description": "`react-native-svg` allows you to use SVG images and graphics in React Native apps.",
+                "tags": "SVG, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-svg` is a library that enables the use of SVG (Scalable Vector Graphics) in React Native applications. It provides components for rendering SVG elements like shapes, paths, and text, allowing you to create and manipulate vector graphics within your app. This is useful for creating scalable and resolution-independent graphics that look sharp on all devices."
+        },
+        {
+                "title": "What is `react-native-permissions`?",
+                "category": "React Native",
+                "description": "`react-native-permissions` manages permissions in React Native apps.",
+                "tags": "Permissions, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-permissions` is a library that simplifies the management of permissions in React Native applications. It provides a unified API for requesting and checking permissions for both iOS and Android platforms. The library supports permissions for various features like camera, location, and contacts, making it easier to handle permissions in a cross-platform way."
+        },
+        {
+                "title": "How do you use `react-native-async-storage` for data caching?",
+                "category": "React Native",
+                "description": "Data caching can be handled using `react-native-async-storage` for persistent storage.",
+                "tags": "AsyncStorage, Caching, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-async-storage` can be used for data caching by storing frequently accessed data locally on the device. You can use its API to set, get, and remove key-value pairs. For instance, after fetching data from an API, you can store it in AsyncStorage and retrieve it later to avoid unnecessary network requests, improving app performance and user experience."
+        },
+        {
+                "title": "What is `react-native-reanimated` used for?",
+                "category": "React Native",
+                "description": "`react-native-reanimated` provides advanced animation capabilities.",
+                "tags": "Animations, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-reanimated` is used for creating complex and performant animations in React Native. Unlike the basic `Animated` API, `react-native-reanimated` allows animations to run on the native thread, resulting in smoother performance. It supports features such as gesture-driven animations, complex transitions, and interpolation, making it ideal for intricate animations and interactive UI elements."
+        },
+        {
+                "title": "How do you handle network requests with error handling in React Native?",
+                "category": "React Native",
+                "description": "Error handling for network requests can be managed using try-catch and response checks.",
+                "tags": "Network Requests, Error Handling, React Native",
+                "paid": "Yes",
+                "answer": "When handling network requests in React Native, use `try-catch` blocks to manage exceptions and handle network errors gracefully. Check the response status and handle different scenarios, such as failed requests or server errors. For instance, using `fetch`, you might check `response.ok` to determine if the request was successful and handle errors accordingly."
+        },
+        {
+                "title": "What is `react-native-vector-icons` and how is it used?",
+                "category": "React Native",
+                "description": "`react-native-vector-icons` provides customizable icons for use in React Native apps.",
+                "tags": "Icons, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-vector-icons` is a library that offers a collection of customizable icons for React Native applications. You can install it and use icons from various popular icon sets like FontAwesome, MaterialIcons, and Ionicons. To use an icon, import the desired icon component from the library and include it in your JSX code, applying styles and sizes as needed."
+        },
+        {
+                "title": "How do you implement user authentication with `react-native-firebase`?",
+                "category": "React Native",
+                "description": "User authentication can be implemented using `react-native-firebase` for Firebase services.",
+                "tags": "Authentication, Firebase, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-firebase` provides a comprehensive solution for user authentication using Firebase. To implement authentication, configure Firebase in your project, install `@react-native-firebase/auth`, and use its methods to handle user sign-in, sign-up, and password management. It supports various authentication providers like email/password, Google, and Facebook, simplifying the authentication process."
+        },
+        {
+                "title": "What are the benefits of using TypeScript with React Native?",
+                "category": "React Native",
+                "description": "TypeScript enhances code quality with static typing and improved tooling.",
+                "tags": "TypeScript, React Native",
+                "paid": "Yes",
+                "answer": "Using TypeScript with React Native provides several benefits, including static type checking, which helps catch errors early in development. TypeScript offers improved tooling with better autocomplete and refactoring support, making code maintenance easier. It also helps document your code more clearly through type annotations, improving overall code quality and developer productivity."
+        },
+        {
+                "title": "What is `react-native-screens` and how does it improve performance?",
+                "category": "React Native",
+                "description": "`react-native-screens` optimizes navigation performance by using native screens.",
+                "tags": "Navigation, Performance, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-screens` improves navigation performance by using native views for screen rendering. It replaces the default behavior of React Navigation, which uses React components for screens, with native screen components that reduce memory usage and improve transition performance. This results in smoother and more responsive navigation experiences in your React Native app."
+        },
+        {
+                "title": "How do you manage state in a large React Native application?",
+                "category": "React Native",
+                "description": "State management in large apps can be handled using libraries like Redux or MobX.",
+                "tags": "State Management, React Native",
+                "paid": "Yes",
+                "answer": "In large React Native applications, managing state can be efficiently handled using state management libraries like Redux or MobX. Redux provides a centralized store and unidirectional data flow, making it suitable for complex state logic. MobX offers a more flexible approach with observable state and automatic dependency tracking. Both libraries help maintain a consistent and manageable state across your application."
+        },
+        {
+                "title": "What is the purpose of `react-native-linking`?",
+                "category": "React Native",
+                "description": "`react-native-linking` handles deep linking and app URL schemes.",
+                "tags": "Deep Linking, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-linking` is used to handle deep linking and app URL schemes in React Native. It allows your app to respond to incoming URLs and navigate to specific screens based on the URL parameters. By configuring URL schemes or universal links, you can enable your app to handle external links and integrate with other apps or services effectively."
+        },
+        {
+                "title": "How do you use `react-native-background-task` for background tasks?",
+                "category": "React Native",
+                "description": "`react-native-background-task` schedules and handles background tasks.",
+                "tags": "Background Tasks, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-background-task` allows you to schedule and execute background tasks in React Native applications. It provides a way to perform operations like data sync or periodic updates even when the app is not in the foreground. You define tasks that are executed at specific intervals or under certain conditions, helping ensure that important tasks continue running as needed."
+        },
+        {
+                "title": "What is `react-native-maps` used for?",
+                "category": "React Native",
+                "description": "`react-native-maps` integrates maps into React Native applications.",
+                "tags": "Maps, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-maps` is a library that provides a `MapView` component for integrating maps into React Native apps. It supports both Google Maps and Apple Maps, allowing you to display maps, add markers, and handle user interactions. This library is useful for applications that require mapping features, such as location tracking or displaying geographic information."
+        },
+        {
+                "title": "How do you handle offline data synchronization in React Native?",
+                "category": "React Native",
+                "description": "Offline data synchronization can be managed using local storage and sync mechanisms.",
+                "tags": "Offline Sync, React Native",
+                "paid": "Yes",
+                "answer": "To handle offline data synchronization in React Native, use local storage solutions like AsyncStorage or SQLite to store data while offline. Implement a sync mechanism that updates the server with local changes when the app is back online. Libraries like `redux-persist` can help manage state persistence, and custom solutions can be built to handle data conflict resolution and sync operations."
+        },
+        {
+                "title": "What is `react-native-device-info` and how is it used?",
+                "category": "React Native",
+                "description": "`react-native-device-info` provides detailed information about the device.",
+                "tags": "Device Info, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-device-info` is a library that allows you to retrieve detailed information about the device running your React Native app. It provides access to properties like device model, OS version, app version, and unique device identifiers. You can use this information for analytics, debugging, and customizing app behavior based on device characteristics."
+        },
+        {
+                "title": "How do you implement custom native modules in React Native?",
+                "category": "React Native",
+                "description": "Custom native modules are implemented by creating and bridging native code.",
+                "tags": "Native Modules, React Native",
+                "paid": "Yes",
+                "answer": "To implement custom native modules in React Native, you create native code in Java (for Android) or Objective-C/Swift (for iOS) and expose it to JavaScript. Define the module’s methods and register them in the native code, then create a corresponding JavaScript module to interact with the native code. Use the `NativeModules` API to call native methods from JavaScript and bridge the two environments."
+        },
+        {
+                "title": "What is `react-native-reanimated` and how is it different from the default `Animated` library?",
+                "category": "React Native",
+                "description": "`react-native-reanimated` provides enhanced animation capabilities compared to `Animated`.",
+                "tags": "Animations, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-reanimated` offers advanced animation capabilities that run on the native thread, providing smoother performance compared to the default `Animated` library which relies on the JavaScript thread. `react-native-reanimated` supports complex animations, gesture-driven animations, and direct manipulation of the native layer, resulting in better performance and more fluid animations in React Native applications."
+        },
+        {
+                "title": "How do you integrate React Native with existing native code?",
+                "category": "React Native",
+                "description": "Integration with existing native code is done via bridging and modules.",
+                "tags": "Integration, React Native",
+                "paid": "Yes",
+                "answer": "Integrating React Native with existing native code involves creating native modules and bridging between JavaScript and native code. You can write custom native code in Java (Android) or Objective-C/Swift (iOS) and expose it to React Native through a bridge. Define native methods, register them, and then use `NativeModules` in JavaScript to interact with the native code, enabling integration with existing native features."
+        },
+        {
+                "title": "What is `react-native-share` and how is it used?",
+                "category": "React Native",
+                "description": "`react-native-share` facilitates sharing content from a React Native app.",
+                "tags": "Sharing, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-share` is a library that allows you to share content such as text, images, and files from your React Native application to other apps or services. It provides a unified API for both iOS and Android platforms. To use it, install the library, configure it for your platforms, and call the `Share.open()` method with the content you want to share. This enables users to share information seamlessly across different apps."
+        },
+        {
+                "title": "How do you handle secure storage in React Native?",
+                "category": "React Native",
+                "description": "Secure storage can be managed using libraries like `react-native-keychain`.",
+                "tags": "Secure Storage, React Native",
+                "paid": "Yes",
+                "answer": "Secure storage in React Native can be managed using libraries like `react-native-keychain` which provides a secure way to store sensitive information such as tokens or passwords. It uses the device’s secure storage mechanisms, like the Keychain on iOS and the Keystore on Android, to encrypt and protect data. This ensures that sensitive information is stored securely and is less vulnerable to unauthorized access."
+        },
+        {
+                "title": "What is `react-native-sound-player` used for?",
+                "category": "React Native",
+                "description": "`react-native-sound-player` handles audio playback in React Native apps.",
+                "tags": "Audio, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-sound-player` is a library used for playing audio files in React Native applications. It supports various audio formats and provides controls for playback, such as play, pause, and stop. You can use it to play sound effects or background music within your app. The library is simple to use and integrates well with React Native’s component structure."
+        },
+        {
+                "title": "How do you use `react-native-webview` for embedding web content?",
+                "category": "React Native",
+                "description": "`react-native-webview` is used for embedding web content within React Native apps.",
+                "tags": "Webview, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-webview` allows you to embed web content such as web pages or HTML within your React Native application. To use it, install the library and include the `WebView` component in your code. Configure it with the URL or HTML content you want to display and handle events such as navigation or loading errors. This enables you to present web-based content seamlessly within your app’s interface."
+        },
+        {
+                "title": "What is the `React Native` Debugger and how is it used?",
+                "category": "React Native",
+                "description": "The React Native Debugger is a standalone debugging tool for React Native apps.",
+                "tags": "Debugger, React Native",
+                "paid": "Yes",
+                "answer": "The React Native Debugger is a standalone debugging tool that combines React DevTools and Redux DevTools in one application. It allows you to inspect React components, view and modify the Redux state, and debug JavaScript code running in your React Native app. To use it, install the React Native Debugger, configure it with your app, and use it to analyze and troubleshoot issues during development."
+        },
+        {
+                "title": "How do you use `react-native-background-fetch` for background tasks?",
+                "category": "React Native",
+                "description": "`react-native-background-fetch` schedules background tasks for React Native apps.",
+                "tags": "Background Tasks, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-background-fetch` is a library that allows you to schedule and execute background tasks in React Native applications. It is useful for tasks like periodic data sync or notifications. After installing the library, configure it to schedule tasks, handle task events, and ensure tasks are executed even when the app is not in the foreground. It supports both iOS and Android platforms."
+        },
+        {
+                "title": "What is `react-native-push-notification` and how do you use it?",
+                "category": "React Native",
+                "description": "`react-native-push-notification` manages push notifications for React Native apps.",
+                "tags": "Push Notifications, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-push-notification` is a library that provides a straightforward way to handle push notifications in React Native applications. To use it, install the library and configure it for both iOS and Android. You can then set up notification handlers, schedule local notifications, and customize notification appearance and behavior. This library helps integrate push notifications into your app with minimal configuration."
+        },
+        {
+                "title": "What is the role of `react-native-safe-area-context`?",
+                "category": "React Native",
+                "description": "`react-native-safe-area-context` helps manage safe area insets for modern devices.",
+                "tags": "Safe Area, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-safe-area-context` helps manage safe area insets on modern devices with notches or rounded corners. It provides a `SafeAreaProvider` component that ensures your app’s content is displayed correctly within the visible area of the screen. By using `SafeAreaInsetsContext` and `useSafeAreaInsets`, you can adjust your layout to avoid content being obstructed by device features."
+        },
+        {
+                "title": "How do you use `react-native-gesture-handler` for handling gestures?",
+                "category": "React Native",
+                "description": "`react-native-gesture-handler` improves gesture handling for React Native apps.",
+                "tags": "Gestures, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-gesture-handler` is a library that provides advanced gesture handling capabilities in React Native applications. It allows you to handle gestures such as taps, swipes, and pinches more effectively than the default gesture system. Install the library and replace standard touchable components with gesture handler components, and use `GestureHandler` components to define and manage gestures with improved performance."
+        },
+        {
+                "title": "What is `react-native-orientation-locker` and how is it used?",
+                "category": "React Native",
+                "description": "`react-native-orientation-locker` manages screen orientation in React Native apps.",
+                "tags": "Orientation, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-orientation-locker` is a library that allows you to control screen orientation in React Native applications. You can use it to lock the orientation to portrait or landscape mode, or to detect and respond to orientation changes. To use it, install the library, import the relevant functions, and apply them to manage the screen orientation as needed for your app’s requirements."
+        },
+        {
+                "title": "How do you handle app performance monitoring in React Native?",
+                "category": "React Native",
+                "description": "Performance monitoring can be managed using tools like React Native Performance and Sentry.",
+                "tags": "Performance Monitoring, React Native",
+                "paid": "Yes",
+                "answer": "To monitor app performance in React Native, you can use tools like `react-native-performance` for profiling and performance monitoring. Integrate Sentry or other monitoring services to track and analyze errors, crashes, and performance issues in real-time. These tools provide insights into app performance, help identify bottlenecks, and offer actionable data to improve the app’s efficiency and stability."
+        },
+        {
+                "title": "How do you use `react-native-sound` for playing sound?",
+                "category": "React Native",
+                "description": "`react-native-sound` is used for playing audio files in React Native apps.",
+                "tags": "Audio, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-sound` allows you to play audio files in your React Native application. First, install the library and link it to your project. You can then import the `Sound` class and create instances of it with the audio file path. Use methods like `play()`, `pause()`, and `stop()` to control playback. This library supports various audio formats and offers options for controlling playback settings."
+        },
+        {
+                "title": "What is `react-native-config` and how do you use it?",
+                "category": "React Native",
+                "description": "`react-native-config` manages configuration values for different environments.",
+                "tags": "Configuration, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-config` is a library that allows you to manage environment-specific configuration values in your React Native application. You can define variables in `.env` files for different environments (e.g., development, production) and access them through the `Config` object. This helps in managing environment-specific settings like API keys and endpoints securely and conveniently."
+        },
+        {
+                "title": "How do you use `react-native-safe-area-context` to handle safe areas?",
+                "category": "React Native",
+                "description": "`react-native-safe-area-context` helps manage safe area insets on modern devices.",
+                "tags": "Safe Area, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-safe-area-context` is used to handle safe area insets on devices with notches or rounded corners. By wrapping your components in the `SafeAreaProvider` and using the `useSafeAreaInsets` hook, you can adjust your layout to ensure content is not obscured by device features. This library provides a consistent way to handle safe areas across different iOS and Android devices."
+        },
+        {
+                "title": "What is the difference between `React Navigation` and `React Native Navigation`?",
+                "category": "React Native",
+                "description": "React Navigation is a JavaScript-based library while React Native Navigation uses native navigation components.",
+                "tags": "Navigation, React Native",
+                "paid": "Yes",
+                "answer": "React Navigation and React Native Navigation are two popular navigation libraries for React Native. React Navigation is a JavaScript-based library that provides a flexible and easy-to-use API for handling navigation within your app. React Native Navigation, on the other hand, uses native navigation components for improved performance and native look-and-feel. The choice between them depends on your app’s requirements and performance considerations."
+        },
+        {
+                "title": "How do you use `react-native-maps` to display markers on a map?",
+                "category": "React Native",
+                "description": "`react-native-maps` allows you to add markers to a map view.",
+                "tags": "Maps, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-maps` enables you to display markers on a map by using the `Marker` component. Import `MapView` and `Marker` from the library, and include the `Marker` component as children of `MapView`. Set properties like `coordinate`, `title`, and `description` to customize the marker’s location and appearance. This is useful for showing locations or points of interest on the map."
+        },
+        {
+                "title": "What is the purpose of `react-native-permissions`?",
+                "category": "React Native",
+                "description": "`react-native-permissions` simplifies permission management in React Native apps.",
+                "tags": "Permissions, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-permissions` is a library designed to manage and request permissions in React Native applications. It provides a unified API for both iOS and Android, allowing you to check and request permissions for various features like location, camera, and contacts. This simplifies the process of handling permissions, ensuring that your app adheres to platform-specific requirements and providing a consistent experience across devices."
+        },
+        {
+                "title": "How do you handle user authentication with `react-native-firebase`?",
+                "category": "React Native",
+                "description": "Firebase provides authentication features for React Native apps.",
+                "tags": "Authentication, Firebase, React Native",
+                "paid": "Yes",
+                "answer": "To handle user authentication with `react-native-firebase`, integrate the `@react-native-firebase/auth` module into your app. Configure Firebase for your project and use its API to manage authentication tasks such as signing up, logging in, and managing user sessions. `react-native-firebase` supports various authentication methods, including email/password, social providers like Google and Facebook, and phone number authentication."
+        },
+        {
+                "title": "What is `react-native-splash-screen` and how is it used?",
+                "category": "React Native",
+                "description": "`react-native-splash-screen` displays a splash screen while the app loads.",
+                "tags": "Splash Screen, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-splash-screen` is a library that helps you display a splash screen during the app's launch. Install the library, configure it for both iOS and Android platforms, and use the provided methods to control the splash screen’s visibility. This library allows you to show a custom splash screen that enhances the user experience while the app is loading and initializing."
+        },
+        {
+                "title": "How do you use `react-native-webview` to load a web page?",
+                "category": "React Native",
+                "description": "`react-native-webview` lets you load and display web pages in your app.",
+                "tags": "Webview, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-webview` allows you to embed and display web pages within your React Native application. Install the library and import the `WebView` component. Use the `source` prop to specify the URL of the web page you want to load. You can also customize the `WebView` with props such as `onLoadStart`, `onLoadEnd`, and `onError` to handle various loading events and errors."
+        },
+        {
+                "title": "How do you manage API endpoints with `react-native-config`?",
+                "category": "React Native",
+                "description": "`react-native-config` helps manage environment-specific API endpoints.",
+                "tags": "Configuration, API, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-config` is used to manage environment-specific configuration values, such as API endpoints. Define your API endpoints in `.env` files for different environments (development, staging, production). Use `Config` from `react-native-config` to access these values in your code. This approach allows you to easily switch between different API endpoints based on the environment in which your app is running."
+        },
+        {
+                "title": "What is the role of `react-native-gesture-handler` in gesture handling?",
+                "category": "React Native",
+                "description": "`react-native-gesture-handler` improves gesture recognition and performance.",
+                "tags": "Gestures, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-gesture-handler` enhances gesture handling in React Native by providing better performance and more reliable gesture recognition compared to the default gesture system. It allows for complex gesture interactions like swipes, drags, and pinches, and operates on the native thread for smoother handling. By using components such as `PanGestureHandler` and `TapGestureHandler`, you can create responsive and fluid gesture-based interactions."
+        },
+        {
+                "title": "How do you use `react-native-animated` to create animations?",
+                "category": "React Native",
+                "description": "`react-native-animated` facilitates animations within React Native apps.",
+                "tags": "Animations, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-animated` provides a robust API for creating animations in React Native. You can define animated values using the `Animated.Value` class and use various methods to interpolate values and create smooth transitions. Components such as `Animated.View` and `Animated.Text` can be animated by attaching animated styles. This library supports both simple and complex animations, enhancing the visual appeal and user experience of your app."
+        },
+        {
+                "title": "How do you use `react-native-keychain` for secure storage?",
+                "category": "React Native",
+                "description": "`react-native-keychain` manages secure storage for sensitive data.",
+                "tags": "Secure Storage, React Native",
+                "paid": "Yes",
+                "answer": "`react-native-keychain` provides secure storage for sensitive data like passwords and tokens. Install the library and use its API to store, retrieve, and delete credentials securely. It leverages platform-specific secure storage mechanisms, such as the Keychain on iOS and the Keystore on Android, to protect data. By using `react-native-keychain`, you can ensure that sensitive information is stored securely and accessed safely within your app."
+        }
+]

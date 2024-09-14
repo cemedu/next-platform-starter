@@ -1,0 +1,906 @@
+[
+        {
+                "title": "How do you create a new database in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Create a new PostgreSQL database.",
+                "tags": "database, creation, SQL",
+                "paid": "Yes",
+                "answer": "To create a new database in PostgreSQL, use the SQL command `CREATE DATABASE database_name;`. For example, if you want to create a database named 'test_db', you would run `CREATE DATABASE test_db;`. Ensure you have the necessary privileges to create a database and that you are connected to the PostgreSQL server."
+        },
+        {
+                "title": "How can you list all tables in a PostgreSQL database?",
+                "category": "PostgreSQL",
+                "description": "List all tables in a database.",
+                "tags": "tables, list, SQL",
+                "paid": "Yes",
+                "answer": "To list all tables in a PostgreSQL database, you can use the `\\dt` command in the psql command-line interface. lternatively, you can execute the SQL query `SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';` to list tables in the 'public' schema. Adjust the schema name if necessary."
+        },
+        {
+                "title": "How do you add a new column to an existing table?",
+                "category": "PostgreSQL",
+                "description": "Add a column to an existing table.",
+                "tags": "ALTER TABLE, columns, schema",
+                "paid": "Yes",
+                "answer": "To add a new column to an existing table, use the `ALTER TABLE` statement. For instance, to add a column named 'age' of type integer to the 'employees' table, you would run `ALTER TABLE employees ADD COLUMN age INTEGER;`. This command modifies the table schema to include the new column."
+        },
+        {
+                "title": "How do you delete a row from a table in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Delete a specific row from a table.",
+                "tags": "DELETE, rows, SQL",
+                "paid": "Yes",
+                "answer": "To delete a specific row from a table, use the `DELETE FROM` statement with a `WHERE` clause to specify the condition. For example, to delete a row from the 'employees' table where the 'id' is 5, use `DELETE FROM employees WHERE id = 5;`. Omitting the `WHERE` clause will delete all rows from the table."
+        },
+        {
+                "title": "How do you update a record in a PostgreSQL table?",
+                "category": "PostgreSQL",
+                "description": "Update a record in a table.",
+                "tags": "UPDATE, records, SQL",
+                "paid": "Yes",
+                "answer": "To update a record in a PostgreSQL table, use the `UPDATE` statement along with a `SET` clause to specify new values and a `WHERE` clause to identify the record. For instance, to change the 'age' of the employee with 'id' 3 to 30, you would execute `UPDATE employees SET age = 30 WHERE id = 3;`."
+        },
+        {
+                "title": "How can you retrieve data from multiple tables?",
+                "category": "PostgreSQL",
+                "description": "Retrieve data using joins.",
+                "tags": "JOIN, SELECT, SQL",
+                "paid": "Yes",
+                "answer": "To retrieve data from multiple tables, use `JOIN` operations in your `SELECT` statement. For example, if you have 'employees' and 'departments' tables and want to get employee names along with their department names, you might use: `SELECT employees.name, departments.dept_name FROM employees INNER JOIN departments ON employees.dept_id = departments.dept_id;`."
+        },
+        {
+                "title": "What is an index and how do you create one?",
+                "category": "PostgreSQL",
+                "description": "Create an index to improve query performance.",
+                "tags": "INDEX, performance, SQL",
+                "paid": "Yes",
+                "answer": "An index in PostgreSQL improves the performance of query operations by allowing faster retrieval of rows. To create an index, use the `CREATE INDEX` statement. For instance, to create an index on the 'email' column of the 'users' table, use `CREATE INDEX idx_users_email ON users(email);`. Indexes are particularly useful for columns used frequently in `WHERE` clauses."
+        },
+        {
+                "title": "How do you remove a column from a table?",
+                "category": "PostgreSQL",
+                "description": "Drop a column from a table.",
+                "tags": "ALTER TABLE, DROP COLUMN, SQL",
+                "paid": "Yes",
+                "answer": "To remove a column from a table, use the `ALTER TABLE` statement with the `DROP COLUMN` clause. For example, to drop the 'age' column from the 'employees' table, execute `ALTER TABLE employees DROP COLUMN age;`. Be cautious, as dropping a column will remove all data stored in that column."
+        },
+        {
+                "title": "How can you find the size of a PostgreSQL database?",
+                "category": "PostgreSQL",
+                "description": "Find database size.",
+                "tags": "SIZE, database, SQL",
+                "paid": "Yes",
+                "answer": "To find the size of a PostgreSQL database, you can use the `pg_database_size()` function. Run the SQL query `SELECT pg_size_pretty(pg_database_size('database_name'));` to get the size of a specific database in a human-readable format. Replace 'database_name' with the actual name of your database."
+        },
+        {
+                "title": "What is a foreign key in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Understand foreign key constraints.",
+                "tags": "FOREIGN KEY, constraints, SQL",
+                "paid": "Yes",
+                "answer": "A foreign key in PostgreSQL is a constraint that ensures the values in one column (or a set of columns) match values in another column of a different table, typically a primary key. This enforces referential integrity between tables. For example, if 'orders' has a foreign key 'customer_id' referencing 'customers(id)', it ensures that every order must be linked to an existing customer."
+        },
+        {
+                "title": "How do you create a view in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Create a view to simplify queries.",
+                "tags": "VIEW, SQL, abstraction",
+                "paid": "Yes",
+                "answer": "To create a view in PostgreSQL, use the `CREATE VIEW` statement. For example, to create a view named 'employee_view' that shows employees' names and departments, use `CREATE VIEW employee_view AS SELECT name, dept_name FROM employees INNER JOIN departments ON employees.dept_id = departments.dept_id;`. Views can simplify complex queries and encapsulate logic."
+        },
+        {
+                "title": "What is the purpose of the `VACUUM` command?",
+                "category": "PostgreSQL",
+                "description": "Understand the VACUUM command.",
+                "tags": "VACUUM, maintenance, SQL",
+                "paid": "Yes",
+                "answer": "The `VACUUM` command in PostgreSQL is used to clean up and optimize the database by removing obsolete data and reclaiming storage. It helps maintain database performance by reducing bloat and improving query efficiency. Regularly running `VACUUM` helps keep the database healthy, especially after large numbers of updates or deletions."
+        },
+        {
+                "title": "How do you back up a PostgreSQL database?",
+                "category": "PostgreSQL",
+                "description": "Back up a PostgreSQL database.",
+                "tags": "BACKUP, pg_dump, SQL",
+                "paid": "Yes",
+                "answer": "To back up a PostgreSQL database, use the `pg_dump` utility. For example, to back up a database named 'mydb', you would run `pg_dump mydb > mydb_backup.sql`. This creates a SQL file with the database structure and data. You can restore this backup using the `psql` command with `psql mydb < mydb_backup.sql`."
+        },
+        {
+                "title": "How can you restore a PostgreSQL database from a backup?",
+                "category": "PostgreSQL",
+                "description": "Restore a database from a backup.",
+                "tags": "RESTORE, pg_restore, SQL",
+                "paid": "Yes",
+                "answer": "To restore a PostgreSQL database from a backup created by `pg_dump`, use the `psql` command for SQL backups or `pg_restore` for custom format backups. For a SQL backup, use `psql database_name < backup_file.sql`. For a custom format backup, use `pg_restore -d database_name backup_file.dump`. Ensure the database exists before restoring."
+        },
+        {
+                "title": "What are `SERIAL` and `BIGSERIAL` data types?",
+                "category": "PostgreSQL",
+                "description": "Understand SERIAL and BIGSERIAL.",
+                "tags": "SERIAL, BIGSERIAL, data types",
+                "paid": "Yes",
+                "answer": "`SERIAL` and `BIGSERIAL` are PostgreSQL data types used for auto-incrementing integer columns. `SERIAL` creates an integer column that automatically increments with each new row, typically used for primary keys. `BIGSERIAL` is similar but uses a larger integer type to accommodate larger sequences of values. For example, `CREATE TABLE my_table (id SERIAL PRIMARY KEY);`."
+        },
+        {
+                "title": "How do you handle transactions in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage transactions.",
+                "tags": "TRANSACTIONS, SQL, COMMIT, ROLLBACK",
+                "paid": "Yes",
+                "answer": "Transactions in PostgreSQL are managed using the `BEGIN`, `COMMIT`, and `ROLLBACK` commands. Start a transaction with `BEGIN`, execute your SQL commands, and if everything is correct, save changes with `COMMIT`. If there’s an error or you wish to discard changes, use `ROLLBACK`. For instance: `BEGIN; UPDATE employees SET salary = salary * 1.1; COMMIT;`."
+        },
+        {
+                "title": "What are PostgreSQL table constraints?",
+                "category": "PostgreSQL",
+                "description": "Understand table constraints.",
+                "tags": "CONSTRAINTS, table design, SQL",
+                "paid": "Yes",
+                "answer": "PostgreSQL table constraints are rules applied to columns or tables to enforce data integrity. Common constraints include `PRIMARY KEY` (ensures unique identifiers), `FOREIGN KEY` (enforces referential integrity), `UNIQUE` (ensures all values in a column are unique), and `CHECK` (validates data against a condition). For example, `ALTER TABLE my_table ADD CONSTRAINT chk_age CHECK (age > 0);`."
+        },
+        {
+                "title": "How do you manage user roles and permissions?",
+                "category": "PostgreSQL",
+                "description": "Manage roles and permissions.",
+                "tags": "ROLES, PERMISSIONS, SECURITY",
+                "paid": "Yes",
+                "answer": "To manage user roles and permissions in PostgreSQL, use the `CREATE ROLE` and `GRANT` statements. Create a role with `CREATE ROLE role_name;`, and grant permissions with `GRANT privilege_type ON object TO role_name;`. For example, to grant SELECT permission on the 'employees' table to a role 'data_reader', use `GRANT SELECT ON employees TO data_reader;`."
+        },
+        {
+                "title": "How can you find and remove duplicate rows from a table?",
+                "category": "PostgreSQL",
+                "description": "Handle duplicate rows.",
+                "tags": "DUPLICATES, SQL, DELETE",
+                "paid": "Yes",
+                "answer": "To find duplicate rows, use a query with a `GROUP BY` clause and `HAVING` to identify duplicates. For instance: `SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 1;`. To remove duplicates, you might use a `DELETE` statement with a subquery. For example: `DELETE FROM table_name WHERE ctid NOT IN (SELECT MIN(ctid) FROM table_name GROUP BY column_name);`."
+        },
+        {
+                "title": "How do you use `EXISTS` in a query?",
+                "category": "PostgreSQL",
+                "description": "Use EXISTS in SQL queries.",
+                "tags": "EXISTS, SQL, subqueries",
+                "paid": "Yes",
+                "answer": "`EXISTS` is used in SQL to test for the existence of rows returned by a subquery. It returns `TRUE` if the subquery returns one or more rows and `FALSE` otherwise. For example: `SELECT * FROM employees WHERE EXISTS (SELECT 1 FROM departments WHERE departments.dept_id = employees.dept_id);` checks if there are corresponding departments for employees."
+        },
+        {
+                "title": "What is a CTE (Common Table Expression)?",
+                "category": "PostgreSQL",
+                "description": "Understand Common Table Expressions.",
+                "tags": "CTE, WITH, SQL",
+                "paid": "Yes",
+                "answer": "A CTE (Common Table Expression) is a temporary result set that you can reference within a `SELECT`, `INSERT`, `UPDATE`, or `DELETE` statement. Defined using the `WITH` clause, it can simplify complex queries by breaking them into more manageable parts. For example: `WITH dept_emp AS (SELECT * FROM employees WHERE dept_id = 1) SELECT * FROM dept_emp;`."
+        },
+        {
+                "title": "How do you create and use a PostgreSQL function?",
+                "category": "PostgreSQL",
+                "description": "Define and use a function in PostgreSQL.",
+                "tags": "FUNCTIONS, PL/pgSQL, SQL",
+                "paid": "Yes",
+                "answer": "To create a function in PostgreSQL, use the `CREATE FUNCTION` statement along with PL/pgSQL or another procedural language. For example: `CREATE FUNCTION get_employee_name(emp_id INT) RETURNS TEXT AS $$ BEGIN RETURN (SELECT name FROM employees WHERE id = emp_id); END; $$ LANGUAGE plpgsql;`. Use the function by calling `SELECT get_employee_name(1);`."
+        },
+        {
+                "title": "What is the difference between `INNER JOIN` and `LEFT JOIN`?",
+                "category": "PostgreSQL",
+                "description": "Understand different types of JOINs.",
+                "tags": "JOIN, INNER JOIN, LEFT JOIN",
+                "paid": "Yes",
+                "answer": "`INNER JOIN` returns rows where there is a match in both joined tables, while `LEFT JOIN` (or `LEFT OUTER JOIN`) returns all rows from the left table and matched rows from the right table. If there’s no match, NULL values are returned for the right table's columns. For example: `SELECT * FROM a INNER JOIN b ON a.id = b.a_id;` versus `SELECT * FROM a LEFT JOIN b ON a.id = b.a_id;`."
+        },
+        {
+                "title": "How do you create an index on multiple columns?",
+                "category": "PostgreSQL",
+                "description": "Create a multi-column index.",
+                "tags": "INDEX, MULTI-COLUMN, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "To create an index on multiple columns, use the `CREATE INDEX` statement and specify the columns separated by commas. For example, to create an index on the 'last_name' and 'first_name' columns of the 'employees' table, you would use `CREATE INDEX idx_name ON employees(last_name, first_name);`. Multi-column indexes can speed up queries that filter on these columns together."
+        },
+        {
+                "title": "What are PostgreSQL schemas and how do you use them?",
+                "category": "PostgreSQL",
+                "description": "Understand and use schemas.",
+                "tags": "SCHEMAS, ORGANIZATION, SQL",
+                "paid": "Yes",
+                "answer": "Schemas in PostgreSQL are namespaces that allow you to organize and group database objects like tables, views, and functions. Each schema can contain its own set of objects, and you can refer to these objects with a schema-qualified name. For example, to create a schema and a table within it, you might use `CREATE SCHEMA sales; CREATE TABLE sales.orders (id SERIAL PRIMARY KEY, order_date DATE);`."
+        },
+        {
+                "title": "How do you handle JSON data in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Work with JSON data.",
+                "tags": "JSON, SQL, DATA TYPES",
+                "paid": "Yes",
+                "answer": "PostgreSQL supports JSON and JSONB data types for storing JSON data. JSONB is a binary format that allows for faster processing. You can query JSON data using operators and functions. For example, to store JSON data, use `CREATE TABLE my_table (data JSONB);`. To query a JSON field, you might use `SELECT data->>'key' FROM my_table WHERE data->>'key' = 'value';`."
+        },
+        {
+                "title": "What is the difference between `UNION` and `UNION ALL`?",
+                "category": "PostgreSQL",
+                "description": "Understand UNION vs UNION ALL.",
+                "tags": "UNION, SQL, COMBINING RESULTS",
+                "paid": "Yes",
+                "answer": "`UNION` combines the results of two queries and removes duplicate rows, while `UNION ALL` combines results including duplicates. For example, `SELECT column FROM table1 UNION SELECT column FROM table2;` removes duplicates, whereas `SELECT column FROM table1 UNION ALL SELECT column FROM table2;` includes all rows from both queries."
+        },
+        {
+                "title": "How do you perform a full-text search in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Conduct full-text searches.",
+                "tags": "FULL-TEXT SEARCH, PostgreSQL, SEARCH",
+                "paid": "Yes",
+                "answer": "PostgreSQL offers full-text search capabilities using `tsvector` and `tsquery` data types. To perform a full-text search, first create a `tsvector` column and populate it with data. For example: `ALTER TABLE my_table ADD COLUMN document_with_idx tsvector; UPDATE my_table SET document_with_idx = to_tsvector('english', document);`. Then, search using `SELECT * FROM my_table WHERE document_with_idx @@ to_tsquery('english', 'search_query');`."
+        },
+        {
+                "title": "How do you implement table partitioning in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Implement table partitioning.",
+                "tags": "PARTITIONING, TABLES, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "Table partitioning in PostgreSQL is used to divide a large table into smaller, more manageable pieces. You can implement partitioning using range, list, or hash methods. For example, to create a range-partitioned table by year, first create the parent table: `CREATE TABLE sales (id SERIAL PRIMARY KEY, sale_date DATE) PARTITION BY RANGE (sale_date);`. Then, create partitions for each range: `CREATE TABLE sales_2023 PARTITION OF sales FOR VALUES FROM ('2023-01-01') TO ('2024-01-01');`."
+        },
+        {
+                "title": "How can you perform database migration in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Handle database migrations.",
+                "tags": "MIGRATION, DATABASE, SQL",
+                "paid": "Yes",
+                "answer": "Database migration in PostgreSQL involves moving or altering database schema and data. Tools like `pg_dump` and `pg_restore` can be used to backup and restore data. For more complex migrations, tools like Flyway or Liquibase are useful. You might use `pg_dump` to create a backup: `pg_dump mydb > mydb_backup.sql`, and `pg_restore` to apply it to a new database. Make sure to test migrations in a staging environment before applying them to production."
+        },
+        {
+                "title": "What is the `pg_stat_activity` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor database activity.",
+                "tags": "pg_stat_activity, MONITORING, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "`pg_stat_activity` is a system view in PostgreSQL that provides information about the currently active database connections. It shows details such as process IDs, query texts, and connection states. For example, you can query `SELECT * FROM pg_stat_activity;` to see active queries and session states, which is useful for diagnosing performance issues or monitoring database activity."
+        },
+        {
+                "title": "How do you create a trigger in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Define and use triggers.",
+                "tags": "TRIGGERS, AUTOMATION, SQL",
+                "paid": "Yes",
+                "answer": "To create a trigger in PostgreSQL, first define a function that performs the desired action. Then, use the `CREATE TRIGGER` statement to bind this function to a table event. For example: `CREATE FUNCTION log_update() RETURNS TRIGGER AS $$ BEGIN INSERT INTO log_table (table_name, changed_at) VALUES ('employees', CURRENT_TIMESTAMP); RETURN NEW; END; $$ LANGUAGE plpgsql;` and `CREATE TRIGGER trg_log_update AFTER UPDATE ON employees FOR EACH ROW EXECUTE FUNCTION log_update();`."
+        },
+        {
+                "title": "What is the `EXPLAIN` command and how is it used?",
+                "category": "PostgreSQL",
+                "description": "Understand the EXPLAIN command.",
+                "tags": "EXPLAIN, QUERY ANALYSIS, SQL",
+                "paid": "Yes",
+                "answer": "`EXPLAIN` is a command used to analyze and understand how PostgreSQL executes a query. It provides details about the query execution plan, including which indexes are used and the estimated cost of different operations. For example, running `EXPLAIN SELECT * FROM employees WHERE id = 1;` will show you the query plan and help identify performance bottlenecks or inefficiencies in your SQL queries."
+        },
+        {
+                "title": "How do you use the `pgAdmin` tool?",
+                "category": "PostgreSQL",
+                "description": "Work with pgAdmin for database management.",
+                "tags": "pgAdmin, DATABASE ADMINISTRATION, GUI",
+                "paid": "Yes",
+                "answer": "`pgAdmin` is a popular graphical user interface tool for managing PostgreSQL databases. It allows users to perform tasks like creating and modifying tables, running queries, and managing database objects through a user-friendly interface. To use `pgAdmin`, download and install it, then connect to your PostgreSQL server. You can use its features to interact with the database, visualize query plans, and manage your schema."
+        },
+        {
+                "title": "What is a materialized view and how do you use it?",
+                "category": "PostgreSQL",
+                "description": "Use materialized views for performance.",
+                "tags": "MATERIALIZED VIEWS, PERFORMANCE, SQL",
+                "paid": "Yes",
+                "answer": "A materialized view in PostgreSQL is a database object that stores the result of a query physically. It improves performance by precomputing and storing complex query results. To create a materialized view, use `CREATE MATERIALIZED VIEW view_name AS SELECT ...;`. You can refresh the view to update its data with `REFRESH MATERIALIZED VIEW view_name;`. This is useful for scenarios where query performance is critical, and the underlying data doesn’t change frequently."
+        },
+        {
+                "title": "How do you handle large objects (LOBs) in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage large objects in PostgreSQL.",
+                "tags": "LOBs, LARGE OBJECTS, STORAGE",
+                "paid": "Yes",
+                "answer": "In PostgreSQL, large objects (LOBs) are handled using the `pg_largeobject` system catalog and associated functions. You can store large objects like files or images using `lo_create()`, `lo_write()`, and `lo_read()` functions. For example, to store a file: `SELECT lo_create(0);` to create a new large object, and then use `lo_write()` to write data. You can retrieve it with `lo_read()` and manage large objects using the `pg_largeobject` catalog."
+        },
+        {
+                "title": "What are PostgreSQL extension modules and how do you install them?",
+                "category": "PostgreSQL",
+                "description": "Use and install PostgreSQL extensions.",
+                "tags": "EXTENSIONS, MODULES, INSTALLATION",
+                "paid": "Yes",
+                "answer": "PostgreSQL extensions add additional functionality to the database system. You can install extensions using the `CREATE EXTENSION` command. For example, to install the `pg_trgm` extension for trigram-based text search, use `CREATE EXTENSION pg_trgm;`. Extensions can be managed via the `pg_extension` catalog. Some extensions come with PostgreSQL distributions, while others may need to be downloaded and installed separately."
+        },
+        {
+                "title": "How do you optimize PostgreSQL queries?",
+                "category": "PostgreSQL",
+                "description": "Optimize queries for better performance.",
+                "tags": "QUERY OPTIMIZATION, PERFORMANCE, SQL",
+                "paid": "Yes",
+                "answer": "Optimizing PostgreSQL queries involves several strategies, such as using indexes appropriately, analyzing query plans with `EXPLAIN`, and rewriting queries to be more efficient. For example, ensure that columns used in `WHERE` clauses and joins are indexed. Use `EXPLAIN` to understand how PostgreSQL executes your queries and identify bottlenecks. Additionally, consider using table partitioning and materialized views for complex queries or large datasets."
+        },
+        {
+                "title": "What are the benefits of using PostgreSQL over other RDBMS?",
+                "category": "PostgreSQL",
+                "description": "Advantages of PostgreSQL.",
+                "tags": "COMPARISON, ADVANTAGES, RDBMS",
+                "paid": "Yes",
+                "answer": "PostgreSQL offers several benefits over other relational database management systems (RDBMS). It supports advanced features such as full-text search, JSON/JSONB data types, and custom data types. It is highly extensible and compliant with SQL standards. PostgreSQL provides strong consistency, ACID compliance, and a rich set of indexing options. Additionally, it has a large and active community, which contributes to its continuous improvement and support."
+        },
+        {
+                "title": "How do you use the `COPY` command for bulk data import/export?",
+                "category": "PostgreSQL",
+                "description": "Import and export data using COPY.",
+                "tags": "COPY, DATA IMPORT, DATA EXPORT",
+                "paid": "Yes",
+                "answer": "The `COPY` command in PostgreSQL is used to efficiently import and export large amounts of data. To import data, use `COPY table_name FROM 'file_path' WITH (FORMAT csv);`. For exporting data, use `COPY table_name TO 'file_path' WITH (FORMAT csv);`. This command handles bulk data operations much faster than individual `INSERT` statements or other methods. Ensure the file path is accessible to the PostgreSQL server, and the file format matches the specified format options."
+        },
+        {
+                "title": "How do you use PostgreSQL’s window functions?",
+                "category": "PostgreSQL",
+                "description": "Utilize window functions for advanced queries.",
+                "tags": "WINDOW FUNCTIONS, SQL, ADVANCED QUERIES",
+                "paid": "Yes",
+                "answer": "Window functions in PostgreSQL perform calculations across a set of table rows related to the current row. They are useful for tasks such as ranking, running totals, and moving averages. For example, to calculate a running total: `SELECT employee_id, salary, SUM(salary) OVER (ORDER BY hire_date) AS running_total FROM employees;`. Window functions require a `OVER()` clause to define the window of rows for the calculation."
+        },
+        {
+                "title": "What is the `VACUUM` command and when should you use it?",
+                "category": "PostgreSQL",
+                "description": "Maintain database performance with VACUUM.",
+                "tags": "VACUUM, MAINTENANCE, DATABASE PERFORMANCE",
+                "paid": "Yes",
+                "answer": "`VACUUM` is a command used to clean up dead tuples from tables and indexes in PostgreSQL, which helps to reclaim storage and maintain database performance. It also updates statistics used by the query planner. Use `VACUUM` regularly, especially after large updates or deletions, to prevent table bloat. For example: `VACUUM ANALYZE my_table;` will clean and update statistics for 'my_table'."
+        },
+        {
+                "title": "How do you implement asynchronous notifications in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Set up asynchronous notifications.",
+                "tags": "LISTEN, NOTIFY, ASYNCHRONOUS NOTIFICATIONS",
+                "paid": "Yes",
+                "answer": "PostgreSQL provides `LISTEN` and `NOTIFY` commands for asynchronous notifications. Use `NOTIFY channel, 'message';` to send a notification to a specified channel. On the receiving end, use `LISTEN channel;` to listen for notifications on that channel. For example: `NOTIFY user_updates, 'User data updated';` and `LISTEN user_updates;` in a separate session to receive notifications when data changes."
+        },
+        {
+                "title": "What are PostgreSQL tablespaces and how do you use them?",
+                "category": "PostgreSQL",
+                "description": "Manage database storage with tablespaces.",
+                "tags": "TABLESPACES, STORAGE MANAGEMENT, DATABASE ADMINISTRATION",
+                "paid": "Yes",
+                "answer": "Tablespaces in PostgreSQL are used to define locations on disk where database objects such as tables and indexes can be stored. You create a tablespace using `CREATE TABLESPACE space_name LOCATION 'directory_path';`. To use a tablespace, specify it when creating or altering tables or indexes. For example: `CREATE TABLE my_table (id SERIAL PRIMARY KEY) TABLESPACE space_name;` places 'my_table' in the specified tablespace."
+        },
+        {
+                "title": "How do you manage PostgreSQL connection pooling?",
+                "category": "PostgreSQL",
+                "description": "Use connection pooling for efficient database access.",
+                "tags": "CONNECTION POOLING, PERFORMANCE, DATABASE ACCESS",
+                "paid": "Yes",
+                "answer": "Connection pooling is managed in PostgreSQL using external tools such as `PgBouncer` or `pgpool-II`. These tools maintain a pool of database connections, reducing the overhead of establishing new connections for each request. For example, configure `PgBouncer` by editing its configuration file to set connection limits and pool sizes. Then, direct application connections to `PgBouncer` instead of directly to PostgreSQL."
+        },
+        {
+                "title": "What is the `pg_hba.conf` file and how do you configure it?",
+                "category": "PostgreSQL",
+                "description": "Configure client authentication with pg_hba.conf.",
+                "tags": "pg_hba.conf, AUTHENTICATION, CONFIGURATION",
+                "paid": "Yes",
+                "answer": "`pg_hba.conf` is the PostgreSQL configuration file used to control client authentication, such as specifying which users can connect from which hosts and what authentication methods are required. You edit this file to add or modify authentication rules. For example: `host all all 192.168.1.0/24 md5;` allows connections from the 192.168.1.0/24 network using MD5 password authentication."
+        },
+        {
+                "title": "How do you perform a database backup using `pg_dump`?",
+                "category": "PostgreSQL",
+                "description": "Backup databases with `pg_dump`.",
+                "tags": "pg_dump, BACKUP, DATABASE",
+                "paid": "Yes",
+                "answer": "`pg_dump` is a utility for backing up PostgreSQL databases. It can create SQL scripts or archive files that can be used to restore the database. For example: `pg_dump mydb > mydb_backup.sql;` creates a plain-text SQL backup, and `pg_dump -Fc mydb > mydb_backup.dump;` creates a compressed custom-format backup. To restore, use `pg_restore` for custom-format files or `psql` for SQL scripts."
+        },
+        {
+                "title": "What are the `DISTINCT ON` and `GROUP BY` clauses used for?",
+                "category": "PostgreSQL",
+                "description": "Differentiate between DISTINCT ON and GROUP BY.",
+                "tags": "DISTINCT ON, GROUP BY, SQL",
+                "paid": "Yes",
+                "answer": "`DISTINCT ON` and `GROUP BY` are both used to handle duplicate data, but in different ways. `DISTINCT ON (expression)` returns the first row for each unique value of the specified expression. For example: `SELECT DISTINCT ON (column_name) * FROM my_table ORDER BY column_name, other_column;` retrieves the first row per unique `column_name`. `GROUP BY` aggregates rows that have the same values in specified columns, often used with aggregate functions like `SUM` or `COUNT`."
+        },
+        {
+                "title": "How do you perform a rolling update in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage rolling updates to minimize downtime.",
+                "tags": "ROLLING UPDATES, DATABASE MAINTENANCE, SQL",
+                "paid": "Yes",
+                "answer": "A rolling update involves updating a PostgreSQL database schema or application version with minimal downtime. This can be achieved by using techniques such as `pg_upgrade` for major version upgrades or deploying changes incrementally. For example, when updating a schema, first deploy the changes to a staging environment, then apply changes in small batches to production, ensuring compatibility and minimal impact on users."
+        },
+        {
+                "title": "What is PostgreSQL’s approach to concurrency control?",
+                "category": "PostgreSQL",
+                "description": "Understand PostgreSQL’s concurrency control mechanisms.",
+                "tags": "CONCURRENCY CONTROL, MVCC, TRANSACTIONS",
+                "paid": "Yes",
+                "answer": "PostgreSQL uses Multi-Version Concurrency Control (MVCC) to handle concurrent transactions. MVCC allows transactions to work with snapshots of the database, minimizing locking conflicts. Each transaction operates with a consistent view of the data as of the start of the transaction. For example, when a transaction updates a row, PostgreSQL creates a new version of the row, ensuring other transactions see the previous version until they complete."
+        },
+        {
+                "title": "How do you handle different time zones in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage time zones in PostgreSQL.",
+                "tags": "TIME ZONES, DATETIME, SQL",
+                "paid": "Yes",
+                "answer": "PostgreSQL supports time zone handling using the `TIMESTAMP WITH TIME ZONE` type, which stores time with time zone information. You can convert between time zones using the `AT TIME ZONE` construct. For example: `SELECT event_time AT TIME ZONE 'UTC' AT TIME ZONE 'America/New_York' FROM events;` converts a timestamp from UTC to Eastern Time. Use `SET TIME ZONE 'zone';` to adjust the session time zone for various operations."
+        },
+        {
+                "title": "How do you use PostgreSQL's `ALTER TABLE` command?",
+                "category": "PostgreSQL",
+                "description": "Modify table structures using ALTER TABLE.",
+                "tags": "ALTER TABLE, TABLE STRUCTURE, SQL",
+                "paid": "Yes",
+                "answer": "The `ALTER TABLE` command in PostgreSQL is used to modify the structure of an existing table. You can add, drop, or rename columns, and change column data types. For example, to add a new column: `ALTER TABLE my_table ADD COLUMN new_column INTEGER;`. To rename a column: `ALTER TABLE my_table RENAME COLUMN old_column TO new_column;`. Use this command to manage schema changes efficiently."
+        },
+        {
+                "title": "What are PostgreSQL roles and how do you manage them?",
+                "category": "PostgreSQL",
+                "description": "Manage user roles and permissions.",
+                "tags": "ROLES, USER MANAGEMENT, SECURITY",
+                "paid": "Yes",
+                "answer": "In PostgreSQL, roles are used to manage user permissions and access control. Roles can be granted permissions to perform various actions on database objects. Create a role using `CREATE ROLE role_name;`. Grant permissions with `GRANT privilege ON object TO role_name;`. For example: `CREATE ROLE read_only; GRANT SELECT ON ALL TABLES IN SCHEMA public TO read_only;` manages access control efficiently."
+        },
+        {
+                "title": "How do you implement PostgreSQL's `EXCLUDE` constraint?",
+                "category": "PostgreSQL",
+                "description": "Use EXCLUDE constraint for complex uniqueness rules.",
+                "tags": "EXCLUDE CONSTRAINT, DATA INTEGRITY, SQL",
+                "paid": "Yes",
+                "answer": "The `EXCLUDE` constraint in PostgreSQL enforces unique constraints on a set of columns with specific conditions, which is useful for complex data integrity rules. For example, to ensure that no two rows overlap in a time period: `CREATE TABLE events (event_id SERIAL PRIMARY KEY, start_time TIMESTAMP, end_time TIMESTAMP, EXCLUDE USING GIST (daterange(start_time, end_time, '[]') WITH &&));` ensures no overlapping events."
+        },
+        {
+                "title": "What is the difference between `TRUNCATE` and `DELETE`?",
+                "category": "PostgreSQL",
+                "description": "Differentiate between TRUNCATE and DELETE commands.",
+                "tags": "TRUNCATE, DELETE, DATA REMOVAL",
+                "paid": "Yes",
+                "answer": "`TRUNCATE` and `DELETE` are used to remove data from tables, but they work differently. `TRUNCATE` quickly removes all rows from a table without logging individual row deletions, and it cannot be rolled back if not used within a transaction. For example: `TRUNCATE TABLE my_table;`. `DELETE` removes rows one by one and can be rolled back, allowing for conditional deletions: `DELETE FROM my_table WHERE condition;`."
+        },
+        {
+                "title": "How do you use PostgreSQL's `JOIN` operations?",
+                "category": "PostgreSQL",
+                "description": "Perform JOIN operations to combine tables.",
+                "tags": "JOIN, SQL, DATA COMBINATION",
+                "paid": "Yes",
+                "answer": "JOIN operations in PostgreSQL combine rows from two or more tables based on related columns. Common types include `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`. For example, an `INNER JOIN` retrieves rows with matching values in both tables: `SELECT a.id, b.name FROM table_a a INNER JOIN table_b b ON a.id = b.id;` This combines data from `table_a` and `table_b` where the `id` matches."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `CREATE INDEX` command?",
+                "category": "PostgreSQL",
+                "description": "Create indexes to improve query performance.",
+                "tags": "CREATE INDEX, INDEXING, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "The `CREATE INDEX` command in PostgreSQL improves query performance by creating an index on a table column. For example, to create an index on the `email` column: `CREATE INDEX idx_email ON users(email);`. Indexes speed up search queries but can slow down insert, update, and delete operations. Use them strategically to balance performance benefits against potential overhead."
+        },
+        {
+                "title": "What is the role of `pg_dump` and `pg_restore`?",
+                "category": "PostgreSQL",
+                "description": "Backup and restore PostgreSQL databases.",
+                "tags": "pg_dump, pg_restore, BACKUP AND RESTORE",
+                "paid": "Yes",
+                "answer": "`pg_dump` is used to back up PostgreSQL databases, creating a SQL file or archive that contains database schema and data. `pg_restore` is used to restore a database from a backup created by `pg_dump`. For example, `pg_dump mydb > mydb_backup.sql` creates a backup, and `pg_restore -d newdb mydb_backup.dump` restores it to `newdb`. These tools are essential for database backup and recovery."
+        },
+        {
+                "title": "How do you implement database constraints in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Enforce data integrity with constraints.",
+                "tags": "CONSTRAINTS, DATA INTEGRITY, SQL",
+                "paid": "Yes",
+                "answer": "Database constraints in PostgreSQL enforce rules to maintain data integrity. Common constraints include `PRIMARY KEY` (unique identifier for rows), `FOREIGN KEY` (enforces referential integrity), `UNIQUE` (ensures unique values), and `CHECK` (enforces specific conditions). For example: `ALTER TABLE my_table ADD CONSTRAINT pk_id PRIMARY KEY (id);` ensures each `id` is unique in `my_table`."
+        },
+        {
+                "title": "How can you manage PostgreSQL database replication?",
+                "category": "PostgreSQL",
+                "description": "Set up replication for data redundancy.",
+                "tags": "REPLICATION, DATABASE REDUNDANCY, POSTGRESQL",
+                "paid": "Yes",
+                "answer": "PostgreSQL supports both streaming replication and logical replication. Streaming replication involves a primary server and one or more standby servers that replicate data changes in real-time. Set up streaming replication by configuring `postgresql.conf` and `pg_hba.conf` on both primary and standby servers, and then use `pg_basebackup` to initialize the standby server. Logical replication allows for more granular control and replication of specific tables or databases."
+        },
+        {
+                "title": "What is the purpose of the `pg_stat_statements` module?",
+                "category": "PostgreSQL",
+                "description": "Monitor query performance with pg_stat_statements.",
+                "tags": "pg_stat_statements, QUERY PERFORMANCE, MONITORING",
+                "paid": "Yes",
+                "answer": "`pg_stat_statements` is a PostgreSQL extension that tracks execution statistics for all SQL statements executed by the server. It provides insights into query performance, such as execution frequency and average execution time. Enable it with `CREATE EXTENSION pg_stat_statements;`, and use `SELECT * FROM pg_stat_statements;` to analyze query performance and identify slow or frequently executed queries."
+        },
+        {
+                "title": "How do you handle schema migrations in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage schema changes over time.",
+                "tags": "SCHEMA MIGRATIONS, DATABASE CHANGES, SQL",
+                "paid": "Yes",
+                "answer": "Schema migrations in PostgreSQL involve making changes to the database schema in a controlled manner. Use migration tools like Flyway or Liquibase to automate schema changes and keep track of versions. These tools apply changes incrementally and ensure that the database schema is consistent across different environments. For example, with Flyway, you write migration scripts in SQL or Java, and Flyway applies these changes when you run its command-line tool."
+        },
+        {
+                "title": "What are PostgreSQL’s JSON functions and operators?",
+                "category": "PostgreSQL",
+                "description": "Work with JSON data using built-in functions and operators.",
+                "tags": "JSON, FUNCTIONS, OPERATORS",
+                "paid": "Yes",
+                "answer": "PostgreSQL provides several functions and operators for working with JSON data. For instance, `jsonb_set` updates a JSONB value, `->` extracts a JSON object field, and `->>` retrieves a JSON object field as text. For example: `SELECT data->'key' FROM my_table WHERE data->>'name' = 'John';` retrieves values from a JSON column based on specific criteria. These tools enable efficient querying and manipulation of JSON data."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_stat_activity` for performance monitoring?",
+                "category": "PostgreSQL",
+                "description": "Monitor active database sessions with pg_stat_activity.",
+                "tags": "pg_stat_activity, PERFORMANCE MONITORING, SQL",
+                "paid": "Yes",
+                "answer": "`pg_stat_activity` is a system view that provides information about the current state of database connections. It includes details such as the query being executed, connection state, and the time of the query. Query `SELECT * FROM pg_stat_activity;` to view this information. Use this view to monitor active sessions, detect long-running queries, and diagnose performance issues."
+        },
+        {
+                "title": "What is PostgreSQL’s `EXCLUDE` constraint and how is it used?",
+                "category": "PostgreSQL",
+                "description": "Enforce complex uniqueness constraints with EXCLUDE.",
+                "tags": "EXCLUDE CONSTRAINT, DATA INTEGRITY, SQL",
+                "paid": "Yes",
+                "answer": "`EXCLUDE` constraints in PostgreSQL are used to enforce complex uniqueness conditions involving multiple columns or conditions. For example, to ensure that no two rows overlap in a time period: `CREATE TABLE events (event_id SERIAL PRIMARY KEY, start_time TIMESTAMP, end_time TIMESTAMP, EXCLUDE USING GIST (daterange(start_time, end_time, '[]') WITH &&));` ensures that no two events overlap in the specified date range."
+        },
+        {
+                "title": "How do you implement PostgreSQL’s foreign key constraints?",
+                "category": "PostgreSQL",
+                "description": "Use foreign key constraints to enforce referential integrity.",
+                "tags": "FOREIGN KEY, CONSTRAINTS, DATA INTEGRITY",
+                "paid": "Yes",
+                "answer": "Foreign key constraints enforce referential integrity by ensuring that values in one table correspond to values in another table. Create a foreign key constraint using `ALTER TABLE` or during table creation. For example: `CREATE TABLE orders (order_id SERIAL PRIMARY KEY, customer_id INTEGER REFERENCES customers(id));` ensures that every `customer_id` in `orders` must exist in the `customers` table."
+        },
+        {
+                "title": "What is the purpose of the `pg_trgm` extension in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Use pg_trgm for trigram-based text search.",
+                "tags": "pg_trgm, TEXT SEARCH, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "The `pg_trgm` extension in PostgreSQL enables trigram-based text search, allowing for fast similarity searches and fuzzy matching. It creates indexes that speed up searches for similar text. To use it, first install the extension with `CREATE EXTENSION pg_trgm;`. Then, create a trigram index: `CREATE INDEX trgm_idx ON my_table USING gin (my_column gin_trgm_ops);`. This is useful for finding approximate matches in text fields."
+        },
+        {
+                "title": "How do you use the `CLUSTER` command in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Optimize table performance with CLUSTER.",
+                "tags": "CLUSTER, PERFORMANCE, INDEXES",
+                "paid": "Yes",
+                "answer": "The `CLUSTER` command in PostgreSQL physically reorganizes a table’s data based on the order of an index, which can improve query performance by reducing the number of disk I/O operations. For example: `CLUSTER my_table USING my_index;` reorders `my_table` based on `my_index`. This is especially useful for large tables where queries often access data in a particular order."
+        },
+        {
+                "title": "What is the `pg_repack` extension and how is it used?",
+                "category": "PostgreSQL",
+                "description": "Repack tables and indexes with pg_repack.",
+                "tags": "pg_repack, REPACK, MAINTENANCE",
+                "paid": "Yes",
+                "answer": "`pg_repack` is an extension used to reclaim wasted space and improve performance by reorganizing tables and indexes. It is useful for reducing table bloat and improving query performance. Install `pg_repack` and use commands like `repack table my_table;` to reorganize a table. For example, `repack index my_index;` reorganizes the index to reduce fragmentation and improve efficiency."
+        },
+        {
+                "title": "How do you use `ROW_NUMBER()` window function in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Apply ROW_NUMBER() for row numbering.",
+                "tags": "ROW_NUMBER, WINDOW FUNCTIONS, SQL",
+                "paid": "Yes",
+                "answer": "The `ROW_NUMBER()` window function assigns a unique sequential integer to rows within a partition of a result set, starting at 1 for each partition. For example: `SELECT name, ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rank FROM employees;` assigns a rank to employees within each department based on their salary, with the highest salary getting a rank of 1."
+        },
+        {
+                "title": "How do you perform data transformations with PostgreSQL’s `CASE` statement?",
+                "category": "PostgreSQL",
+                "description": "Use CASE for conditional logic in queries.",
+                "tags": "CASE STATEMENT, CONDITIONAL LOGIC, SQL",
+                "paid": "Yes",
+                "answer": "The `CASE` statement in PostgreSQL is used for conditional logic within queries. It allows you to perform different actions based on conditions. For example: `SELECT name, CASE WHEN salary > 50000 THEN 'High' WHEN salary BETWEEN 30000 AND 50000 THEN 'Medium' ELSE 'Low' END AS salary_category FROM employees;` categorizes employees' salaries into 'High', 'Medium', or 'Low' based on their salary values."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `LATERAL` join?",
+                "category": "PostgreSQL",
+                "description": "Apply LATERAL joins for correlated subqueries.",
+                "tags": "LATERAL JOIN, CORRELATED SUBQUERIES, SQL",
+                "paid": "Yes",
+                "answer": "The `LATERAL` join in PostgreSQL allows you to use the output of one table expression as input for another. This is useful for running correlated subqueries. For example: `SELECT a.id, b.value FROM table_a a, LATERAL (SELECT * FROM table_b WHERE table_b.a_id = a.id) b;` uses `LATERAL` to correlate rows from `table_b` with `table_a`."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_user_tables` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor table statistics with pg_stat_user_tables.",
+                "tags": "pg_stat_user_tables, TABLE STATISTICS, MONITORING",
+                "paid": "Yes",
+                "answer": "`pg_stat_user_tables` is a system view that provides statistics about user tables, such as the number of sequential and index scans, tuple inserts, updates, and deletes. For example, `SELECT * FROM pg_stat_user_tables;` provides data on table activity, helping you understand how tables are being used and identify performance issues."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_partman` extension for partition management?",
+                "category": "PostgreSQL",
+                "description": "Manage table partitions with pg_partman.",
+                "tags": "pg_partman, PARTITION MANAGEMENT, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_partman` is an extension for managing table partitioning in PostgreSQL. It simplifies the creation and maintenance of partitioned tables. After installing `pg_partman`, you can use it to automate partition creation and management. For example: `SELECT partman.create_parent('public.my_table', 'my_date_column', 'partman', 'monthly');` creates monthly partitions for `my_table` based on `my_date_column`."
+        },
+        {
+                "title": "What is the `pgcrypto` extension and how do you use it?",
+                "category": "PostgreSQL",
+                "description": "Use pgcrypto for encryption and cryptographic functions.",
+                "tags": "pgcrypto, ENCRYPTION, CRYPTOGRAPHY",
+                "paid": "Yes",
+                "answer": "`pgcrypto` is an extension that provides cryptographic functions for encryption, decryption, and hashing. Use it to secure sensitive data. For example, to encrypt data: `SELECT pgp_sym_encrypt('mydata', 'mykey');` and to decrypt it: `SELECT pgp_sym_decrypt(encrypted_data, 'mykey');`. Install `pgcrypto` with `CREATE EXTENSION pgcrypto;` and utilize functions like `pgp_sym_encrypt` for secure data handling."
+        },
+        {
+                "title": "How do you perform multi-table updates in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Update multiple tables in a single transaction.",
+                "tags": "MULTI-TABLE UPDATE, TRANSACTIONS, SQL",
+                "paid": "Yes",
+                "answer": "In PostgreSQL, you can update multiple tables within a single transaction to ensure atomicity and consistency. Begin a transaction with `BEGIN;`, perform updates, and then commit the transaction. For example: `BEGIN; UPDATE table1 SET column = value WHERE condition; UPDATE table2 SET column = value WHERE condition; COMMIT;` ensures both updates are applied together or not at all."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_stat_statements` for query analysis?",
+                "category": "PostgreSQL",
+                "description": "Analyze query performance with pg_stat_statements.",
+                "tags": "pg_stat_statements, QUERY ANALYSIS, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "`pg_stat_statements` is a PostgreSQL extension that collects performance statistics about SQL statements executed by the server. After enabling it with `CREATE EXTENSION pg_stat_statements;`, you can query it to analyze query performance: `SELECT query, total_time, calls FROM pg_stat_statements ORDER BY total_time DESC;` helps identify slow queries and optimize them."
+        },
+        {
+                "title": "What is the role of `pg_logical` extension in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Implement logical replication with pg_logical.",
+                "tags": "pg_logical, LOGICAL REPLICATION, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_logical` is an extension for logical replication in PostgreSQL, enabling the replication of changes at the level of individual database objects. It allows for selective replication of tables and schemas. Install `pg_logical` with `CREATE EXTENSION pg_logical;`, set up a logical replication slot with `SELECT * FROM pg_create_logical_replication_slot('my_slot', 'pgoutput');`, and configure publications and subscriptions to replicate data."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `jsonb` data type?",
+                "category": "PostgreSQL",
+                "description": "Store and query JSON data efficiently with jsonb.",
+                "tags": "jsonb, DATA TYPES, JSON",
+                "paid": "Yes",
+                "answer": "`jsonb` is a binary JSON data type in PostgreSQL that allows for efficient storage and querying of JSON data. Unlike `json`, `jsonb` supports indexing and offers better performance for read operations. For example: `CREATE TABLE my_table (data jsonb); INSERT INTO my_table (data) VALUES ('{\"key\": \"value\"}');`. Use operators like `->` and `->>` to query JSONB data."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_hint_plan` extension and how does it work?",
+                "category": "PostgreSQL",
+                "description": "Influence query planning with pg_hint_plan.",
+                "tags": "pg_hint_plan, QUERY OPTIMIZATION, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_hint_plan` is an extension that allows you to influence PostgreSQL’s query planner by providing execution hints. This can be useful for optimizing queries that are not well handled by the default planner. After installing `pg_hint_plan` with `CREATE EXTENSION pg_hint_plan;`, use hints in your queries like `SELECT /*+ IndexScan(table1) */ * FROM table1;` to guide the planner."
+        },
+        {
+                "title": "How can you implement row-level security in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Apply row-level security policies to control access.",
+                "tags": "ROW-LEVEL SECURITY, SECURITY, POLICIES",
+                "paid": "Yes",
+                "answer": "Row-level security (RLS) in PostgreSQL allows you to control access to rows in a table based on the user executing the query. Enable RLS with `ALTER TABLE my_table ENABLE ROW LEVEL SECURITY;`, then define policies using `CREATE POLICY policy_name ON my_table FOR SELECT USING (condition);`. For example, `CREATE POLICY employee_policy ON employees FOR SELECT USING (department = current_setting('my.department'));` restricts access based on department."
+        },
+        {
+                "title": "What is the `pg_stats` view used for?",
+                "category": "PostgreSQL",
+                "description": "Retrieve statistics about table columns.",
+                "tags": "pg_stats, STATISTICS, TABLE COLUMNS",
+                "paid": "Yes",
+                "answer": "`pg_stats` is a system view that provides statistical information about table columns, which helps the query planner make informed decisions. For example, `SELECT * FROM pg_stats WHERE tablename = 'my_table';` retrieves statistics like the average length of column values and the most common values, which are used for optimizing query performance."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `ALTER DATABASE` command?",
+                "category": "PostgreSQL",
+                "description": "Change database settings with ALTER DATABASE.",
+                "tags": "ALTER DATABASE, DATABASE MANAGEMENT, SQL",
+                "paid": "Yes",
+                "answer": "The `ALTER DATABASE` command in PostgreSQL is used to modify database properties. For example, to rename a database: `ALTER DATABASE old_db_name RENAME TO new_db_name;`. You can also change settings like the default tablespace: `ALTER DATABASE mydb SET TABLESPACE new_tablespace;`. These modifications help manage database configuration and optimization."
+        },
+        {
+                "title": "What is the purpose of PostgreSQL’s `pg_prewarm` extension?",
+                "category": "PostgreSQL",
+                "description": "Preload database objects into cache with pg_prewarm.",
+                "tags": "pg_prewarm, CACHE, PERFORMANCE",
+                "paid": "Yes",
+                "answer": "`pg_prewarm` is an extension used to preload database objects into the PostgreSQL shared buffer cache, which can improve performance by reducing disk I/O on startup. Install the extension with `CREATE EXTENSION pg_prewarm;`, then use commands like `SELECT pg_prewarm('my_table');` to preload specific tables or indexes into memory."
+        },
+        {
+                "title": "How do you perform full-text search in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Implement full-text search using PostgreSQL’s features.",
+                "tags": "FULL-TEXT SEARCH, TEXT SEARCH, SQL",
+                "paid": "Yes",
+                "answer": "PostgreSQL’s full-text search feature enables efficient searching of text documents. Use `to_tsvector` to convert text to a searchable vector and `to_tsquery` to create a query. For example: `SELECT * FROM documents WHERE to_tsvector('english', content) @@ to_tsquery('english', 'search & term');` searches for documents containing the terms 'search' and 'term'. Index the tsvector column for improved performance."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_user_indexes` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor index usage statistics with pg_stat_user_indexes.",
+                "tags": "pg_stat_user_indexes, INDEX STATISTICS, MONITORING",
+                "paid": "Yes",
+                "answer": "`pg_stat_user_indexes` is a system view that provides statistics on index usage for user tables, including index scans, tuple reads, and more. For example, `SELECT * FROM pg_stat_user_indexes WHERE relname = 'my_table';` provides insights into index efficiency and usage patterns, helping optimize query performance."
+        },
+        {
+                "title": "How do you use the `pg_dumpall` utility in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Back up all databases using pg_dumpall.",
+                "tags": "pg_dumpall, BACKUP, DATABASES",
+                "paid": "Yes",
+                "answer": "`pg_dumpall` is a utility for backing up all databases in a PostgreSQL cluster. It creates a single dump file containing the schema and data for all databases. For example: `pg_dumpall > all_databases.sql` creates a backup file. Restore with `psql < all_databases.sql`. This tool is useful for comprehensive backups and migrations."
+        },
+        {
+                "title": "What is the `pg_trgm` extension and how do you use it?",
+                "category": "PostgreSQL",
+                "description": "Use pg_trgm for similarity searches with trigrams.",
+                "tags": "pg_trgm, SIMILARITY SEARCH, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_trgm` is an extension for PostgreSQL that allows for trigram-based text search, which supports similarity searches and fuzzy matching. Install it with `CREATE EXTENSION pg_trgm;` and use trigrams to index text fields. For example, `CREATE INDEX trgm_idx ON my_table USING gin (text_column gin_trgm_ops);` helps in finding approximate text matches efficiently."
+        },
+        {
+                "title": "How do you handle large object management in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage large objects using PostgreSQL’s features.",
+                "tags": "LARGE OBJECTS, BLOB, MANAGEMENT",
+                "paid": "Yes",
+                "answer": "PostgreSQL handles large objects (BLOBs) through its large object interface. You can store large objects such as files using the `lo` module. Use functions like `lo_create`, `lo_open`, `lo_write`, and `lo_read` to manage large objects. For example, `SELECT lo_create(0);` creates a new large object, and `SELECT lo_write(lo_fd, 'large data');` writes data to it."
+        },
+        {
+                "title": "What is PostgreSQL’s `pgstattuple` extension used for?",
+                "category": "PostgreSQL",
+                "description": "Analyze table and index bloat with pgstattuple.",
+                "tags": "pgstattuple, TABLE BLOAT, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pgstattuple` is an extension used to analyze and measure table and index bloat in PostgreSQL. It provides insights into wasted space and helps optimize performance. Install it with `CREATE EXTENSION pgstattuple;`. Use commands like `SELECT * FROM pgstattuple('my_table');` to get information about the space usage of a table and identify potential bloat issues."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `ON CONFLICT` clause?",
+                "category": "PostgreSQL",
+                "description": "Handle conflicts during data insertion with ON CONFLICT.",
+                "tags": "ON CONFLICT, UPSERT, SQL",
+                "paid": "Yes",
+                "answer": "The `ON CONFLICT` clause in PostgreSQL is used to handle situations where a conflict arises during an `INSERT` operation, typically due to a unique constraint violation. For example, `INSERT INTO my_table (id, name) VALUES (1, 'John') ON CONFLICT (id) DO UPDATE SET name = 'John';` will update the `name` if a conflict occurs on the `id` column, otherwise it inserts the new row."
+        },
+        {
+                "title": "What is PostgreSQL’s `pgbench` tool used for?",
+                "category": "PostgreSQL",
+                "description": "Perform benchmarking with the pgbench tool.",
+                "tags": "pgbench, BENCHMARKING, TOOLS",
+                "paid": "Yes",
+                "answer": "`pgbench` is a benchmarking tool included with PostgreSQL that measures the performance of your database. It simulates a variety of workloads and reports on the performance metrics. For example, `pgbench -i mydb` initializes a benchmark, and `pgbench -c 10 -j 2 -T 60 mydb` runs a test with 10 clients for 60 seconds. It helps in assessing the impact of changes or tuning."
+        },
+        {
+                "title": "How do you manage table inheritance in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Implement table inheritance for schema design.",
+                "tags": "TABLE INHERITANCE, SCHEMA DESIGN, SQL",
+                "paid": "Yes",
+                "answer": "Table inheritance in PostgreSQL allows a child table to inherit columns from a parent table. This is useful for modeling hierarchical data. For example, `CREATE TABLE parent_table (id SERIAL PRIMARY KEY, name TEXT); CREATE TABLE child_table (specific_column TEXT) INHERITS (parent_table);` makes `child_table` inherit all columns from `parent_table`. Queries on `parent_table` include rows from `child_table` unless restricted."
+        },
+        {
+                "title": "What is PostgreSQL’s `pgAdmin` tool and what are its uses?",
+                "category": "PostgreSQL",
+                "description": "Manage and administer PostgreSQL databases with pgAdmin.",
+                "tags": "pgAdmin, DATABASE MANAGEMENT, TOOLS",
+                "paid": "Yes",
+                "answer": "`pgAdmin` is a popular graphical tool for managing PostgreSQL databases. It provides a web-based interface for database administration tasks such as running queries, managing schemas, and monitoring database performance. You can use it to execute SQL commands, view database objects, and manage user roles. Install `pgAdmin` to simplify complex database management tasks and improve productivity."
+        },
+        {
+                "title": "How do you perform partitioned table management in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Manage partitions to optimize large tables.",
+                "tags": "TABLE PARTITIONING, MANAGEMENT, SQL",
+                "paid": "Yes",
+                "answer": "PostgreSQL allows you to partition large tables to improve performance and manageability. Create partitions using `CREATE TABLE` with `PARTITION BY` clause, and manage them using `ALTER TABLE`. For example: `CREATE TABLE my_table (id SERIAL, data TEXT) PARTITION BY RANGE (id); CREATE TABLE my_table_1 PARTITION OF my_table FOR VALUES FROM (1) TO (1000);`. This organizes data into partitions based on specified criteria."
+        },
+        {
+                "title": "What is the role of `pg_stat_activity` view in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Monitor current database activities with pg_stat_activity.",
+                "tags": "pg_stat_activity, ACTIVITY MONITORING, VIEW",
+                "paid": "Yes",
+                "answer": "`pg_stat_activity` is a system view that shows information about the current activity of all database sessions, including running queries, their states, and session details. For example, `SELECT * FROM pg_stat_activity;` displays data on active queries, helping in diagnosing performance issues and monitoring database usage in real-time."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_settings` view?",
+                "category": "PostgreSQL",
+                "description": "View and modify database configuration settings with pg_settings.",
+                "tags": "pg_settings, CONFIGURATION, MONITORING",
+                "paid": "Yes",
+                "answer": "`pg_settings` is a system view that provides information about PostgreSQL configuration settings, including their current values and allowable ranges. For example, `SELECT name, setting, unit FROM pg_settings;` retrieves configuration details. Modify settings using `ALTER SYSTEM SET setting_name = 'value';` and then reload with `SELECT pg_reload_conf();` to apply changes."
+        },
+        {
+                "title": "What is the purpose of PostgreSQL’s `pg_partman` extension?",
+                "category": "PostgreSQL",
+                "description": "Automate partition management with pg_partman.",
+                "tags": "pg_partman, PARTITION MANAGEMENT, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_partman` is an extension that automates the creation and management of table partitions in PostgreSQL. It simplifies partitioning large tables by automating partition creation and maintenance tasks. For example: `SELECT partman.create_parent('public.my_table', 'my_date_column', 'partman', 'daily');` creates daily partitions based on `my_date_column`. This helps manage large datasets efficiently."
+        },
+        {
+                "title": "How do you use the `pg_stat_statements` extension to analyze queries?",
+                "category": "PostgreSQL",
+                "description": "Analyze query performance using pg_stat_statements.",
+                "tags": "pg_stat_statements, QUERY ANALYSIS, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_stat_statements` is an extension for tracking and analyzing query performance by recording statistics about SQL statements executed. Install it with `CREATE EXTENSION pg_stat_statements;`. Use `SELECT query, total_time, calls FROM pg_stat_statements ORDER BY total_time DESC;` to identify slow queries and optimize performance."
+        },
+        {
+                "title": "How do you configure PostgreSQL for high availability?",
+                "category": "PostgreSQL",
+                "description": "Set up PostgreSQL replication for high availability.",
+                "tags": "HIGH AVAILABILITY, REPLICATION, CONFIGURATION",
+                "paid": "Yes",
+                "answer": "To configure PostgreSQL for high availability, set up streaming replication. Configure the primary server by enabling `wal_level = replica`, setting up `archive_mode` and `archive_command`, and configuring `max_wal_senders`. On the standby server, use `pg_basebackup` to copy data from the primary server and set up `recovery.conf` to specify replication parameters. This ensures that changes on the primary are replicated to the standby."
+        },
+        {
+                "title": "How do you manage user roles and permissions in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Control access with roles and permissions in PostgreSQL.",
+                "tags": "USER ROLES, PERMISSIONS, SECURITY",
+                "paid": "Yes",
+                "answer": "In PostgreSQL, manage user roles and permissions with `CREATE ROLE`, `ALTER ROLE`, and `DROP ROLE` commands. Grant permissions using `GRANT` and revoke with `REVOKE`. For example, `CREATE ROLE read_only; GRANT SELECT ON ALL TABLES IN SCHEMA public TO read_only;` creates a role and grants read-only access to all tables. This helps in controlling access and managing database security."
+        },
+        {
+                "title": "What is the `pg_cron` extension and how is it used?",
+                "category": "PostgreSQL",
+                "description": "Schedule tasks within PostgreSQL using pg_cron.",
+                "tags": "pg_cron, SCHEDULING, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_cron` is an extension for scheduling jobs and tasks within PostgreSQL using a cron-like syntax. Install it with `CREATE EXTENSION pg_cron;` and schedule tasks with commands like `SELECT cron.schedule('0 3 * * *', 'VACUUM ANALYZE my_table;');`. This schedules a daily vacuum and analyze operation at 3 AM, automating routine database maintenance tasks."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_repack` extension for table maintenance?",
+                "category": "PostgreSQL",
+                "description": "Repack tables to reclaim space and optimize performance.",
+                "tags": "pg_repack, TABLE MAINTENANCE, EXTENSIONS",
+                "paid": "Yes",
+                "answer": "`pg_repack` is an extension used for reorganizing tables and indexes to reclaim wasted space and optimize performance. Install it with `CREATE EXTENSION pg_repack;`. Use commands like `repack table my_table;` to reorganize a table or `repack index my_index;` to rebuild an index. This helps in reducing table bloat and improving query performance."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_bgwriter` view and how is it used?",
+                "category": "PostgreSQL",
+                "description": "Monitor background writer statistics with pg_stat_bgwriter.",
+                "tags": "pg_stat_bgwriter, BACKGROUND WRITER, STATISTICS",
+                "paid": "Yes",
+                "answer": "`pg_stat_bgwriter` is a system view that provides statistics about the PostgreSQL background writer process, which is responsible for writing dirty pages from the buffer cache to disk. For example, `SELECT * FROM pg_stat_bgwriter;` shows metrics like the number of buffers written and the number of buffers allocated. This helps in monitoring and tuning PostgreSQL’s write operations."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_hba.conf` file for access control?",
+                "category": "PostgreSQL",
+                "description": "Control client authentication with pg_hba.conf.",
+                "tags": "pg_hba.conf, ACCESS CONTROL, CONFIGURATION",
+                "paid": "Yes",
+                "answer": "`pg_hba.conf` is the configuration file used to control client authentication in PostgreSQL. It defines which users can connect from which hosts and which authentication methods to use. For example, adding `host all all 192.168.1.0/24 md5` allows all users to connect from the 192.168.1.0/24 network using MD5 password authentication. Modify this file to configure access control policies."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_archiver` view used for?",
+                "category": "PostgreSQL",
+                "description": "Monitor WAL archiving status with pg_stat_archiver.",
+                "tags": "pg_stat_archiver, WAL ARCHIVING, STATISTICS",
+                "paid": "Yes",
+                "answer": "`pg_stat_archiver` is a system view that provides statistics about the Write-Ahead Logging (WAL) archiving process in PostgreSQL. It shows information such as the number of WAL files successfully archived and the number of failed attempts. For example, `SELECT * FROM pg_stat_archiver;` provides details on the current state of WAL archiving, helping monitor and troubleshoot archival processes."
+        },
+        {
+                "title": "How do you perform an index rebuild in PostgreSQL?",
+                "category": "PostgreSQL",
+                "description": "Rebuild indexes to improve performance and reclaim space.",
+                "tags": "INDEX REBUILD, PERFORMANCE, SQL",
+                "paid": "Yes",
+                "answer": "Rebuilding an index in PostgreSQL can help improve performance and reclaim disk space. Use the `REINDEX` command to rebuild an index. For example: `REINDEX INDEX my_index;` rebuilds the specified index, or `REINDEX TABLE my_table;` rebuilds all indexes on the table. This can be particularly useful after heavy modifications or to address index bloat."
+        },
+        {
+                "title": "What are PostgreSQL’s `pg_log` files and how are they used?",
+                "category": "PostgreSQL",
+                "description": "Manage and analyze PostgreSQL log files.",
+                "tags": "pg_log, LOGGING, FILE MANAGEMENT",
+                "paid": "Yes",
+                "answer": "`pg_log` files are PostgreSQL’s log files where the database records various events and errors. These logs help in troubleshooting and monitoring database performance. Configure logging in `postgresql.conf` with parameters like `logging_collector` and `log_directory`. For example, `log_directory = 'pg_log'` sets the log output location. Analyze these logs to identify issues and optimize database operations."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_wal_receiver` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor the WAL receiver status with pg_stat_wal_receiver.",
+                "tags": "pg_stat_wal_receiver, WAL RECEIVER, STATISTICS",
+                "paid": "Yes",
+                "answer": "`pg_stat_wal_receiver` is a system view that provides information about the status of the Write-Ahead Logging (WAL) receiver process on the standby server. It includes details such as the current WAL sender’s process ID and the latest received WAL location. For example, `SELECT * FROM pg_stat_wal_receiver;` helps monitor replication lag and the health of the replication process."
+        },
+        {
+                "title": "How do you use PostgreSQL’s `pg_stat_replication` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor replication status with pg_stat_replication.",
+                "tags": "pg_stat_replication, REPLICATION, STATISTICS",
+                "paid": "Yes",
+                "answer": "`pg_stat_replication` is a system view that provides information about the replication status of connected standby servers. It includes details such as the replication status, the location of the last received and flushed WAL, and lag. For example, `SELECT * FROM pg_stat_replication;` helps in monitoring the health and performance of the replication process."
+        },
+        {
+                "title": "What is PostgreSQL’s `pg_stat_bgwriter` view used for?",
+                "category": "PostgreSQL",
+                "description": "Monitor background writer statistics with pg_stat_bgwriter.",
+                "tags": "pg_stat_bgwriter, BACKGROUND WRITER, STATISTICS",
+                "paid": "Yes",
+                "answer": "`pg_stat_bgwriter` is a system view that shows statistics about the background writer process, which writes dirty pages from the buffer cache to disk. For example, `SELECT * FROM pg_stat_bgwriter;` provides metrics such as the number of buffers written and the number of buffers allocated, which helps in monitoring and tuning the performance of PostgreSQL’s write operations."
+        },
+        {
+                "title": "How do you handle PostgreSQL data backups and restores?",
+                "category": "PostgreSQL",
+                "description": "Use pg_dump and pg_restore for database backups and restores.",
+                "tags": "BACKUPS, RESTORES, TOOLS",
+                "paid": "Yes",
+                "answer": "PostgreSQL provides `pg_dump` for creating backups and `pg_restore` for restoring them. Use `pg_dump` to back up a database: `pg_dump mydb > mydb_backup.sql`. Restore the backup using `psql`: `psql mydb < mydb_backup.sql`. For large databases, consider using `pg_dump` with custom formats and compression: `pg_dump -Fc mydb > mydb_backup.dump` and restore with `pg_restore mydb_backup.dump`."
+        },
+        {
+                "title": "What is the purpose of PostgreSQL’s `pg_stat_database` view?",
+                "category": "PostgreSQL",
+                "description": "Monitor database-wide statistics with pg_stat_database.",
+                "tags": "pg_stat_database, DATABASE STATISTICS, MONITORING",
+                "paid": "Yes",
+                "answer": "`pg_stat_database` is a system view that provides database-wide statistics such as query counts, transaction counts, and I/O statistics. For example, `SELECT * FROM pg_stat_database;` shows metrics like `numbackends`, `xact_commit`, and `xact_rollback`, helping in understanding the overall activity and performance of each database in the cluster."
+        }
+]

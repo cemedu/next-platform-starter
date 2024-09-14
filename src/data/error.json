@@ -1,0 +1,970 @@
+[
+        {
+                "title": "404 Not Found",
+                "category": "Error",
+                "description": "This error occurs when a requested resource could not be found on the server.",
+                "tags": "HTTP,404,Client Error",
+                "paid": "Yes",
+                "answer": "A 404 Not Found error indicates that the server could not find the requested URL. This could be due to a typo in the URL, a moved page, or the page being deleted. To resolve this, check the URL for typos, ensure the page exists, or update the server configuration to handle missing pages properly."
+        },
+        {
+                "title": "500 Internal Server Error",
+                "category": "Error",
+                "description": "A generic error message indicating a problem with the server.",
+                "tags": "HTTP,500,Server Error",
+                "paid": "Yes",
+                "answer": "The 500 Internal Server Error is a general error message indicating that something went wrong on the server. This could be due to misconfigurations, code errors, or server overload. Checking server logs, reviewing recent changes, and debugging code can help identify the specific issue causing this error."
+        },
+        {
+                "title": "403 Forbidden",
+                "category": "Error",
+                "description": "Indicates that the server understands the request but refuses to authorize it.",
+                "tags": "HTTP,403,Client Error",
+                "paid": "Yes",
+                "answer": "A 403 Forbidden error means that the server has understood the request but refuses to authorize it. This can happen due to insufficient permissions, restricted access, or IP blocking. Check server permissions, access control settings, and ensure that authentication is properly configured for the resource."
+        },
+        {
+                "title": "502 Bad Gateway",
+                "category": "Error",
+                "description": "The server, while acting as a gateway or proxy, received an invalid response from the upstream server.",
+                "tags": "HTTP,502,Server Error",
+                "paid": "Yes",
+                "answer": "A 502 Bad Gateway error occurs when a server acting as a gateway or proxy receives an invalid response from an upstream server. This could be due to network issues, server misconfigurations, or the upstream server being down. To fix this, check the upstream server's status, review network configurations, and ensure proper server communication."
+        },
+        {
+                "title": "504 Gateway Timeout",
+                "category": "Error",
+                "description": "The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server.",
+                "tags": "HTTP,504,Server Error",
+                "paid": "Yes",
+                "answer": "A 504 Gateway Timeout error indicates that the server acting as a gateway or proxy did not receive a timely response from the upstream server. This can happen due to server overload, network issues, or a slow upstream server. Increasing timeout settings, checking server load, and improving server response times can help resolve this issue."
+        },
+        {
+                "title": "400 Bad Request",
+                "category": "Error",
+                "description": "The server cannot process the request due to a client error (e.g., malformed request syntax).",
+                "tags": "HTTP,400,Client Error",
+                "paid": "Yes",
+                "answer": "A 400 Bad Request error signifies that the server cannot process the request due to invalid or malformed syntax. This could be due to incorrect query parameters, improper formatting of data, or missing required fields. Validate and sanitize request inputs, and ensure that data is properly formatted before sending it to the server."
+        },
+        {
+                "title": "401 Unauthorized",
+                "category": "Error",
+                "description": "The request requires user authentication.",
+                "tags": "HTTP,401,Client Error",
+                "paid": "Yes",
+                "answer": "A 401 Unauthorized error indicates that authentication is required to access the requested resource. This often happens when valid credentials are not provided or are incorrect. Ensure that the client sends proper authentication credentials, check the authentication mechanism, and verify that the user has permission to access the resource."
+        },
+        {
+                "title": "422 Unprocessable Entity",
+                "category": "Error",
+                "description": "The server understands the content type of the request entity but was unable to process the contained instructions.",
+                "tags": "HTTP,422,Client Error",
+                "paid": "Yes",
+                "answer": "A 422 Unprocessable Entity error occurs when the server understands the request but is unable to process it due to semantic errors in the request. This often happens with validation errors or missing data in forms. Review and correct the request payload, validate data formats, and ensure that all required fields are correctly provided."
+        },
+        {
+                "title": "429 Too Many Requests",
+                "category": "Error",
+                "description": "The user has sent too many requests in a given amount of time.",
+                "tags": "HTTP,429,Client Error",
+                "paid": "Yes",
+                "answer": "A 429 Too Many Requests error is returned when a user exceeds the rate limit for requests. This is often used to prevent abuse or overload on the server. Implement rate limiting strategies, handle request bursts appropriately, and inform users of rate limits to manage request traffic effectively."
+        },
+        {
+                "title": "JavaScript Syntax Error",
+                "category": "Error",
+                "description": "Occurs when there is a mistake in the syntax of your JavaScript code.",
+                "tags": "JavaScript,Syntax Error,Debugging",
+                "paid": "Yes",
+                "answer": "A JavaScript Syntax Error occurs when the code does not follow proper syntax rules. Common causes include missing parentheses, braces, or semicolons. Use browser developer tools to identify the location of the error, and carefully review the code for syntax mistakes. Tools like linters can help catch these errors during development."
+        },
+        {
+                "title": "Reference Error",
+                "category": "Error",
+                "description": "Thrown when referring to a variable that is not declared.",
+                "tags": "JavaScript,Reference Error,Debugging",
+                "paid": "Yes",
+                "answer": "A Reference Error in JavaScript occurs when code attempts to access a variable that hasn’t been declared. This can happen if a variable is misspelled or used before it is declared. Ensure that all variables are properly declared before use, and check for typos or scoping issues in the code."
+        },
+        {
+                "title": "Type Error",
+                "category": "Error",
+                "description": "Thrown when an operation is performed on a value of the wrong type.",
+                "tags": "JavaScript,Type Error,Debugging",
+                "paid": "Yes",
+                "answer": "A Type Error occurs in JavaScript when an operation is attempted on a value of the wrong type. For example, calling a method on a non-object or performing arithmetic on a string. Check the types of variables and ensure operations are compatible with the data types being used."
+        },
+        {
+                "title": "Network Error",
+                "category": "Error",
+                "description": "Occurs when a network request fails due to connectivity issues or server unavailability.",
+                "tags": "Network,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "A Network Error happens when a network request cannot be completed due to connectivity problems, server downtime, or DNS issues. Verify network connectivity, check server status, and handle errors gracefully in the code by implementing retry mechanisms and providing user feedback."
+        },
+        {
+                "title": "CORS Policy Error",
+                "category": "Error",
+                "description": "Occurs when a web page attempts to make a request to a different domain and the server does not permit it.",
+                "tags": "CORS,Error Handling,Security",
+                "paid": "Yes",
+                "answer": "A CORS (Cross-Origin Resource Sharing) Policy Error happens when a web page tries to access resources from a different domain without proper permissions. Ensure that the server includes the necessary CORS headers (e.g., `Access-Control-Allow-Origin`) in the response to allow cross-origin requests from the client."
+        },
+        {
+                "title": "Invalid API Key",
+                "category": "Error",
+                "description": "Occurs when an API request is made with an invalid or missing API key.",
+                "tags": "API,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid API Key error occurs when the API key provided in a request is incorrect or missing. Verify that the API key is correct and has not expired. Check API documentation for the correct way to include the key, and ensure that it is securely managed and not exposed in client-side code."
+        },
+        {
+                "title": "SQL Syntax Error",
+                "category": "Error",
+                "description": "Occurs when a SQL query contains syntax errors.",
+                "tags": "SQL,Database,Error Handling",
+                "paid": "Yes",
+                "answer": "A SQL Syntax Error occurs when the SQL query has incorrect syntax. This can be due to missing keywords, incorrect clause order, or invalid characters. Review the SQL query for proper syntax, use database management tools for syntax validation, and ensure that all query parameters are correctly formatted."
+        },
+        {
+                "title": "Database Connection Error",
+                "category": "Error",
+                "description": "Occurs when the application cannot connect to the database server.",
+                "tags": "Database,Connection,Error Handling",
+                "paid": "Yes",
+                "answer": "A Database Connection Error occurs when the application is unable to establish a connection with the database server. This can be due to incorrect connection credentials, network issues, or server unavailability. Check the database configuration, verify the connection string, and ensure that the database server is running and accessible."
+        },
+        {
+                "title": "Unhandled Exception",
+                "category": "Error",
+                "description": "Occurs when an exception is not caught by error handling code.",
+                "tags": "Exception,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "An Unhandled Exception happens when an error occurs in the application code and is not caught by any exception handling mechanisms. This can cause the application to crash or behave unexpectedly. Implement proper try-catch blocks, use global error handlers, and log exceptions to help diagnose and resolve issues."
+        },
+        {
+                "title": "File Not Found",
+                "category": "Error",
+                "description": "Occurs when the requested file is not found on the server.",
+                "tags": "File System,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "A File Not Found error occurs when the server cannot locate a requested file. This might be due to incorrect file paths, deleted files, or incorrect file permissions. Verify that the file exists at the specified location, check file path references in the code, and ensure proper file access permissions."
+        },
+        {
+                "title": "Invalid JSON",
+                "category": "Error",
+                "description": "Occurs when a JSON payload is incorrectly formatted.",
+                "tags": "JSON,Data Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid JSON error occurs when the JSON data is not properly formatted. This can happen due to missing commas, mismatched brackets, or incorrect data types. Use JSON validation tools to check for syntax errors and ensure that JSON data adheres to correct formatting standards before processing."
+        },
+        {
+                "title": "Session Expired",
+                "category": "Error",
+                "description": "Occurs when a user session has timed out due to inactivity.",
+                "tags": "Session Management,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "A Session Expired error happens when a user's session has timed out due to inactivity. This typically requires the user to log in again. Implement session management strategies that include session timeout settings and provide user feedback or prompts to re-authenticate when a session expires."
+        },
+        {
+                "title": "Missing Required Field",
+                "category": "Error",
+                "description": "Occurs when a form submission or API request is missing a required field.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Missing Required Field error occurs when a required input field is missing in a form submission or API request. This can be addressed by validating inputs on the client side before submission and providing clear error messages to inform users about the missing fields. Ensure that server-side validation is also in place."
+        },
+        {
+                "title": "API Rate Limit Exceeded",
+                "category": "Error",
+                "description": "Occurs when the client exceeds the allowed number of API requests in a given time period.",
+                "tags": "API,Rate Limiting,Error Handling",
+                "paid": "Yes",
+                "answer": "An API Rate Limit Exceeded error occurs when the client makes more requests than allowed within a specified time period. Implement rate limiting strategies and inform users about the limit. Use headers to communicate rate limit status and advise clients to implement exponential backoff and retry logic."
+        },
+        {
+                "title": "Unsupported Media Type",
+                "category": "Error",
+                "description": "Occurs when the server refuses to accept the request because of the media type of the request data.",
+                "tags": "HTTP,415,Error Handling",
+                "paid": "Yes",
+                "answer": "An Unsupported Media Type error (415) occurs when the server cannot process the request due to unsupported media type in the request payload. Ensure that the `Content-Type` header in the request matches the format accepted by the server. Validate and adjust the request payload format as needed."
+        },
+        {
+                "title": "Preflight Request Failed",
+                "category": "Error",
+                "description": "Occurs when a CORS preflight request fails.",
+                "tags": "CORS,Error Handling,HTTP",
+                "paid": "Yes",
+                "answer": "A Preflight Request Failed error occurs during the CORS preflight check when the server does not respond with the appropriate CORS headers. Verify that the server is configured to handle OPTIONS requests and includes the correct `Access-Control-Allow-Methods` and `Access-Control-Allow-Headers` headers."
+        },
+        {
+                "title": "Invalid Form Data",
+                "category": "Error",
+                "description": "Occurs when form data submitted by the user is invalid or does not meet validation rules.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Form Data error occurs when submitted form data does not meet the required validation rules. This can be due to incorrect data formats, missing fields, or constraints not being met. Implement client-side and server-side validation, provide clear error messages, and guide users to correct their input."
+        },
+        {
+                "title": "Script Error",
+                "category": "Error",
+                "description": "Occurs when a script fails to execute correctly, often due to runtime errors.",
+                "tags": "JavaScript,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "A Script Error happens when there is an issue executing JavaScript code, which can be due to syntax errors, reference issues, or runtime exceptions. Use browser developer tools to debug scripts, inspect error messages, and apply proper error handling techniques to manage and resolve script errors effectively."
+        },
+        {
+                "title": "Unhandled Promise Rejection",
+                "category": "Error",
+                "description": "Occurs when a promise is rejected but no error handler is defined.",
+                "tags": "JavaScript,Promises,Error Handling",
+                "paid": "Yes",
+                "answer": "An Unhandled Promise Rejection error occurs when a promise fails but there is no `.catch()` handler to manage the rejection. This can lead to unhandled errors and potential application crashes. Ensure that all promises have proper error handling using `.catch()` or `try-catch` within `async` functions to handle rejections gracefully."
+        },
+        {
+                "title": "Object Not Found",
+                "category": "Error",
+                "description": "Occurs when an object or resource referenced in the code is not found.",
+                "tags": "Debugging,Object Reference,Error Handling",
+                "paid": "Yes",
+                "answer": "An Object Not Found error occurs when the code attempts to reference an object that does not exist. This can be due to incorrect object names, missing data, or scope issues. Verify object references, ensure that objects are correctly initialized, and check for any scoping issues in the code."
+        },
+        {
+                "title": "Element Not Found",
+                "category": "Error",
+                "description": "Occurs when attempting to manipulate a DOM element that does not exist.",
+                "tags": "JavaScript,DOM,Error Handling",
+                "paid": "Yes",
+                "answer": "An Element Not Found error occurs when the code tries to access or manipulate a DOM element that is not present in the document. Ensure that the element exists before attempting to interact with it, and check that the DOM is fully loaded before running scripts that depend on specific elements."
+        },
+        {
+                "title": "Memory Leak",
+                "category": "Error",
+                "description": "Occurs when the application consumes more memory over time without releasing it.",
+                "tags": "Performance,Memory Management,Debugging",
+                "paid": "Yes",
+                "answer": "A Memory Leak happens when an application continuously consumes memory without releasing it, leading to performance degradation or crashes. Identify memory leaks by using profiling tools, check for unreferenced objects, and ensure that event listeners and intervals are properly cleaned up to manage memory efficiently."
+        },
+        {
+                "title": "Invalid User Input",
+                "category": "Error",
+                "description": "Occurs when user input does not conform to expected format or constraints.",
+                "tags": "Validation,Forms,Error Handling",
+                "paid": "Yes",
+                "answer": "Invalid User Input errors occur when input provided by the user does not meet the expected format or constraints. Validate inputs on both the client and server sides, provide clear feedback on what is wrong with the input, and guide users to correct their entries based on the requirements."
+        },
+        {
+                "title": "Deprecated API Warning",
+                "category": "Error",
+                "description": "Occurs when using APIs or methods that are no longer recommended or supported.",
+                "tags": "APIs,Deprecation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Deprecated API Warning indicates that the code is using APIs or methods that are outdated and no longer recommended. Update the code to use the latest API versions, consult documentation for alternative methods, and ensure compatibility with current standards to avoid issues and improve maintainability."
+        },
+        {
+                "title": "Too Many Redirects",
+                "category": "Error",
+                "description": "Occurs when a request results in a redirect loop.",
+                "tags": "HTTP,Redirects,Error Handling",
+                "paid": "Yes",
+                "answer": "A Too Many Redirects error occurs when a request is redirected in a loop, exceeding the allowed number of redirects. This usually happens due to misconfigured redirect rules or cyclic redirections. Review and correct redirect configurations, and check for any misconfigured URL rewrites or routing rules."
+        },
+        {
+                "title": "Invalid Authorization Token",
+                "category": "Error",
+                "description": "Occurs when an API request is made with an invalid or expired authorization token.",
+                "tags": "API,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Authorization Token error occurs when the token provided for API authentication is invalid or expired. Ensure that the token is correctly generated and not expired. Refresh tokens as needed, and handle token validation errors gracefully by prompting for re-authentication if necessary."
+        },
+        {
+                "title": "Server Timeout",
+                "category": "Error",
+                "description": "Occurs when a server takes too long to respond to a request.",
+                "tags": "HTTP,Timeout,Server Error",
+                "paid": "Yes",
+                "answer": "A Server Timeout error occurs when the server fails to respond to a request within the expected time. This can be due to server overload, slow processing, or network issues. Optimize server performance, review timeout settings, and consider implementing asynchronous processing to handle long-running requests."
+        },
+        {
+                "title": "JavaScript Type Coercion Error",
+                "category": "Error",
+                "description": "Occurs when JavaScript automatically converts data types in an unintended manner.",
+                "tags": "JavaScript,Type Coercion,Debugging",
+                "paid": "Yes",
+                "answer": "A JavaScript Type Coercion Error occurs when JavaScript automatically converts data types in a way that leads to unexpected behavior. This can be avoided by explicitly converting types and using strict equality checks (===) instead of loose equality (==). Review and test code to ensure type conversions are handled correctly."
+        },
+        {
+                "title": "Invalid HTTP Method",
+                "category": "Error",
+                "description": "Occurs when an HTTP request is made using an unsupported or incorrect HTTP method.",
+                "tags": "HTTP,Error Handling,Server Configuration",
+                "paid": "Yes",
+                "answer": "An Invalid HTTP Method error occurs when an HTTP request uses a method that is not supported by the server for the requested resource. Verify that the correct HTTP method (e.g., GET, POST, PUT) is used according to the API or server specifications. Update server configurations if necessary to support the desired methods."
+        },
+        {
+                "title": "Content-Length Mismatch",
+                "category": "Error",
+                "description": "Occurs when the `Content-Length` header does not match the actual size of the request body.",
+                "tags": "HTTP,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "A Content-Length Mismatch error occurs when the `Content-Length` header value does not match the actual size of the request body. This can lead to incomplete data being sent or received. Ensure that the `Content-Length` header is correctly calculated and matches the size of the request body to avoid this error."
+        },
+        {
+                "title": "Invalid URL",
+                "category": "Error",
+                "description": "Occurs when a URL is incorrectly formatted or contains invalid characters.",
+                "tags": "URL,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid URL error occurs when a URL is not correctly formatted or contains invalid characters. This can prevent successful navigation or data retrieval. Ensure that URLs are properly encoded, follow standard formatting rules, and validate URL structures to avoid this issue."
+        },
+        {
+                "title": "WebSocket Connection Error",
+                "category": "Error",
+                "description": "Occurs when a WebSocket connection fails to establish or is interrupted.",
+                "tags": "WebSocket,Error Handling,Real-time Communication",
+                "paid": "Yes",
+                "answer": "A WebSocket Connection Error happens when a WebSocket connection cannot be established or is lost. This can be due to network issues, server misconfigurations, or protocol mismatches. Check WebSocket server settings, ensure network stability, and implement reconnection strategies to handle connection issues effectively."
+        },
+        {
+                "title": "Invalid Session ID",
+                "category": "Error",
+                "description": "Occurs when an operation is attempted with an invalid or expired session ID.",
+                "tags": "Session Management,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Session ID error occurs when the application attempts to use a session ID that is invalid or has expired. This typically requires the user to log in again. Implement session validation, handle expired sessions by prompting re-authentication, and ensure secure management of session IDs."
+        },
+        {
+                "title": "Form Submission Error",
+                "category": "Error",
+                "description": "Occurs when there is a problem submitting a form, such as validation failures or server errors.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Form Submission Error occurs when there are issues with submitting a form, which may include validation errors, server-side processing errors, or network issues. Validate form inputs both client-side and server-side, handle errors gracefully by providing user feedback, and ensure reliable form submission handling."
+        },
+        {
+                "title": "Invalid File Type",
+                "category": "Error",
+                "description": "Occurs when a file uploaded or processed does not match the allowed file types.",
+                "tags": "File Upload,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid File Type error occurs when the uploaded file does not match the expected type or format. Implement file type validation both client-side and server-side, check file extensions and MIME types, and provide clear error messages to guide users in uploading the correct file types."
+        },
+        {
+                "title": "Session Fixation Attack",
+                "category": "Error",
+                "description": "Occurs when an attacker attempts to hijack a session by providing a known session ID.",
+                "tags": "Security,Session Management,Error Handling",
+                "paid": "Yes",
+                "answer": "A Session Fixation Attack occurs when an attacker tries to exploit a known session ID to hijack a user session. To prevent this, regenerate session IDs after login, use secure cookie attributes (e.g., HttpOnly, Secure), and implement proper session management practices to protect against fixation attacks."
+        },
+        {
+                "title": "Cross-Site Scripting (XSS) Error",
+                "category": "Error",
+                "description": "Occurs when malicious scripts are injected into web pages viewed by other users.",
+                "tags": "Security,XSS,Error Handling",
+                "paid": "Yes",
+                "answer": "A Cross-Site Scripting (XSS) Error occurs when an attacker injects malicious scripts into web pages, potentially affecting other users. To prevent XSS attacks, sanitize and escape user input, use Content Security Policy (CSP) headers, and validate and encode output data to mitigate the risk of script injection."
+        },
+        {
+                "title": "Cross-Site Request Forgery (CSRF) Error",
+                "category": "Error",
+                "description": "Occurs when a request is made from an unauthorized source pretending to be an authenticated user.",
+                "tags": "Security,CSRF,Error Handling",
+                "paid": "Yes",
+                "answer": "A Cross-Site Request Forgery (CSRF) Error happens when an attacker tricks a user into making unwanted actions on a site where they are authenticated. Implement CSRF tokens in forms, use SameSite cookie attributes, and validate requests on the server side to protect against CSRF attacks."
+        },
+        {
+                "title": "Uncaught TypeError",
+                "category": "Error",
+                "description": "Occurs when a type error is thrown that is not caught by any error handling code.",
+                "tags": "JavaScript,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "An Uncaught TypeError in JavaScript occurs when a type-related error is thrown but not caught by error handling code. This often happens with operations performed on inappropriate types. Use `try-catch` blocks to handle such errors, and review the code to ensure that operations are compatible with the data types."
+        },
+        {
+                "title": "API Endpoint Not Found",
+                "category": "Error",
+                "description": "Occurs when a request is made to an API endpoint that does not exist.",
+                "tags": "API,Endpoint,Error Handling",
+                "paid": "Yes",
+                "answer": "An API Endpoint Not Found error occurs when a request targets an API endpoint that does not exist. Verify the endpoint URL, check API documentation for correct paths, and ensure that endpoints are correctly configured and registered in the API server to resolve this issue."
+        },
+        {
+                "title": "Resource Conflict",
+                "category": "Error",
+                "description": "Occurs when a request conflicts with the current state of the server resource.",
+                "tags": "HTTP,409,Error Handling",
+                "paid": "Yes",
+                "answer": "A Resource Conflict error (409) occurs when a request cannot be completed due to a conflict with the current state of the resource. This often happens in scenarios involving simultaneous updates. Handle conflicts by implementing proper resource locking mechanisms and providing meaningful feedback to resolve conflicts."
+        },
+        {
+                "title": "SSL/TLS Certificate Error",
+                "category": "Error",
+                "description": "Occurs when there is an issue with SSL/TLS certificate validation.",
+                "tags": "Security,SSL,TLS,Error Handling",
+                "paid": "Yes",
+                "answer": "An SSL/TLS Certificate Error happens when there are issues with validating an SSL/TLS certificate, such as expiry, misconfiguration, or trust issues. Ensure that certificates are valid, correctly configured, and issued by a trusted Certificate Authority (CA). Regularly update and renew certificates to maintain security."
+        },
+        {
+                "title": "Invalid Query Parameter",
+                "category": "Error",
+                "description": "Occurs when a query parameter in a URL is incorrectly formatted or invalid.",
+                "tags": "URL,Query Parameters,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Query Parameter error occurs when a URL contains incorrectly formatted or invalid query parameters. Check that query parameters follow the correct syntax, encode values properly, and validate parameters on the server side to ensure proper handling of requests and avoid errors."
+        },
+        {
+                "title": "Token Expiration",
+                "category": "Error",
+                "description": "Occurs when an authentication or authorization token expires.",
+                "tags": "Authentication,Token Management,Error Handling",
+                "paid": "Yes",
+                "answer": "Token Expiration occurs when an authentication or authorization token has surpassed its validity period. Users need to re-authenticate to obtain a new token. Implement token refresh mechanisms, handle expiration errors by prompting users to log in again, and manage token lifecycles securely."
+        },
+        {
+                "title": "Syntax Error in HTML",
+                "category": "Error",
+                "description": "Occurs when there is a syntax issue in HTML code, preventing correct rendering.",
+                "tags": "HTML,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Syntax Error in HTML happens when the HTML code contains syntax mistakes, such as unclosed tags or misplaced attributes. Validate HTML using tools like the W3C Markup Validation Service, fix syntax errors, and ensure that the code adheres to HTML standards for proper rendering."
+        },
+        {
+                "title": "CSS Styling Error",
+                "category": "Error",
+                "description": "Occurs when CSS rules do not apply correctly due to syntax or specificity issues.",
+                "tags": "CSS,Debugging,Error Handling",
+                "paid": "Yes",
+                "answer": "A CSS Styling Error occurs when CSS rules fail to apply correctly due to syntax issues or specificity conflicts. Inspect styles using browser developer tools, check for correct CSS syntax, and ensure that selectors are specific enough to override other rules. Validate and test styles across different browsers."
+        },
+        {
+                "title": "Invalid Redirect URI",
+                "category": "Error",
+                "description": "Occurs when an OAuth redirect URI does not match the expected value.",
+                "tags": "OAuth,Redirects,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Redirect URI error occurs when the URI provided for redirection in an OAuth process does not match the one registered with the authorization server. Ensure that redirect URIs are correctly configured and match the expected values in the OAuth application settings to resolve this issue."
+        },
+        {
+                "title": "Database Query Error",
+                "category": "Error",
+                "description": "Occurs when a database query fails due to syntax or execution issues.",
+                "tags": "Database,Query,Error Handling",
+                "paid": "Yes",
+                "answer": "A Database Query Error happens when a query fails due to syntax errors, execution problems, or invalid parameters. Review and correct the query syntax, check database schema and permissions, and use error handling to manage and log query errors for debugging and troubleshooting."
+        },
+        {
+                "title": "Network Error",
+                "category": "Error",
+                "description": "Occurs when there are issues with network connectivity affecting requests.",
+                "tags": "Network,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "A Network Error occurs when there are problems with network connectivity that prevent requests from being completed. Check network settings, ensure stable connectivity, and handle errors by implementing retry mechanisms, logging network issues, and providing user feedback for connectivity problems."
+        },
+        {
+                "title": "Invalid Response Format",
+                "category": "Error",
+                "description": "Occurs when the server response does not match the expected format.",
+                "tags": "API,Response Handling,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Response Format error occurs when the server response does not conform to the expected format, such as incorrect JSON structure. Verify that the server returns data in the correct format, handle unexpected formats gracefully, and provide appropriate error messages to users or clients."
+        },
+        {
+                "title": "Broken Link",
+                "category": "Error",
+                "description": "Occurs when a hyperlink leads to a non-existent or inaccessible page.",
+                "tags": "Links,404,Error Handling",
+                "paid": "Yes",
+                "answer": "A Broken Link error happens when a hyperlink directs users to a page that does not exist or is inaccessible. Regularly check and update links to ensure they point to valid resources. Implement 404 error pages to provide helpful navigation options when users encounter broken links."
+        },
+        {
+                "title": "Invalid XML",
+                "category": "Error",
+                "description": "Occurs when XML data is not well-formed or contains syntax errors.",
+                "tags": "XML,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid XML error occurs when XML data contains syntax errors or is not well-formed. Validate XML using tools or parsers to check for issues such as unclosed tags or invalid structures. Correct any errors and ensure that XML data adheres to proper formatting standards."
+        },
+        {
+                "title": "Form Validation Error",
+                "category": "Error",
+                "description": "Occurs when a form submission fails due to validation errors.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Form Validation Error happens when a form submission fails due to incorrect or incomplete data. Implement validation rules to check user input on both client and server sides, provide clear error messages indicating what needs to be corrected, and ensure that all required fields are properly validated."
+        },
+        {
+                "title": "Uncaught ReferenceError",
+                "category": "Error",
+                "description": "Occurs when a reference is made to a variable or function that does not exist.",
+                "tags": "JavaScript,Error Handling,Debugging",
+                "paid": "Yes",
+                "answer": "An Uncaught ReferenceError in JavaScript occurs when code tries to access a variable or function that has not been declared. This can be due to typos, scope issues, or missing declarations. Check for correct variable names, ensure proper scope, and verify that all necessary code is loaded before execution."
+        },
+        {
+                "title": "Database Timeout",
+                "category": "Error",
+                "description": "Occurs when a database query exceeds the allotted time limit.",
+                "tags": "Database,Timeout,Performance",
+                "paid": "Yes",
+                "answer": "A Database Timeout error happens when a query takes longer than the configured timeout period to execute. This can be due to slow queries, resource contention, or network issues. Optimize your queries, ensure database performance, and adjust timeout settings as necessary. Use indexing and query optimization techniques to improve execution times."
+        },
+        {
+                "title": "Invalid API Key",
+                "category": "Error",
+                "description": "Occurs when an API request includes an invalid or incorrect API key.",
+                "tags": "API,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid API Key error occurs when the key provided in an API request is not recognized or valid. Ensure that the API key is correctly generated and associated with the proper permissions. Double-check the key in the request headers or parameters, and regenerate keys if necessary to resolve the issue."
+        },
+        {
+                "title": "Insecure Content Warning",
+                "category": "Error",
+                "description": "Occurs when a secure page loads non-secure content, leading to security warnings.",
+                "tags": "Security,HTTPS,Error Handling",
+                "paid": "Yes",
+                "answer": "An Insecure Content Warning appears when a secure (HTTPS) page loads resources over an insecure (HTTP) connection. To resolve this, ensure that all resources (images, scripts, stylesheets) are loaded over HTTPS. Update resource URLs to use HTTPS and review site content for mixed security issues."
+        },
+        {
+                "title": "Missing CSRF Token",
+                "category": "Error",
+                "description": "Occurs when a CSRF token is missing in a request that requires it.",
+                "tags": "Security,CSRF,Error Handling",
+                "paid": "Yes",
+                "answer": "A Missing CSRF Token error happens when a request that requires a CSRF token is sent without one. Ensure that CSRF tokens are included in all forms and API requests that modify data. Implement token generation and validation mechanisms and configure error handling to prompt for token inclusion when necessary."
+        },
+        {
+                "title": "Server Internal Error",
+                "category": "Error",
+                "description": "Occurs when an internal server error (500) is encountered during a request.",
+                "tags": "Server Error,500,Error Handling",
+                "paid": "Yes",
+                "answer": "A Server Internal Error (500) occurs when the server encounters an unexpected condition that prevents it from fulfilling a request. Check server logs to identify the cause, such as code bugs, configuration issues, or server resource limits. Address the underlying problem and provide user-friendly error messages."
+        },
+        {
+                "title": "Unauthorized Access",
+                "category": "Error",
+                "description": "Occurs when a user tries to access a resource without proper authorization.",
+                "tags": "Authentication,Authorization,Error Handling",
+                "paid": "Yes",
+                "answer": "An Unauthorized Access error occurs when a user attempts to access a resource without sufficient permissions. Ensure proper authentication and authorization mechanisms are in place, verify user roles and permissions, and provide appropriate feedback or redirects to handle access control issues."
+        },
+        {
+                "title": "Invalid Form Action",
+                "category": "Error",
+                "description": "Occurs when a form's action attribute points to an incorrect or non-existent URL.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Form Action error occurs when a form submits data to a URL that does not exist or is incorrect. Verify that the action attribute in the form tag points to the correct URL, and ensure that the server-side endpoint is properly configured to handle the form submission."
+        },
+        {
+                "title": "Server Error 503",
+                "category": "Error",
+                "description": "Occurs when the server is temporarily unable to handle the request (Service Unavailable).",
+                "tags": "Server Error,503,Error Handling",
+                "paid": "Yes",
+                "answer": "A Server Error 503 (Service Unavailable) occurs when the server is temporarily unable to handle requests, often due to overload or maintenance. Check server health, ensure adequate resources, and configure load balancing or maintenance modes. Inform users of service interruptions and provide estimated recovery times."
+        },
+        {
+                "title": "Resource Not Modified",
+                "category": "Error",
+                "description": "Occurs when a resource has not been modified since the last request, resulting in a 304 response.",
+                "tags": "HTTP,304,Error Handling",
+                "paid": "Yes",
+                "answer": "A Resource Not Modified error (304) indicates that a resource has not changed since the last request, leading to a cached response. This is typically not an error but a performance optimization. Ensure that caching headers are correctly implemented and understand the role of 304 responses in optimizing resource delivery."
+        },
+        {
+                "title": "Deprecated Function Warning",
+                "category": "Error",
+                "description": "Occurs when a deprecated function is used in the code.",
+                "tags": "Code Quality,Deprecation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Deprecated Function Warning occurs when code uses functions or methods that are marked as deprecated. Update the code to use recommended alternatives, check documentation for updated functions, and refactor code to maintain compatibility with current standards and avoid future issues."
+        },
+        {
+                "title": "Invalid Email Format",
+                "category": "Error",
+                "description": "Occurs when an email address does not conform to standard email formatting rules.",
+                "tags": "Validation,Email,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Email Format error occurs when an email address does not adhere to standard formatting rules, such as missing '@' or domain parts. Implement email format validation using regular expressions, provide user-friendly error messages, and ensure that email addresses are properly validated before processing."
+        },
+        {
+                "title": "File Size Limit Exceeded",
+                "category": "Error",
+                "description": "Occurs when an uploaded file exceeds the maximum allowed size.",
+                "tags": "File Upload,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A File Size Limit Exceeded error happens when an uploaded file exceeds the allowed size limit. Implement file size validation both client-side and server-side, provide clear feedback to users about file size restrictions, and adjust server settings if necessary to handle larger file uploads within acceptable limits."
+        },
+        {
+                "title": "API Version Mismatch",
+                "category": "Error",
+                "description": "Occurs when there is a version mismatch between client and server API versions.",
+                "tags": "API,Versioning,Error Handling",
+                "paid": "Yes",
+                "answer": "An API Version Mismatch error occurs when the client and server are using incompatible API versions. Ensure that both client and server are using the same version of the API, update versions as needed, and consult API documentation to manage version compatibility and avoid mismatches."
+        },
+        {
+                "title": "Session Hijacking",
+                "category": "Error",
+                "description": "Occurs when an attacker gains unauthorized access to a user's session.",
+                "tags": "Security,Session Management,Error Handling",
+                "paid": "Yes",
+                "answer": "Session Hijacking occurs when an attacker gains unauthorized access to a user's session, often through stolen session IDs or cookies. Implement session management best practices, use secure cookies, and apply session expiration and regeneration strategies to protect against session hijacking and enhance security."
+        },
+        {
+                "title": "SQL Injection",
+                "category": "Error",
+                "description": "Occurs when malicious SQL code is injected into a query, potentially compromising the database.",
+                "tags": "Security,SQL Injection,Error Handling",
+                "paid": "Yes",
+                "answer": "SQL Injection occurs when an attacker inserts malicious SQL code into a query, which can compromise the database. Prevent SQL Injection by using parameterized queries or prepared statements, validating and escaping user input, and implementing robust input validation and sanitization practices."
+        },
+        {
+                "title": "Invalid Authentication Header",
+                "category": "Error",
+                "description": "Occurs when the authentication header in a request is malformed or invalid.",
+                "tags": "Authentication,API,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Authentication Header error occurs when the header used for authentication in a request is incorrect or malformed. Ensure that authentication headers are formatted correctly and contain valid credentials. Validate headers on the server side and provide clear error messages for authentication issues."
+        },
+        {
+                "title": "JavaScript Syntax Error",
+                "category": "Error",
+                "description": "Occurs when there is a syntax issue in JavaScript code preventing it from running.",
+                "tags": "JavaScript,Syntax,Error Handling",
+                "paid": "Yes",
+                "answer": "A JavaScript Syntax Error occurs when there are mistakes in the JavaScript code syntax, such as missing brackets or semicolons. Use browser developer tools to identify syntax errors, correct the code based on error messages, and ensure that scripts follow proper syntax rules to execute successfully."
+        },
+        {
+                "title": "Invalid Path Variable",
+                "category": "Error",
+                "description": "Occurs when a path variable in a URL does not match the expected format or value.",
+                "tags": "URL,Path Variables,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Path Variable error occurs when a path variable in a URL does not match the expected format or value. Verify that path variables are correctly formatted and correspond to the expected values in routing configurations. Implement validation to ensure that variables meet expected criteria."
+        },
+        {
+                "title": "Missing Required Parameter",
+                "category": "Error",
+                "description": "Occurs when a required parameter is not provided in a request.",
+                "tags": "API,Parameters,Error Handling",
+                "paid": "Yes",
+                "answer": "A Missing Required Parameter error happens when a request does not include a necessary parameter. Check API documentation to confirm required parameters, validate input on the server side, and handle errors by providing clear instructions for including all required parameters in the request."
+        },
+        {
+                "title": "Deprecated API Endpoint",
+                "category": "Error",
+                "description": "Occurs when an API request is made to an endpoint that has been deprecated.",
+                "tags": "API,Deprecation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Deprecated API Endpoint error occurs when a request targets an endpoint that is no longer supported. Update your application to use the current API endpoints as specified in the API documentation. Provide a migration guide and handle deprecated endpoints by redirecting or advising users of alternative methods."
+        },
+        {
+                "title": "Invalid Content-Type",
+                "category": "Error",
+                "description": "Occurs when the Content-Type header in a request does not match the expected type.",
+                "tags": "HTTP,Content-Type,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Content-Type error occurs when the Content-Type header in a request does not match the expected type, such as sending JSON data with an incorrect Content-Type. Ensure that the Content-Type header is correctly set to match the request payload and validate it on the server side to handle data appropriately."
+        },
+        {
+                "title": "Broken Database Connection",
+                "category": "Error",
+                "description": "Occurs when the application cannot establish a connection to the database.",
+                "tags": "Database,Connection,Error Handling",
+                "paid": "Yes",
+                "answer": "A Broken Database Connection error occurs when the application fails to connect to the database due to configuration issues, network problems, or incorrect credentials. Check database connection settings, verify network connectivity, and ensure that credentials are correct. Implement retry mechanisms and handle connection errors gracefully."
+        },
+        {
+                "title": "Invalid JSON Response",
+                "category": "Error",
+                "description": "Occurs when the server returns a response that is not valid JSON.",
+                "tags": "API,JSON,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid JSON Response error occurs when the server returns data that is not properly formatted as JSON. Verify that the server returns well-formed JSON and check for any issues with the response structure. Use JSON validation tools to ensure correctness and handle errors by providing appropriate feedback."
+        },
+        {
+                "title": "File Not Found",
+                "category": "Error",
+                "description": "Occurs when a requested file cannot be found on the server.",
+                "tags": "File System,404,Error Handling",
+                "paid": "Yes",
+                "answer": "A File Not Found error occurs when a requested file is missing from the server. Check file paths, ensure that files are correctly uploaded or available, and verify server configurations. Implement error handling to provide user-friendly messages and possibly suggest alternative actions or resources."
+        },
+        {
+                "title": "Out of Memory Error",
+                "category": "Error",
+                "description": "Occurs when the server or application exceeds its allocated memory limits.",
+                "tags": "Performance,Memory,Error Handling",
+                "paid": "Yes",
+                "answer": "An Out of Memory Error occurs when an application or server exceeds its allocated memory resources. Optimize memory usage by reviewing code, managing memory leaks, and improving resource handling. Increase memory limits if necessary and monitor memory usage to prevent such errors."
+        },
+        {
+                "title": "Invalid Authorization Header",
+                "category": "Error",
+                "description": "Occurs when the authorization header in a request is missing or incorrectly formatted.",
+                "tags": "Authentication,Authorization,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Authorization Header error happens when the authorization header is missing or incorrectly formatted. Ensure that the header includes the correct authentication credentials and follows the expected format. Validate the header on the server side and provide feedback for authentication issues."
+        },
+        {
+                "title": "File Upload Error",
+                "category": "Error",
+                "description": "Occurs when there is a problem with uploading a file, such as size limits or format issues.",
+                "tags": "File Upload,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A File Upload Error occurs when a file fails to upload due to issues like size limits, format incompatibilities, or server errors. Implement file size and type validations, handle errors gracefully by providing user feedback, and ensure that server settings accommodate the expected file upload requirements."
+        },
+        {
+                "title": "Invalid Redirect Loop",
+                "category": "Error",
+                "description": "Occurs when a redirect leads to an infinite loop.",
+                "tags": "Redirects,Loop,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Redirect Loop error happens when a redirect continuously cycles between URLs, creating an infinite loop. Check and correct redirect configurations to ensure that they do not create loops. Review routing rules and implement mechanisms to detect and handle redirect loops effectively."
+        },
+        {
+                "title": "Outdated Library Version",
+                "category": "Error",
+                "description": "Occurs when an application uses an outdated version of a library with known issues or vulnerabilities.",
+                "tags": "Library,Versioning,Security",
+                "paid": "Yes",
+                "answer": "An Outdated Library Version error occurs when an application uses an older version of a library that may have bugs or security vulnerabilities. Regularly update libraries to their latest versions, review release notes for changes, and test applications to ensure compatibility with new library versions."
+        },
+        {
+                "title": "Invalid Payment Token",
+                "category": "Error",
+                "description": "Occurs when a payment token used for transactions is invalid or expired.",
+                "tags": "Payment,Token,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Payment Token error happens when a token used for processing payments is invalid or expired. Ensure that payment tokens are correctly generated, valid, and not expired. Implement token refresh mechanisms and handle errors by prompting users to provide a valid payment method."
+        },
+        {
+                "title": "Invalid API Endpoint Path",
+                "category": "Error",
+                "description": "Occurs when an API request is made to an incorrect or non-existent endpoint path.",
+                "tags": "API,Endpoints,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid API Endpoint Path error occurs when a request targets an endpoint path that does not exist. Verify the correct API endpoint paths in the documentation, check routing configurations, and ensure that endpoints are properly registered and accessible for successful API interactions."
+        },
+        {
+                "title": "Insufficient Storage",
+                "category": "Error",
+                "description": "Occurs when there is not enough storage space available to complete an operation.",
+                "tags": "Storage,Performance,Error Handling",
+                "paid": "Yes",
+                "answer": "An Insufficient Storage error occurs when there is not enough available storage to complete a requested operation, such as file uploads or database writes. Monitor storage usage, clear or archive unused data, and ensure that sufficient storage capacity is available to handle application needs."
+        },
+        {
+                "title": "Missing CSRF Token",
+                "category": "Error",
+                "description": "Occurs when a CSRF token is missing in a request requiring one.",
+                "tags": "Security,CSRF,Error Handling",
+                "paid": "Yes",
+                "answer": "A Missing CSRF Token error occurs when a request that requires a CSRF token is sent without one. Ensure that CSRF tokens are included in forms and requests that modify data, validate tokens on the server side, and handle errors by prompting for token inclusion and re-authentication if needed."
+        },
+        {
+                "title": "HTTP 403 Forbidden",
+                "category": "Error",
+                "description": "Occurs when access to a resource is denied due to insufficient permissions.",
+                "tags": "HTTP,403,Error Handling",
+                "paid": "Yes",
+                "answer": "An HTTP 403 Forbidden error occurs when a user or client does not have permission to access a resource. Check user roles, permissions, and access controls to ensure that requests are properly authorized. Provide meaningful error messages and consider implementing access control measures to restrict unauthorized access."
+        },
+        {
+                "title": "Invalid Session Token",
+                "category": "Error",
+                "description": "Occurs when a session token provided in a request is invalid or expired.",
+                "tags": "Session Management,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Session Token error happens when a session token used for authentication is invalid or expired. Ensure that session tokens are properly validated and refreshed. Handle errors by prompting users to re-authenticate or obtain a new session token if the current one is no longer valid."
+        },
+        {
+                "title": "API Rate Limit Exceeded",
+                "category": "Error",
+                "description": "Occurs when the number of API requests exceeds the allowed rate limit.",
+                "tags": "API,Rate Limiting,Error Handling",
+                "paid": "Yes",
+                "answer": "An API Rate Limit Exceeded error occurs when a client exceeds the allowed number of API requests within a specified time period. Implement rate limiting mechanisms to control request frequency, monitor usage patterns, and provide feedback to users about rate limits and potential solutions to stay within allowed limits."
+        },
+        {
+                "title": "Invalid URL Scheme",
+                "category": "Error",
+                "description": "Occurs when a URL uses an unsupported or incorrect scheme.",
+                "tags": "URL,Error Handling,Validation",
+                "paid": "Yes",
+                "answer": "An Invalid URL Scheme error occurs when a URL uses a scheme that is not supported or incorrect, such as 'ftp' when 'http' or 'https' is required. Ensure that URLs use the correct and supported schemes, validate URLs for proper formatting, and handle errors by providing feedback for corrections."
+        },
+        {
+                "title": "Unsupported Browser",
+                "category": "Error",
+                "description": "Occurs when a user attempts to access a site or feature using an unsupported browser.",
+                "tags": "Browser Compatibility,Error Handling",
+                "paid": "Yes",
+                "answer": "An Unsupported Browser error happens when users attempt to access a site or feature using a browser that does not meet the necessary requirements. Check browser compatibility, provide information about supported browsers, and offer guidance on upgrading or using alternative browsers to access the site."
+        },
+        {
+                "title": "Invalid File Extension",
+                "category": "Error",
+                "description": "Occurs when a file with an unsupported or incorrect extension is uploaded.",
+                "tags": "File Upload,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid File Extension error occurs when an uploaded file has an extension that is not supported or allowed. Implement file extension validation to restrict uploads to accepted types, provide clear error messages about supported formats, and handle errors by prompting users to select files with valid extensions."
+        },
+        {
+                "title": "Unhandled Promise Rejection",
+                "category": "Error",
+                "description": "Occurs when a JavaScript promise is rejected without handling the error.",
+                "tags": "JavaScript,Promises,Error Handling",
+                "paid": "Yes",
+                "answer": "An Unhandled Promise Rejection error in JavaScript occurs when a promise is rejected and the error is not properly caught or handled. Use `.catch()` or `try...catch` blocks to handle promise rejections, ensure that all asynchronous operations have error handling, and log or report errors for debugging purposes."
+        },
+        {
+                "title": "Incorrect MIME Type",
+                "category": "Error",
+                "description": "Occurs when the MIME type of a resource does not match the expected type.",
+                "tags": "HTTP,MIME Types,Error Handling",
+                "paid": "Yes",
+                "answer": "An Incorrect MIME Type error occurs when a resource's MIME type does not match what is expected, such as serving JSON as HTML. Ensure that server responses have the correct Content-Type headers, verify MIME type configurations, and handle errors by checking resource types and adjusting server settings as needed."
+        },
+        {
+                "title": "API Authentication Failure",
+                "category": "Error",
+                "description": "Occurs when API authentication credentials are incorrect or missing.",
+                "tags": "API,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An API Authentication Failure error occurs when the API request lacks valid authentication credentials or has incorrect ones. Check that credentials are correctly included in the request headers or parameters, ensure they are valid and not expired, and handle errors by providing feedback for re-authentication."
+        },
+        {
+                "title": "Invalid Redirect URL",
+                "category": "Error",
+                "description": "Occurs when a URL used for redirection is invalid or incorrect.",
+                "tags": "Redirects,URL,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Redirect URL error occurs when a URL specified for redirection is invalid or incorrect. Verify that redirect URLs are properly configured, ensure they are reachable and correctly formatted, and handle errors by providing appropriate feedback or alternative navigation options for users."
+        },
+        {
+                "title": "Form Submission Error",
+                "category": "Error",
+                "description": "Occurs when a form fails to submit due to errors or misconfigurations.",
+                "tags": "Forms,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "A Form Submission Error happens when a form fails to submit due to validation errors, incorrect configurations, or server issues. Implement thorough client-side and server-side validation, handle errors by displaying user-friendly messages, and ensure that forms are correctly configured to handle submissions."
+        },
+        {
+                "title": "Invalid Session State",
+                "category": "Error",
+                "description": "Occurs when a session is in an invalid or unexpected state.",
+                "tags": "Session Management,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Session State error occurs when a session is in an unexpected or invalid state, often due to corruption or manipulation. Ensure that sessions are managed securely, validate session states before performing actions, and handle errors by prompting users to re-authenticate or refresh their session."
+        },
+        {
+                "title": "File Read Error",
+                "category": "Error",
+                "description": "Occurs when there is an issue reading a file from the server or filesystem.",
+                "tags": "File System,Error Handling",
+                "paid": "Yes",
+                "answer": "A File Read Error occurs when the application encounters problems reading a file, which may be due to permissions issues, file corruption, or incorrect paths. Check file permissions, verify file paths, and handle errors by providing informative messages and implementing fallback mechanisms if needed."
+        },
+        {
+                "title": "Invalid API Request",
+                "category": "Error",
+                "description": "Occurs when an API request is malformed or contains invalid parameters.",
+                "tags": "API,Request Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid API Request error occurs when the request sent to an API is malformed or includes invalid parameters. Verify that requests follow the correct format, check for required parameters, and validate input data. Provide clear error messages to help users correct and resend the request."
+        },
+        {
+                "title": "DNS Resolution Error",
+                "category": "Error",
+                "description": "Occurs when the DNS lookup fails to resolve a domain name.",
+                "tags": "DNS,Network,Error Handling",
+                "paid": "Yes",
+                "answer": "A DNS Resolution Error occurs when a domain name cannot be resolved to an IP address, often due to DNS server issues or incorrect domain configurations. Check DNS settings, ensure that the domain is correctly configured, and handle errors by providing alternative access methods or informing users of connectivity issues."
+        },
+        {
+                "title": "Content Security Policy Violation",
+                "category": "Error",
+                "description": "Occurs when a web page violates its Content Security Policy (CSP) rules.",
+                "tags": "Security,CSP,Error Handling",
+                "paid": "Yes",
+                "answer": "A Content Security Policy (CSP) Violation error occurs when a web page's content violates its CSP rules, such as loading scripts or styles from unauthorized sources. Review and update CSP configurations to align with security requirements, ensure that all resources comply with policy rules, and address violations by adjusting CSP settings."
+        },
+        {
+                "title": "Invalid Cookie Attributes",
+                "category": "Error",
+                "description": "Occurs when a cookie has incorrect or unsupported attributes.",
+                "tags": "Cookies,Validation,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Cookie Attributes error occurs when a cookie is set with incorrect or unsupported attributes, such as an invalid domain or path. Ensure that cookies are configured with correct attributes, follow proper cookie settings, and handle errors by correcting attributes and validating cookie configurations."
+        },
+        {
+                "title": "Server Error 502 Bad Gateway",
+                "category": "Error",
+                "description": "Occurs when a server acting as a gateway or proxy receives an invalid response from an upstream server.",
+                "tags": "Server Error,502,Error Handling",
+                "paid": "Yes",
+                "answer": "A Server Error 502 Bad Gateway occurs when a gateway or proxy server receives an invalid response from an upstream server. Check upstream server health, review proxy or gateway configurations, and ensure that servers communicate correctly. Handle errors by providing meaningful messages and monitoring server interactions."
+        },
+        {
+                "title": "Invalid Input Data",
+                "category": "Error",
+                "description": "Occurs when input data does not meet validation criteria or is incorrect.",
+                "tags": "Validation,Error Handling,Data Integrity",
+                "paid": "Yes",
+                "answer": "An Invalid Input Data error occurs when provided data does not meet validation criteria or is incorrect. Implement thorough input validation both client-side and server-side, ensure that data adheres to expected formats and constraints, and handle errors by providing clear feedback to users for correcting input."
+        },
+        {
+                "title": "Resource Conflict",
+                "category": "Error",
+                "description": "Occurs when there is a conflict with a resource, such as trying to create a duplicate entry.",
+                "tags": "Database,Conflict,Error Handling",
+                "paid": "Yes",
+                "answer": "A Resource Conflict error occurs when a request conflicts with an existing resource, such as attempting to create a duplicate entry. Implement checks to identify and manage conflicts, handle errors by providing clear messages to resolve conflicts, and ensure that operations are atomic where necessary to avoid issues."
+        },
+        {
+                "title": "Service Unavailable",
+                "category": "Error",
+                "description": "Occurs when a service is temporarily unavailable due to maintenance or overload.",
+                "tags": "Service,Availability,Error Handling",
+                "paid": "Yes",
+                "answer": "A Service Unavailable error occurs when a service is temporarily down or overloaded, often due to maintenance or high demand. Monitor service health, provide maintenance windows or expected recovery times, and handle errors by informing users of temporary unavailability and retry mechanisms if appropriate."
+        },
+        {
+                "title": "Invalid Database Query",
+                "category": "Error",
+                "description": "Occurs when a database query is malformed or fails to execute properly.",
+                "tags": "Database,Query,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid Database Query error occurs when a query sent to the database is malformed or fails to execute correctly. Review query syntax, check database schema, and ensure that queries are properly constructed. Handle errors by providing informative messages and debugging queries to resolve issues."
+        },
+        {
+                "title": "Invalid API Key",
+                "category": "Error",
+                "description": "Occurs when an API key used for authentication is invalid or missing.",
+                "tags": "API,Authentication,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid API Key error occurs when an API request includes an invalid or missing API key. Ensure that API keys are correctly generated, included in requests, and not expired. Handle errors by providing feedback for obtaining a valid API key and re-authenticating requests."
+        },
+        {
+                "title": "Database Timeout",
+                "category": "Error",
+                "description": "Occurs when a database operation takes too long and times out.",
+                "tags": "Database,Timeout,Error Handling",
+                "paid": "Yes",
+                "answer": "A Database Timeout error happens when a database operation exceeds the allowed time limit. Optimize database queries, review indexing, and ensure that operations are efficient. Increase timeout settings if necessary and handle errors by retrying operations or informing users of delays."
+        },
+        {
+                "title": "Invalid User Input",
+                "category": "Error",
+                "description": "Occurs when user input does not meet expected criteria or is incorrectly formatted.",
+                "tags": "Validation,User Input,Error Handling",
+                "paid": "Yes",
+                "answer": "An Invalid User Input error occurs when input provided by users does not meet expected criteria or is improperly formatted. Implement validation checks to ensure input adheres to required formats and constraints, provide clear feedback to users for correction, and handle errors by guiding users to correct their input."
+        }
+]

@@ -1,0 +1,107 @@
+import { RxCross2, RxDashboard } from "react-icons/rx";
+import { BiBookReader, BiComment, BiEdit, BiMessage, BiNotification, BiSolidUpArrowCircle, BiUser } from "react-icons/bi";
+import { MdAdminPanelSettings, MdComputer, MdContentPasteSearch, MdDarkMode, MdDelete, MdDownloadForOffline, MdLightMode, MdOutlineRouter, MdOutlineVerified, MdSatellite, MdSecurity } from "react-icons/md";
+import { GrView } from "react-icons/gr";
+import { FaBars, FaDonate, FaHome, FaInfoCircle, FaQuestionCircle, FaSignInAlt, FaTimes, FaUserPlus, FaBlog, FaCoins, FaPaypal, FaServicestack, FaProjectDiagram, FaRemoveFormat, FaExclamationTriangle, FaAngleLeft, FaAngleRight, FaSearch, FaReact, FaCss3, FaNodeJs, FaGithub, FaBootstrap, FaHtml5, FaSass, FaAngular, FaAws, FaPhp, FaStar, FaCashRegister, FaCentos, FaJava } from "react-icons/fa";
+import { BsCurrencyRupee } from "react-icons/bs";
+import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp, IoLogoAndroid, IoMenu, IoShareSocial } from "react-icons/io5";
+import { RiJavascriptLine } from "react-icons/ri";
+import { SiCloudinary, SiCoinmarketcap, SiExpress, SiFusionauth, SiHostinger, SiJquery, SiJsonwebtokens, SiLetsencrypt, SiMicrosoftexcel, SiPostgresql, SiPython, SiReactrouter, SiVuedotjs } from "react-icons/si";
+import { TbBrandDjango, TbBrandGraphql, TbBrandMongodb, TbBrandMysql, TbBrandNextjs, TbBrandReactNative, TbBrandRedux, TbBrandTailwind, TbBrandTypescript, TbFileTypeXml, TbJson, TbSeo } from "react-icons/tb";
+import { AiFillIdcard } from "react-icons/ai";
+
+const Icons = {
+    User: <BiUser />,
+    Cross: <RxCross2 />,
+    Home: <FaHome />,
+    Donate: <FaDonate />,
+    Info: <FaInfoCircle />,
+    UserPlus: <FaUserPlus />,
+    Signin: <FaSignInAlt />,
+    Faq: <FaQuestionCircle />,
+    Bars: <FaBars />,
+    Times: <FaTimes />,
+    Blogs: <FaBlog />,
+    Dashboard: <RxDashboard />,
+    Pricing: <FaCoins />,
+    Services: <FaServicestack />,
+    Message: <BiMessage />,
+    Comment: <BiComment />,
+    Payment: <FaPaypal />,
+    Project: <FaProjectDiagram />,
+    Courses: <BiBookReader />,
+    Notification: <BiNotification />,
+    Edit: <BiEdit />,
+    Delete: <MdDelete />,
+    Details: <GrView />,
+    Security: <MdSecurity />,
+    Rupees: <BsCurrencyRupee />,
+    Verified: <MdOutlineVerified />,
+    Alert: <FaExclamationTriangle />,
+    Error: <FaExclamationTriangle />,
+    Download: <MdDownloadForOffline />,
+    Update: <BiSolidUpArrowCircle />,
+    Left: <FaAngleLeft />,
+    Right: <FaAngleRight />,
+    Back: <IoArrowBackCircleSharp />,
+    Forword: <IoArrowForwardCircleSharp />,
+    Search: <FaSearch />,
+    Star: <FaStar />,
+    Light: <MdLightMode />,
+    Dark: <MdDarkMode />,
+    Menu: <IoMenu />,
+
+    //language..
+    ReactJs: <FaReact />,
+    Javascript: <RiJavascriptLine />,
+    Css: <FaCss3 />,
+    NodeJs: <FaNodeJs />,
+    Mongodb: <TbBrandMongodb />,
+    Mysql: <TbBrandMysql />,
+    NextJs: <TbBrandNextjs />,
+    Github: <FaGithub />,
+    Cloudinary: <SiCloudinary />,
+    Bootstrap: <FaBootstrap />,
+    Html5: <FaHtml5 />,
+    Json: <TbJson />,
+    Express: <SiExpress />,
+    Jsonwebtokens: <SiJsonwebtokens />,
+    Reactrouter: <SiReactrouter />,
+    Auth: <SiFusionauth />,
+    Typescript: <TbBrandTypescript />,
+    BcryptJs: <SiLetsencrypt />,
+    Graphql: <TbBrandGraphql />,
+    Redux: <TbBrandRedux />,
+    Python: <SiPython />,
+    Tailwind: <TbBrandTailwind />,
+    Sass: <FaSass />,
+    Hostinger: <SiHostinger />,
+    Jquery: <SiJquery />,
+    Excel: <SiMicrosoftexcel />,
+    Xml: <TbFileTypeXml />,
+    Django: <TbBrandDjango />,
+    ReactNative: <TbBrandReactNative />,
+    Angular: <FaAngular />,
+    Postgresql: <SiPostgresql />,
+    Vuedotjs: <SiVuedotjs />,
+
+    Aws: <FaAws />,
+    Php: <FaPhp />,
+    HR: <FaCashRegister />,
+    BPO: <AiFillIdcard />,
+    Telesales: <AiFillIdcard />,
+    Admin: <MdAdminPanelSettings />,
+    ContentWriter: <MdContentPasteSearch />,
+    SMO: <IoShareSocial />,
+    SEO: <TbSeo />,
+    Manager: <MdAdminPanelSettings />,
+    Sales: <SiCoinmarketcap />,
+    DSA: <MdSatellite />,
+    OS: <FaCentos />,
+    Router: <MdOutlineRouter />,
+    Android: <IoLogoAndroid />,
+    Java: <FaJava />,
+    Computer: <MdComputer />
+}
+
+export default Icons;
